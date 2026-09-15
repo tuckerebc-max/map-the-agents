@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (987)
+## current (985)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -65,8 +65,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [agi-is-going-to-arrive/ahadiff](../repos/agi-is-going-to-arrive/ahadiff.md) [coverage: complete]
 - [ai-genie/chatgpt-vscode](../repos/ai-genie/chatgpt-vscode.md) [coverage: complete]
 - [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) [coverage: complete]
-- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
-- [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
 - [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md) [coverage: complete]
 - [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
 - [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [isrengel/installcursoreditorlinux](../repos/isrengel/installcursoreditorlinux.md) [coverage: complete]
 - [itayinbarr/little-coder](../repos/itayinbarr/little-coder.md) [coverage: partial]
 - [its-maestro-baby/maestro](../repos/its-maestro-baby/maestro.md) [coverage: partial]
+- [itspecialist111/hass-ai-orchestrator](../repos/itspecialist111/hass-ai-orchestrator.md) [coverage: partial]
+- [itwanger/paiagent](../repos/itwanger/paiagent.md) [coverage: partial]

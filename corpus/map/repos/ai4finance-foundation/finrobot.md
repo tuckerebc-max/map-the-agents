@@ -1,9 +1,9 @@
 # ai4finance-foundation/finrobot
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 6d6ccd32c1b8 @ 41e01cd34f0a44ae
+Latest snapshot: commit 6d6ccd32c1b8 @ b5c82f0881e281ff
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: shinpr
@@ -22,6 +22,8 @@ Repository map entry: [shinpr/agentic-code](../../repos/shinpr/agentic-code.md) 
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Teams using several AI coding tools end up maintaining separate instruction files and workflows per tool, so agentic-code standardizes on the open AGENTS.md format and generates the scaffolding in one
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Standardizes AI coding workflows via the open AGENTS.md standard with zero configuration, enforcing a test-first approach and progressive skill loading across multiple AI coding tools (Cursor, Codex, Gemini CLI). Provides pre-built workflows and quality gates (requirements analysis, architecture planning, test-first generation, implementation). Supports sub-agents-mcp for running isolated context reviews in Cursor.
+
+(captured site page body (agents/agentic-code.md), not a verified repo-code finding)
+Teams using several AI coding tools end up maintaining separate instruction files and workflows per tool, so agentic-code standardizes on the open AGENTS.md format and generates the scaffolding in one npx command with zero configuration. Its workflows impose a test-first discipline with quality gates between phases — requirements analysis, architecture planning, test-first generation, implementation — and skills install into Cursor or Codex CLI from the shared .agents/skills directory. For deeper review isolation it supports sub-agents-mcp, running reviews in a separate context window. It is MIT-licensed, model-agnostic, and built for teams that run Cursor, Codex, and Gemini CLI against the same repository without wanting per-tool workflow drift.
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json); [site page @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/agents/agentic-code.md)

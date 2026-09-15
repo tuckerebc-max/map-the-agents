@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [itspecialist111/hass-ai-orchestrator](../repos/itspecialist111/hass-ai-orchestrator.md) [coverage: partial]
-- [itwanger/paiagent](../repos/itwanger/paiagent.md) [coverage: partial]
 - [ivan-magda/swift-coding-agent](../repos/ivan-magda/swift-coding-agent.md) [coverage: partial]
 - [ivanwng97/pixtuoid](../repos/ivanwng97/pixtuoid.md) [coverage: partial]
 - [ivy-interactive/ivy-tendril](../repos/ivy-interactive/ivy-tendril.md) [coverage: partial]
@@ -439,3 +437,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [the-open-engine/zeroshot](../repos/the-open-engine/zeroshot.md) [coverage: partial]
 - [the-pr-agent/pr-agent](../repos/the-pr-agent/pr-agent.md) [coverage: partial]
 - [thefalc/multi-agent-ai-sdr-flink-orchestrator](../repos/thefalc/multi-agent-ai-sdr-flink-orchestrator.md) [coverage: complete]
+- [thelinkapi/vibe-coding](../repos/thelinkapi/vibe-coding.md) [coverage: complete]
+- [theneo-inc/cartlis](../repos/theneo-inc/cartlis.md) [coverage: complete]

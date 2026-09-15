@@ -67,8 +67,8 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) -- status=distilled, freshness=stale
 - [ai-genie/chatgpt-vscode](../repos/ai-genie/chatgpt-vscode.md) -- status=distilled, freshness=current
 - [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) -- status=distilled, freshness=current
-- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) -- status=distilled, freshness=current
-- [aider-ai/aider](../repos/aider-ai/aider.md) -- status=distilled, freshness=current
+- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) -- status=distilled, freshness=stale
+- [aider-ai/aider](../repos/aider-ai/aider.md) -- status=distilled, freshness=stale
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- status=blocked, freshness=refresh-failed
 - [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md) -- status=distilled, freshness=current
 - [aizen-stack/aizen](../repos/aizen-stack/aizen.md) -- status=blocked, freshness=refresh-failed

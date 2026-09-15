@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [thelinkapi/vibe-coding](../repos/thelinkapi/vibe-coding.md) [coverage: complete]
-- [theneo-inc/cartlis](../repos/theneo-inc/cartlis.md) [coverage: complete]
 - [thesylvester/crispy](../repos/thesylvester/crispy.md) [coverage: complete]
 - [thixpin/agentic-coding-basic](../repos/thixpin/agentic-coding-basic.md) [coverage: complete]
 - [thudm/scenegenagent](../repos/thudm/scenegenagent.md) [coverage: complete]
@@ -129,11 +127,13 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 ## pending (0)
 
 
-## stale (3)
+## stale (5)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
 - [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
+- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
+- [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
 
 ## refresh-failed (62)
 

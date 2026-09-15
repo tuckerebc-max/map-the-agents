@@ -5,7 +5,7 @@ Known-dossier source depth (distinct from freshness -- a current commit is not c
 
 Status counts: distilled=990, blocked=62
 
-Freshness counts: current=987, stale=3, refresh-failed=62
+Freshness counts: current=985, stale=5, refresh-failed=62
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -119,6 +119,8 @@ Full index: [freshness/index.md](freshness/index.md).
 - [agentsmesh/agentsmesh](repos/agentsmesh/agentsmesh.md): stale (stale)
 - [agnusdei1207/opencode-orchestrator](repos/agnusdei1207/opencode-orchestrator.md): stale (stale)
 - [ahacker-1/cre-acquisition-orchestrator](repos/ahacker-1/cre-acquisition-orchestrator.md): stale (stale)
+- [ai4finance-foundation/finrobot](repos/ai4finance-foundation/finrobot.md): stale (stale)
+- [aider-ai/aider](repos/aider-ai/aider.md): stale (stale)
 - [airtai/fastagency](repos/airtai/fastagency.md): refresh-failed (FetchFailed)
 - [aizen-stack/aizen](repos/aizen-stack/aizen.md): refresh-failed (FetchFailed)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
@@ -133,11 +135,9 @@ Full index: [freshness/index.md](freshness/index.md).
 - [codebuffai/codebuff](repos/codebuffai/codebuff.md): refresh-failed (FetchFailed)
 - [coder/mux](repos/coder/mux.md): refresh-failed (FetchFailed)
 - [codium-ai/pr-agent](repos/codium-ai/pr-agent.md): refresh-failed (FetchFailed)
-- [continous-ai/continous](repos/continous-ai/continous.md): refresh-failed (FetchFailed)
-- [deepseek-tui/deepseek-tui](repos/deepseek-tui/deepseek-tui.md): refresh-failed (FetchFailed)
-- ... 45 more; see freshness/index.md
+- ... 47 more; see freshness/index.md
 
 ## Directory
 
 Full index: [directory/index.md](directory/index.md).
-Catalog-evidence entries (no-repo included): 1359 (published=830, backing=1347, pages=25).
+Catalog-evidence entries (no-repo included): 1359 (published=830, backing=1347, pages=50).

@@ -1,9 +1,9 @@
 # aider-ai/aider
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 5dc9490bb35f @ 0f2903302b000314
+Latest snapshot: commit 5dc9490bb35f @ 4c420a36be9587f3
 
 ## Summary (orientation draft, not independently verified)
 

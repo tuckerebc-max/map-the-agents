@@ -1,5 +1,5 @@
 {
-  "cursor": "ai-genie/chatgpt-vscode",
+  "cursor": "aiwaves-cn/agents",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -79,6 +79,36 @@
     "ai-genie/chatgpt-vscode": {
       "failures": 0,
       "last_at": "2026-09-14T15:53:21+00:00",
+      "last_outcome": "reused"
+    },
+    "ai-maker-space/interactive-dev-environment-for-ai-engineers": {
+      "failures": 0,
+      "last_at": "2026-09-15T14:19:10+00:00",
+      "last_outcome": "reused"
+    },
+    "ai4finance-foundation/finrobot": {
+      "failures": 0,
+      "last_at": "2026-09-15T14:19:12+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "aider-ai/aider": {
+      "failures": 0,
+      "last_at": "2026-09-15T14:19:15+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "airtai/fastagency": {
+      "failures": 1,
+      "last_at": "2026-09-15T14:19:16+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/airtai/fastagency"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "aiwaves-cn/agents": {
+      "failures": 0,
+      "last_at": "2026-09-15T14:19:18+00:00",
       "last_outcome": "reused"
     }
   },
@@ -554,6 +584,106 @@
         "stages": {
           "catalog": 0.982,
           "snapshots": 10.274
+        }
+      }
+    },
+    {
+      "attempted": [
+        "ai-maker-space/interactive-dev-environment-for-ai-engineers",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "airtai/fastagency",
+        "aiwaves-cn/agents"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": false,
+        "commit": "0861b8ee1c271047d55caa72efdfc3a6d2046174",
+        "processed": 0,
+        "slugs": [],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/airtai/fastagency",
+          "repo": "airtai/fastagency",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-09-15T14:19:18+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "f1a9362281ca147833bf8196733901d39daa4980",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "ai-maker-space/interactive-dev-environment-for-ai-engineers",
+          "reused": true,
+          "snapshot_id": "902b4a9cfa21d9cf"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "explicit_paths": [],
+          "files_stored": 4,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "ai4finance-foundation/finrobot",
+          "reused": false,
+          "snapshot_id": "b5c82f0881e281ff"
+        },
+        {
+          "commit": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+          "explicit_paths": [],
+          "files_stored": 5,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "aider-ai/aider",
+          "reused": false,
+          "snapshot_id": "4c420a36be9587f3"
+        },
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "aiwaves-cn/agents",
+          "reused": true,
+          "snapshot_id": "e1eef48ba43f73dd"
+        }
+      ],
+      "started": "2026-09-15T14:19:08+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 10.659,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.989,
+          "snapshots": 9.627
         }
       }
     }

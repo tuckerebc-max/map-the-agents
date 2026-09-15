@@ -1,0 +1,423 @@
+
+# FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models
+[![Downloads](https://static.pepy.tech/badge/finrobot)](https://pepy.tech/project/finrobot)
+[![Downloads](https://static.pepy.tech/badge/finrobot/week)](https://pepy.tech/project/finrobot)
+[![Join Discord](https://img.shields.io/badge/Discord-Join-blue)](https://discord.gg/trsr8SXpW5)
+[![Python 3.8](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![PyPI](https://img.shields.io/pypi/v/finrobot.svg)](https://pypi.org/project/finrobot/)
+![License](https://img.shields.io/github/license/AI4Finance-Foundation/finrobot.svg?color=brightgreen)
+![](https://img.shields.io/github/issues-raw/AI4Finance-Foundation/finrobot?label=Issues)
+![](https://img.shields.io/github/issues-closed-raw/AI4Finance-Foundation/finrobot?label=Closed+Issues)
+![](https://img.shields.io/github/issues-pr-raw/AI4Finance-Foundation/finrobot?label=Open+PRs)
+![](https://img.shields.io/github/issues-pr-closed-raw/AI4Finance-Foundation/finrobot?label=Closed+PRs)
+[![FinRobot Desktop](https://img.shields.io/badge/Desktop-v0.1.0-blue)](https://github.com/AI4Finance-Foundation/FinRobot/releases/tag/desktop-v0.1.0)
+
+<div align="center">
+<img align="center" src=figs/logo_white_background.jpg width="40%"/>
+</div>
+
+**FinRobot** is an AI Agent platform tailored for financial applications, surpassing FinGPT's single-model approach. It unifies multiple AI technologies—including LLMs, reinforcement learning, and quantitative analytics—to power investment research automation, algorithmic trading strategies, and risk assessment, delivering a full-stack intelligent solution for the financial industry.
+
+**Concept of AI Agent**: an AI Agent is an intelligent entity that uses large language models as its brain to perceive its environment, make decisions, and execute actions. Unlike traditional artificial intelligence, AI Agents possess the ability to independently think and utilize tools to progressively achieve given objectives.
+
+[Whitepaper on arXiv](https://arxiv.org/abs/2405.14767)  
+[Official Academic Page](https://ai4finance.org/research/finrobot-open-source-ai-agent.html)
+
+![Visitors](https://api.visitorbadge.io/api/VisitorHit?user=AI4Finance-Foundation&repo=FinRobot&countColor=%23B17A)
+[![Discord](https://dcbadge.limes.pink/api/server/trsr8SXpW5?v=20260320)](https://discord.gg/trsr8SXpW5)
+
+## 🧬 Architecture Evolution
+
+FinRobot evolves alongside the rapid development of AI-agent frameworks. Rather than being tied to a single agent stack, each generation explores how emerging agent architectures can improve financial analysis, research, and decision-making.
+
+| Version | Agent Framework | Project | Availability | Focus |
+|---|---|---|---|---|
+| **V0** | AutoGen | [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot ) | Open source | The original FinRobot multi-agent architecture for financial applications |
+| **V1** | OpenAI Agents SDK | [finrobot_equity](./finrobot_equity/) | Open source | Equity-research agents, financial analysis, valuation, and automated report generation |
+| **V2** | PydanticAI | [FinRobot V2](https://finrobot.ai/v2 ) | Available online; source code not yet open-sourced | Structured, type-safe agent workflows for professional equity research |
+| **V3** | DeepSeek-Harness | FinRobot V3 | In development | A more autonomous architecture for financial analysis and decision-making |
+
+> **Our philosophy:** FinRobot is not defined by any single agent framework. We continuously adopt, evaluate, and evolve with state-of-the-art agent architectures while keeping the financial domain layer, tools, workflows, deterministic computation, and decision-making capabilities at the core.
+
+### Version Notes
+
+- **V0** is the original open-source FinRobot framework in this repository, built on **AutoGen**.
+- **V1** is the open-source [`finrobot_equity`](./finrobot_equity/) project in this repository, focused on AI-powered equity research and report generation.
+- **V2** is currently available as an online product at [finrobot.ai/v2](https://finrobot.ai/v2 ); its source code has not yet been open-sourced.
+- **V3** is under active development and explores a more autonomous agent architecture based on **DeepSeek-Harness**.
+
+## 🚀 FinRobot Desktop v0.1.0 Released
+
+We are excited to announce the first public release of **FinRobot Desktop v0.1.0** — a native desktop equity research cockpit powered by a production-grade multi-agent architecture.
+
+FinRobot Desktop brings AI-native financial research workflows into a macOS application, helping analysts move from market data and company filings to valuation, debate, synthesis, and investment committee-style reports in one traceable workflow.
+
+👉 **Latest Release:** [FinRobot Desktop v0.1.0](https://github.com/AI4Finance-Foundation/FinRobot/releases/tag/desktop-v0.1.0)
+
+For macOS Apple Silicon users, download:
+
+```text id="5vbf1p"
+FinRobot_0.1.0_aarch64.dmg
+```
+
+Then drag **FinRobot** into the **Applications** folder.
+
+### System Requirement
+
+FinRobot Desktop currently supports **Apple Silicon Macs** — M1, M2, M3, or later. Intel Mac builds are not available in this release.
+
+### Installation Note for macOS
+
+FinRobot Desktop is not yet Apple-notarized. On first launch, macOS may report that the downloaded app is “damaged.” Run the following command once in Terminal, then open the app normally:
+
+```bash id="yql6j7"
+xattr -cr /Applications/FinRobot.app
+```
+
+### What’s New in FinRobot Desktop
+
+FinRobot Desktop v0.1.0 introduces a full-stack desktop research system built on **PydanticAI + FastAPI + React/Tauri**. It combines role-based financial agents, deterministic valuation engines, live data providers, and analyst-style report generation inside a native desktop experience.
+
+Key capabilities include:
+
+- **Multi-agent equity research** with orchestrated research, modeling, synthesis, reporting, and debate agents.
+- **Code-calculated valuation** for DCF, DDM, LBO, comps, WACC, and Monte Carlo analysis.
+- **Traceable analyst reports** with 13-chapter research output, IC memos, evidence links, and numeric provenance.
+- **Native desktop workflow** with live market data, SEC filing support, automatic failover, and GitHub-based auto-updates.
+
+### Multi-Agent Architecture
+
+FinRobot is a multi-agent equity research platform where a **Lead Agent** orchestrates specialized research agents through a pipeline-driven execution engine.
+
+The system includes:
+
+- **1 Lead Agent** for orchestration and task routing
+- **5 role-based sub-agents** for data, analysis, modeling, synthesis, and report generation
+- **3 debate agents** for bull case, bear case, and judge-style investment reasoning
+
+This design separates complex financial research into modular agent roles while keeping the full workflow auditable and extensible.
+
+```text id="whmuv4"
+User Research Request
+        ↓
+Lead Agent / Orchestrator
+        ↓
+Data Agent → Analysis Agent → Modeling Agent → Synthesis Agent → Report Agent
+        ↓
+Bull Agent ↔ Bear Agent → Judge Agent
+        ↓
+Traceable Investment Research Output
+```
+
+### Deterministic Compute, LLM Narration
+
+A core design principle of FinRobot is the strict separation between **deterministic financial computation** and **LLM-based narration**.
+
+All financial numbers are generated by pure-Python compute operators, not by the language model. The LLM is used for reasoning, synthesis, explanation, and report writing, while valuation outputs such as DCF, DDM, LBO, WACC, comparable-company analysis, and Monte Carlo simulations are calculated through deterministic code paths with full provenance.
+
+In short:
+
+```text id="2l0biq"
+Numbers are code-calculated.
+Narratives are LLM-assisted.
+Every output is provenance-tracked.
+```
+### Codebase Snapshot
+
+| Layer | What It Includes |
+|---|---|
+| **Full-stack system** | ~184k lines across Python backend, React/Tauri desktop frontend, Rust shell, and tests |
+| **Agent runtime** | 9 agents: lead orchestrator, 5 role-based pipeline agents, and 3 debate agents |
+| **Research pipelines** | 7 pipelines covering company research, DCF, comps, LBO, DDM, earnings, and IC memo generation |
+| **Deterministic compute** | 30 pure-Python operators and 7 coordinators for valuation, WACC, Monte Carlo, and financial modeling |
+| **Data infrastructure** | 7 providers with failover, including FMP, Finnhub, yfinance, SEC EDGAR, Adanos, NewsAggregator, and FX |
+| **Product stack** | PydanticAI, FastAPI, SQLite, React 19, Vite 6, Zustand, Tauri/Rust, and Recharts |
+
+
+## 🎬 FinRobot Pro — Your Personal AI-Powered Equity Research Assistant
+🌐 https://finrobot.ai/
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=ebgPiJINi-k" target="_blank">
+    <img src="https://github.com/user-attachments/assets/de3b9f9c-50aa-49f0-82c6-3d2b938f4670" width="90%" />
+  </a>
+</div>
+
+<img width="1490" height="808" alt="image" src="https://github.com/user-attachments/assets/bf56065d-a134-4ff8-99e2-8a1e52258ce7" />
+
+
+<p align="center">
+  ▶️ Click the image above to watch the demo video, or see the short preview below.
+</p>
+
+A locally-deployed AI assistant that fetches financial data, runs multi-agent LLM analysis, and generates professional equity research reports.
+
+**1. Configure API Keys**
+```bash
+cp finrobot_equity/core/config/config.ini.example finrobot_equity/core/config/config.ini
+```
+Edit `config.ini` with your keys:
+```ini
+[API_KEYS]
+fmp_api_key = YOUR_FMP_API_KEY          # https://financialmodelingprep.com/developer
+openai_api_key = YOUR_OPENAI_API_KEY    # https://platform.openai.com/account/api-keys
+adanos_api_key = YOUR_ADANOS_API_KEY    # Optional: enables Retail Sentiment Insights
+```
+
+**2. One-Command Deploy (Web Interface)**
+```bash
+chmod +x deploy.sh
+./deploy.sh start
+
+#if deploy.sh not working then
+python3 -m venv venv                                                                                                                                           
+source venv/bin/activate
+pip install -r requirements-equity.txt                                                                                                                         
+python run_web_app.py  
+```
+Access at `http://127.0.0.1:8001`
+
+| Command | Description |
+|:---|:---|
+| `./deploy.sh start` | Start the web app (auto-installs dependencies) |
+| `./deploy.sh stop` | Stop the application |
+| `./deploy.sh restart` | Restart the application |
+| `./deploy.sh status` | Check running status |
+
+**3. Or Run via Command Line**
+```bash
+# Step 1: Financial analysis
+python finrobot_equity/core/src/generate_financial_analysis.py \
+    --company-ticker NVDA \
+    --company-name "NVIDIA Corporation" \
+    --config-file finrobot_equity/core/config/config.ini \
+    --peer-tickers AMD INTC \
+    --generate-text-sections
+
+# Step 2: Generate report
+python finrobot_equity/core/src/create_equity_report.py \
+    --company-ticker NVDA \
+    --company-name "NVIDIA Corporation" \
+    --analysis-csv output/NVDA/analysis/financial_metrics_and_forecasts.csv \
+    --ratios-csv output/NVDA/analysis/ratios_raw_data.csv \
+    --config-file finrobot_equity/core/config/config.ini
+```
+
+**Pipeline**:
+1. **Fetch Financial Data**: income statements, balance sheets, cash flows via FMP API
+2. **Process & Forecast**: 3-year financial projections, DCF valuation, peer comparison
+3. **AI Agent Analysis**: 8 specialized agents generate investment thesis, risk assessment, valuation overview, etc.
+4. **Report Generation**: professional multi-page HTML/PDF with 15+ chart types
+
+### Example Reports
+- [NVDA Equity Research Report](https://ai4finance-foundation.github.io/FinRobot/finrobot_equity/core/output/NVDA_Equity_Research_Report.html)
+- [MSFT Equity Research Report](https://ai4finance-foundation.github.io/FinRobot/finrobot_equity/core/output/MSFT_Equity_Research_Report.html)
+- [COP Equity Research Report](https://ai4finance-foundation.github.io/FinRobot/finrobot_equity/core/output/COP_Equity_Research_Report.html)
+- [TSLA Equity Research Report](https://ai4finance-foundation.github.io/FinRobot/finrobot_equity/core/output/TSLA_Equity_Research_Report.html)
+- [META Equity Research Report](https://ai4finance-foundation.github.io/FinRobot/finrobot_equity/core/output/META_Equity_Research_Report.html)
+
+For full documentation, see [finrobot_equity/README.md](finrobot_equity/README.md).
+
+
+## What is FinRobot Pro?
+
+
+https://github.com/user-attachments/assets/93ec0f1e-e28b-4474-a0bf-a79e0c12f0ff
+
+
+[FinRobot Pro](https://finrobot.ai/ ) is an AI-powered equity research platform that automates professional stock analysis using Large Language Models (LLMs) and AI Agents.
+
+**Key Features:**
+
+- **Automated Report Generation** – Generate professional equity research reports instantly
+- **Financial Analysis** – Deep dive into income statements, balance sheets, and cash flows
+- **Valuation Analysis** – P/E ratio, EV/EBITDA multiples, and peer comparison
+- **Risk Assessment** – Comprehensive investment risk evaluation
+
+
+## FinRobot Ecosystem
+<div align="center">
+<img align="center" src="https://github.com/AI4Finance-Foundation/FinRobot/assets/31713746/6b30d9c1-35e5-4d36-a138-7e2769718f62" width="90%"/>
+</div>
+
+### The overall framework of FinRobot is organized into four distinct layers, each designed to address specific aspects of financial AI processing and application:
+1. **Financial AI Agents Layer**: The Financial AI Agents Layer now includes Financial Chain-of-Thought (CoT) prompting, enhancing complex analysis and decision-making capacity. Market Forecasting Agents, Document Analysis Agents, and Trading Strategies Agents utilize CoT to dissect financial challenges into logical steps, aligning their advanced algorithms and domain expertise with the evolving dynamics of financial markets for precise, actionable insights.
+2. **Financial LLMs Algorithms Layer**: The Financial LLMs Algorithms Layer configures and utilizes specially tuned models tailored to specific domains and global market analysis. 
+3. **LLMOps and DataOps Layers**: The LLMOps layer implements a multi-source integration strategy that selects the most suitable LLMs for specific financial tasks, utilizing a range of state-of-the-art models. 
+4. **Multi-source LLM Foundation Models Layer**: This foundational layer supports the plug-and-play functionality of various general and specialized LLMs. 
+
+
+## FinRobot: Agent Workflow
+<div align="center">
+<img align="center" src="https://github.com/AI4Finance-Foundation/FinRobot/assets/31713746/ff8033be-2326-424a-ac11-17e2c9c4983d" width="60%"/>
+</div>
+
+1. **Perception**: This module captures and interprets multimodal financial data from market feeds, news, and economic indicators, using sophisticated techniques to structure the data for thorough analysis.
+
+2. **Brain**: Acting as the core processing unit, this module perceives data from the Perception module with LLMs and utilizes Financial Chain-of-Thought (CoT) processes to generate structured instructions.
+
+3. **Action**: This module executes instructions from the Brain module, applying tools to translate analytical insights into actionable outcomes. Actions include trading, portfolio adjustments, generating reports, or sending alerts, thereby actively influencing the financial environment.
+
+## FinRobot: Smart Scheduler
+<div align="center">
+<img align="center" src="https://github.com/AI4Finance-Foundation/FinRobot/assets/31713746/06fa0b78-ac53-48d3-8a6e-98d15386327e" width="60%"/>
+</div>
+
+The Smart Scheduler is central to ensuring model diversity and optimizing the integration and selection of the most appropriate LLM for each task.
+* **Director Agent**: This component orchestrates the task assignment process, ensuring that tasks are allocated to agents based on their performance metrics and suitability for specific tasks.
+* **Agent Registration**: Manages the registration and tracks the availability of agents within the system, facilitating an efficient task allocation process.
+* **Agent Adaptor**: Tailor agent functionalities to specific tasks, enhancing their performance and integration within the overall system.
+* **Task Manager**: Manages and stores different general and fine-tuned LLMs-based agents tailored for various financial tasks, updated periodically to ensure relevance and efficacy.
+
+## File Structure
+
+The main folder **finrobot** has three subfolders **agents, data_source, functional**. 
+
+```
+FinRobot
+├── finrobot (main folder)
+│   ├── agents
+│   	├── agent_library.py
+│   	└── workflow.py
+│   ├── data_source
+│   	├── finnhub_utils.py
+│   	├── finnlp_utils.py
+│   	├── fmp_utils.py
+│   	├── sec_utils.py
+│   	└── yfinance_utils.py
+│   ├── functional
+│   	├── analyzer.py
+│   	├── charting.py
+│   	├── coding.py
+│   	├── quantitative.py
+│   	├── reportlab.py
+│   	└── text.py
+│   ├── toolkits.py
+│   └── utils.py
+│
+├── configs
+├── experiments
+├── tutorials_beginner (hands-on tutorial)
+│   ├── agent_fingpt_forecaster.ipynb
+│   └── agent_annual_report.ipynb 
+├── tutorials_advanced (advanced tutorials for potential finrobot developers)
+│   ├── agent_trade_strategist.ipynb
+│   ├── agent_fingpt_forecaster.ipynb
+│   ├── agent_annual_report.ipynb 
+│   ├── lmm_agent_mplfinance.ipynb
+│   └── lmm_agent_opt_smacross.ipynb
+├── setup.py
+├── OAI_CONFIG_LIST_sample
+├── config_api_keys_sample
+├── requirements.txt
+└── README.md
+```
+
+## Installation:
+
+**1. (Recommended) Create a new virtual environment**
+```shell
+conda create --name finrobot python=3.10
+conda activate finrobot
+```
+**2. download the FinRobot repo use terminal or download it manually**
+```shell
+git clone https://github.com/AI4Finance-Foundation/FinRobot.git
+cd FinRobot
+```
+**3. install finrobot & dependencies from source or pypi**
+
+get our latest release from pypi
+```bash
+pip install -U finrobot
+```
+or install from this repo directly
+```
+pip install -e .
+```
+**4. modify OAI_CONFIG_LIST_sample file**
+```shell
+1) rename OAI_CONFIG_LIST_sample to OAI_CONFIG_LIST
+2) remove the four lines of comment within the OAI_CONFIG_LIST file
+3) add your own openai api-key <your OpenAI API key here>
+```
+**5. modify config_api_keys_sample file**
+```shell
+1) rename config_api_keys_sample to config_api_keys
+2) remove the comment within the config_api_keys file
+3) add your own finnhub-api "YOUR_FINNHUB_API_KEY"
+4) add your own financialmodelingprep and sec-api keys "YOUR_FMP_API_KEY" and "YOUR_SEC_API_KEY" (for financial report generation)
+```
+**6. start navigating the tutorials or the demos below:**
+```
+# find these notebooks in tutorials
+1) agent_annual_report.ipynb
+2) agent_fingpt_forecaster.ipynb
+3) agent_trade_strategist.ipynb
+4) lmm_agent_mplfinance.ipynb
+5) lmm_agent_opt_smacross.ipynb
+```
+
+
+## AI Agent Papers
+
++ [Stanford University + Microsoft Research] [Agent AI: Surveying the Horizons of Multimodal Interaction](https://arxiv.org/abs/2401.03568)
++ [Stanford University] [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442)
++ [Fudan NLP Group] [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864)
++ [Fudan NLP Group] [LLM-Agent-Paper-List](https://github.com/WooooDyy/LLM-Agent-Paper-List)
++ [Tsinghua University] [Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives](https://arxiv.org/abs/2312.11970)
++ [Renmin University] [A Survey on Large Language Model-based Autonomous Agents](https://arxiv.org/pdf/2308.11432.pdf)
++ [Nanyang Technological University] [FinAgent: A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist](https://arxiv.org/abs/2402.18485)
+
+
+## AI Agent Open-Source Frameworks & Tools
++ [AutoGPT (183k stars)](https://github.com/Significant-Gravitas/AutoGPT): autonomous AI agent platform.
++ [Dify (134k stars)](https://github.com/langgenius/dify): LLM app development platform with workflow orchestration and RAG.
++ [LangChain (130k stars)](https://github.com/langchain-ai/langchain): framework for building context-aware LLM applications.
++ [MetaGPT (65.6k stars)](https://github.com/geekan/MetaGPT): multi-agent framework with role-based collaboration.
++ [AutoGen (56k stars)](https://github.com/microsoft/autogen): framework for multi-agent LLM applications with tools and human interaction.
++ [CrewAI (46.6k stars)](https://github.com/joaomdmoura/crewAI): framework for orchestrating collaborative AI agents.
++ [ChatDev (31.7k stars)](https://github.com/OpenBMB/ChatDev): multi-agent framework for software development tasks.
++ [FastGPT (27.4k stars)](https://github.com/labring/FastGPT): knowledge-based LLM platform with workflow support.
++ [Langfuse (23.4k stars)](https://github.com/langfuse/langfuse): open-source LLM observability and evaluation platform.
++ [BabyAGI (22.2k stars)](https://github.com/yoheinakajima/babyagi): task-driven experimental autonomous agent framework.
++ [SuperAGI (17.3k stars)](https://github.com/TransformerOptimus/SuperAGI): developer-focused autonomous agent framework.
++ [CAMEL (16.4k stars)](https://github.com/camel-ai/camel): framework for cooperative and communicative AI agents.
++ [Bisheng (11.2k stars)](https://github.com/dataelement/bisheng): enterprise open-source LLM application platform.
+
+## Citing FinRobot
+```
+@article{yang2024finrobot,
+  title   = {FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models},
+  author  = {Yang, Hongyang and Zhang, Boyu and Wang, Neng and Guo, Cheng and Zhang, Xiaoli and Lin, Likun and Wang, Junlin and Zhou, Tianyu and Guan, Mao and Zhang, Runjia and Wang, Christina Dan},
+  journal = {arXiv preprint arXiv:2405.14767},
+  year    = {2024},
+  doi     = {10.48550/arXiv.2405.14767},
+  url     = {https://arxiv.org/abs/2405.14767}
+}
+
+@inproceedings{
+zhou2024finrobot,
+title={FinRobot: {AI} Agent for Equity Research and Valuation with Large Language Models},
+author={Tianyu Zhou and Pinqiao Wang and Yilin Wu and Hongyang Yang},
+booktitle={ICAIF 2024: The 1st Workshop on Large Language Models and Generative AI for Finance},
+year={2024}
+}
+
+
+@inproceedings{han2024enhancing,
+  title={Enhancing Investment Analysis: Optimizing AI-Agent Collaboration in Financial Research},
+  author={Han, Xuewen and Wang, Neng and Che, Shangkun and Yang, Hongyang and Zhang, Kunpeng and Xu, Sean Xin},
+  booktitle={ICAIF 2024: Proceedings of the 5th ACM International Conference on AI in Finance},
+  pages={538--546},
+  year={2024}
+}
+```
+**Disclaimer**: The codes and documents provided herein are released under the Apache-2.0 license. They should not be construed as financial counsel or recommendations for live trading. It is imperative to exercise caution and consult with qualified financial professionals prior to any trading or investment actions.
+
+
+<div align="center">
+<img align="center" width="30%" alt="image" src="https://github.com/AI4Finance-Foundation/FinGPT/assets/31713746/e0371951-1ce1-488e-aa25-0992dafcc139">
+</div>
+
+
