@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: Agent FM (YC)
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Desktop group-chat cockpit to hear and steer multiple coding agents
-
-(captured site page body (agents/agent-fm.md), not a verified repo-code finding)
-Supervising several coding agents today means switching terminals and parsing walls of output, so Agent FM replaces that with a single desktop group chat where agents post progress, blockers, and decisions as live text or audio updates the engineer can listen to and answer. Voice-to-text lets users prompt by speaking, and token spend and cost distribution across model providers appear as chat metrics rather than dashboards. It requires no setup and works with local and remote workspaces. The YC Summer 2026 company reports 410 engineers using it with roughly 1.2 hours of daily usage, targeting engineers who run several agent sessions at once.
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json); [site page @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/agents/agent-fm.md)
+(published index `description`, not a verified repo-code finding)
+Supervising several coding agents today means switching terminals and parsing walls of output, so Agent FM replaces that with a single desktop group chat where agents post progress, blockers, and deci
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

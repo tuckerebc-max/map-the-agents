@@ -24,4 +24,4 @@ Repository map entry (renamed): original lead [dmae97/open-multi-agent-kit](http
 
 (published index `description`, not a verified repo-code finding)
 OMK is a provider-neutral coding-agent harness organized around four phases: scope goals into bounded DAGs, route work through a provider-neutral model registry, verify completion with evidence-gated
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

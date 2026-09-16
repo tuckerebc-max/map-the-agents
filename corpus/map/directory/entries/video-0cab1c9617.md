@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (backing feed `description`, not a verified repo-code finding)
 This entry is a YouTube video about AutoGen rather than a piece of software. The census picked it up from aggregation lists that mixed tutorial links with projects. Since a video neither runs an agent
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

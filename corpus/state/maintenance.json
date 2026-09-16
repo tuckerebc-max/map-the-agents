@@ -1,5 +1,5 @@
 {
-  "cursor": "aiwaves-cn/agents",
+  "cursor": "alanchen4/2024-swe-new-grad",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -109,6 +109,36 @@
     "aiwaves-cn/agents": {
       "failures": 0,
       "last_at": "2026-09-15T14:19:18+00:00",
+      "last_outcome": "reused"
+    },
+    "aizen-stack/aizen": {
+      "failures": 1,
+      "last_at": "2026-09-16T14:11:13+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/aizen-stack/aizen"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "aizenvoltprime/damocles": {
+      "failures": 0,
+      "last_at": "2026-09-16T14:11:18+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "akarachen/2code": {
+      "failures": 0,
+      "last_at": "2026-09-16T14:11:22+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "akashgit/remote-factory": {
+      "failures": 0,
+      "last_at": "2026-09-16T14:11:25+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "alanchen4/2024-swe-new-grad": {
+      "failures": 0,
+      "last_at": "2026-09-16T14:11:27+00:00",
       "last_outcome": "reused"
     }
   },
@@ -684,6 +714,109 @@
         "stages": {
           "catalog": 0.989,
           "snapshots": 9.627
+        }
+      }
+    },
+    {
+      "attempted": [
+        "aizen-stack/aizen",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/2024-swe-new-grad"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": false,
+        "commit": "8664d24144c79ac7400a6799c00f070897d856a6",
+        "processed": 0,
+        "slugs": [],
+        "version_changed": true
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/aizen-stack/aizen",
+          "repo": "aizen-stack/aizen",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-09-16T14:11:27+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "b8787a5e9b69694cd607326dcce721bbf1e04bab",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 2,
+          "repo": "aizenvoltprime/damocles",
+          "reused": false,
+          "snapshot_id": "ee65c6452e13b09e"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "explicit_paths": [],
+          "files_stored": 9,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "akarachen/2code",
+          "reused": false,
+          "snapshot_id": "409dde3a23ed8f38"
+        },
+        {
+          "commit": "a267f509a2b2621f239f6733ce4d980ace9b3248",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 37,
+          "repo": "akashgit/remote-factory",
+          "reused": false,
+          "snapshot_id": "5b6b09d3e85b1034"
+        },
+        {
+          "commit": "cd04f5464b1e3cf5f2d2644205b56217b4469ffa",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "alanchen4/2024-swe-new-grad",
+          "reused": true,
+          "snapshot_id": "768e86730d467c7f"
+        }
+      ],
+      "started": "2026-09-16T14:11:11+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 16.389,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 1.456,
+          "snapshots": 14.897
         }
       }
     }

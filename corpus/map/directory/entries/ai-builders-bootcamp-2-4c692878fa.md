@@ -24,4 +24,4 @@ Repository map entry: [shawhint/ai-builders-bootcamp-2](../../repos/shawhint/ai-
 
 (backing feed `description`, not a verified repo-code finding)
 The repository packages the notebooks for the second run of the AI Builders Bootcamp, again progressing from Python automation (scraping an AI job board, a Plotly Dash dashboard) through ETL and ML cl
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

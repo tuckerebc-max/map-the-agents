@@ -24,4 +24,4 @@ Repository map entry: [ivanwng97/pixtuoid](../../repos/ivanwng97/pixtuoid.md) (s
 
 (published index `description`, not a verified repo-code finding)
 pixtuoid addresses the visibility gap that opens up when several coding-agent sessions run at once: nothing shows at a glance which agent is working, blocked on a permission prompt, or finished. The t
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

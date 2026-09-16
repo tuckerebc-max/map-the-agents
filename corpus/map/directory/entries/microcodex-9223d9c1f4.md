@@ -24,4 +24,4 @@ Repository map entry: [paoloanzn/microcodex](../../repos/paoloanzn/microcodex.md
 
 (published index `description`, not a verified repo-code finding)
 MicroCodex is an independently written C++ client for the OpenAI Codex service: a terminal coding agent offering one-shot prompts and an interactive TUI, local coding tools for file read/write/edit, b
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

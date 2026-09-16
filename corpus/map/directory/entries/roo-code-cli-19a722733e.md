@@ -24,4 +24,4 @@ Repository map entry: [roocodeinc/roo-code](../../repos/roocodeinc/roo-code.md) 
 
 (published index `description`, not a verified repo-code finding)
 Roo Code began as a fork of Cline and differentiated itself by making mode-switching the core interaction: a Code mode for edits, an Architect mode for planning systems and migrations, Ask for explana
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

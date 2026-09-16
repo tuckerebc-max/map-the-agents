@@ -24,4 +24,4 @@ Repository map entry: [rasbt/mini-coding-agent](../../repos/rasbt/mini-coding-ag
 
 (published index `description`, not a verified repo-code finding)
 Raschka wrote mini-coding-agent as the runnable companion to his essay on the components of a coding agent, with the constraint that the entire harness fit in one readable file with no dependencies be
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

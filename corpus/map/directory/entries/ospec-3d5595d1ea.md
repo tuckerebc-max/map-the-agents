@@ -24,4 +24,4 @@ Repository map entry: [clawplays/ospec](../../repos/clawplays/ospec.md) (source:
 
 (backing feed `description`, not a verified repo-code finding)
 Long agentic tasks fail in chat history: context scrolls away, decisions lose their rationale, and a fresh session cannot resume mid-change. OSpec moves the workflow into the repository — ospec init c
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

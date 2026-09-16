@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: willynikes2
@@ -22,8 +22,6 @@ Repository map entry: [willynikes2/agent-orchestrator](../../repos/willynikes2/a
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal-based multi-agent orchestrator wrapping Claude, Codex, and Gemini CLIs with automatic failover (next-man-up); agents share context via a knowledge base server; routes messages through configurable role chains
-
-(captured site page body (agents/agent-orchestrator.md), not a verified repo-code finding)
-Three CLI subscriptions cover most frontier models, but each has separate quotas, and hitting one mid-task means losing momentum, so this orchestrator wraps the Claude, Codex, and Gemini CLIs and fails over automatically — when one agent hits a cap or errors, the next in the role chain continues the work. It is deliberately minimal: a single Python file (daniel.py, about 1,100 lines) with role-based routing chains (orchestrator, implementation, ui-docs, review), direct addressing like @claude or @codex, cooldown timers on exhausted agents, and an optional knowledge-base server for shared context. New agents are added by writing roughly 30-line wrapper functions. Solo developers running all three ~$20/month CLI subscriptions are the intended users.
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json); [site page @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/agents/agent-orchestrator.md)
+(published index `description`, not a verified repo-code finding)
+Three CLI subscriptions cover most frontier models, but each has separate quotas, and hitting one mid-task means losing momentum, so this orchestrator wraps the Claude, Codex, and Gemini CLIs and fail
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (backing feed `description`, not a verified repo-code finding)
 SKI is a free desktop app from Pattern AI Labs that adds voice to the coding agent you already use. You speak, on-device speech recognition transcribes it, the text goes to Claude Code, Codex, Cursor,
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

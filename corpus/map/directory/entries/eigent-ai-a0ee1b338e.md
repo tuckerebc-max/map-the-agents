@@ -24,4 +24,4 @@ Repository map entry: [eigent-ai/eigent](../../repos/eigent-ai/eigent.md) (sourc
 
 (published index `description`, not a verified repo-code finding)
 Eigent came out of the CAMEL-AI ecosystem to give people who cannot or will not route work through a cloud assistant a local alternative: a desktop app where a prompt is decomposed across an agent poo
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

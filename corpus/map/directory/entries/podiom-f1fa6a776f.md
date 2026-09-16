@@ -24,4 +24,4 @@ Repository map entry: [podiom/podiom](../../repos/podiom/podiom.md) (source: bac
 
 (published index `description`, not a verified repo-code finding)
 Podiom targets developers running Claude Code and OpenAI Codex side by side whose sessions, context, and task state live nowhere durable — each CLI restarts from scratch and nothing links the two. The
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [pablopunk/pi.nvim](../../repos/pablopunk/pi.nvim.md) (sou
 
 (backing feed `description`, not a verified repo-code finding)
 pi.nvim exists because its author found most Neovim AI plugins recreate the IDE bloat that drove people to Neovim in the first place. The plugin instead wraps the globally installed pi CLI, passing pr
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

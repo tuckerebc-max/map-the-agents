@@ -24,4 +24,4 @@ Repository map entry: [mufeedvh/code2prompt](../../repos/mufeedvh/code2prompt.md
 
 (backing feed `description`, not a verified repo-code finding)
 Code2Prompt automates the context-building step that precedes most LLM-assisted coding work. It walks a repository, respects .gitignore and glob filters, renders the file tree and selected sources thr
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

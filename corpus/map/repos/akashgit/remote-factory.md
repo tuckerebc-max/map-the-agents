@@ -1,9 +1,9 @@
 # akashgit/remote-factory
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 4262d361ebbf @ cd2e332d94e06242
+Latest snapshot: commit a267f509a2b2 @ 5b6b09d3e85b1034
 
 ## Summary (orientation draft, not independently verified)
 

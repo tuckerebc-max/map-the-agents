@@ -24,4 +24,4 @@ Repository map entry: [tarunms7/forge-orchestrator](../../repos/tarunms7/forge-o
 
 (published index `description`, not a verified repo-code finding)
 FORGE addresses the failure mode of running several coding agents at once: duplicated work, conflicting interfaces, and diffs nobody reviewed. A planner reads the codebase, asks clarifying questions,
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

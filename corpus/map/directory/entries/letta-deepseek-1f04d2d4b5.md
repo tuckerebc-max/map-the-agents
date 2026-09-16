@@ -24,4 +24,4 @@ Repository map entry: [mahawi1992/letta-deepseek](../../repos/mahawi1992/letta-d
 
 (published index `description`, not a verified repo-code finding)
 The project demonstrates wiring Letta's stateful-memory framework to DeepSeek models for a division-of-labor coding pipeline: a research agent with Tavily web search, a DeepSeek-powered coding agent,
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

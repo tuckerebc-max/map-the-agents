@@ -24,4 +24,4 @@ Repository map entry: [zhangliang605/carrycode](../../repos/zhangliang605/carryc
 
 (published index `description`, not a verified repo-code finding)
 carrycode is a terminal-first coding agent built in Rust with a TypeScript layer, aimed at developers who live in the shell and want agent capability without leaving it. It renders a rich TUI with the
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

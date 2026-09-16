@@ -72,9 +72,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- status=blocked, freshness=refresh-failed
 - [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md) -- status=distilled, freshness=current
 - [aizen-stack/aizen](../repos/aizen-stack/aizen.md) -- status=blocked, freshness=refresh-failed
-- [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) -- status=distilled, freshness=current
-- [akarachen/2code](../repos/akarachen/2code.md) -- status=distilled, freshness=current
-- [akashgit/remote-factory](../repos/akashgit/remote-factory.md) -- status=distilled, freshness=current
+- [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) -- status=distilled, freshness=stale
+- [akarachen/2code](../repos/akarachen/2code.md) -- status=distilled, freshness=stale
+- [akashgit/remote-factory](../repos/akashgit/remote-factory.md) -- status=distilled, freshness=stale
 - [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md) -- status=distilled, freshness=current
 - [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) -- status=distilled, freshness=current
 - [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) -- status=distilled, freshness=current

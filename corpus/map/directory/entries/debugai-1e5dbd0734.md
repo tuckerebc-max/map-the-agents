@@ -24,4 +24,4 @@ Repository map entry (renamed): original lead [open-ide/debugai](https://github.
 
 (backing feed `description`, not a verified repo-code finding)
 DebugAI exists as a repository title and a one-sentence README describing an AI agent for testing and debugging; no source code, documentation, releases, or community activity ever followed. The repos
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

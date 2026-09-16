@@ -24,4 +24,4 @@ Repository map entry: [edantoledo/stoix](../../repos/edantoledo/stoix.md) (sourc
 
 (backing feed `description`, not a verified repo-code finding)
 Stoix provides research-grade baselines for distributed single-agent reinforcement learning, compiled end-to-end in JAX so experiments run with jit/pmap across devices rather than through Python loops
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

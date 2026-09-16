@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (backing feed `description`, not a verified repo-code finding)
 x.ai is the developer-facing home for xAI's Grok models, offering a single API across text, code, voice, image, and video modalities with OpenAI SDK compatibility for migration. The service runs on th
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

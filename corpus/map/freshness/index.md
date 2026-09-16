@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (985)
+## current (982)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -66,9 +66,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ai-genie/chatgpt-vscode](../repos/ai-genie/chatgpt-vscode.md) [coverage: complete]
 - [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) [coverage: complete]
 - [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md) [coverage: complete]
-- [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
-- [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
-- [akashgit/remote-factory](../repos/akashgit/remote-factory.md) [coverage: partial]
 - [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md) [coverage: complete]
 - [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
 - [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [its-maestro-baby/maestro](../repos/its-maestro-baby/maestro.md) [coverage: partial]
 - [itspecialist111/hass-ai-orchestrator](../repos/itspecialist111/hass-ai-orchestrator.md) [coverage: partial]
 - [itwanger/paiagent](../repos/itwanger/paiagent.md) [coverage: partial]
+- [ivan-magda/swift-coding-agent](../repos/ivan-magda/swift-coding-agent.md) [coverage: partial]
+- [ivanwng97/pixtuoid](../repos/ivanwng97/pixtuoid.md) [coverage: partial]
+- [ivy-interactive/ivy-tendril](../repos/ivy-interactive/ivy-tendril.md) [coverage: partial]

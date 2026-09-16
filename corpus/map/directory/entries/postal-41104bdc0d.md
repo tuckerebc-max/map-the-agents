@@ -24,4 +24,4 @@ Repository map entry: [andrefetch/postal](../../repos/andrefetch/postal.md) (sou
 
 (published index `description`, not a verified repo-code finding)
 Postal targets developers who want a terminal coding agent with fine-grained control over autonomy rather than an all-or-nothing auto mode. Its loop runs plan, read, edit, and bash tools with every mu
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

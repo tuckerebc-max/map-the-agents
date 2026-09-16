@@ -24,4 +24,4 @@ Repository map entry: [codefuse-ai/codefuse-chatbot](../../repos/codefuse-ai/cod
 
 (published index `description`, not a verified repo-code finding)
 CodeFuse-ChatBot, from Ant Group's CodeFuse team, targets DevOps work that spans design, coding, testing, deployment, and operations, replacing scattered platform-jumping with LLM-driven workflows. It
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

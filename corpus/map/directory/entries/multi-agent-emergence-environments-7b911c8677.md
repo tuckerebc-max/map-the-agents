@@ -24,4 +24,4 @@ Repository map entry: [openai/multi-agent-emergence-environments](../../repos/op
 
 (backing feed `description`, not a verified repo-code finding)
 This repository is the environment code behind OpenAI's 2019 multi-agent reinforcement-learning research, famous for hide-and-seek agents that emergently learned to use boxes as ramps and shelters. It
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [vibe-stack/ggez](../../repos/vibe-stack/ggez.md) (source:
 
 (backing feed `description`, not a verified repo-code finding)
 ggez packages the pieces a Three.js game usually lacks: a blockout/brush world editor with mesh and material tools, an animation graph editor with clip import/export, an orchestrator app that coordina
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

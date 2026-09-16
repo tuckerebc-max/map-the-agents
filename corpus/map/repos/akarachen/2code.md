@@ -1,9 +1,9 @@
 # akarachen/2code
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit fa2465aae831 @ 4ae84c4afc925ca8
+Latest snapshot: commit fa2465aae831 @ 409dde3a23ed8f38
 
 ## Summary (orientation draft, not independently verified)
 

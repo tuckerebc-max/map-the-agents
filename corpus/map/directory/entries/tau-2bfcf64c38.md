@@ -24,4 +24,4 @@ Repository map entry: [huggingface/tau](../../repos/huggingface/tau.md) (source:
 
 (published index `description`, not a verified repo-code finding)
 Tau is Hugging Face's Python port of the Pi minimalist coding agent, published both as a usable terminal agent and as a reference for how coding agents are constructed. The package splits into tau_ai
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

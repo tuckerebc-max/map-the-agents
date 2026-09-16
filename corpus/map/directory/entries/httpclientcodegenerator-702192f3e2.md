@@ -24,4 +24,4 @@ Repository map entry: [jalalx/httpclientcodegenerator](../../repos/jalalx/httpcl
 
 (backing feed `description`, not a verified repo-code finding)
 HttpClientCodeGenerator is a C# Roslyn source generator that removes hand-written HttpClient plumbing from service clients. Developers declare partial classes with attributed methods such as \[HttpGet(
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

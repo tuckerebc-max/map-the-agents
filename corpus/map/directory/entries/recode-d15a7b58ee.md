@@ -24,4 +24,4 @@ Repository map entry: [foundationagents/recode](../../repos/foundationagents/rec
 
 (backing feed `description`, not a verified repo-code finding)
 ReCode is a research framework from the FoundationAgents org (the MetaGPT team) testing a specific thesis: that planning and acting should not be separate phases in an LLM agent. It represents a plan
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

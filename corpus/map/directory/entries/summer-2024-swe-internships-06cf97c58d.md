@@ -24,4 +24,4 @@ Repository map entry: [alanchen4/summer-2024-swe-internships](../../repos/alanch
 
 (backing feed `description`, not a verified repo-code finding)
 The repository automated a seasonal chore: scripts aggregated Summer 2024 software engineering internship postings and republished them as an auto-updated list, with the Carbos jobs site as the compan
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

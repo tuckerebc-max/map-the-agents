@@ -24,4 +24,4 @@ Repository map entry: [anishsingh20/useful-generativeai-tools-repo](../../repos/
 
 (backing feed `description`, not a verified repo-code finding)
 The entry is a curated GitHub collection of generative-AI prompts and reference material, including ChatGPT cheat sheets and tool overviews. Collections of this kind surfaced many of the entries in th
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

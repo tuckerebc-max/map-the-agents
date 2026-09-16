@@ -24,4 +24,4 @@ Repository map entry: [snowflake-labs/orchestration-framework](../../repos/snowf
 
 (backing feed `description`, not a verified repo-code finding)
 Snowflake shops face a forced choice when serving AI features: Cortex Search for unstructured RAG or Cortex Analyst for Text2SQL, with no client-side layer that combines them in one request. Snowflake
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

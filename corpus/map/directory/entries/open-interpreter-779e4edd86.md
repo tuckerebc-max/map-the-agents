@@ -24,4 +24,4 @@ Repository map entry: [openinterpreter/openinterpreter](../../repos/openinterpre
 
 (published index `description`, not a verified repo-code finding)
 Cheap and open-weight models underperform in agent harnesses tuned for frontier models, and the gap is often the harness rather than the model. Open Interpreter, a Rust rewrite of OpenAI's Codex with
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

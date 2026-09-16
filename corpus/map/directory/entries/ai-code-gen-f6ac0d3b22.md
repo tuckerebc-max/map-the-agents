@@ -24,4 +24,4 @@ Repository map entry: [farelart/ai-code-gen](../../repos/farelart/ai-code-gen.md
 
 (backing feed `description`, not a verified repo-code finding)
 The README states the ambition — an AI agent that generates Python unit tests — but the repository contains no code, no license, and no releases beyond that file. With a single commit and no community
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

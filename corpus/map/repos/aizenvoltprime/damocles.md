@@ -1,9 +1,9 @@
 # aizenvoltprime/damocles
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b8787a5e9b69 @ 87e325b5b99a6e04
+Latest snapshot: commit b8787a5e9b69 @ ee65c6452e13b09e
 
 ## Summary (orientation draft, not independently verified)
 

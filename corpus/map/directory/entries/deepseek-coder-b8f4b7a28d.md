@@ -24,4 +24,4 @@ Repository map entry: [deepseek-ai/deepseek-coder](../../repos/deepseek-ai/deeps
 
 (backing feed `description`, not a verified repo-code finding)
 DeepSeek Coder is a series of open-weight code language models from 1.3B to 33B parameters, trained from scratch on two trillion tokens dominated by source code in roughly 90 programming languages plu
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

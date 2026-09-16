@@ -24,4 +24,4 @@ Repository map entry: [tmux/tmux](../../repos/tmux/tmux.md) (source: backing, fi
 
 (backing feed `description`, not a verified repo-code finding)
 tmux is a terminal multiplexer in the classic sense: it lets one screen create, access, and control many terminal sessions, with sessions detaching and continuing to run on a background server so work
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [ivan-magda/swift-coding-agent](../repos/ivan-magda/swift-coding-agent.md) [coverage: partial]
-- [ivanwng97/pixtuoid](../repos/ivanwng97/pixtuoid.md) [coverage: partial]
-- [ivy-interactive/ivy-tendril](../repos/ivy-interactive/ivy-tendril.md) [coverage: partial]
 - [iwangjian/coding-tutor](../repos/iwangjian/coding-tutor.md) [coverage: complete]
 - [jacopone/antigravity-nix](../repos/jacopone/antigravity-nix.md) [coverage: complete]
 - [jalalx/httpclientcodegenerator](../repos/jalalx/httpclientcodegenerator.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [thefalc/multi-agent-ai-sdr-flink-orchestrator](../repos/thefalc/multi-agent-ai-sdr-flink-orchestrator.md) [coverage: complete]
 - [thelinkapi/vibe-coding](../repos/thelinkapi/vibe-coding.md) [coverage: complete]
 - [theneo-inc/cartlis](../repos/theneo-inc/cartlis.md) [coverage: complete]
+- [thesylvester/crispy](../repos/thesylvester/crispy.md) [coverage: complete]
+- [thixpin/agentic-coding-basic](../repos/thixpin/agentic-coding-basic.md) [coverage: complete]
+- [thudm/scenegenagent](../repos/thudm/scenegenagent.md) [coverage: complete]

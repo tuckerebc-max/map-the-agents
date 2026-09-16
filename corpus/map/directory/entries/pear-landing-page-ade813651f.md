@@ -24,4 +24,4 @@ Repository map entry: [trypear/pear-landing-page](../../repos/trypear/pear-landi
 
 (backing feed `description`, not a verified repo-code finding)
 pear-landing-page is the repository behind trypear.ai, the marketing site for the PearAI code editor, and contains no editor or agent code itself. The stack is conventional — Next.js, TypeScript, Tail
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

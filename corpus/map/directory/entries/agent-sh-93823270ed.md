@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: guanyilun
@@ -22,8 +22,6 @@ Repository map entry: [guanyilun/agent-sh](../../repos/guanyilun/agent-sh.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Composable agent runtime pairing any frontend (shell, TUI, GUI) with any agent backend over one shared extension layer. A pure kernel (typed event bus + handler registry + extension loader) sits at the center, knowing nothing about terminals, LLMs, shells, or rendering. The bundled frontend is a shell where typing \> invokes an agent that already sees your cwd, last ...
-
-(captured site page body (agents/agent-sh.md), not a verified repo-code finding)
-Most terminal AI tools weld one frontend to one backend, so switching providers means switching tools; agent-sh instead separates the shell from the agent entirely. Its kernel is a typed event bus with a handler registry and extension loader that knows nothing about terminals, LLMs, or rendering, and the default frontend is a working bash/zsh/fish shell where a \> prompt prefix hands the conversation to an agent that sees your current directory, last command, and its output. Built-in bridges let the same setup drive pi, claude-code, or opencode backends, and extensions add tools, slash commands, and themes over the event bus. It is MIT-licensed, installable via npm, and aimed at terminal-first developers who want their agent choice decoupled from their shell.
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json); [site page @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/agents/agent-sh.md)
+(published index `description`, not a verified repo-code finding)
+Most terminal AI tools weld one frontend to one backend, so switching providers means switching tools; agent-sh instead separates the shell from the agent entirely. Its kernel is a typed event bus wit
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

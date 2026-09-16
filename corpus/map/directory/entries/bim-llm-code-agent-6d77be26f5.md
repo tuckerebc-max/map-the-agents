@@ -24,4 +24,4 @@ Repository map entry: [mac999/bim_llm_code_agent](../../repos/mac999/bim_llm_cod
 
 (published index `description`, not a verified repo-code finding)
 BIM (Building Information Modeling) files in the IFC format are large, semantically dense structures that general-purpose coding tools handle poorly, so this research agent targets the AEC industry sp
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

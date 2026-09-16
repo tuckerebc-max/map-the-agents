@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [thesylvester/crispy](../repos/thesylvester/crispy.md) [coverage: complete]
-- [thixpin/agentic-coding-basic](../repos/thixpin/agentic-coding-basic.md) [coverage: complete]
-- [thudm/scenegenagent](../repos/thudm/scenegenagent.md) [coverage: complete]
 - [thudm/swe-dev](../repos/thudm/swe-dev.md) [coverage: complete]
 - [tiann/hapi](../repos/tiann/hapi.md) [coverage: partial]
 - [timvw/tmux-assistant-resurrect](../repos/timvw/tmux-assistant-resurrect.md) [coverage: partial]
@@ -127,13 +124,16 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 ## pending (0)
 
 
-## stale (5)
+## stale (8)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
 - [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
 - [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
 - [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
+- [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
+- [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
+- [akashgit/remote-factory](../repos/akashgit/remote-factory.md) [coverage: partial]
 
 ## refresh-failed (62)
 

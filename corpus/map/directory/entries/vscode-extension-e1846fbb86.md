@@ -24,4 +24,4 @@ Repository map entry: [flexpilot-ai/vscode-extension](../../repos/flexpilot-ai/v
 
 (published index `description`, not a verified repo-code finding)
 Flexpilot exists for developers who want Copilot-style assistance inside VS Code without depending on GitHub's service or paying a subscription; it ships as a native extension rather than a webview ov
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

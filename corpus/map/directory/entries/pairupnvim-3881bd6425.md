@@ -24,4 +24,4 @@ Repository map entry: [piotr1215/pairup.nvim](../../repos/piotr1215/pairup.nvim.
 
 (backing feed `description`, not a verified repo-code finding)
 Chat-panel AI plugins force a copy-paste loop between conversation and buffer, and the file under edit never contains the instruction that motivated the change. pairup.nvim embeds the instructions in
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

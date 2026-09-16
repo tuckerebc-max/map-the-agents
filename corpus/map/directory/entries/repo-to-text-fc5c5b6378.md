@@ -24,4 +24,4 @@ Repository map entry: [kirill-markin/repo-to-text](../../repos/kirill-markin/rep
 
 (backing feed `description`, not a verified repo-code finding)
 Repo-To-Text exists because pasting a codebase into a chat window loses the structure models need: it walks the repository, emits the directory tree plus file contents wrapped in XML tags, and copies
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

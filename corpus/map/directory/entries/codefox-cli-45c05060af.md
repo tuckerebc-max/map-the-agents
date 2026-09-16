@@ -24,4 +24,4 @@ Repository map entry: [codefox-lab/codefox-cli](../../repos/codefox-lab/codefox-
 
 (backing feed `description`, not a verified repo-code finding)
 CodeFox-CLI is built for review workflows in the terminal and CI rather than in-editor assistance. For each change it collects the git diff, retrieves related codebase context using fastembed embeddin
-Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)

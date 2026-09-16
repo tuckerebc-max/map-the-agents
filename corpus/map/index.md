@@ -5,7 +5,7 @@ Known-dossier source depth (distinct from freshness -- a current commit is not c
 
 Status counts: distilled=990, blocked=62
 
-Freshness counts: current=985, stale=5, refresh-failed=62
+Freshness counts: current=982, stale=8, refresh-failed=62
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -123,6 +123,9 @@ Full index: [freshness/index.md](freshness/index.md).
 - [aider-ai/aider](repos/aider-ai/aider.md): stale (stale)
 - [airtai/fastagency](repos/airtai/fastagency.md): refresh-failed (FetchFailed)
 - [aizen-stack/aizen](repos/aizen-stack/aizen.md): refresh-failed (FetchFailed)
+- [aizenvoltprime/damocles](repos/aizenvoltprime/damocles.md): stale (stale)
+- [akarachen/2code](repos/akarachen/2code.md): stale (stale)
+- [akashgit/remote-factory](repos/akashgit/remote-factory.md): stale (stale)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
 - [aydinfer/ai-agents-tool-dev](repos/aydinfer/ai-agents-tool-dev.md): refresh-failed (FetchFailed)
 - [bawadou/ai-data-extractor](repos/bawadou/ai-data-extractor.md): refresh-failed (FetchFailed)
@@ -132,12 +135,9 @@ Full index: [freshness/index.md](freshness/index.md).
 - [bonk1t/agentic-platform](repos/bonk1t/agentic-platform.md): refresh-failed (FetchFailed)
 - [catpaw-ai/catpaw](repos/catpaw-ai/catpaw.md): refresh-failed (FetchFailed)
 - [chernistry/bernstein](repos/chernistry/bernstein.md): refresh-failed (FetchFailed)
-- [codebuffai/codebuff](repos/codebuffai/codebuff.md): refresh-failed (FetchFailed)
-- [coder/mux](repos/coder/mux.md): refresh-failed (FetchFailed)
-- [codium-ai/pr-agent](repos/codium-ai/pr-agent.md): refresh-failed (FetchFailed)
-- ... 47 more; see freshness/index.md
+- ... 50 more; see freshness/index.md
 
 ## Directory
 
 Full index: [directory/index.md](directory/index.md).
-Catalog-evidence entries (no-repo included): 1359 (published=830, backing=1347, pages=50).
+Catalog-evidence entries (no-repo included): 1359 (published=830, backing=1347, pages=25).

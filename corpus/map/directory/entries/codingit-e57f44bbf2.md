@@ -24,4 +24,4 @@ Repository map entry: [gerome-elassaad/codingit](../../repos/gerome-elassaad/cod
 
 (published index `description`, not a verified repo-code finding)
 Hosted prompt-to-app products keep their generation and execution machinery behind a hosted product, leaving developers who want to study or self-host the pattern without a reference implementation. C
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
