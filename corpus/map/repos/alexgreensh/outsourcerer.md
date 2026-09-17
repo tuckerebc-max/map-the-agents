@@ -1,9 +1,9 @@
 # alexgreensh/outsourcerer
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0ad71828e118 @ bb346553aa25c2f8
+Latest snapshot: commit 2bd4f0f40510 @ 23dc350d867c986b
 
 ## Summary (orientation draft, not independently verified)
 

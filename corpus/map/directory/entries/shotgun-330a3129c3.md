@@ -24,4 +24,4 @@ Repository map entry: [shotgun-sh/shotgun](../../repos/shotgun-sh/shotgun.md) (s
 
 (backing feed `description`, not a verified repo-code finding)
 Large features derail coding agents because context arrives piecemeal; Shotgun front-loads the work by reading the entire repository, researching before specifying, and producing a full plan split int
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

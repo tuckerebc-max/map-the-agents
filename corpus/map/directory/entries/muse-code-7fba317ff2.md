@@ -18,10 +18,10 @@ Directory membership: backing-only.
   - hooks: unknown (unknown)
   - plan_mode: unknown (unknown)
 
-Repository map entry: [meta-ai/muse-code](../../repos/meta-ai/muse-code.md) (source: backing, field: `url`).
+No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
 ## Description
 
 (backing feed `description`, not a verified repo-code finding)
 This census entry cannot be verified against any primary source. The cited URL, github.com/meta-ai/muse-code, returns 404, and the meta-ai GitHub organization does not list a repository by that name;
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

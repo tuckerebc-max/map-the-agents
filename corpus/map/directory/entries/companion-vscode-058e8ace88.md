@@ -24,4 +24,4 @@ Repository map entry: [quack-ai/companion-vscode](../../repos/quack-ai/companion
 
 (backing feed `description`, not a verified repo-code finding)
 Quack Companion extended VS Code with developer chat backed by open-weight models (Mistral, Gemma) served locally through Ollama, positioning itself as an open-source alternative to GitHub Copilot bui
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

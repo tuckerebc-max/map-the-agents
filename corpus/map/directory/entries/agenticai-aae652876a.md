@@ -18,7 +18,7 @@ Directory membership: published+backing.
   - hooks: unknown (unknown)
   - plan_mode: unknown (unknown)
 
-Repository map entry: [yasinonline/agenticai](../../repos/yasinonline/agenticai.md) (source: backing, field: `source_code_url`).
+No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
 Discrepancy between directory sources (not overwritten):
 
@@ -28,4 +28,4 @@ Discrepancy between directory sources (not overwritten):
 
 (published index `description`, not a verified repo-code finding)
 The project set out to integrate reinforcement learning, natural language processing, and multi-agent coordination into a single framework for autonomous decision-making. The repository has been delet
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

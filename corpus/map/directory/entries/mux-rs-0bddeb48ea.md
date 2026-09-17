@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Mux is an agentic infrastructure library for Rust, not a coding agent. It provides the building blocks — tool execution with structured input and output, MCP client integration to pull in external too
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)

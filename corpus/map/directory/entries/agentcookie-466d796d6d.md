@@ -24,4 +24,4 @@ Repository map entry: [mvanhorn/agentcookie](../../repos/mvanhorn/agentcookie.md
 
 (backing feed `description`, not a verified repo-code finding)
 Coding agents that drive a browser hit a login wall the moment they run on a machine where the human never signed in, and headless re-authentication defeats bot defenses. agentcookie keeps a Linux box
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

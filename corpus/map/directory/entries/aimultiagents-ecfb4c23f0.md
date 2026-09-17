@@ -24,4 +24,4 @@ Repository map entry: [hesamjafarian/aimultiagents](../../repos/hesamjafarian/ai
 
 (backing feed `description`, not a verified repo-code finding)
 The repository implements Project 2 of Berkeley's CS188 AI course: adversarial search agents evaluated by the course autograder inside the Pacman maze simulation, with files like multiAgents.py, ghost
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

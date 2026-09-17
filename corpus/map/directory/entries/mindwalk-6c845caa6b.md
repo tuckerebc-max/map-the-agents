@@ -24,4 +24,4 @@ Repository map entry: [cosmtrek/mindwalk](../../repos/cosmtrek/mindwalk.md) (sou
 
 (backing feed `description`, not a verified repo-code finding)
 mindwalk addresses the opacity of agent runs: after an agent spends an hour and a budget, the session log is the only record, and it is effectively unreadable. The tool builds a deterministic 3D map o
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

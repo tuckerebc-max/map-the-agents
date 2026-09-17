@@ -24,4 +24,4 @@ Repository map entry: [fw-ai/fireconnect](../../repos/fw-ai/fireconnect.md) (sou
 
 (backing feed `description`, not a verified repo-code finding)
 Fireworks AI built FireConnect to remove the integration tax of pointing coding harnesses at alternative model providers: one command per harness (fireconnect claude, fireconnect codex, and so on) edi
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

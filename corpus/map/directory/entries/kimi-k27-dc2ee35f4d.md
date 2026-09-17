@@ -24,4 +24,4 @@ Repository map entry: [kimi-k2-7/kimi-k2.7](../../repos/kimi-k2-7/kimi-k2.7.md) 
 
 (backing feed `description`, not a verified repo-code finding)
 The repository describes a desktop 'Swarm Workstation' that coordinates up to 300 parallel sub-agents running Moonshot's Kimi K2.7 Code model, with per-agent MCP toolsets and an Anthropic/OpenAI-compa
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

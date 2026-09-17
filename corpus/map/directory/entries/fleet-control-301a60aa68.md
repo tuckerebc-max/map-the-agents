@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Fleet Control is a control plane for AI coding agents that live in tmux panes. A background daemon polls tmux sessions, captures each pane's scrollback, and classifies its status — running, idle, or d
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)

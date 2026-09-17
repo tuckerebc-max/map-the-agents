@@ -24,4 +24,4 @@ Repository map entry: [eventstubsol/ai-dev-agent-test](../../repos/eventstubsol/
 
 (backing feed `description`, not a verified repo-code finding)
 The repository exists to demonstrate that an automated agent can create a GitHub repository, commit files through the GitHub API, and manage basic repository operations. Its entire content is a README
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

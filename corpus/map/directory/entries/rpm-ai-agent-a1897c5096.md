@@ -24,4 +24,4 @@ Repository map entry: [teldridge11/rpm-ai-agent](../../repos/teldridge11/rpm-ai-
 
 (backing feed `description`, not a verified repo-code finding)
 The repository documents a coursework- or research-scale exploration of whether structured, human-like reasoning stages can match learned models on Raven's Progressive Matrices, a standard test of abs
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

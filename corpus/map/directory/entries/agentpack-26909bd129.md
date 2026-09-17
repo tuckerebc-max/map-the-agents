@@ -24,4 +24,4 @@ Repository map entry: [vishal2612200/agentpack](../../repos/vishal2612200/agentp
 
 (backing feed `description`, not a verified repo-code finding)
 Coding agents lose time rediscovering project structure, ownership rules, and prior decisions on every task, and context injected by generic retrieval is rarely auditable. AgentPack keeps task state,
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

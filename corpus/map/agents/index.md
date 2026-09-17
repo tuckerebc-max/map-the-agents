@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1052 repositories.
+1062 repositories.
 
 [Back to map index](../index.md)
 
@@ -76,11 +76,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [akarachen/2code](../repos/akarachen/2code.md) -- status=distilled, freshness=stale
 - [akashgit/remote-factory](../repos/akashgit/remote-factory.md) -- status=distilled, freshness=stale
 - [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md) -- status=distilled, freshness=current
-- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) -- status=distilled, freshness=current
-- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) -- status=distilled, freshness=current
-- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) -- status=distilled, freshness=current
+- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) -- status=distilled, freshness=stale
+- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) -- status=distilled, freshness=stale
+- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) -- status=distilled, freshness=stale
 - [alexdevassy/ai-powered-vulnerability-impact-analyzer](../repos/alexdevassy/ai-powered-vulnerability-impact-analyzer.md) -- status=distilled, freshness=current
-- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) -- status=distilled, freshness=current
+- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) -- status=distilled, freshness=stale
 - [alexmoses/o1_agent_test](../repos/alexmoses/o1_agent_test.md) -- status=distilled, freshness=current
 - [alfianlosari/appclipcodegenerator](../repos/alfianlosari/appclipcodegenerator.md) -- status=distilled, freshness=current
 - [algonorhythm/flare](../repos/algonorhythm/flare.md) -- status=distilled, freshness=current
@@ -209,6 +209,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) -- status=distilled, freshness=current
 - [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) -- status=distilled, freshness=current
 - [clarisseio/python-agents](../repos/clarisseio/python-agents.md) -- status=distilled, freshness=current
+- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md) -- status=discovered, freshness=pending
 - [clawplays/ospec](../repos/clawplays/ospec.md) -- status=distilled, freshness=current
 - [cline/cline](../repos/cline/cline.md) -- status=distilled, freshness=current
 - [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) -- status=distilled, freshness=current
@@ -308,6 +309,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) -- status=distilled, freshness=current
 - [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) -- status=distilled, freshness=current
 - [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) -- status=distilled, freshness=current
+- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md) -- status=discovered, freshness=pending
 - [dyad-sh/dyad](../repos/dyad-sh/dyad.md) -- status=distilled, freshness=current
 - [earendil-works/pi](../repos/earendil-works/pi.md) -- status=distilled, freshness=current
 - [echovic/blade-code](../repos/echovic/blade-code.md) -- status=distilled, freshness=current
@@ -332,6 +334,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [eventstubsol/ai-dev-agent-test](../repos/eventstubsol/ai-dev-agent-test.md) -- status=distilled, freshness=current
 - [exafunction/codeium-react-code-editor](../repos/exafunction/codeium-react-code-editor.md) -- status=distilled, freshness=current
 - [exqqstar/exagent](../repos/exqqstar/exagent.md) -- status=distilled, freshness=current
+- [facebookresearch/codellama](../repos/facebookresearch/codellama.md) -- status=discovered, freshness=pending
 - [factory-ai/factory](../repos/factory-ai/factory.md) -- status=distilled, freshness=current
 - [failproofai/failproofai](../repos/failproofai/failproofai.md) -- status=distilled, freshness=current
 - [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) -- status=distilled, freshness=current
@@ -352,6 +355,3 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- status=distilled, freshness=current
 - [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) -- status=distilled, freshness=current
 - [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) -- status=distilled, freshness=current
-- [fullive-ai/anima](../repos/fullive-ai/anima.md) -- status=distilled, freshness=current
-- [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) -- status=distilled, freshness=current
-- [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) -- status=distilled, freshness=current

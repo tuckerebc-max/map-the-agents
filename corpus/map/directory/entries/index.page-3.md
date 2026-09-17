@@ -50,6 +50,7 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Java-Ai-Sbus-Test (`java-ai-sbus-test`)](java-ai-sbus-test-e5461d87cc.md) -- backing-only
 - [JCode (`jcode`)](jcode-913b41407d.md) -- published+backing
 - [JetBrains AI (`jetbrains-ai`)](jetbrains-ai-ce38a5308e.md) -- published+backing
+- [Jouzu (`jouzu`)](jouzu-236c4d5403.md) -- published-only
 - [JoyCode (`joycode`)](joycode-249fb6aee3.md) -- published+backing
 - [JoyCoder (`joycoder`)](joycoder-f8383e8fe4.md) -- published+backing
 - [jrdev (`jrdev`)](jrdev-e23511eed1.md) -- published+backing
@@ -148,6 +149,7 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Magic (`magic`)](magic-3be7a50548.md) -- backing-only
 - [Magicoder (`magicoder`)](magicoder-6161fe1826.md) -- backing-only
 - [Maige (`maige`)](maige-b578a8d1eb.md) -- published+backing
+- [maki (`maki`)](maki-90f8a03f23.md) -- published-only
 - [Mantlecore AI (`mantlecore-ai`)](mantlecore-ai-3d183e4c4c.md) -- published+backing
 - [Manus (`manus`)](manus-7cdbc9084f.md) -- published+backing
 - [MapCoder (`mapcoder`)](mapcoder-83af4be846.md) -- published+backing
@@ -206,6 +208,7 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Multiagent Debate (`multiagent-debate`)](multiagent-debate-7e2a79ff1c.md) -- backing-only
 - [Multiagentworkflow (`multiagentworkflow`)](multiagentworkflow-aec2b7fc26.md) -- backing-only
 - [multiplayer (`multiplayer`)](multiplayer-2d39f94fb9.md) -- published+backing
+- [Multistack (`multistack`)](multistack-13ef186250.md) -- published-only
 - [Munder Difflin (`munder-difflin`)](munder-difflin-1f94ed717c.md) -- published+backing
 - [Murmell (`murmell`)](murmell-094def63a8.md) -- published+backing
 - [Muse Code (`muse-code`)](muse-code-7fba317ff2.md) -- backing-only
@@ -327,6 +330,3 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Parley (`parley`)](parley-d689dfcda2.md) -- backing-only
 - [Paseo (`paseo`)](paseo-68a32dd6b2.md) -- published+backing
 - [PATAPIM (`patapim`)](patapim-291e49bc2d.md) -- published+backing
-- [Patchwork (`patchwork`)](patchwork-3af082fc9b.md) -- published+backing
-- [pear-landing-page (`pear-landing-page`)](pear-landing-page-ade813651f.md) -- backing-only
-- [PearAI (`pearai`)](pearai-66ac4f8f01.md) -- published+backing

@@ -2,6 +2,9 @@
 
 Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
+- [fullive-ai/anima](../repos/fullive-ai/anima.md) -- status=distilled, freshness=current
+- [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) -- status=distilled, freshness=current
+- [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) -- status=distilled, freshness=current
 - [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) -- status=distilled, freshness=current
 - [fw-ai/fireconnect](../repos/fw-ai/fireconnect.md) -- status=distilled, freshness=current
 - [fy0/codekanban](../repos/fy0/codekanban.md) -- status=distilled, freshness=current
@@ -241,6 +244,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [mason131928/hashagent](../repos/mason131928/hashagent.md) -- status=distilled, freshness=current
 - [mastra-ai/mastra](../repos/mastra-ai/mastra.md) -- status=distilled, freshness=current
 - [math-ai-org/mathcode](../repos/math-ai-org/mathcode.md) -- status=distilled, freshness=current
+- [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md) -- status=discovered, freshness=pending
 - [matteraiorg/orbital-extension](../repos/matteraiorg/orbital-extension.md) -- status=distilled, freshness=current
 - [matthewzmd/aidermacs](../repos/matthewzmd/aidermacs.md) -- status=distilled, freshness=current
 - [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md) -- status=distilled, freshness=current
@@ -281,6 +285,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [momozi1996/momo-code](../repos/momozi1996/momo-code.md) -- status=distilled, freshness=current
 - [monkilabs/opencastle](../repos/monkilabs/opencastle.md) -- status=distilled, freshness=current
 - [moonbitlang/moonbit-doc](../repos/moonbitlang/moonbit-doc.md) -- status=blocked, freshness=refresh-failed
+- [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md) -- status=discovered, freshness=pending
 - [moonshotai/kimi-cli](../repos/moonshotai/kimi-cli.md) -- status=distilled, freshness=current
 - [morganlinton/albatross](../repos/morganlinton/albatross.md) -- status=distilled, freshness=current
 - [mufeedvh/code2prompt](../repos/mufeedvh/code2prompt.md) -- status=distilled, freshness=current
@@ -316,6 +321,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [ntegrals/10x](../repos/ntegrals/10x.md) -- status=distilled, freshness=current
 - [nvidia-nemo/speech](../repos/nvidia-nemo/speech.md) -- status=distilled, freshness=current
 - [nvidia/nemo](../repos/nvidia/nemo.md) -- status=blocked, freshness=refresh-failed
+- [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md) -- status=discovered, freshness=pending
 - [obbylabs/obby-dev](../repos/obbylabs/obby-dev.md) -- status=distilled, freshness=current
 - [obra/coderabbit-review-helper](../repos/obra/coderabbit-review-helper.md) -- status=distilled, freshness=current
 - [obra/smallest-agent](../repos/obra/smallest-agent.md) -- status=distilled, freshness=current
@@ -346,9 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [openbmb/chatdev](../repos/openbmb/chatdev.md) -- status=distilled, freshness=current
 - [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) -- status=distilled, freshness=current
 - [openbmb/repoagent](../repos/openbmb/repoagent.md) -- status=distilled, freshness=current
-- [openchamber/openchamber](../repos/openchamber/openchamber.md) -- status=distilled, freshness=current
-- [opendev-to/opendev](../repos/opendev-to/opendev.md) -- status=distilled, freshness=current
-- [openhands/openhands](../repos/openhands/openhands.md) -- status=distilled, freshness=current
-- [openhands/tom-swe](../repos/openhands/tom-swe.md) -- status=distilled, freshness=current
-- [openinterpreter/openinterpreter](../repos/openinterpreter/openinterpreter.md) -- status=distilled, freshness=current
-- [openmainframeproject/zorow](../repos/openmainframeproject/zorow.md) -- status=distilled, freshness=current

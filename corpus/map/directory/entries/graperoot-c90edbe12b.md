@@ -24,4 +24,4 @@ Repository map entry: [kunal12203/graperoot](../../repos/kunal12203/graperoot.md
 
 (backing feed `description`, not a verified repo-code finding)
 GrapeRoot addresses the token cost of agentic exploration: rather than letting the model discover a codebase through repeated tool calls, it builds a local semantic graph of files, symbols, imports, a
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

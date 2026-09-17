@@ -24,4 +24,4 @@ Repository map entry: [datasciencemonkey/coding-agents-databricks-apps](../../re
 
 (backing feed `description`, not a verified repo-code finding)
 Enterprises want developers using coding agents, but agents running on laptops sit outside governance boundaries, and data teams need audit trails and central model billing. CoDA packages five coding
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

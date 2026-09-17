@@ -139,6 +139,7 @@
 - [mission-control](../entries/mission-control-67b7b26de9.md)
 - [mobilevc](../entries/mobilevc-864e55e510.md)
 - [multi-agent-workflow-kit](../entries/multi-agent-workflow-kit-dc46df3cf0.md)
+- [multistack](../entries/multistack-13ef186250.md)
 - [munder-difflin](../entries/munder-difflin-1f94ed717c.md)
 - [murmell](../entries/murmell-094def63a8.md)
 - [nanoclaw](../entries/nanoclaw-8028a2cf6d.md)

@@ -1,9 +1,9 @@
 # alchaincyf/fanbox
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0394dae502b7 @ 4acfa729fa3f62f3
+Latest snapshot: commit 0394dae502b7 @ edee6904c15a82b3
 
 ## Summary (orientation draft, not independently verified)
 

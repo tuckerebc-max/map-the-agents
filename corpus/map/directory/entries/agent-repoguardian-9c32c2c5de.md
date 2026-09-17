@@ -24,4 +24,4 @@ Repository map entry (renamed): original lead [flexigpt/agent-repoguardian](http
 
 (backing feed `description`, not a verified repo-code finding)
 Agent-Repoguardian was a Python agent that scanned repositories for security issues and produced vulnerability analyses, configured through environment variables and a Poetry-based setup with no docum
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

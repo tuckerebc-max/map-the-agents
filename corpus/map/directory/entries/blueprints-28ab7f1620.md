@@ -24,4 +24,4 @@ Repository map entry: [sublayerapp/blueprints](../../repos/sublayerapp/blueprint
 
 (backing feed `description`, not a verified repo-code finding)
 Blueprints emerged from the Sublayer team's observation that LLM code generation drifts from a team's idioms unless it is grounded in that team's actual code. The system is a self-hosted Rails app whe
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

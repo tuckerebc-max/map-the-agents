@@ -24,4 +24,4 @@ Repository map entry: [aniket-508/vercel-doctor](../../repos/aniket-508/vercel-d
 
 (backing feed `description`, not a verified repo-code finding)
 Vercel costs rise quietly: an uncached route, a sequentially-awaited function, or an unoptimized image shows up as invoice line items long after the code shipped. Vercel Doctor addresses that with a d
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

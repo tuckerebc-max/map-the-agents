@@ -1,11 +1,11 @@
 # Map the Agents -- Observatory index
 
-Coverage: 990 of 1052 known/total (distilled with kernel-applied, currently valid evidence).
+Coverage: 990 of 1062 known/total (distilled with kernel-applied, currently valid evidence).
 Known-dossier source depth (distinct from freshness -- a current commit is not complete source coverage): complete=454, partial=536, unknown=0 (legacy dossiers with no packet coverage recorded).
 
-Status counts: distilled=990, blocked=62
+Status counts: discovered=10, distilled=990, blocked=62
 
-Freshness counts: current=982, stale=8, refresh-failed=62
+Freshness counts: current=978, pending=10, stale=12, refresh-failed=62
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -17,12 +17,12 @@ Full index: [classes/index.md](classes/index.md) (4 class(es)).
 
 - [agent](classes/agent.md) (443 repo(s))
 - [agent-sdk](classes/agent-sdk.md) (25 repo(s))
-- [multiplexer](classes/multiplexer.md) (181 repo(s))
-- [uncategorized](classes/uncategorized.md) (403 repo(s))
+- [multiplexer](classes/multiplexer.md) (182 repo(s))
+- [uncategorized](classes/uncategorized.md) (412 repo(s))
 
 ## Agents
 
-Full index: [agents/index.md](agents/index.md) (1052 repo(s)).
+Full index: [agents/index.md](agents/index.md) (1062 repo(s)).
 
 - [0xpayne/gpt-migrate](repos/0xpayne/gpt-migrate.md) -- status=blocked, freshness=refresh-failed
 - [101dotxyz/gpteam](repos/101dotxyz/gpteam.md) -- status=distilled, freshness=current
@@ -44,7 +44,7 @@ Full index: [agents/index.md](agents/index.md) (1052 repo(s)).
 - [2389-research/packnplay](repos/2389-research/packnplay.md) -- status=distilled, freshness=current
 - [2389-research/sift](repos/2389-research/sift.md) -- status=distilled, freshness=current
 - [2389-research/simmer](repos/2389-research/simmer.md) -- status=distilled, freshness=current
-- ... 1032 more; see agents/index.md
+- ... 1042 more; see agents/index.md
 
 ## Components
 
@@ -126,18 +126,18 @@ Full index: [freshness/index.md](freshness/index.md).
 - [aizenvoltprime/damocles](repos/aizenvoltprime/damocles.md): stale (stale)
 - [akarachen/2code](repos/akarachen/2code.md): stale (stale)
 - [akashgit/remote-factory](repos/akashgit/remote-factory.md): stale (stale)
+- [alanchen4/summer-2024-swe-internships](repos/alanchen4/summer-2024-swe-internships.md): stale (stale)
+- [alchaincyf/fanbox](repos/alchaincyf/fanbox.md): stale (stale)
+- [alex-reysa/singular-lite](repos/alex-reysa/singular-lite.md): stale (stale)
+- [alexgreensh/outsourcerer](repos/alexgreensh/outsourcerer.md): stale (stale)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
 - [aydinfer/ai-agents-tool-dev](repos/aydinfer/ai-agents-tool-dev.md): refresh-failed (FetchFailed)
 - [bawadou/ai-data-extractor](repos/bawadou/ai-data-extractor.md): refresh-failed (FetchFailed)
 - [bazed-ai/bazed-af](repos/bazed-ai/bazed-af.md): refresh-failed (FetchFailed)
 - [bolt-foundry/gambit](repos/bolt-foundry/gambit.md): refresh-failed (FetchFailed)
-- [boneylizard/eloquent](repos/boneylizard/eloquent.md): refresh-failed (FetchFailed)
-- [bonk1t/agentic-platform](repos/bonk1t/agentic-platform.md): refresh-failed (FetchFailed)
-- [catpaw-ai/catpaw](repos/catpaw-ai/catpaw.md): refresh-failed (FetchFailed)
-- [chernistry/bernstein](repos/chernistry/bernstein.md): refresh-failed (FetchFailed)
-- ... 50 more; see freshness/index.md
+- ... 54 more; see freshness/index.md
 
 ## Directory
 
 Full index: [directory/index.md](directory/index.md).
-Catalog-evidence entries (no-repo included): 1359 (published=830, backing=1347, pages=25).
+Catalog-evidence entries (no-repo included): 1362 (published=833, backing=1347, pages=25).

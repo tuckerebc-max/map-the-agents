@@ -2,6 +2,9 @@
 
 Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index.page-5.md)
 
+- [Patchwork (`patchwork`)](patchwork-3af082fc9b.md) -- published+backing
+- [pear-landing-page (`pear-landing-page`)](pear-landing-page-ade813651f.md) -- backing-only
+- [PearAI (`pearai`)](pearai-66ac4f8f01.md) -- published+backing
 - [peerd (`peerd`)](peerd-c00c9e69b3.md) -- published+backing
 - [Pentestgpt (`pentestgpt`)](pentestgpt-e09f6687e7.md) -- backing-only
 - [perles (`perles`)](perles-03dcf1c483.md) -- backing-only
@@ -331,6 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing-only
 - [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing-only
 - [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing
-- [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing
-- [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing
-- [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing-only

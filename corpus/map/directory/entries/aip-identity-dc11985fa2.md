@@ -24,4 +24,4 @@ Repository map entry: [the-nexus-guard/aip](../../repos/the-nexus-guard/aip.md) 
 
 (backing feed `description`, not a verified repo-code finding)
 Multi-agent systems lack a way to prove who an agent is or whether to trust its output; AIP addresses this with three layers: cryptographic identity (Ed25519 keypairs, did:aip DIDs, challenge-response
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

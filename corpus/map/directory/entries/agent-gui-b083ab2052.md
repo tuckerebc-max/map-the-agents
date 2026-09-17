@@ -18,10 +18,10 @@ Directory membership: published+backing.
   - hooks: unknown (unknown)
   - plan_mode: unknown (unknown)
 
-No repository record: repository source unavailable in this directory capture, not an absence of capability.
+Repository map entry: [matsumo0922/agent-gui-plugin](../../repos/matsumo0922/agent-gui-plugin.md) (source: backing, field: `source_code_url`).
 
 ## Description
 
 (published index `description`, not a verified repo-code finding)
 Running Claude Code next to IntelliJ means context lives in two places: the IDE knows the project, the terminal knows the agent. Agent GUI embeds the agent as a native JetBrains tool window built with
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

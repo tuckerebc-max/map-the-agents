@@ -89,6 +89,7 @@
 - [luckeyfaraday/athena](../repos/luckeyfaraday/athena.md)
 - [madarco/agentbox](../repos/madarco/agentbox.md)
 - [manaflow-ai/cmux](../repos/manaflow-ai/cmux.md)
+- [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [minghinmatthewlam/pi-gui](../repos/minghinmatthewlam/pi-gui.md)
 - [mininglamp-oss/octo-web](../repos/mininglamp-oss/octo-web.md)
 - [missuo/herdrm](../repos/missuo/herdrm.md)

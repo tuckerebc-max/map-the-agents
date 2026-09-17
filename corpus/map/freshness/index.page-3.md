@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [thudm/swe-dev](../repos/thudm/swe-dev.md) [coverage: complete]
-- [tiann/hapi](../repos/tiann/hapi.md) [coverage: partial]
-- [timvw/tmux-assistant-resurrect](../repos/timvw/tmux-assistant-resurrect.md) [coverage: partial]
-- [timwuhaotian/the-pair](../repos/timwuhaotian/the-pair.md) [coverage: partial]
 - [tlbx-ai/tlbx](../repos/tlbx-ai/tlbx.md) [coverage: partial]
 - [tmcfarlane/oh-my-cursor](../repos/tmcfarlane/oh-my-cursor.md) [coverage: partial]
 - [tmux/tmux](../repos/tmux/tmux.md) [coverage: partial]
@@ -121,10 +117,20 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (0)
+## pending (10)
 
+- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
+- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
+- [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
+- [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
+- [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
+- [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
+- [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
+- [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
+- [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
+- [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (8)
+## stale (12)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -134,6 +140,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
 - [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
 - [akashgit/remote-factory](../repos/akashgit/remote-factory.md) [coverage: partial]
+- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
+- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
+- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
+- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]
 
 ## refresh-failed (62)
 

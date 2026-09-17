@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (backing feed `description`, not a verified repo-code finding)
 MCPlato's website was unreachable for content analysis on repeated attempts, returning empty page bodies that indicate a fully client-rendered site or a placeholder. The name suggests an MCP-related p
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

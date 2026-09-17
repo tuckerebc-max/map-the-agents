@@ -252,7 +252,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [getpaseo](getpaseo-37de8fe19c.md) (1 entrie(s))
 - [ggml.ai](ggml-ai-9f1ceff341.md) (1 entrie(s))
 - [ghuntley](ghuntley-b789244640.md) (1 entrie(s))
-- [gi-dellav](gi-dellav-aa0bbc249e.md) (1 entrie(s))
+- [gi-dellav](gi-dellav-aa0bbc249e.md) (2 entrie(s))
 - [gil-son](gil-son-aea0a66676.md) (1 entrie(s))
 - [giselles-ai](giselles-ai-4db83849e7.md) (1 entrie(s))
 - [gitbito](gitbito-ab1e065d68.md) (1 entrie(s))

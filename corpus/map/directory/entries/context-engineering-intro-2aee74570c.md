@@ -24,4 +24,4 @@ Repository map entry: [coleam00/context-engineering-intro](../../repos/coleam00/
 
 (backing feed `description`, not a verified repo-code finding)
 Agents fail most often not from weak models but from missing context, and prompt tweaks do not fix structural gaps. This repository packages a context-engineering workflow as a cloneable template: a d
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

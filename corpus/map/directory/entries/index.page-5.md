@@ -2,6 +2,9 @@
 
 Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 
+- [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing
+- [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing
+- [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing-only
 - [WiseGPT (`wisegpt`)](wisegpt-923a19d36f.md) -- published+backing
 - [Wolfpack (`wolfpack`)](wolfpack-2751b66fd5.md) -- published+backing
 - [Wordpressify (`wordpressify`)](wordpressify-c98ba5f280.md) -- backing-only

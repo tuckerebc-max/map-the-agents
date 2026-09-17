@@ -24,4 +24,4 @@ Repository map entry: [sr5434/codegebragpt](../../repos/sr5434/codegebragpt.md) 
 
 (backing feed `description`, not a verified repo-code finding)
 CodegebraGPT is a student-scale fine-tuning project aiming to adapt the SOLAR-10.7B-Instruct model to STEM reasoning. The plan combined roughly 100,000 samples from MetaMath, Camel-AI science datasets
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

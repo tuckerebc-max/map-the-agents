@@ -24,4 +24,4 @@ Repository map entry: [kenn-io/agentsview](../../repos/kenn-io/agentsview.md) (s
 
 (backing feed `description`, not a verified repo-code finding)
 Session logs from coding agents pile up in vendor-specific formats, making cost tracking and history search a per-tool chore. AgentsView discovers sessions from a long list of agents (Claude Code, Cod
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

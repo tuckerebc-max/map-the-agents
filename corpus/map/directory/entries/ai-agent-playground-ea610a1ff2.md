@@ -24,4 +24,4 @@ Repository map entry: [wei1024/ai-agent-playground](../../repos/wei1024/ai-agent
 
 (backing feed `description`, not a verified repo-code finding)
 The repository serves as its author's test bed for building AI agents aimed at office workers. The implemented stack is deliberately small: an AutoGen agent that follows a ReAct thought process, a Tav
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [matthewzmd/aidermacs](../../repos/matthewzmd/aidermacs.md
 
 (backing feed `description`, not a verified repo-code finding)
 The package is a community-driven fork of aider.el that rebuilt the integration to be Emacs-native: Magit-style transient menus, comint or vterm backends, Tramp support for remote files, and file watc
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

@@ -18,10 +18,10 @@ Directory membership: backing-only.
   - hooks: unknown (unknown)
   - plan_mode: unknown (unknown)
 
-Repository map entry: [meta-ai/codellama](../../repos/meta-ai/codellama.md) (source: backing, field: `source_code_url`).
+Repository map entry: [facebookresearch/codellama](../../repos/facebookresearch/codellama.md) (source: backing, field: `source_code_url`).
 
 ## Description
 
 (backing feed `description`, not a verified repo-code finding)
 Code Llama was Meta's family of code-specialized large language models built on Llama 2, released in sizes from 7B to 70B in three variants: foundation, Python-specialized, and instruction-following.
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

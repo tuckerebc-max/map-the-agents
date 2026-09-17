@@ -24,4 +24,4 @@ Repository map entry: [codeany-ai/codeany](../../repos/codeany-ai/codeany.md) (s
 
 (published index `description`, not a verified repo-code finding)
 Codeany is a terminal coding agent built in Go on the Open Agent SDK with a Bubble Tea interface, covering codebase explanation, test execution, commits, review, and bug investigation through an agent
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

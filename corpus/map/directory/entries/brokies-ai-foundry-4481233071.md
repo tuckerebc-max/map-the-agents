@@ -24,4 +24,4 @@ Repository map entry: [caplet1989/brokies-ai-foundry](../../repos/caplet1989/bro
 
 (backing feed `description`, not a verified repo-code finding)
 Brokies-AI-Foundry presents itself as a free, local-first toolkit of modular AI utilities and prompt templates for students and solo developers priced out of enterprise subscriptions. The README brand
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

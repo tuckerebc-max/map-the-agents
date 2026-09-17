@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (backing feed `description`, not a verified repo-code finding)
 Canva's AI coding features center on Canva Code, a prompt-driven generator that produces interactive widgets and small applications — calculators, quizzes, games, simple sites — as HTML, CSS, and Java
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

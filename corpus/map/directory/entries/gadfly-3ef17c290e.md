@@ -24,4 +24,4 @@ Repository map entry: [touchpoint-labs/gadfly](../../repos/touchpoint-labs/gadfl
 
 (backing feed `description`, not a verified repo-code finding)
 Coding agents drift from their specifications and commit subtle bugs mid-task, and post-hoc review catches these too late. Gadfly intercepts Claude Code's PreToolUse hook so each action is judged befo
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

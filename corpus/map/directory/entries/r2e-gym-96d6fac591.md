@@ -24,4 +24,4 @@ Repository map entry: [r2e-gym/r2e-gym](../../repos/r2e-gym/r2e-gym.md) (source:
 
 (backing feed `description`, not a verified repo-code finding)
 R2E-Gym attacks the data bottleneck in training software-engineering agents: curated benchmarks like SWE-bench depend on human-written PRs and tests, which cap scale. Its SWE-GEN recipe instead synthe
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

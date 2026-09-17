@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Dippin is a DSL and toolchain for authoring AI pipeline workflows, intended to replace hand-edited Graphviz DOT as the format people actually write and review. Its first-class syntax covers prompts, s
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)

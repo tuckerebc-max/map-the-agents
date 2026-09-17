@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (982)
+## current (978)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -67,11 +67,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) [coverage: complete]
 - [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md) [coverage: complete]
 - [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md) [coverage: complete]
-- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
-- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
-- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
 - [alexdevassy/ai-powered-vulnerability-impact-analyzer](../repos/alexdevassy/ai-powered-vulnerability-impact-analyzer.md) [coverage: complete]
-- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]
 - [alexmoses/o1_agent_test](../repos/alexmoses/o1_agent_test.md) [coverage: complete]
 - [alfianlosari/appclipcodegenerator](../repos/alfianlosari/appclipcodegenerator.md) [coverage: complete]
 - [algonorhythm/flare](../repos/algonorhythm/flare.md) [coverage: complete]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ivan-magda/swift-coding-agent](../repos/ivan-magda/swift-coding-agent.md) [coverage: partial]
 - [ivanwng97/pixtuoid](../repos/ivanwng97/pixtuoid.md) [coverage: partial]
 - [ivy-interactive/ivy-tendril](../repos/ivy-interactive/ivy-tendril.md) [coverage: partial]
+- [iwangjian/coding-tutor](../repos/iwangjian/coding-tutor.md) [coverage: complete]
+- [jacopone/antigravity-nix](../repos/jacopone/antigravity-nix.md) [coverage: complete]
+- [jalalx/httpclientcodegenerator](../repos/jalalx/httpclientcodegenerator.md) [coverage: complete]
+- [jawerty/autostartup](../repos/jawerty/autostartup.md) [coverage: complete]

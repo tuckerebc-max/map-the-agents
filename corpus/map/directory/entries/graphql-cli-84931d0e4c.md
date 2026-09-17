@@ -24,4 +24,4 @@ Repository map entry: [urigo/graphql-cli](../../repos/urigo/graphql-cli.md) (sou
 
 (backing feed `description`, not a verified repo-code finding)
 graphql-cli is a command-line toolkit from The Guild covering routine GraphQL development workflows: project scaffolding, code generation, schema diffing, coverage analysis, validation, and a local mo
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

@@ -1,9 +1,9 @@
 # alanchen4/summer-2024-swe-internships
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 4dd027d006b3 @ 704f0eefec057c35
+Latest snapshot: commit 4dd027d006b3 @ 543e58acb9ce6695
 
 ## Summary (orientation draft, not independently verified)
 

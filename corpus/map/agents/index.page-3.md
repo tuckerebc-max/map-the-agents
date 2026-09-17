@@ -2,6 +2,12 @@
 
 Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [openchamber/openchamber](../repos/openchamber/openchamber.md) -- status=distilled, freshness=current
+- [opendev-to/opendev](../repos/opendev-to/opendev.md) -- status=distilled, freshness=current
+- [openhands/openhands](../repos/openhands/openhands.md) -- status=distilled, freshness=current
+- [openhands/tom-swe](../repos/openhands/tom-swe.md) -- status=distilled, freshness=current
+- [openinterpreter/openinterpreter](../repos/openinterpreter/openinterpreter.md) -- status=distilled, freshness=current
+- [openmainframeproject/zorow](../repos/openmainframeproject/zorow.md) -- status=distilled, freshness=current
 - [opensource03/harnss](../repos/opensource03/harnss.md) -- status=distilled, freshness=current
 - [oracle-devrel/oracle-ai-developer-hub](../repos/oracle-devrel/oracle-ai-developer-hub.md) -- status=distilled, freshness=current
 - [orionstarai/easycode](../repos/orionstarai/easycode.md) -- status=distilled, freshness=current
@@ -164,6 +170,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [stablyai/orca](../repos/stablyai/orca.md) -- status=distilled, freshness=current
 - [stacklok/brood-box](../repos/stacklok/brood-box.md) -- status=distilled, freshness=current
 - [stagewise-io/stagewise](../repos/stagewise-io/stagewise.md) -- status=distilled, freshness=current
+- [staks-sor/ai-free](../repos/staks-sor/ai-free.md) -- status=discovered, freshness=pending
 - [standardagents/dmux](../repos/standardagents/dmux.md) -- status=distilled, freshness=current
 - [startuphakk/openmonoagent.ai](../repos/startuphakk/openmonoagent.ai.md) -- status=distilled, freshness=current
 - [steamship-core/python-client](../repos/steamship-core/python-client.md) -- status=distilled, freshness=current
@@ -214,6 +221,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [tastyeffectco/sandboxd](../repos/tastyeffectco/sandboxd.md) -- status=distilled, freshness=current
 - [team-openpm/workgpt](../repos/team-openpm/workgpt.md) -- status=distilled, freshness=current
 - [tegridydev/multi-agent-secops-llm](../repos/tegridydev/multi-agent-secops-llm.md) -- status=distilled, freshness=current
+- [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md) -- status=discovered, freshness=pending
 - [teldridge11/rpm-ai-agent](../repos/teldridge11/rpm-ai-agent.md) -- status=distilled, freshness=current
 - [tempont/small-opencode-orchestrator](../repos/tempont/small-opencode-orchestrator.md) -- status=distilled, freshness=current
 - [tencentqqgylab/appagent](../repos/tencentqqgylab/appagent.md) -- status=distilled, freshness=current
@@ -309,9 +317,11 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [workstream-labs/workstreams](../repos/workstream-labs/workstreams.md) -- status=distilled, freshness=current
 - [wrongstack/wrongstack](../repos/wrongstack/wrongstack.md) -- status=distilled, freshness=current
 - [wrtnlabs/autobe](../repos/wrtnlabs/autobe.md) -- status=distilled, freshness=current
+- [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md) -- status=discovered, freshness=pending
 - [xai-org/grok-build](../repos/xai-org/grok-build.md) -- status=distilled, freshness=current
 - [xcodinglab/xcoding](../repos/xcodinglab/xcoding.md) -- status=distilled, freshness=current
 - [xeol-io/bumpgen](../repos/xeol-io/bumpgen.md) -- status=distilled, freshness=current
+- [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md) -- status=discovered, freshness=pending
 - [xiaomimimo/mimo-code](../repos/xiaomimimo/mimo-code.md) -- status=distilled, freshness=current
 - [xichan96/dinotty](../repos/xichan96/dinotty.md) -- status=distilled, freshness=current
 - [xingyaoww/code-act](../repos/xingyaoww/code-act.md) -- status=distilled, freshness=current
@@ -342,13 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) -- status=distilled, freshness=current
 - [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) -- status=distilled, freshness=current
 - [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) -- status=distilled, freshness=current
-- [zellij-org/zellij](../repos/zellij-org/zellij.md) -- status=distilled, freshness=current
-- [zencoderai/coding-the-coding-agents](../repos/zencoderai/coding-the-coding-agents.md) -- status=distilled, freshness=current
-- [zentar-ai/zentara-code](../repos/zentar-ai/zentara-code.md) -- status=distilled, freshness=current
-- [zhanghandong/harness-engineering-from-cc-to-ai-coding](../repos/zhanghandong/harness-engineering-from-cc-to-ai-coding.md) -- status=distilled, freshness=current
-- [zhangliang605/carrycode](../repos/zhangliang605/carrycode.md) -- status=distilled, freshness=current
-- [zhijiewong/openharness](../repos/zhijiewong/openharness.md) -- status=distilled, freshness=current
-- [zhikunqingtao/zhikuncode](../repos/zhikunqingtao/zhikuncode.md) -- status=distilled, freshness=current
-- [zhinjs/zhin](../repos/zhinjs/zhin.md) -- status=distilled, freshness=current
-- [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md) -- status=distilled, freshness=current
-- [zhnt/loushang](../repos/zhnt/loushang.md) -- status=distilled, freshness=current

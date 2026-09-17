@@ -18,10 +18,10 @@ Directory membership: backing-only.
   - hooks: unknown (unknown)
   - plan_mode: unknown (unknown)
 
-Repository map entry: [moonbitlang/moonbit-doc](../../repos/moonbitlang/moonbit-doc.md) (source: backing, field: `source_code_url`).
+Repository map entry: [moonbitlang/moonbit-docs](../../repos/moonbitlang/moonbit-docs.md) (source: backing, field: `source_code_url`).
 
 ## Description
 
 (backing feed `description`, not a verified repo-code finding)
 The MoonBit project is a general-purpose programming language backed by its own compiler, runtime, IDE, and package manager, developed by the IDEA research institute and marketed as AI-native for its
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

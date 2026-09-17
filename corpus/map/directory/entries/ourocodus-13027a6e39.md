@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Ourocodus is an orchestrator and relay that runs several coding agents concurrently on one codebase and coordinates them, rather than being an agent itself. It speaks the Agent Client Protocol (ACP),
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)

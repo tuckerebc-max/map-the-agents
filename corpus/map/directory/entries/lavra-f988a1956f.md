@@ -24,4 +24,4 @@ Repository map entry: [roberto-mello/lavra](../../repos/roberto-mello/lavra.md) 
 
 (backing feed `description`, not a verified repo-code finding)
 Compound engineering — where every unit of work passes through design, implementation, review, and ship stages with research in between — is hard to sustain manually across agent sessions. Lavra insta
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

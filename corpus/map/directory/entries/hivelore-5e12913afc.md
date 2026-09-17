@@ -24,4 +24,4 @@ Repository map entry: [doucs91/hivelore](../../repos/doucs91/hivelore.md) (sourc
 
 (backing feed `description`, not a verified repo-code finding)
 hivelore addresses a recurring failure of coding agents: they lack access to the team's accumulated knowledge and therefore repeat mistakes that have already been diagnosed. It maintains markdown memo
-Sources: [backing feed @ 8664d24144c7](https://github.com/prime-radiant-inc/alltheagents.org/blob/8664d24144c79ac7400a6799c00f070897d856a6/_data/agents.json)
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)

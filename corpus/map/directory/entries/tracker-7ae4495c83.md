@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Tracker is a pipeline orchestration engine for multi-agent LLM workflows rather than a coding agent itself. Pipelines are authored in the Dippin DSL as .dip files — node graphs of agent, tool, human,
-Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)

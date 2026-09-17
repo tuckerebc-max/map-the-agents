@@ -1,9 +1,9 @@
 # alex-reysa/singular-lite
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0f92cba1fb1f @ 812d525520c3a671
+Latest snapshot: commit 7ef2c5299fa7 @ 3d6eae7a7b09983d
 
 ## Summary (orientation draft, not independently verified)
 
