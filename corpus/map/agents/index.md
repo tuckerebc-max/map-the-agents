@@ -84,7 +84,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [alexmoses/o1_agent_test](../repos/alexmoses/o1_agent_test.md) -- status=distilled, freshness=current
 - [alfianlosari/appclipcodegenerator](../repos/alfianlosari/appclipcodegenerator.md) -- status=distilled, freshness=current
 - [algonorhythm/flare](../repos/algonorhythm/flare.md) -- status=distilled, freshness=current
-- [alibaba/open-code-review](../repos/alibaba/open-code-review.md) -- status=distilled, freshness=current
+- [alibaba/open-code-review](../repos/alibaba/open-code-review.md) -- status=distilled, freshness=stale
 - [alicheg/gpt-coder](../repos/alicheg/gpt-coder.md) -- status=distilled, freshness=current
 - [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) -- status=distilled, freshness=current
 - [allenai/marg-reviewer](../repos/allenai/marg-reviewer.md) -- status=distilled, freshness=current

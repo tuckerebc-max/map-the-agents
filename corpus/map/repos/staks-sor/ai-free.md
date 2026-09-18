@@ -1,8 +1,8 @@
 # staks-sor/ai-free
 
 Status: discovered - Freshness: pending
-Catalog classes: none recorded
-Origins: directory-resolve - Projects: directory-intake
+Catalog classes: agent
+Origins: directory-resolve, alltheagents.org-backing - Projects: directory-intake
 
 ## Evidence
 

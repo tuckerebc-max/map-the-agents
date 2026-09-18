@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: 777genius
@@ -22,6 +22,8 @@ Repository map entry: [777genius/agent-teams-ai](../../repos/777genius/agent-tea
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Agent Teams AI is an Electron desktop app where a developer composes a team of AI agents with roles, puts their tasks on a Kanban board, and lets them work in parallel while communicating with each ot
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Cross-platform desktop control plane that mixes Claude Code, Codex, OpenCode, Cursor, Grok, GitHub Copilot, and other agents in the same team with a visual Kanban board, agent-to-agent communication, organizations hierarchy, built-in code review, and token analytics with budget caps. Includes a free model requiring no authentication.
+
+(captured site page body (agents/agent-teams-ai.md), not a verified repo-code finding)
+Agent Teams AI is an Electron desktop app where a developer composes a team of AI agents with roles, puts their tasks on a Kanban board, and lets them work in parallel while communicating with each other, creating tasks, and reviewing each other's output. Humans review diffs with accept/reject/comment, set token and cost budgets, and watch analytics, while organizations layer teams with cross-team messaging. It supports Claude Code, Codex, OpenCode, Cursor, Grok, Copilot, and 200+ models across 75+ providers — including a free model requiring no authentication — with git worktree isolation, a built-in terminal and editor, and 29 UI languages. Teams wanting structured multi-agent collaboration with cost controls are the users.
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agent-teams-ai.md)

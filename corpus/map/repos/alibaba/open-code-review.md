@@ -1,9 +1,9 @@
 # alibaba/open-code-review
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 494bf1c8d7a1 @ 5996e384ce40ea12
+Latest snapshot: commit e55c19fdd6fb @ f94b346c1c86527e
 
 ## Summary (orientation draft, not independently verified)
 

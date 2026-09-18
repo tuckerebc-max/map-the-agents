@@ -15,6 +15,7 @@
 - [agent-blackbox](../entries/agent-blackbox-28fd7eaee1.md)
 - [agent-md](../entries/agent-md-4daf77d1d9.md)
 - [agent-repoguardian](../entries/agent-repoguardian-9c32c2c5de.md)
+- [agent-sandbox](../entries/agent-sandbox-2551521c5c.md)
 - [agentbridge](../entries/agentbridge-ef2c8934eb.md)
 - [agentcookie](../entries/agentcookie-466d796d6d.md)
 - [agentic-ai](../entries/agentic-ai-e424a7d45c.md)

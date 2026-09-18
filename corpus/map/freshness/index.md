@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (978)
+## current (977)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -71,7 +71,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [alexmoses/o1_agent_test](../repos/alexmoses/o1_agent_test.md) [coverage: complete]
 - [alfianlosari/appclipcodegenerator](../repos/alfianlosari/appclipcodegenerator.md) [coverage: complete]
 - [algonorhythm/flare](../repos/algonorhythm/flare.md) [coverage: complete]
-- [alibaba/open-code-review](../repos/alibaba/open-code-review.md) [coverage: partial]
 - [alicheg/gpt-coder](../repos/alicheg/gpt-coder.md) [coverage: complete]
 - [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
 - [allenai/marg-reviewer](../repos/allenai/marg-reviewer.md) [coverage: complete]
@@ -437,3 +436,4 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [jacopone/antigravity-nix](../repos/jacopone/antigravity-nix.md) [coverage: complete]
 - [jalalx/httpclientcodegenerator](../repos/jalalx/httpclientcodegenerator.md) [coverage: complete]
 - [jawerty/autostartup](../repos/jawerty/autostartup.md) [coverage: complete]
+- [jaycrl/mobilevc](../repos/jaycrl/mobilevc.md) [coverage: partial]

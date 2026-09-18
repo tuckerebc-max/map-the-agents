@@ -1,5 +1,5 @@
 {
-  "cursor": "alexgreensh/outsourcerer",
+  "cursor": "alicheg/gpt-coder",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -165,6 +165,31 @@
       "failures": 0,
       "last_at": "2026-09-17T14:17:09+00:00",
       "last_outcome": "snapshotted"
+    },
+    "alexmoses/o1_agent_test": {
+      "failures": 0,
+      "last_at": "2026-09-18T13:34:56+00:00",
+      "last_outcome": "reused"
+    },
+    "alfianlosari/appclipcodegenerator": {
+      "failures": 0,
+      "last_at": "2026-09-18T13:34:58+00:00",
+      "last_outcome": "reused"
+    },
+    "algonorhythm/flare": {
+      "failures": 0,
+      "last_at": "2026-09-18T13:34:59+00:00",
+      "last_outcome": "reused"
+    },
+    "alibaba/open-code-review": {
+      "failures": 0,
+      "last_at": "2026-09-18T13:35:04+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "alicheg/gpt-coder": {
+      "failures": 0,
+      "last_at": "2026-09-18T13:35:05+00:00",
+      "last_outcome": "reused"
     }
   },
   "runs": [
@@ -1002,6 +1027,167 @@
         "stages": {
           "catalog": 1.281,
           "snapshots": 13.337
+        }
+      }
+    },
+    {
+      "attempted": [
+        "alexmoses/o1_agent_test",
+        "alfianlosari/appclipcodegenerator",
+        "algonorhythm/flare",
+        "alibaba/open-code-review",
+        "alicheg/gpt-coder"
+      ],
+      "catalog": {
+        "backlog": 898,
+        "changed": true,
+        "commit": "31f43ac34715aad88b365d22cea660ea6f41b81d",
+        "processed": 50,
+        "slugs": [
+          "agentsmesh",
+          "agentsview",
+          "agentsync",
+          "agentteams",
+          "agenttrace",
+          "agon",
+          "agx",
+          "ahadiff",
+          "ai-agent-lab",
+          "ai-agent-playground",
+          "ai-agent-security",
+          "ai-agent-test",
+          "ai-agents-tool-dev",
+          "ai-builders-bootcamp-1",
+          "ai-builders-bootcamp-2",
+          "ai-code-editorsall-kinds",
+          "ai-code-gen",
+          "ai-code-review-helper",
+          "ai-coding-style-guides",
+          "ai-data-extractor",
+          "ai-dev-agent-test",
+          "ai-dev-kit",
+          "ai-dev-tasks",
+          "ai-devkit",
+          "ai-doc-gen",
+          "ai-engineer",
+          "ai-engineer-toolkit",
+          "ai-engineering-roadmap",
+          "ai-engineering-toolkit",
+          "ai-for-software-engineers",
+          "ai-free-chat-agent",
+          "ai-game-base-analysis-cli-mcp-tool",
+          "ai-gdpr",
+          "ai-orchestrator",
+          "ai-powered-chatbot-generator",
+          "ai-powered-vulnerability-impact-analyzer",
+          "ai-testing-agent",
+          "ai-vibe-coding-notes-form-threads",
+          "ai-website-builder",
+          "ai-website-cloner-template",
+          "ai4j",
+          "aider",
+          "aider-desk",
+          "aidermacs",
+          "aimultiagents",
+          "aip-identity",
+          "aipexbase",
+          "aizen",
+          "albatross",
+          "alfred-calculate-anything"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-09-18T13:35:05+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "19aafe5350ba37f8412543e24e2863fb3da2d232",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "alexmoses/o1_agent_test",
+          "reused": true,
+          "snapshot_id": "60029ce78f30b2ac"
+        },
+        {
+          "commit": "71618a34e319ab554aa7773d5bb5ac04bed4e694",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "alfianlosari/appclipcodegenerator",
+          "reused": true,
+          "snapshot_id": "651099e8db24da98"
+        },
+        {
+          "commit": "5adc94b0616c6eae8c1f86aa97df264968fc52ab",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "algonorhythm/flare",
+          "reused": true,
+          "snapshot_id": "f5b26167e3c40f3e"
+        },
+        {
+          "commit": "e55c19fdd6fbf3f7e08850354849e2bc745db6d3",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 4,
+          "repo": "alibaba/open-code-review",
+          "reused": false,
+          "snapshot_id": "f94b346c1c86527e"
+        },
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "alicheg/gpt-coder",
+          "reused": true,
+          "snapshot_id": "dc5d333e9cdf2de5"
+        }
+      ],
+      "started": "2026-09-18T13:34:54+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 11.002,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.787,
+          "snapshots": 10.145
         }
       }
     }

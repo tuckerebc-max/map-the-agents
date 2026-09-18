@@ -360,6 +360,7 @@
 - [spikonado/sprocket](../repos/spikonado/sprocket.md)
 - [stable-lab/mage](../repos/stable-lab/mage.md)
 - [stagewise-io/stagewise](../repos/stagewise-io/stagewise.md)
+- [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [startuphakk/openmonoagent.ai](../repos/startuphakk/openmonoagent.ai.md)
 - [steamship-core/python-client](../repos/steamship-core/python-client.md)
 - [stepfenshawn/kota](../repos/stepfenshawn/kota.md)

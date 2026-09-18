@@ -346,7 +346,6 @@
 - [squarewavesystems/squarebox](../repos/squarewavesystems/squarebox.md)
 - [sr5434/codegebragpt](../repos/sr5434/codegebragpt.md)
 - [sshh12/coding-agents-workshop](../repos/sshh12/coding-agents-workshop.md)
-- [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [steveclarke/real-world-rails](../repos/steveclarke/real-world-rails.md)
 - [strivin0311/llms-learning](../repos/strivin0311/llms-learning.md)
 - [structuredllm/syncode](../repos/structuredllm/syncode.md)
