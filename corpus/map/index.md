@@ -5,7 +5,7 @@ Known-dossier source depth (distinct from freshness -- a current commit is not c
 
 Status counts: discovered=10, distilled=990, blocked=62
 
-Freshness counts: current=977, pending=10, stale=13, refresh-failed=62
+Freshness counts: current=974, pending=10, stale=16, refresh-failed=62
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -131,13 +131,13 @@ Full index: [freshness/index.md](freshness/index.md).
 - [alex-reysa/singular-lite](repos/alex-reysa/singular-lite.md): stale (stale)
 - [alexgreensh/outsourcerer](repos/alexgreensh/outsourcerer.md): stale (stale)
 - [alibaba/open-code-review](repos/alibaba/open-code-review.md): stale (stale)
+- [alihamzaazam/repomon](repos/alihamzaazam/repomon.md): stale (stale)
+- [almanaccode/codealmanac](repos/almanaccode/codealmanac.md): stale (stale)
+- [almogdepaz/wolfpack](repos/almogdepaz/wolfpack.md): stale (stale)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
-- [aydinfer/ai-agents-tool-dev](repos/aydinfer/ai-agents-tool-dev.md): refresh-failed (FetchFailed)
-- [bawadou/ai-data-extractor](repos/bawadou/ai-data-extractor.md): refresh-failed (FetchFailed)
-- [bazed-ai/bazed-af](repos/bazed-ai/bazed-af.md): refresh-failed (FetchFailed)
-- ... 55 more; see freshness/index.md
+- ... 58 more; see freshness/index.md
 
 ## Directory
 
 Full index: [directory/index.md](directory/index.md).
-Catalog-evidence entries (no-repo included): 1362 (published=833, backing=1347, pages=50).
+Catalog-evidence entries (no-repo included): 1362 (published=833, backing=1347, pages=75).

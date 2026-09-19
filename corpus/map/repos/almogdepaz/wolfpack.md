@@ -1,9 +1,9 @@
 # almogdepaz/wolfpack
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0c7ee60e7163 @ 1ef435f5947eaa2c
+Latest snapshot: commit 384969c257a7 @ 1b4f889abb891f70
 
 ## Summary (orientation draft, not independently verified)
 

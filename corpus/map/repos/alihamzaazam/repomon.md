@@ -1,9 +1,9 @@
 # alihamzaazam/repomon
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e655d18f83d8 @ 8834abe468e940fd
+Latest snapshot: commit 6fc4a8fbed31 @ 4c317c5d961f84db
 
 ## Summary (orientation draft, not independently verified)
 

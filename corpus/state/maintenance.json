@@ -1,5 +1,5 @@
 {
-  "cursor": "alicheg/gpt-coder",
+  "cursor": "alpbahadur/49-ide",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -189,6 +189,31 @@
     "alicheg/gpt-coder": {
       "failures": 0,
       "last_at": "2026-09-18T13:35:05+00:00",
+      "last_outcome": "reused"
+    },
+    "alihamzaazam/repomon": {
+      "failures": 0,
+      "last_at": "2026-09-19T13:08:10+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "allenai/marg-reviewer": {
+      "failures": 0,
+      "last_at": "2026-09-19T13:08:11+00:00",
+      "last_outcome": "reused"
+    },
+    "almanaccode/codealmanac": {
+      "failures": 0,
+      "last_at": "2026-09-19T13:08:15+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "almogdepaz/wolfpack": {
+      "failures": 0,
+      "last_at": "2026-09-19T13:08:17+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "alpbahadur/49-ide": {
+      "failures": 0,
+      "last_at": "2026-09-19T13:08:19+00:00",
       "last_outcome": "reused"
     }
   },
@@ -1188,6 +1213,170 @@
         "stages": {
           "catalog": 0.787,
           "snapshots": 10.145
+        }
+      }
+    },
+    {
+      "attempted": [
+        "alihamzaazam/repomon",
+        "allenai/marg-reviewer",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "alpbahadur/49-ide"
+      ],
+      "catalog": {
+        "backlog": 848,
+        "changed": true,
+        "commit": "31f43ac34715aad88b365d22cea660ea6f41b81d",
+        "processed": 50,
+        "slugs": [
+          "alifullstack",
+          "alive-analysis",
+          "am-i-vibing",
+          "amazon-mwaa-examples",
+          "amazon-q-developer-cli",
+          "amplifier",
+          "amux",
+          "angles-cli",
+          "anima",
+          "ante",
+          "antigravity-jules-orchestration",
+          "antigravity-nix",
+          "aperant",
+          "appagent",
+          "appclipcodegenerator",
+          "arbor",
+          "arc-kit",
+          "arcgentic",
+          "archon",
+          "are-copilots-local-yet",
+          "async",
+          "athas",
+          "athena-by-luckeysystems",
+          "atmosphere",
+          "atomcode",
+          "atomic",
+          "auggie",
+          "auto-co",
+          "auto-company",
+          "auto-dev",
+          "autobe",
+          "autodev",
+          "autogen",
+          "autohand-code-cli",
+          "automata",
+          "autonoma",
+          "autopr",
+          "autospec",
+          "autostartup",
+          "awel",
+          "aws-mwaa-local-runner",
+          "azure-ai-engineer-associate-notes",
+          "bandit-stealth",
+          "baro",
+          "bazed",
+          "bb",
+          "bbarit-agent-oss",
+          "beehive",
+          "benzi",
+          "bernstein"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-09-19T13:08:19+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "6fc4a8fbed317a2b830c5650374aa8cf79aa793a",
+          "explicit_paths": [],
+          "files_stored": 9,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "alihamzaazam/repomon",
+          "reused": false,
+          "snapshot_id": "4c317c5d961f84db"
+        },
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "allenai/marg-reviewer",
+          "reused": true,
+          "snapshot_id": "6bbc26d2ddc7a913"
+        },
+        {
+          "commit": "0f153501f40a6596fe7c47dc6198eda149363135",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 383,
+          "repo": "almanaccode/codealmanac",
+          "reused": false,
+          "snapshot_id": "d0d99d561b18447f"
+        },
+        {
+          "commit": "384969c257a7047857c74f9a4fb64796a39a15ef",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 12,
+          "repo": "almogdepaz/wolfpack",
+          "reused": false,
+          "snapshot_id": "1b4f889abb891f70"
+        },
+        {
+          "commit": "c8bfb5c0a3552264412e39cd9c12ced75627d735",
+          "explicit_paths": [],
+          "files_stored": 6,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "alpbahadur/49-ide",
+          "reused": true,
+          "snapshot_id": "9e8ea4ce68281998"
+        }
+      ],
+      "started": "2026-09-19T13:08:08+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 11.378,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.758,
+          "snapshots": 10.575
         }
       }
     }

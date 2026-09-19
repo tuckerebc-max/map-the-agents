@@ -1,9 +1,9 @@
 # almanaccode/codealmanac
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0f153501f40a @ 7b563da85011a057
+Latest snapshot: commit 0f153501f40a @ d0d99d561b18447f
 
 ## Summary (orientation draft, not independently verified)
 

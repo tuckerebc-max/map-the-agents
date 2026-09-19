@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: PacktPublishing
@@ -22,6 +22,8 @@ Repository map entry: [packtpublishing/agentic-coding-with-claude-code](../../re
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Claude Code's extension mechanisms are documented piecemeal across vendor pages, so this repository pairs each book chapter with a concrete, runnable example: context engineering, MCP servers and plug
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Code repository for the Packt book 'Agentic Coding with Claude Code, First Edition' by Eden Marco. Not a standalone tool — contains chapter-by-chapter code samples (Ch 01-10) teaching how to use Claude Code as an agentic development platform, covering MCP, plugins, subagents, hooks, plan mode, skills, output styles, and multi-agent orchestration. Includes a progressive project ('HookHub') built across chapters.
+
+(captured site page body (agents/agentic-coding-with-claude-code.md), not a verified repo-code finding)
+Claude Code's extension mechanisms are documented piecemeal across vendor pages, so this repository pairs each book chapter with a concrete, runnable example: context engineering, MCP servers and plugins, GitHub automation, subagents, agent skills, and Claude Code Desktop. Readers clone the repo, work through chapter folders such as the .claude/skills/git-pushing skill and the HookHub project, and reproduce each technique against a Next.js codebase. The material assumes Python or TypeScript experience and existing familiarity with LLM concepts like RAG and ReAct. It serves readers of the book who learn best from working code rather than prose alone.
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentic-coding-with-claude-code.md)

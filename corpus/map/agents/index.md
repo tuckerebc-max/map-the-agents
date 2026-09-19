@@ -86,10 +86,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [algonorhythm/flare](../repos/algonorhythm/flare.md) -- status=distilled, freshness=current
 - [alibaba/open-code-review](../repos/alibaba/open-code-review.md) -- status=distilled, freshness=stale
 - [alicheg/gpt-coder](../repos/alicheg/gpt-coder.md) -- status=distilled, freshness=current
-- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) -- status=distilled, freshness=current
+- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) -- status=distilled, freshness=stale
 - [allenai/marg-reviewer](../repos/allenai/marg-reviewer.md) -- status=distilled, freshness=current
-- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) -- status=distilled, freshness=current
-- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) -- status=distilled, freshness=current
+- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) -- status=distilled, freshness=stale
+- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) -- status=distilled, freshness=stale
 - [alpbahadur/49-ide](../repos/alpbahadur/49-ide.md) -- status=distilled, freshness=current
 - [alpbahadur/49agents](../repos/alpbahadur/49agents.md) -- status=blocked, freshness=refresh-failed
 - [amal-david/pagecast](../repos/amal-david/pagecast.md) -- status=distilled, freshness=current

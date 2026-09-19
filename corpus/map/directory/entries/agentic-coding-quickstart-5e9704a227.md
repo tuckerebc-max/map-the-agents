@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: GSA-TTS
@@ -22,6 +22,8 @@ Repository map entry: [gsa-tts/agentic-coding-quickstart](../../repos/gsa-tts/ag
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Federal engineering teams cannot use consumer AI coding tools as-is: data must stay inside approved systems, Zscaler intercepts TLS, and commits require signing, so GSA-TTS built this quickstart to ma
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Built for U.S. federal teams — integrates with the USAi government AI API, enforces sandbox isolation (microsandbox microVMs or Docker) for safety, handles federal compliance (Zscaler CA, git commit signing), and auto-provisions federal-relevant agent skills via a kits system.
+
+(captured site page body (agents/agentic-coding-quickstart.md), not a verified repo-code finding)
+Federal engineering teams cannot use consumer AI coding tools as-is: data must stay inside approved systems, Zscaler intercepts TLS, and commits require signing, so GSA-TTS built this quickstart to make compliant agent setup a one-command operation. Running ./acq opencode launches the opencode agent inside a microsandbox microVM (or Docker) wired to the USAi LLM gateway at api.gsa.usai.gov, with USAi keys and GitHub tokens injected at runtime so secrets never enter the guest VM, and Zscaler certificate handling plus git commit signing configured automatically. It is one of three companion repositories (with Playbook and Patterns) and ships reusable agent skills for federal compliance, code review, and secure development. Its users are US government engineering teams adopting AI coding under federal constraints.
+Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentic-coding-quickstart.md)

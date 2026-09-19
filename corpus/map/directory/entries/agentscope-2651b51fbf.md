@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: agentscope-ai
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [modelscope/agentscope](https://gi
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Most agent frameworks stop at an SDK and leave serving, sandboxing, and permissions to the application layer. AgentScope 2.0 takes a model-centric stance: because modern LLMs already reason and call t
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A model-centric (not framework-centric) agent service designed for increasingly agentic LLMs, shipping a full FastAPI backend + Web UI with multi-tenancy, leader-worker agent teams, 8 sandbox backends, and fine-grained permission control out of the box.
+
+(captured site page body (agents/agentscope.md), not a verified repo-code finding)
+Most agent frameworks stop at an SDK and leave serving, sandboxing, and permissions to the application layer. AgentScope 2.0 takes a model-centric stance: because modern LLMs already reason and call tools well, the framework provides composable building blocks (ReAct agent, Toolkit with MCP servers and skills, context middleware, permission and human-in-the-loop controls, memory backends) instead of constraining orchestration. The service layer adds a FastAPI backend with a pre-built Web UI, multi-tenancy, RAG, scheduling, and channels into enterprise chat platforms, so a deployment is production-shaped from the start. Agent Teams let a leader agent spawn and coordinate workers, and isolated execution runs across Local, Docker, Apple Container, Bubblewrap, E2B, OpenSandbox, Daytona, and K8s backends. It targets developers building agent applications on Alibaba's ModelScope stack, with Apache-2.0 code, Python 3.11+ packaging on PyPI, and documentation at docs.agentscope.io.
+Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentscope.md)

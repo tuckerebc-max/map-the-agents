@@ -1,0 +1,142 @@
+# Wolfpack — browser terminal manager for AI coding agents
+
+[![CI](https://github.com/almogdepaz/wolfpack/actions/workflows/test.yml/badge.svg)](https://github.com/almogdepaz/wolfpack/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg)]()
+[![Version](https://img.shields.io/github/v/release/almogdepaz/wolfpack?label=version)](https://almogdepaz.github.io/wolfpack/)
+
+**Run coding agents remotely—from your desktop or phone.** Keep their persistent terminals on your own machines, then monitor and control them even when you are away from your desk.
+
+Wolfpack is a self-hosted control room built for remote and mobile use. Connect directly over your private Tailscale network without a Wolfpack-hosted relay or account. From the phone PWA, you can see which agents need attention, open a live terminal, and respond without returning to the host machine.
+
+Built-in coding-agent provider choices: Claude Code, Codex, Gemini CLI, Cursor, Pi. Shell is the always-available fallback, and custom commands or wrappers on `PATH` are supported separately.
+
+Sessions live in a Rust PTY broker, not the web server, so closing the browser or restarting only the web server does not end them; a broker restart or login-service reinstallation can terminate them.
+
+**Homepage:** [almogdepaz.github.io/wolfpack](https://almogdepaz.github.io/wolfpack/) · **Agent-readable overview:** [llms.txt](https://almogdepaz.github.io/wolfpack/llms.txt)
+
+### desktop demo
+
+<p align="center">
+  <img src="docs/assets/wolfpack-usage-demo.gif" width="700" alt="Wolfpack usage demo showing real broker-backed terminal sessions" />
+</p>
+
+### mobile views
+
+<p align="center">
+  <img src="docs/mobile-sessions.png" width="220" alt="Wolfpack mobile sessions dashboard showing real broker-backed sessions" />
+  <img src="docs/mobile-ghostty.png" width="220" alt="Wolfpack mobile Ghostty terminal showing colorized coding-agent output and touch controls" />
+</p>
+
+Monitor your sessions, spot agents waiting for input, and take over a live terminal from the phone PWA.
+
+> **security:** wolfpack gives browser users shell-level control over configured projects. Keep it private to a trusted Tailnet. If other people share the Tailnet, configure device/user ACLs and consider JWT. Session control follows the ordinary global API auth policy when configured and has no inter-session authorization layer; read the [full trust model](docs/installation.md#security-and-trust).
+
+## quickstart
+
+### curl installer: persistent CLI
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/almogdepaz/wolfpack/main/install.sh | bash
+```
+
+The installer immediately launches setup. After setup, if you accepted the login service, open the printed URL. If you declined the login service, run `wolfpack`, then open the printed URL. In either case, run `wolfpack doctor` to verify the installation.
+
+On later runs, `wolfpack` stages current binaries, runs deferred setup to verify configuration and print the local and verified remote URLs plus a QR code, then restarts an existing configured service server-only. Sessions on a running broker remain attached. See [what the installer does](docs/installation.md#what-the-installer-does) for the full lifecycle boundary.
+
+### Bunx or npm: package runner
+
+```bash
+bunx --bun wolfpack-bridge@latest
+# or, with Node.js 22+
+npx --yes wolfpack-bridge@latest
+```
+
+Package runners use the same setup wizard but do not add `wolfpack` to `PATH`. Use the runner prefix for every later command.
+
+## first success
+
+**you’ll choose:** a projects directory, port, Tailscale remote access, optional Pi integration, and whether Wolfpack starts at login.
+
+**success looks like:** a local URL; a verified Tailnet HTTPS URL and QR code when remote access is configured; and a diagnosis command with no unresolved failures.
+
+| install path | verify |
+| --- | --- |
+| curl | `wolfpack doctor` |
+| Bunx | `bunx --bun wolfpack-bridge@latest doctor` |
+| npm/npx | `npx --yes wolfpack-bridge@latest doctor` |
+
+Next, follow the [first-session guide](docs/first-session.md) to create a terminal, run a harmless command or task, and reopen the same session.
+
+Open the local URL on the host machine. The project picker lists projects under the configured directory by default; **Open existing directory** can launch an existing server-local absolute path elsewhere. For phone or remote access, scan only the verified Tailnet HTTPS QR code.
+
+To uninstall: `wolfpack uninstall --yes` (curl), `bunx --bun wolfpack-bridge@latest uninstall --yes` (Bunx), or `npx --yes wolfpack-bridge@latest uninstall --yes` (npm with Node.js 22+).
+
+## built for remote and mobile work
+
+| instead of | Wolfpack gives you |
+| --- | --- |
+| being tied to the host machine | remote browser and phone control for agent terminals |
+| SSH and tmux juggling | one visual control room with live session previews |
+| missing an agent waiting for input | needs-input states and optional phone notifications |
+| hosted remote-control SaaS | direct private Tailnet access, without a Wolfpack relay or account |
+| sessions dying with the web server | broker-owned persistent PTYs |
+| managing one host at a time | trusted multi-machine session control |
+
+- **control agents while away from your desk** — check progress, spot sessions that need input, and reopen live terminals from a trusted phone or browser.
+- **use your phone as a real control surface** — install the PWA, use touch-friendly terminal controls, and optionally receive notifications.
+- **return to the same work on desktop** — move between the mobile session list, desktop terminal grid, and direct terminal attach without replacing the underlying session.
+- **use the agents you already run** — choose a built-in command or configure a custom command on `PATH` in **Settings → Agents**.
+
+The multi-machine dashboard and desktop sidebar show only local sessions and currently ready, handshake-verified Wolfpack peers. Generic, offline, malformed, and unreachable Tailnet candidates stay out of the control room; **Settings → Machines** retains bounded discovery diagnostics. Peer headers show the machine display name and hostname without rendering internal node, installation, or routing identities.
+
+## docs
+
+- [installation and first success](docs/installation.md) — install Wolfpack and verify the first working URL.
+- [first session](docs/first-session.md) — create, use, and reopen a persistent browser terminal.
+- [phone, PWA, and notifications](docs/phone-pwa-notifications.md) — install the app route and recover mobile notification issues.
+- [troubleshooting](docs/troubleshooting.md) — recover from setup, service, broker, and remote-access failures.
+- [complete documentation router](docs/README.md) — choose canonical guides by audience and task.
+
+## agent skills
+
+`wolfpack-tailnet-control` works with all agent harnesses that support Agent Skills. The opt-in Pi flow in `wolfpack setup` copies the bundled control skill, then installs Pi Tasks with `pi install npm:@sgtbeatdown/pi-tasks`. `wolfpack-tailnet-control` controls sessions; `wolfpack-pi-task-delegation` teaches Pi to use `agent_task_*` for durable task routing.
+
+For a manual audited install, clone or update `https://github.com/almogdepaz/wolfpack`, review `skills/wolfpack-tailnet-control/SKILL.md`, then place the skill in `~/.pi/agent/skills/`, `~/.agents/skills/`, or `~/.claude/skills/`. Start a fresh agent context afterward. Platform binaries do not expose skills as files; detailed safe symlink and copy instructions are in [agent skills](docs/agent-skills.md).
+
+## advanced automation
+
+Target the supported session-control surface on a configured Tailnet peer with the global selector:
+
+```bash
+wolfpack --machine <short-name-or-fqdn> list --json
+wolfpack --machine <short-name-or-fqdn> session status <session-or-id> --json
+```
+
+Short names use the exact suffix from configured `tailscaleHostname`; full names must be canonical hostnames in that same suffix. Wolfpack sends the normal JWT authorization on a bounded `GET /api/machine` handshake and subsequent requests. Invalid, incompatible, redirected, timed-out, or unreachable targets fail closed without localhost fallback. Remote JSON successes add verified `"machine"` identity while retaining server-owned `sessionId` values. `agent spawn` still resolves its parent on the selected machine and does not invent cross-machine lineage.
+
+Create a top-level project session with an initial instruction:
+
+```bash
+wolfpack session create project-name --harness pi --plan .plans/000-task.md --json
+```
+
+Spawn a same-harness child agent:
+
+```bash
+wolfpack agent spawn project-name --plan .plans/000-review.md --notify-parent --json
+```
+
+To select an existing directory outside the configured projects root, replace the project name with `--project-dir <path>` on either command. Relative CLI paths are resolved locally; the server accepts and canonicalizes only existing absolute directories.
+
+Use `wolfpack session create <project>` for top-level work and `wolfpack agent spawn <project>` for a same-harness child. The server validates the project selector and command, allocates a stable broker session ID, and delivers the initial instruction directly to the harness. For the full command surface and automation contract, use [session control](docs/session-control.md) and [task gateway](docs/task-gateway.md).
+
+## contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, the asset pipeline, and PR conventions.
+
+For bugs, feature requests, questions, and usage help, use [support and reporting](SUPPORT.md). Report suspected vulnerabilities through [private security reporting](SECURITY.md), never a public issue or discussion.
+
+## license
+
+MIT

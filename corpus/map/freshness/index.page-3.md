@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [tmcfarlane/oh-my-cursor](../repos/tmcfarlane/oh-my-cursor.md) [coverage: partial]
-- [tmux/tmux](../repos/tmux/tmux.md) [coverage: partial]
-- [tndata/codingagentexplorer](../repos/tndata/codingagentexplorer.md) [coverage: complete]
 - [tokfinity/infcode](../repos/tokfinity/infcode.md) [coverage: complete]
 - [tom-doerr/vim_codex](../repos/tom-doerr/vim_codex.md) [coverage: complete]
 - [tomlin7/biscuit](../repos/tomlin7/biscuit.md) [coverage: partial]
@@ -129,7 +126,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (13)
+## stale (16)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +141,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
 - [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]
 - [alibaba/open-code-review](../repos/alibaba/open-code-review.md) [coverage: partial]
+- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
+- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
+- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
 
 ## refresh-failed (62)
 

@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [jazzenchen/vibearound](../repos/jazzenchen/vibearound.md) [coverage: partial]
-- [jcast90/relay](../repos/jcast90/relay.md) [coverage: partial]
-- [jcodesmore/ai-website-cloner-template](../repos/jcodesmore/ai-website-cloner-template.md) [coverage: partial]
 - [jcz2020/par](../repos/jcz2020/par.md) [coverage: partial]
 - [jduckles/git-collaboration](../repos/jduckles/git-collaboration.md) [coverage: complete]
 - [jetbrains/junie](../repos/jetbrains/junie.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [timvw/tmux-assistant-resurrect](../repos/timvw/tmux-assistant-resurrect.md) [coverage: partial]
 - [timwuhaotian/the-pair](../repos/timwuhaotian/the-pair.md) [coverage: partial]
 - [tlbx-ai/tlbx](../repos/tlbx-ai/tlbx.md) [coverage: partial]
+- [tmcfarlane/oh-my-cursor](../repos/tmcfarlane/oh-my-cursor.md) [coverage: partial]
+- [tmux/tmux](../repos/tmux/tmux.md) [coverage: partial]
+- [tndata/codingagentexplorer](../repos/tndata/codingagentexplorer.md) [coverage: complete]

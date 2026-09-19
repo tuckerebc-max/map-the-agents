@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (977)
+## current (974)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -72,10 +72,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [alfianlosari/appclipcodegenerator](../repos/alfianlosari/appclipcodegenerator.md) [coverage: complete]
 - [algonorhythm/flare](../repos/algonorhythm/flare.md) [coverage: complete]
 - [alicheg/gpt-coder](../repos/alicheg/gpt-coder.md) [coverage: complete]
-- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
 - [allenai/marg-reviewer](../repos/allenai/marg-reviewer.md) [coverage: complete]
-- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
-- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
 - [alpbahadur/49-ide](../repos/alpbahadur/49-ide.md) [coverage: complete]
 - [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]
 - [amersarhan/darce-cli](../repos/amersarhan/darce-cli.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [jalalx/httpclientcodegenerator](../repos/jalalx/httpclientcodegenerator.md) [coverage: complete]
 - [jawerty/autostartup](../repos/jawerty/autostartup.md) [coverage: complete]
 - [jaycrl/mobilevc](../repos/jaycrl/mobilevc.md) [coverage: partial]
+- [jazzenchen/vibearound](../repos/jazzenchen/vibearound.md) [coverage: partial]
+- [jcast90/relay](../repos/jcast90/relay.md) [coverage: partial]
+- [jcodesmore/ai-website-cloner-template](../repos/jcodesmore/ai-website-cloner-template.md) [coverage: partial]
