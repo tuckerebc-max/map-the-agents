@@ -24,4 +24,4 @@ Repository map entry: [zencoderai/coding-the-coding-agents](../../repos/zencoder
 
 (backing feed `description`, not a verified repo-code finding)
 Engineers learning to build coding agents usually face production codebases too large to learn from, so Zencoder released the companion code for its talk on building coding agents as a graded series.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

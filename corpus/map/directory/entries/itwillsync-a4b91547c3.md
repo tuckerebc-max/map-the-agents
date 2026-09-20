@@ -24,4 +24,4 @@ Repository map entry: [shrijayan/itwillsync](../../repos/shrijayan/itwillsync.md
 
 (published index `description`, not a verified repo-code finding)
 itwillsync answers a small but constant pain: your agent is working, but you are not at the desk. It wraps the agent command in a PTY, streams the terminal over an encrypted WebSocket, and renders it
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

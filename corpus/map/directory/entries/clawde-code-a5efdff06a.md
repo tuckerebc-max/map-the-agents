@@ -24,4 +24,4 @@ Repository map entry: [githpriyanshu23/clawde_code](../../repos/githpriyanshu23/
 
 (backing feed `description`, not a verified repo-code finding)
 The repository preserves and documents the leaked TypeScript implementation of Claude Code, whose accidental publication through an npm source map became one of the most-disclosed views into a product
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

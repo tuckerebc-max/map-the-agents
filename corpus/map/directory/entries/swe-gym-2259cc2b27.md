@@ -24,4 +24,4 @@ Repository map entry: [swe-gym/swe-gym](../../repos/swe-gym/swe-gym.md) (source:
 
 (backing feed `description`, not a verified repo-code finding)
 SWE-Gym was built to give agent researchers what SWE-bench gave evaluators: an executable, verifiable training ground. It packages 2,438 real tasks from 11 popular Python repositories, each with repos
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

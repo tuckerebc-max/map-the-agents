@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [jcz2020/par](../repos/jcz2020/par.md) [coverage: partial]
-- [jduckles/git-collaboration](../repos/jduckles/git-collaboration.md) [coverage: complete]
 - [jetbrains/junie](../repos/jetbrains/junie.md) [coverage: complete]
 - [jetbrains/youtrack-workflows](../repos/jetbrains/youtrack-workflows.md) [coverage: complete]
 - [jhutchings1/create-actionsprs](../repos/jhutchings1/create-actionsprs.md) [coverage: complete]
@@ -439,3 +437,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [tmcfarlane/oh-my-cursor](../repos/tmcfarlane/oh-my-cursor.md) [coverage: partial]
 - [tmux/tmux](../repos/tmux/tmux.md) [coverage: partial]
 - [tndata/codingagentexplorer](../repos/tndata/codingagentexplorer.md) [coverage: complete]
+- [tokfinity/infcode](../repos/tokfinity/infcode.md) [coverage: complete]
+- [tom-doerr/vim_codex](../repos/tom-doerr/vim_codex.md) [coverage: complete]

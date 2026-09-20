@@ -24,4 +24,4 @@ Repository map entry: [zaxbyhub/opencode-swarm](../../repos/zaxbyhub/opencode-sw
 
 (backing feed `description`, not a verified repo-code finding)
 A single coding agent grades its own homework: it writes the code, decides the work is done, and moves on. opencode-swarm restructures the session into a hub-and-spoke swarm where an architect plans,
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [zap-coding-agent/zap-coding-agent](../../repos/zap-coding
 
 (published index `description`, not a verified repo-code finding)
 Zap is a Rust, terminal-first coding agent distributed as a single statically-linked binary with a millisecond cold start and roughly 20 MB idle memory, designed around eliminating prompt bloat. Start
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

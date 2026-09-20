@@ -24,4 +24,4 @@ Repository map entry: [dharllc/speech-to-code](../../repos/dharllc/speech-to-cod
 
 (backing feed `description`, not a verified repo-code finding)
 Speech-To-Code was built for developers who think faster than they type at a keyboard: a browser composer combines real-time speech-to-text, selectable repository files, and manual text into one promp
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

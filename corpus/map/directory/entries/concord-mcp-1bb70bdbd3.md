@@ -24,4 +24,4 @@ Repository map entry: [get-concord-ai/concord-mcp](../../repos/get-concord-ai/co
 
 (backing feed `description`, not a verified repo-code finding)
 Concord is the shared nervous system for a set of coding agents working in the same repository: a single MCP server, local-first with SQLite state in a .concord/ folder at the repo root, that lets age
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [lnyo-cly/ai4j](../../repos/lnyo-cly/ai4j.md) (source: bac
 
 (published index `description`, not a verified repo-code finding)
 Java teams who want agentic behavior historically had to bridge to Python ecosystems; ai4j provides the equivalent natively for JDK 8+, including Spring Boot starters and a BOM. The SDK normalizes Ope
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

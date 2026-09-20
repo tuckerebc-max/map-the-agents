@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Multistack is a lightweight Rust TUI that runs multiple zerostack agents side by side in the terminal, giving each agent its own PTY and Unix-socket status channel. It spawns parallel agents with zero
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json)

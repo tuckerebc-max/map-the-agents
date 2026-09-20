@@ -24,4 +24,4 @@ Repository map entry: [rawwerks/recursive-coding-agents](../../repos/rawwerks/re
 
 (backing feed `description`, not a verified repo-code finding)
 Recursive Coding Agents is the companion artifact to Raymond Weitekamp's AI Engineer World's Fair 2026 talk on recursive language models — systems where the model manages its own context programmatica
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

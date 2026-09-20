@@ -24,4 +24,4 @@ Repository map entry: [lidge-jun/ima2-gen](../../repos/lidge-jun/ima2-gen.md) (s
 
 (backing feed `description`, not a verified repo-code finding)
 ima2-gen solves reproducibility for visual asset generation: a coding agent working on a site or game needs consistent images and video, and ad-hoc API calls produce neither auditability nor cost cont
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

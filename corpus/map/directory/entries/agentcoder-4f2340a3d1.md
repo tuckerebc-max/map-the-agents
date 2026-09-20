@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: huangd1999
@@ -22,8 +22,6 @@ Repository map entry: [huangd1999/agentcoder](../../repos/huangd1999/agentcoder.
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Multi-agent code generation framework with three specialized agents (programmer, test designer, test executor); independent test case generation and iterative code refinement through multiagent collaboration.
-
-(captured site page body (agents/agentcoder.md), not a verified repo-code finding)
-AgentCoder is a research codebase from huangd1999 that studies whether splitting code generation across specialized agents improves output quality, evaluated on the HumanEval and MBPP benchmarks. A programmer agent writes code, a test-designer agent independently generates test cases the programmer never sees, and a test executor runs them, feeding failures back for iterative refinement. The framework is deliberately modular so different LLMs can be swapped in (OpenAI models and CodeGeeX are wired up), but it is a benchmark-oriented research codebase — clone, install requirements, add an API key — not a developer product. Its users are NLP and code-generation researchers reproducing multi-agent generation experiments.
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentcoder.md)
+(published index `description`, not a verified repo-code finding)
+AgentCoder is a research codebase from huangd1999 that studies whether splitting code generation across specialized agents improves output quality, evaluated on the HumanEval and MBPP benchmarks. A pr
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

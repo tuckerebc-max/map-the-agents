@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Datasette Agent is an open-source plugin that puts a conversational assistant inside Datasette, the tool for exploring and publishing SQLite databases. Installed next to Datasette, it serves a chat at
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json)

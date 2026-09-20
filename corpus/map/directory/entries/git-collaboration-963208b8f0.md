@@ -24,4 +24,4 @@ Repository map entry: [jduckles/git-collaboration](../../repos/jduckles/git-coll
 
 (backing feed `description`, not a verified repo-code finding)
 This repository exists to be forked and broken: it is a training sandbox for teaching Git and GitHub collaboration workflows, used in workshops where each participant forks the repo and opens pull req
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

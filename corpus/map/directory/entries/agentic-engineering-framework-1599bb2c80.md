@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: DimitriGeelen
@@ -22,8 +22,6 @@ Repository map entry: [dimitrigeelen/agentic-engineering-framework](../../repos/
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Governance and continuity harness around AI coding agents. Provides task traceability, structural gates, session continuity, audit trails, blast-radius foresight, value scoring, and cross-agent coordination. It coordinates agents but does not execute them. Enforces 'nothing gets done without a task' as a hard gate (PreToolUse hooks), three-layer persistent memory, Component Fabric for blast-radius impact analysis, Business Value Points (BVP) scoring, a ...
-
-(captured site page body (agents/agentic-engineering-framework.md), not a verified repo-code finding)
-AI coding agents fail in predictable ways: they edit without a task, destroy files with force flags, and run out of context mid-change. The framework interposes itself between the agent and the repository using a PreToolUse hook, tiered authority rules (human sovereignty, framework authority, agent initiative), and Markdown task files with YAML frontmatter carrying acceptance criteria and verification commands. A budget gate watches the live transcript and blocks source edits when the context window nears its limit, forcing a commit and handover instead of a truncated change. Memory, component maps, and audit checks (over 260 checks run on every push and on a 30-minute cron) provide continuity and traceability across sessions. It is used by developers running Claude Code who want audit-grade accountability; the framework itself is developed under its own governance, with thousands of self-governed commits.
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentic-engineering-framework.md)
+(published index `description`, not a verified repo-code finding)
+AI coding agents fail in predictable ways: they edit without a task, destroy files with force flags, and run out of context mid-change. The framework interposes itself between the agent and the reposi
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

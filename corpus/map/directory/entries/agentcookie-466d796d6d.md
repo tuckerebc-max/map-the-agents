@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: mvanhorn
@@ -22,8 +22,6 @@ Repository map entry: [mvanhorn/agentcookie](../../repos/mvanhorn/agentcookie.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Cookie session sync tool for AI agents — continuously syncs Mac's Chrome cookie sessions to a Linux box (or second Mac) where agents run, over Tailscale, so agents wake up already authenticated. Handles the hard parts: macOS Keychain decryption, Chrome App-Bound Encryption on source, live CDP injection into Chrome's in-memory store on Linux sink. Pairing-derived per-peer keys, AES-256-GCM, per-CLI secrets ...
-
-(captured site page body (agents/agentcookie.md), not a verified repo-code finding)
-Coding agents that drive a browser hit a login wall the moment they run on a machine where the human never signed in, and headless re-authentication defeats bot defenses. agentcookie keeps a Linux box's Chrome cookie store in sync with a Mac's continuously over Tailscale, decrypting the macOS Keychain on the source and injecting cookies live over the Chrome DevTools Protocol into the sink's in-memory session, so Puppeteer, Playwright, or browserUse automations wake up already authenticated. Transport is end-to-end encrypted (AES-256-GCM with pairing-derived per-peer keys), and a secrets bus carries bearer tokens and API keys to CLIs separately. Developers running browser-driving agents on remote machines are the users; DBSC-bound sessions like Google deliberately do not sync.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentcookie.md)
+(backing feed `description`, not a verified repo-code finding)
+Coding agents that drive a browser hit a login wall the moment they run on a machine where the human never signed in, and headless re-authentication defeats bot defenses. agentcookie keeps a Linux box
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -145,6 +145,7 @@
 - [nanoclaw](../entries/nanoclaw-8028a2cf6d.md)
 - [nezha](../entries/nezha-f5ed62cfbb.md)
 - [nimbalyst](../entries/nimbalyst-afd6d85e62.md)
+- [niteshift](../entries/niteshift-a7dd4a797c.md)
 - [nodeterm](../entries/nodeterm-7739ca76d0.md)
 - [ntm](../entries/ntm-4963841fe0.md)
 - [octo-web](../entries/octo-web-3f4c349892.md)

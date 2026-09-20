@@ -24,4 +24,4 @@ Repository map entry: [tndata/codingagentexplorer](../../repos/tndata/codingagen
 
 (backing feed `description`, not a verified repo-code finding)
 Claude Code hides its API traffic in the terminal, which makes it hard to debug hook behavior, MCP server interactions, or unexpected token usage, and it gives instructors nothing to show students. Co
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

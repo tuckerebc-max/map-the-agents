@@ -24,4 +24,4 @@ Repository map entry: [decron/whitebox-code-gpt](../../repos/decron/whitebox-cod
 
 (backing feed `description`, not a verified repo-code finding)
 Whitebox-Code-GPT addresses the quality gap of generic chat assistants for programming by maintaining versioned, expert-owned instruction and knowledge files for ChatGPT Custom GPTs — Python GPT, Flut
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

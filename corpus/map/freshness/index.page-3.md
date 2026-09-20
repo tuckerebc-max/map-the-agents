@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [tokfinity/infcode](../repos/tokfinity/infcode.md) [coverage: complete]
-- [tom-doerr/vim_codex](../repos/tom-doerr/vim_codex.md) [coverage: complete]
 - [tomlin7/biscuit](../repos/tomlin7/biscuit.md) [coverage: partial]
 - [touchpoint-labs/gadfly](../repos/touchpoint-labs/gadfly.md) [coverage: complete]
 - [touwaeriol/claude-code-plus](../repos/touwaeriol/claude-code-plus.md) [coverage: partial]
@@ -126,7 +124,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (16)
+## stale (18)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +142,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
 - [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
 - [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
+- [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]
+- [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
 
 ## refresh-failed (62)
 

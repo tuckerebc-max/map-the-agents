@@ -24,4 +24,4 @@ Repository map entry: [lucasduys/forge](../../repos/lucasduys/forge.md) (source:
 
 (backing feed `description`, not a verified repo-code finding)
 Forge turns Claude Code into a brainstorm-to-commit pipeline built for long, token-hungry runs: an idea becomes an R-numbered spec with testable acceptance criteria, a dependency-ordered task DAG, TDD
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

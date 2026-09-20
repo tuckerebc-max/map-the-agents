@@ -235,6 +235,7 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [next-ai-starter (`next-ai-starter`)](next-ai-starter-391e744977.md) -- backing-only
 - [nezha (`nezha`)](nezha-f5ed62cfbb.md) -- published+backing
 - [Nimbalyst (`nimbalyst`)](nimbalyst-afd6d85e62.md) -- published+backing
+- [Niteshift (`niteshift`)](niteshift-a7dd4a797c.md) -- published-only
 - [Nl2Iac (`nl2iac`)](nl2iac-77caaa7486.md) -- published+backing
 - [Nlp-With-Llms (`nlp-with-llms`)](nlp-with-llms-8b375af843.md) -- backing-only
 - [No Fate AI (`no-fate-ai`)](no-fate-ai-3d875a74e1.md) -- backing-only
@@ -329,4 +330,3 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Parallel Code (`parallel-code`)](parallel-code-96315e97e5.md) -- published+backing
 - [Parley (`parley`)](parley-d689dfcda2.md) -- backing-only
 - [Paseo (`paseo`)](paseo-68a32dd6b2.md) -- published+backing
-- [PATAPIM (`patapim`)](patapim-291e49bc2d.md) -- published+backing

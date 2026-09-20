@@ -92,9 +92,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) -- status=distilled, freshness=stale
 - [alpbahadur/49-ide](../repos/alpbahadur/49-ide.md) -- status=distilled, freshness=current
 - [alpbahadur/49agents](../repos/alpbahadur/49agents.md) -- status=blocked, freshness=refresh-failed
-- [amal-david/pagecast](../repos/amal-david/pagecast.md) -- status=distilled, freshness=current
+- [amal-david/pagecast](../repos/amal-david/pagecast.md) -- status=distilled, freshness=stale
 - [amersarhan/darce-cli](../repos/amersarhan/darce-cli.md) -- status=distilled, freshness=current
-- [amix/dunk](../repos/amix/dunk.md) -- status=distilled, freshness=current
+- [amix/dunk](../repos/amix/dunk.md) -- status=distilled, freshness=stale
 - [amrit110/oli](../repos/amrit110/oli.md) -- status=distilled, freshness=current
 - [amsilf/sc-helm-app](../repos/amsilf/sc-helm-app.md) -- status=distilled, freshness=current
 - [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) -- status=distilled, freshness=current

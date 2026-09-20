@@ -2,6 +2,7 @@
 
 Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index.page-5.md)
 
+- [PATAPIM (`patapim`)](patapim-291e49bc2d.md) -- published+backing
 - [Patchwork (`patchwork`)](patchwork-3af082fc9b.md) -- published+backing
 - [pear-landing-page (`pear-landing-page`)](pear-landing-page-ade813651f.md) -- backing-only
 - [PearAI (`pearai`)](pearai-66ac4f8f01.md) -- published+backing
@@ -45,6 +46,7 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [pocketshell (`pocketshell`)](pocketshell-f700aeb229.md) -- published+backing
 - [Podiom (`podiom`)](podiom-f1fa6a776f.md) -- published+backing
 - [Poke (`poke`)](poke-d138d52935.md) -- backing-only
+- [polytoken (`polytoken`)](polytoken-a1913b3151.md) -- published-only
 - [Poolside AI (`poolside-ai`)](poolside-ai-68fd18a6b4.md) -- published+backing
 - [postal (`postal`)](postal-41104bdc0d.md) -- published+backing
 - [postmortemthis (`postmortemthis`)](postmortemthis-ccdda15f2e.md) -- published+backing
@@ -173,6 +175,7 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [SpecBuddy (`specbuddy`)](specbuddy-35a461b93d.md) -- published+backing
 - [Speech-To-Code (`speech-to-code`)](speech-to-code-ffd8981c41.md) -- backing-only
 - [Sprocket (`sprocket`)](sprocket-c570e0e3fb.md) -- published+backing
+- [Sprout (`sprout`)](sprout-7957bdf8ea.md) -- published-only
 - [squarebox (`squarebox`)](squarebox-ba6cd60023.md) -- backing-only
 - [SRD CodeFree (`srd-codefree`)](srd-codefree-a2542cc69d.md) -- published+backing
 - [sre (`sre`)](sre-69b4bcbc6e.md) -- published+backing
@@ -331,6 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing
 - [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing-only
 - [Whailion AI (`whailion-ai`)](whailion-ai-8ba50c01c2.md) -- published+backing
-- [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing-only
-- [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing-only
-- [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing

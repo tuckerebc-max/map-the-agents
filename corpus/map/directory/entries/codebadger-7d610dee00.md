@@ -24,4 +24,4 @@ Repository map entry (renamed): original lead [lekssays/codebadger](https://gith
 
 (backing feed `description`, not a verified repo-code finding)
 Codebadger, built at QCRI, gives LLM agents structured access to program analysis that plain code reading cannot provide. It constructs Joern Code Property Graphs from a git repository, local path, or
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

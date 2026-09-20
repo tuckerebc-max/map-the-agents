@@ -24,4 +24,4 @@ Repository map entry: [parthsareen/ducky](../../repos/parthsareen/ducky.md) (sou
 
 (backing feed `description`, not a verified repo-code finding)
 Ducky sits between the shell prompt and an LLM: describe what you want in English, get a concrete bash command back, inspect it, and run it — the human stays in the loop at every step. Rather than shi
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

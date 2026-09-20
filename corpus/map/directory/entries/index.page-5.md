@@ -2,6 +2,9 @@
 
 Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 
+- [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing-only
+- [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing-only
+- [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing
 - [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing
 - [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing
 - [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing-only

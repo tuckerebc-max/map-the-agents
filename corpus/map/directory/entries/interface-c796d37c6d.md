@@ -24,4 +24,4 @@ Repository map entry: [arctic-cli/interface](../../repos/arctic-cli/interface.md
 
 (published index `description`, not a verified repo-code finding)
 Arctic's premise is that heavy agent users juggle subscriptions: Claude here, Codex there, a work Copilot account, and no single view of what is left. The interface aggregates coding plans from ten pr
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

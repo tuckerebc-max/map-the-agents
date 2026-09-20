@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: JogendraSingh1879
@@ -22,8 +22,6 @@ Repository map entry: [jogendrasingh1879/agentic-ai-](../../repos/jogendrasingh1
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): NOTE: Not a coding agent harness. A rule-based (non-LLM) multi-agent pizza ordering system with two hardcoded agents (Order Agent and Inventory Agent) exposed as a FastAPI REST API. Tutorial-style demo with 4 commits.
-
-(captured site page body (agents/agentic-ai.md), not a verified repo-code finding)
-This repository is a small tutorial exercise demonstrating multi-agent thinking without any LLM: an Order Agent validates pizza orders and payment while an Inventory Agent tracks ingredient stock, coordinating through shared state behind a FastAPI REST API with a live demo deployed to AWS. The implementation is a single Python module (plus a compiled .pyc) with four commits, one star, and no license file. It was last updated in January 2025 and shows no signs of further development, and the live demo endpoint is unlikely to still be running. It is included in the census only as a classified non-coding-agent artifact.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentic-ai.md)
+(backing feed `description`, not a verified repo-code finding)
+This repository is a small tutorial exercise demonstrating multi-agent thinking without any LLM: an Order Agent validates pizza orders and payment while an Inventory Agent tracks ingredient stock, coo
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

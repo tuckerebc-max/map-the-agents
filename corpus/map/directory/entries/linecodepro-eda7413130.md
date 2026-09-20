@@ -24,4 +24,4 @@ Repository map entry: [langlang03/linecodepro](../../repos/langlang03/linecodepr
 
 (published index `description`, not a verified repo-code finding)
 LineCodePro brings a Claude Code-style tool loop to Android, where nearly all coding agents assume a desktop: models read/edit/delete files, run shell commands through Termux, SSH, or a sandboxed IPC
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

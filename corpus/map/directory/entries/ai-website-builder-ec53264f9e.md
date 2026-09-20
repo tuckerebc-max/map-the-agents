@@ -24,4 +24,4 @@ Repository map entry: [builtbyv/ai-website-builder](../../repos/builtbyv/ai-webs
 
 (backing feed `description`, not a verified repo-code finding)
 The project exists to let people who cannot code build and maintain websites by talking to whichever AI coding assistant they already have. A Vite-based starter template is bundled with a skill direct
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

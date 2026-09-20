@@ -24,4 +24,4 @@ Repository map entry: [laizhou/opencode_ui](../../repos/laizhou/opencode_ui.md) 
 
 (backing feed `description`, not a verified repo-code finding)
 OpenCode runs in a terminal, which leaves JetBrains users copying file paths by hand and reviewing agent changes in raw git diffs. This Kotlin plugin bridges the gap: Quick Launch attaches to a runnin
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

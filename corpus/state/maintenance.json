@@ -1,5 +1,5 @@
 {
-  "cursor": "alpbahadur/49-ide",
+  "cursor": "amrit110/oli",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -214,6 +214,36 @@
     "alpbahadur/49-ide": {
       "failures": 0,
       "last_at": "2026-09-19T13:08:19+00:00",
+      "last_outcome": "reused"
+    },
+    "alpbahadur/49agents": {
+      "failures": 1,
+      "last_at": "2026-09-20T13:34:38+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/alpbahadur/49agents"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "amal-david/pagecast": {
+      "failures": 0,
+      "last_at": "2026-09-20T13:34:40+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "amersarhan/darce-cli": {
+      "failures": 0,
+      "last_at": "2026-09-20T13:34:41+00:00",
+      "last_outcome": "reused"
+    },
+    "amix/dunk": {
+      "failures": 0,
+      "last_at": "2026-09-20T13:34:44+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "amrit110/oli": {
+      "failures": 0,
+      "last_at": "2026-09-20T13:34:46+00:00",
       "last_outcome": "reused"
     }
   },
@@ -1377,6 +1407,170 @@
         "stages": {
           "catalog": 0.758,
           "snapshots": 10.575
+        }
+      }
+    },
+    {
+      "attempted": [
+        "alpbahadur/49agents",
+        "amal-david/pagecast",
+        "amersarhan/darce-cli",
+        "amix/dunk",
+        "amrit110/oli"
+      ],
+      "catalog": {
+        "backlog": 798,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "better-agent",
+          "better-coding-agents",
+          "bhil-ai-first-development-toolkit",
+          "bim-llm-code-agent",
+          "binharic",
+          "biscuit",
+          "bitfun",
+          "blade-code",
+          "blinky",
+          "blueprints",
+          "bmad-method",
+          "brokies-ai-foundry",
+          "brood-box",
+          "browser-operator-core",
+          "build-your-own-coding-agent",
+          "building-intelligent-apps-with-anaconda",
+          "buildware-ai",
+          "bumpgen",
+          "callmd",
+          "calyx",
+          "camelai",
+          "carrycode",
+          "cartlis",
+          "cascadeflow",
+          "catnip",
+          "catpaw",
+          "caveman-code",
+          "cavemem",
+          "cersei",
+          "chamberlain-multimodal-multiagent-chatbot",
+          "chatdev",
+          "chaterm",
+          "chatgpt-vscode",
+          "chef",
+          "cherry-studio",
+          "claude-agent-sdk-python",
+          "claude-agent-sdk-typescript",
+          "claude-autopilot",
+          "claude-code",
+          "claude-code-merge-queue",
+          "claude-code-multi-agent",
+          "claude-code-plus",
+          "claude-code-skeleton",
+          "claude-code-sub-agents",
+          "claude-code-tools",
+          "claude-code-viewer",
+          "claude-codex-bridge",
+          "claude-engineer",
+          "claude-flow",
+          "claude-html-test"
+        ],
+        "version_changed": true
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/alpbahadur/49agents",
+          "repo": "alpbahadur/49agents",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-09-20T13:34:46+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "aa48964e7ca33c95a329fad0766d127bd0ef617b",
+          "explicit_paths": [],
+          "files_stored": 7,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "amal-david/pagecast",
+          "reused": false,
+          "snapshot_id": "edd1bc9b288ecf87"
+        },
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "amersarhan/darce-cli",
+          "reused": true,
+          "snapshot_id": "edcbe6956310fb55"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "explicit_paths": [],
+          "files_stored": 7,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "amix/dunk",
+          "reused": false,
+          "snapshot_id": "5f9189fb9261502e"
+        },
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "explicit_paths": [],
+          "files_stored": 6,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "amrit110/oli",
+          "reused": true,
+          "snapshot_id": "9033f0017a5fdc22"
+        }
+      ],
+      "started": "2026-09-20T13:34:37+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 9.335,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 1.045,
+          "snapshots": 8.25
         }
       }
     }

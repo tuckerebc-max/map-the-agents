@@ -24,4 +24,4 @@ Repository map entry: [nasiko-labs/nasiko](../../repos/nasiko-labs/nasiko.md) (s
 
 (backing feed `description`, not a verified repo-code finding)
 Nasiko targets teams operating fleets of A2A-protocol agents who need a single enforcement point for identity, cost, and security. Agents register through a CLI and are never publicly reachable; every
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

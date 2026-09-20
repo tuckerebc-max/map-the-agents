@@ -24,4 +24,4 @@ Repository map entry: [hivemoot/colony](../../repos/hivemoot/colony.md) (source:
 
 (backing feed `description`, not a verified repo-code finding)
 Colony is an experiment testing whether AI agents can run an open-source project without human direction, built as a proof of concept for the Hivemoot governance framework. AI agents open feature prop
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

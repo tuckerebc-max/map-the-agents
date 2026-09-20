@@ -24,4 +24,4 @@ Repository map entry: [moazbuilds/codemachine-cli](../../repos/moazbuilds/codema
 
 (published index `description`, not a verified repo-code finding)
 CodeMachine-CLI starts from the observation that a coding workflow — the sequence of steps an operator runs an agent through to fix a bug or build a feature — normally exists only in the operator's he
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

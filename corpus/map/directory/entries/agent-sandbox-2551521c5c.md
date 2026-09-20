@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
-- Category: other
+- Category: agent
 - Provider/maker: mattolson
 - License: MIT
 - Language: Go
@@ -20,14 +20,8 @@ Directory membership: backing+pages.
 
 Repository map entry: [mattolson/agent-sandbox](../../repos/mattolson/agent-sandbox.md) (source: backing, field: `source_code_url`).
 
-Discrepancy between directory sources (not overwritten):
-
-- category: published=, backing=agent, page=other
-
 ## Description
 
-Highlight (site page `what_makes_it_special`): Runs AI coding agents in a locked-down local sandbox with minimal filesystem access, configurable network egress via sidecar proxy (mitmproxy), proxy-side secret injection where the agent container never sees API keys/tokens, iptables firewall preventing direct outbound bypass, hot-reloadable policies, and seamless agent switching with preserved state/credentials.
-
-(captured site page body (agents/agent-sandbox.md), not a verified repo-code finding)
-Giving a coding agent your real machine hands it your credentials and your whole filesystem, which is why many teams refuse to run them locally; agent-sandbox wraps agents (Claude Code, Codex, Gemini, OpenCode, Copilot, and others) in a Debian-based container that mounts only the repo directory. A mitmproxy sidecar enforces fine-grained network policy — allowed hosts with scheme, method, path, and query rules, plus repo-scoped git access with proxy-side credential injection — while iptables blocks any outbound traffic that tries to skip the proxy. Agent state persists across runs in volumes, policies hot-reload, and VS Code or JetBrains devcontainers can attach to the sandbox. Security-conscious developers on Apple Silicon (Colima + Docker) running semi-trusted agents are the users.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agent-sandbox.md)
+(backing feed `description`, not a verified repo-code finding)
+Giving a coding agent your real machine hands it your credentials and your whole filesystem, which is why many teams refuse to run them locally; agent-sandbox wraps agents (Claude Code, Codex, Gemini,
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

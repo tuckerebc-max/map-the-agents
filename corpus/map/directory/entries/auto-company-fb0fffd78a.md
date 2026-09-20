@@ -24,4 +24,4 @@ Repository map entry: [nicepkg/auto-company](../../repos/nicepkg/auto-company.md
 
 (backing feed `description`, not a verified repo-code finding)
 auto-company is an experimental project that runs a simulated software company around the clock using 14 AI agents modeled on real-world figures (Bezos, Munger, DHH, Werner Vogels) and powered by Clau
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

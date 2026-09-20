@@ -24,4 +24,4 @@ Repository map entry: [legioncodeinc/honeycomb](../../repos/legioncodeinc/honeyc
 
 (backing feed `description`, not a verified repo-code finding)
 honeycomb gives coding agents a shared, durable memory across sessions, tools, and machines. A local daemon captures each agent turn through harness hooks, distills it into a three-tier structure — a
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [raphaelregnier/vibe-annotations](../../repos/raphaelregni
 
 (backing feed `description`, not a verified repo-code finding)
 Visual feedback in web development usually dies in screenshots: someone marks up a page, and the annotations become tickets or re-typed prompts. Vibe-annotations closes that loop for AI-driven develop
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

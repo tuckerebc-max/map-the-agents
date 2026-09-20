@@ -24,4 +24,4 @@ Repository map entry: [tempont/small-opencode-orchestrator](../../repos/tempont/
 
 (backing feed `description`, not a verified repo-code finding)
 The project is a configuration rather than a binary: cloned into ~/.config/opencode, it defines an orchestrator agent that routes work to plan-runner, code-executor, test-verifier, code-reviewer, docs
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

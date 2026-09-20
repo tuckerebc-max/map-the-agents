@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 NanoClaw is a self-hosted personal AI assistant harness that trades the weight of OpenClaw for something small enough to read and fork. A host process accepts messages from WhatsApp, Telegram, Slack,
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json)

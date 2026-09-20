@@ -24,4 +24,4 @@ Repository map entry: [scarmonit/antigravity-jules-orchestration](../../repos/sc
 
 (backing feed `description`, not a verified repo-code finding)
 The project exists because Antigravity's browser automation and Jules' autonomous coding sessions don't compose natively: this Node.js MCP server (Streamable HTTP, port 3323) exposes Jules core API, s
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

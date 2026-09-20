@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: Mng-dev-ai
@@ -22,8 +22,6 @@ Repository map entry: [mng-dev-ai/agentrove](../../repos/mng-dev-ai/agentrove.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Self-hosted AI coding workspace that orchestrates multiple AI coding agents (not just one) from one interface via ACP adapters, each in its own Docker/host sandbox. Multi-agent 'agent fleet' orchestration: a lead agent on a strong model decomposes work and routes tasks to specialized worker agents/models/personas running in parallel git worktrees. Ships as Docker web app, macOS Tauri desktop, and native ...
-
-(captured site page body (agents/agentrove.md), not a verified repo-code finding)
-Running several coding agents usually means juggling terminal windows, scattered config, and no shared history. Agentrove bundles chat, editor, terminal, diffs, secrets, and git tooling into one self-hosted web workspace, with each agent (Antigravity, Claude Code, Codex, Copilot, Cursor, Grok, OpenCode) connected through ACP adapters and each workspace isolated in its own Docker or host sandbox. A bundled MCP server exposes the instance as orchestrator tools, enabling sub-threads where a lead chat spawns worker chats in isolated worktrees, fans reviewer personas over diffs, and delegates accepted fixes back. Workers can run unattended in full-execution mode while the lead polls and evaluates results. It ships as a Docker Compose stack with a Tauri macOS desktop app and an iOS thin client, under Apache 2.0.
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentrove.md)
+(published index `description`, not a verified repo-code finding)
+Running several coding agents usually means juggling terminal windows, scattered config, and no shared history. Agentrove bundles chat, editor, terminal, diffs, secrets, and git tooling into one self-
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [zhanghandong/harness-engineering-from-cc-to-ai-coding](..
 
 (backing feed `description`, not a verified repo-code finding)
 This project is an open-source technical book, written in Chinese, that dissects Claude Code's architecture from its shipped artifacts. Using the public npm package and embedded source maps, the autho
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

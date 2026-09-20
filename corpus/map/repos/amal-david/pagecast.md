@@ -1,9 +1,9 @@
 # amal-david/pagecast
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit aa48964e7ca3 @ 1679bbc806747467
+Latest snapshot: commit aa48964e7ca3 @ edd1bc9b288ecf87
 
 ## Summary (orientation draft, not independently verified)
 

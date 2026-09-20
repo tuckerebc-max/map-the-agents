@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: catatafishen
@@ -22,8 +22,6 @@ Repository map entry: [catatafishen/agentbridge](../../repos/catatafishen/agentb
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): JetBrains IDE plugin bridging AI coding agents to IntelliJ platform APIs through 120+ native MCP tools, letting agents call deterministic IntelliJ tools (PSI, VFS, refactoring engine, test runner, debugger) directly instead of relying on LLMs to approximate code intelligence from text. Supports 8 agents with one-click switching and cross-client session resume.
-
-(captured site page body (agents/agentbridge.md), not a verified repo-code finding)
-When a coding agent edits through a terminal, it sees IntelliJ projects as text and misses what the compiler, index, and refactoring engine already know. agentbridge closes that gap by exposing the IntelliJ platform — PSI syntax trees, VFS, refactoring actions, test runner, build system — as 120-plus MCP tools over an HTTP bridge, so agents like Claude Code, Codex, Copilot, Kiro, Junie, or OpenCode call deterministic IDE operations instead of guessing. Per-agent tool permissions gate what each client may touch, sessions resume across clients, and a PWA exposes the chat over HTTPS from any device. Developers working in JetBrains IDEs who want agents to use the IDE's own code intelligence are the audience.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agentbridge.md)
+(backing feed `description`, not a verified repo-code finding)
+When a coding agent edits through a terminal, it sees IntelliJ projects as text and misses what the compiler, index, and refactoring engine already know. agentbridge closes that gap by exposing the In
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

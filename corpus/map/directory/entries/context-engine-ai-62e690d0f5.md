@@ -24,4 +24,4 @@ Repository map entry: [quinnod345/context-engine](../../repos/quinnod345/context
 
 (backing feed `description`, not a verified repo-code finding)
 Agents that operate over hours lose track of what happened earlier, and the conventional fix - a vector database plus an embedding API - adds infrastructure many projects cannot justify. context-engin
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: iamfakeguru
@@ -22,8 +22,6 @@ Repository map entry: [iamfakeguru/agent-md](../../repos/iamfakeguru/agent-md.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Portable contracts for coding agents — single source-of-truth rules file, repo-local hooks, persistent task state, and helper scripts so AI agents verify their work rather than guess. Multi-agent portable (Claude Code, Codex, Cursor, Windsurf, Aider).
-
-(captured site page body (agents/agent-md.md), not a verified repo-code finding)
-Rules written in prose get ignored the moment a model rationalizes around them, so agent-md moves everything that can be forgotten into things that cannot: an installer lays down a single AGENT.md source of truth, generates per-tool variants (AGENTS.md, CLAUDE.md), and wires repo-local hooks for Claude Code, Codex, and git pre-commit that block destructive commands and force stop-verify steps. Task state lives in memory files — plan, progress, verify — so commitments survive across sessions instead of being re-derived from chat. Helper scripts add a doctor check and Playwright screenshot capture for visual evidence. Teams running Claude Code, Codex, Cursor, Windsurf, or Aider over the same repo use it to make all of them obey the same contract.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json); [site page @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/agents/agent-md.md)
+(backing feed `description`, not a verified repo-code finding)
+Rules written in prose get ignored the moment a model rationalizes around them, so agent-md moves everything that can be forgotten into things that cannot: an installer lays down a single AGENT.md sou
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

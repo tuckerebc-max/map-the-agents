@@ -24,4 +24,4 @@ Repository map entry: [ascorbic/am-i-vibing](../../repos/ascorbic/am-i-vibing.md
 
 (backing feed `description`, not a verified repo-code finding)
 Libraries and CLIs increasingly need to know whether their output is being read by a human or fed back into an agent, since error messages, logging verbosity, and formatting differ. am-i-vibing expose
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

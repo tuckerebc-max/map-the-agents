@@ -24,4 +24,4 @@ Repository map entry: [sudoprivacy/sudocode](../../repos/sudoprivacy/sudocode.md
 
 (published index `description`, not a verified repo-code finding)
 sudocode was built by the Sudo Privacy community in explicit reaction to Claude Code's beginner-oriented direction, and its design choices follow from that audience: output renders inline so tmux, ssh
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

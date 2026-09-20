@@ -24,4 +24,4 @@ Repository map entry: [sagiyaacoby/teamhero](../../repos/sagiyaacoby/teamhero.md
 
 (published index `description`, not a verified repo-code finding)
 TeamHero is the self-hosted, MIT-licensed core of the Kapow managed-agent platform, built on the premise that parallel coding agents fail without management structure. It runs Claude Code as the execu
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

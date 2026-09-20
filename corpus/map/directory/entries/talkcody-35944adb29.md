@@ -24,4 +24,4 @@ Repository map entry: [talkcody/talkcody](../../repos/talkcody/talkcody.md) (sou
 
 (published index `description`, not a verified repo-code finding)
 TalkCody is an open-source desktop coding agent aimed at users who want agent capability without sending code to a hosted service or adopting a single vendor. Built on Rust/Tauri with a React frontend
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

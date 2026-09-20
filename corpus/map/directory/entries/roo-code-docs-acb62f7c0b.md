@@ -24,4 +24,4 @@ Repository map entry: [roocodeinc/roo-code-docs](../../repos/roocodeinc/roo-code
 
 (backing feed `description`, not a verified repo-code finding)
 The repository exists to build and publish docs.roocode.com, the reference for Roo Code's modes, MCP integration, and configuration, written in Markdown and assembled with Docusaurus. Its history trac
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Coven is a Rust platform for orchestrating AI agents that need tool capabilities and gRPC streaming. The architecture splits cleanly: coven-agent runs a single-workspace agent, coven-swarm supervises
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json)

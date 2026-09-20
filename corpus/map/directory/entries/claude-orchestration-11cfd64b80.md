@@ -24,4 +24,4 @@ Repository map entry: [mbruhler/claude-orchestration](../../repos/mbruhler/claud
 
 (backing feed `description`, not a verified repo-code finding)
 The plugin brings data-pipeline ergonomics to agent work: instead of re-prompting Claude Code through each step of a multi-stage task, users describe a workflow in natural language or .flow syntax, an
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

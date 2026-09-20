@@ -1,0 +1,61 @@
+# Pagecast
+
+> Local-first CLI and app for previewing HTML/Markdown reports and static web projects, then publishing them to Cloudflare Pages URLs.
+
+## Links
+
+- Website: https://pagecasthq.pages.dev/
+- GitHub: https://github.com/Amal-David/pagecast
+- README: https://github.com/Amal-David/pagecast/blob/main/README.md
+- Skills.sh: https://www.skills.sh/amal-david/pagecast/publish-report
+- Codex skill: https://github.com/Amal-David/pagecast/tree/main/.codex/skills/publish-report
+- Portable agent skill: https://github.com/Amal-David/pagecast/blob/main/plugin/skills/publish-report/SKILL.md
+
+## Install
+
+- One-command app: `npx pagecast`
+- Agent skill: `npx skills add https://github.com/amal-david/pagecast --skill publish-report`
+- From source: `git clone https://github.com/Amal-David/pagecast.git && cd pagecast && npm start`
+
+## Command discovery
+
+Use `pagecast --help` to confirm the current interface.
+
+## Common workflows
+
+- Start the app: `npx pagecast`
+- One-time Cloudflare setup: `npx pagecast pages setup --project pagecast --json`
+- Publish an HTML report snapshot: `npx pagecast publish "/absolute/path/report.html" --json`
+- Publish Markdown as a page: `npx pagecast publish "/absolute/path/report.md" --json`
+- Publish a built app entry as a share link: `npx pagecast publish "/absolute/path/dist/index.html" --json`
+- Deploy a whole static folder to Pages: `npx pagecast pages deploy "/absolute/path/dist" --project pagecasthq --branch main --json`
+- Deploy without specifying a branch: `npx pagecast pages deploy "/absolute/path/dist" --project pagecasthq --json`
+- Equivalent high-level site deploy: `npx pagecast publish site "/absolute/path/dist" --project pagecasthq --branch main --json`
+- Show Pages status: `npx pagecast pages status --json`
+- List Pages projects: `npx pagecast pages projects list --json`
+- List deployment snapshots: `npx pagecast pages deployments list --json`
+- Delete one deployment snapshot: `npx pagecast pages deployments delete <id> --json`
+- Prune old snapshots, keeping the newest N: `npx pagecast pages deployments prune --keep 5 --yes --json`
+- Run local MCP over stdio: `npx pagecast mcp`
+
+## Notes for agents
+
+- Never publish without explicit user confirmation; publishing creates a public URL.
+- Prefer `--json` for automation.
+- Use absolute paths.
+- Use `publish <file>` for new shareable `/p/<token>/` links.
+- Use `publish site` or `pages deploy` only when the user intends to deploy a whole static folder to a named Cloudflare Pages project.
+- Direct site deploys replace the target Pages project contents.
+- `--branch` is optional for direct site deploys; Pagecast uses `main` by default.
+- Do not call raw `npx wrangler pages deploy` unless Pagecast is unavailable or the user explicitly asks for Wrangler.
+- `pages deployments delete`/`prune` permanently remove whole-site snapshots; confirm with the user first. The live deployment is protected and `prune` requires `--keep <N>` plus `--yes` for non-interactive runs.
+- MCP tools: `status`, `list_pages`, `publish_file`, `publish_content`, and `revoke_publication`.
+- Prefer MCP `publish_content`; MCP `publish_file` excludes sibling assets unless called with `includeAssets: true` and `confirmAssets: true`.
+- MCP `revoke_publication` requires `confirm: true` in the tool arguments.
+- Keep the Pagecast admin API loopback-only. Hosted HTTP MCP and VPN-only publishing are follow-up hardening work, not part of the first MCP surface.
+
+## Error handling
+
+- `401`: run `npx pagecast pages setup`, or run `npx pagecast` and connect Cloudflare.
+- `409`: multiple Cloudflare accounts are available; pass `--account <account-id>` or choose one in the app.
+- Other errors: relay the `error` field and do not claim success.

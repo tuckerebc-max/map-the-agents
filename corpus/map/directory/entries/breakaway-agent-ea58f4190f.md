@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Breakaway Agent is a deliberately small experiment bed for people who want to study and reshape the agent loop itself. Built on Bun, the core loop lives in roughly 165 lines of TypeScript and exposes
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json)

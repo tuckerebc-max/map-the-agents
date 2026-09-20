@@ -24,4 +24,4 @@ Repository map entry: [fission-ai/openspec](../../repos/fission-ai/openspec.md) 
 
 (backing feed `description`, not a verified repo-code finding)
 AI coding assistants routinely build the wrong thing because intent lives in a chat transcript rather than a reviewable artifact. OpenSpec inserts a lightweight spec process: openspec init scaffolds a
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

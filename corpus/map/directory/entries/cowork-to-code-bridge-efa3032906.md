@@ -24,4 +24,4 @@ Repository map entry: [abhinaykrupa/cowork-to-code-bridge](../../repos/abhinaykr
 
 (backing feed `description`, not a verified repo-code finding)
 Claude Cowork runs in a cloud sandbox that cannot reach the local machine, so any task needing the real filesystem - builds, tests, commits - stops at the sandbox wall. This bridge connects the two en
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [facebookresearch/codellama](../../repos/facebookresearch/
 
 (backing feed `description`, not a verified repo-code finding)
 Code Llama was Meta's family of code-specialized large language models built on Llama 2, released in sizes from 7B to 70B in three variants: foundation, Python-specialized, and instruction-following.
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

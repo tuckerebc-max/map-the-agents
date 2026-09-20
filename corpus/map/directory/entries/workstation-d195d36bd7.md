@@ -24,4 +24,4 @@ Repository map entry: [varie-ai/workstation](../../repos/varie-ai/workstation.md
 
 (published index `description`, not a verified repo-code finding)
 workstation exists for the case where Claude Code runs autonomously on a Mac but the developer is away from the desk: it pairs with OpenClaw so plans can be approved, questions answered, and commands
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [dongdongunique/llm_rag](../../repos/dongdongunique/llm_ra
 
 (backing feed `description`, not a verified repo-code finding)
 Built as homework for an Advanced Database course, LLM_RAG demonstrates the standard RAG pipeline end to end: documents are chunked and embedded into a FAISS index, similarity search retrieves context
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

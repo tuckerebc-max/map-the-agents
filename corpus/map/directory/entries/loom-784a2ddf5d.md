@@ -24,4 +24,4 @@ Repository map entry: [husu/loom](../../repos/husu/loom.md) (source: backing, fi
 
 (backing feed `description`, not a verified repo-code finding)
 API documentation drifts out of sync with code, and Loom addresses that with a chat TUI where developers describe endpoints in natural language and an LLM writes versioned JSON Schema files into docs/
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

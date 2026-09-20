@@ -24,4 +24,4 @@ Repository map entry: [nikitadmitrieff/auto-co-meta](../../repos/nikitadmitrieff
 
 (backing feed `description`, not a verified repo-code finding)
 auto-co runs an autonomous AI company from the terminal using roughly 50 lines of bash plus markdown state files, with Claude Code as the only real dependency. The auto-loop.sh script (about 3,000 lin
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

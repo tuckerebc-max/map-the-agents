@@ -24,4 +24,4 @@ Repository map entry: [elpsykongloo/paperbanana-pro](../../repos/elpsykongloo/pa
 
 (backing feed `description`, not a verified repo-code finding)
 PaperBanana-Pro automates the illustrations and statistical plots researchers otherwise draw by hand from a paper's method section. Six pipeline stages retrieve few-shot references, plan a structured
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

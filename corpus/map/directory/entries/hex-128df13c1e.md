@@ -24,4 +24,4 @@ No repository record: repository source unavailable in this directory capture, n
 
 (published index `description`, not a verified repo-code finding)
 Hex is a native-Go answer to Claude Code for developers who would rather run their coding agent as a single statically-linked binary than a Node stack. Inspired by Claude Code, Crush, Codex, and MaKeR
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json)

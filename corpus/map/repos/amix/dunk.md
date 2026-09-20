@@ -1,9 +1,9 @@
 # amix/dunk
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c82459356688 @ 39f303c315706246
+Latest snapshot: commit c82459356688 @ 5f9189fb9261502e
 
 ## Summary (orientation draft, not independently verified)
 

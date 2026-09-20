@@ -24,4 +24,4 @@ Repository map entry: [kingbootoshi/rgr](../../repos/kingbootoshi/rgr.md) (sourc
 
 (backing feed `description`, not a verified repo-code finding)
 The premise is that an agent with write access cannot be trusted to report its own test results — it can weaken a failing test, delete the evidence, or replace real assertions with mock-echo tests. rg
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

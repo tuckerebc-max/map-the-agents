@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (974)
+## current (972)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -74,9 +74,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [alicheg/gpt-coder](../repos/alicheg/gpt-coder.md) [coverage: complete]
 - [allenai/marg-reviewer](../repos/allenai/marg-reviewer.md) [coverage: complete]
 - [alpbahadur/49-ide](../repos/alpbahadur/49-ide.md) [coverage: complete]
-- [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]
 - [amersarhan/darce-cli](../repos/amersarhan/darce-cli.md) [coverage: complete]
-- [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
 - [amrit110/oli](../repos/amrit110/oli.md) [coverage: complete]
 - [amsilf/sc-helm-app](../repos/amsilf/sc-helm-app.md) [coverage: complete]
 - [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [jazzenchen/vibearound](../repos/jazzenchen/vibearound.md) [coverage: partial]
 - [jcast90/relay](../repos/jcast90/relay.md) [coverage: partial]
 - [jcodesmore/ai-website-cloner-template](../repos/jcodesmore/ai-website-cloner-template.md) [coverage: partial]
+- [jcz2020/par](../repos/jcz2020/par.md) [coverage: partial]
+- [jduckles/git-collaboration](../repos/jduckles/git-collaboration.md) [coverage: complete]

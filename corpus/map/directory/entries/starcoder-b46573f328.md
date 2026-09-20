@@ -24,4 +24,4 @@ Repository map entry: [bigcode-project/starcoder](../../repos/bigcode-project/st
 
 (backing feed `description`, not a verified repo-code finding)
 StarCoder was the BigCode community's flagship code model, trained on The Stack v1.2 plus GitHub issues, commits, and notebooks with fill-in-the-middle and an 8,192-token context, and it could be quan
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

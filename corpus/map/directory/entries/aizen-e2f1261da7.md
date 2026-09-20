@@ -24,4 +24,4 @@ Repository map entry (renamed): original lead [aizen-stack/aizen](https://github
 
 (published index `description`, not a verified repo-code finding)
 Aizen targets the ops-light end of the spectrum: one static binary that runs on a 512 MB VPS or Raspberry Pi with no cloud account, driven by any OpenAI-compatible endpoint (OpenAI, OpenRouter, local
-Sources: [published index (sha256:9880388de40d)](https://alltheagents.org/agents.json); [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

@@ -24,4 +24,4 @@ Repository map entry: [backbay-labs/clawdstrike](../../repos/backbay-labs/clawds
 
 (backing feed `description`, not a verified repo-code finding)
 Clawdstrike exists because agent tool calls have OS-level blast radius but no OS-level enforcement: it applies the EDR model to AI agents, evaluating tool calls and OS events against a policy of guard
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

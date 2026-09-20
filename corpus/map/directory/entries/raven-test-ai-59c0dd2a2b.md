@@ -24,4 +24,4 @@ Repository map entry: [dhurng/raven-test-ai](../../repos/dhurng/raven-test-ai.md
 
 (backing feed `description`, not a verified repo-code finding)
 Raven-Test-AI is an implementation of the classic AI-course project that solves Raven's Progressive Matrices, the visual pattern-completion test used in intelligence assessment and in Georgia Tech's K
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

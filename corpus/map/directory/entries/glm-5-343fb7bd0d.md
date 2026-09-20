@@ -24,4 +24,4 @@ Repository map entry: [zai-org/glm-5](../../repos/zai-org/glm-5.md) (source: bac
 
 (backing feed `description`, not a verified repo-code finding)
 The GLM-5 series (GLM-5, 5.1, 5.2, 5.3, 5.3-Flash) is Z.ai's open-weight model line aimed squarely at coding and long-horizon agentic workloads, with 28.5T pre-training tokens, DeepSeek Sparse Attenti
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)

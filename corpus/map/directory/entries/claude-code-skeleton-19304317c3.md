@@ -24,4 +24,4 @@ Repository map entry: [yasasbanukaofficial/claude-code](../../repos/yasasbanukao
 
 (backing feed `description`, not a verified repo-code finding)
 The repository existed to preserve and expose the accidentally leaked TypeScript source of Anthropic's Claude Code CLI, which shipped inside the npm package's source map. Its documentation described t
-Sources: [backing feed @ 31f43ac34715](https://github.com/prime-radiant-inc/alltheagents.org/blob/31f43ac34715aad88b365d22cea660ea6f41b81d/_data/agents.json)
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
