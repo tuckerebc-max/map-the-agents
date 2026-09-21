@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [jetbrains/junie](../repos/jetbrains/junie.md) [coverage: complete]
-- [jetbrains/youtrack-workflows](../repos/jetbrains/youtrack-workflows.md) [coverage: complete]
-- [jhutchings1/create-actionsprs](../repos/jhutchings1/create-actionsprs.md) [coverage: complete]
-- [jigjoy-ai/baro](../repos/jigjoy-ai/baro.md) [coverage: partial]
 - [jina-ai/dev-gpt](../repos/jina-ai/dev-gpt.md) [coverage: complete]
 - [jmfederico/pi-web](../repos/jmfederico/pi-web.md) [coverage: partial]
 - [jnmetacode/agency-agents-zh](../repos/jnmetacode/agency-agents-zh.md) [coverage: partial]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [tndata/codingagentexplorer](../repos/tndata/codingagentexplorer.md) [coverage: complete]
 - [tokfinity/infcode](../repos/tokfinity/infcode.md) [coverage: complete]
 - [tom-doerr/vim_codex](../repos/tom-doerr/vim_codex.md) [coverage: complete]
+- [tomlin7/biscuit](../repos/tomlin7/biscuit.md) [coverage: partial]
+- [touchpoint-labs/gadfly](../repos/touchpoint-labs/gadfly.md) [coverage: complete]
+- [touwaeriol/claude-code-plus](../repos/touwaeriol/claude-code-plus.md) [coverage: partial]
+- [tractorjuice/arc-kit](../repos/tractorjuice/arc-kit.md) [coverage: partial]

@@ -10,7 +10,6 @@
 - [adal-cli](../entries/adal-cli-2dad9f34c1.md)
 - [aeon](../entries/aeon-f7bed5a9de.md)
 - [aetherstudio](../entries/aetherstudio-7ea610c679.md)
-- [agent-sandbox](../entries/agent-sandbox-2551521c5c.md)
 - [agent-sh](../entries/agent-sh-93823270ed.md)
 - [agentcoder](../entries/agentcoder-4f2340a3d1.md)
 - [agentflow](../entries/agentflow-a7f7eb9294.md)

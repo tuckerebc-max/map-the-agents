@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: AgentelliJ
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Terminal coding agents live in a separate window from IntelliJ, so every prompt re-explains context the IDE already holds. AgentelliJ embeds the agents in the IDE: OpenCode, Claude Code, and Codex CLI
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Hosts terminal-based AI coding agents in IntelliJ
+
+(captured site page body (agents/agentellij.md), not a verified repo-code finding)
+Terminal coding agents live in a separate window from IntelliJ, so every prompt re-explains context the IDE already holds. AgentelliJ embeds the agents in the IDE: OpenCode, Claude Code, and Codex CLI run in a tool window that can flip between raw terminal mode and a graphical chat without restarting, and the plugin shares the current file, selected lines, and project-tree items into the conversation. Per-agent binary paths, consent-based installation of missing CLIs, and balloon or OS-native notifications on completion round out the workflow. It is MIT-licensed (source at github.com/hei5enbug/agentellij), supports OpenCode, Claude Code, Codex CLI, and a native terminal agent, and targets IntelliJ-centered developers who use agent CLIs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agentellij.md)

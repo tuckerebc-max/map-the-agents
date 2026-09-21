@@ -1,5 +1,5 @@
 {
-  "cursor": "amrit110/oli",
+  "cursor": "andymik90/aperant",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -245,6 +245,31 @@
       "failures": 0,
       "last_at": "2026-09-20T13:34:46+00:00",
       "last_outcome": "reused"
+    },
+    "amsilf/sc-helm-app": {
+      "failures": 0,
+      "last_at": "2026-09-21T15:53:14+00:00",
+      "last_outcome": "reused"
+    },
+    "anaconda-labs/building-intelligent-apps-with-anaconda": {
+      "failures": 0,
+      "last_at": "2026-09-21T15:53:15+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "andrefetch/postal": {
+      "failures": 0,
+      "last_at": "2026-09-21T15:53:18+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "andrewyng/context-hub": {
+      "failures": 0,
+      "last_at": "2026-09-21T15:53:22+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "andymik90/aperant": {
+      "failures": 0,
+      "last_at": "2026-09-21T15:53:24+00:00",
+      "last_outcome": "snapshotted"
     }
   },
   "runs": [
@@ -1571,6 +1596,176 @@
         "stages": {
           "catalog": 1.045,
           "snapshots": 8.25
+        }
+      }
+    },
+    {
+      "attempted": [
+        "amsilf/sc-helm-app",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant"
+      ],
+      "catalog": {
+        "backlog": 748,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "claude-memory-compiler",
+          "claude-northstar",
+          "claude-orchestration",
+          "claude-squad",
+          "claude-swarm",
+          "claudecode-orchestrator",
+          "claudemacs",
+          "claudevim",
+          "claudexor",
+          "claudraband",
+          "claurst",
+          "claw-code",
+          "claw-code-agent",
+          "clawcodex",
+          "clawde-code",
+          "clawdstrike",
+          "cli-agent-orchestrator-cao",
+          "cli-llm-coding",
+          "cliclaw",
+          "clideck",
+          "cline",
+          "clio",
+          "clitrigger",
+          "clodex-ide",
+          "cloi",
+          "clu",
+          "cmux",
+          "codai",
+          "code-agent",
+          "code-agent-survey",
+          "code-assistant",
+          "code-interpreter",
+          "code-interpreter-api",
+          "code-review",
+          "code2prompt",
+          "codeactagent",
+          "codealmanac",
+          "codealta",
+          "codeany",
+          "codeassist",
+          "codebadger",
+          "codebase-argus",
+          "codebase-index-cli",
+          "codebuddy",
+          "codebuff",
+          "codeclinicr",
+          "codecontests",
+          "codedna",
+          "codeflash",
+          "codefox-cli"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-09-21T15:53:24+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "amsilf/sc-helm-app",
+          "reused": true,
+          "snapshot_id": "2404526c351a141d"
+        },
+        {
+          "commit": "88c74290e89cd75bd6d2df2e93ac1af737343004",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "anaconda-labs/building-intelligent-apps-with-anaconda",
+          "reused": false,
+          "snapshot_id": "8a7c504ab8ae2407"
+        },
+        {
+          "commit": "4d9bf71221355f022904bcd07f7bcef7e46aa67d",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 1,
+          "repo": "andrefetch/postal",
+          "reused": false,
+          "snapshot_id": "d6dfb027204c94e6"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 1,
+          "repo": "andrewyng/context-hub",
+          "reused": false,
+          "snapshot_id": "65cc044e4f4063f8"
+        },
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "explicit_paths": [],
+          "files_stored": 9,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "andymik90/aperant",
+          "reused": false,
+          "snapshot_id": "2224f1cb5549aebc"
+        }
+      ],
+      "started": "2026-09-21T15:53:12+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 12.866,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.751,
+          "snapshots": 12.067
         }
       }
     }

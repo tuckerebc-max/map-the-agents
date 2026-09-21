@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (972)
+## current (968)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -77,10 +77,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [amersarhan/darce-cli](../repos/amersarhan/darce-cli.md) [coverage: complete]
 - [amrit110/oli](../repos/amrit110/oli.md) [coverage: complete]
 - [amsilf/sc-helm-app](../repos/amsilf/sc-helm-app.md) [coverage: complete]
-- [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
-- [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
-- [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]
-- [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
 - [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
 - [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [jcodesmore/ai-website-cloner-template](../repos/jcodesmore/ai-website-cloner-template.md) [coverage: partial]
 - [jcz2020/par](../repos/jcz2020/par.md) [coverage: partial]
 - [jduckles/git-collaboration](../repos/jduckles/git-collaboration.md) [coverage: complete]
+- [jetbrains/junie](../repos/jetbrains/junie.md) [coverage: complete]
+- [jetbrains/youtrack-workflows](../repos/jetbrains/youtrack-workflows.md) [coverage: complete]
+- [jhutchings1/create-actionsprs](../repos/jhutchings1/create-actionsprs.md) [coverage: complete]
+- [jigjoy-ai/baro](../repos/jigjoy-ai/baro.md) [coverage: partial]

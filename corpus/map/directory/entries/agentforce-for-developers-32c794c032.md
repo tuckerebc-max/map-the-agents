@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Salesforce
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Salesforce development revolves around Apex, Lightning Web Components, and org metadata, none of which general-purpose assistants handle well without platform context, so Salesforce has shipped AI dev
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI coding agent for Apex/Salesforce development (ex Einstein for Developers)
+
+(captured site page body (agents/agentforce-for-developers.md), not a verified repo-code finding)
+Salesforce development revolves around Apex, Lightning Web Components, and org metadata, none of which general-purpose assistants handle well without platform context, so Salesforce has shipped AI developer tooling under the Einstein and now Agentforce brands. Agentforce for Developers covers the prompt-to-Apex generation, inline completion, and assistant features delivered through VS Code extensions, Code Builder, and web surfaces, sitting on the same platform as Agentforce Vibes, its agentic successor in VS Code. The tooling is proprietary, tied to Salesforce subscriptions, and renamed frequently enough that Einstein, Agentforce for Developers, and Agentforce Vibes overlap in documentation. Its users are Salesforce platform developers writing Apex and LWC.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agentforce-for-developers.md)

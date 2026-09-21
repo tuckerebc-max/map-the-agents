@@ -30,31 +30,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Agena (`agena`)](agena-b9f411114d.md) -- published+backing+pages
 - [agency-agents-zh (`agency-agents-zh`)](agency-agents-zh-350e33d48e.md) -- backing+pages
 - [Agent-Blackbox (`agent-blackbox`)](agent-blackbox-28fd7eaee1.md) -- backing+pages
-- [agent-deck (`agent-deck`)](agent-deck-6490e836cf.md) -- published+backing
-- [Agent FM (`agent-fm`)](agent-fm-0c05b4fd26.md) -- published+backing
-- [Agent GUI (`agent-gui`)](agent-gui-b083ab2052.md) -- published+backing
-- [Agent-harness-kit (`agent-harness-kit`)](agent-harness-kit-b31e9280cc.md) -- published+backing
-- [Agent-Manager (`agent-manager`)](agent-manager-3ad8690e9a.md) -- published+backing
-- [agent-md (`agent-md`)](agent-md-4daf77d1d9.md) -- backing-only
-- [agent-of-empires (`agent-of-empires`)](agent-of-empires-00cf4ad090.md) -- published+backing
-- [agent-orchestrator (`agent-orchestrator`)](agent-orchestrator-8c5aaea139.md) -- published+backing
-- [Agent Orchestrator (AO) (`agent-orchestrator-ao`)](agent-orchestrator-ao-e9edd7901c.md) -- published+backing
-- [agent-os (`agent-os`)](agent-os-c242c43a13.md) -- published+backing
-- [Agent-Repoguardian (`agent-repoguardian`)](agent-repoguardian-9c32c2c5de.md) -- backing-only
-- [agent-sandbox (`agent-sandbox`)](agent-sandbox-2551521c5c.md) -- backing-only
-- [agent-sh (`agent-sh`)](agent-sh-93823270ed.md) -- published+backing
-- [Agent Teams AI (`agent-teams-ai`)](agent-teams-ai-a9ac1a4f56.md) -- published+backing
-- [AgentBox (`agentbox`)](agentbox-8f64ae6a4c.md) -- published+backing
-- [agentbridge (`agentbridge`)](agentbridge-ef2c8934eb.md) -- backing-only
-- [AgentCoder (`agentcoder`)](agentcoder-4f2340a3d1.md) -- published+backing
-- [agentcookie (`agentcookie`)](agentcookie-466d796d6d.md) -- backing-only
-- [AgentellIJ (`agentellij`)](agentellij-d9ffac3fde.md) -- published+backing
-- [AgentFlow (`agentflow`)](agentflow-a7f7eb9294.md) -- published+backing
-- [Agentforce for Developers (`agentforce-for-developers`)](agentforce-for-developers-32c794c032.md) -- published+backing
-- [Agentforce Vibes (`agentforce-vibes`)](agentforce-vibes-3e2983300d.md) -- published+backing
-- [AgentHub (`agenthub`)](agenthub-ac7f7a58b8.md) -- published+backing
-- [Agentic-Ai- (`agentic-ai`)](agentic-ai-e424a7d45c.md) -- backing-only
-- [agentic-code (`agentic-code`)](agentic-code-aa8c74b4ea.md) -- backing-only
+- [agent-deck (`agent-deck`)](agent-deck-6490e836cf.md) -- published+backing+pages
+- [Agent FM (`agent-fm`)](agent-fm-0c05b4fd26.md) -- published+backing+pages
+- [Agent GUI (`agent-gui`)](agent-gui-b083ab2052.md) -- published+backing+pages
+- [Agent-harness-kit (`agent-harness-kit`)](agent-harness-kit-b31e9280cc.md) -- published+backing+pages
+- [Agent-Manager (`agent-manager`)](agent-manager-3ad8690e9a.md) -- published+backing+pages
+- [agent-md (`agent-md`)](agent-md-4daf77d1d9.md) -- backing+pages
+- [agent-of-empires (`agent-of-empires`)](agent-of-empires-00cf4ad090.md) -- published+backing+pages
+- [agent-orchestrator (`agent-orchestrator`)](agent-orchestrator-8c5aaea139.md) -- published+backing+pages
+- [Agent Orchestrator (AO) (`agent-orchestrator-ao`)](agent-orchestrator-ao-e9edd7901c.md) -- published+backing+pages
+- [agent-os (`agent-os`)](agent-os-c242c43a13.md) -- published+backing+pages
+- [Agent-Repoguardian (`agent-repoguardian`)](agent-repoguardian-9c32c2c5de.md) -- backing+pages
+- [agent-sandbox (`agent-sandbox`)](agent-sandbox-2551521c5c.md) -- backing+pages
+- [agent-sh (`agent-sh`)](agent-sh-93823270ed.md) -- published+backing+pages
+- [Agent Teams AI (`agent-teams-ai`)](agent-teams-ai-a9ac1a4f56.md) -- published+backing+pages
+- [AgentBox (`agentbox`)](agentbox-8f64ae6a4c.md) -- published+backing+pages
+- [agentbridge (`agentbridge`)](agentbridge-ef2c8934eb.md) -- backing+pages
+- [AgentCoder (`agentcoder`)](agentcoder-4f2340a3d1.md) -- published+backing+pages
+- [agentcookie (`agentcookie`)](agentcookie-466d796d6d.md) -- backing+pages
+- [AgentellIJ (`agentellij`)](agentellij-d9ffac3fde.md) -- published+backing+pages
+- [AgentFlow (`agentflow`)](agentflow-a7f7eb9294.md) -- published+backing+pages
+- [Agentforce for Developers (`agentforce-for-developers`)](agentforce-for-developers-32c794c032.md) -- published+backing+pages
+- [Agentforce Vibes (`agentforce-vibes`)](agentforce-vibes-3e2983300d.md) -- published+backing+pages
+- [AgentHub (`agenthub`)](agenthub-ac7f7a58b8.md) -- published+backing+pages
+- [Agentic-Ai- (`agentic-ai`)](agentic-ai-e424a7d45c.md) -- backing+pages
+- [agentic-code (`agentic-code`)](agentic-code-aa8c74b4ea.md) -- backing+pages
 - [agentic-coding-basic (`agentic-coding-basic`)](agentic-coding-basic-f6bc4d044c.md) -- backing-only
 - [agentic-coding-intro (`agentic-coding-intro`)](agentic-coding-intro-15e7442a5f.md) -- backing-only
 - [agentic-coding-quickstart (`agentic-coding-quickstart`)](agentic-coding-quickstart-5e9704a227.md) -- backing-only

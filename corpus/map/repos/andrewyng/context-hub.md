@@ -1,9 +1,9 @@
 # andrewyng/context-hub
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 67dcbeb2eb42 @ 1791801ae21ba245
+Latest snapshot: commit 67dcbeb2eb42 @ 65cc044e4f4063f8
 
 ## Summary (orientation draft, not independently verified)
 

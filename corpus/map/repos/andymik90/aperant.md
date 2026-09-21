@@ -1,9 +1,9 @@
 # andymik90/aperant
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 20250db069a8 @ 0c573f086089e8d9
+Latest snapshot: commit 20250db069a8 @ 2224f1cb5549aebc
 
 ## Summary (orientation draft, not independently verified)
 

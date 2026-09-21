@@ -97,10 +97,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [amix/dunk](../repos/amix/dunk.md) -- status=distilled, freshness=stale
 - [amrit110/oli](../repos/amrit110/oli.md) -- status=distilled, freshness=current
 - [amsilf/sc-helm-app](../repos/amsilf/sc-helm-app.md) -- status=distilled, freshness=current
-- [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) -- status=distilled, freshness=current
-- [andrefetch/postal](../repos/andrefetch/postal.md) -- status=distilled, freshness=current
-- [andrewyng/context-hub](../repos/andrewyng/context-hub.md) -- status=distilled, freshness=current
-- [andymik90/aperant](../repos/andymik90/aperant.md) -- status=distilled, freshness=current
+- [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) -- status=distilled, freshness=stale
+- [andrefetch/postal](../repos/andrefetch/postal.md) -- status=distilled, freshness=stale
+- [andrewyng/context-hub](../repos/andrewyng/context-hub.md) -- status=distilled, freshness=stale
+- [andymik90/aperant](../repos/andymik90/aperant.md) -- status=distilled, freshness=stale
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) -- status=distilled, freshness=current
 - [angleschina/angles-cli](../repos/angleschina/angles-cli.md) -- status=distilled, freshness=current
 - [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) -- status=distilled, freshness=current

@@ -1,9 +1,9 @@
 # andrefetch/postal
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 240622b0c2dc @ d2cc8dfe1c666ebc
+Latest snapshot: commit 4d9bf7122135 @ d6dfb027204c94e6
 
 ## Summary (orientation draft, not independently verified)
 

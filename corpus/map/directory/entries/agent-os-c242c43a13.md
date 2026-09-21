@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: saadnvd1
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Agent sessions keep running after you step away from the desk, but checking on them usually means SSH from a phone with a tiny keyboard. AgentOS serves a mobile-first web UI over self-hosted sessions
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Mobile-first web UI for managing AI coding sessions (Claude Code, Codex, Aider, Gemini CLI, Amp, Pi); multi-pane parallel terminals (up to 4 side-by-side), voice-to-text dictation, git integration, session orchestration via MCP Conductor/worker model.
+
+(captured site page body (agents/agent-os.md), not a verified repo-code finding)
+Agent sessions keep running after you step away from the desk, but checking on them usually means SSH from a phone with a tiny keyboard. AgentOS serves a mobile-first web UI over self-hosted sessions of Claude Code, Codex, Aider, Gemini CLI, Amp, Pi, and other CLIs, with up to four terminal panes side by side, voice-to-text for dictating prompts, and git integration covering status, diffs, commits, PRs, and worktrees. Session orchestration follows a Conductor/worker model over MCP, a Tauri desktop app wraps the same UI for desktop use, and a hosted cloud option exists at runagentos.com. Developers who kick off long agent runs and check in from phones or other machines are the users.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agent-os.md)

@@ -1,9 +1,9 @@
 # anaconda-labs/building-intelligent-apps-with-anaconda
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e178c9baf99f @ 33cc142722d4db88
+Latest snapshot: commit 88c74290e89c @ 8a7c504ab8ae2407
 
 ## Summary (orientation draft, not independently verified)
 
