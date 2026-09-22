@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [jina-ai/dev-gpt](../repos/jina-ai/dev-gpt.md) [coverage: complete]
-- [jmfederico/pi-web](../repos/jmfederico/pi-web.md) [coverage: partial]
-- [jnmetacode/agency-agents-zh](../repos/jnmetacode/agency-agents-zh.md) [coverage: partial]
-- [jo-inc/pi-mem](../repos/jo-inc/pi-mem.md) [coverage: complete]
 - [jo-inc/pi-reflect](../repos/jo-inc/pi-reflect.md) [coverage: complete]
 - [jogendrasingh1879/agentic-ai-](../repos/jogendrasingh1879/agentic-ai-.md) [coverage: complete]
 - [johannesjo/parallel-code](../repos/johannesjo/parallel-code.md) [coverage: partial]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [touchpoint-labs/gadfly](../repos/touchpoint-labs/gadfly.md) [coverage: complete]
 - [touwaeriol/claude-code-plus](../repos/touwaeriol/claude-code-plus.md) [coverage: partial]
 - [tractorjuice/arc-kit](../repos/tractorjuice/arc-kit.md) [coverage: partial]
+- [trafficguard/typedai](../repos/trafficguard/typedai.md) [coverage: partial]
+- [trailhq/graft](../repos/trailhq/graft.md) [coverage: complete]
+- [traycerai/traycer](../repos/traycerai/traycer.md) [coverage: partial]
+- [truefoundry/trueforge](../repos/truefoundry/trueforge.md) [coverage: partial]

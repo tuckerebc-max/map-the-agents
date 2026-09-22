@@ -1,9 +1,9 @@
 # andyrewlee/amux
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit f94362f6c25f @ 77bb298aa1345b27
+Latest snapshot: commit b04fbeb9472a @ a4fcc2d5515fb886
 
 ## Summary (orientation draft, not independently verified)
 

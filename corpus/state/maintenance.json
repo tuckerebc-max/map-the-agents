@@ -1,5 +1,5 @@
 {
-  "cursor": "andymik90/aperant",
+  "cursor": "anishsingh20/useful-generativeai-tools-repo",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -270,6 +270,36 @@
       "failures": 0,
       "last_at": "2026-09-21T15:53:24+00:00",
       "last_outcome": "snapshotted"
+    },
+    "andyrewlee/amux": {
+      "failures": 0,
+      "last_at": "2026-09-22T14:01:43+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "angleschina/angles-cli": {
+      "failures": 0,
+      "last_at": "2026-09-22T14:01:45+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "aniket-508/vercel-doctor": {
+      "failures": 0,
+      "last_at": "2026-09-22T14:01:47+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "anipotts/coding-agent-tips": {
+      "failures": 1,
+      "last_at": "2026-09-22T14:01:48+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/anipotts/coding-agent-tips"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "anishsingh20/useful-generativeai-tools-repo": {
+      "failures": 0,
+      "last_at": "2026-09-22T14:01:49+00:00",
+      "last_outcome": "reused"
     }
   },
   "runs": [
@@ -1766,6 +1796,177 @@
         "stages": {
           "catalog": 0.751,
           "snapshots": 12.067
+        }
+      }
+    },
+    {
+      "attempted": [
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anipotts/coding-agent-tips",
+        "anishsingh20/useful-generativeai-tools-repo"
+      ],
+      "catalog": {
+        "backlog": 698,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "codefuse-chatbot",
+          "codefuse-muagent",
+          "codegebragpt",
+          "codegenhelpers",
+          "codehamr",
+          "codeium-react-code-editor",
+          "codekanban",
+          "codel",
+          "codellama",
+          "codellmsurvey",
+          "codemachine-cli",
+          "codemini-cli",
+          "coderabbit-review-helper",
+          "codereview-ai-agent",
+          "codereviewagent",
+          "codeshell-vscode",
+          "codevibes",
+          "codex-cli",
+          "codex-jetbrains",
+          "codex-mobile",
+          "codex-multi-agents",
+          "codex-profiles",
+          "codex-security",
+          "coding-agent",
+          "coding-agent-account-manager",
+          "coding-agent-session-search",
+          "coding-agent-tips",
+          "coding-agents-databricks-apps",
+          "coding-agents-workshop",
+          "coding-the-coding-agents",
+          "coding-tutor",
+          "codingagentexplorer",
+          "codingit",
+          "codinit-dev",
+          "codirigent",
+          "cody-public-snapshot",
+          "colony-repo",
+          "comfyui-workflows",
+          "command-code",
+          "companion",
+          "companion-vscode",
+          "conch",
+          "concord-mcp",
+          "conduit-release",
+          "construct",
+          "context-engine-ai",
+          "context-engineering-intro",
+          "context-hub",
+          "contextvc",
+          "continous-ai"
+        ],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/anipotts/coding-agent-tips",
+          "repo": "anipotts/coding-agent-tips",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-09-22T14:01:49+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "b04fbeb9472a57be03da31f37999b4c9d08f29c1",
+          "explicit_paths": [],
+          "files_stored": 9,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "andyrewlee/amux",
+          "reused": false,
+          "snapshot_id": "a4fcc2d5515fb886"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "explicit_paths": [],
+          "files_stored": 8,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "angleschina/angles-cli",
+          "reused": false,
+          "snapshot_id": "10f313c0bf8c7309"
+        },
+        {
+          "commit": "1e03acffc82de30240b91552d8a5e4dd34f9e0f1",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "aniket-508/vercel-doctor",
+          "reused": false,
+          "snapshot_id": "a2081ee260244193"
+        },
+        {
+          "commit": "b2e7d57fdfa391fb72f068df22dd3fb3b37a8732",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "anishsingh20/useful-generativeai-tools-repo",
+          "reused": true,
+          "snapshot_id": "7bf46bc10f456316"
+        }
+      ],
+      "started": "2026-09-22T14:01:37+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 12.457,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.978,
+          "snapshots": 11.164
         }
       }
     }

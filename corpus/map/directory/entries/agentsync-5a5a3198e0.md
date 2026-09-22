@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: dallay
@@ -22,6 +22,8 @@ Repository map entry: [dallay/agentsync](../../repos/dallay/agentsync.md) (sourc
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Teams running several AI assistants must keep CLAUDE.md, .cursor/rules, copilot-instructions.md, and per-tool MCP configs in sync by hand. AgentSync makes .agents/ the single source of truth — agentsy
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Fast portable CLI that synchronizes AI agent configurations and MCP servers across multiple AI coding assistants (Claude Code, Gemini CLI, Cursor, Copilot, Codex, OpenCode) using symlinks from a single source of truth in .agents/.
+
+(captured site page body (agents/agentsync.md), not a verified repo-code finding)
+Teams running several AI assistants must keep CLAUDE.md, .cursor/rules, copilot-instructions.md, and per-tool MCP configs in sync by hand. AgentSync makes .agents/ the single source of truth — agentsync.toml, AGENTS.md, commands, skills, and prompts — and generates each tool's native files from it, with MCP servers defined once and emitted as .mcp.json, .codex/config.toml, .gemini/settings.json, and equivalents. Symlink-based targets (symlink, symlink-contents, nested-glob for monorepos, module-map) mean edits take effect without re-running a copy step, and existing files are backed up before replacement. A Rust core ships as a single static binary behind an npm wrapper, with commands for init, apply, status, clean, doctor, and skill management. Cross-platform support includes a documented Windows symlink setup path.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agentsync.md)

@@ -1,9 +1,10 @@
 # anipotts/coding-agent-tips
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit be596c140caf @ 96b1d751e3ede1b0
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/anipotts/coding-agent-tips
 
 ## Summary (orientation draft, not independently verified)
 

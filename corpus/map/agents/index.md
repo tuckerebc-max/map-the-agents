@@ -101,10 +101,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [andrefetch/postal](../repos/andrefetch/postal.md) -- status=distilled, freshness=stale
 - [andrewyng/context-hub](../repos/andrewyng/context-hub.md) -- status=distilled, freshness=stale
 - [andymik90/aperant](../repos/andymik90/aperant.md) -- status=distilled, freshness=stale
-- [andyrewlee/amux](../repos/andyrewlee/amux.md) -- status=distilled, freshness=current
-- [angleschina/angles-cli](../repos/angleschina/angles-cli.md) -- status=distilled, freshness=current
-- [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) -- status=distilled, freshness=current
-- [anipotts/coding-agent-tips](../repos/anipotts/coding-agent-tips.md) -- status=distilled, freshness=current
+- [andyrewlee/amux](../repos/andyrewlee/amux.md) -- status=distilled, freshness=stale
+- [angleschina/angles-cli](../repos/angleschina/angles-cli.md) -- status=distilled, freshness=stale
+- [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) -- status=distilled, freshness=stale
+- [anipotts/coding-agent-tips](../repos/anipotts/coding-agent-tips.md) -- status=distilled, freshness=refresh-failed
 - [anishsingh20/useful-generativeai-tools-repo](../repos/anishsingh20/useful-generativeai-tools-repo.md) -- status=distilled, freshness=current
 - [anomalyco/opencode](../repos/anomalyco/opencode.md) -- status=distilled, freshness=current
 - [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) -- status=distilled, freshness=current

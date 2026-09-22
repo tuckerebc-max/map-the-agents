@@ -2,7 +2,7 @@
 
 Status: discovered - Freshness: pending
 Catalog classes: none recorded
-Origins: directory-resolve - Projects: directory-intake
+Origins: directory-resolve, alltheagents.org-backing - Projects: directory-intake
 
 ## Evidence
 

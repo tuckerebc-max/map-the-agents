@@ -4,6 +4,10 @@
 [Back to directory index](../index.md)
 
 - [2389-agent-rust](../entries/2389-agent-rust-d139008f2b.md)
+- [agentic-platform](../entries/agentic-platform-4f47376f3e.md)
+- [agenticai](../entries/agenticai-aae652876a.md)
+- [agents](../entries/agents-8c70b25cbb.md)
+- [agents-by-hugging-face](../entries/agents-by-hugging-face-b4473c9622.md)
 - [agentscope](../entries/agentscope-2651b51fbf.md)
 - [autogen](../entries/autogen-378d204807.md)
 - [bazed](../entries/bazed-55d6d197d5.md)

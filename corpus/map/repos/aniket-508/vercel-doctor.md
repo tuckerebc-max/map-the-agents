@@ -1,9 +1,9 @@
 # aniket-508/vercel-doctor
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit cf8a44364048 @ 12ec492fc1c7c664
+Latest snapshot: commit 1e03acffc82d @ a2081ee260244193
 
 ## Summary (orientation draft, not independently verified)
 

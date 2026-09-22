@@ -1,10 +1,10 @@
 # angleschina/angles-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-verified-rename, alltheagents.org-backing - Projects: Observatory
 Formerly: zsj305/angles-cli (github id 1306494403).
-Latest snapshot: commit 53cf51b702e4 @ 8818c2194b628043
+Latest snapshot: commit 53cf51b702e4 @ 10f313c0bf8c7309
 
 ## Summary (orientation draft, not independently verified)
 

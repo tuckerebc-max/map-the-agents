@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [trafficguard/typedai](../repos/trafficguard/typedai.md) [coverage: partial]
-- [trailhq/graft](../repos/trailhq/graft.md) [coverage: complete]
-- [traycerai/traycer](../repos/traycerai/traycer.md) [coverage: partial]
-- [truefoundry/trueforge](../repos/truefoundry/trueforge.md) [coverage: partial]
 - [truffle-ai/dexto](../repos/truffle-ai/dexto.md) [coverage: partial]
 - [trypear/pear-landing-page](../repos/trypear/pear-landing-page.md) [coverage: complete]
 - [trypear/pearai-app](../repos/trypear/pearai-app.md) [coverage: partial]
@@ -120,7 +116,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (22)
+## stale (25)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,13 +140,17 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
 - [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]
 - [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]
+- [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
+- [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
+- [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
 
-## refresh-failed (62)
+## refresh-failed (63)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
 - [aizen-stack/aizen](../repos/aizen-stack/aizen.md) -- FetchFailed
 - [alpbahadur/49agents](../repos/alpbahadur/49agents.md) -- FetchFailed
+- [anipotts/coding-agent-tips](../repos/anipotts/coding-agent-tips.md) -- FetchFailed [coverage: partial]
 - [aydinfer/ai-agents-tool-dev](../repos/aydinfer/ai-agents-tool-dev.md) -- FetchFailed
 - [bawadou/ai-data-extractor](../repos/bawadou/ai-data-extractor.md) -- FetchFailed
 - [bazed-ai/bazed-af](../repos/bazed-ai/bazed-af.md) -- FetchFailed
