@@ -1,9 +1,9 @@
 # anthropics/claude-agent-sdk-typescript
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 332b0a994fcc @ 19de3964670981ef
+Latest snapshot: commit 58d2e4b81bdc @ 5ce43ea1a9446a6e
 
 ## Summary (orientation draft, not independently verified)
 

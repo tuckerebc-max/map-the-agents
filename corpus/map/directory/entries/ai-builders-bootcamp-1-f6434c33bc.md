@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: ShawhinT
@@ -22,6 +22,8 @@ Repository map entry: [shawhint/ai-builders-bootcamp-1](../../repos/shawhint/ai-
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository contains the example code for a Maven-taught bootcamp that walks learners from deterministic Python automation through classical ML pipelines to foundation-model applications. Sessions
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): "Educational course repository for 'AI Builders Bootcamp
+
+(captured site page body (agents/ai-builders-bootcamp-1.md), not a verified repo-code finding)
+The repository contains the example code for a Maven-taught bootcamp that walks learners from deterministic Python automation through classical ML pipelines to foundation-model applications. Sessions pair each concept with working notebooks: email automation and ETL pipelines for the pre-LLM tiers, then paper summarizers, RAG chatbots over blog posts, and fine-tuned models (BERT classifier, LinkedIn post writer) for the LLM tiers, closing with a non-technical AI project-management session. Everything is Jupyter notebooks plus supporting data, with no installable package or runtime. Learners use it alongside the paid course, though the Apache-2.0 license makes the material freely reusable.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai-builders-bootcamp-1.md)

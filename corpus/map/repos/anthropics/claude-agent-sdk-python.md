@@ -1,9 +1,9 @@
 # anthropics/claude-agent-sdk-python
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 37a52c9fb3f0 @ 6691541e24958815
+Latest snapshot: commit dce7cdac8276 @ 4454aa701bba4718
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [truffle-ai/dexto](../repos/truffle-ai/dexto.md) [coverage: partial]
-- [trypear/pear-landing-page](../repos/trypear/pear-landing-page.md) [coverage: complete]
-- [trypear/pearai-app](../repos/trypear/pearai-app.md) [coverage: partial]
-- [trypromptly/llmstack](../repos/trypromptly/llmstack.md) [coverage: complete]
-- [tt-a1i/hive](../repos/tt-a1i/hive.md) [coverage: partial]
 - [tuo-lei/vibe-replay](../repos/tuo-lei/vibe-replay.md) [coverage: partial]
 - [tutti-os/tutti](../repos/tutti-os/tutti.md) [coverage: partial]
 - [tw93/kaku](../repos/tw93/kaku.md) [coverage: partial]
@@ -116,7 +111,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (25)
+## stale (30)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +138,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
 - [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
 - [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
+- [anomalyco/opencode](../repos/anomalyco/opencode.md) [coverage: partial]
+- [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
+- [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
+- [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
+- [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
 
 ## refresh-failed (63)
 

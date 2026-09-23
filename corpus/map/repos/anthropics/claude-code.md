@@ -1,9 +1,9 @@
 # anthropics/claude-code
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b5932767f3ac @ 1c81b4db7b0df1f2
+Latest snapshot: commit 56f36532530f @ 90620f6bd6fcbf48
 
 ## Summary (orientation draft, not independently verified)
 

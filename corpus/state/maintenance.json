@@ -1,5 +1,5 @@
 {
-  "cursor": "anishsingh20/useful-generativeai-tools-repo",
+  "cursor": "antigmalabs/ante",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -300,6 +300,31 @@
       "failures": 0,
       "last_at": "2026-09-22T14:01:49+00:00",
       "last_outcome": "reused"
+    },
+    "anomalyco/opencode": {
+      "failures": 0,
+      "last_at": "2026-09-23T14:13:25+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "anthropics/claude-agent-sdk-python": {
+      "failures": 0,
+      "last_at": "2026-09-23T14:13:27+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "anthropics/claude-agent-sdk-typescript": {
+      "failures": 0,
+      "last_at": "2026-09-23T14:13:28+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "anthropics/claude-code": {
+      "failures": 0,
+      "last_at": "2026-09-23T14:13:30+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "antigmalabs/ante": {
+      "failures": 0,
+      "last_at": "2026-09-23T14:13:31+00:00",
+      "last_outcome": "snapshotted"
     }
   },
   "runs": [
@@ -1967,6 +1992,187 @@
         "stages": {
           "catalog": 0.978,
           "snapshots": 11.164
+        }
+      }
+    },
+    {
+      "attempted": [
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante"
+      ],
+      "catalog": {
+        "backlog": 648,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "continue",
+          "coral",
+          "core-termux",
+          "corecoder",
+          "cornmcp",
+          "coro-code",
+          "cortex",
+          "cowork-to-code-bridge",
+          "coze-studio",
+          "cre-acquisition-orchestrator",
+          "create-actionsprs",
+          "crewai",
+          "crewai-101",
+          "crewplane",
+          "crispy",
+          "crush",
+          "crystal",
+          "cs146s-cn",
+          "cuga-agent",
+          "cursor",
+          "cursor-agent",
+          "cursor-ai-automated-team",
+          "cursor-ai-pro-download-2026",
+          "cursor-bridge",
+          "cursor-in-browser",
+          "cycode",
+          "dagger",
+          "damocles",
+          "dance-ai-research-project",
+          "darce",
+          "debroid",
+          "debugai",
+          "deep-agents-code",
+          "deep-swe",
+          "deepagent-code",
+          "deepclaude",
+          "deepcode",
+          "deepcopilot",
+          "deepgame",
+          "deepsec",
+          "deepseek-cli",
+          "deepseek-coder",
+          "deepseek-engineer",
+          "deepseek-reasonix",
+          "deepseek-tui",
+          "deeptide",
+          "deerflow",
+          "delphi-ai-developer",
+          "demo2apk",
+          "denchclaw"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-09-23T14:13:31+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "7cb044ee892fa8116610ba31a82922c656eaf86c",
+          "explicit_paths": [
+            "packages/opencode/src/agent/subagent-permissions.ts",
+            "packages/opencode/src/agent/agent.ts"
+          ],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 17,
+          "repo": "anomalyco/opencode",
+          "reused": false,
+          "snapshot_id": "a5d119307399dc61"
+        },
+        {
+          "commit": "dce7cdac8276c004e08f4d94acffbf85dfbbd116",
+          "explicit_paths": [],
+          "files_stored": 4,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "anthropics/claude-agent-sdk-python",
+          "reused": false,
+          "snapshot_id": "4454aa701bba4718"
+        },
+        {
+          "commit": "58d2e4b81bdca2c6ce10e6e5db22ad7acdc1d58c",
+          "explicit_paths": [],
+          "files_stored": 3,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "anthropics/claude-agent-sdk-typescript",
+          "reused": false,
+          "snapshot_id": "5ce43ea1a9446a6e"
+        },
+        {
+          "commit": "56f36532530f88b572854538d685fcf781141e8c",
+          "explicit_paths": [],
+          "files_stored": 3,
+          "freshness": "stale",
+          "omitted_count": 1,
+          "repo": "anthropics/claude-code",
+          "reused": false,
+          "snapshot_id": "90620f6bd6fcbf48"
+        },
+        {
+          "commit": "ae2438217d8a307f3c8de85458b6ba09b1e91dfc",
+          "explicit_paths": [],
+          "files_stored": 3,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "antigmalabs/ante",
+          "reused": false,
+          "snapshot_id": "0b6b7c4fff05d43c"
+        }
+      ],
+      "started": "2026-09-23T14:13:22+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 9.603,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.736,
+          "snapshots": 8.822
         }
       }
     }

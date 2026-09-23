@@ -1,9 +1,9 @@
 # anomalyco/opencode
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit df23b7f9488a @ 62fba2c78cec8b3e
+Latest snapshot: commit 7cb044ee892f @ a5d119307399dc61
 
 ## Summary (orientation draft, not independently verified)
 

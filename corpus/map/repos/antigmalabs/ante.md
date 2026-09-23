@@ -1,9 +1,9 @@
 # antigmalabs/ante
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0dabfd1973d9 @ 631707f027372ad4
+Latest snapshot: commit ae2438217d8a @ 0b6b7c4fff05d43c
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [jo-inc/pi-reflect](../repos/jo-inc/pi-reflect.md) [coverage: complete]
-- [jogendrasingh1879/agentic-ai-](../repos/jogendrasingh1879/agentic-ai-.md) [coverage: complete]
-- [johannesjo/parallel-code](../repos/johannesjo/parallel-code.md) [coverage: partial]
-- [joinwell52-ai/joinwell52](../repos/joinwell52-ai/joinwell52.md) [coverage: partial]
-- [jondot/picocode](../repos/jondot/picocode.md) [coverage: complete]
 - [jonkrohn/nlp-with-llms](../repos/jonkrohn/nlp-with-llms.md) [coverage: complete]
 - [jonrad/lsp-mcp](../repos/jonrad/lsp-mcp.md) [coverage: complete]
 - [josephsenior/grinta-coding-agent](../repos/josephsenior/grinta-coding-agent.md) [coverage: partial]
@@ -439,3 +434,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [trailhq/graft](../repos/trailhq/graft.md) [coverage: complete]
 - [traycerai/traycer](../repos/traycerai/traycer.md) [coverage: partial]
 - [truefoundry/trueforge](../repos/truefoundry/trueforge.md) [coverage: partial]
+- [truffle-ai/dexto](../repos/truffle-ai/dexto.md) [coverage: partial]
+- [trypear/pear-landing-page](../repos/trypear/pear-landing-page.md) [coverage: complete]
+- [trypear/pearai-app](../repos/trypear/pearai-app.md) [coverage: partial]
+- [trypromptly/llmstack](../repos/trypromptly/llmstack.md) [coverage: complete]
+- [tt-a1i/hive](../repos/tt-a1i/hive.md) [coverage: partial]

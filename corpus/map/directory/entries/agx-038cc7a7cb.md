@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: ramarlina
@@ -22,6 +22,8 @@ Repository map entry: [ramarlina/agx](../../repos/ramarlina/agx.md) (source: bac
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Running coding agents ad hoc means state lives in terminal scrollback and review discipline depends on memory. AGX gives every ticket a durable home — objectives, scheduled jobs, chat threads, and ter
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local workspace for running AI coding agents across tickets, repos, and PRs. Runs a ticket -\> implementation -\> PR -\> review loop with human-in-the-loop gates at every step. Fully local execution (code never leaves your machine), checkpointed state that survives restarts with constant-cost resumption, unified workspace where tickets/code/PRs/reviews live in one window, and provider-agnostic switching (Claude \<-\> Codex \<-\> Gemini ...
+
+(captured site page body (agents/agx.md), not a verified repo-code finding)
+Running coding agents ad hoc means state lives in terminal scrollback and review discipline depends on memory. AGX gives every ticket a durable home — objectives, scheduled jobs, chat threads, and terminal sessions under a project, with SQLite (WAL) state that survives restarts — and connects it to Jira or Linear intake. Agents draft implementations in worktree isolation, a reviewer agent does first-pass PR review so humans judge only contested changes, and nothing irreversible proceeds without an explicit approve/reject gate. Agents can be switched mid-thread between Claude, Codex, Gemini, and Ollama, and role-grouped teams route work by tag. The tool ships as a CLI, a Next.js dashboard, and an Electron macOS app, and its own repository documents 167+ merged PRs authored by the agents it manages.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agx.md)

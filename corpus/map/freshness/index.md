@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (964)
+## current (959)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -78,11 +78,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [amrit110/oli](../repos/amrit110/oli.md) [coverage: complete]
 - [amsilf/sc-helm-app](../repos/amsilf/sc-helm-app.md) [coverage: complete]
 - [anishsingh20/useful-generativeai-tools-repo](../repos/anishsingh20/useful-generativeai-tools-repo.md) [coverage: complete]
-- [anomalyco/opencode](../repos/anomalyco/opencode.md) [coverage: partial]
-- [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
-- [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
-- [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
-- [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
 - [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
 - [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
 - [appgram/agentnotch](../repos/appgram/agentnotch.md) [coverage: complete]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [jmfederico/pi-web](../repos/jmfederico/pi-web.md) [coverage: partial]
 - [jnmetacode/agency-agents-zh](../repos/jnmetacode/agency-agents-zh.md) [coverage: partial]
 - [jo-inc/pi-mem](../repos/jo-inc/pi-mem.md) [coverage: complete]
+- [jo-inc/pi-reflect](../repos/jo-inc/pi-reflect.md) [coverage: complete]
+- [jogendrasingh1879/agentic-ai-](../repos/jogendrasingh1879/agentic-ai-.md) [coverage: complete]
+- [johannesjo/parallel-code](../repos/johannesjo/parallel-code.md) [coverage: partial]
+- [joinwell52-ai/joinwell52](../repos/joinwell52-ai/joinwell52.md) [coverage: partial]
+- [jondot/picocode](../repos/jondot/picocode.md) [coverage: complete]

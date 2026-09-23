@@ -106,11 +106,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) -- status=distilled, freshness=stale
 - [anipotts/coding-agent-tips](../repos/anipotts/coding-agent-tips.md) -- status=distilled, freshness=refresh-failed
 - [anishsingh20/useful-generativeai-tools-repo](../repos/anishsingh20/useful-generativeai-tools-repo.md) -- status=distilled, freshness=current
-- [anomalyco/opencode](../repos/anomalyco/opencode.md) -- status=distilled, freshness=current
-- [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) -- status=distilled, freshness=current
-- [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) -- status=distilled, freshness=current
-- [anthropics/claude-code](../repos/anthropics/claude-code.md) -- status=distilled, freshness=current
-- [antigmalabs/ante](../repos/antigmalabs/ante.md) -- status=distilled, freshness=current
+- [anomalyco/opencode](../repos/anomalyco/opencode.md) -- status=distilled, freshness=stale
+- [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) -- status=distilled, freshness=stale
+- [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) -- status=distilled, freshness=stale
+- [anthropics/claude-code](../repos/anthropics/claude-code.md) -- status=distilled, freshness=stale
+- [antigmalabs/ante](../repos/antigmalabs/ante.md) -- status=distilled, freshness=stale
 - [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) -- status=distilled, freshness=current
 - [aozyildirim/agena](../repos/aozyildirim/agena.md) -- status=distilled, freshness=current
 - [appgram/agentnotch](../repos/appgram/agentnotch.md) -- status=distilled, freshness=current

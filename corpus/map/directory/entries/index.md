@@ -80,31 +80,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [AgentsMesh (`agentsmesh`)](agentsmesh-65db377c11.md) -- published+backing+pages
 - [AgentsView (`agentsview`)](agentsview-b36679a310.md) -- backing+pages
 - [agentsync (`agentsync`)](agentsync-5a5a3198e0.md) -- backing+pages
-- [AgentTeams (`agentteams`)](agentteams-ae3e480a7c.md) -- published+backing
-- [agenttrace (`agenttrace`)](agenttrace-e480f02d22.md) -- backing-only
-- [Agon (`agon`)](agon-ab7ec08b55.md) -- backing-only
-- [agx (`agx`)](agx-038cc7a7cb.md) -- published+backing
-- [ahadiff (`ahadiff`)](ahadiff-1b22943373.md) -- backing-only
-- [AI Agent CLI Bridge (`ai-agent-cli-bridge`)](ai-agent-cli-bridge-8fabd2c842.md) -- published+backing
-- [Ai-Agent-Lab (`ai-agent-lab`)](ai-agent-lab-8eb96db62c.md) -- backing-only
-- [Ai-Agent-Playground (`ai-agent-playground`)](ai-agent-playground-ea610a1ff2.md) -- backing-only
-- [Ai-Agent-Security (`ai-agent-security`)](ai-agent-security-a4a9803cc7.md) -- backing-only
-- [Ai-Agent-Test (`ai-agent-test`)](ai-agent-test-402119b9f0.md) -- backing-only
-- [Ai-Agents-Tool-Dev (`ai-agents-tool-dev`)](ai-agents-tool-dev-160229d63c.md) -- published+backing
-- [AI Assistant by JetBrains (`ai-assistant-by-jetbrains`)](ai-assistant-by-jetbrains-a02e84a3e7.md) -- published+backing
-- [AI-Builders-Bootcamp-1 (`ai-builders-bootcamp-1`)](ai-builders-bootcamp-1-f6434c33bc.md) -- backing-only
-- [AI-Builders-Bootcamp-2 (`ai-builders-bootcamp-2`)](ai-builders-bootcamp-2-4c692878fa.md) -- backing-only
-- [AI Code Editors(All kinds) (`ai-code-editorsall-kinds`)](ai-code-editorsall-kinds-9e6a008b71.md) -- backing-only
-- [Ai-Code-Gen (`ai-code-gen`)](ai-code-gen-f6ac0d3b22.md) -- backing-only
-- [ai-code-review-helper (`ai-code-review-helper`)](ai-code-review-helper-933a07d6d4.md) -- backing-only
-- [AI Coding Assistant (`ai-coding-assistant`)](ai-coding-assistant-f0b80f918e.md) -- published+backing
-- [AI-Coding-Style-Guides (`ai-coding-style-guides`)](ai-coding-style-guides-fc28222e55.md) -- backing-only
-- [ai-data-extractor (`ai-data-extractor`)](ai-data-extractor-1add929798.md) -- backing-only
-- [Ai-Dev-Agent-Test (`ai-dev-agent-test`)](ai-dev-agent-test-ef2cd46f8e.md) -- backing-only
-- [ai-dev-kit (`ai-dev-kit`)](ai-dev-kit-f8c0563bda.md) -- backing-only
-- [ai-dev-tasks (`ai-dev-tasks`)](ai-dev-tasks-7da827f242.md) -- backing-only
-- [ai-devkit (`ai-devkit`)](ai-devkit-583949c88b.md) -- published+backing
-- [ai-doc-gen (`ai-doc-gen`)](ai-doc-gen-fb47375f9b.md) -- backing-only
+- [AgentTeams (`agentteams`)](agentteams-ae3e480a7c.md) -- published+backing+pages
+- [agenttrace (`agenttrace`)](agenttrace-e480f02d22.md) -- backing+pages
+- [Agon (`agon`)](agon-ab7ec08b55.md) -- backing+pages
+- [agx (`agx`)](agx-038cc7a7cb.md) -- published+backing+pages
+- [ahadiff (`ahadiff`)](ahadiff-1b22943373.md) -- backing+pages
+- [AI Agent CLI Bridge (`ai-agent-cli-bridge`)](ai-agent-cli-bridge-8fabd2c842.md) -- published+backing+pages
+- [Ai-Agent-Lab (`ai-agent-lab`)](ai-agent-lab-8eb96db62c.md) -- backing+pages
+- [Ai-Agent-Playground (`ai-agent-playground`)](ai-agent-playground-ea610a1ff2.md) -- backing+pages
+- [Ai-Agent-Security (`ai-agent-security`)](ai-agent-security-a4a9803cc7.md) -- backing+pages
+- [Ai-Agent-Test (`ai-agent-test`)](ai-agent-test-402119b9f0.md) -- backing+pages
+- [Ai-Agents-Tool-Dev (`ai-agents-tool-dev`)](ai-agents-tool-dev-160229d63c.md) -- published+backing+pages
+- [AI Assistant by JetBrains (`ai-assistant-by-jetbrains`)](ai-assistant-by-jetbrains-a02e84a3e7.md) -- published+backing+pages
+- [AI-Builders-Bootcamp-1 (`ai-builders-bootcamp-1`)](ai-builders-bootcamp-1-f6434c33bc.md) -- backing+pages
+- [AI-Builders-Bootcamp-2 (`ai-builders-bootcamp-2`)](ai-builders-bootcamp-2-4c692878fa.md) -- backing+pages
+- [AI Code Editors(All kinds) (`ai-code-editorsall-kinds`)](ai-code-editorsall-kinds-9e6a008b71.md) -- backing+pages
+- [Ai-Code-Gen (`ai-code-gen`)](ai-code-gen-f6ac0d3b22.md) -- backing+pages
+- [ai-code-review-helper (`ai-code-review-helper`)](ai-code-review-helper-933a07d6d4.md) -- backing+pages
+- [AI Coding Assistant (`ai-coding-assistant`)](ai-coding-assistant-f0b80f918e.md) -- published+backing+pages
+- [AI-Coding-Style-Guides (`ai-coding-style-guides`)](ai-coding-style-guides-fc28222e55.md) -- backing+pages
+- [ai-data-extractor (`ai-data-extractor`)](ai-data-extractor-1add929798.md) -- backing+pages
+- [Ai-Dev-Agent-Test (`ai-dev-agent-test`)](ai-dev-agent-test-ef2cd46f8e.md) -- backing+pages
+- [ai-dev-kit (`ai-dev-kit`)](ai-dev-kit-f8c0563bda.md) -- backing+pages
+- [ai-dev-tasks (`ai-dev-tasks`)](ai-dev-tasks-7da827f242.md) -- backing+pages
+- [ai-devkit (`ai-devkit`)](ai-devkit-583949c88b.md) -- published+backing+pages
+- [ai-doc-gen (`ai-doc-gen`)](ai-doc-gen-fb47375f9b.md) -- backing+pages
 - [AI-Engineer (`ai-engineer`)](ai-engineer-cb524c197c.md) -- backing-only
 - [ai-engineer-toolkit (`ai-engineer-toolkit`)](ai-engineer-toolkit-c889031425.md) -- backing-only
 - [Ai-Engineering-Roadmap (`ai-engineering-roadmap`)](ai-engineering-roadmap-e81f258322.md) -- backing-only

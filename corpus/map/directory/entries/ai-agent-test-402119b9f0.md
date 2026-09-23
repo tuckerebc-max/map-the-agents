@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: sfelkner
@@ -22,6 +22,8 @@ Repository map entry: [sfelkner/ai-agent-test](../../repos/sfelkner/ai-agent-tes
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository existed to exercise AI agent interactions against a real GitHub repository, containing only an index.html file. The owner archived it on June 12, 2026, making it read-only, with two op
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A test repository for AI agent interactions, archived by the owner on Jun 12, 2026.
+
+(captured site page body (agents/ai-agent-test.md), not a verified repo-code finding)
+This repository existed to exercise AI agent interactions against a real GitHub repository, containing only an index.html file. The owner archived it on June 12, 2026, making it read-only, with two open issues left as-is. There is no implementation, documentation, or community to evaluate. It functions in the census as an artifact of agent testing behavior rather than as a usable project.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai-agent-test.md)

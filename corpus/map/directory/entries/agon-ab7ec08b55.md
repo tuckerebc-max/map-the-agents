@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: AutoResearch-Factory
 - License: MIT
 - Language: Python
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [autoresearch-factory/agon](../../repos/autoresearch-factory/agon.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Running AI research loops unattended for hours usually produces unrecoverable messes, and the engineering effort of orchestrating agents lands on the human. Agon, distributed as a Claude Code plugin,
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Autonomous AI research system built on the 'Prompt Economy' concept. Agents (scientist, coder, auditor, reviewer) plan, implement, audit, and review each other in closed loops with all handoffs via files on disk for recoverability and auditability. Runs unattended for hours. Deployable across 10+ research domains. No human-written experimental code needed.
+
+(captured site page body (agents/agon.md), not a verified repo-code finding)
+Running AI research loops unattended for hours usually produces unrecoverable messes, and the engineering effort of orchestrating agents lands on the human. Agon, distributed as a Claude Code plugin, pushes all coordination into disk files: topics, ideas, proposals, and experiments live in a side-by-side agon-artifacts repository, so any run can be inspected, resumed, or forked independently of the plugin code. Slash commands drive role-structured loops — /idea-tick, /proposal-tick, and /experiment-tick, which coordinates scientist, coder, auditor, and reviewer roles per workspace — with prompts, code, and research data versioned independently. Loops run under --dangerously-skip-permissions for genuinely unattended operation, and wrapper scripts let the same plugin run Claude Code backed by DeepSeek or other providers via CLIProxyAPI. It targets researchers automating the topic-to-running-experiment pipeline across domains.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agon.md)
