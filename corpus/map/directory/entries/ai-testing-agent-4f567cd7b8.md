@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: furudo-erika
@@ -22,6 +22,8 @@ Repository map entry: [furudo-erika/ai-testing-agent](../../repos/furudo-erika/a
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The agent generates a textual test plan, converts it into pytest code for REST API endpoints, executes the tests, and accepts free-form feedback to extend or correct them, overwriting generated_tests.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source AI agent for software testing. Uses an LLM via OpenRouter to automatically generate test plans, generate pytest test code for API endpoints, run tests, and iteratively refine based on natural-language feedback. Single LangChain agent with plan/generate/run/feedback tools. Only 1 commit, last activity ~2023.
+
+(captured site page body (agents/ai-testing-agent.md), not a verified repo-code finding)
+The agent generates a textual test plan, converts it into pytest code for REST API endpoints, executes the tests, and accepts free-form feedback to extend or correct them, overwriting generated_tests.py on each cycle. Mechanically, a LangChain chat agent invokes tools that spawn api_tester.py subprocesses; the LLM (via an OpenRouter API key) writes the test file, and pytest runs it against a configurable endpoint, with a bundled FastAPI demo app for local trials. It is a single-commit proof of concept: no license file, leftover copy files, 48 stars, and no activity since December 2024. Developers evaluating API test generation can run it by cloning the repo and setting OPENROUTER_API_KEY.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai-testing-agent.md)

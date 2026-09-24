@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Mybono
@@ -22,6 +22,8 @@ Repository map entry: [mybono/ai-orchestrator](../../repos/mybono/ai-orchestrato
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The project paired Claude Code with local Ollama models in defined roles (plan, code, review, commit), aiming for a portable, zero-dependency setup that works against any language stack. That implemen
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Zero dependency, portable, role-based local LLM orchestration via Bash, works with any language stack; being rebuilt on a new core engine (not an iteration, a replacement)
+
+(captured site page body (agents/ai-orchestrator.md), not a verified repo-code finding)
+The project paired Claude Code with local Ollama models in defined roles (plan, code, review, commit), aiming for a portable, zero-dependency setup that works against any language stack. That implementation is gone: the repository was reset to a single commit containing LICENSE, community files, and a README announcing a ground-up rebuild on a new engine being developed privately. Nothing is currently installable, and the roughly 100 stars predate the reset. The author has promised an announcement when the replacement ships, so the entry describes the pre-reset design rather than runnable code.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai-orchestrator.md)

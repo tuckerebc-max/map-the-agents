@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [tuo-lei/vibe-replay](../repos/tuo-lei/vibe-replay.md) [coverage: partial]
-- [tutti-os/tutti](../repos/tutti-os/tutti.md) [coverage: partial]
-- [tw93/kaku](../repos/tw93/kaku.md) [coverage: partial]
 - [twing-dev/twing-cli](../repos/twing-dev/twing-cli.md) [coverage: partial]
 - [tysonlabs/lazyide](../repos/tysonlabs/lazyide.md) [coverage: complete]
 - [ui5/plugins-coding-agents](../repos/ui5/plugins-coding-agents.md) [coverage: complete]
@@ -111,7 +108,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (30)
+## stale (33)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
 - [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
 - [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
+- [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
+- [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
+- [apvcode/termux-dev](../repos/apvcode/termux-dev.md) [coverage: complete]
 
 ## refresh-failed (63)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: LnYo-Cly
@@ -22,6 +22,8 @@ Repository map entry: [lnyo-cly/ai4j](../../repos/lnyo-cly/ai4j.md) (source: bac
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Java teams who want agentic behavior historically had to bridge to Python ecosystems; ai4j provides the equivalent natively for JDK 8+, including Spring Boot starters and a BOM. The SDK normalizes Ope
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Java 8+ agentic SDK combining unified LLM access, Tool Calling, MCP, A2A, RAG, Agent Runtime, and a built-in Coding Agent CLI/TUI/ACP in one SDK
+
+(captured site page body (agents/ai4j.md), not a verified repo-code finding)
+Java teams who want agentic behavior historically had to bridge to Python ecosystems; ai4j provides the equivalent natively for JDK 8+, including Spring Boot starters and a BOM. The SDK normalizes OpenAI-compatible, Anthropic, DashScope, Doubao, DeepSeek, Moonshot, Ollama, and other wire formats behind one API, layers tool calling, RAG (Pinecone, Qdrant, pgvector, Milvus, Redis), and AgentFlow integration with Dify, Coze, and n8n on top, and ships a coding agent surface installable via Maven (io.github.lnyo-cly:ai4j). It is a single-maintainer project with 949 commits, an active changelog, and GitHub Pages documentation, at version 2.4.2.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai4j.md)

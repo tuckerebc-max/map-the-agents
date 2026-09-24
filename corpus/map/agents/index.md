@@ -111,10 +111,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) -- status=distilled, freshness=stale
 - [anthropics/claude-code](../repos/anthropics/claude-code.md) -- status=distilled, freshness=stale
 - [antigmalabs/ante](../repos/antigmalabs/ante.md) -- status=distilled, freshness=stale
-- [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) -- status=distilled, freshness=current
-- [aozyildirim/agena](../repos/aozyildirim/agena.md) -- status=distilled, freshness=current
+- [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) -- status=distilled, freshness=stale
+- [aozyildirim/agena](../repos/aozyildirim/agena.md) -- status=distilled, freshness=stale
 - [appgram/agentnotch](../repos/appgram/agentnotch.md) -- status=distilled, freshness=current
-- [apvcode/termux-dev](../repos/apvcode/termux-dev.md) -- status=distilled, freshness=current
+- [apvcode/termux-dev](../repos/apvcode/termux-dev.md) -- status=distilled, freshness=stale
 - [aquila-lab/superflex-vscode](../repos/aquila-lab/superflex-vscode.md) -- status=distilled, freshness=current
 - [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) -- status=distilled, freshness=current
 - [arctic-cli/interface](../repos/arctic-cli/interface.md) -- status=distilled, freshness=current

@@ -23,7 +23,6 @@
 - [ai4j](../entries/ai4j-0ddcf890aa.md)
 - [aider](../entries/aider-ebde709e30.md)
 - [aider-desk](../entries/aider-desk-d88f8139c0.md)
-- [aidermacs](../entries/aidermacs-d66b68d181.md)
 - [aikido-autofix](../entries/aikido-autofix-6cae53a7bd.md)
 - [aixcoder](../entries/aixcoder-38d94122ab.md)
 - [aizen](../entries/aizen-e2f1261da7.md)

@@ -1,9 +1,9 @@
 # aozyildirim/agena
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 63db0e2736d2 @ 8467f4e1626576f1
+Latest snapshot: commit 63db0e2736d2 @ f0abfb1b98c48766
 
 ## Summary (orientation draft, not independently verified)
 

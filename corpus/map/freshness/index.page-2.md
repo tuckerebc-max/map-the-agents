@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [jonkrohn/nlp-with-llms](../repos/jonkrohn/nlp-with-llms.md) [coverage: complete]
-- [jonrad/lsp-mcp](../repos/jonrad/lsp-mcp.md) [coverage: complete]
-- [josephsenior/grinta-coding-agent](../repos/josephsenior/grinta-coding-agent.md) [coverage: partial]
 - [joshpxyne/gpt-migrate](../repos/joshpxyne/gpt-migrate.md) [coverage: complete]
 - [juggler-ai/juggler](../repos/juggler-ai/juggler.md) [coverage: partial]
 - [julien-c/synthtraces](../repos/julien-c/synthtraces.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [trypear/pearai-app](../repos/trypear/pearai-app.md) [coverage: partial]
 - [trypromptly/llmstack](../repos/trypromptly/llmstack.md) [coverage: complete]
 - [tt-a1i/hive](../repos/tt-a1i/hive.md) [coverage: partial]
+- [tuo-lei/vibe-replay](../repos/tuo-lei/vibe-replay.md) [coverage: partial]
+- [tutti-os/tutti](../repos/tutti-os/tutti.md) [coverage: partial]
+- [tw93/kaku](../repos/tw93/kaku.md) [coverage: partial]

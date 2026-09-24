@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: break-into-data
@@ -22,6 +22,8 @@ Repository map entry: [break-into-data/ai-engineer-toolkit](../../repos/break-in
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The AI engineering tool landscape changes faster than most engineers can track, and choosing a stack means cross-referencing pricing, maturity, and docs across dozens of vendors. This repository organ
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A curated directory/resource repository designed to help both software engineers and non-engineers build production-grade AI applications from scratch, featuring every popular framework, tool, and resource needed to ship AI projects.
+
+(captured site page body (agents/ai-engineer-toolkit.md), not a verified repo-code finding)
+The AI engineering tool landscape changes faster than most engineers can track, and choosing a stack means cross-referencing pricing, maturity, and docs across dozens of vendors. This repository organizes that landscape into a single table covering model providers, prompt engineering frameworks, backend and frontend stacks, vector databases, fine-tuning, agent development, web data access, evaluation, monitoring, and deployment, with sandbox example projects and fundamentals guides for newcomers. It serves both engineers moving into AI and non-engineers building production applications, and doubles as the resource hub for a paid Maven bootcamp. The repo itself ships no code beyond the list and learning folders.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai-engineer-toolkit.md)

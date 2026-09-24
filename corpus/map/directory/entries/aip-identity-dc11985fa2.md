@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: The-Nexus-Guard
@@ -22,6 +22,8 @@ Repository map entry: [the-nexus-guard/aip](../../repos/the-nexus-guard/aip.md) 
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Multi-agent systems lack a way to prove who an agent is or whether to trust its output; AIP addresses this with three layers: cryptographic identity (Ed25519 keypairs, did:aip DIDs, challenge-response
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Agent Identity Protocol (AIP) — decentralized cryptographic identity (Ed25519 keypairs), verifiable trust chains (vouching), and E2E encrypted messaging for AI agents. Enables secure, verifiable agent-to-agent communication without a central authority. Integrates with MCP to sign MCP requests and fill the 'agent identity gap.'
+
+(captured site page body (agents/aip-identity.md), not a verified repo-code finding)
+Multi-agent systems lack a way to prove who an agent is or whether to trust its output; AIP addresses this with three layers: cryptographic identity (Ed25519 keypairs, did:aip DIDs, challenge-response verification), trust chains built from signed vouches with scopes and decaying trust scores, and relay-based E2E encrypted messaging where the relay only ever sees ciphertext. A Python SDK (pip install aip-identity), CLI, MCP server, GitHub Action for trust-gated deployments, and integrations with LangChain, CrewAI, AutoGen, and A2A make it consumable from existing frameworks. It is MIT-licensed, actively versioned (v0.5.46, 325 commits), and early — 15 stars — with vouch lookup and messaging still depending on a hosted Fly.io relay.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/aip-identity.md)

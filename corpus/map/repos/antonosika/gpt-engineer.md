@@ -1,9 +1,9 @@
 # antonosika/gpt-engineer
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a90fcd543eed @ 2f719d3003f5982a
+Latest snapshot: commit a90fcd543eed @ 8b9f6f1ba66f9e3e
 
 ## Summary (orientation draft, not independently verified)
 

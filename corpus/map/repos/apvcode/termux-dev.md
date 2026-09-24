@@ -1,9 +1,9 @@
 # apvcode/termux-dev
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a87cf5f64332 @ 0ede1806afb1f442
+Latest snapshot: commit 6d813da90cd9 @ e71f3a480c38eb17
 
 ## Summary (orientation draft, not independently verified)
 

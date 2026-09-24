@@ -65,6 +65,7 @@
 - [ai-vibe-coding-notes-form-threads](../entries/ai-vibe-coding-notes-form-threads-53e49ae7a5.md)
 - [ai-website-builder](../entries/ai-website-builder-ec53264f9e.md)
 - [ai-website-cloner-template](../entries/ai-website-cloner-template-b6d192a515.md)
+- [aidermacs](../entries/aidermacs-d66b68d181.md)
 - [aimultiagents](../entries/aimultiagents-ecfb4c23f0.md)
 - [aip-identity](../entries/aip-identity-dc11985fa2.md)
 - [aipexbase](../entries/aipexbase-ac9bfedfa2.md)
