@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: SFARPak
@@ -22,6 +22,8 @@ Repository map entry: [sfarpak/alifullstack](../../repos/sfarpak/alifullstack.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-AliFullStack positions itself as the open-source local alternative to Lovable, v0, Bolt, and Antigravity: an Electron app that generates React/Next/Vue/Angular frontends plus Django/FastAPI/Flask/Node
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): 100% local-first full-stack app builder with no cloud dependency or data leakage; bring-your-own API keys (no vendor lock-in); framework-agnostic; self-upgrading code pipelines; inspired by Lovable/v0.dev/Bolt but open source and privacy-focused.
+
+(captured site page body (agents/alifullstack.md), not a verified repo-code finding)
+AliFullStack positions itself as the open-source local alternative to Lovable, v0, Bolt, and Antigravity: an Electron app that generates React/Next/Vue/Angular frontends plus Django/FastAPI/Flask/Node backends and tests, with a build-test-deploy pipeline. It runs entirely locally with no servers or tracking, calling user-supplied API keys across OpenAI, Anthropic, Gemini, Vertex, Azure, Bedrock, OpenRouter, and xAI. The repository shows its provenance clearly: it is built on Dyad (the local AI app builder) with Roo Code integrated as the agentic component, at v0.1.0 with 76 stars. Apache-2.0 and genuinely local-first, but early, with some self-referential branding artifacts and 'coming soon' doc links.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/alifullstack.md)

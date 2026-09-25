@@ -130,31 +130,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Aip-Identity (`aip-identity`)](aip-identity-dc11985fa2.md) -- backing+pages
 - [aipexbase (`aipexbase`)](aipexbase-ac9bfedfa2.md) -- backing+pages
 - [AIVory Genie (`aivory-genie`)](aivory-genie-729144dec0.md) -- published+backing+pages
-- [aiXcoder (`aixcoder`)](aixcoder-38d94122ab.md) -- published+backing
-- [aizen (`aizen`)](aizen-e2f1261da7.md) -- published+backing
-- [Albatross (`albatross`)](albatross-24f93dc159.md) -- published+backing
-- [Alex Sidebar (`alex-sidebar`)](alex-sidebar-ea03c9e262.md) -- published+backing
-- [Alfred-Calculate-Anything (`alfred-calculate-anything`)](alfred-calculate-anything-175dfa0a31.md) -- backing-only
-- [AliFullStack (`alifullstack`)](alifullstack-3dec4e9810.md) -- published+backing
-- [alive-analysis (`alive-analysis`)](alive-analysis-6b2d92032d.md) -- backing-only
-- [am-i-vibing (`am-i-vibing`)](am-i-vibing-b13e97e13e.md) -- backing-only
-- [Amazon-Mwaa-Examples (`amazon-mwaa-examples`)](amazon-mwaa-examples-11c5453579.md) -- backing-only
-- [Amazon Q Developer CLI (`amazon-q-developer-cli`)](amazon-q-developer-cli-e6e5203be1.md) -- published+backing
-- [Amp (`amp`)](amp-46855b3906.md) -- published+backing
-- [Amplifier (`amplifier`)](amplifier-9c476d20ba.md) -- published+backing
-- [Amplify Security (`amplify-security`)](amplify-security-76a764c817.md) -- published+backing
-- [amux (`amux`)](amux-fdc6912716.md) -- published+backing
-- [angles-cli (`angles-cli`)](angles-cli-b823c1fc29.md) -- published+backing
-- [Anima (`anima`)](anima-8c2dda2f00.md) -- backing-only
-- [announcement (`announcement`)](announcement-86118a3b7f.md) -- backing-only
-- [Ante (`ante`)](ante-d968e224a0.md) -- published+backing
-- [Antigravity CLI (`antigravity-cli`)](antigravity-cli-744c585fa1.md) -- published+backing
-- [Antigravity for VS Code (`antigravity-for-vs-code`)](antigravity-for-vs-code-52c7fc567c.md) -- published+backing
-- [antigravity-jules-orchestration (`antigravity-jules-orchestration`)](antigravity-jules-orchestration-391946c4c0.md) -- backing-only
-- [antigravity-nix (`antigravity-nix`)](antigravity-nix-578ba171c3.md) -- backing-only
-- [Aperant (`aperant`)](aperant-641b94577a.md) -- published+backing
-- [App Developer Copilot (`app-developer-copilot`)](app-developer-copilot-ca8c089b2f.md) -- published+backing
-- [Appacella (`appacella`)](appacella-70898980cb.md) -- published+backing
+- [aiXcoder (`aixcoder`)](aixcoder-38d94122ab.md) -- published+backing+pages
+- [aizen (`aizen`)](aizen-e2f1261da7.md) -- published+backing+pages
+- [Albatross (`albatross`)](albatross-24f93dc159.md) -- published+backing+pages
+- [Alex Sidebar (`alex-sidebar`)](alex-sidebar-ea03c9e262.md) -- published+backing+pages
+- [Alfred-Calculate-Anything (`alfred-calculate-anything`)](alfred-calculate-anything-175dfa0a31.md) -- backing+pages
+- [AliFullStack (`alifullstack`)](alifullstack-3dec4e9810.md) -- published+backing+pages
+- [alive-analysis (`alive-analysis`)](alive-analysis-6b2d92032d.md) -- backing+pages
+- [am-i-vibing (`am-i-vibing`)](am-i-vibing-b13e97e13e.md) -- backing+pages
+- [Amazon-Mwaa-Examples (`amazon-mwaa-examples`)](amazon-mwaa-examples-11c5453579.md) -- backing+pages
+- [Amazon Q Developer CLI (`amazon-q-developer-cli`)](amazon-q-developer-cli-e6e5203be1.md) -- published+backing+pages
+- [Amp (`amp`)](amp-46855b3906.md) -- published+backing+pages
+- [Amplifier (`amplifier`)](amplifier-9c476d20ba.md) -- published+backing+pages
+- [Amplify Security (`amplify-security`)](amplify-security-76a764c817.md) -- published+backing+pages
+- [amux (`amux`)](amux-fdc6912716.md) -- published+backing+pages
+- [angles-cli (`angles-cli`)](angles-cli-b823c1fc29.md) -- published+backing+pages
+- [Anima (`anima`)](anima-8c2dda2f00.md) -- backing+pages
+- [announcement (`announcement`)](announcement-86118a3b7f.md) -- backing+pages
+- [Ante (`ante`)](ante-d968e224a0.md) -- published+backing+pages
+- [Antigravity CLI (`antigravity-cli`)](antigravity-cli-744c585fa1.md) -- published+backing+pages
+- [Antigravity for VS Code (`antigravity-for-vs-code`)](antigravity-for-vs-code-52c7fc567c.md) -- published+backing+pages
+- [antigravity-jules-orchestration (`antigravity-jules-orchestration`)](antigravity-jules-orchestration-391946c4c0.md) -- backing+pages
+- [antigravity-nix (`antigravity-nix`)](antigravity-nix-578ba171c3.md) -- backing+pages
+- [Aperant (`aperant`)](aperant-641b94577a.md) -- published+backing+pages
+- [App Developer Copilot (`app-developer-copilot`)](app-developer-copilot-ca8c089b2f.md) -- published+backing+pages
+- [Appacella (`appacella`)](appacella-70898980cb.md) -- published+backing+pages
 - [AppAgent (`appagent`)](appagent-a89cb5a680.md) -- backing-only
 - [AppClipCodeGenerator (`appclipcodegenerator`)](appclipcodegenerator-2426ed2661.md) -- backing-only
 - [Ara AI (`ara-ai`)](ara-ai-8d68d0f3f9.md) -- published+backing

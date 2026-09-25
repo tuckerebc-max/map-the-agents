@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [joshpxyne/gpt-migrate](../repos/joshpxyne/gpt-migrate.md) [coverage: complete]
-- [juggler-ai/juggler](../repos/juggler-ai/juggler.md) [coverage: partial]
-- [julien-c/synthtraces](../repos/julien-c/synthtraces.md) [coverage: complete]
 - [juliusbrussee/caveman-code](../repos/juliusbrussee/caveman-code.md) [coverage: partial]
 - [juliusbrussee/cavemem](../repos/juliusbrussee/cavemem.md) [coverage: partial]
 - [junkyard22/orca](../repos/junkyard22/orca.md) [coverage: partial]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [tuo-lei/vibe-replay](../repos/tuo-lei/vibe-replay.md) [coverage: partial]
 - [tutti-os/tutti](../repos/tutti-os/tutti.md) [coverage: partial]
 - [tw93/kaku](../repos/tw93/kaku.md) [coverage: partial]
+- [twing-dev/twing-cli](../repos/twing-dev/twing-cli.md) [coverage: partial]
+- [tysonlabs/lazyide](../repos/tysonlabs/lazyide.md) [coverage: complete]
+- [ui5/plugins-coding-agents](../repos/ui5/plugins-coding-agents.md) [coverage: complete]

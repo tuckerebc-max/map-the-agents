@@ -1,9 +1,9 @@
 # arch1esun/arcgentic
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 645c345077d7 @ 8f6a77ad6d7d02bc
+Latest snapshot: commit 645c345077d7 @ b01866617d65898f
 
 ## Summary (orientation draft, not independently verified)
 

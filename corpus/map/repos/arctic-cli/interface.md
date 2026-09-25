@@ -1,9 +1,9 @@
 # arctic-cli/interface
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit cddbdde2dc95 @ 7cc376ff685e024d
+Latest snapshot: commit cddbdde2dc95 @ a14ff4de9b323e07
 
 ## Summary (orientation draft, not independently verified)
 

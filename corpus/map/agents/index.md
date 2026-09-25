@@ -116,10 +116,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [appgram/agentnotch](../repos/appgram/agentnotch.md) -- status=distilled, freshness=current
 - [apvcode/termux-dev](../repos/apvcode/termux-dev.md) -- status=distilled, freshness=stale
 - [aquila-lab/superflex-vscode](../repos/aquila-lab/superflex-vscode.md) -- status=distilled, freshness=current
-- [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) -- status=distilled, freshness=current
-- [arctic-cli/interface](../repos/arctic-cli/interface.md) -- status=distilled, freshness=current
+- [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) -- status=distilled, freshness=stale
+- [arctic-cli/interface](../repos/arctic-cli/interface.md) -- status=distilled, freshness=stale
 - [arfo-du-blo/cursor-in-browser](../repos/arfo-du-blo/cursor-in-browser.md) -- status=distilled, freshness=current
-- [arjia-labs/clu](../repos/arjia-labs/clu.md) -- status=distilled, freshness=current
+- [arjia-labs/clu](../repos/arjia-labs/clu.md) -- status=distilled, freshness=stale
 - [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) -- status=distilled, freshness=current
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) -- status=distilled, freshness=current
 - [arul28/ade](../repos/arul28/ade.md) -- status=distilled, freshness=current

@@ -1,9 +1,9 @@
 # arjia-labs/clu
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 90db9ca81b89 @ 09fed11b9ad5694a
+Latest snapshot: commit 90db9ca81b89 @ cee0033f1c0d6e82
 
 ## Summary (orientation draft, not independently verified)
 

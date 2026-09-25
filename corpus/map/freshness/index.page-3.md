@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [twing-dev/twing-cli](../repos/twing-dev/twing-cli.md) [coverage: partial]
-- [tysonlabs/lazyide](../repos/tysonlabs/lazyide.md) [coverage: complete]
-- [ui5/plugins-coding-agents](../repos/ui5/plugins-coding-agents.md) [coverage: complete]
 - [ultraworkers/claw-code](../repos/ultraworkers/claw-code.md) [coverage: partial]
 - [umacloud/umadev](../repos/umacloud/umadev.md) [coverage: partial]
 - [uniide/debugai](../repos/uniide/debugai.md) [coverage: complete]
@@ -108,7 +105,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (33)
+## stale (36)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
 - [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
 - [apvcode/termux-dev](../repos/apvcode/termux-dev.md) [coverage: complete]
+- [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
+- [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]
+- [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
 
 ## refresh-failed (63)
 

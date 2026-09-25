@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (956)
+## current (953)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -80,10 +80,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [anishsingh20/useful-generativeai-tools-repo](../repos/anishsingh20/useful-generativeai-tools-repo.md) [coverage: complete]
 - [appgram/agentnotch](../repos/appgram/agentnotch.md) [coverage: complete]
 - [aquila-lab/superflex-vscode](../repos/aquila-lab/superflex-vscode.md) [coverage: complete]
-- [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
-- [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]
 - [arfo-du-blo/cursor-in-browser](../repos/arfo-du-blo/cursor-in-browser.md) [coverage: complete]
-- [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
 - [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) [coverage: complete]
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) [coverage: complete]
 - [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [jonkrohn/nlp-with-llms](../repos/jonkrohn/nlp-with-llms.md) [coverage: complete]
 - [jonrad/lsp-mcp](../repos/jonrad/lsp-mcp.md) [coverage: complete]
 - [josephsenior/grinta-coding-agent](../repos/josephsenior/grinta-coding-agent.md) [coverage: partial]
+- [joshpxyne/gpt-migrate](../repos/joshpxyne/gpt-migrate.md) [coverage: complete]
+- [juggler-ai/juggler](../repos/juggler-ai/juggler.md) [coverage: partial]
+- [julien-c/synthtraces](../repos/julien-c/synthtraces.md) [coverage: complete]

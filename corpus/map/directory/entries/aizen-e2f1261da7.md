@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: aizen-stack
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [aizen-stack/aizen](https://github
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Aizen targets the ops-light end of the spectrum: one static binary that runs on a 512 MB VPS or Raspberry Pi with no cloud account, driven by any OpenAI-compatible endpoint (OpenAI, OpenRouter, local
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Single 34 MB static binary with zero runtime deps (no Node/Python/Docker/cloud), ~10 ms cold start, runs on 512 MB VPS or Raspberry Pi; verify-gate runs tests/typecheck and fixes failures before reporting done; offline BM25-ranked memory brain + durable SOUL identity persona; OS-level sandbox (Landlock+seccomp on Linux, Seatbelt on macOS, Job-Object on Windows) with deny-by-default networking; phone-controlled remote operation via Telegram/Discord ...
+
+(captured site page body (agents/aizen.md), not a verified repo-code finding)
+Aizen targets the ops-light end of the spectrum: one static binary that runs on a 512 MB VPS or Raspberry Pi with no cloud account, driven by any OpenAI-compatible endpoint (OpenAI, OpenRouter, local llama.cpp/vLLM, Anthropic gateways). The loop pairs a chat REPL with parallel reads, LSP-powered symbolic edits, and a verify gate that must pass tests and typechecks before the agent claims completion; a workflow command fans out role-scoped subagents and synthesizes the result. Sandboxing is layered under approvals — Landlock plus seccomp on Linux, Seatbelt on macOS, Job Objects on Windows — with network denied by default and API keys withheld from child processes. Extras include git-backed /timemachine checkpoints, Telegram/Discord-driven headless mode (aizen serve), and BM25 offline memory; versions after v0.5.5 are Apache-2.0, actively released (v0.6.1).
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/aizen.md)

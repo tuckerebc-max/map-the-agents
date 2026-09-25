@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Antigravity is Google's agentic development platform, and the CLI is its terminal-first surface: run autonomous coding agents, execute shell commands directly, and manage background subagents without
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Google's terminal-first agentic coding CLI supporting background subagents, MCP, and multiple execution modes; part of the broader Antigravity multi-surface platform (desktop app, IDE, SDK, CLI).
+
+(captured site page body (agents/antigravity-cli.md), not a verified repo-code finding)
+Antigravity is Google's agentic development platform, and the CLI is its terminal-first surface: run autonomous coding agents, execute shell commands directly, and manage background subagents without leaving the keyboard. It shares the platform's Gemini model backend and Agent Manager infrastructure with the desktop app and IDE, so work started in one surface carries into the others; the CLI install is a curl one-liner on macOS and Linux (Windows via PowerShell), with Antigravity free for developers and enterprise terms separate. The agent experience mirrors the desktop product — autonomous coding with subagents and MCP — while the Agent Manager adds parallel local agents, Projects, and scheduled messages. Active development continues under Google, with the CLI documented at antigravity.google/docs and installs via curl or the desktop download.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/antigravity-cli.md)

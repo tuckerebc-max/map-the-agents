@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ZSJ305
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [zsj305/angles-cli](https://github
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Angles targets minimal-footprint environments: one static binary, five prebuilt platforms, no Node or Python runtime, and a curated angles-* toolset spanning files, terminal, git, and web fetch/search
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal agentic coding assistant compiled into a single 1.6MB static Rust binary (no runtime needed); drives 30+ built-in tools and supports switching between 11 model providers at will; includes a local HTTP gateway (angles serve) with web console and REST API.
+
+(captured site page body (agents/angles-cli.md), not a verified repo-code finding)
+Angles targets minimal-footprint environments: one static binary, five prebuilt platforms, no Node or Python runtime, and a curated angles-* toolset spanning files, terminal, git, and web fetch/search. Reads are unrestricted, writes follow the configured approval policy, and deletions always prompt; the agent can emit operation plans before acting (\`angles plan\`) and serve a local HTTP gateway (angles serve) for browser chat and provider switching. Models are normalized across OpenAI Chat Completions, Anthropic Messages, and Gemini native protocols across OpenAI, Claude, Gemini, DeepSeek, Grok, MiniMax, OpenRouter, Qwen, GLM, Kimi, and custom endpoints. It is very early: 14 commits, 64 stars, no releases — promising on paper, immature in practice.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/angles-cli.md)
