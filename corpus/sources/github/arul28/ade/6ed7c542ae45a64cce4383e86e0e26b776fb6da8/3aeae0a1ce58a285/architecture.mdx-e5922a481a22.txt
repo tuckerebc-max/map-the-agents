@@ -1,0 +1,87 @@
+---
+title: "Architecture"
+description: "How the ADE brain, project state, the desktop app, ade code, iOS, and optional remote runtimes over SSH fit together."
+icon: "diagram-project"
+---
+
+ADE is local-first. The center is the **brain** — the always-on, machine-owned ADE process for a channel. The brain owns the project catalog, the durable project state, the sync websocket, and the authority to run agents. Everything you see is a **client** of that brain: the desktop app, `ade code`, the iOS app, and any SSH-attached desktop window.
+
+```mermaid
+flowchart TB
+  Desktop["ADE desktop app"]
+  CLI["ade CLI + ade code"]
+  IOS["iOS app"]
+  Brain["ADE brain<br/>~/.ade/sock/ade.sock"]
+  Project["Project .ade/<br/>database, worktrees, artifacts"]
+  Remote["Remote ADE brain<br/>(another machine)"]
+
+  Desktop --> Brain
+  CLI --> Brain
+  IOS <-->|"paired sync + commands"| Brain
+  Brain --> Project
+  Desktop <-->|"SSH · ade rpc --stdio"| Remote
+```
+
+## The brain
+
+The brain is the source of truth on a machine. It owns lanes, agent chats, terminals, Git operations, PR actions, provider sessions, proof artifacts, the project catalog, and the sync service. It runs every agent — **Claude Code, Codex, Cursor, Factory Droid, and OpenCode** — against the same projects. Because desktop and CLI clients call the same brain, a chat you start in the app and one you start with [`ade code`](/tools/ade-code) operate on the same project state.
+
+The brain installs as a per-user login service — launchd on macOS, a systemd user service on Linux, a per-user startup entry on Windows — so it stays running even when no window is open. None of them need administrator rights. The [one-command install](/getting-started/install) sets this up, and [`ade connect`](/getting-started/connect-machine) publishes the machine to your account so every client can find it.
+
+Because the brain is the whole engine, a machine does not need a desktop app to be useful. On Linux there is no ADE desktop app at all: you install the brain on the server and drive it from a client elsewhere.
+
+## Clients
+
+<CardGroup cols={2}>
+  <Card title="Desktop app" icon="display">
+    The Electron control plane — windows, navigation, the renderer UI, and platform integrations. Each window attaches to a local brain, or binds to a remote one over SSH. macOS-only integrations such as the Notch and the iOS Simulator drawer are hidden on [Windows](/getting-started/windows).
+  </Card>
+  <Card title="ade code" icon="rectangle-terminal" href="/tools/ade-code">
+    The terminal-native client. Attaches to the same brain — the same lanes, chats, and PRs in a fast TUI.
+  </Card>
+  <Card title="iOS app" icon="mobile-screen">
+    A SwiftUI controller that pairs with a machine over WebSocket. It mirrors state and sends commands; it never runs agents itself.
+  </Card>
+  <Card title="ade CLI" icon="terminal" href="/reference/cli">
+    The typed control plane for any shell — used by humans and by the agents running inside ADE.
+  </Card>
+  <Card title="Web client" icon="globe" href="https://app.ade-app.dev">
+    The same workspace in a browser, for any machine you have connected to your account.
+  </Card>
+  <Card title="ADE SDK" icon="cube" href="/sdk/overview">
+    Third-party apps spawn an embedded runtime as a guest sidecar (`@ade-dev/sdk`, `@ade-dev/chat-ui`). Not a client of the machine brain — an isolated child process.
+  </Card>
+</CardGroup>
+
+## Project state
+
+ADE writes local state under each repository's `.ade/` directory and leaves your source tree under Git's control:
+
+```text
+.ade/
+  ade.db        # the project database
+  worktrees/    # one git worktree per lane
+  artifacts/    # proof and capture artifacts
+  secrets/      # encrypted project credentials
+```
+
+A **lane** is a git worktree under `worktrees/`. ADE uses real Git branches, worktrees, commits, and PRs rather than replacing them, so a lane is a normal checkout on disk you can also open in any editor.
+
+## Remote runtimes over SSH
+
+A desktop window can bind to a brain on **another machine** over SSH. ADE runs `ade rpc --stdio` on the remote and tunnels the same JSON-RPC back, so lanes, chats, diffs, and PRs behave exactly as they do locally — but the agents, builds, and tests run on the remote, against its filesystem and its own GitHub, Linear, and provider credentials. The desktop stays local and stays the control plane.
+
+This is the no-account path: the desktop bootstraps the runtime on the far side itself. The alternative is to install the brain on that machine and run [`ade connect`](/getting-started/connect-machine), which publishes it to your account directory so desktop, web, and iOS can all reach it without SSH.
+
+<Note>
+iOS does not SSH into machines. The phone pairs with a brain and connects to its sync websocket over the LAN or a Tailscale tailnet — install Tailscale on both when they aren't on the same network.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Key concepts" icon="lightbulb" href="/key-concepts">
+    The product vocabulary — brain, lane, stack, CTO — in two minutes.
+  </Card>
+  <Card title="ade CLI" icon="terminal" href="/reference/cli">
+    The typed control plane behind everything ADE does.
+  </Card>
+</CardGroup>

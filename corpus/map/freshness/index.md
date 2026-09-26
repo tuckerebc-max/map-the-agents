@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (953)
+## current (950)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -83,10 +83,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [arfo-du-blo/cursor-in-browser](../repos/arfo-du-blo/cursor-in-browser.md) [coverage: complete]
 - [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) [coverage: complete]
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) [coverage: complete]
-- [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
 - [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) [coverage: complete]
-- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]
-- [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) [coverage: partial]
 - [athasdev/athas](../repos/athasdev/athas.md) [coverage: complete]
 - [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
 - [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [joshpxyne/gpt-migrate](../repos/joshpxyne/gpt-migrate.md) [coverage: complete]
 - [juggler-ai/juggler](../repos/juggler-ai/juggler.md) [coverage: partial]
 - [julien-c/synthtraces](../repos/julien-c/synthtraces.md) [coverage: complete]
+- [juliusbrussee/caveman-code](../repos/juliusbrussee/caveman-code.md) [coverage: partial]
+- [juliusbrussee/cavemem](../repos/juliusbrussee/cavemem.md) [coverage: partial]
+- [junkyard22/orca](../repos/junkyard22/orca.md) [coverage: partial]

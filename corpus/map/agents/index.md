@@ -122,10 +122,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [arjia-labs/clu](../repos/arjia-labs/clu.md) -- status=distilled, freshness=stale
 - [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) -- status=distilled, freshness=current
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) -- status=distilled, freshness=current
-- [arul28/ade](../repos/arul28/ade.md) -- status=distilled, freshness=current
+- [arul28/ade](../repos/arul28/ade.md) -- status=distilled, freshness=stale
 - [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) -- status=distilled, freshness=current
-- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) -- status=distilled, freshness=current
-- [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) -- status=distilled, freshness=current
+- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) -- status=distilled, freshness=stale
+- [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) -- status=distilled, freshness=stale
 - [athasdev/athas](../repos/athasdev/athas.md) -- status=distilled, freshness=current
 - [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) -- status=distilled, freshness=current
 - [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) -- status=distilled, freshness=current

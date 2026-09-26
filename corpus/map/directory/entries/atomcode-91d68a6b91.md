@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: atomgit-atomcode
@@ -22,6 +22,8 @@ Repository map entry: [atomgit-atomcode/atomcode](../../repos/atomgit-atomcode/a
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-atomcode is a terminal AI coding agent written in Rust, positioned as an open-source alternative to Claude Code and notable for being developed with 100% AI-generated code under human product manageme
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source terminal AI coding agent written in Rust; 100% AI-generated codebase (human acts only as product manager). Includes MCP support, plugin marketplace, hooks, plan/build modes, Web UI, mobile remote access via QR code, code-graph tools, and multi-provider support - all terminal-native.
+
+(captured site page body (agents/atomcode.md), not a verified repo-code finding)
+atomcode is a terminal AI coding agent written in Rust, positioned as an open-source alternative to Claude Code and notable for being developed with 100% AI-generated code under human product management. It connects to any OpenAI-compatible API (Claude, OpenAI, DeepSeek, GLM, Qwen, SiliconFlow, Ollama), reads the codebase, edits files, runs commands, and verifies work autonomously with loop detection and step budgets. Plan mode separates read-only exploration from full execution, plus /goal autonomous looping, background sessions, an /undo file-history mechanism, a Web UI, and mobile access via QR code. MCP support, a plugin marketplace, hooks, and a skills system extend the agent, with project instructions via .atomcode.md or AGENTS.md. It is MIT-licensed, actively developed (v5.x), installable via npm, Homebrew, or install scripts, and targets developers wanting a self-hostable agent with any OpenAI-compatible provider.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/atomcode.md)

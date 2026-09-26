@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [juliusbrussee/caveman-code](../repos/juliusbrussee/caveman-code.md) [coverage: partial]
-- [juliusbrussee/cavemem](../repos/juliusbrussee/cavemem.md) [coverage: partial]
-- [junkyard22/orca](../repos/junkyard22/orca.md) [coverage: partial]
 - [junliu1066/vibe-coding-kit](../repos/junliu1066/vibe-coding-kit.md) [coverage: partial]
 - [juyongjiang/codellmsurvey](../repos/juyongjiang/codellmsurvey.md) [coverage: complete]
 - [juyterman1000/entroly](../repos/juyterman1000/entroly.md) [coverage: partial]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [twing-dev/twing-cli](../repos/twing-dev/twing-cli.md) [coverage: partial]
 - [tysonlabs/lazyide](../repos/tysonlabs/lazyide.md) [coverage: complete]
 - [ui5/plugins-coding-agents](../repos/ui5/plugins-coding-agents.md) [coverage: complete]
+- [ultraworkers/claw-code](../repos/ultraworkers/claw-code.md) [coverage: partial]
+- [umacloud/umadev](../repos/umacloud/umadev.md) [coverage: partial]
+- [uniide/debugai](../repos/uniide/debugai.md) [coverage: complete]

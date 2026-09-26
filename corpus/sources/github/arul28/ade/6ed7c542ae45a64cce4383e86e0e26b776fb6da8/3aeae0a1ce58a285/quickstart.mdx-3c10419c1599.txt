@@ -1,0 +1,69 @@
+---
+title: "Quickstart"
+description: "Install ADE, open a project, create a lane, and run your first agent task."
+icon: "rocket"
+---
+
+This page is the shortest useful path. You can tune providers, permissions, Linear, mobile, and worker settings later.
+
+<Frame>
+  <img src="/media/landing/hero/desktop.webp" alt="The ADE desktop app" />
+</Frame>
+
+<Steps>
+  <Step title="Install ADE">
+    One command installs the ADE brain, registers it as a background service, and offers to sign you in and add the desktop app.
+
+    <CodeGroup>
+    ```bash macOS & Linux
+    curl -fsSL https://ade-app.dev/install.sh | sh
+    ```
+
+    ```powershell Windows
+    irm https://ade-app.dev/install.ps1 | iex
+    ```
+    </CodeGroup>
+
+    Prefer to click? Download the desktop app for [Apple Silicon](https://ade-app.dev/download/mac-arm64), [Intel](https://ade-app.dev/download/mac-x64), or [Windows x64](https://ade-app.dev/download/windows). On Windows, ADE is in beta — [what differs](/getting-started/windows). On Linux, ADE runs headless as the brain and you drive it from elsewhere — see [Connect a machine](/getting-started/connect-machine). Full detail: [Install ADE](/getting-started/install). The optional iOS companion is on [TestFlight](https://testflight.apple.com/join/ZSdJGKPy).
+  </Step>
+  <Step title="Connect one AI provider">
+    Open **Settings -> AI Providers** and verify at least one provider. Claude Code, Codex, Cursor, Factory Droid, and OpenCode are the agent paths.
+  </Step>
+  <Step title="Open a Git repository">
+    Use **Open Repository** on the welcome screen or press `Cmd+O` (`Ctrl+O` on Windows). Choose the repository root, not a subfolder.
+  </Step>
+  <Step title="Create a lane">
+    In **Lanes**, create a new lane from your default branch. A lane is ADE's name for a git worktree — it gets its own branch and working copy under `.ade/worktrees/`, isolated from your main checkout.
+  </Step>
+  <Step title="Ask for one small change">
+    Open the lane in **Work** or **Chat** and send a narrow task. Start with something easy to inspect.
+  </Step>
+  <Step title="Review and commit">
+    Use **Files** to inspect the diff, run tests from **Run** or the terminal, then commit and create a PR when it looks right.
+  </Step>
+</Steps>
+
+## A good first prompt
+
+```text
+Add a GET /health endpoint that returns { "status": "ok" } and add one test for it.
+```
+
+Pick a version of that prompt that fits your project. The goal is to exercise the loop: lane, chat, edit, test, review, commit.
+
+## What to read next
+
+<CardGroup cols={2}>
+  <Card title="Key concepts" icon="lightbulb" href="/key-concepts">
+    Understand the product vocabulary without reading a reference manual.
+  </Card>
+  <Card title="Run your first agent" icon="robot" href="/getting-started/first-agent">
+    More detail on choosing a provider, watching tool calls, and reviewing output.
+  </Card>
+  <Card title="Lanes" icon="code-branch" href="/lanes/overview">
+    How ADE keeps parallel work isolated.
+  </Card>
+  <Card title="Pull requests" icon="code-pull-request" href="/tools/pull-requests">
+    How finished lane work moves into GitHub review.
+  </Card>
+</CardGroup>

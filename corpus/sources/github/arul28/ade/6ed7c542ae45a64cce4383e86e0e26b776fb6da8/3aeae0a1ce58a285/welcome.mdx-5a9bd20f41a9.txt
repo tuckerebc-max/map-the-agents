@@ -1,0 +1,159 @@
+---
+title: "Welcome to ADE"
+description: "ADE runs every AI coding agent in one native workspace — macOS, Windows, iOS, and the terminal, synced in real time."
+icon: "hand-wave"
+mode: "wide"
+---
+
+ADE runs **Claude Code, Codex, Cursor, Factory Droid, and OpenCode** — every major AI coding agent — inside one native workspace. Every task gets its own git worktree, so agents ship features in parallel without colliding. Review and merge PRs in-app. Approve a diff from your phone while another agent tests on your desktop. ADE is generally available on macOS, in beta on Windows 10/11 x64, and runs headless on Linux.
+
+Install it with one command:
+
+<CodeGroup>
+```bash macOS & Linux
+curl -fsSL https://ade-app.dev/install.sh | sh
+```
+
+```powershell Windows
+irm https://ade-app.dev/install.ps1 | iex
+```
+</CodeGroup>
+
+<Frame>
+  <img src="/media/landing/hero/desktop.webp" alt="ADE desktop — lanes, agent chat, and tools in one window" />
+</Frame>
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart" horizontal>
+    Ship your first agent task in five steps.
+  </Card>
+  <Card title="Key concepts" icon="lightbulb" href="/key-concepts" horizontal>
+    The vocabulary, in two minutes.
+  </Card>
+  <Card title="Download for Mac" icon="apple" href="https://ade-app.dev/download/mac-arm64" horizontal>
+    Free, open source. macOS 13+.
+  </Card>
+  <Card title="ADE on Windows" icon="windows" href="/getting-started/windows" horizontal>
+    Windows 10/11 x64, in beta. What works and what does not.
+  </Card>
+  <Card title="Run the brain on a server" icon="server" href="/getting-started/connect-machine" horizontal>
+    Linux, headless. Drive it from your Mac, phone, or the web.
+  </Card>
+  <Card title="Download for iOS" icon="mobile-screen" href="https://testflight.apple.com/join/ZSdJGKPy" horizontal>
+    Install the ADE companion app from TestFlight.
+  </Card>
+</Columns>
+
+## What you get
+
+<CardGroup cols={2}>
+  <Card title="Parallel lanes" icon="code-branch" href="/lanes/overview" img="/media/landing/showcase/worktrees-desktop.webp">
+    Every task gets its own git worktree — its own branch, files, and sessions. Agents work side by side, no stashing, no context switch.
+  </Card>
+  <Card title="Every agent, one chat" icon="comments" href="/chat/overview" img="/media/landing/showcase/agent-chat-desktop.webp">
+    Claude Code, Codex, Cursor, Factory Droid, and OpenCode — pick the model per task, all against the same lane with live diffs and approval gates.
+  </Card>
+  <Card title="Open, review, merge PRs" icon="code-pull-request" href="/tools/pull-requests" img="/media/landing/showcase/pull-requests-desktop.webp">
+    Every PR your agents open lands in ADE — diff, CI, comments, merge button. No GitHub tab. Auto-merge when green.
+  </Card>
+  <Card title="Tools, in context" icon="toolbox" href="/tools/browser" img="/media/landing/showcase/work-tools-browser.webp">
+    A built-in browser, Files, Git, and the iOS simulator live right next to your chat, so the agent works against what you see.
+  </Card>
+</CardGroup>
+
+## One workspace, every surface
+
+The same lanes, chats, and PRs follow you across the desktop app, the terminal, and your phone — backed by the same machine in real time.
+
+<Tabs>
+  <Tab title="Desktop">
+    <Frame caption="The full control plane on macOS.">
+      <img src="/media/landing/hero/desktop.webp" alt="ADE on macOS" />
+    </Frame>
+  </Tab>
+  <Tab title="Terminal">
+    <Frame caption="ade code — the same lanes and chats, terminal-native.">
+      <img src="/media/landing/hero/tui.webp" alt="ADE in the terminal" />
+    </Frame>
+  </Tab>
+  <Tab title="iOS">
+    <Frame caption="Review and chat from anywhere.">
+      <img src="/media/landing/hero/mobile.webp" alt="ADE on iPhone" width="300" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Embed ADE chat in your app
+
+Third-party apps can spawn a slim ADE runtime as a sidecar and present chat as durable named threads — published as `@ade-dev/sdk` and `@ade-dev/chat-ui`.
+
+<Card title="ADE SDK" icon="cube" href="/sdk/overview" horizontal>
+  Install, quickstart, MCP honesty table, React UI, and the sidecar runtime.
+</Card>
+
+## The usual loop
+
+<Steps>
+  <Step title="Open a repository">
+    ADE creates local project state under `.ade/` and leaves your source tree under Git's control.
+  </Step>
+  <Step title="Create a lane">
+    A **lane** is ADE's name for a git worktree — an isolated branch and working copy for one task.
+  </Step>
+  <Step title="Run an agent">
+    Ask for a change in chat, launch a terminal, or hand project-wide planning to the CTO.
+  </Step>
+  <Step title="Review the result">
+    Inspect diffs, terminal output, tests, PR state, and proof artifacts from one place.
+  </Step>
+  <Step title="Ship it">
+    Commit, push, open a PR, and merge — without leaving ADE.
+  </Step>
+</Steps>
+
+## App map
+
+<Columns cols={2}>
+  <Card title="Work" icon="rectangle-terminal" href="/chat/overview">
+    Agent chats, terminals, and CLI sessions across lanes, with Git, Files, Browser, and iOS tools alongside.
+  </Card>
+  <Card title="Lanes" icon="code-branch" href="/lanes/overview">
+    Create, inspect, stack, archive, and clean up isolated worktrees.
+  </Card>
+  <Card title="Files" icon="file-code" href="/tools/files-editor">
+    Read diffs, edit files, stage changes, and resolve conflicts.
+  </Card>
+  <Card title="PRs" icon="code-pull-request" href="/tools/pull-requests">
+    Create and review GitHub PRs, read CI, and manage stacked work.
+  </Card>
+  <Card title="CTO" icon="crown" href="/cto/overview">
+    A persistent project-level operator with durable memory that reasons across every lane.
+  </Card>
+</Columns>
+
+## Runs the agents you already use
+
+ADE doesn't replace your agent — it runs all of them, against the same worktrees, in one place.
+
+<Frame>
+  <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center", justifyContent: "center", padding: "1.25rem 0.5rem" }}>
+    <img src="/media/logos/competitors/claude-code.webp" alt="Claude Code" style={{ height: "40px", background: "#fff", borderRadius: "12px", padding: "10px 14px" }} />
+    <img src="/media/logos/competitors/codex.webp" alt="Codex" style={{ height: "40px", background: "#fff", borderRadius: "12px", padding: "10px 14px" }} />
+    <img src="/media/logos/competitors/cursor.webp" alt="Cursor" style={{ height: "40px", background: "#fff", borderRadius: "12px", padding: "10px 14px" }} />
+    <img src="/media/logos/competitors/factory.webp" alt="Factory Droid" style={{ height: "40px", background: "#fff", borderRadius: "12px", padding: "10px 14px" }} />
+    <img src="/media/logos/competitors/opencode.webp" alt="OpenCode" style={{ height: "40px", background: "#fff", borderRadius: "12px", padding: "10px 14px" }} />
+  </div>
+</Frame>
+
+<Note>
+Start small. Your first successful ADE session should be one lane, one agent, one narrow change, and one review pass.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Follow the shortest path to a working agent.
+  </Card>
+  <Card title="Key concepts" icon="lightbulb" href="/key-concepts">
+    Learn the product vocabulary before going deeper.
+  </Card>
+</CardGroup>

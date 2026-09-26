@@ -1,9 +1,9 @@
 # ashish200729/orbiteditor
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 6acd0c1e9ae0 @ 54376e9db6bf1f87
+Latest snapshot: commit 6acd0c1e9ae0 @ ef3f9ed6bc9aabf6
 
 ## Summary (orientation draft, not independently verified)
 

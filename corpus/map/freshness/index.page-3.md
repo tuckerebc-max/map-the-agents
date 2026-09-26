@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [ultraworkers/claw-code](../repos/ultraworkers/claw-code.md) [coverage: partial]
-- [umacloud/umadev](../repos/umacloud/umadev.md) [coverage: partial]
-- [uniide/debugai](../repos/uniide/debugai.md) [coverage: complete]
 - [unodetechxyz/unodeai](../repos/unodetechxyz/unodeai.md) [coverage: partial]
 - [untrivial-ai/agent-orchestrator](../repos/untrivial-ai/agent-orchestrator.md) [coverage: partial]
 - [urbint/cortex](../repos/urbint/cortex.md) [coverage: complete]
@@ -105,7 +102,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (36)
+## stale (39)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
 - [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]
 - [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
+- [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
+- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]
+- [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) [coverage: partial]
 
 ## refresh-failed (63)
 

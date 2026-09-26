@@ -1,9 +1,9 @@
 # asheshgoplani/agent-deck
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 7d2302fb8a41 @ 5d1b37ace8d9fdef
+Latest snapshot: commit 8d3f9e234192 @ 336ba1fd696f3e80
 
 ## Summary (orientation draft, not independently verified)
 

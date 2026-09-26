@@ -1,9 +1,9 @@
 # arul28/ade
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 4e14f9cdf0e4 @ e54a9a8c96c9ab57
+Latest snapshot: commit 6ed7c542ae45 @ 3aeae0a1ce58a285
 
 ## Summary (orientation draft, not independently verified)
 
