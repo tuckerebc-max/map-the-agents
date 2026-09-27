@@ -1,0 +1,636 @@
+# Governance Policy Plane
+
+Declarative governance policies — admit / deny / transform every AI turn — loaded from YAML ([Atmosphere-native schema](#atmosphere-native-type-dispatch) or [Microsoft Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) schema verbatim), enforced on every `@AiEndpoint`, introspected through the admin console, and queryable via a Microsoft-compatible `POST /check` decision endpoint.
+
+**Module:** `atmosphere-ai`. Admin-surface pieces live in `atmosphere-admin`; the Spring Boot auto-configuration is in `atmosphere-spring-boot-starter`.
+
+---
+
+## Why this exists
+
+Atmosphere has had `AiGuardrail` from the beginning — PII redaction, cost ceilings, output drift detection — but every guardrail was imperative Java code. The policy plane layers a declarative identity-carrying SPI on top so that:
+
+1. **Operators can author governance in YAML**, not Java. Change `atmosphere-policies.yaml`, restart, governance posture changes. No recompilation.
+2. **Audit trails are pinned to policy identity**. Every admit / deny / transform decision records the `name`, `source` URI, and `version` of the matching policy — not just "some guardrail fired."
+3. **The vocabulary matches external ecosystems.** `admit` / `deny` / `transform` lines up with OPA/Rego and the Microsoft Agent Governance Toolkit. An operator fluent in either toolchain can read an Atmosphere policy without re-learning the model.
+4. **Existing `AiGuardrail` implementations keep working.** The SPI is strictly additive; adapters bridge the two directions.
+
+---
+
+## Architecture
+
+```
+                     ┌──────────────────────────────────────────────────────────┐
+                     │                     atmosphere-policies.yaml             │
+                     │   (Atmosphere-native `policies:` OR MS `rules:`)         │
+                     └────────────────────────────┬─────────────────────────────┘
+                                                  │
+                         YamlPolicyParser auto-detects schema
+                                                  │
+                     ┌────────────────────────────▼─────────────────────────────┐
+                     │     List<GovernancePolicy>                               │
+                     │  • PolicyRegistry type-dispatch (pii-redaction, etc.)    │
+                     │  • MsAgentOsPolicy (rules-over-context)                  │
+                     └────────────────────────────┬─────────────────────────────┘
+                                                  │
+                  framework.getAtmosphereConfig()
+                    .properties()
+                    .put(POLICIES_PROPERTY, policies)
+                                                  │
+    ┌─────────────────────────────────────────────┼────────────────────────────────┐
+    │                                             │                                │
+    ▼                                             ▼                                ▼
+AiEndpointProcessor                     PolicyAdmissionGate              GovernanceController
+ (for @AiEndpoint                          (for non-pipeline                (admin HTTP surface)
+  handlers; wraps                           code paths like                     │
+  policies via                              demo responders)                    │
+  PolicyAsGuardrail                            │                                │
+  into the guardrail                           │                                │
+  list)                                        │                                │
+    │                                          │                                │
+    ▼                                          ▼                                ▼
+AiPipeline.execute                    PolicyAdmissionGate.Result       GET /api/admin/governance/policies
+ pre-admission loop → Deny aborts     (caller matches Admit/Denied)    GET /api/admin/governance/summary
+ Transform rewrites request                                            POST /api/admin/governance/check
+ response-side reuses                                                   (MS `PolicyProviderHandler`-compatible)
+ GuardrailCapturingSession
+```
+
+Three consumer surfaces, one policy list. Every surface reads the same `POLICIES_PROPERTY` bag, so Spring beans, ServiceLoader entries, and YAML files all converge on the same enforcement chain.
+
+---
+
+## Concepts
+
+### `GovernancePolicy` SPI
+
+`org.atmosphere.ai.governance.GovernancePolicy` — the declarative SPI:
+
+```java
+public interface GovernancePolicy {
+    String POLICIES_PROPERTY = "org.atmosphere.ai.governance.policies";
+
+    String name();      // stable identity for audit trail
+    String source();    // yaml:/path/file.yaml | classpath:file.yaml | code:<fqn>
+    String version();   // semver | ISO date | sha256:… — operator choice
+
+    PolicyDecision evaluate(PolicyContext context);
+}
+```
+
+`PolicyContext` carries the phase (`PRE_ADMISSION` / `POST_RESPONSE`), the `AiRequest`, and the accumulated response text. `PolicyDecision` is a sealed type: `Admit`, `Transform(modifiedRequest)`, `Deny(reason)`.
+
+Implementations must be thread-safe, side-effect-free (except for metrics/logging), and MUST NOT throw — exceptions fail-closed to Deny at every admission seam.
+
+### `PolicyParser` SPI
+
+`org.atmosphere.ai.governance.PolicyParser` — parse a declarative artifact into `List<GovernancePolicy>`. The SPI contract supports `java.util.ServiceLoader` discovery; three implementations ship in-tree:
+
+- **`YamlPolicyParser`** (`format() = "yaml"`, `modules/ai`) — SnakeYAML `SafeConstructor` (no arbitrary class instantiation). Auto-detects Atmosphere-native vs Microsoft Agent Governance Toolkit schema by inspecting the root keys. Registered via `META-INF/services/org.atmosphere.ai.governance.PolicyParser`, so adding `atmosphere-ai` to the classpath is enough to wire it up.
+- **`RegoPolicyParser`** (`modules/ai-policy-rego`) — wraps an external OPA process via `RegoEvaluator`. Registered via `META-INF/services/org.atmosphere.ai.governance.PolicyParser` (same as `YamlPolicyParser`), so adding `atmosphere-ai-policy-rego` to the classpath is enough to auto-discover it. Programmatic wiring (`new RegoPolicyParser(registry)`) remains available for callers who want explicit control.
+- **`CedarPolicyParser`** (`modules/ai-policy-cedar`) — Cedar policy text via `CedarAuthorizer` / `CedarCliAuthorizer`. Same posture as Rego: ships a `META-INF/services/org.atmosphere.ai.governance.PolicyParser` entry, so adding `atmosphere-ai-policy-cedar` to the classpath auto-discovers it.
+
+Third-party parsers can register either path. ServiceLoader auto-discovery is the SPI-level recipe (ship a `PolicyParser` impl plus a `META-INF/services/org.atmosphere.ai.governance.PolicyParser` entry); all three in-tree adapters (Yaml/Rego/Cedar) ship such an entry, so they auto-discover from the classpath. Programmatic wiring remains available for callers who want explicit control.
+
+The audit-sink family follows the same posture: `AsyncAuditSink` ships in `modules/ai`; `KafkaAuditSink` (`modules/ai-audit-kafka`) and `JdbcAuditSink` (`modules/ai-audit-postgres`) are wired programmatically as well — no `META-INF/services` entries.
+
+### `PolicyRegistry` and built-in types
+
+`org.atmosphere.ai.governance.PolicyRegistry` maps YAML `type:` names to factory functions. Twelve built-in types ship (`PolicyRegistry.java:81-92`):
+
+| `type:` | Wraps / produces | Required config keys |
+|---|---|---|
+| `pii-redaction` | `PiiRedactionGuardrail` | `mode: redact \| block` (default `redact`) |
+| `cost-ceiling` | `CostCeilingGuardrail` | `budget-usd: <number>` |
+| `output-length-zscore` | `OutputLengthZScoreGuardrail` | `window-size`, `z-threshold`, `min-samples` |
+| `deny-list` | `DenyListPolicy` | at least one of `phrases: [...]`, `regex: [...]` |
+| `allow-list` | `AllowListPolicy` | at least one of `phrases: [...]`, `regex: [...]` |
+| `preference` | `PreferencePolicy` (emits a soft `Prefer` advisory) | at least one of `phrases: [...]`, `regex: [...]`, plus `prefer: <text>`, `reason: <text>` |
+| `message-length` | `MessageLengthPolicy` | `max-chars: <positive int>` |
+| `rate-limit` | `RateLimitPolicy` | `limit: <positive int>`, `window-seconds: <positive int>` |
+| `concurrency-limit` | `ConcurrencyLimitPolicy` | `max-concurrent: <positive int>` |
+| `time-window` | `TimeWindowPolicy` | `start`, `end` (HH:mm), `zone`, `days: [MONDAY, ...]` (defaults Mon–Fri UTC 09:00–17:00) |
+| `metadata-presence` | `MetadataPresencePolicy` | `required-keys: [...]` |
+| `authorization` | `AuthorizationPolicy` | `required-roles: [...]` |
+
+Unknown `type:` names fail-closed at parse time with `IllegalArgumentException` — silent drops are not an option.
+
+Register a custom type in code:
+
+```java
+var registry = new PolicyRegistry();
+registry.register("my-domain-policy", descriptor ->
+        new MyDomainPolicy(descriptor.name(), descriptor.source(),
+                descriptor.version(), descriptor.config()));
+var parser = new YamlPolicyParser(registry);
+```
+
+### `PolicyRing` — concentric-ring composition
+
+`org.atmosphere.ai.governance.PolicyRing` composes a list of policies into evaluation rings, cheapest first, short-circuiting on the first terminal decision. Purpose-built for stacks where a rule-based scope check can reject the bulk of traffic in sub-millisecond time before paying for a 100–500 ms LLM-classifier tier.
+
+Evaluation order (lower ring index = evaluated first):
+
+1. **Ring 1 (outermost / cheapest)** — rule-based, regex, keyword
+2. **Ring 2** — embedding-similarity, hash lookups, cached classifiers
+3. **Ring 3 (innermost / most expensive)** — LLM-classifier, remote RAG scans
+
+Ring indices are operator-defined integers; within a ring, policies evaluate in insertion order. A `PolicyDecision.Deny` from any ring terminates evaluation; a `PolicyDecision.Transform` rewrites the request and the next ring sees the rewritten form; `PolicyDecision.Admit` moves on.
+
+Error isolation is fail-closed by default: a policy that throws is treated as a `Deny` (same semantics as the `AiPipeline`'s per-policy error handling). Operators who want "log and continue" wrap the errant policy in `DryRunPolicy` first.
+
+```java
+var ring = PolicyRing.builder("layered-defence")
+        .source("inline")
+        .version("1.0.0")
+        .ring(1, denyListPolicy, allowListPolicy)               // rule-based
+        .ring(2, embeddingSimilarityPolicy)                     // similarity
+        .ring(3, llmClassifierPolicy)                           // LLM tier
+        .build();
+```
+
+### `PolicyAdmissionGate`
+
+`org.atmosphere.ai.governance.PolicyAdmissionGate` — utility that runs the policy chain on an `AiRequest` **outside the pipeline**. Exists because some `@Prompt` handlers respond locally (demo producers, canned responders) and therefore never invoke `AiPipeline.execute`. Without the gate those paths would bypass governance entirely — the classroom sample was the first casualty.
+
+```java
+var gate = PolicyAdmissionGate.admit(resource, new AiRequest(message));
+switch (gate) {
+    case PolicyAdmissionGate.Result.Denied denied ->
+            session.error(new SecurityException("Denied by " + denied.policyName()));
+    case PolicyAdmissionGate.Result.Admitted admitted ->
+            // forward admitted.request().message() to your local responder
+}
+```
+
+### `GuardrailAsPolicy` and `PolicyAsGuardrail`
+
+Interop adapters so the imperative and declarative layers share one enforcement seam:
+
+- `GuardrailAsPolicy` wraps any `AiGuardrail` as a `GovernancePolicy` with default identity (`code:<fqn>`, version `embedded`) or explicit identity.
+- `PolicyAsGuardrail` wraps any `GovernancePolicy` as an `AiGuardrail`. Used internally by `AiEndpointProcessor` to merge policies into the guardrail list consumed by `AiPipeline`. `Transform` decisions on the post-response path are downgraded to `Pass` with a warning (streamed text is not retroactively rewritable).
+
+---
+
+## YAML schemas
+
+### Atmosphere-native (type-dispatch)
+
+```yaml
+version: "1.0"
+policies:
+  - name: customer-pii-guard
+    type: pii-redaction
+    version: "1.0"
+    config:
+      mode: redact            # redact | block
+
+  - name: drift-watcher
+    type: output-length-zscore
+    config:
+      window-size: 50
+      z-threshold: 3.0
+      min-samples: 10
+
+  - name: tenant-budget
+    type: cost-ceiling
+    config:
+      budget-usd: 100.00
+```
+
+Each entry maps to a built-in type and gets wrapped as a `GuardrailAsPolicy` over the corresponding guardrail.
+
+### Microsoft Agent Governance Toolkit (rules-over-context)
+
+`YamlPolicyParser` auto-detects the MS schema — documents with a top-level `rules:` sequence — and produces a single `MsAgentOsPolicy` that preserves MS's first-match-by-priority evaluation semantic verbatim. All nine comparison operators and all four actions are supported:
+
+```yaml
+version: "1.0"
+name: production-policy
+description: Company-wide policy — verbatim example from MS's docs
+rules:
+  - name: block-delete-database
+    condition: { field: tool_name, operator: eq, value: delete_database }
+    action: deny
+    priority: 100
+    message: "Destructive action: deleting databases is never allowed"
+
+  - name: escalate-transfer-funds
+    condition: { field: tool_name, operator: eq, value: transfer_funds }
+    action: deny
+    priority: 90
+    message: "Sensitive action: transfer_funds requires human approval"
+
+  - name: allow-search-documents
+    condition: { field: tool_name, operator: eq, value: search_documents }
+    action: allow
+    priority: 80
+
+defaults:
+  action: allow
+```
+
+| Operator | Semantic (port of MS's `_match_condition`) |
+|---|---|
+| `eq` / `ne` | Loose equality (numeric cross-type aware) |
+| `gt` / `lt` / `gte` / `lte` | Comparable-based ordering |
+| `in` | Value appears in target list |
+| `contains` | Substring (strings) or membership (collections) |
+| `matches` | Regex via `Pattern.matcher().find()` |
+
+| Action | Decision mapping |
+|---|---|
+| `allow` | `PolicyDecision.admit()` |
+| `deny` / `block` | `PolicyDecision.deny(message)` |
+| `audit` | `PolicyDecision.admit()` + structured INFO log |
+
+**Context map bridge** — rule `field:` references map to:
+
+| Context key | `AiRequest` source |
+|---|---|
+| `message`, `system_prompt`, `model` | direct fields |
+| `user_id`, `session_id`, `agent_id`, `conversation_id` | direct fields |
+| `phase` | `pre_admission` \| `post_response` |
+| `response` | accumulated response text (post-response only) |
+| *anything else* | `AiRequest.metadata()` entries by exact key |
+
+Two schemas are mutually exclusive per document — a YAML file carrying both `rules:` and `policies:` raises `IOException` at parse time.
+
+### ACS manifests (MS's current policy layer)
+
+Microsoft superseded the `rules:` dialect with Agent Control Specification (ACS) manifests in the 2026-07-30 v4-removal refactor. `YamlPolicyParser` detects the `agent_control_specification_version:` root key and produces an `AcsManifestPolicy`:
+
+| ACS intervention point | Atmosphere seam |
+|---|---|
+| `input` | `PRE_ADMISSION` on the user turn |
+| `pre_tool_call` | `PRE_ADMISSION` on the tool-call intent (`tool_name` metadata) |
+| `output` | `POST_RESPONSE` on the accumulated response |
+| everything else | host scope — not evaluated (a point the host never reaches is never presented) |
+
+`type: rego` policies evaluate through the real `opa` binary (`atmosphere-ai-policy-rego`, ServiceLoader-discovered `AcsRegoEngine`); the `bundle:` reference resolves manifest-relative (directory, `.tar.gz`, or single `.rego`) with canonical path-escape rejection — the existing bundle and the manifest directory are both canonicalized (`toRealPath`) before the confinement check, so a symlink under the manifest directory cannot smuggle the bundle outside it. Verdicts map `allow` → `admit()`, `deny` → `deny(reason)`, and a whole-target `transform` on `input` → `transform(request.withMessage(...))`.
+
+`extends:` chains on file-loaded manifests resolve at parse time (`AcsExtendsResolver`, faithful to upstream's Rust resolver): parents merge depth-first in list order and the current manifest merges last; the merge is strictly additive — never child-wins — with per-key unions for `policies`/`tools`/`annotators`, per-field intervention-point merges — except the point's `policy` binding, which merges atomically: a non-empty binding fills an empty slot or must be identical, never field-by-field — and deep-merged `metadata` (identical duplicates tolerated, any conflict fails startup with the dotted field path). Every entry is canonicalized (symlinks resolved) and must stay under the top-level manifest's directory; cycles and chains deeper than 16 error; a base manifest's relative `bundle:` refs are rebased (canonically confined where the bundle already exists; refs that escape — by dot-segments or through a symlink — are left absolute for the engine to deny) so they keep resolving against the file that declared them. The top-level document's already-parsed root mapping is handed straight to the resolver; only the parents in the chain are read from disk. Remote manifests are never fetched: non-https extends URLs error exactly like upstream, and https URLs fail closed with an explicit "vendor the manifest locally" error. A chain that cannot be resolved (stream/classpath-parsed manifests have no filesystem root), unregistered engine types, malformed verdicts and invalid transform targets all deny fail-closed with an `acs_runtime_error` reason — the upstream ACS safety model and Correctness Invariant #6 agree here.
+
+### Conformance
+
+`MsAgentOsYamlConformanceTest` pins the frozen legacy `rules:` dialect (byte-for-byte copies of the pre-removal `docs/tutorials/policy-as-code/examples/`, kept for existing operator policy files). `AcsManifestConformanceTest` pins the ACS manifest shape against verbatim copies of upstream's own contract fixtures (`policy-engine/core/tests/fixtures/manifests/`), and the weekly `ms-yaml-conformance` workflow diffs those copies against upstream `main` — parity is pinned in CI, not in marketing copy.
+
+---
+
+## Wiring in a Spring Boot app
+
+```java
+@Configuration
+public class PoliciesConfig {
+    private static final String POLICY_FILE = "atmosphere-policies.yaml";
+
+    @Bean
+    Object atmospherePolicyPlaneLoader(AtmosphereFramework framework) throws IOException {
+        var resource = new ClassPathResource(POLICY_FILE);
+        if (!resource.exists()) return List.of();
+        try (var in = resource.getInputStream()) {
+            var policies = new YamlPolicyParser().parse(
+                    "classpath:" + POLICY_FILE, in);
+            framework.getAtmosphereConfig().properties()
+                    .put(GovernancePolicy.POLICIES_PROPERTY, policies);
+            return policies;
+        }
+    }
+}
+```
+
+`AtmosphereAiAutoConfiguration` also bridges Spring-managed `GovernancePolicy` beans onto `POLICIES_PROPERTY` automatically — so custom-coded policies work by dropping an `@Component` bean into the context.
+
+For non-Spring deployments, register a `GovernancePolicy` `ServiceLoader` entry at `META-INF/services/org.atmosphere.ai.governance.GovernancePolicy`.
+
+---
+
+## Admin HTTP surface
+
+All three endpoints are exposed by `AtmosphereAdminEndpoint` (Spring Boot) once `atmosphere-admin` is on the classpath. Wire-compatible with Microsoft Agent Governance Toolkit's `PolicyProviderHandler` ASGI app.
+
+### `GET /api/admin/governance/policies`
+
+```json
+[
+  {
+    "name": "customer-pii-guard",
+    "source": "classpath:atmosphere-policies.yaml",
+    "version": "1.0",
+    "className": "org.atmosphere.ai.governance.GuardrailAsPolicy"
+  }
+]
+```
+
+Reports runtime-confirmed state only (Correctness Invariant #5, Runtime Truth) — the list reflects what `AiEndpointProcessor` will actually apply on a turn, not what the YAML file or Spring beans might intend.
+
+### `GET /api/admin/governance/summary`
+
+```json
+{ "policyCount": 2, "sources": ["classpath:atmosphere-policies.yaml"] }
+```
+
+### `POST /api/admin/governance/check`
+
+Wire-compatible with MS's `POST /check`. Payload:
+
+```json
+{ "agent_id": "agent-a", "action": "call_tool", "context": { "tool_name": "delete_database" } }
+```
+
+Response:
+
+```json
+{
+  "allowed": false,
+  "decision": "deny",
+  "reason": "Destructive action: deleting databases is never allowed",
+  "matched_policy": "production-policy",
+  "matched_source": "classpath:atmosphere-policies.yaml",
+  "evaluation_ms": 3.27
+}
+```
+
+External gateways (Envoy, Kong, Azure APIM) that already speak to MS's ASGI policy provider can point at this endpoint to use Atmosphere as the decision service without code changes.
+
+### `GET /api/admin/governance/health`
+
+Operator snapshot: kill-switch state, dry-run counters, SLO status, and
+per-policy hash fingerprints for supply-chain drift detection.
+
+```json
+{
+  "generatedAt": "2026-04-23T20:45:00Z",
+  "killSwitch": { "armed": false },
+  "policies": [
+    { "name": "scope.support", "source": "yaml:...", "version": "1",
+      "digest": "sha256:458be9dba..." }
+  ],
+  "dryRuns": [], "slos": []
+}
+```
+
+### `GET /api/admin/governance/agt-verify`
+
+Compliance export shaped for Microsoft's `agt verify` CLI — 25 findings
+spanning OWASP Agentic Top 10 + EU AI Act / HIPAA / SOC2. External
+procurement tooling that already consumes MS's compliance package format
+can round-trip this output.
+
+```json
+{
+  "schemaVersion": "agt-verify/1",
+  "findings": [
+    { "framework": "OWASP_AGENTIC_TOP_10", "controlId": "A01",
+      "title": "Goal Hijacking", "status": "COVERED",
+      "evidence": [
+        { "class": "org.atmosphere.ai.annotation.AgentScope",
+          "test":  "org.atmosphere.ai.governance.scope.RuleBasedScopeGuardrailTest",
+          "consumerGrep": "@AgentScope" }
+      ]
+    }
+  ],
+  "summary": { "OWASP_AGENTIC_TOP_10": { "COVERED": 9, "NOT_ADDRESSED": 1 } }
+}
+```
+
+The `EvidenceConsumerGrepPinTest` CI gate walks `modules/**/src/main` +
+`samples/**/src/main` and asserts every non-blank `consumerGrep` pattern
+finds a production caller — claimed coverage can't drift.
+
+### `POST /api/admin/governance/kill-switch/arm`
+
+Break-glass — halts every admission decision without a redeploy.
+
+```bash
+curl -X POST http://localhost:8080/api/admin/governance/kill-switch/arm \
+     -H 'Content-Type: application/json' \
+     -d '{"reason":"incident-42","operator":"oncall"}'
+```
+
+Response stamps `{armed: true, reason, operator, armedAt}`. Disarm with
+`POST /kill-switch/disarm` to restore traffic. Verified live on
+spring-boot-multi-agent-startup-team: the same prompt that admitted at
+0.11ms denies at 0.09ms while armed.
+
+### `POST /api/admin/governance/reload`
+
+Hot-reload a policy wrapped in `SwappablePolicy`. Request body carries
+`{swapName, yaml}`; response carries the outgoing + incoming delegate
+identity so the admin trail can log the swap.
+
+---
+
+## Governance as a learning signal
+
+Governance decisions already flow **outward** — every admit / deny / transform / prefer is
+recorded to `GovernanceDecisionLog` and fanned out to audit sinks and the admin console. On
+their own they never reach the agent: it observes a block but never the reasoning or the
+allowed alternative, so a task-success-only agent keeps probing the same wall. This section
+closes that loop — the idea from Jason Stanley's
+[*Governance as a Learning Signal*](https://jasonstanley.substack.com/p/governance-as-a-learning-signal):
+reshape the control-plane signal from *negative + logged-only* into *contrastive +
+back-in-the-loop*, with **no model retraining** — the signal simply re-enters the prompt each
+turn, so even a non-learning agent gets the lesson.
+
+### The soft-preference tier — `PolicyDecision.Prefer`
+
+`PolicyDecision` gains a fourth, **advisory** case alongside `Admit` / `Transform` / `Deny`:
+
+```java
+PolicyDecision.prefer("request a scoped, time-boxed credential for the single function",
+                      "standing admin grants violate least-privilege for this ticket type");
+```
+
+`Prefer` admits the turn **unchanged** — admission-flow call sites treat it exactly like
+`Admit` — but records that a *preferred* path exists. It is the "soft governance" tier the
+article calls the missing middle: "scoped access is preferred over standing access", where
+both paths are permitted but one is better, expressed without a hard `Deny`. Author it in YAML
+with the native `preference` type (phrase/regex match → advisory):
+
+```yaml
+policies:
+  - name: least-privilege-advisor
+    type: preference
+    config:
+      phrases: ["standing admin", "full access"]
+      prefer: "request a scoped, time-boxed credential for the single function"
+      reason: "standing admin grants violate least-privilege for this ticket type"
+```
+
+`Prefer` is an Atmosphere-native extension with **no Microsoft counterpart**, so the MS-rules
+bridge never emits it (the byte-for-byte MS conformance fixtures are unaffected). It records
+`decision="prefer"` with the reason and stamps the preferred alternative under
+`GovernanceDecisionLog.PREFERRED_KEY` in the audit snapshot.
+
+### Closing the loop — `GovernanceFeedbackInterceptor` (ephemeral, default)
+
+`org.atmosphere.ai.governance.GovernanceFeedbackInterceptor` is an `AiInterceptor` that, on
+`preProcess`, reads recent `deny` / `prefer` decisions from the `GovernanceDecisionLog` ring
+buffer and injects a contrastive guidance block into the next turn's system prompt:
+
+> *Governance guidance from earlier in this session — follow it:*
+> *- Prefer: request a scoped, time-boxed credential for the single function (least-privilege…)*
+> *- A prior action was denied: … — do not repeat it.*
+
+```java
+@AiEndpoint(path = "/chat", interceptors = GovernanceFeedbackInterceptor.class)
+```
+
+- **Scoped, no cross-subject leak.** Guidance is matched on the tightest identity the request
+  carries — `conversation_id`, else `session_id`, else `user_id` — against the same dimension
+  in the audit snapshot. An anonymous turn injects nothing.
+- **Bounded & fail-open.** The scan and the injected block are capped (`scanWindow` /
+  `maxItems`, deduped by rendered line); a failure returns the request unchanged — feedback is
+  advisory and never breaks a turn. Dry-run shadow entries (`dry-run:*`) are excluded.
+- **Requires an installed decision log.** The loop reads `GovernanceDecisionLog`; the admin
+  auto-config installs it out-of-box (or call `GovernanceDecisionLog.install(capacity)`
+  yourself). Against the NOOP default it is inert.
+
+### Durable recall — opt-in, provenance-gated
+
+By default the source is the in-memory ring buffer: the loop closes **within a session** and
+governance lessons **never touch long-term memory** — the article's "wrong lesson compounds in
+memory" hazard is side-stepped, not merely defended. Opt in to make recall survive restarts
+and the ring window:
+
+```properties
+atmosphere.ai.governance.memory.enabled        = true   # Spring Boot starter
+atmosphere.ai.governance.memory.ttl-seconds    = 0       # 0 = no expiry; >0 = lessons lapse
+atmosphere.ai.governance.memory.min-confidence = 0.0     # read gate: drop lessons below this
+```
+
+When enabled with a `LongTermMemory` bean present, `GovernanceMemorySink` persists each
+deny/prefer as a provenance-tagged `GovernanceFact` (policy identity + confidence + optional
+expiry) under a reserved per-user namespace, and `GovernanceProvenanceMemory` **drops expired
+or below-confidence lessons on read** before they are re-injected. The same primitives wire
+programmatically in any runtime:
+
+```java
+GovernanceMemoryConfig.installStore(new GovernanceProvenanceMemory(store, 0.0, Clock.systemUTC()));
+GovernanceDecisionLog.installed().addSink(new GovernanceMemorySink(store, ttl, 1.0, Clock.systemUTC()));
+```
+
+Both paths render through one `GovernanceGuidance` renderer, so ephemeral and durable guidance
+read identically (Correctness Invariant #7 — mode parity). The ephemeral (this-session) lines
+are listed first; durable lines fill the remainder up to `maxItems`.
+
+### How the signal is reshaped
+
+| Dimension | Before (logged-only) | After |
+|---|---|---|
+| **Polarity** | negative ("denied") | contrastive — the preferred alternative is surfaced |
+| **Format** | audit-log event | re-enters the prompt each turn |
+| **Scope** | one decision | session-trajectory (recent decisions for this subject) |
+| **Density** | violations only | deny **and** prefer surfaced (admit/transform stay silent) |
+
+---
+
+## Multi-agent governance
+
+Single-endpoint admission is only half the story — cross-agent dispatches
+need the same enforcement. `FleetInterceptor` (module `atmosphere-coordinator`)
+gates every outbound `AgentCall` before it leaves the coordinator.
+
+### `FleetInterceptor` SPI
+
+```java
+@FunctionalInterface
+public interface FleetInterceptor {
+    Decision before(AgentCall call);
+    sealed interface Decision {
+        record Proceed() implements Decision {}
+        record Rewrite(AgentCall modifiedCall) implements Decision {}
+        record Deny(String reason) implements Decision {}
+    }
+}
+```
+
+Install via `AgentFleet.withInterceptor(interceptor)`. Denies synthesize
+a failed `AgentResult` without consuming the transport hop; rewrites
+forward modified args; proceed admits unchanged.
+
+### `GovernanceFleetInterceptor`
+
+Bridge from `FleetInterceptor` to a `GovernancePolicy` chain. Every outbound
+`AgentCall` is synthesized into an `AiRequest(skill + args)` and evaluated
+against the configured policies. Dispatch-edge metadata
+(`fleet.dispatch.agent`, `fleet.dispatch.skill`) is stamped so policies
+can inspect the dispatch target.
+
+```java
+@Prompt
+public void onPrompt(String msg, AgentFleet fleet, StreamingSession s) {
+    var governed = fleet.withInterceptor(new GovernanceFleetInterceptor(policies));
+    var research = governed.agent("research").call("web_search", args);
+    // a coordinator mistakenly dispatching "write Python" to research
+    // gets denied at the fleet boundary — not just at the user entry
+}
+```
+
+### Commitment records on cross-agent dispatch
+
+Every dispatch emits a W3C Verifiable-Credential-subtype `CommitmentRecord`
+when both (a) an `Ed25519CommitmentSigner` is installed on the fleet via
+`JournalingAgentFleet.signer(signer)`, and (b) `CommitmentRecordsFlag`
+is enabled (flag-off default; flip with the system
+property `atmosphere.ai.governance.commitment-records.enabled=true` or
+`CommitmentRecordsFlag.override(Boolean.TRUE)`).
+
+```java
+// In your Spring @Configuration:
+@Bean CommitmentSigner commitmentSigner() {
+    return Ed25519CommitmentSigner.generate();
+}
+@PostConstruct void enable() {
+    CommitmentRecordsFlag.override(Boolean.TRUE);
+}
+
+// In your coordinator's @Prompt:
+if (signer != null && fleet instanceof JournalingAgentFleet journaling) {
+    journaling.signer(signer).principal("user:" + resource.uuid());
+}
+```
+
+Records surface in the admin **Commitments** tab with Ed25519 verification
+status. This is the unique combination: streaming transport + durable
+checkpoints + cryptographic audit trail that survives pause/resume.
+
+---
+
+## Which samples demonstrate which goals
+
+| Sample | MS YAML | Scope | Commitments | OWASP | E2E tests |
+|---|:-:|:-:|:-:|:-:|:-:|
+| [spring-boot-ms-governance-chat](../samples/spring-boot-ms-governance-chat/) | ✅ | ✅ | — | ✅ | — |
+| [spring-boot-ai-classroom](../samples/spring-boot-ai-classroom/) | ✅ | ✅ | — | — | 8 |
+| [spring-boot-multi-agent-startup-team](../samples/spring-boot-multi-agent-startup-team/) | ✅ | ✅ | ✅ | ✅ | 10 |
+| [spring-boot-checkpoint-agent](../samples/spring-boot-checkpoint-agent/) | — | — | ✅ | — | 3 |
+| [spring-boot-mcp-server](../samples/spring-boot-mcp-server/) | — | ✅ | — | ✅ | 7 |
+
+Each sample boots the real Spring Boot context in its e2e tests and
+asserts goal flows fire at runtime — no mocking at the governance seam.
+See `StartupTeamGovernanceE2ETest`, `ClassroomGovernanceE2ETest`,
+`CheckpointGovernanceE2ETest`, `McpGovernanceE2ETest`.
+
+---
+
+## Correctness invariants honored
+
+| Invariant (see `.claude/CLAUDE.md`) | How it's honored |
+|---|---|
+| **#2 Terminal-path completeness** | Policy exceptions are fail-closed — any throw inside `evaluate()` becomes `Deny` |
+| **#5 Runtime truth** | `GovernanceController` reports `POLICIES_PROPERTY` contents; not what was requested, not what's on the classpath |
+| **#7 Mode parity** | `PolicyPlaneSourceParityTest` asserts YAML / programmatic / ServiceLoader sources yield identical admission decisions across Spring Boot + bare-JVM + Quarkus (SPI-level) |
+
+Spring vs Quarkus parity at the framework level: `AiEndpointProcessor.instantiatePolicies()` uses ServiceLoader + `POLICIES_PROPERTY` — both deployments hit the same merge path. The Spring auto-config just adds a bean-to-property bridge; Quarkus users put policies directly in framework properties via a build step or the same ServiceLoader path.
+
+---
+
+## Related
+
+- **Sample**: [`samples/spring-boot-ms-governance-chat/`](../samples/spring-boot-ms-governance-chat/) — ships a verbatim MS YAML policy and demonstrates every operator + action in a live chat gated by the built-in Atmosphere AI console.
+- **Reference**: [atmosphere.github.io `reference/governance.md`](https://atmosphere.github.io/docs/reference/governance/) — full API reference.
+- **Tutorial**: [atmosphere.github.io `tutorial/30-governance-policy-plane.md`](https://atmosphere.github.io/docs/tutorial/30-governance-policy-plane/) — walk-through from empty project to MS-YAML-enforced chat.
+- **Module README**: [`modules/ai/README.md`](../modules/ai/README.md#governance-policy-plane) — quick-start snippet + operator table.
+- **Microsoft Agent Governance Toolkit**: [github.com/microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) — the upstream toolkit whose YAML schema Atmosphere consumes verbatim.

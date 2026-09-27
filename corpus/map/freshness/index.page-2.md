@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [junliu1066/vibe-coding-kit](../repos/junliu1066/vibe-coding-kit.md) [coverage: partial]
-- [juyongjiang/codellmsurvey](../repos/juyongjiang/codellmsurvey.md) [coverage: complete]
-- [juyterman1000/entroly](../repos/juyterman1000/entroly.md) [coverage: partial]
-- [jzho987/dance-ai-research-project](../repos/jzho987/dance-ai-research-project.md) [coverage: complete]
-- [kadeai/kade](../repos/kadeai/kade.md) [coverage: complete]
 - [kaifcoder/stan](../repos/kaifcoder/stan.md) [coverage: complete]
 - [kenn-io/agentsview](../repos/kenn-io/agentsview.md) [coverage: partial]
 - [kenn-io/kata](../repos/kenn-io/kata.md) [coverage: partial]
@@ -439,3 +434,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [ultraworkers/claw-code](../repos/ultraworkers/claw-code.md) [coverage: partial]
 - [umacloud/umadev](../repos/umacloud/umadev.md) [coverage: partial]
 - [uniide/debugai](../repos/uniide/debugai.md) [coverage: complete]
+- [unodetechxyz/unodeai](../repos/unodetechxyz/unodeai.md) [coverage: partial]
+- [untrivial-ai/agent-orchestrator](../repos/untrivial-ai/agent-orchestrator.md) [coverage: partial]
+- [urbint/cortex](../repos/urbint/cortex.md) [coverage: complete]
+- [urigo/graphql-cli](../repos/urigo/graphql-cli.md) [coverage: partial]
+- [usagi-org/ai-code-review-helper](../repos/usagi-org/ai-code-review-helper.md) [coverage: complete]

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Bardeen is a browser automation and workflow platform aimed at go-to-market teams, not a coding agent. Its current product centers on lead generation: an agentic web scraper that extracts data from an
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Browser automation / workflow platform (not a coding agent) marketed as 'the most powerful web scraper on the internet'; combines agentic web scraper, AI-powered lead qualification, and contact enrichment for GTM teams in sales, recruiting, real estate, and private equity.
+
+(captured site page body (agents/bardeen.md), not a verified repo-code finding)
+Bardeen is a browser automation and workflow platform aimed at go-to-market teams, not a coding agent. Its current product centers on lead generation: an agentic web scraper that extracts data from any site, AI-based lead qualification against a described ideal profile, and contact enrichment with verified emails and phones, all feeding CRMs, Sheets, Airtable, Notion, and HubSpot. Everything runs through a browser extension and Bardeen Studio, where users build scrapers and automation playbooks, including premium scrapers for sites like LinkedIn-adjacent sources, Crunchbase, and Product Hunt. Pricing is credits-based with a free tier and paid plans positioned below Clay. The company is active, with SOC 2 Type II compliance and an active GTM focus. For this census it is 'other': neither a coding agent nor a manager of coding agents.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/bardeen.md)

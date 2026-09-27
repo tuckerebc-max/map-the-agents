@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [unodetechxyz/unodeai](../repos/unodetechxyz/unodeai.md) [coverage: partial]
-- [untrivial-ai/agent-orchestrator](../repos/untrivial-ai/agent-orchestrator.md) [coverage: partial]
-- [urbint/cortex](../repos/urbint/cortex.md) [coverage: complete]
-- [urigo/graphql-cli](../repos/urigo/graphql-cli.md) [coverage: partial]
-- [usagi-org/ai-code-review-helper](../repos/usagi-org/ai-code-review-helper.md) [coverage: complete]
 - [valuecell-ai/valuecell](../repos/valuecell-ai/valuecell.md) [coverage: partial]
 - [varie-ai/workstation](../repos/varie-ai/workstation.md) [coverage: complete]
 - [vasihemanth/tokentelemetry](../repos/vasihemanth/tokentelemetry.md) [coverage: partial]
@@ -102,7 +97,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (39)
+## stale (44)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +138,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
 - [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]
 - [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) [coverage: partial]
+- [athasdev/athas](../repos/athasdev/athas.md) [coverage: complete]
+- [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
+- [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
+- [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) [coverage: complete]
+- [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
 
 ## refresh-failed (63)
 

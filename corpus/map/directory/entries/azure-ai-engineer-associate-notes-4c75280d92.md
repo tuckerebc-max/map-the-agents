@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: kennethleungty
@@ -22,6 +22,8 @@ Repository map entry: [kennethleungty/azure-ai-engineer-associate-notes](../../r
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository contains personal study notes for the Microsoft Azure AI Engineer Associate (AI-102) certification, written by an engineer who passed the exam and organized to mirror the six official
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Study notes repository for the Microsoft Azure AI Engineer Associate certification exam (AI-102), organized to mirror the six official Microsoft Learn learning paths; first-hand notes from someone who passed AI-102 on the first attempt. Not a coding agent harness.
+
+(captured site page body (agents/azure-ai-engineer-associate-notes.md), not a verified repo-code finding)
+This repository contains personal study notes for the Microsoft Azure AI Engineer Associate (AI-102) certification, written by an engineer who passed the exam and organized to mirror the six official Microsoft Learn learning paths: Azure AI services, computer vision, NLP, AI Search, Document Intelligence, and Azure OpenAI. The notes cover service selection, security, deployment, and solution design from the perspective of someone who worked through the material first-hand. There is no software, tooling, or agent loop here - it is static documentation, which is why it is classified 'other' rather than agent or multiplexer. It serves AI-102 candidates looking for consolidated, experience-based revision notes alongside Microsoft Learn.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/azure-ai-engineer-associate-notes.md)

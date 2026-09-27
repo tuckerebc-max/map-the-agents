@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: sagentic-ai
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [bazed-ai/bazed-af](https://github
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Bazed, now the Sagentic.ai Agent Framework (the bazed-ai/bazed-af repo redirects to sagentic-ai/sagentic-af), is a platform for building and running autonomous agents as services. A scaffold command c
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Sagentic.ai Agent Framework, a unified platform for building, running, and scaling autonomous agents. Features a dev server with hot reloading and spawning agents locally via an HTTP /spawn endpoint. Not specifically a coding agent harness; it's a general autonomous agent framework.
+
+(captured site page body (agents/bazed.md), not a verified repo-code finding)
+Bazed, now the Sagentic.ai Agent Framework (the bazed-ai/bazed-af repo redirects to sagentic-ai/sagentic-af), is a platform for building and running autonomous agents as services. A scaffold command creates a project, a dev server with hot reloading lets agents be edited and re-run locally, and agents are spawned through a POST /spawn HTTP endpoint with a JSON payload, so the framework treats agents as addressable services rather than interactive chat sessions. It is TypeScript-based with typedoc, jest, and pnpm workspaces, installed via npx @sagentic-ai/sagentic-af init, and documented at sagentic.ai. Licensing is Business Source License 1.1 (not OSI open source) under Ahyve AI Inc. Activity is low and the project appears dormant, with modest stars and no releases. It fits the census as 'other': agent infrastructure rather than a coding harness.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/bazed.md)

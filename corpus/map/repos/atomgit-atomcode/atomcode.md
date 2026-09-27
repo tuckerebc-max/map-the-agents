@@ -1,9 +1,9 @@
 # atomgit-atomcode/atomcode
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 287bff70f940 @ 21b0b17abcf968f4
+Latest snapshot: commit e4215f733eeb @ 4b7f8fababbe2f9b
 
 ## Summary (orientation draft, not independently verified)
 

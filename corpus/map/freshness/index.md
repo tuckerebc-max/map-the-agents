@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (950)
+## current (945)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -84,11 +84,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) [coverage: complete]
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) [coverage: complete]
 - [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) [coverage: complete]
-- [athasdev/athas](../repos/athasdev/athas.md) [coverage: complete]
-- [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
-- [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
-- [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) [coverage: complete]
-- [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
 - [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
 - [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
 - [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [juliusbrussee/caveman-code](../repos/juliusbrussee/caveman-code.md) [coverage: partial]
 - [juliusbrussee/cavemem](../repos/juliusbrussee/cavemem.md) [coverage: partial]
 - [junkyard22/orca](../repos/junkyard22/orca.md) [coverage: partial]
+- [junliu1066/vibe-coding-kit](../repos/junliu1066/vibe-coding-kit.md) [coverage: partial]
+- [juyongjiang/codellmsurvey](../repos/juyongjiang/codellmsurvey.md) [coverage: complete]
+- [juyterman1000/entroly](../repos/juyterman1000/entroly.md) [coverage: partial]
+- [jzho987/dance-ai-research-project](../repos/jzho987/dance-ai-research-project.md) [coverage: complete]
+- [kadeai/kade](../repos/kadeai/kade.md) [coverage: complete]

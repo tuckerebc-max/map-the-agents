@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: BurtsonLabs
@@ -22,6 +22,8 @@ Repository map entry: [burtson-labs/bandit-agent-framework](../../repos/burtson-
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Bandit Stealth is a coding agent extension for VS Code and OpenVSX-compatible editors that runs locally on any Ollama model - Gemma, Qwen, Devstral, or a custom fine-tune - keeping code entirely on th
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first coding agent running Ollama models with tool use, diff approvals, and voice
+
+(captured site page body (agents/bandit-stealth.md), not a verified repo-code finding)
+Bandit Stealth is a coding agent extension for VS Code and OpenVSX-compatible editors that runs locally on any Ollama model - Gemma, Qwen, Devstral, or a custom fine-tune - keeping code entirely on the user's machine by default. The agent autonomously explores the codebase, reads and writes files, and runs shell commands, with every write gated behind a unified-diff approval and inline diffs streaming into the editor as it works. Distinctive mechanics include agent-authored skills, plan preview with go/no-go confirmation, session checkpoints with /rewind, hooks for CI guardrails, and pre-write language validation for TypeScript, Python, JSON, and C#. Voice is fully pluggable and provider-independent (Bandit cloud, Whisper-compatible servers, ElevenLabs, or a local Piper server), and the composer accepts queued input while the agent streams. A companion CLI ships on npm, and an optional hosted gateway offers managed inference. It targets developers who want a real agentic loop without cloud subscriptions or code leaving the device.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/bandit-stealth.md)

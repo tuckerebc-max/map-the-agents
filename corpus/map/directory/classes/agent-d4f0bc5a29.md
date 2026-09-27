@@ -62,7 +62,6 @@
 - [baidu-comate](../entries/baidu-comate-5c00ac3c1b.md)
 - [baidu-miaoda](../entries/baidu-miaoda-e51547c442.md)
 - [bandit-stealth](../entries/bandit-stealth-8eb9f00177.md)
-- [baro](../entries/baro-269b0f5338.md)
 - [base-44](../entries/base-44-a62741c71c.md)
 - [bb](../entries/bb-3b64db95cb.md)
 - [bbarit-agent-oss](../entries/bbarit-agent-oss-2ae584d5d2.md)

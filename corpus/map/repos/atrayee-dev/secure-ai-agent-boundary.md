@@ -1,9 +1,9 @@
 # atrayee-dev/secure-ai-agent-boundary
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 4c23100eddad @ b16dae5a835c4628
+Latest snapshot: commit a9479a0ca7b6 @ 19df96992500f3b3
 
 ## Summary (orientation draft, not independently verified)
 

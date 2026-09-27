@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: jawerty
@@ -22,6 +22,8 @@ Repository map entry: [jawerty/autostartup](../../repos/jawerty/autostartup.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-AutoStartup was a 2023 experiment by jawerty (Jared Vasquez) exploring whether a startup could be generated end-to-end from a one-line intuition using only locally hosted Llama 2 - no OpenAI keys. A c
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): 100% Llama 2 inference with no OpenAI API keys needed; autonomously generates startup ideas, business plans, and React codebases from simple user intuition using lean startup methodologies (criticize loops, investor approval, pivoting).
+
+(captured site page body (agents/autostartup.md), not a verified repo-code finding)
+AutoStartup was a 2023 experiment by jawerty (Jared Vasquez) exploring whether a startup could be generated end-to-end from a one-line intuition using only locally hosted Llama 2 - no OpenAI keys. A criticize-revise-pitch loop (AutoGPT-style) iterates a business plan against an investor prompt until approval, then generates a React codebase via the author's 10x-React-Engineer project, with vector-search memory pairing past successes and criticisms into future pitches. Llama 2 13B inference runs locally or via a provided Colab notebook, making the whole pipeline local and key-free. The project was a demo built during a livestream, is admittedly buggy, and has seen only six commits. It is of historical interest as an early fully-local autonomous startup generator rather than a maintained tool.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/autostartup.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: kodu-ai
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Azad Coder is Kodu's VS Code AI pair-programmer, distributed via the marketplace under the claude-dev-experimental ID that traces its lineage to the original Claude Dev extension that became Cline. It
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI pair programmer powered by Claude and GPT-5 (Cline fork)
+
+(captured site page body (agents/azad-coder.md), not a verified repo-code finding)
+Azad Coder is Kodu's VS Code AI pair-programmer, distributed via the marketplace under the claude-dev-experimental ID that traces its lineage to the original Claude Dev extension that became Cline. It performs multi-tool and multi-file edits with advanced refactoring, manages long agentic tasks with context management and task segmentation, and enforces task budgets (time, turns, cost) for autonomous runs. MCP integration, Playwright browser automation, terminal and diagnostics access, web search with third-party docs retrieval, and checkpoints with rollback round out the agentic toolkit, with sub-task orchestration for multi-step work. Pricing is credit-based: a small free allocation, $20/month Developer, and $200/month Pro tiers, with BYOK support. Kodu, the maker, also develops the Kodu kernel and related agent tooling, and the extension targets developers who want an agentic pair-programmer inside VS Code.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/azad-coder.md)

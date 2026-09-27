@@ -1,9 +1,9 @@
 # athasdev/athas
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 42ef5d128147 @ f8ffb2c0e80b53b0
+Latest snapshot: commit f70c7b32a29d @ 73e9f8affebef35b
 
 ## Summary (orientation draft, not independently verified)
 

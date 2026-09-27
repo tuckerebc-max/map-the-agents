@@ -126,11 +126,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) -- status=distilled, freshness=current
 - [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) -- status=distilled, freshness=stale
 - [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) -- status=distilled, freshness=stale
-- [athasdev/athas](../repos/athasdev/athas.md) -- status=distilled, freshness=current
-- [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) -- status=distilled, freshness=current
-- [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) -- status=distilled, freshness=current
-- [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) -- status=distilled, freshness=current
-- [augmentcode/auggie](../repos/augmentcode/auggie.md) -- status=distilled, freshness=current
+- [athasdev/athas](../repos/athasdev/athas.md) -- status=distilled, freshness=stale
+- [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) -- status=distilled, freshness=stale
+- [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) -- status=distilled, freshness=stale
+- [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) -- status=distilled, freshness=stale
+- [augmentcode/auggie](../repos/augmentcode/auggie.md) -- status=distilled, freshness=stale
 - [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) -- status=distilled, freshness=current
 - [autohandai/code-cli](../repos/autohandai/code-cli.md) -- status=distilled, freshness=current
 - [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) -- status=distilled, freshness=current

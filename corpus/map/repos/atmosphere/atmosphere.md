@@ -1,9 +1,9 @@
 # atmosphere/atmosphere
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 468f0ea79d57 @ 0d4003c8c705d782
+Latest snapshot: commit 1c968d550be6 @ 2e72a0864e4f10fb
 
 ## Summary (orientation draft, not independently verified)
 

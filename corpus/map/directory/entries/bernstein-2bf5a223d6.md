@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: sipyourdrink-ltd
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [chernistry/bernstein](https://git
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Bernstein exists because parallel AI coding agents are expensive and nondeterministic: its author was paying $400/month for three parallel agents producing inconsistent results. It coordinates any CLI
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Deterministic orchestrator for CLI coding agents with no LLM in the coordination loop — replay yesterday's plan and get yesterday's task graph byte-identical; cryptographic checkability with Ed25519-signed receipts; each task gets its own git worktree; air-gap deployable.
+
+(captured site page body (agents/bernstein.md), not a verified repo-code finding)
+Bernstein exists because parallel AI coding agents are expensive and nondeterministic: its author was paying $400/month for three parallel agents producing inconsistent results. It coordinates any CLI agent (Claude Code, Codex, Gemini CLI, Copilot CLI, Aider, Goose, Cursor, 40+ more, plus a generic --prompt mode) through a four-stage pipeline: one LLM call decomposes the goal into tasks, agents run in isolated git worktrees, a 'janitor' verifies concrete signals (tests, files, lint, types), and verified work merges while failures retry or reroute to a different model. No LLM participates in scheduling, so replays are reproducible, and every run produces an Ed25519-signed receipt plus an opt-in HMAC-chained audit log with Merkle seal. Mix-and-match agent backends, a TUI dashboard, MCP server mode, and 51 integrations round it out. It is Apache-2.0, beta, solo-maintained, and aimed at developers running multiple coding agents in parallel who need reproducibility.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/bernstein.md)

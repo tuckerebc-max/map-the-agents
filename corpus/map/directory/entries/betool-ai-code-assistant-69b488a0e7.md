@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: beTool IA
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-betool addresses a specific gap: AI coding agents that propose edits outside the IDE have no native way to surface those changes inside JetBrains IDEs for review. The plugin runs a local server that r
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Bridges AI coding assistants with the IDE via a local server
+
+(captured site page body (agents/betool-ai-code-assistant.md), not a verified repo-code finding)
+betool addresses a specific gap: AI coding agents that propose edits outside the IDE have no native way to surface those changes inside JetBrains IDEs for review. The plugin runs a local server that receives code modification proposals from the betool CLI and presents them as interactive red/green diffs in a modal dialog, where each change is accepted or rejected with one click before being applied, with files backed up beforehand. It works across IntelliJ IDEA, WebStorm, PyCharm, GoLand, and other JetBrains IDEs, starts automatically with the project, requires no configuration, and falls back to terminal mode when IntelliJ is not running. The plugin is free; usage requires a betool.fr account and payment is by AI tokens consumed. It is aimed at JetBrains developers who want agent-proposed changes surfaced as in-IDE reviewable diffs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/betool-ai-code-assistant.md)

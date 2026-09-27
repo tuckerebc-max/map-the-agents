@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Axflow is a TypeScript framework for building natural-language-powered applications, offering modular pieces - an LLM SDK with streaming and React hooks, data-to-LLM connectors, and agent/workflow pri
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): TypeScript framework for AI development; a collection of modular components for building natural-language-powered applications, including an LLM SDK with React hooks/streaming, data-to-LLM connections, and LLM output evaluation
+
+(captured site page body (agents/axflow.md), not a verified repo-code finding)
+Axflow is a TypeScript framework for building natural-language-powered applications, offering modular pieces - an LLM SDK with streaming and React hooks, data-to-LLM connectors, and agent/workflow primitives - that developers compose into their own applications. It is a library, not a coding agent: nothing in it autonomously loops over tools to modify software, which places it in the 'other' category alongside model gateways and prompt libraries. The homepage is sparse (mostly navigation and a demo CTA), with open-source and hosted Studio product lines, and the framework's own maintenance activity is minimal. It is of interest mainly as a TypeScript alternative to LangChain-style libraries rather than as a coding harness.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/axflow.md)

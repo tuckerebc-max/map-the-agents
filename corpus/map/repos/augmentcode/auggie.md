@@ -1,9 +1,9 @@
 # augmentcode/auggie
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9cc3ead419db @ ba3e31b0ac8fb359
+Latest snapshot: commit 9cc3ead419db @ e4f627d97f783c9b
 
 ## Summary (orientation draft, not independently verified)
 
