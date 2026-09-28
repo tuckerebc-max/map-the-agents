@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: tomlin7
@@ -22,6 +22,8 @@ Repository map entry: [tomlin7/biscuit](../../repos/tomlin7/biscuit.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Biscuit targets developers who want a fast, hackable editor without the gigabyte-scale installs of Electron IDEs. Built in Python on Tk, it ships tree-sitter syntax parsing, completions, LSP integrati
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Lightweight (\<20MB), fast native code editor with AI agents, tree-sitter based code intelligence, DAP debugging, extension marketplace, ripgrep-based fast search, vim mode — all in a compact, extensible Python-based editor.
+
+(captured site page body (agents/biscuit.md), not a verified repo-code finding)
+Biscuit targets developers who want a fast, hackable editor without the gigabyte-scale installs of Electron IDEs. Built in Python on Tk, it ships tree-sitter syntax parsing, completions, LSP integration via extensions, ripgrep-powered search, git operations with split diffs, and a DAP debugging client in a package under 20MB installed with pip. Its AI layer supports Gemini and Anthropic models with a planning agent that wields ReadFile, EditFile, Grep, and RunTerminalCmd tools, plus file-attach chat context and LLM calls directly in terminals. An extension marketplace, GUI and CLI-based, adds language servers, debuggers, and themes, and vim mode plus DAP debugging round out the editing core. It is MIT-licensed, actively maintained, and aimed at developers who want a lightweight, extensible editor with built-in agentic assistance.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/biscuit.md)

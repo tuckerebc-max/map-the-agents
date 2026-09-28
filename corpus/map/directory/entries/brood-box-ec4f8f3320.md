@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: stacklok
@@ -22,6 +22,8 @@ Repository map entry: [stacklok/brood-box](../../repos/stacklok/brood-box.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-brood-box exists because letting a coding agent run arbitrary commands on a developer machine is a trust problem that containers only partially solve. Stacklok's Go CLI boots a lightweight virtual mac
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Runs coding agents inside hardware-isolated microVMs (KVM/Hypervisor.framework via libkrun), not just containers; copy-on-write workspace snapshots with interactive per-file diff review; DNS-aware egress firewall; ephemeral per-session SSH keys; zero persistent state.
+
+(captured site page body (agents/brood-box.md), not a verified repo-code finding)
+brood-box exists because letting a coding agent run arbitrary commands on a developer machine is a trust problem that containers only partially solve. Stacklok's Go CLI boots a lightweight virtual machine via libkrun (KVM on Linux, Hypervisor.framework on macOS), snapshots the workspace copy-on-write, and launches the chosen agent — Claude Code, Codex, OpenCode, Hermes, or Gemini CLI — inside it over an ephemeral SSH session. An egress firewall restricts network access to LLM providers and package registries by profile, with a locked mode allowing only the LLM endpoint; ToolHive MCP servers are auto-discovered and proxied into the VM. When the agent exits, the tool computes a diff and the user reviews each file before changes are flushed back, with hash re-verification guarding against tampering. Stacklok positions it as experimental infrastructure for teams that want hardware isolation, DNS-aware egress control, and zero persistent state around agents they run daily.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/brood-box.md)

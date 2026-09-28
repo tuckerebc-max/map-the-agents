@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [valuecell-ai/valuecell](../repos/valuecell-ai/valuecell.md) [coverage: partial]
-- [varie-ai/workstation](../repos/varie-ai/workstation.md) [coverage: complete]
-- [vasihemanth/tokentelemetry](../repos/vasihemanth/tokentelemetry.md) [coverage: partial]
-- [vectorize-io/hindsight](../repos/vectorize-io/hindsight.md) [coverage: complete]
-- [vercel-labs/deepsec](../repos/vercel-labs/deepsec.md) [coverage: partial]
 - [vercel-labs/fx](../repos/vercel-labs/fx.md) [coverage: complete]
 - [vibe-cy/cycode](../repos/vibe-cy/cycode.md) [coverage: complete]
 - [vibe-stack/ggez](../repos/vibe-stack/ggez.md) [coverage: partial]
@@ -97,7 +92,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (44)
+## stale (49)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +138,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
 - [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) [coverage: complete]
 - [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
+- [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
+- [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
+- [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
+- [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) [coverage: complete]
+- [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
 
 ## refresh-failed (63)
 

@@ -1,9 +1,9 @@
 # aurasgit/public-agent-framwork
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit f3f27582c6a2 @ e342f0b1feb8ac41
+Latest snapshot: commit f3f27582c6a2 @ fa478bd5d29dbda9
 
 ## Summary (orientation draft, not independently verified)
 

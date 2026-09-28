@@ -2,6 +2,7 @@
 
 Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [Hivemoot (`hivemoot`)](hivemoot-9bdccd0c20.md) -- published+backing
 - [HMRAG (`hmrag`)](hmrag-4dbc5bbc01.md) -- backing-only
 - [hof (`hof`)](hof-639097e715.md) -- backing-only
 - [HolyClaude (`holyclaude`)](holyclaude-945841ef57.md) -- backing-only
@@ -329,4 +330,3 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [par (`par`)](par-c9d9d2c4be.md) -- published+backing
 - [Parallel Code (`parallel-code`)](parallel-code-96315e97e5.md) -- published+backing
 - [Parley (`parley`)](parley-d689dfcda2.md) -- backing-only
-- [Paseo (`paseo`)](paseo-68a32dd6b2.md) -- published+backing

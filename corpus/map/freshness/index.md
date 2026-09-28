@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (945)
+## current (940)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -84,11 +84,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) [coverage: complete]
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) [coverage: complete]
 - [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) [coverage: complete]
-- [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
-- [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
-- [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
-- [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) [coverage: complete]
-- [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
 - [aws-samples/amazon-mwaa-examples](../repos/aws-samples/amazon-mwaa-examples.md) [coverage: complete]
 - [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
 - [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [juyterman1000/entroly](../repos/juyterman1000/entroly.md) [coverage: partial]
 - [jzho987/dance-ai-research-project](../repos/jzho987/dance-ai-research-project.md) [coverage: complete]
 - [kadeai/kade](../repos/kadeai/kade.md) [coverage: complete]
+- [kaifcoder/stan](../repos/kaifcoder/stan.md) [coverage: complete]
+- [kenn-io/agentsview](../repos/kenn-io/agentsview.md) [coverage: partial]
+- [kenn-io/kata](../repos/kenn-io/kata.md) [coverage: partial]
+- [kennethleungty/azure-ai-engineer-associate-notes](../repos/kennethleungty/azure-ai-engineer-associate-notes.md) [coverage: complete]
+- [khanzzirfan/testai-agent](../repos/khanzzirfan/testai-agent.md) [coverage: partial]

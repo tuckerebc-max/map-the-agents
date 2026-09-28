@@ -15,6 +15,7 @@
 - [aperant](../entries/aperant-641b94577a.md)
 - [arc-kit](../entries/arc-kit-521c9deae9.md)
 - [archon](../entries/archon-8f61a067f9.md)
+- [binary-re](../entries/binary-re-0ea75eaa69.md)
 - [bmad-method](../entries/bmad-method-40a1d375df.md)
 - [claude-code-tools](../entries/claude-code-tools-657313a770.md)
 - [claude-flow](../entries/claude-flow-e5c9870fa9.md)

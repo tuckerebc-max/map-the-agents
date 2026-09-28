@@ -2,6 +2,7 @@
 
 Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index.page-5.md)
 
+- [Paseo (`paseo`)](paseo-68a32dd6b2.md) -- published+backing
 - [PATAPIM (`patapim`)](patapim-291e49bc2d.md) -- published+backing
 - [Patchwork (`patchwork`)](patchwork-3af082fc9b.md) -- published+backing
 - [pear-landing-page (`pear-landing-page`)](pear-landing-page-ade813651f.md) -- backing-only
@@ -333,4 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [website (`website`)](website-747a8f3983.md) -- backing-only
 - [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing
 - [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing-only
-- [Whailion AI (`whailion-ai`)](whailion-ai-8ba50c01c2.md) -- published+backing

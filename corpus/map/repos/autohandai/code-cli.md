@@ -1,9 +1,9 @@
 # autohandai/code-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit f4775fdebd93 @ 39ddcfcd21c53f63
+Latest snapshot: commit feaa8df7dcc5 @ 7168409406123750
 
 ## Summary (orientation draft, not independently verified)
 

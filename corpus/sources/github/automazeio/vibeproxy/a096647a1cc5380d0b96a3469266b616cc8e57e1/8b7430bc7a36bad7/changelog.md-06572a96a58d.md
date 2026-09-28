@@ -1,0 +1,2983 @@
+# Changelog
+
+All notable changes to VibeProxy will be documented in this file.
+
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [1.8.316] - 2026-09-28
+
+### Updated
+- **CLIProxyAPI 8.0.3** - Latest upstream release (#574)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.315] - 2026-09-28
+
+### Updated
+- **CLIProxyAPI 8.0.2** - Latest upstream release (#571)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.314] - 2026-09-27
+
+### Updated
+- **CLIProxyAPI 8.0.1** - Latest upstream release (#569)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.313] - 2026-09-27
+
+### Updated
+- **CLIProxyAPI 7.3.19** - Latest upstream release (#568)
+  - Various upstream improvements and stability enhancements
+
+
+### Fixed
+- **Proxy binds loopback-only by default** — port 8317 now listens on 127.0.0.1
+  (matching the backend on 8318) instead of every interface. LAN access is
+  preserved behind the new "Allow LAN connections" setting (#475, #565)
+- **Main executable is signed with entitlements** — the empty entitlements
+  record broke the Accessibility (TCC) request, so the menu bar icon never
+  appeared (#528, #565)
+- **Copilot / Gemini / Qwen connect buttons** — the app now detects which
+  login flows the bundled CLIProxyAPI supports and explains unsupported ones
+  instead of failing with a raw "flag provided but not defined" error
+  (#351, #457, #396, #566)
+- **Login flags verified in CI** — a new parity check fails the build when the
+  app sends a login flag the backend doesn't define, so upstream flag drift
+  can't silently break a login button (#566)
+- Orphan cleanup no longer kills the launch-time capability probe (#566)
+
+### Added
+- "Allow LAN connections (port 8317)" setting with a network-exposure warning
+  and bind-mode diagnostics in the proxy log (#475, #565)
+- Swift test suite now runs on every pull request and push (#564)
+- Less sensitive data (file paths, account emails, process arguments) in
+  Console logs (#564)
+
+## [1.8.50] - 2026-01-13
+
+## [1.8.312] - 2026-09-26
+
+### Updated
+- **CLIProxyAPI 7.3.18** - Latest upstream release (#567)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.311] - 2026-09-25
+
+### Updated
+- **CLIProxyAPI 7.3.17** - Latest upstream release (#563)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.310] - 2026-09-24
+
+### Updated
+- **CLIProxyAPI 7.3.16** - Latest upstream release (#562)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.309] - 2026-09-23
+
+### Updated
+- **CLIProxyAPI 7.3.15** - Latest upstream release (#561)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.308] - 2026-09-23
+
+### Updated
+- **CLIProxyAPI 7.3.14** - Latest upstream release (#560)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.307] - 2026-09-22
+
+### Updated
+- **CLIProxyAPI 7.3.12** - Latest upstream release (#559)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.306] - 2026-09-22
+
+### Updated
+- **CLIProxyAPI 7.3.11** - Latest upstream release (#558)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.305] - 2026-09-21
+
+### Updated
+- **CLIProxyAPI 7.3.10** - Latest upstream release (#557)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.304] - 2026-09-20
+
+### Updated
+- **CLIProxyAPI 7.3.9** - Latest upstream release (#556)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.303] - 2026-09-19
+
+### Updated
+- **CLIProxyAPI 7.3.8** - Latest upstream release (#555)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.302] - 2026-09-18
+
+### Updated
+- **CLIProxyAPI 7.3.7** - Latest upstream release (#554)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.301] - 2026-09-17
+
+### Updated
+- **CLIProxyAPI 7.3.6** - Latest upstream release (#553)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.300] - 2026-09-17
+
+### Updated
+- **CLIProxyAPI 7.3.5** - Latest upstream release (#552)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.299] - 2026-09-16
+
+### Updated
+- **CLIProxyAPI 7.3.4** - Latest upstream release (#551)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.298] - 2026-09-15
+
+### Updated
+- **CLIProxyAPI 7.3.3** - Latest upstream release (#550)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.297] - 2026-09-14
+
+### Updated
+- **CLIProxyAPI 7.3.2** - Latest upstream release (#549)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.296] - 2026-09-14
+
+### Updated
+- **CLIProxyAPI 7.3.1** - Latest upstream release (#548)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.295] - 2026-09-13
+
+### Updated
+- **CLIProxyAPI 7.2.159** - Latest upstream release (#547)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.294] - 2026-09-12
+
+### Updated
+- **CLIProxyAPI 7.2.158** - Latest upstream release (#546)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.293] - 2026-09-11
+
+### Updated
+- **CLIProxyAPI 7.2.157** - Latest upstream release (#545)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.292] - 2026-09-09
+
+### Updated
+- **CLIProxyAPI 7.2.155** - Latest upstream release (#542)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.291] - 2026-09-08
+
+### Updated
+- **CLIProxyAPI 7.2.154** - Latest upstream release (#541)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.290] - 2026-09-07
+
+### Updated
+- **CLIProxyAPI 7.2.153** - Latest upstream release (#540)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.289] - 2026-09-06
+
+### Updated
+- **CLIProxyAPI 7.2.152** - Latest upstream release (#539)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.288] - 2026-09-05
+
+### Updated
+- **CLIProxyAPI 7.2.151** - Latest upstream release (#537)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.287] - 2026-09-04
+
+### Updated
+- **CLIProxyAPI 7.2.149** - Latest upstream release (#536)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.286] - 2026-09-03
+
+### Updated
+- **CLIProxyAPI 7.2.148** - Latest upstream release (#535)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.285] - 2026-09-01
+
+### Updated
+- **CLIProxyAPI 7.2.147** - Latest upstream release (#534)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.284] - 2026-08-31
+
+### Updated
+- **CLIProxyAPI 7.2.146** - Latest upstream release (#533)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.283] - 2026-08-28
+
+### Updated
+- **CLIProxyAPI 7.2.145** - Latest upstream release (#532)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.282] - 2026-08-28
+
+### Updated
+- **CLIProxyAPI 7.2.144** - Latest upstream release (#531)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.281] - 2026-08-27
+
+### Updated
+- **CLIProxyAPI 7.2.143** - Latest upstream release (#529)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.280] - 2026-08-26
+
+### Updated
+- **CLIProxyAPI 7.2.142** - Latest upstream release (#527)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.279] - 2026-08-24
+
+### Updated
+- **CLIProxyAPI 7.2.141** - Latest upstream release (#526)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.278] - 2026-08-23
+
+### Updated
+- **CLIProxyAPI 7.2.140** - Latest upstream release (#525)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.277] - 2026-08-22
+
+### Updated
+- **CLIProxyAPI 7.2.139** - Latest upstream release (#524)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.276] - 2026-08-21
+
+### Updated
+- **CLIProxyAPI 7.2.138** - Latest upstream release (#523)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.275] - 2026-08-20
+
+### Updated
+- **CLIProxyAPI 7.2.137** - Latest upstream release (#522)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.274] - 2026-08-19
+
+### Updated
+- **CLIProxyAPI 7.2.136** - Latest upstream release (#521)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.273] - 2026-08-17
+
+### Updated
+- **CLIProxyAPI 7.2.135** - Latest upstream release (#520)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.272] - 2026-08-17
+
+### Updated
+- **CLIProxyAPI 7.2.134** - Latest upstream release (#519)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.271] - 2026-08-16
+
+### Updated
+- **CLIProxyAPI 7.2.133** - Latest upstream release (#518)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.270] - 2026-08-15
+
+### Updated
+- **CLIProxyAPI 7.2.132** - Latest upstream release (#516)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.269] - 2026-08-13
+
+### Updated
+- **CLIProxyAPI 7.2.131** - Latest upstream release (#515)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.268] - 2026-08-12
+
+### Updated
+- **CLIProxyAPI 7.2.130** - Latest upstream release (#513)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.267] - 2026-08-11
+
+### Updated
+- **CLIProxyAPI 7.2.128** - Latest upstream release (#512)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.266] - 2026-08-10
+
+### Updated
+- **CLIProxyAPI 7.2.127** - Latest upstream release (#511)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.265] - 2026-08-09
+
+### Updated
+- **CLIProxyAPI 7.2.125** - Latest upstream release (#510)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.264] - 2026-08-08
+
+### Updated
+- **CLIProxyAPI 7.2.123** - Latest upstream release (#508)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.263] - 2026-08-07
+
+### Updated
+- **CLIProxyAPI 7.2.122** - Latest upstream release (#507)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.262] - 2026-08-07
+
+### Updated
+- **CLIProxyAPI 7.2.121** - Latest upstream release (#506)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.261] - 2026-08-06
+
+### Updated
+- **CLIProxyAPI 7.2.120** - Latest upstream release (#504)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.260] - 2026-08-05
+
+### Updated
+- **CLIProxyAPI 7.2.119** - Latest upstream release (#503)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.259] - 2026-08-04
+
+### Updated
+- **CLIProxyAPI 7.2.116** - Latest upstream release (#502)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.258] - 2026-08-03
+
+### Updated
+- **CLIProxyAPI 7.2.115** - Latest upstream release (#501)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.257] - 2026-08-01
+
+### Updated
+- **CLIProxyAPI 7.2.113** - Latest upstream release (#500)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.256] - 2026-07-31
+
+### Updated
+- **CLIProxyAPI 7.2.112** - Latest upstream release (#499)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.255] - 2026-07-31
+
+### Updated
+- **CLIProxyAPI 7.2.111** - Latest upstream release (#498)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.254] - 2026-07-30
+
+### Updated
+- **CLIProxyAPI 7.2.110** - Latest upstream release (#497)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.253] - 2026-07-30
+
+### Updated
+- **CLIProxyAPI 7.2.109** - Latest upstream release (#496)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.252] - 2026-07-28
+
+### Updated
+- **CLIProxyAPI 7.2.104** - Latest upstream release (#495)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.251] - 2026-07-28
+
+### Updated
+- **CLIProxyAPI 7.2.103** - Latest upstream release (#494)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.250] - 2026-07-27
+
+### Updated
+- **CLIProxyAPI 7.2.102** - Latest upstream release (#493)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.249] - 2026-07-26
+
+### Updated
+- **CLIProxyAPI 7.2.101** - Latest upstream release (#492)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.248] - 2026-07-26
+
+### Updated
+- **CLIProxyAPI 7.2.100** - Latest upstream release (#491)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.247] - 2026-07-25
+
+### Updated
+- **CLIProxyAPI 7.2.99** - Latest upstream release (#489)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.246] - 2026-07-24
+
+### Updated
+- **CLIProxyAPI 7.2.97** - Latest upstream release (#488)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.245] - 2026-07-23
+
+### Updated
+- **CLIProxyAPI 7.2.96** - Latest upstream release (#487)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.244] - 2026-07-23
+
+### Updated
+- **CLIProxyAPI 7.2.95** - Latest upstream release (#486)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.243] - 2026-07-22
+
+### Updated
+- **CLIProxyAPI 7.2.94** - Latest upstream release (#483)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.242] - 2026-07-21
+
+### Updated
+- **CLIProxyAPI 7.2.93** - Latest upstream release (#482)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.241] - 2026-07-20
+
+### Updated
+- **CLIProxyAPI 7.2.92** - Latest upstream release (#481)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.240] - 2026-07-19
+
+### Updated
+- **CLIProxyAPI 7.2.89** - Latest upstream release (#479)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.239] - 2026-07-19
+
+### Updated
+- **CLIProxyAPI 7.2.88** - Latest upstream release (#478)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.238] - 2026-07-18
+
+### Updated
+- **CLIProxyAPI 7.2.86** - Latest upstream release (#476)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.237] - 2026-07-17
+
+### Updated
+- **CLIProxyAPI 7.2.83** - Latest upstream release (#474)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.236] - 2026-07-17
+
+### Updated
+- **CLIProxyAPI 7.2.81** - Latest upstream release (#473)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.235] - 2026-07-16
+
+### Updated
+- **CLIProxyAPI 7.2.80** - Latest upstream release (#470)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.234] - 2026-07-15
+
+### Updated
+- **CLIProxyAPI 7.2.77** - Latest upstream release (#468)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.233] - 2026-07-14
+
+### Updated
+- **CLIProxyAPI 7.2.74** - Latest upstream release (#466)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.232] - 2026-07-14
+
+### Updated
+- **CLIProxyAPI 7.2.73** - Latest upstream release (#465)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.231] - 2026-07-13
+
+### Updated
+- **CLIProxyAPI 7.2.72** - Latest upstream release (#464)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.230] - 2026-07-13
+
+### Updated
+- **CLIProxyAPI 7.2.71** - Latest upstream release (#463)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.229] - 2026-07-12
+
+### Updated
+- **CLIProxyAPI 7.2.67** - Latest upstream release (#462)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.228] - 2026-07-11
+
+### Updated
+- **CLIProxyAPI 7.2.66** - Latest upstream release (#461)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.227] - 2026-07-11
+
+### Updated
+- **CLIProxyAPI 7.2.65** - Latest upstream release (#460)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.226] - 2026-07-10
+
+### Updated
+- **CLIProxyAPI 7.2.62** - Latest upstream release (#458)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.225] - 2026-07-10
+
+### Updated
+- **CLIProxyAPI 7.2.58** - Latest upstream release (#455)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.224] - 2026-07-09
+
+### Updated
+- **CLIProxyAPI 7.2.54** - Latest upstream release (#454)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.223] - 2026-07-08
+
+### Updated
+- **CLIProxyAPI 7.2.53** - Latest upstream release (#453)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.222] - 2026-07-08
+
+### Updated
+- **CLIProxyAPI 7.2.52** - Latest upstream release (#452)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.221] - 2026-07-07
+
+### Updated
+- **CLIProxyAPI 7.2.51** - Latest upstream release (#451)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.220] - 2026-07-04
+
+### Updated
+- **CLIProxyAPI 7.2.50** - Latest upstream release (#450)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.219] - 2026-07-02
+
+### Updated
+- **CLIProxyAPI 7.2.49** - Latest upstream release (#448)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.218] - 2026-07-01
+
+### Updated
+- **CLIProxyAPI 7.2.48** - Latest upstream release (#446)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.217] - 2026-06-29
+
+### Updated
+- **CLIProxyAPI 7.2.47** - Latest upstream release (#445)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.216] - 2026-06-29
+
+### Updated
+- **CLIProxyAPI 7.2.45** - Latest upstream release (#444)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.215] - 2026-06-28
+
+### Updated
+- **CLIProxyAPI 7.2.43** - Latest upstream release (#443)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.214] - 2026-06-26
+
+### Updated
+- **CLIProxyAPI 7.2.42** - Latest upstream release (#442)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.213] - 2026-06-26
+
+### Updated
+- **CLIProxyAPI 7.2.41** - Latest upstream release (#441)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.212] - 2026-06-25
+
+### Updated
+- **CLIProxyAPI 7.2.38** - Latest upstream release (#440)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.211] - 2026-06-25
+
+### Updated
+- **CLIProxyAPI 7.2.37** - Latest upstream release (#439)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.210] - 2026-06-24
+
+### Updated
+- **CLIProxyAPI 7.2.35** - Latest upstream release (#438)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.209] - 2026-06-23
+
+### Updated
+- **CLIProxyAPI 7.2.31** - Latest upstream release (#437)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.208] - 2026-06-23
+
+### Updated
+- **CLIProxyAPI 7.2.28** - Latest upstream release (#436)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.207] - 2026-06-22
+
+### Updated
+- **CLIProxyAPI 7.2.27** - Latest upstream release (#435)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.206] - 2026-06-21
+
+### Updated
+- **CLIProxyAPI 7.2.26** - Latest upstream release (#433)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.205] - 2026-06-21
+
+### Updated
+- **CLIProxyAPI 7.2.23** - Latest upstream release (#432)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.204] - 2026-06-20
+
+### Updated
+- **CLIProxyAPI 7.2.22** - Latest upstream release (#431)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.203] - 2026-06-20
+
+### Updated
+- **CLIProxyAPI 7.2.21** - Latest upstream release (#430)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.202] - 2026-06-19
+
+### Updated
+- **CLIProxyAPI 7.2.20** - Latest upstream release (#429)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.201] - 2026-06-19
+
+### Updated
+- **CLIProxyAPI 7.2.19** - Latest upstream release (#428)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.200] - 2026-06-18
+
+### Updated
+- **CLIProxyAPI 7.2.16** - Latest upstream release (#427)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.199] - 2026-06-17
+
+### Updated
+- **CLIProxyAPI 7.2.15** - Latest upstream release (#425)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.198] - 2026-06-17
+
+### Updated
+- **CLIProxyAPI 7.2.12** - Latest upstream release (#424)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.197] - 2026-06-16
+
+### Updated
+- **CLIProxyAPI 7.2.9** - Latest upstream release (#423)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.196] - 2026-06-16
+
+### Updated
+- **CLIProxyAPI 7.2.7** - Latest upstream release (#422)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.195] - 2026-06-15
+
+### Updated
+- **CLIProxyAPI 7.2.5** - Latest upstream release (#421)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.194] - 2026-06-15
+
+### Updated
+- **CLIProxyAPI 7.2.3** - Latest upstream release (#420)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.193] - 2026-06-14
+
+### Updated
+- **CLIProxyAPI 7.1.76** - Latest upstream release (#419)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.192] - 2026-06-14
+
+### Updated
+- **CLIProxyAPI 7.1.75** - Latest upstream release (#417)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.191] - 2026-06-13
+
+### Updated
+- **CLIProxyAPI 7.1.74** - Latest upstream release (#416)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.190] - 2026-06-13
+
+### Updated
+- **CLIProxyAPI 7.1.73** - Latest upstream release (#414)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.189] - 2026-06-12
+
+### Updated
+- **CLIProxyAPI 7.1.68** - Latest upstream release (#413)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.188] - 2026-06-11
+
+### Updated
+- **CLIProxyAPI 7.1.66** - Latest upstream release (#412)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.187] - 2026-06-11
+
+### Updated
+- **CLIProxyAPI 7.1.64** - Latest upstream release (#410)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.186] - 2026-06-10
+
+### Updated
+- **CLIProxyAPI 7.1.61** - Latest upstream release (#409)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.185] - 2026-06-10
+
+### Updated
+- **CLIProxyAPI 7.1.60** - Latest upstream release (#408)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.184] - 2026-06-09
+
+### Updated
+- **CLIProxyAPI 7.1.58** - Latest upstream release (#407)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.183] - 2026-06-09
+
+### Updated
+- **CLIProxyAPI 7.1.55** - Latest upstream release (#406)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.182] - 2026-06-08
+
+### Updated
+- **CLIProxyAPI 7.1.54** - Latest upstream release (#404)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.181] - 2026-06-07
+
+### Updated
+- **CLIProxyAPI 7.1.50** - Latest upstream release (#403)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.180] - 2026-06-06
+
+### Updated
+- **CLIProxyAPI 7.1.46** - Latest upstream release (#402)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.179] - 2026-06-05
+
+### Updated
+- **CLIProxyAPI 7.1.45** - Latest upstream release (#401)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.178] - 2026-06-04
+
+### Updated
+- **CLIProxyAPI 7.1.44** - Latest upstream release (#400)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.177] - 2026-06-03
+
+### Updated
+- **CLIProxyAPI 7.1.43** - Latest upstream release (#399)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.176] - 2026-06-03
+
+### Updated
+- **CLIProxyAPI 7.1.41** - Latest upstream release (#397)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.175] - 2026-06-02
+
+### Updated
+- **CLIProxyAPI 7.1.40** - Latest upstream release (#395)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.174] - 2026-06-02
+
+### Updated
+- **CLIProxyAPI 7.1.39** - Latest upstream release (#394)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.173] - 2026-06-01
+
+### Updated
+- **CLIProxyAPI 7.1.37** - Latest upstream release (#393)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.172] - 2026-06-01
+
+### Updated
+- **CLIProxyAPI 7.1.36** - Latest upstream release (#392)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.171] - 2026-05-31
+
+### Updated
+- **CLIProxyAPI 7.1.33** - Latest upstream release (#391)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.170] - 2026-05-31
+
+### Updated
+- **CLIProxyAPI 7.1.32** - Latest upstream release (#390)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.169] - 2026-05-30
+
+### Updated
+- **CLIProxyAPI 7.1.31** - Latest upstream release (#388)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.168] - 2026-05-29
+
+### Updated
+- **CLIProxyAPI 7.1.29** - Latest upstream release (#387)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.167] - 2026-05-29
+
+### Updated
+- **CLIProxyAPI 7.1.28** - Latest upstream release (#386)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.166] - 2026-05-28
+
+### Updated
+- **CLIProxyAPI 7.1.25** - Latest upstream release (#385)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.165] - 2026-05-28
+
+### Updated
+- **CLIProxyAPI 7.1.24** - Latest upstream release (#383)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.164] - 2026-05-27
+
+### Updated
+- **CLIProxyAPI 7.1.23** - Latest upstream release (#381)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.163] - 2026-05-26
+
+### Updated
+- **CLIProxyAPI 7.1.22** - Latest upstream release (#379)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.162] - 2026-05-24
+
+### Updated
+- **CLIProxyAPI 7.1.20** - Latest upstream release (#378)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.161] - 2026-05-21
+
+### Updated
+- **CLIProxyAPI 7.1.19** - Latest upstream release (#377)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.160] - 2026-05-20
+
+### Updated
+- **CLIProxyAPI 7.1.18** - Latest upstream release (#375)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.159] - 2026-05-20
+
+### Updated
+- **CLIProxyAPI 7.1.17** - Latest upstream release (#374)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.158] - 2026-05-19
+
+### Updated
+- **CLIProxyAPI 7.1.16** - Latest upstream release (#373)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.157] - 2026-05-19
+
+### Updated
+- **CLIProxyAPI 7.1.14** - Latest upstream release (#372)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.156] - 2026-05-18
+
+### Updated
+- **CLIProxyAPI 7.1.11** - Latest upstream release (#371)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.155] - 2026-05-18
+
+### Updated
+- **CLIProxyAPI 7.1.10** - Latest upstream release (#370)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.154] - 2026-05-17
+
+### Updated
+- **CLIProxyAPI 7.1.7** - Latest upstream release (#369)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.153] - 2026-05-17
+
+### Updated
+- **CLIProxyAPI 7.1.5** - Latest upstream release (#368)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.152] - 2026-05-16
+
+### Updated
+- **CLIProxyAPI 7.0.9** - Latest upstream release (#367)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.151] - 2026-05-16
+
+### Updated
+- **CLIProxyAPI 7.0.7** - Latest upstream release (#366)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.150] - 2026-05-14
+
+### Updated
+- **CLIProxyAPI 7.0.6** - Latest upstream release (#365)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.149] - 2026-05-13
+
+### Updated
+- **CLIProxyAPI 7.0.4** - Latest upstream release (#364)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.148] - 2026-05-12
+
+### Updated
+- **CLIProxyAPI 7.0.3** - Latest upstream release (#362)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.147] - 2026-05-11
+
+### Updated
+- **CLIProxyAPI 7.0.2** - Latest upstream release (#359)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.146] - 2026-05-10
+
+### Updated
+- **CLIProxyAPI 7.0.1** - Latest upstream release (#358)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.145] - 2026-05-10
+
+### Updated
+- **CLIProxyAPI 7.0.0** - Latest upstream release (#357)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.144] - 2026-05-07
+
+### Updated
+- **CLIProxyAPI 6.10.9** - Latest upstream release (#356)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.143] - 2026-05-05
+
+### Updated
+- **CLIProxyAPI 6.10.8** - Latest upstream release (#352)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.142] - 2026-04-30
+
+### Updated
+- **CLIProxyAPI 6.9.45** - Latest upstream release (#350)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.141] - 2026-04-30
+
+### Updated
+- **CLIProxyAPI 6.9.43** - Latest upstream release (#349)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.140] - 2026-04-29
+
+### Updated
+- **CLIProxyAPI 6.9.41** - Latest upstream release (#348)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.139] - 2026-04-27
+
+### Updated
+- **CLIProxyAPI 6.9.40** - Latest upstream release (#346)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.138] - 2026-04-17
+
+### Updated
+- **CLIProxyAPI 6.9.28-0** - Latest upstream release (#337)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.137] - 2026-04-16
+
+### Updated
+- **CLIProxyAPI 6.9.27-0** - Latest upstream release (#334)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.136] - 2026-04-12
+
+### Updated
+- **CLIProxyAPI 6.9.23-0** - Latest upstream release (#332)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.135] - 2026-04-11
+
+### Updated
+- **CLIProxyAPI 6.9.22-0** - Latest upstream release (#331)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.134] - 2026-04-10
+
+### Updated
+- **CLIProxyAPI 6.9.19-0** - Latest upstream release (#330)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.133] - 2026-04-09
+
+### Updated
+- **CLIProxyAPI 6.9.18-0** - Latest upstream release (#328)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.132] - 2026-04-07
+
+### Updated
+- **CLIProxyAPI 6.9.16-0** - Latest upstream release (#324)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.131] - 2026-04-05
+
+### Updated
+- **CLIProxyAPI 6.9.15-0** - Latest upstream release (#321)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.130] - 2026-04-04
+
+### Updated
+- **CLIProxyAPI 6.9.14-0** - Latest upstream release (#320)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.129] - 2026-04-04
+
+### Updated
+- **CLIProxyAPI 6.9.13-1** - Latest upstream release (#319)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.128] - 2026-04-03
+
+### Updated
+- **CLIProxyAPI 6.9.10-1** - Latest upstream release (#317)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.127] - 2026-04-03
+
+### Updated
+- **CLIProxyAPI 6.9.10-0** - Latest upstream release (#316)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.126] - 2026-04-02
+
+### Updated
+- **CLIProxyAPI 6.9.8-0** - Latest upstream release (#314)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.125] - 2026-03-29
+
+### Updated
+- **CLIProxyAPI 6.9.5-0** - Latest upstream release (#308)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.124] - 2026-03-28
+
+### Updated
+- **CLIProxyAPI 6.9.4-2** - Latest upstream release (#305)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.123] - 2026-03-25
+
+### Updated
+- **CLIProxyAPI 6.9.2-0** - Latest upstream release (#303)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.122] - 2026-03-24
+
+### Updated
+- **CLIProxyAPI 6.9.1-0** - Latest upstream release (#298)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.121] - 2026-03-23
+
+### Updated
+- **CLIProxyAPI 6.9.0-0** - Latest upstream release (#297)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.120] - 2026-03-17
+
+### Updated
+- **CLIProxyAPI 6.8.55-0** - Latest upstream release (#291)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.119] - 2026-03-16
+
+### Updated
+- **CLIProxyAPI 6.8.54-0** - Latest upstream release (#289)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.118] - 2026-03-15
+
+### Updated
+- **CLIProxyAPI 6.8.53-0** - Latest upstream release (#287)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.117] - 2026-03-13
+
+### Updated
+- **CLIProxyAPI 6.8.52-1** - Latest upstream release (#284)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.116] - 2026-03-11
+
+### Updated
+- **CLIProxyAPI 6.8.51-1** - Latest upstream release (#282)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.115] - 2026-03-10
+
+### Updated
+- **CLIProxyAPI 6.8.51-0** - Latest upstream release (#280)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.114] - 2026-03-10
+
+### Updated
+- **CLIProxyAPI 6.8.50-0** - Latest upstream release (#279)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.113] - 2026-03-09
+
+### Updated
+- **CLIProxyAPI 6.8.49-0** - Latest upstream release (#277)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.112] - 2026-03-09
+
+### Updated
+- **CLIProxyAPI 6.8.48-0** - Latest upstream release (#276)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.111] - 2026-03-08
+
+### Updated
+- **CLIProxyAPI 6.8.47-0** - Latest upstream release (#271)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.110] - 2026-03-07
+
+### Updated
+- **CLIProxyAPI 6.8.46-0** - Latest upstream release (#269)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.109] - 2026-03-06
+
+### Updated
+- **CLIProxyAPI 6.8.45-0** - Latest upstream release (#268)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.108] - 2026-03-06
+
+### Updated
+- **CLIProxyAPI 6.8.44-0** - Latest upstream release (#267)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.107] - 2026-03-04
+
+### Updated
+- **CLIProxyAPI 6.8.41-0** - Latest upstream release (#265)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.106] - 2026-03-04
+
+### Updated
+- **CLIProxyAPI 6.8.40-1** - Latest upstream release (#263)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.105] - 2026-03-03
+
+### Updated
+- **CLIProxyAPI 6.8.39-1** - Latest upstream release (#261)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.104] - 2026-03-02
+
+### Updated
+- **CLIProxyAPI 6.8.37-0** - Latest upstream release (#260)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.103] - 2026-03-01
+
+### Updated
+- **CLIProxyAPI 6.8.35-0** - Latest upstream release (#258)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.102] - 2026-03-01
+
+### Updated
+- **CLIProxyAPI 6.8.34-0** - Latest upstream release (#256)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.101] - 2026-02-28
+
+### Updated
+- **CLIProxyAPI 6.8.32-0** - Latest upstream release (#255)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.100] - 2026-02-27
+
+### Updated
+- **CLIProxyAPI 6.8.31-0** - Latest upstream release (#253)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.99] - 2026-02-27
+
+### Updated
+- **CLIProxyAPI 6.8.30-0** - Latest upstream release (#250)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.98] - 2026-02-26
+
+### Updated
+- **CLIProxyAPI 6.8.28-1** - Latest upstream release (#249)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.97] - 2026-02-25
+
+### Updated
+- **CLIProxyAPI 6.8.27-0** - Latest upstream release (#246)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.96] - 2026-02-23
+
+### Updated
+- **CLIProxyAPI 6.8.26-0** - Latest upstream release (#245)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.95] - 2026-02-22
+
+### Updated
+- **CLIProxyAPI 6.8.24-0** - Latest upstream release (#244)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.94] - 2026-02-21
+
+### Updated
+- **CLIProxyAPI 6.8.23-0** - Latest upstream release (#243)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.93] - 2026-02-20
+
+### Updated
+- **CLIProxyAPI 6.8.22-0** - Latest upstream release (#239)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.92] - 2026-02-19
+
+### Updated
+- **CLIProxyAPI 6.8.21-0** - Latest upstream release (#238)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.91] - 2026-02-17
+
+### Updated
+- **CLIProxyAPI 6.8.18-1** - Latest upstream release (#237)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.90] - 2026-02-15
+
+### Updated
+- **CLIProxyAPI 6.8.16-0** - Latest upstream release (#236)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.89] - 2026-02-13
+
+### Updated
+- **CLIProxyAPI 6.8.15-0** - Latest upstream release (#233)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.88] - 2026-02-13
+
+### Updated
+- **CLIProxyAPI 6.8.14-0** - Latest upstream release (#231)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.87] - 2026-02-12
+
+### Updated
+- **CLIProxyAPI 6.8.13-1** - Latest upstream release (#229)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.86] - 2026-02-12
+
+### Updated
+- **CLIProxyAPI 6.8.12-0** - Latest upstream release (#224)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.85] - 2026-02-11
+
+### Updated
+- **CLIProxyAPI 6.8.11-0** - Latest upstream release (#223)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.84] - 2026-02-10
+
+### Updated
+- **CLIProxyAPI 6.8.9-0** - Latest upstream release (#221)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.83] - 2026-02-10
+
+### Updated
+- **CLIProxyAPI 6.8.8-0** - Latest upstream release (#219)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.82] - 2026-02-09
+
+### Updated
+- **CLIProxyAPI 6.8.7-0** - Latest upstream release (#218)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.81] - 2026-02-09
+
+### Updated
+- **CLIProxyAPI 6.8.6-0** - Latest upstream release (#217)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.80] - 2026-02-07
+
+### Updated
+- **CLIProxyAPI 6.8.4-0** - Latest upstream release (#215)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.79] - 2026-02-07
+
+### Updated
+- **CLIProxyAPI 6.8.2-0** - Latest upstream release (#214)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.78] - 2026-02-06
+
+### Updated
+- **CLIProxyAPI 6.7.53-0** - Latest upstream release (#212)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.77] - 2026-02-05
+
+### Updated
+- **CLIProxyAPI 6.7.48-0** - Latest upstream release (#210)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.76] - 2026-02-04
+
+### Updated
+- **CLIProxyAPI 6.7.45-0** - Latest upstream release (#209)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.74] - 2026-02-03
+
+### Updated
+- **CLIProxyAPI 6.7.42-0** - Latest upstream release (#207)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.73] - 2026-02-02
+
+### Updated
+- **CLIProxyAPI 6.7.41-0** - Latest upstream release (#205)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.72] - 2026-02-01
+
+### Updated
+- **CLIProxyAPI 6.7.40-0** - Latest upstream release (#203)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.71] - 2026-01-31
+
+### Updated
+- **CLIProxyAPI 6.7.37-0** - Latest upstream release (#201)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.70] - 2026-01-28
+
+### Updated
+- **CLIProxyAPI 6.7.26-0** - Latest upstream release (#195)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.69] - 2026-01-27
+
+### Updated
+- **CLIProxyAPI 6.7.25-0** - Latest upstream release (#193)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.67] - 2026-01-26
+
+### Updated
+- **CLIProxyAPI 6.7.24-0** - Latest upstream release (#192)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.66] - 2026-01-24
+
+### Updated
+- **CLIProxyAPI 6.7.20-0** - Latest upstream release (#189)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.65] - 2026-01-22
+
+### Updated
+- **CLIProxyAPI 6.7.16-0** - Latest upstream release (#187)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.64] - 2026-01-20
+
+### Updated
+- **CLIProxyAPI 6.7.15-0** - Latest upstream release (#183)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.63] - 2026-01-20
+
+### Updated
+- **CLIProxyAPI 6.7.11-0** - Latest upstream release (#182)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.62] - 2026-01-19
+
+### Updated
+- **CLIProxyAPI 6.7.9-0** - Latest upstream release (#180)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.61] - 2026-01-17
+
+### Updated
+- **CLIProxyAPI 6.7.6-1** - Latest upstream release (#177)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.60] - 2026-01-16
+
+### Updated
+- **CLIProxyAPI 6.7.4-0** - Latest upstream release (#175)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.59] - 2026-01-15
+
+### Updated
+- **CLIProxyAPI 6.6.108-0** - Latest upstream release (#171)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.58] - 2026-01-15
+
+### Added
+- **Intel Mac (x86_64) support** - Separate builds now available for Intel and Apple Silicon Macs
+  - Download `VibeProxy-x86_64.dmg` for Intel Macs
+  - Download `VibeProxy-arm64.dmg` for Apple Silicon (M1/M2/M3)
+  - ⚠️ Intel build is untested - please report if it works!
+
+
+## [1.8.51] - 2026-01-15
+
+### Updated
+- **CLIProxyAPI 6.6.105-0** - Latest upstream release (#170)
+  - Various upstream improvements and stability enhancements
+
+
+### Added
+- **Provider Priority** - Enable/disable individual providers to avoid model conflicts ([#159](https://github.com/automazeio/vibeproxy/issues/159))
+  - Toggle switches in Settings UI to enable/disable each provider
+  - Disabled providers have all models excluded via `oauth-excluded-models`
+  - Changes apply instantly via hot reload (no restart needed)
+  - Useful when logged into multiple providers with overlapping models
+
+### Fixed
+- **Amp CLI Login Flow** - Fixed OAuth login failing with "403 Invalid state parameter"
+  - Login now redirects directly to ampcode.com to preserve OAuth state cookies
+  - Browser stays on ampcode.com during authentication for proper cookie handling
+- **Amp CLI OAuth Integration** - Fixed "auth_unavailable" errors when using Amp CLI
+  - Enabled local OAuth providers (Claude, Codex, Gemini) for Amp requests
+  - Your subscriptions (Claude Max, ChatGPT Plus, Gemini) are now used through Amp
+  - Clear error when provider not authenticated (no silent fallback)
+
+### Changed
+- **Amp Request Routing** - Improved routing logic for Amp management vs provider requests
+  - Management requests (auth, user, threads) forwarded to ampcode.com
+  - Provider requests routed through CLIProxyAPI for local OAuth support
+
+## [1.8.49] - 2026-01-13
+
+### Updated
+- **CLIProxyAPI 6.6.103-0** - Latest upstream release (#164)
+  - Various upstream improvements and stability enhancements
+
+
+### Added
+- **Z.AI GLM Provider Support** - Add Z.AI as a new provider for GLM models (#161)
+  - Enter your Z.AI API key directly in the Settings UI
+  - Supports GLM-4.7, GLM-4-Plus, GLM-4-Air, and GLM-4-Flash models
+  - Get your API key at [z.ai](https://z.ai/manage-apikey/apikey-list)
+  - Uses OpenAI-compatible endpoint for seamless integration
+- **Edit menu** - Added standard Edit menu for keyboard shortcuts (Cmd+C/V/X/A)
+
+### Fixed
+- **YAML escaping** - API keys with special characters are now properly escaped
+
+
+## [1.8.47] - 2026-01-12
+
+### Updated
+- **CLIProxyAPI 6.6.100-0** - Latest upstream release (#163)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.46] - 2026-01-10
+
+### Updated
+- **CLIProxyAPI 6.6.98-0** - Latest upstream release (#162)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.45] - 2026-01-10
+
+### Updated
+- **CLIProxyAPI 6.6.96-0** - Latest upstream release (#160)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.44] - 2026-01-09
+
+### Updated
+- **CLIProxyAPI 6.6.92-0** - Latest upstream release (#158)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.43] - 2026-01-08
+
+### Updated
+- **CLIProxyAPI 6.6.90-0** - Latest upstream release (#155)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.42] - 2026-01-07
+
+### Updated
+- **CLIProxyAPI 6.6.88-0** - Latest upstream release (#150)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.41] - 2026-01-07
+
+### Updated
+- **CLIProxyAPI 6.6.86-0** - Latest upstream release (#149)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.40] - 2026-01-05
+
+### Added
+- **Claude models via Antigravity** - Support for `gemini-claude-*` model prefixes (#145)
+  - `gemini-claude-opus-4-5-thinking`, `gemini-claude-sonnet-4-5-thinking`, etc.
+  - Enables extended thinking with Antigravity authentication
+
+### Fixed
+- **Codex login timeout** - Fix login hanging when Google account selection takes >15 seconds (#123)
+- **ThinkingProxy model matching** - More precise detection of thinking models
+
+### Improved
+- **Settings UI** - Services with expired accounts now auto-expand to draw attention
+
+
+## [1.8.39] - 2026-01-05
+
+### Updated
+- **CLIProxyAPI 6.6.84-0** - Latest upstream release (#144)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.38] - 2026-01-04
+
+### Updated
+- **CLIProxyAPI 6.6.82-0** - Latest upstream release (#143)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.37] - 2026-01-04
+
+### Updated
+- **CLIProxyAPI 6.6.81-0** - Latest upstream release (#142)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.36] - 2026-01-03
+
+### Updated
+- **CLIProxyAPI 6.6.80-0** - Latest upstream release (#139)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.35] - 2026-01-02
+
+### Updated
+- **CLIProxyAPI 6.6.77-1** - Latest upstream release (#138)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.34] - 2025-12-31
+
+### Updated
+- **CLIProxyAPI 6.6.73-0** - Latest upstream release (#137)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.33] - 2025-12-31
+
+### Updated
+- **CLIProxyAPI 6.6.71-0** - Latest upstream release (#135)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.32] - 2025-12-30
+
+### Updated
+- **CLIProxyAPI 6.6.69-0** - Latest upstream release (#134)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.31] - 2025-12-30
+
+### Updated
+- **CLIProxyAPI 6.6.68-0** - Latest upstream release (#133)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.30] - 2025-12-28
+
+### Updated
+- **CLIProxyAPI 6.6.63-0** - Latest upstream release (#131)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.29] - 2025-12-28
+
+### Updated
+- **CLIProxyAPI 6.6.62-0** - Latest upstream release (#130)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.28] - 2025-12-27
+
+### Updated
+- **CLIProxyAPI 6.6.58-0** - Latest upstream release (#127)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.27] - 2025-12-26
+
+### Updated
+- **CLIProxyAPI 6.6.56-0** - Latest upstream release (#126)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.26] - 2025-12-26
+
+### Updated
+- **CLIProxyAPI 6.6.55-0** - Latest upstream release (#124)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.25] - 2025-12-25
+
+### Updated
+- **CLIProxyAPI 6.6.53-0** - Latest upstream release (#122)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.24] - 2025-12-24
+
+### Updated
+- **CLIProxyAPI 6.6.50-2** - Latest upstream release (#121)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.23] - 2025-12-24
+
+### Updated
+- **CLIProxyAPI 6.6.49-0** - Latest upstream release (#119)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.22] - 2025-12-23
+
+### Updated
+- **CLIProxyAPI 6.6.47-0** - Latest upstream release (#118)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.21] - 2025-12-23
+
+### Updated
+- **CLIProxyAPI 6.6.46-0** - Latest upstream release (#117)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.20] - 2025-12-22
+
+### Updated
+- **CLIProxyAPI 6.6.41-0** - Latest upstream release (#116)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.19] - 2025-12-21
+
+### Updated
+- **CLIProxyAPI 6.6.40-0** - Latest upstream release (#115)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.18] - 2025-12-21
+
+### Updated
+- **CLIProxyAPI 6.6.38-0** - Latest upstream release (#114)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.17] - 2025-12-20
+
+### Updated
+- **CLIProxyAPI 6.6.35-0** - Latest upstream release (#112)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.16] - 2025-12-20
+
+### Updated
+- **CLIProxyAPI 6.6.34-0** - Latest upstream release (#109)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.15] - 2025-12-19
+
+### Updated
+- **CLIProxyAPI 6.6.29-1** - Latest upstream release (#107)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.14] - 2025-12-18
+
+### Updated
+- **CLIProxyAPI 6.6.26-0** - Latest upstream release (#102)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.13] - 2025-12-18
+
+### Updated
+- **CLIProxyAPI 6.6.25-1** - Latest upstream release (#101)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.12] - 2025-12-17
+
+### Updated
+- **CLIProxyAPI 6.6.22-0** - Latest upstream release (#100)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.11] - 2025-12-17
+
+### Updated
+- **CLIProxyAPI 6.6.20-0** - Latest upstream release (#98)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.10] - 2025-12-16
+
+### Updated
+- **CLIProxyAPI 6.6.17-0** - Latest upstream release (#95)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.9] - 2025-12-15
+
+### Added
+- **Interleaved Thinking Support** - ThinkingProxy now automatically adds the `anthropic-beta: interleaved-thinking-2025-05-14` header when extended thinking is enabled via the `-thinking-*` model suffix. This allows Claude to reason between tool calls for better multi-step coding tasks.
+
+### Updated
+- **Documentation** - Updated FACTORY_SETUP.md with GPT 5.2 models and corrected reasoning effort syntax (use parentheses like `gpt-5.2(high)` instead of dashes)
+
+
+## [1.8.8] - 2025-12-15
+
+### Updated
+- **CLIProxyAPI 6.6.14-0** - Latest upstream release (#93)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.7] - 2025-12-14
+
+### Updated
+- **CLIProxyAPI 6.6.9-1** - Latest upstream release (#92)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.6] - 2025-12-13
+
+### Updated
+- **CLIProxyAPI 6.6.8-1** - Latest upstream release (#90)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.5] - 2025-12-12
+
+### Updated
+- **CLIProxyAPI 6.6.5-0** - Latest upstream release (#86)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.4] - 2025-12-11
+
+### Updated
+- **CLIProxyAPI 6.6.0-1** - Latest upstream release (#84)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.3] - 2025-12-10
+
+### Updated
+- **CLIProxyAPI 6.5.63-1** - Latest upstream release (#82)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.8.2] - 2025-12-09
+
+### Updated
+- **CLIProxyAPI 6.5.58-0** - Latest upstream release (#78)
+  - Various upstream improvements and stability enhancements
+
+
+This release is all about code improvements and standartization. No user-facing changes.
+
+### Fixed
+- Race condition in ThinkingProxy stop() method
+- Memory leak in pipe handlers (ServerManager and TunnelManager)
+- Thread safety issue in TunnelManager URL detection
+
+### Changed
+- Minimum macOS version raised to 14.0 (Sonoma)
+- Extracted magic numbers to configuration constants
+- Replaced force unwraps with proper error handling
+- Centralized notification names into type-safe constants
+- Made date formatters static for better performance
+- Standardized logging to use NSLog throughout
+
+
+## [1.8.0] - 2025-12-08
+
+### Added
+- **GitHub Copilot Support** - Connect your GitHub Copilot subscription for access to Claude, GPT, Gemini and other models
+
+### Changed
+- Switched from CLIProxyAPI to CLIProxyAPIPlus for third-party provider support
+- Device code now copied with hyphen for easier GitHub authentication
+
+### Updated
+- **CLIProxyAPIPlus 6.5.55** - Latest upstream release
+
+
+## [1.7.0] - 2025-12-08
+
+### Added
+- **Multi-Account Support** - Connect multiple accounts per provider (#70)
+  - Automatic round-robin distribution across accounts
+  - Auto-failover when an account hits rate limits
+  - Collapsible account lists in settings UI
+  - Per-account removal with confirmation dialog
+
+### Changed
+- Improved settings UI with cleaner account management
+- Binds CLIProxyAPI to localhost only for improved security (#75)
+
+
+## [1.6.6] - 2025-12-08
+
+### Updated
+- **CLIProxyAPI 6.5.55** - Latest upstream release (#76)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.6.5] - 2025-12-07
+
+### Updated
+- **CLIProxyAPI 6.5.53** - Latest upstream release (#73)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.6.4] - 2025-12-06
+
+### Updated
+- **CLIProxyAPI 6.5.49** - Latest upstream release (#71)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.6.3] - 2025-12-05
+
+### Updated
+- **CLIProxyAPI 6.5.42** - Latest upstream release (#68)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.6.2] - 2025-12-04
+
+### Updated
+- **CLIProxyAPI 6.5.38** - Latest upstream release (#66)
+  - Various upstream improvements and stability enhancements
+
+
+## [1.6.1] - 2025-12-03
+
+### Updated
+- **CLIProxyAPI 6.5.36** - Latest upstream release (#65)
+  - Various upstream improvements and stability enhancements
+
+## [1.6.0] - 2025-12-02
+
+### Added
+- **Automatic App Updates** - Sparkle integration for seamless app updates (#59)
+  - Check for updates daily automatically
+  - Manual "Check for Updates..." menu item in the menu bar
+  - Secure EdDSA signed updates
+  - Fully automated: new CLIProxyAPI versions are detected, built, signed, notarized, and published automatically
+
+## [1.5.3] - [1.5.7] - 2025-12-02
+
+### Internal
+- **Auto-Update Testing** - Internal releases for testing and refining the Sparkle auto-update integration
+  - 1.5.3: Initial Sparkle integration
+  - 1.5.4: Version comparison fixes
+  - 1.5.5: Build number calculation fixes
+  - 1.5.6: XPC entitlements for installer permissions
+  - 1.5.7: Final verification release
+
+## [1.5.2] - 2025-12-02
+
+### Updated
+- **CLIProxyAPI 6.5.32** - Latest upstream release (#64)
+  - Various upstream improvements and stability enhancements
+
+## [1.5.1] - 2025-12-01
+
+### Updated
+- **CLIProxyAPI 6.5.31** - Latest upstream release (#63)
+  - Various upstream improvements and stability enhancements
+
+## [1.5.0] - 2025-11-28
+
+### Updated
+- **CLIProxyAPI 6.5.27** - Latest upstream release (#58)
+  - Various upstream improvements and stability enhancements
+
+## [1.4.1] - 2025-11-27
+
+### Updated
+- **CLIProxyAPI 6.5.26** - Latest upstream release (#56)
+  - Various upstream improvements and stability enhancements
+
+## [1.4.0] - 2025-11-26
+
+### Added
+- **GPT-5.1 Codex Max Support** - Added configuration and documentation for OpenAI's latest Codex Max model (#54)
+  - `gpt-5.1-codex-max` - Optimized for long-horizon agentic coding tasks
+  - Complete setup instructions in FACTORY_SETUP.md
+
+### Updated
+- **CLIProxyAPI 6.5.23** - Latest upstream release (#55)
+  - Includes support for Gemini 3 Pro Image Preview model
+  - Various upstream improvements and stability enhancements
+
+### Fixed
+- **Gemini 3 Pro Model Names** - Corrected model names to match CLIProxyAPI supported models (#53)
+  - Changed `gemini-3-pro-high` / `gemini-3-pro-low` to `gemini-3-pro-preview`
+  - Changed `gemini-3-pro-image` to `gemini-3-pro-image-preview`
+  - Updated FACTORY_SETUP.md and CHANGELOG.md with correct model names
+- **Auto-Update Workflow** - Fixed YAML syntax error in PR notification step
+  - Fixed multi-line string indentation in `update-cliproxyapi.yml`
+  - Workflow now runs successfully instead of failing immediately
+  - Added PR comments with @mentions for better notification delivery
+
+## [1.3.0] - 2025-11-25
+
+### Added
+- **Claude Opus 4.5 Support** - Full documentation for Claude's latest Opus 4.5 model
+  - Added `claude-opus-4-5-20251101` base model configuration
+  - Added extended thinking variants: `-thinking-4000`, `-thinking-10000`, `-thinking-32000`
+  - Complete setup instructions in FACTORY_SETUP.md
+  - Available through bundled CLIProxyAPI 6.5.18+
+
+### Fixed
+- **Auto-Update Workflow** - Major improvements to prevent file corruption (#47)
+  - Now uses temporary directory for tarball extraction (prevents repo contamination)
+  - Added trap-based cleanup for robust error handling
+  - Validates that only cli-proxy-api binary is modified before committing
+  - Auto-closes old unmerged bump PRs to prevent accumulation
+  - Prevents accidental deletion of README.md and LICENSE files
+- **Documentation Recovery** - Restored README.md and LICENSE files
+  - Files were accidentally deleted in auto-update PR #52
+  - Restored from v1.2.0 tag with latest Amp CLI setup guide references
+
+### Changed
+- **Workflow Reliability** - Enhanced auto-update workflow maintainability
+  - Replaced 8 manual cleanup calls with single trap handler
+  - Better error handling for all failure paths
+  - Cleaner git commits with validation checks
+
+### Technical Details
+- Auto-update workflow now extracts to `mktemp -d` temporary directory
+- Trap ensures cleanup on both success and failure
+- Git status validation prevents unintended file modifications
+- Workflow fixes prevent issues seen in PR #46 and #49
+
+## [1.2.0] - 2025-11-22
+
+### Added
+- **Amp CLI Integration** - Full support for Amp CLI through VibeProxy
+  - Smart path routing: `/auth/cli-login` → `/api/auth/cli-login` for authentication
+  - Provider path rewriting: `/provider/*` → `/api/provider/*` for model requests
+  - Management route forwarding to ampcode.com with Location header rewriting
+  - Automatic fallback to Amp API when local OAuth tokens are unavailable
+  - Seamless integration allowing Factory and Amp CLI through single proxy
+- **New Setup Guide** - Comprehensive AMPCODE_SETUP.md with step-by-step instructions
+  - Configuration of Amp URL and settings
+  - Secrets file format conversion for CLIProxyAPI compatibility
+  - Troubleshooting guide for common issues
+- **Config Updates** - Added Amp upstream configuration
+  - `amp-upstream-url`: https://ampcode.com
+  - `amp-restrict-management-to-localhost`: true (security)
+
+### Fixed
+- **CLI Flag Fix** - Corrected `-config` flag in ServerManager (was incorrectly using `--config`)
+  - Resolves "Could not start backend server on port 8318" errors
+- **Token Expiry Handling** - Improved OAuth token expiry detection
+  - System now correctly falls back to Amp API when local tokens expire
+- **UI Duplicate** - Removed duplicate Antigravity entry in Settings view
+
+### Changed
+- **README Updates** - Added reference to new Amp CLI setup guide alongside Factory guide
+- **Architecture** - Enhanced ThinkingProxy routing logic for multi-tool support
+  - One proxy server now handles Factory CLI, Amp CLI, and future integrations
+
+### Technical Details
+- ThinkingProxy path rewrites apply before management route detection
+- Location header rewriting in Amp responses ensures redirects work through proxy
+- API key resolution from `~/.local/share/amp/secrets.json` for fallback requests
+- Compatible with CLIProxyAPI 6.5.7's Amp module
+
+## [1.1.0] - 2025-11-22
+
+### Updated
+- **CLIProxyAPI 6.5.7** - Latest upstream release with improvements and bug fixes
+  - Commit: 9d50a68, Built: 2025-11-22T13:36:45Z
+  - Various upstream improvements and stability enhancements
+
+### Fixed
+- **Auto-Update Workflow** - Improved file filtering to prevent unwanted files from CLIProxyAPI releases
+  - Now explicitly excludes: README.md, LICENSE, config.example.yaml, config.yaml, README_CN.md
+  - Prevents accidental overwriting of VibeProxy documentation files
+  - Added debug output to detect unexpected extracted files
+
+### Note
+- Switched to semantic versioning: Minor version bump (1.1.0) for CLIProxyAPI updates that may include new features
+- Future patch versions (1.1.x) will be for bug fixes only
+- Future minor versions (1.x.0) will include new features or significant updates
+
+## [1.0.9] - 2025-11-22
+
+### Added
+- **Antigravity OAuth Support** - Full integration with Google's Antigravity service for unified AI model access (#41)
+  - Browser-based Antigravity OAuth authentication flow
+  - Automatic credential management and token refresh
+  - Connection status display with email and expiration tracking
+  - Access to Gemini 3 Pro models via Antigravity backend
+  
+- **Gemini 3 Pro Models** - Support for Google's latest Gemini 3 models through Antigravity
+  - `gemini-3-pro-preview` - Latest preview model (recommended)
+  - `gemini-3-pro-image-preview` - Enhanced vision capabilities
+  - All models use OpenAI API format with Antigravity authentication
+
+### Improved
+- **Settings UI** - Reduced window height from 590px to 540px for more compact interface
+- **Service Order** - Reordered services alphabetically with Antigravity first
+- **Documentation** - Comprehensive Gemini 3 Pro setup guide with Antigravity authentication instructions
+  - Updated FACTORY_SETUP.md with complete Antigravity configuration
+  - Added important callouts about provider settings and authentication requirements
+  - Updated README.md with Antigravity announcements and feature list
+
+### Fixed
+- **GitHub Action** - Fixed CLIProxyAPI auto-update workflow to correctly identify binary in tarball
+  - Changed from using `head -n 1` to filtering out documentation files
+  - Prevents LICENSE file from being misidentified as the binary
+
+## [1.0.8] - 2025-11-21
+
+### Fixed
+- **Window Crash Bug** - Fixed critical crash when closing settings window on macOS 26.0.1 (#19)
+  - Added NSWindowDelegate protocol and proper window lifecycle management
+  - Made settingsWindow a weak reference to prevent memory issues
+  - Added windowDidClose delegate method for cleanup
+
+### Added
+- **Qwen Models Documentation** - Added Qwen3 Coder Plus and Qwen3 Coder Flash to Factory setup guide (#21)
+- **Gemini Models Documentation** - Comprehensive Gemini setup instructions for Factory CLI integration
+  - Added working Gemini 2.5 models (Pro, Flash, Flash Lite)
+  - Documented Gemini 3 Pro Preview status (requires Vertex AI API, support coming soon)
+
+### Improved
+- **Issue Triage** - Resolved 12 open issues with detailed responses and documentation updates
+- **Documentation** - Clarified model availability, setup instructions, and troubleshooting
+
+## [1.0.7] - 2025-11-21
+
+### Updated
+- **CLIProxyAPI 6.5.1** - Updated to latest upstream binary with bug fixes and improvements:
+  - Fixed antigravity callback port to use fixed port 51121
+  - Improved SSE usage filtering across streams
+  - Fixed Gemini CLI to ignore thoughtSignature and empty parts
+
+### Added
+- **Auto-Update Workflow** - Added GitHub Action to automatically check for and update the bundled CLIProxyAPI binary
+- **GPT-5.1 Docs** - Updated README and Factory setup instructions for `gpt-5.1*` and `gpt-5.1-codex*` models with Factory CLI
+
+## [1.0.6] - 2025-10-15
+
+### Added
+- **Qwen Support** - Full integration with Qwen AI via OAuth authentication
+  - Browser-based Qwen OAuth flow with automatic email submission
+  - Pre-authentication email collection dialog for seamless UX
+  - Automatic credential file creation with type: "qwen"
+  - Connection status display with email and expiration tracking
+  - Qwen added to end of service providers list
+
+### Improved
+- **Settings Window** - Increased height from 440px to 490px to accommodate Qwen service section
+
+## [1.0.5] - 2025-10-14
+
+### Added
+- **Claude Thinking Proxy** - Transform Claude model requests with `-thinking-N` suffixes into Anthropic extended thinking calls
+  - Dynamic budget parsing with suffix stripping and safe defaults for invalid values
+  - Automatic token headroom management that respects Anthropic limits
+
+### Fixed
+- **Factory CLI Compatibility** - Forward all headers and honor connection lifecycle to prevent hangs and connection errors
+- **Large Request Handling** - Preserve gzip responses and support payloads beyond 64KB without truncation
+
+## [1.0.4] - 2025-10-14
+
+### Added
+- **Gemini Support** - Full integration with Google's Gemini AI via OAuth authentication
+  - Browser-based Google OAuth flow for secure authentication
+  - Automatic credential file creation (`{email}-{project}.json` with type: "gemini")
+  - Project selection during authentication (auto-accepts default after 3 seconds)
+  - Support for multiple Google Cloud projects
+  - Connection status display with email and expiration tracking
+  - Help tooltip explaining project selection behavior
+
+- **Authentication Status System** - Unified credential monitoring for all services
+  - `AuthManager` scans `~/.cli-proxy-api/` directory for credential files
+  - Real-time file system monitoring for credential changes
+  - Support for Claude Code, Codex, and Gemini with type-based detection
+  - Expiration date tracking with visual indicators (green/red status)
+  - Debug logging for troubleshooting authentication issues
+
+### Improved
+- **Settings Window** - Increased height from 380px to 440px
+  - All three service sections now visible without scrolling
+  - Better spacing and readability
+  - Services displayed in alphabetical order: Claude Code, Codex, Gemini
+
+- **Authentication Flow** - More reliable completion detection
+  - Process termination handler triggers automatic credential refresh
+  - Auto-send newline to stdin for non-interactive project selection
+  - Better handling of OAuth callback completion
+  - Prevents process hanging during project selection prompt
+
+### Fixed
+- **Gemini Authentication** - Resolved credential file creation issues
+  - Correctly uses `-login` command for OAuth (vs `-gemini-web-auth` for cookies)
+  - Credential files properly detected regardless of filename pattern
+  - Authentication completion properly triggers UI refresh
+  - Browser opens reliably for OAuth flow
+
+## [1.0.3] - 2025-10-14
+
+### Added
+- **Icon Caching System** - New `IconCatalog` singleton for thread-safe icon caching
+  - Eliminates redundant disk I/O for frequently accessed icons
+  - Icons are preloaded on app launch to reduce first-use latency
+  - Cached by name, size, and template flag for optimal reuse
+
+- **Modern Notification System** - Migrated from deprecated `NSUserNotification` to `UNUserNotificationCenter`
+  - Proper permission handling with user consent
+  - Notifications display with banner and sound, including when app is in foreground
+  - Permission state checked before sending notifications
+
+### Improved
+- **Server Lifecycle Management** - Enhanced reliability and async handling
+  - Dedicated process queue for serialized server operations
+  - Graceful shutdown with timeout and force-kill fallback
+  - Readiness check after startup to verify server is operational
+  - Async `stop()` method with optional completion callback
+
+- **Service Disconnect Flow** - Streamlined and more reliable
+  - Generic `performDisconnect()` method eliminates code duplication
+  - Automatic server restart after credential removal
+  - Better error messages for missing credentials
+
+- **Log Buffer Performance** - Replaced array with O(1) ring buffer
+  - Fixed-size circular buffer maintains constant memory footprint
+  - Optimal for 1000-line log history
+
+### Fixed
+- **Menu Bar Icons** - More consistent sizing and reliable fallbacks to system icons
+- Improved status updates and icon changes reflecting server state accurately
+
+## [1.0.2] - 2025-10-06
+
+### Fixed
+- **Orphaned Process Cleanup** - App now automatically kills any orphaned server processes on startup
+  - Prevents "port already in use" errors after app crashes
+  - Detects and logs PIDs of orphaned processes before cleanup
+  - Ensures clean server restart after unexpected app termination
+
+## [1.0.1] - 2025-10-06
+
+### Fixed
+- Service icons (Codex and Claude Code) now display correctly in Settings view
+- All resource paths corrected to work with bundled app structure
+
+### Documentation
+- Added Apple Silicon (M1/M2/M3/M4) requirement to README and installation guide
+- Clarified that Intel Macs are not supported
+
+## [1.0.0] - 2025-10-05
+
+Initial release of VibeProxy - a native macOS menu bar application for managing CLIProxyAPI.
+
+### Features
+
+- **Native macOS Experience** - Clean SwiftUI interface with menu bar integration
+- **One-Click Server Management** - Start/stop the proxy server from your menu bar
+- **OAuth Integration** - Authenticate with Claude Code and Codex directly from the app
+- **Real-Time Status** - Live connection status and automatic credential detection
+- **Auto-Updates** - Monitors auth files and updates UI in real-time
+- **Beautiful Icons** - Custom icons with dark mode support
+- **Self-Contained** - Everything bundled inside the .app (server binary, config, static files)
+- **Launch at Login** - Optional auto-start on macOS login
+- **Factory AI Integration** - Easy setup guide for Factory Droids
+
+### Technical
+
+- Built on [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)
+- Code signed with Apple Developer ID
+- Notarized for seamless installation
+- Automated version injection from git tags
+- Automated GitHub Actions release workflow
+
+### Requirements
+
+- macOS 13.0 (Ventura) or later
+- Apple Silicon (M1/M2/M3/M4) - Intel Macs are not supported
+
+---
+
+## Future Releases
+
+All future changes will be documented here before release.
+
+---
+
+[1.8.316]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.316
+[1.8.315]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.315
+[1.8.314]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.314
+[1.8.313]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.313
+[1.8.312]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.312
+[1.8.311]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.311
+[1.8.310]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.310
+[1.8.309]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.309
+[1.8.308]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.308
+[1.8.307]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.307
+[1.8.306]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.306
+[1.8.305]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.305
+[1.8.304]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.304
+[1.8.303]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.303
+[1.8.302]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.302
+[1.8.301]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.301
+[1.8.300]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.300
+[1.8.299]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.299
+[1.8.298]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.298
+[1.8.297]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.297
+[1.8.296]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.296
+[1.8.295]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.295
+[1.8.294]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.294
+[1.8.293]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.293
+[1.8.292]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.292
+[1.8.291]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.291
+[1.8.290]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.290
+[1.8.289]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.289
+[1.8.288]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.288
+[1.8.287]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.287
+[1.8.286]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.286
+[1.8.285]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.285
+[1.8.284]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.284
+[1.8.283]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.283
+[1.8.282]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.282
+[1.8.281]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.281
+[1.8.280]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.280
+[1.8.279]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.279
+[1.8.278]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.278
+[1.8.277]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.277
+[1.8.276]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.276
+[1.8.275]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.275
+[1.8.274]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.274
+[1.8.273]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.273
+[1.8.272]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.272
+[1.8.271]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.271
+[1.8.270]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.270
+[1.8.269]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.269
+[1.8.268]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.268
+[1.8.267]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.267
+[1.8.266]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.266
+[1.8.265]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.265
+[1.8.264]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.264
+[1.8.263]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.263
+[1.8.262]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.262
+[1.8.261]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.261
+[1.8.260]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.260
+[1.8.259]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.259
+[1.8.258]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.258
+[1.8.257]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.257
+[1.8.256]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.256
+[1.8.255]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.255
+[1.8.254]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.254
+[1.8.253]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.253
+[1.8.252]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.252
+[1.8.251]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.251
+[1.8.250]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.250
+[1.8.249]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.249
+[1.8.248]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.248
+[1.8.247]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.247
+[1.8.246]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.246
+[1.8.245]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.245
+[1.8.244]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.244
+[1.8.243]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.243
+[1.8.242]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.242
+[1.8.241]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.241
+[1.8.240]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.240
+[1.8.239]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.239
+[1.8.238]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.238
+[1.8.237]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.237
+[1.8.236]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.236
+[1.8.235]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.235
+[1.8.234]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.234
+[1.8.233]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.233
+[1.8.232]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.232
+[1.8.231]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.231
+[1.8.230]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.230
+[1.8.229]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.229
+[1.8.228]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.228
+[1.8.227]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.227
+[1.8.226]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.226
+[1.8.225]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.225
+[1.8.224]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.224
+[1.8.223]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.223
+[1.8.222]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.222
+[1.8.221]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.221
+[1.8.220]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.220
+[1.8.219]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.219
+[1.8.218]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.218
+[1.8.217]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.217
+[1.8.216]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.216
+[1.8.215]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.215
+[1.8.214]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.214
+[1.8.213]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.213
+[1.8.212]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.212
+[1.8.211]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.211
+[1.8.210]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.210
+[1.8.209]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.209
+[1.8.208]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.208
+[1.8.207]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.207
+[1.8.206]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.206
+[1.8.205]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.205
+[1.8.204]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.204
+[1.8.203]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.203
+[1.8.202]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.202
+[1.8.201]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.201
+[1.8.200]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.200
+[1.8.199]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.199
+[1.8.198]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.198
+[1.8.197]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.197
+[1.8.196]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.196
+[1.8.195]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.195
+[1.8.194]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.194
+[1.8.193]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.193
+[1.8.192]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.192
+[1.8.191]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.191
+[1.8.190]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.190
+[1.8.189]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.189
+[1.8.188]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.188
+[1.8.187]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.187
+[1.8.186]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.186
+[1.8.185]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.185
+[1.8.184]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.184
+[1.8.183]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.183
+[1.8.182]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.182
+[1.8.181]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.181
+[1.8.180]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.180
+[1.8.179]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.179
+[1.8.178]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.178
+[1.8.177]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.177
+[1.8.176]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.176
+[1.8.175]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.175
+[1.8.174]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.174
+[1.8.173]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.173
+[1.8.172]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.172
+[1.8.171]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.171
+[1.8.170]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.170
+[1.8.169]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.169
+[1.8.168]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.168
+[1.8.167]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.167
+[1.8.166]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.166
+[1.8.165]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.165
+[1.8.164]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.164
+[1.8.163]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.163
+[1.8.162]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.162
+[1.8.161]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.161
+[1.8.160]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.160
+[1.8.159]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.159
+[1.8.158]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.158
+[1.8.157]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.157
+[1.8.156]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.156
+[1.8.155]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.155
+[1.8.154]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.154
+[1.8.153]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.153
+[1.8.152]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.152
+[1.8.151]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.151
+[1.8.150]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.150
+[1.8.149]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.149
+[1.8.148]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.148
+[1.8.147]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.147
+[1.8.146]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.146
+[1.8.145]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.145
+[1.8.144]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.144
+[1.8.143]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.143
+[1.8.142]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.142
+[1.8.141]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.141
+[1.8.140]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.140
+[1.8.139]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.139
+[1.8.138]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.138
+[1.8.137]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.137
+[1.8.136]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.136
+[1.8.135]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.135
+[1.8.134]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.134
+[1.8.133]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.133
+[1.8.132]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.132
+[1.8.131]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.131
+[1.8.130]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.130
+[1.8.129]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.129
+[1.8.128]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.128
+[1.8.127]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.127
+[1.8.126]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.126
+[1.8.125]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.125
+[1.8.124]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.124
+[1.8.123]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.123
+[1.8.122]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.122
+[1.8.121]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.121
+[1.8.120]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.120
+[1.8.119]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.119
+[1.8.118]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.118
+[1.8.117]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.117
+[1.8.116]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.116
+[1.8.115]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.115
+[1.8.114]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.114
+[1.8.113]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.113
+[1.8.112]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.112
+[1.8.111]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.111
+[1.8.110]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.110
+[1.8.109]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.109
+[1.8.108]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.108
+[1.8.107]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.107
+[1.8.106]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.106
+[1.8.105]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.105
+[1.8.104]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.104
+[1.8.103]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.103
+[1.8.102]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.102
+[1.8.101]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.101
+[1.8.100]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.100
+[1.8.99]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.99
+[1.8.98]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.98
+[1.8.97]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.97
+[1.8.96]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.96
+[1.8.95]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.95
+[1.8.94]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.94
+[1.8.93]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.93
+[1.8.92]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.92
+[1.8.91]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.91
+[1.8.90]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.90
+[1.8.89]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.89
+[1.8.88]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.88
+[1.8.87]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.87
+[1.8.86]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.86
+[1.8.85]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.85
+[1.8.84]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.84
+[1.8.83]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.83
+[1.8.82]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.82
+[1.8.81]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.81
+[1.8.80]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.80
+[1.8.79]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.79
+[1.8.78]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.78
+[1.8.77]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.77
+[1.8.76]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.76
+[1.8.74]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.74
+[1.8.73]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.73
+[1.8.72]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.72
+[1.8.71]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.71
+[1.8.70]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.70
+[1.8.69]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.69
+[1.8.67]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.67
+[1.8.66]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.66
+[1.8.65]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.65
+[1.8.64]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.64
+[1.8.63]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.63
+[1.8.62]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.62
+[1.8.61]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.61
+[1.8.60]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.60
+[1.8.59]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.59
+[1.8.51]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.51
+[1.8.50]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.50
+[1.8.49]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.49
+[1.8.47]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.47
+[1.8.46]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.46
+[1.8.45]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.45
+[1.8.44]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.44
+[1.8.43]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.43
+[1.8.42]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.42
+[1.8.41]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.41
+[1.8.39]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.39
+[1.8.38]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.38
+[1.8.37]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.37
+[1.8.36]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.36
+[1.8.35]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.35
+[1.8.34]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.34
+[1.8.33]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.33
+[1.8.32]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.32
+[1.8.31]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.31
+[1.8.30]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.30
+[1.8.29]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.29
+[1.8.28]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.28
+[1.8.27]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.27
+[1.8.26]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.26
+[1.8.25]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.25
+[1.8.24]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.24
+[1.8.23]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.23
+[1.8.22]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.22
+[1.8.21]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.21
+[1.8.20]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.20
+[1.8.19]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.19
+[1.8.18]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.18
+[1.8.17]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.17
+[1.8.16]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.16
+[1.8.15]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.15
+[1.8.14]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.14
+[1.8.13]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.13
+[1.8.12]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.12
+[1.8.11]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.11
+[1.8.10]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.10
+[1.8.8]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.8
+[1.8.7]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.7
+[1.8.6]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.6
+[1.8.5]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.5
+[1.8.4]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.4
+[1.8.3]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.3
+[1.8.2]: https://github.com/automazeio/vibeproxy/releases/tag/v1.8.2
+[1.7.1]: https://github.com/automazeio/vibeproxy/releases/tag/v1.7.1
+[1.6.6]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.6
+[1.6.5]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.5
+[1.6.4]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.4
+[1.6.3]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.3
+[1.6.2]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.2
+[1.6.1]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.1
+[1.6.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.6.0
+[1.5.3] - [1.5.7]: https://github.com/automazeio/vibeproxy/releases/tag/v1.5.7
+[1.5.2]: https://github.com/automazeio/vibeproxy/releases/tag/v1.5.2
+[1.5.1]: https://github.com/automazeio/vibeproxy/releases/tag/v1.5.1
+[1.5.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.5.0
+[1.4.1]: https://github.com/automazeio/vibeproxy/releases/tag/v1.4.1
+[1.4.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.4.0
+[1.3.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.3.0
+[1.2.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.2.0
+[1.1.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.1.0
+[1.0.9]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.9
+[1.0.8]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.8
+[1.0.7]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.7
+[1.0.6]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.6
+[1.0.5]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.5
+[1.0.4]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.4
+[1.0.3]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.3
+[1.0.2]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.2
+[1.0.1]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.1
+[1.0.0]: https://github.com/automazeio/vibeproxy/releases/tag/v1.0.0

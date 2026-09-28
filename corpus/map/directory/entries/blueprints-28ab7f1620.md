@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: sublayerapp
 - License: MIT
 - Language: Ruby
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [sublayerapp/blueprints](../../repos/sublayerapp/blueprints.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Blueprints emerged from the Sublayer team's observation that LLM code generation drifts from a team's idioms unless it is grounded in that team's actual code. The system is a self-hosted Rails app whe
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Stores chunks of code (blueprints) and uses them as a base for LLMs (GPT-4/Gemini) to generate new code based on patterns in your codebase; editor plugins for Vim, VSCode, IntelliJ, SublimeText
+
+(captured site page body (agents/blueprints.md), not a verified repo-code finding)
+Blueprints emerged from the Sublayer team's observation that LLM code generation drifts from a team's idioms unless it is grounded in that team's actual code. The system is a self-hosted Rails app where developers save code chunks as named, described 'blueprints'; each save triggers GPT-4 to name and describe the chunk, and its vector embedding lands in Postgres via pgvector. Later, from Vim, VS Code, IntelliJ, or Sublime Text, a developer highlights code, and the plugin finds the most similar blueprint, sends its code and description to GPT-4 or Gemini, and splices the generated variant back over the selection. This turns a codebase's own patterns into reusable generation context, predating the now-common embedding-backed codebase retrieval in coding agents. Development has been dormant since 2024, with 61 stars and no recent commits, but it remains a readable example of retrieval-grounded code generation.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/blueprints.md)

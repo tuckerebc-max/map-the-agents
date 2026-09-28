@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: mac999
@@ -22,6 +22,8 @@ Repository map entry: [mac999/bim_llm_code_agent](../../repos/mac999/bim_llm_cod
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-BIM (Building Information Modeling) files in the IFC format are large, semantically dense structures that general-purpose coding tools handle poorly, so this research agent targets the AEC industry sp
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source BIM (Building Information Modeling) LLM Code Agent tailored for the AEC (Architecture, Engineering, Construction) industry, bridging complex BIM/IFC file analysis and LLM-driven code generation/reasoning via Vector and Graph RAG. Acts as an interactive knowledge expert for BIM professionals to automate data extraction and visualization.
+
+(captured site page body (agents/bim-llm-code-agent.md), not a verified repo-code finding)
+BIM (Building Information Modeling) files in the IFC format are large, semantically dense structures that general-purpose coding tools handle poorly, so this research agent targets the AEC industry specifically. It answers natural-language questions about building models by generating and running Python code against ifcopenshell, supported by a LangChain multi-agent system with memory layers, FAISS vector stores, and a code knowledge base accessed through both Vector RAG and Graph RAG. It runs OpenAI models alongside local Ollama models (codegemma, qwen2.5-coder, llama3, llama3), and a Streamlit web UI makes it approachable for AEC professionals who do not write code. Outputs include extracted data tables and 2D/3D Plotly visualizations. The project is a research artifact tied to published academic work, actively iterated by its author with an English/Korean bilingual README, and used by BIM researchers and AEC practitioners exploring LLM-driven IFC analysis.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/bim-llm-code-agent.md)

@@ -1,9 +1,9 @@
 # autoresearch-factory/agon
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 594fa079fd35 @ e0afbc882b3308ac
+Latest snapshot: commit c21e6c8ef558 @ ac1579626cd37718
 
 ## Summary (orientation draft, not independently verified)
 

@@ -1,9 +1,9 @@
 # automazeio/vibeproxy
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 083c13220691 @ 3fe5e881ed22f24d
+Latest snapshot: commit a096647a1cc5 @ 8b7430bc7a36bad7
 
 ## Summary (orientation draft, not independently verified)
 

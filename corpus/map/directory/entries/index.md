@@ -205,30 +205,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Bernstein (`bernstein`)](bernstein-2bf5a223d6.md) -- published+backing+pages
 - [betool - AI Code Assistant (`betool-ai-code-assistant`)](betool-ai-code-assistant-69b488a0e7.md) -- published+backing+pages
 - [Better Agent (`better-agent`)](better-agent-c1b96ad096.md) -- published+backing+pages
-- [.better-coding-agents (`better-coding-agents`)](better-coding-agents-f3a7853494.md) -- backing-only
-- [BHIL-AI-First-Development-Toolkit (`bhil-ai-first-development-toolkit`)](bhil-ai-first-development-toolkit-c36869d11a.md) -- backing-only
-- [BIM_LLM_code_agent (`bim-llm-code-agent`)](bim-llm-code-agent-6d77be26f5.md) -- published+backing
-- [Binharic (`binharic`)](binharic-43389462d4.md) -- published+backing
-- [biscuit (`biscuit`)](biscuit-660f2dd5a2.md) -- published+backing
-- [Bismuth (`bismuth`)](bismuth-ed23167d44.md) -- published+backing
-- [BitFun (`bitfun`)](bitfun-c081de822c.md) -- published+backing
-- [Bito (`bito`)](bito-200ae7adee.md) -- backing-only
-- [Bits AI (`bits-ai`)](bits-ai-591724f461.md) -- published+backing
-- [BLACKBOX AI (`blackbox-ai`)](blackbox-ai-430d5ae7c2.md) -- published+backing
-- [BLACKBOX.AI (`blackboxai`)](blackboxai-132cb114c8.md) -- backing-only
-- [blade-code (`blade-code`)](blade-code-bc3864d275.md) -- published+backing
-- [Blinky (`blinky`)](blinky-90ada512bb.md) -- published+backing
-- [Blitzy (`blitzy`)](blitzy-15c785fe4b.md) -- published+backing
-- [Blueprints (`blueprints`)](blueprints-28ab7f1620.md) -- backing-only
-- [BMAD-METHOD (`bmad-method`)](bmad-method-40a1d375df.md) -- backing-only
-- [Bolt.new (`boltnew`)](boltnew-a43d82626c.md) -- published+backing
-- [Breakaway Agent (`breakaway-agent`)](breakaway-agent-ea58f4190f.md) -- published-only
-- [Brokies-AI-Foundry (`brokies-ai-foundry`)](brokies-ai-foundry-4481233071.md) -- backing-only
-- [brood-box (`brood-box`)](brood-box-ec4f8f3320.md) -- published+backing
-- [browser-operator-core (`browser-operator-core`)](browser-operator-core-f47c07a526.md) -- published+backing
-- [Browserbase (`browserbase`)](browserbase-9d800b766e.md) -- backing-only
-- [Bubble (`bubble`)](bubble-df4ac41625.md) -- backing-only
-- [build-your-own-coding-agent (`build-your-own-coding-agent`)](build-your-own-coding-agent-6637f1dd06.md) -- backing-only
+- [.better-coding-agents (`better-coding-agents`)](better-coding-agents-f3a7853494.md) -- backing+pages
+- [BHIL-AI-First-Development-Toolkit (`bhil-ai-first-development-toolkit`)](bhil-ai-first-development-toolkit-c36869d11a.md) -- backing+pages
+- [BIM_LLM_code_agent (`bim-llm-code-agent`)](bim-llm-code-agent-6d77be26f5.md) -- published+backing+pages
+- [Binary RE (`binary-re`)](binary-re-0ea75eaa69.md) -- pages-only
+- [Binharic (`binharic`)](binharic-43389462d4.md) -- published+backing+pages
+- [biscuit (`biscuit`)](biscuit-660f2dd5a2.md) -- published+backing+pages
+- [Bismuth (`bismuth`)](bismuth-ed23167d44.md) -- published+backing+pages
+- [BitFun (`bitfun`)](bitfun-c081de822c.md) -- published+backing+pages
+- [Bito (`bito`)](bito-200ae7adee.md) -- backing+pages
+- [Bits AI (`bits-ai`)](bits-ai-591724f461.md) -- published+backing+pages
+- [BLACKBOX AI (`blackbox-ai`)](blackbox-ai-430d5ae7c2.md) -- published+backing+pages
+- [BLACKBOX.AI (`blackboxai`)](blackboxai-132cb114c8.md) -- backing+pages
+- [blade-code (`blade-code`)](blade-code-bc3864d275.md) -- published+backing+pages
+- [Blinky (`blinky`)](blinky-90ada512bb.md) -- published+backing+pages
+- [Blitzy (`blitzy`)](blitzy-15c785fe4b.md) -- published+backing+pages
+- [Blueprints (`blueprints`)](blueprints-28ab7f1620.md) -- backing+pages
+- [BMAD-METHOD (`bmad-method`)](bmad-method-40a1d375df.md) -- backing+pages
+- [Bolt.new (`boltnew`)](boltnew-a43d82626c.md) -- published+backing+pages
+- [Breakaway Agent (`breakaway-agent`)](breakaway-agent-ea58f4190f.md) -- published+pages
+- [Brokies-AI-Foundry (`brokies-ai-foundry`)](brokies-ai-foundry-4481233071.md) -- backing+pages
+- [brood-box (`brood-box`)](brood-box-ec4f8f3320.md) -- published+backing+pages
+- [browser-operator-core (`browser-operator-core`)](browser-operator-core-f47c07a526.md) -- published+backing+pages
+- [Browserbase (`browserbase`)](browserbase-9d800b766e.md) -- backing+pages
+- [Bubble (`bubble`)](bubble-df4ac41625.md) -- backing+pages
+- [build-your-own-coding-agent (`build-your-own-coding-agent`)](build-your-own-coding-agent-6637f1dd06.md) -- backing+pages
 - [Builder.io Fusion (`builderio-fusion`)](builderio-fusion-5052f6978c.md) -- published+backing
 - [building-intelligent-apps-with-anaconda (`building-intelligent-apps-with-anaconda`)](building-intelligent-apps-with-anaconda-365c76c0dd.md) -- backing-only
 - [buildware-ai (`buildware-ai`)](buildware-ai-ffc938caee.md) -- published+backing
@@ -332,4 +333,3 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [codedna (`codedna`)](codedna-70c4e6c780.md) -- backing-only
 - [codeflash (`codeflash`)](codeflash-f7c640a5d8.md) -- published+backing
 - [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing-only
-- [CodeFuse-ChatBot (`codefuse-chatbot`)](codefuse-chatbot-6c64cc0f1e.md) -- published+backing

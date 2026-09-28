@@ -22,6 +22,7 @@
 - [atomic](../entries/atomic-fd43322a4d.md)
 - [bernstein](../entries/bernstein-2bf5a223d6.md)
 - [bhil-ai-first-development-toolkit](../entries/bhil-ai-first-development-toolkit-c36869d11a.md)
+- [binary-re](../entries/binary-re-0ea75eaa69.md)
 - [bitfun](../entries/bitfun-c081de822c.md)
 - [cascadeflow](../entries/cascadeflow-3a559be66e.md)
 - [caveman-code](../entries/caveman-code-0530562837.md)

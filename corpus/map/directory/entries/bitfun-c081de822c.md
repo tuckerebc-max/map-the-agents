@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: GCWing
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [gcwing/bitfun](https://github.com
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-BitFun pairs a Rust agent runtime with a Tauri desktop app, positioning itself around the idea that a chat transcript is the wrong interface for many agent tasks. When the agent builds a chart, board,
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Combines a high-performance Rust agent runtime with a polished desktop app featuring Agentic Mini Apps (each task gets its own dedicated UI bound to live conversation state), self-hosted zero-knowledge multi-device relay, 98.67% KV cache hit rate via byte-stable prompt assembly, and flashgrep for 36x faster repo search.
+
+(captured site page body (agents/bitfun.md), not a verified repo-code finding)
+BitFun pairs a Rust agent runtime with a Tauri desktop app, positioning itself around the idea that a chat transcript is the wrong interface for many agent tasks. When the agent builds a chart, board, form, or panel, that interface persists as a mini app bound to the conversation's live state, and a public gallery hosts shareable examples. The runtime is tuned for long-horizon work: byte-stable prompt assembly keeps KV-cache hit rates at 98.67% on SWE-Bench-Pro runs, and a resident flashgrep index speeds repository search roughly 36x on Chromium-scale codebases. Customization runs through four tiers — custom agents, MCP/skills/hooks, mini apps, and source-level changes — with Codex-compatible hooks so existing scripts work unmodified. Multi-device use runs through a self-hosted, zero-knowledge relay (Argon2id and AES-GCM client-side key derivation), keeping sessions off vendor infrastructure. The project is MIT-licensed, spare-time research rather than a commercial product, and actively developed with 3,400+ commits.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/bitfun.md)

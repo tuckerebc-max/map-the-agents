@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kaifcoder/stan](../repos/kaifcoder/stan.md) [coverage: complete]
-- [kenn-io/agentsview](../repos/kenn-io/agentsview.md) [coverage: partial]
-- [kenn-io/kata](../repos/kenn-io/kata.md) [coverage: partial]
-- [kennethleungty/azure-ai-engineer-associate-notes](../repos/kennethleungty/azure-ai-engineer-associate-notes.md) [coverage: complete]
-- [khanzzirfan/testai-agent](../repos/khanzzirfan/testai-agent.md) [coverage: partial]
 - [kilo-org/kilocode](../repos/kilo-org/kilocode.md) [coverage: partial]
 - [kimi-k2-7/kimi-k2.7](../repos/kimi-k2-7/kimi-k2.7.md) [coverage: complete]
 - [kingbootoshi/rgr](../repos/kingbootoshi/rgr.md) [coverage: complete]
@@ -439,3 +434,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [urbint/cortex](../repos/urbint/cortex.md) [coverage: complete]
 - [urigo/graphql-cli](../repos/urigo/graphql-cli.md) [coverage: partial]
 - [usagi-org/ai-code-review-helper](../repos/usagi-org/ai-code-review-helper.md) [coverage: complete]
+- [valuecell-ai/valuecell](../repos/valuecell-ai/valuecell.md) [coverage: partial]
+- [varie-ai/workstation](../repos/varie-ai/workstation.md) [coverage: complete]
+- [vasihemanth/tokentelemetry](../repos/vasihemanth/tokentelemetry.md) [coverage: partial]
+- [vectorize-io/hindsight](../repos/vectorize-io/hindsight.md) [coverage: complete]
+- [vercel-labs/deepsec](../repos/vercel-labs/deepsec.md) [coverage: partial]
