@@ -12,6 +12,7 @@
 - [atmosphere](../entries/atmosphere-bfd5a8ed73.md)
 - [autogen](../entries/autogen-378d204807.md)
 - [bazed](../entries/bazed-55d6d197d5.md)
+- [cersei](../entries/cersei-557ae9fcd0.md)
 - [crewai](../entries/crewai-57090017a8.md)
 - [dippin-lang](../entries/dippin-lang-f651643883.md)
 - [langgraph](../entries/langgraph-ad3fc2c957.md)

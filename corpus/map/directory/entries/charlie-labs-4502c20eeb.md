@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Charlie Labs
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Charlie Labs builds Charlie, an AI engineer platform organized around 'daemons': persistent agents that watch repositories and proactively perform recurring engineering work without being prompted eac
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Charlie: GitHub-native AI engineer for issues-to-PRs
+
+(captured site page body (agents/charlie-labs.md), not a verified repo-code finding)
+Charlie Labs builds Charlie, an AI engineer platform organized around 'daemons': persistent agents that watch repositories and proactively perform recurring engineering work without being prompted each time. A daemon is declared in a markdown file in the repository with frontmatter specifying its watch triggers (events like a merged PR or a new Linear issue), scheduled routines, and deny rules that bound what it may do — never merging PRs, never overriding human decisions — alongside markdown policy sections defining its role. This addresses a gap between one-shot AI coding tools and human maintainer attention: dependency upgrades, PR hygiene, issue triage, and changelog upkeep happen continuously without a developer initiating each task. Daemons wake on events (new issues, merges, security advisories) and run scheduled sweeps, opening reviewable PRs and building compounding organizational memory. Engineering teams adopt Charlie by installing its GitHub integration and committing daemon definitions to their repos, with pricing based on shared team token usage.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/charlie-labs.md)

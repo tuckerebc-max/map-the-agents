@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: zhangliang605
@@ -22,6 +22,8 @@ Repository map entry: [zhangliang605/carrycode](../../repos/zhangliang605/carryc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-carrycode is a terminal-first coding agent built in Rust with a TypeScript layer, aimed at developers who live in the shell and want agent capability without leaving it. It renders a rich TUI with the
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-native AI coding agent connecting to 17+ LLM providers with beautiful terminal UI (themes, syntax highlighting, code diff previews, Mermaid diagram rendering). Supports MCP protocol (via /mcp), VSCode extension plugin, AGENTS.md project instructions, LSP diagnostics integration, smart context compaction, Skills system compatible with Claude Code, SkillHub integration (Tencent), approval modes for autonomy control. Dual Build and Plan modes.
+
+(captured site page body (agents/carrycode.md), not a verified repo-code finding)
+carrycode is a terminal-first coding agent built in Rust with a TypeScript layer, aimed at developers who live in the shell and want agent capability without leaving it. It renders a rich TUI with themes, syntax-highlighted diffs, and Mermaid diagrams rendered as ASCII, and supports MCP servers, a skills system compatible with Claude Code, AGENTS.md project rules, LSP diagnostics, and context compaction for long sessions. Agent autonomy is governed through explicit modes — a read-only Plan mode for analysis and a Build mode gated by approval levels — and a single-shot CLI mode supports scripting. Model access spans 17+ providers (OpenAI, Anthropic, Gemini, DeepSeek, Kimi, GLM, MiniMax, Qwen, xAI, SiliconFlow, Ollama, vLLM, and OpenAI-compatible endpoints). The project is source-available under a custom license, installs via curl or a VS Code extension, and is actively maintained with frequent releases; a VS Code extension extends the same engine into the editor.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/carrycode.md)

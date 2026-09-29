@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: nickShengY
@@ -22,6 +22,8 @@ Repository map entry: [nickshengy/chamberlain_multimodal_multiagent_chatbot](../
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Chamberlain is a multimodal, voice-driven personal assistant built as a multi-agent system: a RoBERTa-based router listens to natural speech and dispatches requests to one of fourteen specialized agen
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Multimodal multi-agent voice-controlled personal assistant for home use. Auto-detects chat mode without user selection. Combines speech recognition, OCR, vision (selfie analysis), and LLMs. Manages fridge inventory, finances, fashion, IoT, coding tasks, and more via natural voice interaction. 14 specialized mode agents.
+
+(captured site page body (agents/chamberlain-multimodal-multiagent-chatbot.md), not a verified repo-code finding)
+Chamberlain is a multimodal, voice-driven personal assistant built as a multi-agent system: a RoBERTa-based router listens to natural speech and dispatches requests to one of fourteen specialized agents covering areas like grocery management, personal finance, fashion advice, IoT device control, flight search, and coding help, using GPT-4 and GPT-4V through LangChain. The system handles speech recognition, text-to-speech, OCR, and selfie-based vision analysis, with autonomous mode detection so the user never picks a mode manually. Its coding mode provides software development assistance — describing an objective and receiving programmatic suggestions — but coding is one mode among many in a household-assistant design, not the system's focus. The project was a small personal project (8 commits, 3 stars) last updated in December 2023 and appears abandoned, released under a CC0 public-domain license. It suits hobbyists exploring multimodal agent routing rather than developers seeking a coding tool.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/chamberlain-multimodal-multiagent-chatbot.md)

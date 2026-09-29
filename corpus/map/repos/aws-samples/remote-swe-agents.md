@@ -1,9 +1,9 @@
 # aws-samples/remote-swe-agents
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3a34a9b4d0da @ a5513177dfea5d49
+Latest snapshot: commit fa1d66744f05 @ 99f6f37a983c1d6b
 
 ## Summary (orientation draft, not independently verified)
 

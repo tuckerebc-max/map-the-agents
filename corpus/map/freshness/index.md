@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (940)
+## current (938)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -85,8 +85,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [arphanetx/monocle](../repos/arphanetx/monocle.md) [coverage: complete]
 - [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) [coverage: complete]
 - [aws-samples/amazon-mwaa-examples](../repos/aws-samples/amazon-mwaa-examples.md) [coverage: complete]
-- [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
-- [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
 - [aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit](../repos/aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md) [coverage: complete]
 - [aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws](../repos/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.md) [coverage: complete]
 - [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kenn-io/kata](../repos/kenn-io/kata.md) [coverage: partial]
 - [kennethleungty/azure-ai-engineer-associate-notes](../repos/kennethleungty/azure-ai-engineer-associate-notes.md) [coverage: complete]
 - [khanzzirfan/testai-agent](../repos/khanzzirfan/testai-agent.md) [coverage: partial]
+- [kilo-org/kilocode](../repos/kilo-org/kilocode.md) [coverage: partial]
+- [kimi-k2-7/kimi-k2.7](../repos/kimi-k2-7/kimi-k2.7.md) [coverage: complete]

@@ -1,0 +1,474 @@
+# Remote SWE Agents
+
+English | [日本語](README_ja.md)
+
+This is an example implementation of a fully autonomous software development AI agent. The agent works in its own dedicated development environment, freeing you from being tied to your laptop!
+
+**TL;DR:** This is a self-hosted, fully open-source solution on AWS that offers a similar experience to cloud-based asynchronous coding agents, such as Devin, OpenAI Codex, or Google Jules.
+
+<div align="center">
+  <img src="docs/imgs/ss-list.png" alt="List sessions" width="45%" style="margin-right: 2%; margin-bottom: 10px;" />
+  <img src="docs/imgs/ss-chat.png" alt="Chat View" width="45%" style="margin-right: 2%;" />
+  <br />
+  <img src="docs/imgs/ss-new.png" alt="New session" width="45%" style="margin-left: 2%; margin-bottom: 10px;" />
+  <img src="docs/imgs/ss-cost.png" alt="Cost View" width="45%" style="margin-left: 2%;" />
+</div>
+
+## Key Features
+
+- **Fully autonomous software development agent** - AI-powered development workflow automation
+- **Web-based management interface** - Modern Next.js webapp for session management and real-time monitoring
+- **Slack App integration** - You can call the agent from Slack.
+- **REST API integration** - RESTful endpoints for programmatic integration
+- **Powered by AWS serverless services** with minimal maintenance costs
+- **No upfront or fixed costs** while you don't use the system
+- **MCP support** through integration with MCP servers
+- **Can work on OSS forked repositories**
+
+## Examples
+
+Some of the agent sessions by Remote SWE agents:
+
+|                                              Example 1                                              |                                                                                                                                    Example 2                                                                                                                                    |                      Example 3                      |                                                           Example 4                                                            |
+| :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+|                                ![example1](./docs/imgs/example1.png)                                |                                                                                                                      ![example2](./docs/imgs/example2.png)                                                                                                                      |        ![example3](./docs/imgs/example3.png)        |                                             ![example4](./docs/imgs/example4.png)                                              |
+| Instruct via GitHub issue. [Resulting PR](https://github.com/aws-samples/remote-swe-agents/pull/17) | single instruction to multiple repos [PR#1](https://github.com/aws-samples/trpc-nextjs-ssr-prisma-lambda/pull/16), [PR#2](https://github.com/aws-samples/prisma-lambda-cdk/pull/37), [PR#3](https://github.com/aws-samples/distributed-load-testing-with-locust-on-ecs/pull/25) | The agent can also input and output images as well. | The agent can speak other languages than English as well. [Resulting PR](https://github.com/tmokmss/deploy-time-build/pull/32) |
+
+### Pull Requests Created by the Remote SWE Agents
+
+You can view all the public pull requests created by the agent [here](https://github.com/search?q=is%3Apr+author%3Aremote-swe-user&type=pullrequests). All of the commits pushed from the GitHub user is written by the agent autonomously.
+
+## Installation Steps
+
+For a simple deployment with minimal configuration, you can use our one-click deployment solution: [AWS Sample One-Click Generative AI Solutions](https://aws-samples.github.io/sample-one-click-generative-ai-solutions/)
+
+### Prerequisites
+
+- Node.js (version 22 or higher)
+- npm (version 9 or higher)
+- AWS CLI
+- AWS IAM profile with appropriate permissions
+- Docker
+
+---
+
+## Quick Start
+
+Get the system running with the web interface.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/aws-samples/remote-swe-agents.git
+cd remote-swe-agents
+```
+
+### 2. Environment Variables Setup
+
+Create a `.env.local` file from the example template in the `cdk` directory:
+
+```bash
+cd cdk
+cp .env.local.example .env.local
+```
+
+> [!IMPORTANT]
+> The `.env.local.example` file is located in the `cdk/` directory. Make sure to copy and edit this file before deployment.
+
+Edit `cdk/.env.local` to configure the following optional settings:
+
+#### Webapp User Creation (Recommended)
+
+You can automatically create an initial webapp user during deployment:
+
+```sh
+INITIAL_WEBAPP_USER_EMAIL=your-email@example.com
+```
+
+When set, a Cognito user will be created during deployment, and a temporary password will be sent to the specified email address.
+
+If you don't set this variable, you can manually create users later through the AWS Cognito Management Console. See [Creating a new user in the AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-create-user-accounts.html#creating-a-new-user-using-the-console).
+
+#### Other Optional Settings
+
+<details>
+<summary>Worker Instance Configuration</summary>
+
+You can configure additional managed policies to be attached to the worker instance role. You can set both AWS Managed policy name and a policy's full ARN:
+
+```sh
+WORKER_ADDITIONAL_POLICIES=AmazonS3ReadOnlyAccess,arn:aws:iam::123456789012:policy/CustomPolicy
+```
+
+</details>
+
+<details>
+<summary>Using Existing VPC</summary>
+
+If you want to use an existing VPC instead of creating a new one, specify the VPC ID:
+
+```sh
+VPC_ID=vpc-12345abcdef
+```
+
+</details>
+
+<details>
+<summary>Bedrock Cross-Region Inference</summary>
+
+Choose the cross-region inference profile region (default: `us`):
+
+```sh
+BEDROCK_CRI_REGION_OVERRIDE=global  # Choose from: global, us, eu, apac, jp, au
+```
+
+> [!NOTE]
+> Some models (e.g. Opus 4.5) require the `global` profile.
+
+</details>
+
+> [!NOTE]
+> We use environment variables here to inject configuration from GitHub Actions variables. If this isn't convenient for you, you can simply hard-code the values in [`bin/cdk.ts`](cdk/bin/cdk.ts).
+
+### 3. Deploy
+
+```bash
+cd cdk && npm ci
+npx cdk bootstrap
+npx cdk deploy --all
+```
+
+Deployment usually takes about 10 minutes.
+
+**That's it!** After deployment, you can access the webapp via the `WebappUrl` shown in the CDK stack output. At this point, you can use the system through the web interface and API — agents can work on tasks, but won't have GitHub access until you configure it in the next step.
+
+---
+
+## Optional: GitHub Integration
+
+To allow agents to interact with GitHub repositories (clone, create PRs, etc.), configure one of the following options.
+
+**Which option should you choose?**
+
+- **Personal Access Token (Option A)**: Simpler setup for personal use. Tied to a single user account.
+- **GitHub App (Option B)**: Recommended for team or organizational use. Provides granular permissions and isn't tied to a personal account.
+
+### Option A: Personal Access Token (PAT)
+
+1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+2. Generate a new token (classic) with appropriate repository access
+   - Required scopes: `repo, workflow, read:org`
+   - The more scopes you permit, the more various tasks agents can perform
+3. Create an SSM Parameter with the generated token string (`$TARGET_ENV` matches your deployment environment, e.g. `Sandbox`):
+   ```bash
+   aws ssm put-parameter \
+      --name /remote-swe/$TARGET_ENV/github/personal-access-token \
+      --value "your-access-token" \
+      --type String
+   ```
+4. Update `cdk/bin/cdk.ts` to include GitHub configuration in your stack props:
+   ```typescript
+   github: {
+     personalAccessTokenParameterName: `/remote-swe/${targetEnv}/github/personal-access-token`,
+   },
+   ```
+
+> [!NOTE]
+> If you want to share the system with multiple developers, it is recommended to create a [machine user account for GitHub](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts#user-accounts) instead of using your own account's PAT, to prevent misuse of personal privileges.
+
+### Option B: GitHub App
+
+1. Go to [GitHub Settings > Developer settings > GitHub Apps](https://github.com/settings/apps)
+2. Create a new GitHub App
+3. Configure permissions and generate a private key
+   - the required permissions: Actions(RW), Issues(RW), Pull requests(RW), Contents(RW)
+4. Create an SSM Parameter for the private key (`$TARGET_ENV` matches your deployment environment):
+   ```bash
+   aws ssm put-parameter \
+      --name /remote-swe/$TARGET_ENV/github/app-private-key \
+      --value "$(cat your-private-key.pem)" \
+      --type String
+   ```
+5. Install the app to a GitHub organization you want to use.
+   - After installing the app, you can find the installation id from the URL (`https://github.com/organizations/<YOUR_ORG>/settings/installations/<INSTALLATION_ID>`)
+6. Set the following environment variables in `cdk/.env.local`:
+   ```sh
+   GITHUB_APP_ID=your-github-app-id
+   GITHUB_INSTALLATION_ID=your-github-installation-id
+   ```
+7. Update `cdk/bin/cdk.ts` to include GitHub configuration in your stack props:
+   ```typescript
+   github: {
+     privateKeyParameterName: `/remote-swe/${targetEnv}/github/app-private-key`,
+     appId: process.env.GITHUB_APP_ID!,
+     installationId: process.env.GITHUB_INSTALLATION_ID!,
+   },
+   ```
+
+> [!NOTE]
+> Currently when using with GitHub App, you can only use repositories under a single organization (i.e. app installation).
+
+### Re-deploy
+
+After configuring GitHub integration, re-deploy:
+
+```bash
+cd cdk && npx cdk deploy --all
+```
+
+---
+
+## Optional: Slack Integration
+
+Enable Slack bot functionality so you can interact with agents directly from Slack.
+
+### Create a Slack App
+
+1. Go to [Slack Apps Dashboard](https://api.slack.com/apps)
+2. Click "Create New App"
+3. Choose "From manifest"
+4. Use the provided Slack app manifest YAML file: [manifest.json](./resources/slack-app-manifest.json)
+   - If your Slack workspace administrator permits granting broader permissions to bots, you can also use [slack-app-manifest-relaxed.json](./resources/slack-app-manifest-relaxed.json). This allows users to converse with the agent in Slack threads without having to mention the bot.
+   - Please replace the endpoint URL (`https://redacted.execute-api.us-east-1.amazonaws.com`) with your actual URL
+   - You can find your actual URL in the CDK deployment outputs as `SlackBoltEndpointUrl` after deploying with Slack enabled
+   - **Note:** You will need to come back and update this URL after the first deployment with Slack enabled
+5. Please make note of the following values:
+   - Signing Secret (found in Basic Information)
+   - Bot Token (found in OAuth & Permissions, after installing to your workspace)
+
+Please also refer to this document for more details: [Create and configure apps with manifests](https://api.slack.com/reference/manifests)
+
+### Create SSM Parameters for Slack
+
+Register the Slack secrets in your AWS account (`$TARGET_ENV` matches your deployment environment):
+
+```bash
+aws ssm put-parameter \
+    --name /remote-swe/$TARGET_ENV/slack/bot-token \
+    --value "your-slack-bot-token" \
+    --type String
+
+aws ssm put-parameter \
+    --name /remote-swe/$TARGET_ENV/slack/signing-secret \
+    --value "your-slack-signing-secret" \
+    --type String
+```
+
+### Update CDK Configuration
+
+Update `cdk/bin/cdk.ts` to include Slack configuration in your stack props:
+
+```typescript
+slack: {
+  botTokenParameterName: `/remote-swe/${targetEnv}/slack/bot-token`,
+  signingSecretParameterName: `/remote-swe/${targetEnv}/slack/signing-secret`,
+},
+```
+
+#### (Optional) Restrict Access from Slack
+
+To control which members in the Slack workspace can access the agents, you can provide a comma-separated list of Slack User IDs in `cdk/.env.local`:
+
+```sh
+SLACK_ADMIN_USER_ID_LIST=U123ABC456,U789XYZ012
+```
+
+> [!NOTE]
+> If you're using a shared (rather than personal) Slack workspace, it is recommended to set `SLACK_ADMIN_USER_ID_LIST` to control agent access. Without this restriction, anyone in the workspace can access the agents and potentially your GitHub content.
+
+> [!NOTE]
+> To grant a user access to the app after deployment, mention the app with an `approve_user` message followed by mentions of the users, e.g., `@remote-swe approve_user @Alice @Bob @Carol`
+
+### Re-deploy
+
+```bash
+cd cdk && npx cdk deploy --all
+```
+
+**Done!** You now have Slack bot functionality in addition to the web interface.
+
+---
+
+## Accessing Your Deployed System
+
+After successful deployment, you can access the Remote SWE Agents system through:
+
+1. **Web Interface**: Visit the webapp URL from your CDK Stack outputs (look for `WebappUrl` in the deployment output)
+   - Access the modern web dashboard for session management
+   - Create and monitor agent sessions in real-time
+   - View cost analytics and system usage
+   - Upload images and manage settings
+
+2. **Slack Interface** (if configured): Simply mention the Slack app and start assigning tasks to the agents
+   - Direct integration with your Slack workspace
+   - Thread-based conversations with agents
+   - Real-time progress updates
+
+3. **API Access**: Use the RESTful API endpoints for programmatic integration
+   - Session creation and management
+   - Automated workflows and CI/CD integration
+   - Custom application development
+
+4. **GitHub Actions Integration** (if GitHub is configured): Integrate with your repositories using GitHub Actions
+   - Automatically trigger agents from GitHub events
+   - Respond to issue comments and assignments
+   - Seamless CI/CD integration
+
+For tips on how to effectively use the agents, refer to the [Useful Tips](#useful-tips) section.
+
+### GitHub Actions Integration
+
+This repository can be used as a GitHub Action to automatically trigger Remote SWE agents from GitHub events like issue comments, assignments, and PR reviews. The GitHub Action uses the Remote SWE API functionality to create and manage agent sessions.
+
+Use `aws-samples/remote-swe-agents` in your workflow and configure your API base URL and key as repository secrets. You can generate API keys from the deployed webapp interface. See [action.yml](./action.yml) for input parameters and [.github/workflows/remote-swe.yml](./.github/workflows/remote-swe.yml) for a complete example workflow.
+
+### Access Control (or Tenant Isolation Model)
+
+This project is currently designed as a single-tenant system, meaning it is intended to be deployed on a per-tenant basis.
+
+Since it follows a completely pay-as-you-go model, the overhead of deploying multiple instances is minimal in terms of infrastructure costs.
+
+To control access for each tenant, you have the following access permission configurations:
+
+1. **Slack App**: You can set the `SLACK_ADMIN_USER_ID_LIST` environment variable in CDK to deny access from non-permitted users. You can then add allowed users using the `approve_user` Slack command.
+2. **Webapp**: Cognito self-sign-up is disabled by default. You can add users from the Cognito management console. Currently, anyone with a Cognito account has equal permissions. Users can configure the system, create new sessions, issue API keys, or view cost analysis from the web UI. Additionally, you can apply IP address restrictions using AWS WAF to further limit access to the web interface.
+3. **REST API**: Anyone who knows the API keys can access it. You should delete keys that are no longer in use. For additional security, you can implement IP address restrictions using AWS WAF, though be aware that this may limit the ability to use the API from public CI/CD environments like GitHub Actions running on public runners, as these use dynamic IP addresses.
+4. **GitHub Actions**: Anyone with write access to the repository (i.e., collaborators) can invoke the action.
+
+## Useful Tips
+
+### Prompting Best Practices
+
+When you start an agent, your instruction should include at least the below content:
+
+1. Which GitHub repository should they see
+2. Describe the feature or bug you want to solve
+3. What file should they check first (file path would be the best, but only keywords can also work)
+
+To simplify the workflow, you can create a GitHub issue in the repository containing the information above, and just give the agent its URL.
+This way the repository is automatically inferred from the URL, and it can also link the new PR to the corresponding issue.
+
+### Global Configuration via Web UI
+
+You can configure global settings for all agents through the deployed web UI. These settings apply to agents started from both the web interface and Slack:
+
+1. **Default Foundation Model**: Set the default foundation model that all new agent sessions will use. See [models.ts](./packages/agent-core/src/schema/model.ts) for the latest supported models.
+
+2. **Common Agent Prompt**: Configure a shared system prompt that will be used by all agents. This is useful for setting organization-wide coding standards, preferred libraries, or specific instructions that should apply to all development tasks.
+
+To access these settings, navigate to the preferences page in your deployed webapp interface.
+
+### Integrating with MCP Servers
+
+As our agent can work as an MCP client, you can easily integrate it with various MCP servers. To configure the integration, you can edit [`mcp.json`](./packages/worker/mcp.json) and run CDK deploy. For example,
+
+```json
+  "mcpServers": {
+    "awslabs.cdk-mcp-server": {
+      "command": "uvx",
+      "args": ["awslabs.cdk-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    }
+  }
+```
+
+All the new agents can now use MCP servers as their tools.
+
+## How it works
+
+This system utilizes a Slack Bolt application to manage user interactions and implement a scalable worker system. Here's the main workflow:
+
+1. **Message Reception and Processing**
+   - When a user sends a message in Slack, it's forwarded to the Slack Bolt application via webhook
+   - API Gateway receives the webhook request and passes it to a Lambda function
+
+2. **Event Management and Message Distribution**
+   - The Lambda function publishes user messages to AppSync Events
+   - Message history is stored in DynamoDB for reference in subsequent processing
+
+3. **Worker System Management**
+   - When a new Slack thread is created, the Worker Manager is notified
+   - The Worker Manager provisions a Worker Unit consisting of an EC2 instance and EBS volume
+   - Each Worker Unit contains an SWE agent responsible for the actual processing
+
+4. **Feedback Loop**
+   - Worker Units subscribe to AppSync Events to receive user messages
+   - Processing results and progress updates are sent back to Slack as replies to the user
+   - Job statuses are managed in DynamoDB
+
+This architecture enables a scalable and reliable messaging processing system. The combination of serverless components (Lambda, API Gateway) and dedicated EC2 instances per worker ensures resource isolation and flexible scalability.
+
+![AWS architecture](./docs/imgs/architecture.png)
+
+### AI Agent Security Best Practices
+
+AI agents provide powerful capabilities but also introduce potential security risks. Here are recommended practices to mitigate these risks:
+
+1. **Isolation of Execution Environment**
+   - Agents run on dedicated VMs, limiting any potential filesystem damage to that environment only
+   - User systems remain unaffected by any agent misbehavior that manipulates its local file system
+
+2. **Principle of Least Privilege**
+   - By default, worker instances are assigned minimal IAM policies (logging, self-termination, S3 read access)
+   - When adding permissions via `WORKER_ADDITIONAL_POLICIES` environment variable, carefully evaluate the risks associated with potential agent misbehavior
+   - Consider the blast radius of permissions and limit them to what is absolutely necessary
+
+3. **Token Security Management**
+   - Agents have access to configured Slack bot tokens and GitHub access tokens
+   - Follow the principle of minimal access permissions when configuring these tokens
+   - For GitHub, consider using dedicated machine users or GitHub Apps with scoped permissions
+   - For Slack, the default configuration (slack-app-manifest.json) uses minimal scopes; exercise caution when expanding these permissions
+
+4. **Network Access Controls**
+   - AI agents may attempt unintended outbound access using tools like `curl` or the `fetch` utility
+   - To mitigate this risk, deploy in a VPC with outbound traffic filtering through proxy servers or firewalls
+   - Use the `VPC_ID` environment variable to import existing VPCs with appropriate security controls
+   - Consider implementing egress filtering to limit which external services agents can communicate with
+
+By implementing these security practices, you can significantly reduce risks while leveraging the benefits of autonomous AI agents.
+
+## Cost
+
+The following table provides a sample cost breakdown for deploying this system in the us-east-1 (N. Virginia) region for one month.
+
+Here we assume you request 100 sessions per month. The monthly cost is proportional to the number of sessions. (e.g. If you only run 20 session/month, multiply it with 20/100.)
+
+| AWS service    | Dimensions                                          | Cost [USD/month] |
+| -------------- | --------------------------------------------------- | ---------------- |
+| EC2            | t3.large, 1 hour/session                            | 8.32             |
+| EBS            | 30 GB/instance, 1 day/instance                      | 8.00             |
+| DynamoDB       | Read: 1000 RRU/session                              | 0.0125           |
+| DynamoDB       | Write: 200 WRU/session                              | 0.0125           |
+| DynamoDB       | Storage: 2 MB/session                               | 0.05             |
+| AppSync Events | Requests: 20 events/session                         | 0.002            |
+| AppSync Events | Connection: 1 hour/session                          | 0.00048          |
+| Lambda         | Requests: 30 invocations/session                    | 0.0006           |
+| Lambda         | Duration: 128MB, 1s/invocation                      | 0.00017          |
+| API Gateway    | Requests: 20 requests/session                       | 0.002            |
+| Bedrock        | Input (cache write): Sonnet 3.7 100k tokens/session | 37.5             |
+| Bedrock        | Input (cache read): Sonnet 3.7 1M tokens/session    | 30.00            |
+| Bedrock        | Output: Sonnet 3.7 20k tokens/session               | 30.00            |
+| TOTAL          |                                                     | 115              |
+
+Additionally, when the system is not in use (i.e., no messages are sent to the agents), the ongoing costs are minimal (~0 USD).
+
+## Clean up
+
+You can clean up all the resources you created by the following commands:
+
+```sh
+npx cdk destroy --force
+```
+
+> [!NOTE]  
+> When executing `cdk deploy`, an EC2 Image Builder pipeline is launched asynchronously. Please wait at least 30 minutes after deployment before destroying the stack. If stack deletion fails, wait about 30 minutes and try `cdk destroy` again.
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.

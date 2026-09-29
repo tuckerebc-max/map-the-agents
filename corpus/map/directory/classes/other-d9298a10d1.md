@@ -102,6 +102,8 @@
 - [building-intelligent-apps-with-anaconda](../entries/building-intelligent-apps-with-anaconda-365c76c0dd.md)
 - [callmd](../entries/callmd-26b586ce00.md)
 - [canva-ai-coding](../entries/canva-ai-coding-41c840f015.md)
+- [canva-code](../entries/canva-code-14f1c66f2a.md)
+- [cartlis](../entries/cartlis-b42ca4efc7.md)
 - [cascadeflow](../entries/cascadeflow-3a559be66e.md)
 - [cavemem](../entries/cavemem-725057beda.md)
 - [chamberlain-multimodal-multiagent-chatbot](../entries/chamberlain-multimodal-multiagent-chatbot-00e974f31b.md)

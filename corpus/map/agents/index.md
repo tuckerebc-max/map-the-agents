@@ -137,8 +137,8 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) -- status=distilled, freshness=stale
 - [avelikiy/great_cto](../repos/avelikiy/great_cto.md) -- status=distilled, freshness=stale
 - [aws-samples/amazon-mwaa-examples](../repos/aws-samples/amazon-mwaa-examples.md) -- status=distilled, freshness=current
-- [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) -- status=distilled, freshness=current
-- [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) -- status=distilled, freshness=current
+- [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) -- status=distilled, freshness=stale
+- [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) -- status=distilled, freshness=stale
 - [aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit](../repos/aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md) -- status=distilled, freshness=current
 - [aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws](../repos/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.md) -- status=distilled, freshness=current
 - [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) -- status=distilled, freshness=current

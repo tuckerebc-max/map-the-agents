@@ -1,9 +1,9 @@
 # aws-samples/sample-multi-agent-orchestration-chat-on-agentcore
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b48bcb476d08 @ c3c4e8e8d4cbc12e
+Latest snapshot: commit 297d9c93ea51 @ a3570be130058f8f
 
 ## Summary (orientation draft, not independently verified)
 

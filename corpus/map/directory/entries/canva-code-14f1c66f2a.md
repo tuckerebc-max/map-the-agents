@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: Canva
 - License: Proprietary
 - Language: unknown
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Canva Code is Canva's AI code-generation feature, part of the Canva AI suite alongside its design, image, and document tools. A user describes an interactive element — a calculator, quiz, timer, or sm
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Canva is a design platform. A distinct 'Canva Code' coding-agent product could not be verified (canva.com returned HTTP 403 during enrichment); fields left null. Canva itself remains active.
+
+(captured site page body (agents/canva-code.md), not a verified repo-code finding)
+Canva Code is Canva's AI code-generation feature, part of the Canva AI suite alongside its design, image, and document tools. A user describes an interactive element — a calculator, quiz, timer, or small game — and Canva produces working HTML, CSS, and JavaScript that runs inside a Canva design, with the output editable through Canva's normal design tools rather than a code editor. The capability is positioned at Canva's mainstream audience (teachers, marketers, small businesses) and is metered through Canva's AI allowance system rather than priced as a developer tool. Direct verification of Canva's site was not possible during research (canva.com returned HTTP 403 to automated fetches), so specifics here rely on Canva's help documentation and third-party coverage. Within this census it qualifies as a generative code feature embedded in a design platform rather than a full agent harness, and it is categorized accordingly.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/canva-code.md)

@@ -230,31 +230,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Browserbase (`browserbase`)](browserbase-9d800b766e.md) -- backing+pages
 - [Bubble (`bubble`)](bubble-df4ac41625.md) -- backing+pages
 - [build-your-own-coding-agent (`build-your-own-coding-agent`)](build-your-own-coding-agent-6637f1dd06.md) -- backing+pages
-- [Builder.io Fusion (`builderio-fusion`)](builderio-fusion-5052f6978c.md) -- published+backing
-- [building-intelligent-apps-with-anaconda (`building-intelligent-apps-with-anaconda`)](building-intelligent-apps-with-anaconda-365c76c0dd.md) -- backing-only
-- [buildware-ai (`buildware-ai`)](buildware-ai-ffc938caee.md) -- published+backing
-- [Bullet (`bullet`)](bullet-ed12eb2000.md) -- published+backing
-- [bumpgen (`bumpgen`)](bumpgen-1776b2cf84.md) -- published+backing
-- [Bwee (`bwee`)](bwee-c9c823001a.md) -- published+backing
-- [CalEx-JavaAI (`calex-javaai`)](calex-javaai-ae41365bce.md) -- published+backing
-- [call.md (`callmd`)](callmd-26b586ce00.md) -- backing-only
-- [Calyx (`calyx`)](calyx-f34d4293c3.md) -- published+backing
-- [camelAI (`camelai`)](camelai-d5e34e992e.md) -- published+backing
-- [Canva AI Coding (`canva-ai-coding`)](canva-ai-coding-41c840f015.md) -- backing-only
-- [Canva Code (`canva-code`)](canva-code-14f1c66f2a.md) -- backing-only
-- [carrycode (`carrycode`)](carrycode-44cf069857.md) -- published+backing
-- [Cartlis (`cartlis`)](cartlis-b42ca4efc7.md) -- backing-only
-- [cascadeflow (`cascadeflow`)](cascadeflow-3a559be66e.md) -- backing-only
-- [Catnip (`catnip`)](catnip-eb1b94cfd6.md) -- published+backing
-- [CatPaw (`catpaw`)](catpaw-9b3f33d40f.md) -- published+backing
-- [caveman-code (`caveman-code`)](caveman-code-0530562837.md) -- published+backing
-- [cavemem (`cavemem`)](cavemem-725057beda.md) -- backing-only
-- [Celebrimbot (`celebrimbot`)](celebrimbot-4637ad2a11.md) -- published+backing
-- [cersei (`cersei`)](cersei-557ae9fcd0.md) -- published+backing
-- [ChainlessChain IDE Bridge (`chainlesschain-ide-bridge`)](chainlesschain-ide-bridge-2bf7e91340.md) -- published+backing
-- [Chamberlain_Multimodal_Multiagent_Chatbot (`chamberlain-multimodal-multiagent-chatbot`)](chamberlain-multimodal-multiagent-chatbot-00e974f31b.md) -- backing-only
-- [Charlie Labs (`charlie-labs`)](charlie-labs-4502c20eeb.md) -- published+backing
-- [ChartGPT (`chartgpt`)](chartgpt-03323b1877.md) -- backing-only
+- [Builder.io Fusion (`builderio-fusion`)](builderio-fusion-5052f6978c.md) -- published+backing+pages
+- [building-intelligent-apps-with-anaconda (`building-intelligent-apps-with-anaconda`)](building-intelligent-apps-with-anaconda-365c76c0dd.md) -- backing+pages
+- [buildware-ai (`buildware-ai`)](buildware-ai-ffc938caee.md) -- published+backing+pages
+- [Bullet (`bullet`)](bullet-ed12eb2000.md) -- published+backing+pages
+- [bumpgen (`bumpgen`)](bumpgen-1776b2cf84.md) -- published+backing+pages
+- [Bwee (`bwee`)](bwee-c9c823001a.md) -- published+backing+pages
+- [CalEx-JavaAI (`calex-javaai`)](calex-javaai-ae41365bce.md) -- published+backing+pages
+- [call.md (`callmd`)](callmd-26b586ce00.md) -- backing+pages
+- [Calyx (`calyx`)](calyx-f34d4293c3.md) -- published+backing+pages
+- [camelAI (`camelai`)](camelai-d5e34e992e.md) -- published+backing+pages
+- [Canva AI Coding (`canva-ai-coding`)](canva-ai-coding-41c840f015.md) -- backing+pages
+- [Canva Code (`canva-code`)](canva-code-14f1c66f2a.md) -- backing+pages
+- [carrycode (`carrycode`)](carrycode-44cf069857.md) -- published+backing+pages
+- [Cartlis (`cartlis`)](cartlis-b42ca4efc7.md) -- backing+pages
+- [cascadeflow (`cascadeflow`)](cascadeflow-3a559be66e.md) -- backing+pages
+- [Catnip (`catnip`)](catnip-eb1b94cfd6.md) -- published+backing+pages
+- [CatPaw (`catpaw`)](catpaw-9b3f33d40f.md) -- published+backing+pages
+- [caveman-code (`caveman-code`)](caveman-code-0530562837.md) -- published+backing+pages
+- [cavemem (`cavemem`)](cavemem-725057beda.md) -- backing+pages
+- [Celebrimbot (`celebrimbot`)](celebrimbot-4637ad2a11.md) -- published+backing+pages
+- [cersei (`cersei`)](cersei-557ae9fcd0.md) -- published+backing+pages
+- [ChainlessChain IDE Bridge (`chainlesschain-ide-bridge`)](chainlesschain-ide-bridge-2bf7e91340.md) -- published+backing+pages
+- [Chamberlain_Multimodal_Multiagent_Chatbot (`chamberlain-multimodal-multiagent-chatbot`)](chamberlain-multimodal-multiagent-chatbot-00e974f31b.md) -- backing+pages
+- [Charlie Labs (`charlie-labs`)](charlie-labs-4502c20eeb.md) -- published+backing+pages
+- [ChartGPT (`chartgpt`)](chartgpt-03323b1877.md) -- backing+pages
 - [ChatDev (`chatdev`)](chatdev-dc8d2c750f.md) -- published+backing
 - [Chaterm (`chaterm`)](chaterm-d6a9b29328.md) -- published+backing
 - [chatgpt-vscode (`chatgpt-vscode`)](chatgpt-vscode-a56a1fe5d5.md) -- backing-only
