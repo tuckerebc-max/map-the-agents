@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: OpenBMB
@@ -22,6 +22,8 @@ Repository map entry: [openbmb/chatdev](../../repos/openbmb/chatdev.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-ChatDev began as a research project from Tsinghua NLP and ModelBest simulating a virtual software company: LLM agents take on roles like CEO, CTO, and programmer, collaborating through a chain-shaped
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A zero-code multi-agent orchestration platform with visual workflow canvas and drag-and-drop agent orchestration; evolved from a 'Virtual Software Company' into a general-purpose platform for data visualization, 3D generation, game development, and deep research.
+
+(captured site page body (agents/chatdev.md), not a verified repo-code finding)
+ChatDev began as a research project from Tsinghua NLP and ModelBest simulating a virtual software company: LLM agents take on roles like CEO, CTO, and programmer, collaborating through a chain-shaped 'ChatChain' topology to move a one-line idea through design, coding, testing, and documentation. The project has since broadened beyond software into a general multi-agent platform, releasing ChatDev 2.0 with a drag-and-drop visual workflow canvas where agents are configured via YAML and composed through a web UI, targeting applications from 3D generation and game development to deep research. Under the hood it evolved from chain topologies to DAG-based multi-agent collaboration networks (MacNet) that scale to thousands of agents, backed by a series of research papers and an active OpenBMB community. Researchers in multi-agent collaboration and developers exploring agent-based software automation are its primary users; it is open source under Apache-2.0, installable via pip or Docker, with an MCP example directory included.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/chatdev.md)

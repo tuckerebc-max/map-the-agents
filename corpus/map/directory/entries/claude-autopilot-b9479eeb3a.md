@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: benbasha
@@ -22,6 +22,8 @@ Repository map entry: [benbasha/claude-autopilot](../../repos/benbasha/claude-au
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Claude Autopilot addresses the operational problem of running long batches of Claude Code tasks unattended: queued work stalls when usage limits reset, the machine sleeps, or the CLI process dies. The
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Automated Claude Code task management with queue processing and auto-resume
+
+(captured site page body (agents/claude-autopilot.md), not a verified repo-code finding)
+Claude Autopilot addresses the operational problem of running long batches of Claude Code tasks unattended: queued work stalls when usage limits reset, the machine sleeps, or the CLI process dies. The extension launches each queued prompt as a sequential Claude Code run, monitors process health, retries failures, detects rate-limit messages, and resumes automatically when the limit window resets, while keeping the machine awake. A local web server with password and QR-code login provides mobile monitoring. Developers use it for overnight batches such as refactoring, migrations, and documentation generation; it requires an existing Claude Code installation and subscription.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claude-autopilot.md)

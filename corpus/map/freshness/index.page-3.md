@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [vibe-stack/ggez](../repos/vibe-stack/ggez.md) [coverage: partial]
-- [vibepod/vibepod-cli](../repos/vibepod/vibepod-cli.md) [coverage: partial]
-- [vibheksoni/verbalcodeai](../repos/vibheksoni/verbalcodeai.md) [coverage: complete]
 - [video-db/call.md](../repos/video-db/call.md.md) [coverage: complete]
 - [vincentkoc/tokenjuice](../repos/vincentkoc/tokenjuice.md) [coverage: partial]
 - [vinhnx/vtcode](../repos/vinhnx/vtcode.md) [coverage: partial]
@@ -90,7 +87,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (51)
+## stale (54)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
 - [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
 - [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
+- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
+- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
+- [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
 
 ## refresh-failed (63)
 

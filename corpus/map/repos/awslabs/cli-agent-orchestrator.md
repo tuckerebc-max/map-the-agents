@@ -1,9 +1,9 @@
 # awslabs/cli-agent-orchestrator
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 948c3d8004fa @ e8d798b8201b64d1
+Latest snapshot: commit 3c45f98d20cd @ 4ccf164cb8b3a159
 
 ## Summary (orientation draft, not independently verified)
 

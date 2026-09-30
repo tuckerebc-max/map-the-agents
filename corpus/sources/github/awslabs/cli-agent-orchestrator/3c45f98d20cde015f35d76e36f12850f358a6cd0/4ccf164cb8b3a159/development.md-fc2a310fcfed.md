@@ -1,0 +1,436 @@
+# Development Guide
+
+This guide covers setting up your development environment and running tests for the CLI Agent Orchestrator project.
+
+## Prerequisites
+
+- Python 3.10 or higher
+- [uv](https://docs.astral.sh/uv/) - Fast Python package installer and resolver
+- Git
+- tmux 3.2+ (for running the orchestrator and integration tests)
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/awslabs/cli-agent-orchestrator.git
+cd cli-agent-orchestrator/
+```
+
+### 2. Install Dependencies
+
+The project uses `uv` for package management. Install all dependencies including development packages:
+
+```bash
+uv sync
+```
+
+This command:
+- Creates a virtual environment (if one doesn't exist)
+- Installs all project dependencies
+- Installs development dependencies (pytest, coverage tools, linters, etc.)
+
+### 3. Verify Installation
+
+```bash
+# Check that the CLI is available
+uv run cao --help
+
+# Run a quick test to ensure everything is working
+uv run pytest test/providers/test_kiro_cli_unit.py -v -k "test_initialization"
+```
+
+## Developing in GitHub Codespaces
+
+If you prefer a pre-configured cloud environment, the project runs end-to-end inside a GitHub Codespace. See [docs/codespaces.md](docs/codespaces.md) for the server start command, port forwarding, and troubleshooting tips.
+
+## Web UI Development
+
+The web UI is a React + Vite + Tailwind app in `web/`.
+
+```bash
+# Install frontend dependencies
+cd web/
+npm install
+
+# Start dev server (hot-reloads on file changes)
+npm run dev        # http://localhost:5173
+
+# Build for production (outputs to src/cli_agent_orchestrator/web_ui/)
+npm run build
+```
+
+> **Important:** The build step is required before installing the package with
+> `uv tool install .`. Skipping it leaves `web_ui/` empty and causes `cao-server`
+> to return `404 Not Found` on every request to the web UI.
+> Run `npm run build` from `web/` first, then reinstall:
+> ```bash
+> cd web && npm run build
+> uv tool install --reinstall .
+> ```
+
+The Vite dev server proxies API calls to the backend at `localhost:9889`. Make sure `cao-server` is running before starting the frontend.
+
+## Running Tests
+
+> **Recording test fixtures?** Provider fixtures are captured from live CLI
+> output and can embed secrets/PII (including in ANSI escape streams). Record on
+> a synthetic account and scrub identity/banner lines before committing — see
+> [CONTRIBUTING.md](CONTRIBUTING.md#recording-test-fixtures-safely). A gitleaks
+> scan gates every PR; run it locally with `scripts/security-scan.sh gitleaks`.
+
+### Unit Tests
+
+Unit tests are fast and use mocked dependencies:
+
+```bash
+# Run all unit tests (excludes E2E and integration tests)
+uv run pytest -v
+
+# Run with coverage report
+uv run pytest --cov=src --cov-report=term-missing -v
+
+# Run specific test file
+uv run pytest test/providers/test_claude_code_unit.py -v
+
+# Run specific test class
+uv run pytest test/providers/test_codex_provider_unit.py::TestCodexBuildCommand -v
+```
+
+### Integration Tests
+
+Integration tests require the provider CLI to be installed and authenticated:
+
+```bash
+# Run integration tests for a specific provider (example: Kiro CLI)
+uv run pytest test/providers/test_kiro_cli_integration.py -m integration -v
+
+# Skip integration tests
+uv run pytest test/providers/ -v
+```
+
+The default pytest configuration is the contributor unit-suite entry point and owns
+the marker selection. A regression test keeps integration tests and the 15 e2e-marked
+tests outside `test/e2e/` out of that suite. A command-line `-m` replaces the configured
+marker rather than composing with it, so use plain `uv run pytest` for this suite.
+For the same reason, running an integration suite requires opting back into its
+excluded marker explicitly with `-m integration`.
+
+### E2E Tests
+
+E2E tests require a running CAO server, authenticated CLI tools, and tmux:
+
+```bash
+# Run all E2E tests
+uv run pytest -m e2e test/e2e/ -v
+
+# Run E2E tests for a specific provider
+uv run pytest -m e2e test/e2e/ -v -k codex
+```
+
+### Run All Tests
+
+```bash
+# Run everything except E2E (the `addopts` in pyproject.toml deselects e2e by default)
+uv run pytest -v
+
+# Same, with coverage for all modules
+uv run pytest --cov=src --cov-report=term-missing -v
+
+# Run tests in parallel (faster)
+uv run pytest -n auto
+```
+
+### What CI runs on your pull request
+
+Run this before opening a PR — it is the exact command in `.github/workflows/ci.yml`,
+and it is a strictly larger set than the unit-test command above:
+
+```bash
+uv run pytest test/ \
+  --ignore=test/providers/test_kiro_cli_integration.py \
+  --ignore=test/e2e \
+  -m "not e2e" \
+  --cov=src/cli_agent_orchestrator --cov-report=term-missing -v
+
+uv run python scripts/validate_markdown_links.py
+```
+
+### Test Markers
+
+Tests are organized with pytest markers:
+
+```bash
+# Run only integration tests
+uv run pytest -m integration -v
+
+# Skip slow tests
+uv run pytest -m "not slow" -v
+
+# Run only async tests
+uv run pytest -m asyncio -v
+```
+
+## Code Quality
+
+### Formatting
+
+The project uses `black` for code formatting:
+
+```bash
+# Format all Python files
+uv run black src/ test/
+
+# Check formatting without making changes
+uv run black --check src/ test/
+```
+
+### Import Sorting
+
+The project uses `isort` for organizing imports:
+
+```bash
+# Sort imports
+uv run isort src/ test/
+
+# Check import sorting without making changes
+uv run isort --check-only src/ test/
+```
+
+### Type Checking
+
+The project uses `mypy` for static type checking:
+
+```bash
+# Run type checker
+uv run mypy src/
+```
+
+### Run All Quality Checks
+
+```bash
+# Format, sort imports, type check, and run tests
+uv run black src/ test/
+uv run isort src/ test/
+uv run mypy src/
+uv run pytest -v
+```
+
+### Validate Markdown Links
+
+Validate maintained local Markdown paths and heading fragments:
+
+```bash
+uv run python scripts/validate_markdown_links.py
+```
+
+## Development Workflow
+
+### 1. Create a Feature Branch
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+### 2. Make Changes
+
+Edit code in `src/cli_agent_orchestrator/`
+
+### 3. Add Tests
+
+Add or update tests in `test/`
+
+### 4. Run Tests Locally
+
+```bash
+# Run unit tests (fast, excludes E2E and integration)
+uv run pytest -v
+
+# Run the larger CI suite with coverage (see the exact command above)
+uv run pytest test/ --ignore=test/providers/test_kiro_cli_integration.py \
+  --ignore=test/e2e -m "not e2e" --cov=src/cli_agent_orchestrator \
+  --cov-report=term-missing -v
+```
+
+### 5. Check Code Quality
+
+```bash
+uv run black src/ test/
+uv run isort src/ test/
+uv run mypy src/
+```
+
+### 6. Commit and Push
+
+```bash
+git add .
+git commit -m "Add feature: description"
+git push origin feature/your-feature-name
+```
+
+### 7. Create Pull Request
+
+Create a pull request on GitHub. CI will automatically run tests and code quality checks.
+
+## CI/CD
+
+### Comprehensive Workflow (`ci.yml`)
+
+Runs on all pushes to `main` and all PRs targeting `main`:
+- **Unit tests**: Python 3.10, 3.11, 3.12 matrix with coverage
+- **Code quality**: black, isort, mypy
+- **Security scan**: Trivy filesystem scan — fails on a finding of **any** severity (see [SECURITY.md](SECURITY.md#running-security-scans-locally) for why the workflow's `CRITICAL,HIGH` input is ignored)
+- **Dependency review**: License and vulnerability checks on PRs
+
+### Provider-Specific Workflows (path-triggered)
+
+Each provider has a dedicated workflow that runs only when its files change:
+
+| Workflow | Tests | Trigger Paths |
+|---|---|---|
+| `test-codex-provider.yml` | `test_codex_provider_unit.py` | `providers/codex.py`, `test/providers/**` |
+| `test-claude-code-provider.yml` | `test_claude_code_unit.py` | `providers/claude_code.py`, `test/providers/**` |
+| `test-kiro-cli-provider.yml` | `test_kiro_cli_unit.py` | `providers/kiro_cli.py`, `test/providers/**` |
+
+Each includes unit tests (Python 3.10/3.11/3.12) and code quality checks (black, isort, mypy).
+
+### Docs Site Workflow (`gh-pages.yml`)
+
+Builds the Docusaurus site (`docusaurus/`) on every PR and push to `main` for a
+build signal, but only **deploys** to GitHub Pages on the upstream repo
+(`awslabs/cli-agent-orchestrator`) by default — forks don't have Pages enabled,
+so `actions/deploy-pages` would otherwise fail with a 404. Fork maintainers can
+opt in by enabling GitHub Pages in their fork and setting the `DEPLOY_DOCS_PAGES`
+repository variable to `true`; see [docusaurus/README.md](docusaurus/README.md#deploying-on-a-fork)
+for the full steps.
+
+## Working with Providers
+
+### Test Against a Real Provider CLI
+
+Integration tests exercise a real provider binary, so the CLI must be installed and authenticated before they can run. Using Kiro CLI as an example:
+
+```bash
+# Ensure the provider CLI is on PATH
+which kiro
+
+# Ensure it is authenticated (provider-specific; see docs/<provider>.md)
+kiro --help
+
+# Run that provider's integration tests
+uv run pytest test/providers/test_kiro_cli_integration.py -m integration -v
+```
+
+The same pattern applies to every provider that ships an `<provider>_integration.py` file — substitute the binary and the test filename.
+
+## Troubleshooting
+
+### Web UI Shows "404 Not Found"
+
+The web UI assets are not committed to the repository — they are a build artifact.
+If `cao-server` starts successfully but the browser shows `{"detail":"Not Found"}`,
+the `web_ui/` bundle is missing from the installed package.
+
+```bash
+# 1. Build the frontend
+cd web && npm install && npm run build
+
+# 2. Reinstall the package so the built assets are picked up
+cd ..
+uv tool install --reinstall .
+```
+
+### Import Errors
+
+If you encounter import errors when running tests:
+
+```bash
+# Re-sync dependencies
+uv sync
+
+# If that doesn't work, remove the virtual environment and start fresh
+rm -rf .venv
+uv sync
+```
+
+### Test Failures
+
+```bash
+# Run with verbose output
+uv run pytest -vv
+
+# Run a specific failing test
+uv run pytest test/path/to/test.py::test_name -vv
+
+# Show print statements
+uv run pytest -s
+```
+
+### Coverage Issues
+
+```bash
+# Generate detailed coverage report
+uv run pytest --cov=src --cov-report=html
+# Open htmlcov/index.html in your browser
+
+# Show missing lines
+uv run pytest --cov=src --cov-report=term-missing
+```
+
+## Adding New Dependencies
+
+### Runtime Dependencies
+
+```bash
+# Add a new runtime dependency
+uv add package-name
+
+# Add with version constraint
+uv add "package-name>=1.0.0"
+```
+
+### Development Dependencies
+
+```bash
+# Add a new development dependency
+uv add --dev package-name
+```
+
+## Project Structure
+
+```
+cli-agent-orchestrator/
+├── src/
+│   └── cli_agent_orchestrator/     # Main source code
+│       ├── api/                    # FastAPI server
+│       ├── cli/                    # CLI commands
+│       ├── clients/                # Database and tmux clients
+│       ├── mcp_server/             # MCP server implementation
+│       ├── models/                 # Data models
+│       ├── providers/              # Agent providers (Kiro CLI, Claude Code, Codex, Antigravity, Kimi, Copilot, OpenCode, Cursor)
+│       ├── services/               # Business logic services
+│       └── utils/                  # Utility functions
+├── test/                           # Test suite (511 tests, 84% coverage)
+│   ├── api/                       # API endpoint tests
+│   ├── cli/                       # CLI command tests
+│   ├── clients/                   # Client tests (database, tmux)
+│   ├── e2e/                       # End-to-end tests (require running CAO server)
+│   ├── mcp_server/                # MCP server tests
+│   ├── models/                    # Data model tests
+│   ├── providers/                 # Provider tests (unit + integration)
+│   ├── services/                  # Service layer tests
+│   └── utils/                     # Utility tests
+├── docs/                           # Documentation
+├── examples/                       # Example workflows
+├── pyproject.toml                  # Project configuration
+└── uv.lock                         # Locked dependencies
+```
+
+## Resources
+
+- [Project README](README.md)
+- [Test Documentation](test/README.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [uv Documentation](https://docs.astral.sh/uv/)
+- [pytest Documentation](https://docs.pytest.org/)

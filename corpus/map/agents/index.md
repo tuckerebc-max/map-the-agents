@@ -141,10 +141,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) -- status=distilled, freshness=stale
 - [aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit](../repos/aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md) -- status=distilled, freshness=current
 - [aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws](../repos/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.md) -- status=distilled, freshness=current
-- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) -- status=distilled, freshness=current
+- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) -- status=distilled, freshness=stale
 - [aws/aws-mwaa-local-runner](../repos/aws/aws-mwaa-local-runner.md) -- status=distilled, freshness=current
-- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) -- status=distilled, freshness=current
-- [axflow/axflow](../repos/axflow/axflow.md) -- status=distilled, freshness=current
+- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) -- status=distilled, freshness=stale
+- [axflow/axflow](../repos/axflow/axflow.md) -- status=distilled, freshness=stale
 - [aydinfer/ai-agents-tool-dev](../repos/aydinfer/ai-agents-tool-dev.md) -- status=blocked, freshness=refresh-failed
 - [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) -- status=distilled, freshness=current
 - [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) -- status=distilled, freshness=current

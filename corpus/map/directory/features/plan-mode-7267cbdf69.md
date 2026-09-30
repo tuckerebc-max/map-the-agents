@@ -27,6 +27,7 @@
 - [claude-agent-sdk-typescript](../entries/claude-agent-sdk-typescript-b52c0c1f60.md)
 - [claude-code-skeleton](../entries/claude-code-skeleton-19304317c3.md)
 - [claude-flow](../entries/claude-flow-e5c9870fa9.md)
+- [claude-plugins-2389](../entries/claude-plugins-2389-b2e1eba16a.md)
 - [claurst](../entries/claurst-3b24d6f8f1.md)
 - [clawcodex](../entries/clawcodex-d7ca84ab1c.md)
 - [cortex-code-cli](../entries/cortex-code-cli-9cae66ca22.md)

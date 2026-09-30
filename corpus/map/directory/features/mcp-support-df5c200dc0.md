@@ -40,6 +40,7 @@
 - [claude-code-skeleton](../entries/claude-code-skeleton-19304317c3.md)
 - [claude-code-viewer](../entries/claude-code-viewer-2453448258.md)
 - [claude-flow](../entries/claude-flow-e5c9870fa9.md)
+- [claude-plugins-2389](../entries/claude-plugins-2389-b2e1eba16a.md)
 - [cli-agent-orchestrator-cao](../entries/cli-agent-orchestrator-cao-a6324bebeb.md)
 - [clodex-ide](../entries/clodex-ide-082b969807.md)
 - [code2prompt](../entries/code2prompt-1cd55f951d.md)

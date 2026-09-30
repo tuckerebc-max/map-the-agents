@@ -1,9 +1,9 @@
 # aws/amazon-q-developer-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 15cc8f3cd18c @ 1a8a017dfd018fb0
+Latest snapshot: commit 15cc8f3cd18c @ a95dd8f1a252a299
 
 ## Summary (orientation draft, not independently verified)
 

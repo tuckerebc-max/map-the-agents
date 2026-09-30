@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kingbootoshi/rgr](../repos/kingbootoshi/rgr.md) [coverage: complete]
-- [kirill-markin/repo-to-text](../repos/kirill-markin/repo-to-text.md) [coverage: complete]
-- [kirodotdev/kiro](../repos/kirodotdev/kiro.md) [coverage: complete]
 - [klaatai/klaatcode](../repos/klaatai/klaatcode.md) [coverage: partial]
 - [kleneway/next-ai-starter](../repos/kleneway/next-ai-starter.md) [coverage: complete]
 - [kodu-ai/claude-coder](../repos/kodu-ai/claude-coder.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [vercel-labs/deepsec](../repos/vercel-labs/deepsec.md) [coverage: partial]
 - [vercel-labs/fx](../repos/vercel-labs/fx.md) [coverage: complete]
 - [vibe-cy/cycode](../repos/vibe-cy/cycode.md) [coverage: complete]
+- [vibe-stack/ggez](../repos/vibe-stack/ggez.md) [coverage: partial]
+- [vibepod/vibepod-cli](../repos/vibepod/vibepod-cli.md) [coverage: partial]
+- [vibheksoni/verbalcodeai](../repos/vibheksoni/verbalcodeai.md) [coverage: complete]

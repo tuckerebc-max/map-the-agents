@@ -1,5 +1,5 @@
 {
-  "cursor": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+  "cursor": "aydinfer/ai-agents-tool-dev",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -475,6 +475,36 @@
       "failures": 0,
       "last_at": "2026-09-29T15:47:57+00:00",
       "last_outcome": "reused"
+    },
+    "aws/amazon-q-developer-cli": {
+      "failures": 0,
+      "last_at": "2026-09-30T15:54:13+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "aws/aws-mwaa-local-runner": {
+      "failures": 0,
+      "last_at": "2026-09-30T15:54:14+00:00",
+      "last_outcome": "reused"
+    },
+    "awslabs/cli-agent-orchestrator": {
+      "failures": 0,
+      "last_at": "2026-09-30T15:54:16+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "axflow/axflow": {
+      "failures": 0,
+      "last_at": "2026-09-30T15:54:19+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "aydinfer/ai-agents-tool-dev": {
+      "failures": 1,
+      "last_at": "2026-09-30T15:54:20+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "http-404: https://api.github.com/repos/aydinfer/ai-agents-tool-dev"
+      },
+      "last_outcome": "snapshot-failed"
     }
   },
   "runs": [
@@ -3463,6 +3493,206 @@
         "stages": {
           "catalog": 0.738,
           "snapshots": 9.734
+        }
+      }
+    },
+    {
+      "attempted": [
+        "aws/amazon-q-developer-cli",
+        "aws/aws-mwaa-local-runner",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "aydinfer/ai-agents-tool-dev"
+      ],
+      "catalog": {
+        "backlog": 298,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "nvidia-nemo-agent-toolkit",
+          "o1-agent-test",
+          "obby-dev",
+          "oc-plugin-vault-tec",
+          "ocode",
+          "octo-web",
+          "octofriend",
+          "ogcode",
+          "oh-my-claudecode",
+          "oh-my-cli",
+          "oh-my-cursor",
+          "oh-my-pi",
+          "oi",
+          "oinone-pamirs",
+          "oli",
+          "omk",
+          "omnara",
+          "omnicode-agent",
+          "omnidesk",
+          "omnigent",
+          "omnipilot-bring-your-own-model",
+          "onecli",
+          "onui",
+          "opcode",
+          "open-agent-hub",
+          "open-aware",
+          "open-codex",
+          "open-interpreter",
+          "open-multi-agent",
+          "open-spdd",
+          "open-swe",
+          "open-webui-tools",
+          "openagent",
+          "openalpha-evolve",
+          "opencastle",
+          "openchamber",
+          "openclaw-code-agent",
+          "opencode",
+          "opencode-android",
+          "opencode-orchestrator",
+          "opencode-plusplus",
+          "opencode-swarm",
+          "opencode-ui",
+          "opencodenvim",
+          "opencodereview",
+          "opencodex",
+          "opencursor",
+          "opendev",
+          "opengiraffe",
+          "openhands"
+        ],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "http-404: https://api.github.com/repos/aydinfer/ai-agents-tool-dev",
+          "repo": "aydinfer/ai-agents-tool-dev",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-09-30T15:54:20+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 6,
+          "repo": "aws/amazon-q-developer-cli",
+          "reused": false,
+          "snapshot_id": "a95dd8f1a252a299"
+        },
+        {
+          "commit": "ff4f882f10cdf51ef876ba77aabcda22c680bbe7",
+          "explicit_paths": [],
+          "files_stored": 3,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "aws/aws-mwaa-local-runner",
+          "reused": true,
+          "snapshot_id": "a022cda1bd8255b3"
+        },
+        {
+          "commit": "3c45f98d20cde015f35d76e36f12850f358a6cd0",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 63,
+          "repo": "awslabs/cli-agent-orchestrator",
+          "reused": false,
+          "snapshot_id": "4ccf164cb8b3a159"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 18,
+          "repo": "axflow/axflow",
+          "reused": false,
+          "snapshot_id": "4ace548b447befc1"
+        }
+      ],
+      "started": "2026-09-30T15:54:09+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 11.056,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.99,
+          "snapshots": 10.02
         }
       }
     }

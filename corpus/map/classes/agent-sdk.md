@@ -22,6 +22,7 @@
 - [modelscope/agentscope](../repos/modelscope/agentscope.md)
 - [nvidia-nemo/speech](../repos/nvidia-nemo/speech.md)
 - [nvidia/nemo](../repos/nvidia/nemo.md)
+- [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
 - [runvendo/vendo](../repos/runvendo/vendo.md)
 - [sagentic-ai/sagentic-af](../repos/sagentic-ai/sagentic-af.md)
 - [strands-agents/harness-sdk](../repos/strands-agents/harness-sdk.md)

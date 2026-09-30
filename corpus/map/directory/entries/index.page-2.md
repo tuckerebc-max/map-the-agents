@@ -2,6 +2,7 @@
 
 Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
+- [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing-only
 - [CodeFuse-ChatBot (`codefuse-chatbot`)](codefuse-chatbot-6c64cc0f1e.md) -- published+backing
 - [CodeFuse-muAgent (`codefuse-muagent`)](codefuse-muagent-5e8aeb5da3.md) -- published+backing
 - [Codegebragpt (`codegebragpt`)](codegebragpt-72fa6a14c8.md) -- backing-only
@@ -333,4 +334,3 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing-only
 - [hitch (`hitch`)](hitch-82e910cddf.md) -- backing-only
 - [hive (`hive`)](hive-7640da4029.md) -- published+backing
-- [Hivelore (`hivelore`)](hivelore-5e12913afc.md) -- backing-only

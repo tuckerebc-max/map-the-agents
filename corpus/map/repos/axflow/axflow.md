@@ -1,9 +1,9 @@
 # axflow/axflow
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 46ed2a000a44 @ c40d8b59470d8c68
+Latest snapshot: commit 46ed2a000a44 @ 4ace548b447befc1
 
 ## Summary (orientation draft, not independently verified)
 

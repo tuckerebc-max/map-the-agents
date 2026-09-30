@@ -19,6 +19,7 @@
 - [bmad-method](../entries/bmad-method-40a1d375df.md)
 - [claude-code-tools](../entries/claude-code-tools-657313a770.md)
 - [claude-flow](../entries/claude-flow-e5c9870fa9.md)
+- [claude-plugins-2389](../entries/claude-plugins-2389-b2e1eba16a.md)
 - [cmux](../entries/cmux-548d4fabc5.md)
 - [codirigent](../entries/codirigent-be56bb030a.md)
 - [context-hub](../entries/context-hub-663b92ba0a.md)

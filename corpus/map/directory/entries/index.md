@@ -255,30 +255,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Chamberlain_Multimodal_Multiagent_Chatbot (`chamberlain-multimodal-multiagent-chatbot`)](chamberlain-multimodal-multiagent-chatbot-00e974f31b.md) -- backing+pages
 - [Charlie Labs (`charlie-labs`)](charlie-labs-4502c20eeb.md) -- published+backing+pages
 - [ChartGPT (`chartgpt`)](chartgpt-03323b1877.md) -- backing+pages
-- [ChatDev (`chatdev`)](chatdev-dc8d2c750f.md) -- published+backing
-- [Chaterm (`chaterm`)](chaterm-d6a9b29328.md) -- published+backing
-- [chatgpt-vscode (`chatgpt-vscode`)](chatgpt-vscode-a56a1fe5d5.md) -- backing-only
-- [chef (`chef`)](chef-f59ac0828b.md) -- published+backing
-- [Cherry Studio (`cherry-studio`)](cherry-studio-debe5096be.md) -- backing-only
-- [Clacky (`clacky`)](clacky-feff48d00e.md) -- published+backing
-- [Claude Agent SDK (Python) (`claude-agent-sdk-python`)](claude-agent-sdk-python-dfef51e5f5.md) -- published+backing
-- [Claude Agent SDK (TypeScript) (`claude-agent-sdk-typescript`)](claude-agent-sdk-typescript-b52c0c1f60.md) -- published+backing
-- [Claude Autopilot (`claude-autopilot`)](claude-autopilot-b9479eeb3a.md) -- published+backing
-- [Claude Code (`claude-code`)](claude-code-28e1743960.md) -- published+backing
-- [claude-code-merge-queue (`claude-code-merge-queue`)](claude-code-merge-queue-52bc0b66c6.md) -- backing-only
-- [Claude-Code-Multi-Agent (`claude-code-multi-agent`)](claude-code-multi-agent-cb55914b6f.md) -- backing-only
-- [claude-code-plus (`claude-code-plus`)](claude-code-plus-1138752517.md) -- published+backing
-- [claude-code (`claude-code-skeleton`)](claude-code-skeleton-19304317c3.md) -- backing-only
-- [claude_code_sub_agents (`claude-code-sub-agents`)](claude-code-sub-agents-a64eb86355.md) -- backing-only
-- [Claude Code Tools (`claude-code-tools`)](claude-code-tools-657313a770.md) -- backing-only
-- [claude-code-viewer (`claude-code-viewer`)](claude-code-viewer-2453448258.md) -- published+backing
-- [claude_codex_bridge (`claude-codex-bridge`)](claude-codex-bridge-9d315f5fc5.md) -- published+backing
-- [Claude Engineer (`claude-engineer`)](claude-engineer-1a2f7f48a8.md) -- published+backing
-- [claude-flow (`claude-flow`)](claude-flow-e5c9870fa9.md) -- published+backing
-- [Claude-Html-Test (`claude-html-test`)](claude-html-test-dfaa817a91.md) -- backing-only
-- [claude-memory-compiler (`claude-memory-compiler`)](claude-memory-compiler-2bdfb94452.md) -- backing-only
-- [claude-northstar (`claude-northstar`)](claude-northstar-412cb1adbe.md) -- backing-only
-- [claude-orchestration (`claude-orchestration`)](claude-orchestration-11cfd64b80.md) -- backing-only
+- [ChatDev (`chatdev`)](chatdev-dc8d2c750f.md) -- published+backing+pages
+- [Chaterm (`chaterm`)](chaterm-d6a9b29328.md) -- published+backing+pages
+- [chatgpt-vscode (`chatgpt-vscode`)](chatgpt-vscode-a56a1fe5d5.md) -- backing+pages
+- [chef (`chef`)](chef-f59ac0828b.md) -- published+backing+pages
+- [Cherry Studio (`cherry-studio`)](cherry-studio-debe5096be.md) -- backing+pages
+- [Clacky (`clacky`)](clacky-feff48d00e.md) -- published+backing+pages
+- [Claude Agent SDK (Python) (`claude-agent-sdk-python`)](claude-agent-sdk-python-dfef51e5f5.md) -- published+backing+pages
+- [Claude Agent SDK (TypeScript) (`claude-agent-sdk-typescript`)](claude-agent-sdk-typescript-b52c0c1f60.md) -- published+backing+pages
+- [Claude Autopilot (`claude-autopilot`)](claude-autopilot-b9479eeb3a.md) -- published+backing+pages
+- [Claude Code (`claude-code`)](claude-code-28e1743960.md) -- published+backing+pages
+- [claude-code-merge-queue (`claude-code-merge-queue`)](claude-code-merge-queue-52bc0b66c6.md) -- backing+pages
+- [Claude-Code-Multi-Agent (`claude-code-multi-agent`)](claude-code-multi-agent-cb55914b6f.md) -- backing+pages
+- [claude-code-plus (`claude-code-plus`)](claude-code-plus-1138752517.md) -- published+backing+pages
+- [claude-code (`claude-code-skeleton`)](claude-code-skeleton-19304317c3.md) -- backing+pages
+- [claude_code_sub_agents (`claude-code-sub-agents`)](claude-code-sub-agents-a64eb86355.md) -- backing+pages
+- [Claude Code Tools (`claude-code-tools`)](claude-code-tools-657313a770.md) -- backing+pages
+- [claude-code-viewer (`claude-code-viewer`)](claude-code-viewer-2453448258.md) -- published+backing+pages
+- [claude_codex_bridge (`claude-codex-bridge`)](claude-codex-bridge-9d315f5fc5.md) -- published+backing+pages
+- [Claude Engineer (`claude-engineer`)](claude-engineer-1a2f7f48a8.md) -- published+backing+pages
+- [claude-flow (`claude-flow`)](claude-flow-e5c9870fa9.md) -- published+backing+pages
+- [Claude-Html-Test (`claude-html-test`)](claude-html-test-dfaa817a91.md) -- backing+pages
+- [claude-memory-compiler (`claude-memory-compiler`)](claude-memory-compiler-2bdfb94452.md) -- backing+pages
+- [claude-northstar (`claude-northstar`)](claude-northstar-412cb1adbe.md) -- backing+pages
+- [claude-orchestration (`claude-orchestration`)](claude-orchestration-11cfd64b80.md) -- backing+pages
+- [2389 Claude Plugins (`claude-plugins-2389`)](claude-plugins-2389-b2e1eba16a.md) -- pages-only
 - [Claude Squad (`claude-squad`)](claude-squad-67acc7bb84.md) -- published+backing
 - [Claude Subscription ACP Agent (`claude-subscription-acp-agent`)](claude-subscription-acp-agent-4a937becf7.md) -- published+backing
 - [claude-swarm (`claude-swarm`)](claude-swarm-11b9095d66.md) -- published+backing
@@ -332,4 +333,3 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [CodeContests (`codecontests`)](codecontests-b8e5aab8bd.md) -- backing-only
 - [codedna (`codedna`)](codedna-70c4e6c780.md) -- backing-only
 - [codeflash (`codeflash`)](codeflash-f7c640a5d8.md) -- published+backing
-- [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing-only

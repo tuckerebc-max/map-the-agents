@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (938)
+## current (935)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -87,10 +87,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [aws-samples/amazon-mwaa-examples](../repos/aws-samples/amazon-mwaa-examples.md) [coverage: complete]
 - [aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit](../repos/aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md) [coverage: complete]
 - [aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws](../repos/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.md) [coverage: complete]
-- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
 - [aws/aws-mwaa-local-runner](../repos/aws/aws-mwaa-local-runner.md) [coverage: complete]
-- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
-- [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
 - [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) [coverage: partial]
 - [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) [coverage: partial]
 - [bahdotsh/indxr](../repos/bahdotsh/indxr.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [khanzzirfan/testai-agent](../repos/khanzzirfan/testai-agent.md) [coverage: partial]
 - [kilo-org/kilocode](../repos/kilo-org/kilocode.md) [coverage: partial]
 - [kimi-k2-7/kimi-k2.7](../repos/kimi-k2-7/kimi-k2.7.md) [coverage: complete]
+- [kingbootoshi/rgr](../repos/kingbootoshi/rgr.md) [coverage: complete]
+- [kirill-markin/repo-to-text](../repos/kirill-markin/repo-to-text.md) [coverage: complete]
+- [kirodotdev/kiro](../repos/kirodotdev/kiro.md) [coverage: complete]

@@ -35,6 +35,7 @@
 - [claude-codex-bridge](../entries/claude-codex-bridge-9d315f5fc5.md)
 - [claude-flow](../entries/claude-flow-e5c9870fa9.md)
 - [claude-memory-compiler](../entries/claude-memory-compiler-2bdfb94452.md)
+- [claude-plugins-2389](../entries/claude-plugins-2389-b2e1eba16a.md)
 - [clawcodex](../entries/clawcodex-d7ca84ab1c.md)
 - [cmux](../entries/cmux-548d4fabc5.md)
 - [coding-agent-tips](../entries/coding-agent-tips-fa75180677.md)

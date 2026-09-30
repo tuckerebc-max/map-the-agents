@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: ruvnet
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [ruvnet/claude-flow](https://githu
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Claude Flow treats the model-plus-harness split literally: Claude Code or Codex remains the coding surface, while Ruflo supplies swarm coordination (hierarchical, mesh, adaptive topologies with consen
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): An agent meta-harness providing the execution layer around Claude Code and Codex with a GOAP A* planner, self-learning architecture (SONA neural patterns, ReasoningBank), and zero-trust Agent Federation ('Slack for Agents').
+
+(captured site page body (agents/claude-flow.md), not a verified repo-code finding)
+Claude Flow treats the model-plus-harness split literally: Claude Code or Codex remains the coding surface, while Ruflo supplies swarm coordination (hierarchical, mesh, adaptive topologies with consensus mechanisms), 27 hooks for task routing, persistent learning memory (ReasoningBank, trajectory learning), and a GOAP planner that re-plans adaptively rather than restarting on failure. It installs as a Claude Code plugin or npx scaffold, an MCP server exposes its toolset, and a zero-trust federation layer lets agent clusters collaborate across machines with mTLS and PII stripping. The project is among the most-starred in this census (roughly 70k stars), is MIT-licensed, and was renamed Ruflo with active v3 development.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claude-flow.md)

@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: Nisarg38
 - License: MIT
 - Language: JavaScript, Node.js
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [nisarg38/claude-northstar](../../repos/nisarg38/claude-northstar.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The framework targets the failure mode where CLI agents complete individual tasks but lose sight of project intent: instead of issuing tasks, the developer writes a north-star vision document, and the
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Goal-oriented development framework for CLI agents that shifts them from task-based to vision-based autonomous workflows; main agent acts as 'Tech Lead' coordinating sub-agents (Product Researcher, Strategist, Developer, QA, Reviewer) with persistent state across sessions (north-star.md, project-state.json), strategic-question-only interruptions, and a continuous Analyze -\> Plan -\> Execute -\> Evaluate work loop. Very early stage (5 commits, 1 star).
+
+(captured site page body (agents/claude-northstar.md), not a verified repo-code finding)
+The framework targets the failure mode where CLI agents complete individual tasks but lose sight of project intent: instead of issuing tasks, the developer writes a north-star vision document, and the agent plans milestones against it, executing through a develop-QA-review-merge pipeline and asking only strategic questions. State lives in project-state.json and a progress log so sessions resume coherently, and the quality pipeline gates merges behind review. It installs via npx claude-northstar init for Claude Code and OpenCode. The repository is minimal (five commits, a single star), so adoption is essentially nil, but the design documents a vision-driven alternative to task-by-task prompting.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claude-northstar.md)

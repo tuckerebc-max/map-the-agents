@@ -47,6 +47,7 @@
 - [claude-code-viewer](../entries/claude-code-viewer-2453448258.md)
 - [claude-codex-bridge](../entries/claude-codex-bridge-9d315f5fc5.md)
 - [claude-flow](../entries/claude-flow-e5c9870fa9.md)
+- [claude-plugins-2389](../entries/claude-plugins-2389-b2e1eba16a.md)
 - [claurst](../entries/claurst-3b24d6f8f1.md)
 - [clawcodex](../entries/clawcodex-d7ca84ab1c.md)
 - [cli-agent-orchestrator-cao](../entries/cli-agent-orchestrator-cao-a6324bebeb.md)
