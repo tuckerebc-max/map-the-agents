@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [video-db/call.md](../repos/video-db/call.md.md) [coverage: complete]
-- [vincentkoc/tokenjuice](../repos/vincentkoc/tokenjuice.md) [coverage: partial]
-- [vinhnx/vtcode](../repos/vinhnx/vtcode.md) [coverage: partial]
-- [vinta/hal-9000](../repos/vinta/hal-9000.md) [coverage: complete]
 - [violetdelia/codex-multi-agents](../repos/violetdelia/codex-multi-agents.md) [coverage: complete]
 - [vishal2612200/agentpack](../repos/vishal2612200/agentpack.md) [coverage: partial]
 - [vivekhaldar/seed](../repos/vivekhaldar/seed.md) [coverage: complete]
@@ -87,7 +83,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (54)
+## stale (58)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +139,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
 - [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
 - [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
+- [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) [coverage: partial]
+- [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) [coverage: partial]
+- [bahdotsh/indxr](../repos/bahdotsh/indxr.md) [coverage: partial]
+- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) [coverage: partial]
 
 ## refresh-failed (63)
 

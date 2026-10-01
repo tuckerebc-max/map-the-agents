@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [klaatai/klaatcode](../repos/klaatai/klaatcode.md) [coverage: partial]
-- [kleneway/next-ai-starter](../repos/kleneway/next-ai-starter.md) [coverage: complete]
-- [kodu-ai/claude-coder](../repos/kodu-ai/claude-coder.md) [coverage: complete]
-- [kommander/oc-plugin-vault-tec](../repos/kommander/oc-plugin-vault-tec.md) [coverage: complete]
 - [kreneskyp/ix](../repos/kreneskyp/ix.md) [coverage: partial]
 - [kristoferlund/duet-gpt](../repos/kristoferlund/duet-gpt.md) [coverage: complete]
 - [kuafuai/aipexbase](../repos/kuafuai/aipexbase.md) [coverage: partial]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [vibe-stack/ggez](../repos/vibe-stack/ggez.md) [coverage: partial]
 - [vibepod/vibepod-cli](../repos/vibepod/vibepod-cli.md) [coverage: partial]
 - [vibheksoni/verbalcodeai](../repos/vibheksoni/verbalcodeai.md) [coverage: complete]
+- [video-db/call.md](../repos/video-db/call.md.md) [coverage: complete]
+- [vincentkoc/tokenjuice](../repos/vincentkoc/tokenjuice.md) [coverage: partial]
+- [vinhnx/vtcode](../repos/vinhnx/vtcode.md) [coverage: partial]
+- [vinta/hal-9000](../repos/vinta/hal-9000.md) [coverage: complete]

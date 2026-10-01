@@ -146,11 +146,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) -- status=distilled, freshness=stale
 - [axflow/axflow](../repos/axflow/axflow.md) -- status=distilled, freshness=stale
 - [aydinfer/ai-agents-tool-dev](../repos/aydinfer/ai-agents-tool-dev.md) -- status=blocked, freshness=refresh-failed
-- [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) -- status=distilled, freshness=current
-- [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) -- status=distilled, freshness=current
-- [bahdotsh/indxr](../repos/bahdotsh/indxr.md) -- status=distilled, freshness=current
+- [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) -- status=distilled, freshness=stale
+- [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) -- status=distilled, freshness=stale
+- [bahdotsh/indxr](../repos/bahdotsh/indxr.md) -- status=distilled, freshness=stale
 - [balaaagi/intelligent-agent](../repos/balaaagi/intelligent-agent.md) -- status=distilled, freshness=current
-- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) -- status=distilled, freshness=current
+- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) -- status=distilled, freshness=stale
 - [bastani-inc/atomic](../repos/bastani-inc/atomic.md) -- status=distilled, freshness=current
 - [bauer-jan/stock-analysis-with-llm](../repos/bauer-jan/stock-analysis-with-llm.md) -- status=distilled, freshness=current
 - [bawadou/ai-data-extractor](../repos/bawadou/ai-data-extractor.md) -- status=blocked, freshness=refresh-failed

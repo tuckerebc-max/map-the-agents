@@ -97,8 +97,6 @@
 - [claude-code](../entries/claude-code-28e1743960.md)
 - [claude-engineer](../entries/claude-engineer-1a2f7f48a8.md)
 - [claude-swarm](../entries/claude-swarm-11b9095d66.md)
-- [claudecode-orchestrator](../entries/claudecode-orchestrator-ce11cfba2a.md)
-- [claudemacs](../entries/claudemacs-d58e855cf9.md)
 - [claudevim](../entries/claudevim-1127386f3a.md)
 - [claurst](../entries/claurst-3b24d6f8f1.md)
 - [claw-code](../entries/claw-code-959f9d8922.md)

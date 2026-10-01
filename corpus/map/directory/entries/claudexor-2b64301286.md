@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: razzant
@@ -22,6 +22,8 @@ Repository map entry: [razzant/claudexor](../../repos/razzant/claudexor.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Claudexor targets the practitioner holding several paid agent subscriptions who wants them as interchangeable capacity rather than separate tools. A local daemon routes turns to a chosen harness, resu
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Multi-harness control plane for AI coding agents that runs them behind one typed interface with quota-aware rotation, shared thread context, and cross-model review; best-of-N races with independent reviewers/arbitration, honest budget/quota accounting (never reports unknown cost as $0), deterministic gates, multi-account credential profiles with live quota tracking, no telemetry
+
+(captured site page body (agents/claudexor.md), not a verified repo-code finding)
+Claudexor targets the practitioner holding several paid agent subscriptions who wants them as interchangeable capacity rather than separate tools. A local daemon routes turns to a chosen harness, resumes native sessions for continuity, and turns write requests into inspectable patches; quota rotation switches accounts only on typed vendor-limit signals, and best-of-N races select winners through independent, ideally cross-family, review rather than self-grading. A --council mode has multiple harnesses draft competing plans that a primary merges. Everything runs locally with file-based artifacts, and the v3.8.0 release's missing signing documents were the one notable supply-chain stumble. Solo power users running multi-agent setups are the audience.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claudexor.md)

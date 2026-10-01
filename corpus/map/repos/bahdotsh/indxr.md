@@ -1,9 +1,9 @@
 # bahdotsh/indxr
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit fbcbe9451605 @ 0ad631914a9cdd40
+Latest snapshot: commit fbcbe9451605 @ 39b3455fdaea4952
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: choiyounggi
@@ -22,6 +22,8 @@ Repository map entry: [choiyounggi/cliclaw](../../repos/choiyounggi/cliclaw.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The tool answers a specific gap: coding agents run unattended on a development machine, but the developer is away from the keyboard. A single Bun daemon bridges Telegram to up to four local agent CLIs
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): macOS daemon that turns a Telegram chat into a remote control for local coding agent CLIs (Claude Code, Codex, Pi, Gemini). Kick off tasks, stream progress, approve/deny dangerous commands, and send follow-ups from your phone. Per-chat per-agent sessions, confirm gate, launchd auto-start, corporate TLS auto-detection. Spawns Claude Code with --permission-mode plan/bypassPermissions and injects a dangerous-command hook.
+
+(captured site page body (agents/cliclaw.md), not a verified repo-code finding)
+The tool answers a specific gap: coding agents run unattended on a development machine, but the developer is away from the keyboard. A single Bun daemon bridges Telegram to up to four local agent CLIs, streaming responses into the chat, accepting images, and requiring explicit inline-keyboard taps before dangerous commands execute, with silence meaning denial and every decision appended to an audit log. Sensitive-path reads are denied, corporate TLS interception is auto-detected, and a launchd agent keeps it running across reboots. Developers who kick off long agent tasks and leave the desk are the users; it is MIT-licensed, on npm, and actively maintained.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cliclaw.md)

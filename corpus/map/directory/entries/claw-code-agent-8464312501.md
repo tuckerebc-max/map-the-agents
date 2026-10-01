@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: HarnessLab
@@ -22,6 +22,8 @@ Repository map entry: [harnesslab/claw-code-agent](../../repos/harnesslab/claw-c
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The project exists for developers who want Claude Code's workflow on local models and under their own control: the entire agent runtime is standard-library Python, so the loop is auditable without nod
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Full Python reimplementation of Claude Code's npm agent architecture with zero external dependencies (pure stdlib), designed for local open-source models (especially Qwen3-Coder via vLLM). Includes local web GUI and comprehensive runtime subsystems (tasks, plans, MCP, plugins, hooks, LSP, worktrees, workflows, teams, background sessions).
+
+(captured site page body (agents/claw-code-agent.md), not a verified repo-code finding)
+The project exists for developers who want Claude Code's workflow on local models and under their own control: the entire agent runtime is standard-library Python, so the loop is auditable without node_modules, and the documented deployment is vLLM serving Qwen3-Coder with tool-call parsing configured server-side. It reimplements CLAUDE.md discovery, slash commands, session persistence, and context compaction, then extends them with MCP support, agent delegation, and cost budgets. Permission tiers default to read-only and escalate explicitly, which suits shared machines and enterprise settings. Researchers studying agent architecture and teams with data-sovereignty constraints are the primary users; the project is in alpha with active monthly feature work.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claw-code-agent.md)

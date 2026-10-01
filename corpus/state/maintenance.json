@@ -1,5 +1,5 @@
 {
-  "cursor": "aydinfer/ai-agents-tool-dev",
+  "cursor": "basilisk-labs/agentplane",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -505,68 +505,34 @@
         "message": "http-404: https://api.github.com/repos/aydinfer/ai-agents-tool-dev"
       },
       "last_outcome": "snapshot-failed"
+    },
+    "azure/gpt-rag-orchestrator": {
+      "failures": 0,
+      "last_at": "2026-10-01T16:25:02+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "backbay-labs/clawdstrike": {
+      "failures": 0,
+      "last_at": "2026-10-01T16:25:05+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "bahdotsh/indxr": {
+      "failures": 0,
+      "last_at": "2026-10-01T16:25:08+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "balaaagi/intelligent-agent": {
+      "failures": 0,
+      "last_at": "2026-10-01T16:25:10+00:00",
+      "last_outcome": "reused"
+    },
+    "basilisk-labs/agentplane": {
+      "failures": 0,
+      "last_at": "2026-10-01T16:25:13+00:00",
+      "last_outcome": "snapshotted"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "21st-dev/1code"
-      ],
-      "catalog": {
-        "backlog": 1344,
-        "changed": true,
-        "commit": "0709cccb49aff08a4b10beb95a214005a810a363",
-        "processed": 3,
-        "slugs": [
-          "9remote",
-          "a0dev",
-          "a11yresolver"
-        ],
-        "version_changed": false
-      },
-      "failures": [],
-      "finished": "2026-09-13T21:53:55+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "21st-dev/1code",
-        "openai/codex"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "9f1bc76fa4372c18c565b5a4f8daf38ae3595f0e",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "pending",
-          "omitted_count": 2,
-          "repo": "21st-dev/1code",
-          "reused": false,
-          "snapshot_id": "c3640a31234c9ce0"
-        }
-      ],
-      "started": "2026-09-13T21:53:52+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 3.016,
-        "max_seconds": 60.0,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 45.0
-        },
-        "stages": {
-          "catalog": 1.031,
-          "snapshots": 1.969
-        }
-      }
-    },
     {
       "attempted": [
         "5dive-ai/5dive",
@@ -3693,6 +3659,212 @@
         "stages": {
           "catalog": 0.99,
           "snapshots": 10.02
+        }
+      }
+    },
+    {
+      "attempted": [
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "balaaagi/intelligent-agent",
+        "basilisk-labs/agentplane"
+      ],
+      "catalog": {
+        "backlog": 248,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "openharness",
+          "openmonoagentai",
+          "openrath",
+          "openspec",
+          "openwiki",
+          "oracle-ai-developer-hub",
+          "orbital-ai-coding-agent-ai-code-reviews",
+          "orbiteditor",
+          "orca",
+          "orca-orchestrator",
+          "orch",
+          "orchestration-framework",
+          "ore-code",
+          "ospec",
+          "otto",
+          "ouijit",
+          "outsourcerer",
+          "pagecast",
+          "paiagent",
+          "pairupnvim",
+          "pane",
+          "paperbanana-pro",
+          "par",
+          "parallel-code",
+          "paseo",
+          "patchwork",
+          "pear-landing-page",
+          "pearai",
+          "peerd",
+          "pentestgpt",
+          "perles",
+          "perplexity-inspired-llm-answer-engine",
+          "pi",
+          "pi-agent-desktop",
+          "pi-boomerang",
+          "pi-coding-agent",
+          "pi-coding-agent-action",
+          "pi-extensions",
+          "pi-gui",
+          "pi-hermes-memory",
+          "pi-interactive-shell",
+          "pi-mem",
+          "pi-reflect",
+          "pi-web",
+          "piclaw",
+          "picocode",
+          "pilotdeck",
+          "pinvim",
+          "pixtuoid",
+          "pku-mdagent"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-10-01T16:25:13+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "explicit_paths": [],
+          "files_stored": 10,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "azure/gpt-rag-orchestrator",
+          "reused": false,
+          "snapshot_id": "0ccadb3d0f69e160"
+        },
+        {
+          "commit": "b9515321f4a20bd676dfef88bdf3ba4d015bc6e9",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 300,
+          "repo": "backbay-labs/clawdstrike",
+          "reused": false,
+          "snapshot_id": "81b3960a89a9d14f"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 2,
+          "repo": "bahdotsh/indxr",
+          "reused": false,
+          "snapshot_id": "39b3455fdaea4952"
+        },
+        {
+          "commit": "c6e5db7ba44547a0b9d0204521a34d848ecc6b98",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "balaaagi/intelligent-agent",
+          "reused": true,
+          "snapshot_id": "18cf60edeecc6f50"
+        },
+        {
+          "commit": "37846e11ae867d1dd53779fb1b7b54b8edabc0b9",
+          "explicit_paths": [],
+          "files_stored": 7,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "basilisk-labs/agentplane",
+          "reused": false,
+          "snapshot_id": "acf2022b372f2d95"
+        }
+      ],
+      "started": "2026-10-01T16:24:58+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 15.169,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.798,
+          "snapshots": 14.311
         }
       }
     }

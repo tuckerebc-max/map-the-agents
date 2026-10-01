@@ -1,9 +1,9 @@
 # backbay-labs/clawdstrike
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b01f63ae64fa @ e30732e863637655
+Latest snapshot: commit b9515321f4a2 @ 81b3960a89a9d14f
 
 ## Summary (orientation draft, not independently verified)
 

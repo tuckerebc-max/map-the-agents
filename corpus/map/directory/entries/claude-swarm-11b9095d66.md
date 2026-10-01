@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: affaan-m
@@ -22,6 +22,8 @@ Repository map entry: [affaan-m/claude-swarm](../../repos/affaan-m/claude-swarm.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Claude Swarm demonstrates a cost-tiered orchestration pattern: expensive reasoning is confined to planning and integration review while cheap, well-specified execution runs on Haiku in parallel. Depen
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Multi-agent orchestration for Claude Code: Opus 4.6 decomposes tasks into a dependency graph of subtasks, Haiku worker agents execute in parallel with pessimistic file locking, then Opus runs a quality gate review. htop-style TUI dashboard, hard budget enforcement, JSONL session replay, and declarative YAML agent topologies.
+
+(captured site page body (agents/claude-swarm.md), not a verified repo-code finding)
+Claude Swarm demonstrates a cost-tiered orchestration pattern: expensive reasoning is confined to planning and integration review while cheap, well-specified execution runs on Haiku in parallel. Dependency-ordered waves via topological sorting, file locking to avoid write collisions, and a hard dollar budget with per-agent accounting make parallel agent runs economically controllable. A quality gate scores the combined output and can reject it, and sessions record to JSONL for replay. Built for the February 2026 Cerebral Valley x Anthropic hackathon, it has seen little development since, but the pattern it demonstrates influenced later planner-worker-review harness designs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claude-swarm.md)

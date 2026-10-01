@@ -1,9 +1,9 @@
 # azure/gpt-rag-orchestrator
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9b64a5b96206 @ 6d6e1636c9e5b9d8
+Latest snapshot: commit 9b64a5b96206 @ 0ccadb3d0f69e160
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ultraworkers
@@ -22,6 +22,8 @@ Repository map entry: [ultraworkers/claw-code](../../repos/ultraworkers/claw-cod
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The repository is a demonstration that agent harnesses can maintain software without humans: its README describes the project as an exhibit kept alive by the same class of harnesses that built it, and
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): An 'agent-managed museum exhibit' developed and maintained autonomously by agent harnesses (LazyCodex/Gajae-Code) with no human intervention; serves as a living demonstration of fully autonomous agent-managed software.
+
+(captured site page body (agents/claw-code.md), not a verified repo-code finding)
+The repository is a demonstration that agent harnesses can maintain software without humans: its README describes the project as an exhibit kept alive by the same class of harnesses that built it, and the commit stream is produced autonomously. The artifact itself is a working Rust claw CLI with doctor diagnostics, prompt mode, and multi-provider sessions, but the project explicitly disclaims production intent and redirects users to its successor harnesses, LazyCodex and Gajae-Code. Its census value is as evidence about autonomous maintenance workflows - agents planning, executing, verifying, and labeling their own work - rather than as a tool anyone should adopt.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claw-code.md)

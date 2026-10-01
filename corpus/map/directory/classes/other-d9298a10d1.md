@@ -120,6 +120,8 @@
 - [claude-northstar](../entries/claude-northstar-412cb1adbe.md)
 - [claude-orchestration](../entries/claude-orchestration-11cfd64b80.md)
 - [claude-plugins-2389](../entries/claude-plugins-2389-b2e1eba16a.md)
+- [claudecode-orchestrator](../entries/claudecode-orchestrator-ce11cfba2a.md)
+- [claudemacs](../entries/claudemacs-d58e855cf9.md)
 - [clawde-code](../entries/clawde-code-a5efdff06a.md)
 - [clawdstrike](../entries/clawdstrike-ab34fbd603.md)
 - [cli-llm-coding](../entries/cli-llm-coding-2507787da5.md)

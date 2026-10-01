@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: omarabid
@@ -22,6 +22,8 @@ Repository map entry: [omarabid/cli-llm-coding](../../repos/omarabid/cli-llm-cod
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository serves as a static taxonomy of the CLI-agent field: a single table comparing roughly fifteen terminal coding tools on model backends, licensing, and language, maintained alongside the a
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Curated list/catalog of CLI-based agentic coding tools similar to Claude Code, presented as a table with project links, model backends, licenses, and implementation languages; a reference list rather than a software tool.
+
+(captured site page body (agents/cli-llm-coding.md), not a verified repo-code finding)
+The repository serves as a static taxonomy of the CLI-agent field: a single table comparing roughly fifteen terminal coding tools on model backends, licensing, and language, maintained alongside the author's writing site. It exists because the tool landscape became dense enough that orientation by category (CLI-only versus IDE-coupled, open versus proprietary) became valuable before evaluation. It has no runtime, API, or installable artifact, and its value is as a snapshot of the ecosystem rather than as software. The list has seen only occasional updates since late 2025.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cli-llm-coding.md)

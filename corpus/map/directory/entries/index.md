@@ -280,31 +280,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [claude-northstar (`claude-northstar`)](claude-northstar-412cb1adbe.md) -- backing+pages
 - [claude-orchestration (`claude-orchestration`)](claude-orchestration-11cfd64b80.md) -- backing+pages
 - [2389 Claude Plugins (`claude-plugins-2389`)](claude-plugins-2389-b2e1eba16a.md) -- pages-only
-- [Claude Squad (`claude-squad`)](claude-squad-67acc7bb84.md) -- published+backing
-- [Claude Subscription ACP Agent (`claude-subscription-acp-agent`)](claude-subscription-acp-agent-4a937becf7.md) -- published+backing
-- [claude-swarm (`claude-swarm`)](claude-swarm-11b9095d66.md) -- published+backing
-- [claudecode-orchestrator (`claudecode-orchestrator`)](claudecode-orchestrator-ce11cfba2a.md) -- backing-only
-- [claudemacs (`claudemacs`)](claudemacs-d58e855cf9.md) -- backing-only
-- [claude.vim (`claudevim`)](claudevim-1127386f3a.md) -- published+backing
-- [Claudexor (`claudexor`)](claudexor-2b64301286.md) -- published+backing
-- [Claudraband (`claudraband`)](claudraband-853186ab4d.md) -- published+backing
-- [Claurst (`claurst`)](claurst-3b24d6f8f1.md) -- published+backing
-- [Claw Code (`claw-code`)](claw-code-959f9d8922.md) -- published+backing
-- [claw-code-agent (`claw-code-agent`)](claw-code-agent-8464312501.md) -- published+backing
-- [clawcodex (`clawcodex`)](clawcodex-d7ca84ab1c.md) -- published+backing
-- [Clawde_Code (`clawde-code`)](clawde-code-a5efdff06a.md) -- backing-only
-- [clawdstrike (`clawdstrike`)](clawdstrike-ab34fbd603.md) -- backing-only
-- [CLI Agent Dock (`cli-agent-dock`)](cli-agent-dock-9adf6b0dd7.md) -- published+backing
-- [CLI Agent Orchestrator (CAO) (`cli-agent-orchestrator-cao`)](cli-agent-orchestrator-cao-a6324bebeb.md) -- published+backing
-- [cli-llm-coding (`cli-llm-coding`)](cli-llm-coding-2507787da5.md) -- backing-only
-- [CLI Manager (`cli-manager`)](cli-manager-689d4cd6d2.md) -- published+backing
-- [cliclaw (`cliclaw`)](cliclaw-2ff68be93c.md) -- published+backing
-- [CliDeck (`clideck`)](clideck-5a9e5e1553.md) -- published+backing
-- [Cline (`cline`)](cline-84829dbd81.md) -- published+backing
-- [clio (`clio`)](clio-c38c694be0.md) -- published+backing
-- [CLITrigger (`clitrigger`)](clitrigger-b226cf8cfc.md) -- published+backing
-- [clodex-ide (`clodex-ide`)](clodex-ide-082b969807.md) -- published+backing
-- [cloi (`cloi`)](cloi-1181f0a25f.md) -- published+backing
+- [Claude Squad (`claude-squad`)](claude-squad-67acc7bb84.md) -- published+backing+pages
+- [Claude Subscription ACP Agent (`claude-subscription-acp-agent`)](claude-subscription-acp-agent-4a937becf7.md) -- published+backing+pages
+- [claude-swarm (`claude-swarm`)](claude-swarm-11b9095d66.md) -- published+backing+pages
+- [claudecode-orchestrator (`claudecode-orchestrator`)](claudecode-orchestrator-ce11cfba2a.md) -- backing+pages
+- [claudemacs (`claudemacs`)](claudemacs-d58e855cf9.md) -- backing+pages
+- [claude.vim (`claudevim`)](claudevim-1127386f3a.md) -- published+backing+pages
+- [Claudexor (`claudexor`)](claudexor-2b64301286.md) -- published+backing+pages
+- [Claudraband (`claudraband`)](claudraband-853186ab4d.md) -- published+backing+pages
+- [Claurst (`claurst`)](claurst-3b24d6f8f1.md) -- published+backing+pages
+- [Claw Code (`claw-code`)](claw-code-959f9d8922.md) -- published+backing+pages
+- [claw-code-agent (`claw-code-agent`)](claw-code-agent-8464312501.md) -- published+backing+pages
+- [clawcodex (`clawcodex`)](clawcodex-d7ca84ab1c.md) -- published+backing+pages
+- [Clawde_Code (`clawde-code`)](clawde-code-a5efdff06a.md) -- backing+pages
+- [clawdstrike (`clawdstrike`)](clawdstrike-ab34fbd603.md) -- backing+pages
+- [CLI Agent Dock (`cli-agent-dock`)](cli-agent-dock-9adf6b0dd7.md) -- published+backing+pages
+- [CLI Agent Orchestrator (CAO) (`cli-agent-orchestrator-cao`)](cli-agent-orchestrator-cao-a6324bebeb.md) -- published+backing+pages
+- [cli-llm-coding (`cli-llm-coding`)](cli-llm-coding-2507787da5.md) -- backing+pages
+- [CLI Manager (`cli-manager`)](cli-manager-689d4cd6d2.md) -- published+backing+pages
+- [cliclaw (`cliclaw`)](cliclaw-2ff68be93c.md) -- published+backing+pages
+- [CliDeck (`clideck`)](clideck-5a9e5e1553.md) -- published+backing+pages
+- [Cline (`cline`)](cline-84829dbd81.md) -- published+backing+pages
+- [clio (`clio`)](clio-c38c694be0.md) -- published+backing+pages
+- [CLITrigger (`clitrigger`)](clitrigger-b226cf8cfc.md) -- published+backing+pages
+- [clodex-ide (`clodex-ide`)](clodex-ide-082b969807.md) -- published+backing+pages
+- [cloi (`cloi`)](cloi-1181f0a25f.md) -- published+backing+pages
 - [clu (`clu`)](clu-04361edad3.md) -- backing-only
 - [Cluely (`cluely`)](cluely-18758646e2.md) -- backing-only
 - [cmux (`cmux`)](cmux-548d4fabc5.md) -- published+backing

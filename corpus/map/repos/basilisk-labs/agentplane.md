@@ -1,9 +1,9 @@
 # basilisk-labs/agentplane
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ecfccc5ad023 @ f428a157f1df96e8
+Latest snapshot: commit 37846e11ae86 @ acf2022b372f2d95
 
 ## Summary (orientation draft, not independently verified)
 
