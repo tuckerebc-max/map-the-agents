@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Lekssays
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [lekssays/codebadger](https://gith
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Codebadger, built at QCRI, gives LLM agents structured access to program analysis that plain code reading cannot provide. It constructs Joern Code Property Graphs from a git repository, local path, or
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Bridges Joern Code Property Graphs with LLMs via MCP - enables AI agents to run CPGQL queries, trace data flow/taint, slice programs, and hunt vulnerabilities across 13+ languages. Scales with per-CPG worker pools, memory-aware scheduling, Postgres/Redis backend. Accepted at ICSE 2026 Software Vulnerability Management Workshop.
+
+(captured site page body (agents/codebadger.md), not a verified repo-code finding)
+Codebadger, built at QCRI, gives LLM agents structured access to program analysis that plain code reading cannot provide. It constructs Joern Code Property Graphs from a git repository, local path, or pasted snippet, then exposes them over MCP so an external agent can run CPGQL queries, follow data-flow and taint paths, slice programs, and develop vulnerability proofs of concept across 13+ languages including Java, C/C++, Go, and Swift. The service scales through per-CPG worker pools with memory-aware scheduling on a Postgres and Redis backend, and documents an LLM workflow guide plus a security threat model for the analysis pipeline. It is a tools supplier rather than an agent: the repository is explicitly packaged as an MCP server (Dockerfile.mcp), with agents running externally, and it was published at the ICSE 2026 Software Vulnerability Management Workshop.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codebadger.md)

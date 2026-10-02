@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (931)
+## current (929)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -89,9 +89,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws](../repos/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.md) [coverage: complete]
 - [aws/aws-mwaa-local-runner](../repos/aws/aws-mwaa-local-runner.md) [coverage: complete]
 - [balaaagi/intelligent-agent](../repos/balaaagi/intelligent-agent.md) [coverage: complete]
-- [bastani-inc/atomic](../repos/bastani-inc/atomic.md) [coverage: partial]
 - [bauer-jan/stock-analysis-with-llm](../repos/bauer-jan/stock-analysis-with-llm.md) [coverage: complete]
-- [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) [coverage: partial]
 - [bbarit/terminal](../repos/bbarit/terminal.md) [coverage: complete]
 - [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
 - [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) [coverage: complete]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kleneway/next-ai-starter](../repos/kleneway/next-ai-starter.md) [coverage: complete]
 - [kodu-ai/claude-coder](../repos/kodu-ai/claude-coder.md) [coverage: complete]
 - [kommander/oc-plugin-vault-tec](../repos/kommander/oc-plugin-vault-tec.md) [coverage: complete]
+- [kreneskyp/ix](../repos/kreneskyp/ix.md) [coverage: partial]
+- [kristoferlund/duet-gpt](../repos/kristoferlund/duet-gpt.md) [coverage: complete]

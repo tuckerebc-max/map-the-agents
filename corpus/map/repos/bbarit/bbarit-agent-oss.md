@@ -1,9 +1,9 @@
 # bbarit/bbarit-agent-oss
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 2cb8b723f278 @ 193ffd7e172b4267
+Latest snapshot: commit 2cb8b723f278 @ 2f5f498e055ffd89
 
 ## Summary (orientation draft, not independently verified)
 

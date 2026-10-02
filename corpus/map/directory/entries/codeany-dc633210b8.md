@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: codeany-ai
@@ -22,6 +22,8 @@ Repository map entry: [codeany-ai/codeany](../../repos/codeany-ai/codeany.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Codeany is a terminal coding agent built in Go on the Open Agent SDK with a Bubble Tea interface, covering codebase explanation, test execution, commits, review, and bug investigation through an agent
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source AI-powered terminal agent built with Go, Bubble Tea TUI, and Open Agent SDK. Features 78 built-in slash commands, custom Skills system (user-defined sub-agents via SKILL.md files), plugin architecture, pre/post tool use hooks, plan mode, Chinese/IME input support, self-update capability, and compatibility with both CODEANY.md and CLAUDE.md project instruction files.
+
+(captured site page body (agents/codeany.md), not a verified repo-code finding)
+Codeany is a terminal coding agent built in Go on the Open Agent SDK with a Bubble Tea interface, covering codebase explanation, test execution, commits, review, and bug investigation through an agentic loop with maxTurns bounds and permission modes. Its configuration surface mirrors Claude Code conventions: project instructions come from CODEANY.md or CLAUDE.md plus .codeany/rules/ markdown files, and per-user state lives under ~/.codeany/ with settings, permissions, memory, sessions, skills, and plugins directories. Extensibility covers stdio MCP servers managed through /mcp, pre/post tool-use hooks, SKILL.md-defined skills, and plugins loaded from ~/.codeany/plugins/. Models default to Anthropic with OpenRouter or custom endpoints configured through environment variables, sessions resume or export as JSON, and non-interactive pipe and print modes support scripting. The project is young — a small commit history and no releases — with Chinese/IME input support among its distinguishing features.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codeany.md)

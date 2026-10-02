@@ -1,9 +1,9 @@
 # bastani-inc/atomic
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ca64fa07885f @ cc096d4fbf9ff28b
+Latest snapshot: commit cbad1fc18e03 @ 2de2c1b9186eaa41
 
 ## Summary (orientation draft, not independently verified)
 

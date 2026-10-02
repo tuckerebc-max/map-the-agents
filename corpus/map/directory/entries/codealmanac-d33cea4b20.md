@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: AlmanacCode
@@ -22,6 +22,8 @@ Repository map entry: [almanaccode/codealmanac](../../repos/almanaccode/codealma
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Codealmanac gives coding agents durable project knowledge that the code itself cannot express — rationale, invariants, incident history, cross-file workflows — by maintaining a markdown wiki inside th
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI-maintained wiki that lives in your repo as plain markdown, committed and reviewed like code, giving agents durable context the codebase can't encode. Auto-ingests from agent conversations (syncs local Codex/Claude transcripts). Garden mode schedules agent runs to prune stale pages, fix weak links, dedupe knowledge. Local-first, no cloud upload. Y Combinator S26-backed.
+
+(captured site page body (agents/codealmanac.md), not a verified repo-code finding)
+Codealmanac gives coding agents durable project knowledge that the code itself cannot express — rationale, invariants, incident history, cross-file workflows — by maintaining a markdown wiki inside the repository that agents read as context and humans review as ordinary commits. The tool syncs local Codex and Claude Code transcripts on a schedule, extracting durable knowledge into the wiki, and runs scheduled garden passes in which agents prune outdated pages, fix weak links, and merge duplicates. Everything stays local: indexing, storage, and the scheduled launchd jobs run on the developer's machine, with changes committed through git for normal review. It runs lifecycle agents through a Yoke provider boundary supporting Codex and Claude Code, installs via uv from PyPI (the legacy npm package is retired), and requires macOS and Python 3.12 or later.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codealmanac.md)

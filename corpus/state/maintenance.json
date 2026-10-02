@@ -1,5 +1,5 @@
 {
-  "cursor": "basilisk-labs/agentplane",
+  "cursor": "bbarit/bbarit-agent-oss",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -530,164 +530,44 @@
       "failures": 0,
       "last_at": "2026-10-01T16:25:13+00:00",
       "last_outcome": "snapshotted"
+    },
+    "bastani-inc/atomic": {
+      "failures": 0,
+      "last_at": "2026-10-02T15:46:16+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "bauer-jan/stock-analysis-with-llm": {
+      "failures": 0,
+      "last_at": "2026-10-02T15:46:17+00:00",
+      "last_outcome": "reused"
+    },
+    "bawadou/ai-data-extractor": {
+      "failures": 1,
+      "last_at": "2026-10-02T15:46:17+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "http-404: https://api.github.com/repos/bawadou/ai-data-extractor"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "bazed-ai/bazed-af": {
+      "failures": 1,
+      "last_at": "2026-10-02T15:46:18+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/bazed-ai/bazed-af"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "bbarit/bbarit-agent-oss": {
+      "failures": 0,
+      "last_at": "2026-10-02T15:46:20+00:00",
+      "last_outcome": "snapshotted"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "5dive-ai/5dive",
-        "777genius/agent-teams-ai",
-        "abacusai/abacusai-desktop",
-        "aeonfun/aeon",
-        "aetherstudio-cn/aetherstudio"
-      ],
-      "catalog": {
-        "backlog": 1294,
-        "changed": true,
-        "commit": "0709cccb49aff08a4b10beb95a214005a810a363",
-        "processed": 50,
-        "slugs": [
-          "abacus-ai-agent",
-          "acp-client",
-          "adal-cli",
-          "ade",
-          "ade-cli",
-          "aeon",
-          "aetherstudio",
-          "aft",
-          "agena",
-          "agency-agents-zh",
-          "agent-blackbox",
-          "agent-deck",
-          "agent-fm",
-          "agent-gui",
-          "agent-harness-kit",
-          "agent-manager",
-          "agent-md",
-          "agent-of-empires",
-          "agent-orchestrator",
-          "agent-orchestrator-ao",
-          "agent-os",
-          "agent-repoguardian",
-          "agent-sandbox",
-          "agent-sh",
-          "agent-teams-ai",
-          "agentbox",
-          "agentbridge",
-          "agentcoder",
-          "agentcookie",
-          "agentellij",
-          "agentflow",
-          "agentforce-for-developers",
-          "agentforce-vibes",
-          "agenthub",
-          "agentic-ai",
-          "agentic-code",
-          "agentic-coding-basic",
-          "agentic-coding-intro",
-          "agentic-coding-quickstart",
-          "agentic-coding-tool-eval",
-          "agentic-coding-with-claude-code",
-          "agentic-engineering-framework",
-          "agentic-platform",
-          "agenticai",
-          "agentlas-os",
-          "agentless",
-          "agentmd",
-          "agentnotch",
-          "agentpack",
-          "agentplane"
-        ],
-        "version_changed": false
-      },
-      "failures": [],
-      "finished": "2026-09-13T22:45:18+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "21st-dev/1code",
-        "5dive-ai/5dive",
-        "777genius/agent-teams-ai",
-        "abacusai/abacusai-desktop",
-        "aeonfun/aeon",
-        "aetherstudio-cn/aetherstudio",
-        "openai/codex"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "pending",
-          "omitted_count": 7,
-          "repo": "5dive-ai/5dive",
-          "reused": false,
-          "snapshot_id": "00021c2ed875dd28"
-        },
-        {
-          "commit": "43764e1df31fccb3a8ba793e7d8637af15aa10ea",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "pending",
-          "omitted_count": 161,
-          "repo": "777genius/agent-teams-ai",
-          "reused": false,
-          "snapshot_id": "771d7e3404fa9a61"
-        },
-        {
-          "commit": "b4f988ce556ddde1c7551f70d5d01bf98777078c",
-          "explicit_paths": [],
-          "files_stored": 1,
-          "freshness": "pending",
-          "omitted_count": 0,
-          "repo": "abacusai/abacusai-desktop",
-          "reused": false,
-          "snapshot_id": "8fce056cb8ac87db"
-        },
-        {
-          "commit": "95142d19705ca379815e7fc9493a497ee0504e8d",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "pending",
-          "omitted_count": 27,
-          "repo": "aeonfun/aeon",
-          "reused": false,
-          "snapshot_id": "76226e8365f601b0"
-        },
-        {
-          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
-          "explicit_paths": [],
-          "files_stored": 6,
-          "freshness": "pending",
-          "omitted_count": 0,
-          "repo": "aetherstudio-cn/aetherstudio",
-          "reused": false,
-          "snapshot_id": "9dbf470b8b2608bc"
-        }
-      ],
-      "started": "2026-09-13T22:45:03+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 15.573,
-        "max_seconds": 480,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 0.7,
-          "snapshots": 14.867
-        }
-      }
-    },
     {
       "attempted": [
         "agenticailabs/ai-engineering-roadmap",
@@ -3865,6 +3745,209 @@
         "stages": {
           "catalog": 0.798,
           "snapshots": 14.311
+        }
+      }
+    },
+    {
+      "attempted": [
+        "bastani-inc/atomic",
+        "bauer-jan/stock-analysis-with-llm",
+        "bawadou/ai-data-extractor",
+        "bazed-ai/bazed-af",
+        "bbarit/bbarit-agent-oss"
+      ],
+      "catalog": {
+        "backlog": 198,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "plandex",
+          "plugins-coding-agents",
+          "pocketshell",
+          "podiom",
+          "postal",
+          "postmortemthis",
+          "pr-agent",
+          "praisonai",
+          "prarena",
+          "prime-agent",
+          "privatecode",
+          "project-codeguard",
+          "project-os-for-codex",
+          "project-socrates",
+          "proliferate",
+          "prometheus",
+          "promptengineering",
+          "public-agent-framwork",
+          "purrcode",
+          "push",
+          "pycodeagi",
+          "python-agents",
+          "qm",
+          "qodeassist",
+          "qoder-cli",
+          "quillcode",
+          "qwen-agent",
+          "qwen-cli-coder",
+          "qwen-code",
+          "qwengate",
+          "r2e-gym",
+          "race-condition",
+          "ralph",
+          "ralph-wiggum",
+          "ralph-workflow",
+          "raven-test-ai",
+          "rayu-cli",
+          "real-world-rails",
+          "recode",
+          "recursive-coding-agents",
+          "ref-tools-mcp",
+          "refakts",
+          "relay",
+          "remote-swe-agents",
+          "repo-to-text",
+          "repoagent",
+          "repomon",
+          "rgr",
+          "ricochet",
+          "roo-code-cli"
+        ],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "http-404: https://api.github.com/repos/bawadou/ai-data-extractor",
+          "repo": "bawadou/ai-data-extractor",
+          "stage": "snapshot"
+        },
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/bazed-ai/bazed-af",
+          "repo": "bazed-ai/bazed-af",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-10-02T15:46:20+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "cbad1fc18e03e40ca82438ea3e4640235bc8d646",
+          "explicit_paths": [],
+          "files_stored": 10,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "bastani-inc/atomic",
+          "reused": false,
+          "snapshot_id": "2de2c1b9186eaa41"
+        },
+        {
+          "commit": "96b8039f7b242934c0ab8d831931eef96f4c2bd9",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "bauer-jan/stock-analysis-with-llm",
+          "reused": true,
+          "snapshot_id": "5d2b26a1fe4cc741"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "explicit_paths": [],
+          "files_stored": 8,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "bbarit/bbarit-agent-oss",
+          "reused": false,
+          "snapshot_id": "2f5f498e055ffd89"
+        }
+      ],
+      "started": "2026-10-02T15:46:13+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 7.228,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.825,
+          "snapshots": 6.352
         }
       }
     }

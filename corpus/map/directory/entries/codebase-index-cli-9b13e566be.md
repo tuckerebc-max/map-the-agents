@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: dudufcb1
@@ -22,6 +22,8 @@ Repository map entry: [dudufcb1/codebase-index-cli](../../repos/dudufcb1/codebas
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Codebase-index-cli exists because most coding assistants locate code through text matching, which fails on semantic queries like 'where is rate limiting enforced.' It watches a workspace continuously,
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Lightweight semantic code indexing engine for AI coding assistants lacking native semantic search; real-time file watching, git commit tracking with LLM analysis, dual storage (SQLite-vec / Qdrant), tree-sitter parsing for 29+ languages, per-vector-store embedder configuration, and Claude Code integration via SessionStart hook.
+
+(captured site page body (agents/codebase-index-cli.md), not a verified repo-code finding)
+Codebase-index-cli exists because most coding assistants locate code through text matching, which fails on semantic queries like 'where is rate limiting enforced.' It watches a workspace continuously, parses files with tree-sitter across 29+ languages, and maintains vector indexes in either SQLite-vec for local single-user use or Qdrant for larger deployments, with embedders configurable per store (OpenAI, OpenAI-compatible endpoints such as LM Studio or Together, or Ollama). An experimental layer analyzes git commit history with an LLM, indexing the semantic meaning of changes including retroactive indexing of historical commits. Integration targets Claude Code specifically through a SessionStart hook that launches indexing at session start, and the author ships a companion MCP server so MCP-capable IDEs can query the indexes. The project is small and self-described as experimental, derived from Roo Code's indexer.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codebase-index-cli.md)

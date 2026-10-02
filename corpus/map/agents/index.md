@@ -151,11 +151,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [bahdotsh/indxr](../repos/bahdotsh/indxr.md) -- status=distilled, freshness=stale
 - [balaaagi/intelligent-agent](../repos/balaaagi/intelligent-agent.md) -- status=distilled, freshness=current
 - [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) -- status=distilled, freshness=stale
-- [bastani-inc/atomic](../repos/bastani-inc/atomic.md) -- status=distilled, freshness=current
+- [bastani-inc/atomic](../repos/bastani-inc/atomic.md) -- status=distilled, freshness=stale
 - [bauer-jan/stock-analysis-with-llm](../repos/bauer-jan/stock-analysis-with-llm.md) -- status=distilled, freshness=current
 - [bawadou/ai-data-extractor](../repos/bawadou/ai-data-extractor.md) -- status=blocked, freshness=refresh-failed
 - [bazed-ai/bazed-af](../repos/bazed-ai/bazed-af.md) -- status=blocked, freshness=refresh-failed
-- [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) -- status=distilled, freshness=current
+- [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) -- status=distilled, freshness=stale
 - [bbarit/terminal](../repos/bbarit/terminal.md) -- status=distilled, freshness=current
 - [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) -- status=distilled, freshness=current
 - [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) -- status=distilled, freshness=current

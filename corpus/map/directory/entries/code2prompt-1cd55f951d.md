@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: mufeedvh
@@ -22,6 +22,8 @@ Repository map entry: [mufeedvh/code2prompt](../../repos/mufeedvh/code2prompt.md
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Code2Prompt automates the context-building step that precedes most LLM-assisted coding work. It walks a repository, respects .gitignore and glob filters, renders the file tree and selected sources thr
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Converts a codebase into a well-structured LLM prompt with source tree, Handlebars templating, token tracking, git integration, and .gitignore support. Complete ecosystem: Rust core + CLI + Python SDK + MCP server, with a TUI. Provider-agnostic — outputs prompts for any LLM.
+
+(captured site page body (agents/code2prompt.md), not a verified repo-code finding)
+Code2Prompt automates the context-building step that precedes most LLM-assisted coding work. It walks a repository, respects .gitignore and glob filters, renders the file tree and selected sources through Handlebars templates, counts tokens against configurable model budgets, and can embed git diffs, logs, and branch comparisons in the output. The engine ships as a Rust CLI with an interactive TUI, a Python SDK (code2prompt-rs on PyPI), and an MCP server mode that lets MCP-capable agents query the codebase on demand instead of receiving one large dump. It calls no model itself — output is provider-agnostic text suitable for any LLM — and is installed via Cargo, Homebrew, pip, or prebuilt binaries.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/code2prompt.md)

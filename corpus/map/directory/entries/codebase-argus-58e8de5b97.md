@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: AaronZ345
@@ -22,6 +22,8 @@ Repository map entry: [aaronz345/codebase-argus](../../repos/aaronz345/codebase-
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Codebase-argus targets repository maintainers who need review verdicts they can trust, combining deterministic evidence with multi-model judgment. For each pull request it assembles an evidence packag
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Multi-agent PR review + downstream fork-sync risk analysis for maintainers; combines deterministic review with multi-provider tribunal consensus, local git simulations (merge-tree, rebase, cherry, range-diff), and CI failure diagnosis.
+
+(captured site page body (agents/codebase-argus.md), not a verified repo-code finding)
+Codebase-argus targets repository maintainers who need review verdicts they can trust, combining deterministic evidence with multi-model judgment. For each pull request it assembles an evidence package — patch, check status, changed files, branch state, policy gates from .codebase-argus.yml, and prior reviews — enriched with local git simulations such as merge-tree projections, rebase simulations, and git cherry/range-diff comparisons against downstream forks. Multiple providers then review the same evidence, and tribunal mode groups findings that independent models agree on, surfacing provider failures rather than hiding them. Beyond PR review it diagnoses CI failures from logs and plans gated autofixes for mechanical changes. It ships as a CLI, a Next.js dashboard, a GitHub Action, a webhook-based GitHub App, and a Claude Code plugin installable from a marketplace.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codebase-argus.md)
