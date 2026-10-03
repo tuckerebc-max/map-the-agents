@@ -157,7 +157,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [bazed-ai/bazed-af](../repos/bazed-ai/bazed-af.md) -- status=blocked, freshness=refresh-failed
 - [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) -- status=distilled, freshness=stale
 - [bbarit/terminal](../repos/bbarit/terminal.md) -- status=distilled, freshness=current
-- [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) -- status=distilled, freshness=current
+- [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) -- status=distilled, freshness=stale
 - [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) -- status=distilled, freshness=current
 - [benthecoder/yt-channels-ds-ai-ml-cs](../repos/benthecoder/yt-channels-ds-ai-ml-cs.md) -- status=distilled, freshness=current
 - [betterforall/self-improving-agents](../repos/betterforall/self-improving-agents.md) -- status=distilled, freshness=current

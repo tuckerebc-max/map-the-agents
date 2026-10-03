@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (929)
+## current (928)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -91,7 +91,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [balaaagi/intelligent-agent](../repos/balaaagi/intelligent-agent.md) [coverage: complete]
 - [bauer-jan/stock-analysis-with-llm](../repos/bauer-jan/stock-analysis-with-llm.md) [coverage: complete]
 - [bbarit/terminal](../repos/bbarit/terminal.md) [coverage: complete]
-- [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
 - [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) [coverage: complete]
 - [benthecoder/yt-channels-ds-ai-ml-cs](../repos/benthecoder/yt-channels-ds-ai-ml-cs.md) [coverage: complete]
 - [betterforall/self-improving-agents](../repos/betterforall/self-improving-agents.md) [coverage: complete]
@@ -437,3 +436,4 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kommander/oc-plugin-vault-tec](../repos/kommander/oc-plugin-vault-tec.md) [coverage: complete]
 - [kreneskyp/ix](../repos/kreneskyp/ix.md) [coverage: partial]
 - [kristoferlund/duet-gpt](../repos/kristoferlund/duet-gpt.md) [coverage: complete]
+- [kuafuai/aipexbase](../repos/kuafuai/aipexbase.md) [coverage: partial]

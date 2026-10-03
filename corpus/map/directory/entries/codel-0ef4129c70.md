@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: semanser
@@ -22,6 +22,8 @@ Repository map entry: [semanser/codel](../../repos/semanser/codel.md) (source: b
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Codel is a self-hosted autonomous agent that carries a task from description to completion using a terminal, a browser, and a text editor, all inside sandboxed Docker containers. The agent decides its
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Fully autonomous AI agent running in a sandboxed Docker environment with a built-in browser, text editor, automatic Docker-image picker, and PostgreSQL-backed command history.
+
+(captured site page body (agents/codel.md), not a verified repo-code finding)
+Codel is a self-hosted autonomous agent that carries a task from description to completion using a terminal, a browser, and a text editor, all inside sandboxed Docker containers. The agent decides its next step autonomously, consulting the web through a built-in browser when it needs information and editing files through an editor viewable in the web UI; command and output history persists in PostgreSQL for later review. It selects an appropriate Docker image for each task automatically and works with OpenAI models or self-hosted Ollama endpoints configured through environment variables. The project drew attention as an early open-source answer to Cognition's Devin, accumulating roughly 2.5k stars, but development stalled in 2024 and the repository has been dormant since.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codel.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: gitbito
@@ -22,6 +22,8 @@ Repository map entry: [gitbito/codereviewagent](../../repos/gitbito/codereviewag
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Bito's CodeReviewAgent automates the review stage of pull and merge requests across GitHub, GitLab, and Bitbucket, reading the whole codebase rather than the diff alone so findings account for surroun
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Bito's AI Code Review Agent provides automated, context-aware code reviews in Git workflows (PR/MR) and IDEs, identifying bugs, code smells, and security vulnerabilities with fix suggestions. First agent built on Bito's AI Agent framework; powered by Anthropic Claude Sonnet 3.5; deep whole-codebase understanding; integrates static analysis tools (fbinfer, OWASP Dependency-Check) out of the box and 3rd-party tools (Snyk, Sonar); does ...
+
+(captured site page body (agents/codereviewagent.md), not a verified repo-code finding)
+Bito's CodeReviewAgent automates the review stage of pull and merge requests across GitHub, GitLab, and Bitbucket, reading the whole codebase rather than the diff alone so findings account for surrounding architecture. It flags bugs, code smells, and security vulnerabilities, proposes line-level fixes, and posts results directly as PR comments; the same review engine runs in VS Code and JetBrains IDEs for pre-commit feedback. The agent incorporates static-analysis tooling — fbinfer and OWASP Dependency-Check out of the box, with Snyk, Sonar, and Dependabot configurable — and estimates review effort per change. Bito offers it as a cloud service with a free signup tier, as a self-hosted deployment via CLI, webhooks, or GitHub Actions, and states that customer code is neither stored nor used for model training.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codereviewagent.md)

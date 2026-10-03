@@ -1,5 +1,5 @@
 {
-  "cursor": "bbarit/bbarit-agent-oss",
+  "cursor": "betterforall/self-improving-agents",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -565,169 +565,34 @@
       "failures": 0,
       "last_at": "2026-10-02T15:46:20+00:00",
       "last_outcome": "snapshotted"
+    },
+    "bbarit/terminal": {
+      "failures": 0,
+      "last_at": "2026-10-03T14:18:19+00:00",
+      "last_outcome": "reused"
+    },
+    "benbasha/claude-autopilot": {
+      "failures": 0,
+      "last_at": "2026-10-03T14:18:21+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "benc-uk/workflow-dispatch": {
+      "failures": 0,
+      "last_at": "2026-10-03T14:18:22+00:00",
+      "last_outcome": "reused"
+    },
+    "benthecoder/yt-channels-ds-ai-ml-cs": {
+      "failures": 0,
+      "last_at": "2026-10-03T14:18:23+00:00",
+      "last_outcome": "reused"
+    },
+    "betterforall/self-improving-agents": {
+      "failures": 0,
+      "last_at": "2026-10-03T14:18:24+00:00",
+      "last_outcome": "reused"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "agenticailabs/ai-engineering-roadmap",
-        "agentlas-ai/agentlas-os",
-        "agentmd/agent.md",
-        "agentscope-ai/agentteams",
-        "agentsmd/agents.md"
-      ],
-      "catalog": {
-        "backlog": 1244,
-        "changed": true,
-        "commit": "0709cccb49aff08a4b10beb95a214005a810a363",
-        "processed": 50,
-        "slugs": [
-          "agentport",
-          "agentrove",
-          "agents",
-          "agents-by-hugging-face",
-          "agents-cli",
-          "agents-md",
-          "agentscope",
-          "agentsmd",
-          "agentsmesh",
-          "agentsview",
-          "agentsync",
-          "agentteams",
-          "agenttrace",
-          "agon",
-          "agx",
-          "ahadiff",
-          "ai-agent-cli-bridge",
-          "ai-agent-lab",
-          "ai-agent-playground",
-          "ai-agent-security",
-          "ai-agent-test",
-          "ai-agents-tool-dev",
-          "ai-assistant-by-jetbrains",
-          "ai-builders-bootcamp-1",
-          "ai-builders-bootcamp-2",
-          "ai-code-editorsall-kinds",
-          "ai-code-gen",
-          "ai-code-review-helper",
-          "ai-coding-assistant",
-          "ai-coding-style-guides",
-          "ai-data-extractor",
-          "ai-dev-agent-test",
-          "ai-dev-kit",
-          "ai-dev-tasks",
-          "ai-devkit",
-          "ai-doc-gen",
-          "ai-engineer",
-          "ai-engineer-toolkit",
-          "ai-engineering-roadmap",
-          "ai-engineering-toolkit",
-          "ai-expert-for-codebases",
-          "ai-for-software-engineers",
-          "ai-free-chat-agent",
-          "ai-game-base-analysis-cli-mcp-tool",
-          "ai-gdpr",
-          "ai-orchestrator",
-          "ai-powered-chatbot-generator",
-          "ai-powered-vulnerability-impact-analyzer",
-          "ai-testing-agent",
-          "ai-vibe-coding-notes-form-threads"
-        ],
-        "version_changed": false
-      },
-      "failures": [],
-      "finished": "2026-09-13T22:46:57+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "21st-dev/1code",
-        "5dive-ai/5dive",
-        "777genius/agent-teams-ai",
-        "abacusai/abacusai-desktop",
-        "aeonfun/aeon",
-        "aetherstudio-cn/aetherstudio",
-        "agenticailabs/ai-engineering-roadmap",
-        "agentlas-ai/agentlas-os",
-        "agentmd/agent.md",
-        "agentscope-ai/agentteams",
-        "agentsmd/agents.md",
-        "openai/codex"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "3d81071f7f906b7c8882316d8716db7d77997d73",
-          "explicit_paths": [],
-          "files_stored": 6,
-          "freshness": "pending",
-          "omitted_count": 0,
-          "repo": "agenticailabs/ai-engineering-roadmap",
-          "reused": false,
-          "snapshot_id": "2e5c2315cce27fcd"
-        },
-        {
-          "commit": "dcd9dd800f65d9b7ee1823cd096fc96cb4e7fc22",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "pending",
-          "omitted_count": 3,
-          "repo": "agentlas-ai/agentlas-os",
-          "reused": false,
-          "snapshot_id": "9dd257fdc1d230aa"
-        },
-        {
-          "commit": "e86e5c8b57d5dc8838b78ad965536686ee8eaa64",
-          "explicit_paths": [],
-          "files_stored": 1,
-          "freshness": "pending",
-          "omitted_count": 0,
-          "repo": "agentmd/agent.md",
-          "reused": false,
-          "snapshot_id": "d9bd0b2eecce1b16"
-        },
-        {
-          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "pending",
-          "omitted_count": 42,
-          "repo": "agentscope-ai/agentteams",
-          "reused": false,
-          "snapshot_id": "00898cd68a276fb4"
-        },
-        {
-          "commit": "d001185d792eb6402a58e4cbef1c228b309ec25d",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "pending",
-          "omitted_count": 0,
-          "repo": "agentsmd/agents.md",
-          "reused": false,
-          "snapshot_id": "dc191f78ddacbe4c"
-        }
-      ],
-      "started": "2026-09-13T22:46:48+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 9.48,
-        "max_seconds": 480,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 0.539,
-          "snapshots": 8.934
-        }
-      }
-    },
     {
       "attempted": [
         "agentsmesh/agentsmesh",
@@ -3948,6 +3813,215 @@
         "stages": {
           "catalog": 0.825,
           "snapshots": 6.352
+        }
+      }
+    },
+    {
+      "attempted": [
+        "bbarit/terminal",
+        "benbasha/claude-autopilot",
+        "benc-uk/workflow-dispatch",
+        "benthecoder/yt-channels-ds-ai-ml-cs",
+        "betterforall/self-improving-agents"
+      ],
+      "catalog": {
+        "backlog": 148,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "roo-code-docs",
+          "rosetta",
+          "routa",
+          "rowboat",
+          "rpm-ai-agent",
+          "rules",
+          "run-kit",
+          "runvsagent",
+          "sage",
+          "sample-multi-agent-orchestration-chat-on-agentcore",
+          "sandbox-agent",
+          "sandboxd",
+          "sc-helm-app",
+          "scenario",
+          "scenegenagent",
+          "sealos",
+          "seance",
+          "secure-ai-agent-boundary",
+          "seed",
+          "self-improving-agents",
+          "self-improving-coding-agent",
+          "semaphore",
+          "setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "shai",
+          "sharpclawcode",
+          "shotgun",
+          "sinew",
+          "singular-lite",
+          "singulary",
+          "slate",
+          "small-opencode-orchestrator",
+          "smallest-agent",
+          "smelt",
+          "smol-developer",
+          "snow-cli",
+          "software-dev-prompt-library",
+          "solo",
+          "sonagent",
+          "sondera-coding-agent-hooks",
+          "sourcebot",
+          "spacecreateai",
+          "speech-to-code",
+          "squarebox",
+          "sre",
+          "stacklit",
+          "stagewise",
+          "stan",
+          "starcoder",
+          "stemcode",
+          "stock-analysis-with-llm"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-10-03T14:18:24+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "b219ba8199da880a6ae717e9b8eac00cbeb1b3bc",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "bbarit/terminal",
+          "reused": true,
+          "snapshot_id": "afd231008ab1b632"
+        },
+        {
+          "commit": "eaeea24d49bc9ccdeb63faee181fab99619d7a3f",
+          "explicit_paths": [],
+          "files_stored": 6,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "benbasha/claude-autopilot",
+          "reused": false,
+          "snapshot_id": "dc315b8bb1921371"
+        },
+        {
+          "commit": "78e99d70d9acaa4e2c98fe781b3cabda5df0228e",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "benc-uk/workflow-dispatch",
+          "reused": true,
+          "snapshot_id": "3eb4093669280522"
+        },
+        {
+          "commit": "f331794322659bfbc55af776c9b63c0c81444cac",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "benthecoder/yt-channels-ds-ai-ml-cs",
+          "reused": true,
+          "snapshot_id": "c37ec7d938d85e05"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "explicit_paths": [],
+          "files_stored": 5,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "betterforall/self-improving-agents",
+          "reused": true,
+          "snapshot_id": "2ffba66f8aa5de4e"
+        }
+      ],
+      "started": "2026-10-03T14:18:18+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 6.021,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.66,
+          "snapshots": 5.316
         }
       }
     }

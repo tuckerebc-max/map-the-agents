@@ -15,6 +15,7 @@
 - [cersei](../entries/cersei-557ae9fcd0.md)
 - [claude-agent-sdk-python](../entries/claude-agent-sdk-python-dfef51e5f5.md)
 - [claude-agent-sdk-typescript](../entries/claude-agent-sdk-typescript-b52c0c1f60.md)
+- [codefuse-muagent](../entries/codefuse-muagent-5e8aeb5da3.md)
 - [crewai](../entries/crewai-57090017a8.md)
 - [dippin-lang](../entries/dippin-lang-f651643883.md)
 - [langgraph](../entries/langgraph-ad3fc2c957.md)

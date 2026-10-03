@@ -1,9 +1,9 @@
 # benbasha/claude-autopilot
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit eaeea24d49bc @ da246a5f4d928dea
+Latest snapshot: commit eaeea24d49bc @ dc315b8bb1921371
 
 ## Summary (orientation draft, not independently verified)
 

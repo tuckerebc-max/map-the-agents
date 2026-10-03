@@ -86,7 +86,6 @@
 - [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md)
 - [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md)
 - [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md)
-- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [clawplays/ospec](../repos/clawplays/ospec.md)
 - [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md)
 - [codefuse-ai/codefuse-muagent](../repos/codefuse-ai/codefuse-muagent.md)

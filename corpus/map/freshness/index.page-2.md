@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kuafuai/aipexbase](../repos/kuafuai/aipexbase.md) [coverage: partial]
 - [kuafuai/devopsgpt](../repos/kuafuai/devopsgpt.md) [coverage: partial]
 - [kuberwastaken/claurst](../repos/kuberwastaken/claurst.md) [coverage: partial]
 - [kunagent/kun](../repos/kunagent/kun.md) [coverage: partial]
@@ -439,3 +438,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [vinta/hal-9000](../repos/vinta/hal-9000.md) [coverage: complete]
 - [violetdelia/codex-multi-agents](../repos/violetdelia/codex-multi-agents.md) [coverage: complete]
 - [vishal2612200/agentpack](../repos/vishal2612200/agentpack.md) [coverage: partial]
+- [vivekhaldar/seed](../repos/vivekhaldar/seed.md) [coverage: complete]

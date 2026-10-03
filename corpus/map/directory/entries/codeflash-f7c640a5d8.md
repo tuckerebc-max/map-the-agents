@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: codeflash-ai
@@ -22,6 +22,8 @@ Repository map entry: [codeflash-ai/codeflash](../../repos/codeflash-ai/codeflas
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Codeflash automates performance work that ordinarily waits for a human to profile, rewrite, and benchmark by hand. The tool generates multiple optimization candidates for Python functions with LLMs, c
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A general-purpose Python code optimizer that uses LLMs to generate multiple optimization ideas, tests them for correctness, benchmarks for performance, and creates merge-ready pull requests with the best optimization found. Used by teams at Pydantic, Roboflow, Unstructured, Langflow. Excels at optimizing AI agents, computer vision algorithms, PyTorch code, numerical code, and backend code. Available as VS Code Extension and GitHub ...
+
+(captured site page body (agents/codeflash.md), not a verified repo-code finding)
+Codeflash automates performance work that ordinarily waits for a human to profile, rewrite, and benchmark by hand. The tool generates multiple optimization candidates for Python functions with LLMs, checks each candidate against the existing test suite for correctness, benchmarks runtime against the original, and opens a pull request containing the fastest verified optimization. Teams run it continuously through a GitHub Action so new code gets optimized in every pull request, or run one-off optimizations over an existing codebase or script from the CLI and a VS Code extension. It focuses on performance rather than general development: typical targets include AI agent code, computer vision, PyTorch, numerical, and backend Python, and teams such as Pydantic, Roboflow, Unstructured, and Langflow use it. Access requires an API key from Codeflash's hosted service.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codeflash.md)

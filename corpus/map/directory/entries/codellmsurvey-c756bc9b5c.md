@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: juyongjiang
@@ -22,6 +22,8 @@ Repository map entry: [juyongjiang/codellmsurvey](../../repos/juyongjiang/codell
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository is the official resource page for the TOSEM-accepted survey 'A Survey on Large Language Models for Code Generation' (arXiv:2406.00515). It organizes roughly 200 papers across the field
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Curated collection of papers and resources on LLMs for code generation, the official repo for the TOSEM-accepted survey 'A Survey on Large Language Models for Code Generation'; covers pre-training, instruction tuning, RL with feedback, prompting, data synthesis, repository-level generation, retrieval augmentation, autonomous coding agents, and evaluation/benchmarks.
+
+(captured site page body (agents/codellmsurvey.md), not a verified repo-code finding)
+This repository is the official resource page for the TOSEM-accepted survey 'A Survey on Large Language Models for Code Generation' (arXiv:2406.00515). It organizes roughly 200 papers across the field's structure: pre-training and foundation models, instruction tuning and parameter-efficient tuning, reinforcement learning from feedback, prompting techniques, data synthesis, repository-level and long-context generation, retrieval augmentation, autonomous coding agents, alignment and safety, and evaluation benchmarks. Beyond the paper list it links leaderboards such as HumanEval, EvalPlus, and BigCodeBench, evaluation frameworks like lm-evaluation-harness and OpenCompass, and application tools. The repo is a README-based bibliography maintained by the survey's author with light commit activity, intended as a research entry point rather than a tool.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codellmsurvey.md)

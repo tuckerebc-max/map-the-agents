@@ -330,6 +330,6 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [codebuddy (`codebuddy`)](codebuddy-580683fe55.md) -- published+backing+pages
 - [Codebuff (`codebuff`)](codebuff-35484aa117.md) -- published+backing+pages
 - [CodeClinicR (`codeclinicr`)](codeclinicr-835d38591c.md) -- backing+pages
-- [CodeContests (`codecontests`)](codecontests-b8e5aab8bd.md) -- backing-only
-- [codedna (`codedna`)](codedna-70c4e6c780.md) -- backing-only
-- [codeflash (`codeflash`)](codeflash-f7c640a5d8.md) -- published+backing
+- [CodeContests (`codecontests`)](codecontests-b8e5aab8bd.md) -- backing+pages
+- [codedna (`codedna`)](codedna-70c4e6c780.md) -- backing+pages
+- [codeflash (`codeflash`)](codeflash-f7c640a5d8.md) -- published+backing+pages

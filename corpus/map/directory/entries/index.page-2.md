@@ -2,28 +2,28 @@
 
 Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing-only
-- [CodeFuse-ChatBot (`codefuse-chatbot`)](codefuse-chatbot-6c64cc0f1e.md) -- published+backing
-- [CodeFuse-muAgent (`codefuse-muagent`)](codefuse-muagent-5e8aeb5da3.md) -- published+backing
-- [Codegebragpt (`codegebragpt`)](codegebragpt-72fa6a14c8.md) -- backing-only
-- [CodeGenHelpers (`codegenhelpers`)](codegenhelpers-49094aa427.md) -- backing-only
-- [CodeGPT (`codegpt`)](codegpt-9999398602.md) -- published+backing
-- [codehamr (`codehamr`)](codehamr-bd8696dc3b.md) -- published+backing
-- [Codeium (`codeium`)](codeium-0ac0192d44.md) -- published+backing
-- [codeium-react-code-editor (`codeium-react-code-editor`)](codeium-react-code-editor-03ce615d8b.md) -- backing-only
-- [CodeKanban (`codekanban`)](codekanban-a2486f10fb.md) -- published+backing
-- [Codel (`codel`)](codel-0ef4129c70.md) -- published+backing
-- [CodeLlama (`codellama`)](codellama-5d7269a515.md) -- backing-only
-- [CodeLLMSurvey (`codellmsurvey`)](codellmsurvey-c756bc9b5c.md) -- backing-only
-- [CodeMachine-CLI (`codemachine-cli`)](codemachine-cli-39574ac3f9.md) -- published+backing
-- [CodeMate AI - Full Stack Coding Agent (`codemate-ai-full-stack-coding-agent`)](codemate-ai-full-stack-coding-agent-a509beb0c4.md) -- published+backing
-- [Codemini-CLI (`codemini-cli`)](codemini-cli-b3b1f125f4.md) -- published+backing
-- [Codemod (`codemod`)](codemod-62f91ae1fd.md) -- published+backing
-- [CodeNext.ai (`codenextai`)](codenextai-31af82b447.md) -- published+backing
-- [CodeRabbit (`coderabbit`)](coderabbit-fc34547c4b.md) -- published+backing
-- [coderabbit-review-helper (`coderabbit-review-helper`)](coderabbit-review-helper-bc88226e2e.md) -- backing-only
-- [CodeReview-AI-Agent (`codereview-ai-agent`)](codereview-ai-agent-497031857c.md) -- published+backing
-- [CodeReviewAgent (`codereviewagent`)](codereviewagent-af39be6655.md) -- published+backing
+- [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing+pages
+- [CodeFuse-ChatBot (`codefuse-chatbot`)](codefuse-chatbot-6c64cc0f1e.md) -- published+backing+pages
+- [CodeFuse-muAgent (`codefuse-muagent`)](codefuse-muagent-5e8aeb5da3.md) -- published+backing+pages
+- [Codegebragpt (`codegebragpt`)](codegebragpt-72fa6a14c8.md) -- backing+pages
+- [CodeGenHelpers (`codegenhelpers`)](codegenhelpers-49094aa427.md) -- backing+pages
+- [CodeGPT (`codegpt`)](codegpt-9999398602.md) -- published+backing+pages
+- [codehamr (`codehamr`)](codehamr-bd8696dc3b.md) -- published+backing+pages
+- [Codeium (`codeium`)](codeium-0ac0192d44.md) -- published+backing+pages
+- [codeium-react-code-editor (`codeium-react-code-editor`)](codeium-react-code-editor-03ce615d8b.md) -- backing+pages
+- [CodeKanban (`codekanban`)](codekanban-a2486f10fb.md) -- published+backing+pages
+- [Codel (`codel`)](codel-0ef4129c70.md) -- published+backing+pages
+- [CodeLlama (`codellama`)](codellama-5d7269a515.md) -- backing+pages
+- [CodeLLMSurvey (`codellmsurvey`)](codellmsurvey-c756bc9b5c.md) -- backing+pages
+- [CodeMachine-CLI (`codemachine-cli`)](codemachine-cli-39574ac3f9.md) -- published+backing+pages
+- [CodeMate AI - Full Stack Coding Agent (`codemate-ai-full-stack-coding-agent`)](codemate-ai-full-stack-coding-agent-a509beb0c4.md) -- published+backing+pages
+- [Codemini-CLI (`codemini-cli`)](codemini-cli-b3b1f125f4.md) -- published+backing+pages
+- [Codemod (`codemod`)](codemod-62f91ae1fd.md) -- published+backing+pages
+- [CodeNext.ai (`codenextai`)](codenextai-31af82b447.md) -- published+backing+pages
+- [CodeRabbit (`coderabbit`)](coderabbit-fc34547c4b.md) -- published+backing+pages
+- [coderabbit-review-helper (`coderabbit-review-helper`)](coderabbit-review-helper-bc88226e2e.md) -- backing+pages
+- [CodeReview-AI-Agent (`codereview-ai-agent`)](codereview-ai-agent-497031857c.md) -- published+backing+pages
+- [CodeReviewAgent (`codereviewagent`)](codereviewagent-af39be6655.md) -- published+backing+pages
 - [CodeRider (`coderider`)](coderider-b39211dfe6.md) -- published+backing
 - [codeshell-vscode (`codeshell-vscode`)](codeshell-vscode-88332e740f.md) -- backing-only
 - [Codev (`codev`)](codev-e654cb6610.md) -- backing-only

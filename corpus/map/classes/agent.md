@@ -79,6 +79,7 @@
 - [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md)
 - [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md)
 - [clarisseio/python-agents](../repos/clarisseio/python-agents.md)
+- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [cline/cline](../repos/cline/cline.md)
 - [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md)
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md)

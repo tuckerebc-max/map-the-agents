@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: codefox-lab
@@ -22,6 +22,8 @@ Repository map entry: [codefox-lab/codefox-cli](../../repos/codefox-lab/codefox-
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-CodeFox-CLI is built for review workflows in the terminal and CI rather than in-editor assistance. For each change it collects the git diff, retrieves related codebase context using fastembed embeddin
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Diff-aware AI code review tool that uses relevant codebase context rather than isolated files. CLI-first design suited for terminal and CI/CD workflows. Runs locally with Ollama for privacy or with cloud LLMs. Configurable review focus (security, performance, style) and can suggest fixes, not just flag issues.
+
+(captured site page body (agents/codefox-cli.md), not a verified repo-code finding)
+CodeFox-CLI is built for review workflows in the terminal and CI rather than in-editor assistance. For each change it collects the git diff, retrieves related codebase context using fastembed embeddings, and produces prioritized findings with optional fix suggestions. Review focus is configurable — security, performance, style — and inference runs either fully local through Ollama or through cloud providers Gemini and OpenRouter, with fastembed handling embeddings. It integrates as a GitHub Action ('CodeFox AI Review') and with GitLab pipelines, and configuration (providers, models, review rules, prompts) is documented in a GitHub wiki. The project is an MIT-licensed Python package on PyPI, installed via pip or uv.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codefox-cli.md)

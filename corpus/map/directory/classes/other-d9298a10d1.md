@@ -140,7 +140,6 @@
 - [codecontests](../entries/codecontests-b8e5aab8bd.md)
 - [codedna](../entries/codedna-70c4e6c780.md)
 - [codefox-cli](../entries/codefox-cli-45c05060af.md)
-- [codefuse-muagent](../entries/codefuse-muagent-5e8aeb5da3.md)
 - [codegebragpt](../entries/codegebragpt-72fa6a14c8.md)
 - [codegenhelpers](../entries/codegenhelpers-49094aa427.md)
 - [codeium-react-code-editor](../entries/codeium-react-code-editor-03ce615d8b.md)

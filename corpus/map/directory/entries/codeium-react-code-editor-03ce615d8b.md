@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Exafunction
@@ -22,6 +22,8 @@ Repository map entry: [exafunction/codeium-react-code-editor](../../repos/exafun
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This package exists for developers who need to embed a working code editor with AI completion into a web application without building the integration themselves. It wraps monaco-react — the React Mona
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Free, open-source code editor React component wrapping Monaco editor with unlimited AI autocomplete powered by Codeium. No account required. Supports multi-document context for smarter autocompletion (up to 10 documents).
+
+(captured site page body (agents/codeium-react-code-editor.md), not a verified repo-code finding)
+This package exists for developers who need to embed a working code editor with AI completion into a web application without building the integration themselves. It wraps monaco-react — the React Monaco wrapper behind VS Code's editor — and adds Codeium's autocomplete service on top, requiring no user account and carrying no usage charge. Completions can reference up to ten additional documents through the otherDocuments prop, giving suggestions context beyond the visible file. The package exposes the underlying Monaco editor instance for direct API access and ships ESM and CommonJS builds, published as @codeium/react-code-editor on npm. It is a side utility from Exafunction, whose main product lines are the Windsurf plugin and editor, and its update cadence has been slow since 2024.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codeium-react-code-editor.md)
