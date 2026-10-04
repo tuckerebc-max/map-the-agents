@@ -1,5 +1,5 @@
 {
-  "cursor": "betterforall/self-improving-agents",
+  "cursor": "blaine/fantastty",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -590,109 +590,34 @@
       "failures": 0,
       "last_at": "2026-10-03T14:18:24+00:00",
       "last_outcome": "reused"
+    },
+    "bhouston/mycoder": {
+      "failures": 0,
+      "last_at": "2026-10-04T14:47:17+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "biati-digital/alfred-calculate-anything": {
+      "failures": 0,
+      "last_at": "2026-10-04T14:47:19+00:00",
+      "last_outcome": "reused"
+    },
+    "big-pony/pocketshell": {
+      "failures": 0,
+      "last_at": "2026-10-04T14:47:22+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "bigcode-project/starcoder": {
+      "failures": 0,
+      "last_at": "2026-10-04T14:47:24+00:00",
+      "last_outcome": "reused"
+    },
+    "blaine/fantastty": {
+      "failures": 0,
+      "last_at": "2026-10-04T14:47:29+00:00",
+      "last_outcome": "snapshotted"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "agentsmesh/agentsmesh",
-        "agi-is-going-to-arrive/ahadiff",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator",
-        "ai-genie/chatgpt-vscode"
-      ],
-      "catalog": {
-        "backlog": 0,
-        "changed": false,
-        "commit": "0861b8ee1c271047d55caa72efdfc3a6d2046174",
-        "processed": 0,
-        "slugs": [],
-        "version_changed": true
-      },
-      "failures": [],
-      "finished": "2026-09-14T15:53:21+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "agentsmesh/agentsmesh",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 14,
-          "repo": "agentsmesh/agentsmesh",
-          "reused": false,
-          "snapshot_id": "fdb5f6b69465f402"
-        },
-        {
-          "commit": "36da35e9fd4092da79c00fadec03f3b62615ba58",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "agi-is-going-to-arrive/ahadiff",
-          "reused": true,
-          "snapshot_id": "6283c64863f1d387"
-        },
-        {
-          "commit": "a8f318192275e255636f10fbb18cd75d7c9c232b",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 28,
-          "repo": "agnusdei1207/opencode-orchestrator",
-          "reused": false,
-          "snapshot_id": "7bfa1754a814c040"
-        },
-        {
-          "commit": "a1cdd7f680a4dcf2f5e70a8380d6eb5eaccda878",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 39,
-          "repo": "ahacker-1/cre-acquisition-orchestrator",
-          "reused": false,
-          "snapshot_id": "f92f1a7d140c2099"
-        },
-        {
-          "commit": "e6203fb099f36dec65df4bbd7401d919259d6722",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "ai-genie/chatgpt-vscode",
-          "reused": true,
-          "snapshot_id": "8480da848e15b2dd"
-        }
-      ],
-      "started": "2026-09-14T15:53:10+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 11.302,
-        "max_seconds": 420,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 0.982,
-          "snapshots": 10.274
-        }
-      }
-    },
     {
       "attempted": [
         "ai-maker-space/interactive-dev-environment-for-ai-engineers",
@@ -4022,6 +3947,218 @@
         "stages": {
           "catalog": 0.66,
           "snapshots": 5.316
+        }
+      }
+    },
+    {
+      "attempted": [
+        "bhouston/mycoder",
+        "biati-digital/alfred-calculate-anything",
+        "big-pony/pocketshell",
+        "bigcode-project/starcoder",
+        "blaine/fantastty"
+      ],
+      "catalog": {
+        "backlog": 98,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "stoix",
+          "stoneforge",
+          "strands-agents-sdk",
+          "strategic-advisor-orchestrator",
+          "streamship",
+          "sudocode",
+          "summer-2024-swe-internships",
+          "supacode",
+          "supaterm",
+          "super-dev",
+          "supercli",
+          "superflex-vscode",
+          "superlog",
+          "superset",
+          "swades-agent",
+          "swapper-toolkit",
+          "swarms",
+          "swe-af",
+          "swe-agent",
+          "swe-chat",
+          "swe-debate",
+          "swe-dev",
+          "swe-gym",
+          "swe-interact",
+          "swe-rex",
+          "swe-smith",
+          "sweep",
+          "swift-coding-agent",
+          "swival",
+          "symdex",
+          "syncode",
+          "synnex-symphony",
+          "synthetic-ai-developer-productivity-dataset",
+          "synthtraces",
+          "t3-code",
+          "talkcody",
+          "tartarusai-cli",
+          "taskweaver",
+          "tau",
+          "tbench-agentic-data-pipeline",
+          "teamhero",
+          "terminal",
+          "termux-devx",
+          "terragon-oss",
+          "testai-agent",
+          "teta",
+          "the-creator-ai",
+          "the-factory",
+          "the-pair",
+          "thrush-swe-agent"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-10-04T14:47:29+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot",
+        "bhouston/mycoder",
+        "big-pony/pocketshell",
+        "blaine/fantastty"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "774e068e5daefab9c18bac898521d238dd12c794",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 6,
+          "repo": "bhouston/mycoder",
+          "reused": false,
+          "snapshot_id": "751b4ec3264ca8fa"
+        },
+        {
+          "commit": "fb98d4a78069c5cf2ced4eea5dffbeef3d10c152",
+          "explicit_paths": [],
+          "files_stored": 3,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "biati-digital/alfred-calculate-anything",
+          "reused": true,
+          "snapshot_id": "d59a15920312d7f7"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "explicit_paths": [],
+          "files_stored": 8,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "big-pony/pocketshell",
+          "reused": false,
+          "snapshot_id": "0c5b361782ff43c9"
+        },
+        {
+          "commit": "d72c7fe3dda81d47ad9b851f9567393fb6b551b9",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "bigcode-project/starcoder",
+          "reused": true,
+          "snapshot_id": "b1fb3b0e3d96ec5f"
+        },
+        {
+          "commit": "60d248d0d20af6bacc249df056a0f76b95c1e8b1",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 3,
+          "repo": "blaine/fantastty",
+          "reused": false,
+          "snapshot_id": "df0258ce0e7fca2e"
+        }
+      ],
+      "started": "2026-10-04T14:47:12+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 16.754,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 1.052,
+          "snapshots": 15.648
         }
       }
     }

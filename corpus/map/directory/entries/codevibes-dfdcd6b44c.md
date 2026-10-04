@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: danish296
@@ -22,6 +22,8 @@ Repository map entry: [danish296/codevibes](../../repos/danish296/codevibes.md) 
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-CodeVibes provides AI code review for developers who cannot justify a paid review service: a web dashboard where a GitHub repository URL yields security findings, bug and performance issues, and quali
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Free, open-source AI code review alternative to CodeRabbit. Uses DeepSeek AI for security vulnerability detection, bug/performance analysis, and code quality review. Priority-based three-tier scanning system (P1 security → P2 core logic → P3 quality). Provides a quantifiable 0-100 Vibe Score. Real-time streaming analysis via SSE. Stores analysis history locally in SQLite.
+
+(captured site page body (agents/codevibes.md), not a verified repo-code finding)
+CodeVibes provides AI code review for developers who cannot justify a paid review service: a web dashboard where a GitHub repository URL yields security findings, bug and performance issues, and quality observations, condensed into a 0-100 score. Analysis runs on DeepSeek models (deepseek-chat or deepseek-reasoner) with a user-supplied free API key, organized as a priority pipeline — security first, then core-logic defects, then style and quality — with results streaming in real time over server-sent events. The application is a TypeScript monorepo: a React 18 and Vite frontend, an Express backend storing analysis history in SQLite via Better-SQLite3, and Octokit for GitHub access. It is a beta-stage single-author project with a dozen commits, self-described as an affordable CodeRabbit alternative.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codevibes.md)

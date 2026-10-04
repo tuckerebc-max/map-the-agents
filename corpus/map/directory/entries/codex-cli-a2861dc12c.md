@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: openai
@@ -22,6 +22,8 @@ Repository map entry: [openai/codex](../../repos/openai/codex.md) (source: backi
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Codex CLI is OpenAI's terminal coding agent, distributed as open source under Apache-2.0 with the core written in Rust. It runs locally with sandboxing around command execution and file edits, and off
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): OpenAI's official coding agent that runs in the terminal with native sandboxing; can also integrate into VS Code, Cursor, and Windsurf. Supports MCP, plugins, hooks, subagents, and multiple execution modes.
+
+(captured site page body (agents/codex-cli.md), not a verified repo-code finding)
+Codex CLI is OpenAI's terminal coding agent, distributed as open source under Apache-2.0 with the core written in Rust. It runs locally with sandboxing around command execution and file edits, and offers approval modes from read-only through full autonomy. Authentication uses either a ChatGPT account (Plus, Pro, Business, Edu, or Enterprise) or an OpenAI API key, and the CLI connects to the same Codex ecosystem as the IDE extension and the cloud-based Codex Web at chatgpt.com/codex. The agent supports MCP servers, plugins, hooks, and subagents, with configuration documented at developers.openai.com/codex. It is installed via a curl script, npm (@openai/codex), Homebrew, or GitHub release binaries.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codex-cli.md)

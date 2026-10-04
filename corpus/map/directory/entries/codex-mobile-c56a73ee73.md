@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: friuns2
@@ -22,6 +22,8 @@ Repository map entry: [friuns2/codex-mobile](../../repos/friuns2/codex-mobile.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Codex-mobile addresses a practical constraint: Codex's desktop experience runs on one machine, but operators often want to check on or steer sessions from a phone or another computer. The tool runs a
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Lightweight bridge exposing the Codex app-server as a browser-accessible web UI; runs on Android via Termux; one-command launch (npx codexapp); Telegram bot bridge; voice dictation; project ZIP export/import with chat rewriting.
+
+(captured site page body (agents/codex-mobile.md), not a verified repo-code finding)
+Codex-mobile addresses a practical constraint: Codex's desktop experience runs on one machine, but operators often want to check on or steer sessions from a phone or another computer. The tool runs a local Express and Vue server that bridges HTTP and WebSocket traffic to the Codex app-server over RPC, making the Codex interface available in any browser on the network or, through an optional built-in Cloudflare tunnel, from anywhere with a QR-code pairing flow and password protection. Beyond remote access it adds voice dictation, a Telegram bot bridge for allowlisted users to interact with a mapped Codex thread, and project portability through ZIP export and import that rewrites chat history for a destination CODEX_HOME, project path, and provider. It runs on Linux, Windows, and Android via Termux, launched with npx codexapp, and is developed openly on GitHub.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codex-mobile.md)

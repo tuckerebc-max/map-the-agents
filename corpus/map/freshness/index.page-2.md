@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kuafuai/devopsgpt](../repos/kuafuai/devopsgpt.md) [coverage: partial]
-- [kuberwastaken/claurst](../repos/kuberwastaken/claurst.md) [coverage: partial]
-- [kunagent/kun](../repos/kunagent/kun.md) [coverage: partial]
 - [kunal12203/graperoot](../repos/kunal12203/graperoot.md) [coverage: partial]
 - [kusionstack/konfig](../repos/kusionstack/konfig.md) [coverage: complete]
 - [kyaukyuai/gpt-all-star](../repos/kyaukyuai/gpt-all-star.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [violetdelia/codex-multi-agents](../repos/violetdelia/codex-multi-agents.md) [coverage: complete]
 - [vishal2612200/agentpack](../repos/vishal2612200/agentpack.md) [coverage: partial]
 - [vivekhaldar/seed](../repos/vivekhaldar/seed.md) [coverage: complete]
+- [vocodedev/vocode-core](../repos/vocodedev/vocode-core.md) [coverage: partial]
+- [waikato-llm/llm-dataset-converter-examples](../repos/waikato-llm/llm-dataset-converter-examples.md) [coverage: partial]
+- [walkingdevflag/mle-star-open](../repos/walkingdevflag/mle-star-open.md) [coverage: complete]

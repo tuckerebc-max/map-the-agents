@@ -1,9 +1,9 @@
 # bhouston/mycoder
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 774e068e5dae @ 3e0884f69cea3872
+Latest snapshot: commit 774e068e5dae @ 751b4ec3264ca8fa
 
 ## Summary (orientation draft, not independently verified)
 

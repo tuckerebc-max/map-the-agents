@@ -1,9 +1,9 @@
 # big-pony/pocketshell
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8aa6474e8140 @ ee6c89f3609269d6
+Latest snapshot: commit 8aa6474e8140 @ 0c5b361782ff43c9
 
 ## Summary (orientation draft, not independently verified)
 

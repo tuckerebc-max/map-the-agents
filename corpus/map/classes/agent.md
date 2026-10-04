@@ -428,6 +428,7 @@
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xai-org/grok-build](../repos/xai-org/grok-build.md)
 - [xeol-io/bumpgen](../repos/xeol-io/bumpgen.md)
+- [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 - [xiaomimimo/mimo-code](../repos/xiaomimimo/mimo-code.md)
 - [xingyaoww/code-act](../repos/xingyaoww/code-act.md)
 - [yashdev9274/supercli](../repos/yashdev9274/supercli.md)

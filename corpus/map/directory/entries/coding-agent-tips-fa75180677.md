@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: anipotts
@@ -22,6 +22,8 @@ Repository map entry: [anipotts/coding-agent-tips](../../repos/anipotts/coding-a
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Most advice about coding agents is folklore, and practitioners operating agents on production code need to know which claims are tested. coding-agent-tips is a handbook published at agents.anipotts.co
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Evidence-backed guidance publication for coding agents in production software, covering Claude Code and Codex. Enforces a strict evidence standard (hands-on, source-verified, inference, unknown) and publishes task specs, sanitized run records, and artifacts in a field lab. Corrections require primary sources.
+
+(captured site page body (agents/coding-agent-tips.md), not a verified repo-code finding)
+Most advice about coding agents is folklore, and practitioners operating agents on production code need to know which claims are tested. coding-agent-tips is a handbook published at agents.anipotts.com that grades every claim against a stated evidence standard, separating what the author verified hands-on from what official sources, analysis, or open questions support. Content is organized by the stakes of the reader's work - students, startup founders, big-tech engineers - rather than by tool, and covers the distinction between steering surface, harness, model, and orchestration, plus repo instructions, permissions, review practices, and operating costs. The repository is an Astro site with accessibility and site tests, and the guidance doubles as a Claude Code plugin so readers can apply the practices directly. It targets developers standardizing how their teams work with agents.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/coding-agent-tips.md)

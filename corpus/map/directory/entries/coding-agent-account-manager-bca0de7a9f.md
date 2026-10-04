@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Dicklesworthstone
@@ -22,6 +22,8 @@ Repository map entry: [dicklesworthstone/coding_agent_account_manager](../../rep
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Subscription coding agents stop at usage ceilings, and the official recovery path is a slow browser re-authentication that breaks flow and parallel workflows. caam treats stored OAuth credential files
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Sub-100ms OAuth token file swapping to instantly switch between fixed-cost subscription accounts (Claude Max, GPT Pro, Gemini Ultra) when hitting rate limits without browser re-auth. Features smart rotation algorithms, cooldown tracking, isolated/shallow profiles for parallel sessions, and automatic failover via \`caam run\`.
+
+(captured site page body (agents/coding-agent-account-manager.md), not a verified repo-code finding)
+Subscription coding agents stop at usage ceilings, and the official recovery path is a slow browser re-authentication that breaks flow and parallel workflows. caam treats stored OAuth credential files as swappable state: it backs up each CLI's auth files (Claude Code, Codex, Gemini CLI, Antigravity, Grok Build) into a local vault and restores a different account's files on demand in under 100 milliseconds, with no browser round trip. A rotation engine tracks cooldowns and health per account, \`caam run\` wraps the underlying CLI and fails over automatically on rate limits, and isolated profiles let parallel sessions run against separate accounts. The Go CLI works offline with no daemons, exposes JSON output for use by other agents, and manages fixed-cost subscriptions rather than metered API keys. Individual developers and orchestrator operators running many parallel agent sessions are its users.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/coding-agent-account-manager.md)

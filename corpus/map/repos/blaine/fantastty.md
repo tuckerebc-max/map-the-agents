@@ -1,9 +1,9 @@
 # blaine/fantastty
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 60d248d0d20a @ 4d4c6f8db32e1e6b
+Latest snapshot: commit 60d248d0d20a @ df0258ce0e7fca2e
 
 ## Summary (orientation draft, not independently verified)
 

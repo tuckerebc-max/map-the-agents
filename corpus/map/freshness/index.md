@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (928)
+## current (925)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -94,11 +94,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) [coverage: complete]
 - [benthecoder/yt-channels-ds-ai-ml-cs](../repos/benthecoder/yt-channels-ds-ai-ml-cs.md) [coverage: complete]
 - [betterforall/self-improving-agents](../repos/betterforall/self-improving-agents.md) [coverage: complete]
-- [bhouston/mycoder](../repos/bhouston/mycoder.md) [coverage: partial]
 - [biati-digital/alfred-calculate-anything](../repos/biati-digital/alfred-calculate-anything.md) [coverage: complete]
-- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) [coverage: partial]
 - [bigcode-project/starcoder](../repos/bigcode-project/starcoder.md) [coverage: complete]
-- [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
 - [blazity/nefi](../repos/blazity/nefi.md) [coverage: complete]
 - [blushyes/coro-code](../repos/blushyes/coro-code.md) [coverage: complete]
 - [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kreneskyp/ix](../repos/kreneskyp/ix.md) [coverage: partial]
 - [kristoferlund/duet-gpt](../repos/kristoferlund/duet-gpt.md) [coverage: complete]
 - [kuafuai/aipexbase](../repos/kuafuai/aipexbase.md) [coverage: partial]
+- [kuafuai/devopsgpt](../repos/kuafuai/devopsgpt.md) [coverage: partial]
+- [kuberwastaken/claurst](../repos/kuberwastaken/claurst.md) [coverage: partial]
+- [kunagent/kun](../repos/kunagent/kun.md) [coverage: partial]

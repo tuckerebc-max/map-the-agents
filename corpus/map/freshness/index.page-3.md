@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [vocodedev/vocode-core](../repos/vocodedev/vocode-core.md) [coverage: partial]
-- [waikato-llm/llm-dataset-converter-examples](../repos/waikato-llm/llm-dataset-converter-examples.md) [coverage: partial]
-- [walkingdevflag/mle-star-open](../repos/walkingdevflag/mle-star-open.md) [coverage: complete]
 - [warpdotdev/warp](../repos/warpdotdev/warp.md) [coverage: complete]
 - [we0-dev/we0](../repos/we0-dev/we0.md) [coverage: complete]
 - [wecode-ai/runvsagent](../repos/wecode-ai/runvsagent.md) [coverage: partial]
@@ -80,7 +77,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (61)
+## stale (64)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [bastani-inc/atomic](../repos/bastani-inc/atomic.md) [coverage: partial]
 - [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) [coverage: partial]
 - [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
+- [bhouston/mycoder](../repos/bhouston/mycoder.md) [coverage: partial]
+- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) [coverage: partial]
+- [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
 
 ## refresh-failed (63)
 

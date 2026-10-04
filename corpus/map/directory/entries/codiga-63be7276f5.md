@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Codiga
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Before LLM-based review tools, Codiga attacked the cost of enforcing code quality: teams wrote static-analysis rules in minutes rather than building parser plugins, and the same platform handled secur
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Customizable static code analysis and code snippet management integrating into IDEs, CI/CD, and Git platforms with Git hooks support. Codiga has joined Datadog; the standalone product is being transitioned to Datadog Static Analysis and is effectively sunsetted.
+
+(captured site page body (agents/codiga.md), not a verified repo-code finding)
+Before LLM-based review tools, Codiga attacked the cost of enforcing code quality: teams wrote static-analysis rules in minutes rather than building parser plugins, and the same platform handled security checks (OWASP Top 10, MITRE CWE, secret detection, IaC analysis) across twelve-plus languages. Rules ran in real time inside VS Code, JetBrains, and Visual Studio extensions, in pull-request reviews on GitHub, GitLab, and Bitbucket, and in CI pipelines, with a separate hub for creating and sharing smart code snippets. Datadog acquired the company in 2022 and folded the technology into Datadog Static Analysis, and codiga.io now directs visitors to Datadog's signup. The entry remains in the census as an 'other': a rules-based analysis platform with no agentic loop, preserved as the acquisition path that prefigured today's AI code-review products.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codiga.md)

@@ -394,7 +394,6 @@
 - [wisdomshell/codeshell-vscode](../repos/wisdomshell/codeshell-vscode.md)
 - [with-geun/alive-analysis](../repos/with-geun/alive-analysis.md)
 - [withastro/flue](../repos/withastro/flue.md)
-- [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 - [xmudeeplit/legalgraphrag](../repos/xmudeeplit/legalgraphrag.md)
 - [yanhua1010/build-your-own-coding-agent](../repos/yanhua1010/build-your-own-coding-agent.md)
 - [yasasbanukaofficial/claude-code](../repos/yasasbanukaofficial/claude-code.md)

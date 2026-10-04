@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: sshh12
@@ -22,6 +22,8 @@ Repository map entry: [sshh12/coding-agents-workshop](../../repos/sshh12/coding-
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-When coding agents produce poor results, teams usually blame the model or the prompt; this workshop argues the codebase is often the real constraint. Built for the 'Optimizing Codebases for Agents' se
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Workshop materials for 'Optimizing Codebases for Agents' — a tangible before/after comparison of the same application (Version A = realistic mess with deliberate anti-patterns vs. Version B = agent-optimized), paired with an AI-readiness scorecard runnable against any repo via Claude Code, and a live agent race demo where two terminals run the same prompt against different codebases to visually demonstrate ...
+
+(captured site page body (agents/coding-agents-workshop.md), not a verified repo-code finding)
+When coding agents produce poor results, teams usually blame the model or the prompt; this workshop argues the codebase is often the real constraint. Built for the 'Optimizing Codebases for Agents' session at the Coding Agents conference (March 2026, Computer History Museum) by Shrivu Shankar of Abnormal Security, the repository contains two complete implementations of the same ML experiment tracker - one deliberately full of anti-patterns, one restructured for agent navigation - plus a scoring rubric that audits any repository from 0 to 9 across three readiness dimensions. A ready-made Claude Code prompt runs the audit against any repo, and a scripted race demo shows the same prompt on both codebases side by side. Conference attendees and team leads use the materials to assess and restructure their own repositories for agent work.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/coding-agents-workshop.md)

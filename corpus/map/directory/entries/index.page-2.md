@@ -24,31 +24,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [coderabbit-review-helper (`coderabbit-review-helper`)](coderabbit-review-helper-bc88226e2e.md) -- backing+pages
 - [CodeReview-AI-Agent (`codereview-ai-agent`)](codereview-ai-agent-497031857c.md) -- published+backing+pages
 - [CodeReviewAgent (`codereviewagent`)](codereviewagent-af39be6655.md) -- published+backing+pages
-- [CodeRider (`coderider`)](coderider-b39211dfe6.md) -- published+backing
-- [codeshell-vscode (`codeshell-vscode`)](codeshell-vscode-88332e740f.md) -- backing-only
-- [Codev (`codev`)](codev-e654cb6610.md) -- backing-only
-- [codevibes (`codevibes`)](codevibes-dfdcd6b44c.md) -- backing-only
-- [Codex CLI (`codex-cli`)](codex-cli-a2861dc12c.md) -- published+backing
-- [Codex-JetBrains (`codex-jetbrains`)](codex-jetbrains-4bec627e1c.md) -- published+backing
-- [codex-mobile (`codex-mobile`)](codex-mobile-c56a73ee73.md) -- published+backing
-- [codex-multi-agents (`codex-multi-agents`)](codex-multi-agents-589fa21a16.md) -- published+backing
-- [Codex (OpenAI) (`codex-openai`)](codex-openai-8cec996f7c.md) -- published+backing
-- [codex-profiles (`codex-profiles`)](codex-profiles-bc53aeaee2.md) -- backing-only
-- [Codex Security (`codex-security`)](codex-security-7b7fe1faf5.md) -- published+backing
-- [Codey (`codey`)](codey-1075e9f416.md) -- published+backing
-- [Codiga (`codiga`)](codiga-63be7276f5.md) -- backing-only
-- [coding-agent (`coding-agent`)](coding-agent-cc928dc9c6.md) -- published+backing
-- [coding_agent_account_manager (`coding-agent-account-manager`)](coding-agent-account-manager-bca0de7a9f.md) -- backing-only
-- [coding_agent_session_search (`coding-agent-session-search`)](coding-agent-session-search-a3c158bbc8.md) -- backing-only
-- [coding-agent-tips (`coding-agent-tips`)](coding-agent-tips-fa75180677.md) -- backing-only
-- [coding-agents-databricks-apps (`coding-agents-databricks-apps`)](coding-agents-databricks-apps-93e8eccf57.md) -- backing-only
-- [coding-agents-workshop (`coding-agents-workshop`)](coding-agents-workshop-17607c93a1.md) -- backing-only
-- [coding-the-coding-agents (`coding-the-coding-agents`)](coding-the-coding-agents-c5adb7cab4.md) -- backing-only
-- [Coding-Tutor (`coding-tutor`)](coding-tutor-7fe4bbd7a2.md) -- backing-only
-- [CodingAgentExplorer (`codingagentexplorer`)](codingagentexplorer-e65c783e6c.md) -- backing-only
-- [CodingIT (`codingit`)](codingit-e57f44bbf2.md) -- published+backing
-- [codinit-dev (`codinit-dev`)](codinit-dev-b8831a75b8.md) -- published+backing
-- [Codirigent (`codirigent`)](codirigent-be56bb030a.md) -- published+backing
+- [CodeRider (`coderider`)](coderider-b39211dfe6.md) -- published+backing+pages
+- [codeshell-vscode (`codeshell-vscode`)](codeshell-vscode-88332e740f.md) -- backing+pages
+- [Codev (`codev`)](codev-e654cb6610.md) -- backing+pages
+- [codevibes (`codevibes`)](codevibes-dfdcd6b44c.md) -- backing+pages
+- [Codex CLI (`codex-cli`)](codex-cli-a2861dc12c.md) -- published+backing+pages
+- [Codex-JetBrains (`codex-jetbrains`)](codex-jetbrains-4bec627e1c.md) -- published+backing+pages
+- [codex-mobile (`codex-mobile`)](codex-mobile-c56a73ee73.md) -- published+backing+pages
+- [codex-multi-agents (`codex-multi-agents`)](codex-multi-agents-589fa21a16.md) -- published+backing+pages
+- [Codex (OpenAI) (`codex-openai`)](codex-openai-8cec996f7c.md) -- published+backing+pages
+- [codex-profiles (`codex-profiles`)](codex-profiles-bc53aeaee2.md) -- backing+pages
+- [Codex Security (`codex-security`)](codex-security-7b7fe1faf5.md) -- published+backing+pages
+- [Codey (`codey`)](codey-1075e9f416.md) -- published+backing+pages
+- [Codiga (`codiga`)](codiga-63be7276f5.md) -- backing+pages
+- [coding-agent (`coding-agent`)](coding-agent-cc928dc9c6.md) -- published+backing+pages
+- [coding_agent_account_manager (`coding-agent-account-manager`)](coding-agent-account-manager-bca0de7a9f.md) -- backing+pages
+- [coding_agent_session_search (`coding-agent-session-search`)](coding-agent-session-search-a3c158bbc8.md) -- backing+pages
+- [coding-agent-tips (`coding-agent-tips`)](coding-agent-tips-fa75180677.md) -- backing+pages
+- [coding-agents-databricks-apps (`coding-agents-databricks-apps`)](coding-agents-databricks-apps-93e8eccf57.md) -- backing+pages
+- [coding-agents-workshop (`coding-agents-workshop`)](coding-agents-workshop-17607c93a1.md) -- backing+pages
+- [coding-the-coding-agents (`coding-the-coding-agents`)](coding-the-coding-agents-c5adb7cab4.md) -- backing+pages
+- [Coding-Tutor (`coding-tutor`)](coding-tutor-7fe4bbd7a2.md) -- backing+pages
+- [CodingAgentExplorer (`codingagentexplorer`)](codingagentexplorer-e65c783e6c.md) -- backing+pages
+- [CodingIT (`codingit`)](codingit-e57f44bbf2.md) -- published+backing+pages
+- [codinit-dev (`codinit-dev`)](codinit-dev-b8831a75b8.md) -- published+backing+pages
+- [Codirigent (`codirigent`)](codirigent-be56bb030a.md) -- published+backing+pages
 - [Cody by Sourcegraph (`cody-by-sourcegraph`)](cody-by-sourcegraph-193d245ac8.md) -- published+backing
 - [cody-public-snapshot (`cody-public-snapshot`)](cody-public-snapshot-f43138b78f.md) -- published+backing
 - [Cody (Sourcegraph) (`cody-sourcegraph`)](cody-sourcegraph-72e877b87b.md) -- published+backing

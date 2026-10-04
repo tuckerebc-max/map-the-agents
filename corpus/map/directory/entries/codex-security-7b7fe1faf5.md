@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: openai
@@ -22,6 +22,8 @@ Repository map entry: [openai/codex-security](../../repos/openai/codex-security.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Security review rarely keeps pace with code changes, and static scanners produce noise that nobody remediates. Codex Security applies an agent loop to that gap: discovery runs scan a codebase, each ca
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI-driven end-to-end security workflow CLI/SDK: discovers, validates, and auto-patches vulnerabilities, verifies fixes, and opens GitHub PRs. Deep multi-agent scans with --subagents flag. Interactive finding review, scan comparison by root cause, Linear issue publishing. Containerized bulk scans with AppArmor hardening. Pluggable inference providers. Extensibility via scan prompt files and knowledge bases.
+
+(captured site page body (agents/codex-security.md), not a verified repo-code finding)
+Security review rarely keeps pace with code changes, and static scanners produce noise that nobody remediates. Codex Security applies an agent loop to that gap: discovery runs scan a codebase, each candidate finding is validated before reporting, generated patches are verified, and verified fixes become GitHub pull requests for human review. The CLI wraps a TypeScript SDK so teams can embed scans in CI with an API key or authenticate interactively through ChatGPT, with Trusted Access gating for sensitive finding categories. A findings service stores results in SQLite, deduplicates them by embedding similarity, and serves a dashboard. Security teams and maintainers use it to move from scanner output to verified remediation, and Docker Compose configurations support bulk scans across repository sets.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codex-security.md)

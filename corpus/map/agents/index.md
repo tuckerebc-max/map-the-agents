@@ -161,11 +161,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) -- status=distilled, freshness=current
 - [benthecoder/yt-channels-ds-ai-ml-cs](../repos/benthecoder/yt-channels-ds-ai-ml-cs.md) -- status=distilled, freshness=current
 - [betterforall/self-improving-agents](../repos/betterforall/self-improving-agents.md) -- status=distilled, freshness=current
-- [bhouston/mycoder](../repos/bhouston/mycoder.md) -- status=distilled, freshness=current
+- [bhouston/mycoder](../repos/bhouston/mycoder.md) -- status=distilled, freshness=stale
 - [biati-digital/alfred-calculate-anything](../repos/biati-digital/alfred-calculate-anything.md) -- status=distilled, freshness=current
-- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) -- status=distilled, freshness=current
+- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) -- status=distilled, freshness=stale
 - [bigcode-project/starcoder](../repos/bigcode-project/starcoder.md) -- status=distilled, freshness=current
-- [blaine/fantastty](../repos/blaine/fantastty.md) -- status=distilled, freshness=current
+- [blaine/fantastty](../repos/blaine/fantastty.md) -- status=distilled, freshness=stale
 - [blazity/nefi](../repos/blazity/nefi.md) -- status=distilled, freshness=current
 - [blushyes/coro-code](../repos/blushyes/coro-code.md) -- status=distilled, freshness=current
 - [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) -- status=distilled, freshness=current
