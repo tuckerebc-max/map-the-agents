@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: CommandCodeAI
@@ -22,6 +22,8 @@ Repository map entry: [commandcodeai/command-code](../../repos/commandcodeai/com
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Coding agents apply generic conventions, so teams keep re-explaining their own style in rules files that drift out of date. Command Code treats those preferences as a learning problem: its taste-1 mod
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Meta neuro-symbolic AI model called taste-1 that continuously learns your coding preferences and style from interactions; learned taste profile is portable and can be shared with your team using npx taste push/pull.
+
+(captured site page body (agents/command-code.md), not a verified repo-code finding)
+Coding agents apply generic conventions, so teams keep re-explaining their own style in rules files that drift out of date. Command Code treats those preferences as a learning problem: its taste-1 model observes accepted, rejected, and edited outputs, maintains a per-developer taste profile, and uses it to shape future generations. The profile is portable - developers push it to a registry and teammates pull it, so a new engineer inherits the team's taste without reading a rules document. Day to day it runs as a terminal agent with slash commands, bash mode, and file-path completion, capable of shipping full-stack projects, fixing bugs, writing tests, and refactoring. Solo developers use a free tier; paid plans bundle access to Anthropic, OpenAI, Google, DeepSeek, Kimi, and GLM models.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/command-code.md)

@@ -1,5 +1,5 @@
 {
-  "cursor": "blaine/fantastty",
+  "cursor": "bolt-foundry/gambit",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -615,109 +615,39 @@
       "failures": 0,
       "last_at": "2026-10-04T14:47:29+00:00",
       "last_outcome": "snapshotted"
+    },
+    "blazity/nefi": {
+      "failures": 0,
+      "last_at": "2026-10-05T18:24:08+00:00",
+      "last_outcome": "reused"
+    },
+    "blushyes/coro-code": {
+      "failures": 0,
+      "last_at": "2026-10-05T18:24:10+00:00",
+      "last_outcome": "reused"
+    },
+    "bmad-code-org/bmad-method": {
+      "failures": 0,
+      "last_at": "2026-10-05T18:24:13+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "bmdavis419/.better-coding-agents": {
+      "failures": 0,
+      "last_at": "2026-10-05T18:24:15+00:00",
+      "last_outcome": "reused"
+    },
+    "bolt-foundry/gambit": {
+      "failures": 1,
+      "last_at": "2026-10-05T18:24:15+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/bolt-foundry/gambit"
+      },
+      "last_outcome": "snapshot-failed"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "ai-maker-space/interactive-dev-environment-for-ai-engineers",
-        "ai4finance-foundation/finrobot",
-        "aider-ai/aider",
-        "airtai/fastagency",
-        "aiwaves-cn/agents"
-      ],
-      "catalog": {
-        "backlog": 0,
-        "changed": false,
-        "commit": "0861b8ee1c271047d55caa72efdfc3a6d2046174",
-        "processed": 0,
-        "slugs": [],
-        "version_changed": false
-      },
-      "failures": [
-        {
-          "code": 8,
-          "error": "FetchFailed",
-          "message": "redirect-refused http-301: https://api.github.com/repos/airtai/fastagency",
-          "repo": "airtai/fastagency",
-          "stage": "snapshot"
-        }
-      ],
-      "finished": "2026-09-15T14:19:18+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "agentsmesh/agentsmesh",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator",
-        "ai4finance-foundation/finrobot",
-        "aider-ai/aider"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "f1a9362281ca147833bf8196733901d39daa4980",
-          "explicit_paths": [],
-          "files_stored": 1,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "ai-maker-space/interactive-dev-environment-for-ai-engineers",
-          "reused": true,
-          "snapshot_id": "902b4a9cfa21d9cf"
-        },
-        {
-          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
-          "explicit_paths": [],
-          "files_stored": 4,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "ai4finance-foundation/finrobot",
-          "reused": false,
-          "snapshot_id": "b5c82f0881e281ff"
-        },
-        {
-          "commit": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
-          "explicit_paths": [],
-          "files_stored": 5,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "aider-ai/aider",
-          "reused": false,
-          "snapshot_id": "4c420a36be9587f3"
-        },
-        {
-          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "aiwaves-cn/agents",
-          "reused": true,
-          "snapshot_id": "e1eef48ba43f73dd"
-        }
-      ],
-      "started": "2026-09-15T14:19:08+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 10.659,
-        "max_seconds": 420,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 0.989,
-          "snapshots": 9.627
-        }
-      }
-    },
     {
       "attempted": [
         "aizen-stack/aizen",
@@ -4159,6 +4089,219 @@
         "stages": {
           "catalog": 1.052,
           "snapshots": 15.648
+        }
+      }
+    },
+    {
+      "attempted": [
+        "blazity/nefi",
+        "blushyes/coro-code",
+        "bmad-code-org/bmad-method",
+        "bmdavis419/.better-coding-agents",
+        "bolt-foundry/gambit"
+      ],
+      "catalog": {
+        "backlog": 48,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 50,
+        "slugs": [
+          "tig",
+          "tiny-agent",
+          "tlbx",
+          "tmux",
+          "tmux-assistant-resurrect",
+          "tokenjuice",
+          "tokentelemetry",
+          "tom-swe",
+          "tools",
+          "trae-agent",
+          "traycer",
+          "trueforge",
+          "tutti",
+          "twing",
+          "typechat",
+          "ultragamestudio",
+          "umadev",
+          "unodeai",
+          "untether",
+          "useful-generativeai-tools-repo",
+          "valuecell",
+          "vendo",
+          "verbalcodeai",
+          "vercel-doctor",
+          "vibe-annotations",
+          "vibe-coding",
+          "vibe-coding-guide",
+          "vibe-coding-kit",
+          "vibe-coding-penetration-tester",
+          "vibe-coding-template",
+          "vibe-local",
+          "vibe-replay",
+          "vibe-tree",
+          "vibearound",
+          "vibecode-playground",
+          "vibekit",
+          "vibepod",
+          "vibeproxy",
+          "viberaven",
+          "vibesdk",
+          "vibeyard",
+          "vibra-code",
+          "video-use",
+          "vim-codex",
+          "vision-ai-developer-kit",
+          "vix",
+          "vocode",
+          "vogte",
+          "vs-code-agents",
+          "vscode-extension"
+        ],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/bolt-foundry/gambit",
+          "repo": "bolt-foundry/gambit",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-10-05T18:24:15+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot",
+        "bhouston/mycoder",
+        "big-pony/pocketshell",
+        "blaine/fantastty",
+        "bmad-code-org/bmad-method"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "fc5ec7ff9f7a6a0dc4d9eea8a486c3618684cd7c",
+          "explicit_paths": [
+            "apps/nefi/README.md"
+          ],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "blazity/nefi",
+          "reused": true,
+          "snapshot_id": "4c9d70b6170c0004"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "blushyes/coro-code",
+          "reused": true,
+          "snapshot_id": "d60a9546779f7cea"
+        },
+        {
+          "commit": "8f2c13dd0e0073cad84168a679e5c553b2fb30b6",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 184,
+          "repo": "bmad-code-org/bmad-method",
+          "reused": false,
+          "snapshot_id": "a056c76746c75a5e"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "bmdavis419/.better-coding-agents",
+          "reused": true,
+          "snapshot_id": "d9935b440e0df064"
+        }
+      ],
+      "started": "2026-10-05T18:24:06+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 9.055,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.882,
+          "snapshots": 8.127
         }
       }
     }

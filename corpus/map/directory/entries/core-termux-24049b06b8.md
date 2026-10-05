@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: DevCoreXOfficial
@@ -22,6 +22,8 @@ Repository map entry: [devcorexofficial/core-termux](../../repos/devcorexofficia
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Coding agents assume a laptop, which leaves phone-first developers and tinkerers without a path to use them. core-termux is a modular package manager for Termux that closes that gap: a single \`core\` C
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Turns Android/Termux into a complete dev workstation with 30+ AI coding agents, modular install/update/uninstall, project scaffolding, voice-to-agent, second-brain memory system, and local LLM inference — all from one \`core\` CLI.
+
+(captured site page body (agents/core-termux.md), not a verified repo-code finding)
+Coding agents assume a laptop, which leaves phone-first developers and tinkerers without a path to use them. core-termux is a modular package manager for Termux that closes that gap: a single \`core\` CLI installs and updates language toolchains, databases, editors, and - through its \`ai\` module - 35-plus coding agent CLIs including Claude Code, Codex, Gemini CLI, OpenCode, Kimi Code, and Hermes Agent, each selectable with install flags. Beyond packaging, it adds a small built-in agent backed by a local OpenAI-compatible endpoint (Gemma via the Cactus Engine) with plan and build modes, voice-to-agent input, and a \`core brain\` markdown store for cross-session memory. Modules cover languages, databases, Neovim, shell tooling, and project scaffolding for common frameworks. It runs only on Termux and serves Android users building a mobile development environment.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/core-termux.md)

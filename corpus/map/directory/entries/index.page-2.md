@@ -49,31 +49,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [CodingIT (`codingit`)](codingit-e57f44bbf2.md) -- published+backing+pages
 - [codinit-dev (`codinit-dev`)](codinit-dev-b8831a75b8.md) -- published+backing+pages
 - [Codirigent (`codirigent`)](codirigent-be56bb030a.md) -- published+backing+pages
-- [Cody by Sourcegraph (`cody-by-sourcegraph`)](cody-by-sourcegraph-193d245ac8.md) -- published+backing
-- [cody-public-snapshot (`cody-public-snapshot`)](cody-public-snapshot-f43138b78f.md) -- published+backing
-- [Cody (Sourcegraph) (`cody-sourcegraph`)](cody-sourcegraph-72e877b87b.md) -- published+backing
-- [colony repo (`colony-repo`)](colony-repo-6f4f359dbd.md) -- backing-only
-- [Comet (`comet`)](comet-d51f791051.md) -- backing-only
-- [Comfyui_Workflows (`comfyui-workflows`)](comfyui-workflows-4cd4bc2bc6.md) -- backing-only
-- [Command Code (`command-code`)](command-code-510abdbcad.md) -- published+backing
-- [companion (`companion`)](companion-c989edf182.md) -- backing-only
-- [companion-vscode (`companion-vscode`)](companion-vscode-058e8ace88.md) -- backing-only
-- [conch (`conch`)](conch-5fdde7b0e7.md) -- published+backing
-- [Concord (`concord-mcp`)](concord-mcp-1bb70bdbd3.md) -- backing-only
-- [Conductor (`conductor`)](conductor-0380db97ec.md) -- published+backing
-- [conduit-release (`conduit-release`)](conduit-release-b93fa9513c.md) -- published+backing
-- [construct (`construct`)](construct-b252d4eb5a.md) -- published+backing
-- [context-engine-ai (`context-engine-ai`)](context-engine-ai-62e690d0f5.md) -- backing-only
-- [context-engineering-intro (`context-engineering-intro`)](context-engineering-intro-2aee74570c.md) -- backing-only
-- [context-hub (`context-hub`)](context-hub-663b92ba0a.md) -- backing-only
-- [ContextCode by ContextStream (`contextcode-by-contextstream`)](contextcode-by-contextstream-bafbba530a.md) -- backing-only
-- [contextvc (`contextvc`)](contextvc-71236aef99.md) -- backing-only
-- [Continous AI (`continous-ai`)](continous-ai-f73eee736c.md) -- backing-only
-- [Continue (`continue`)](continue-e256ee8e7a.md) -- published+backing
-- [Contral (`contral`)](contral-f2eb735ab0.md) -- published+backing
-- [Copilot Workspace (`copilot-workspace`)](copilot-workspace-abb10e3a29.md) -- published+backing
-- [CORAL (`coral`)](coral-f39fd90734.md) -- backing-only
-- [core-termux (`core-termux`)](core-termux-24049b06b8.md) -- backing-only
+- [Cody by Sourcegraph (`cody-by-sourcegraph`)](cody-by-sourcegraph-193d245ac8.md) -- published+backing+pages
+- [cody-public-snapshot (`cody-public-snapshot`)](cody-public-snapshot-f43138b78f.md) -- published+backing+pages
+- [Cody (Sourcegraph) (`cody-sourcegraph`)](cody-sourcegraph-72e877b87b.md) -- published+backing+pages
+- [colony repo (`colony-repo`)](colony-repo-6f4f359dbd.md) -- backing+pages
+- [Comet (`comet`)](comet-d51f791051.md) -- backing+pages
+- [Comfyui_Workflows (`comfyui-workflows`)](comfyui-workflows-4cd4bc2bc6.md) -- backing+pages
+- [Command Code (`command-code`)](command-code-510abdbcad.md) -- published+backing+pages
+- [companion (`companion`)](companion-c989edf182.md) -- backing+pages
+- [companion-vscode (`companion-vscode`)](companion-vscode-058e8ace88.md) -- backing+pages
+- [conch (`conch`)](conch-5fdde7b0e7.md) -- published+backing+pages
+- [Concord (`concord-mcp`)](concord-mcp-1bb70bdbd3.md) -- backing+pages
+- [Conductor (`conductor`)](conductor-0380db97ec.md) -- published+backing+pages
+- [conduit-release (`conduit-release`)](conduit-release-b93fa9513c.md) -- published+backing+pages
+- [construct (`construct`)](construct-b252d4eb5a.md) -- published+backing+pages
+- [context-engine-ai (`context-engine-ai`)](context-engine-ai-62e690d0f5.md) -- backing+pages
+- [context-engineering-intro (`context-engineering-intro`)](context-engineering-intro-2aee74570c.md) -- backing+pages
+- [context-hub (`context-hub`)](context-hub-663b92ba0a.md) -- backing+pages
+- [ContextCode by ContextStream (`contextcode-by-contextstream`)](contextcode-by-contextstream-bafbba530a.md) -- backing+pages
+- [contextvc (`contextvc`)](contextvc-71236aef99.md) -- backing+pages
+- [Continous AI (`continous-ai`)](continous-ai-f73eee736c.md) -- backing+pages
+- [Continue (`continue`)](continue-e256ee8e7a.md) -- published+backing+pages
+- [Contral (`contral`)](contral-f2eb735ab0.md) -- published+backing+pages
+- [Copilot Workspace (`copilot-workspace`)](copilot-workspace-abb10e3a29.md) -- published+backing+pages
+- [CORAL (`coral`)](coral-f39fd90734.md) -- backing+pages
+- [core-termux (`core-termux`)](core-termux-24049b06b8.md) -- backing+pages
 - [CoreCoder (`corecoder`)](corecoder-12f0b02b5d.md) -- published+backing
 - [Corgea (`corgea`)](corgea-49b3b74133.md) -- published+backing
 - [CornMCP (`cornmcp`)](cornmcp-809100cc6b.md) -- backing-only

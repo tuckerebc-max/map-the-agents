@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: construct-worlds
@@ -22,6 +22,8 @@ Repository map entry: [construct-worlds/construct](../../repos/construct-worlds/
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Agent CLI sessions die when SSH connections drop or laptops sleep, and running several agents in parallel means juggling terminal windows with no shared history. Construct runs a background daemon tha
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-native agentic development environment (ADE) — 'tmux for agent fleets.' Manages multiple AI coding agent sessions (Codex, Claude Code, OpenCode, Antigravity, Grok, Muse, Prime Agent, smith) from the terminal. Sessions persist in a daemon (survives SSH drops/sleep). Features session branching/forking (Lineage), executable Markdown Playbooks, agent-to-agent orchestration, generative widgets, remote phone/browser control, and an extensible JSON-RPC harness protocol. Single Rust binary.
+
+(captured site page body (agents/construct.md), not a verified repo-code finding)
+Agent CLI sessions die when SSH connections drop or laptops sleep, and running several agents in parallel means juggling terminal windows with no shared history. Construct runs a background daemon that owns every agent session - Codex, Claude Code, OpenCode, Antigravity, Grok, and others - persisting state and serving a terminal UI that reattaches with full scrollback after disconnection. Sessions form a lineage tree: users fork a session, even across different harnesses, to try approaches in parallel and merge the results back. Collaborative Markdown playbooks, agent-generated UI widgets, MCP-based agent-to-agent task handoff, and an ACP server round out the environment, while the wrapped agent CLIs remain separately installed and authenticated. Platform engineers juggling multiple agent sessions across local and remote environments are the target users.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/construct.md)

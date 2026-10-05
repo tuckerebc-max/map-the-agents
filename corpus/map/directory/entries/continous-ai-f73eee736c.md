@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Independent
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The only record of this project is a single sentence describing a fully free, open-source, continuous-learning AI coding agent. Neither the github.com/continous-ai/continous repository nor the contino
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): World's first continuous learning AI coding agent, fully free and open source
+
+(captured site page body (agents/continous-ai.md), not a verified repo-code finding)
+The only record of this project is a single sentence describing a fully free, open-source, continuous-learning AI coding agent. Neither the github.com/continous-ai/continous repository nor the continous-ai organization page resolves - both return HTTP 404 - so there is no source code, README, release history, or issue tracker to establish what the project did or how its continuous learning worked. It may have been renamed, deleted, or never have existed in a functional form; the evidence available does not distinguish these cases. The census retains the entry with maintained marked dead, and its description stands as a claim rather than a verified capability.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/continous-ai.md)

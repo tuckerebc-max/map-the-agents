@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: quack-ai
@@ -22,6 +22,8 @@ Repository map entry: [quack-ai/companion](../../repos/quack-ai/companion.md) (s
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Quack AI's companion backend served the server side of a self-hosted, team-context alternative to GitHub Copilot. The FastAPI service sat in front of an Ollama inference container running OSS models s
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Backend API service that acts as an instantly-onboarded team member with knowledge of internal libraries and coding standards; provides code chat endpoint and REST API for guideline management, used via a VSCode extension.
+
+(captured site page body (agents/companion.md), not a verified repo-code finding)
+Quack AI's companion backend served the server side of a self-hosted, team-context alternative to GitHub Copilot. The FastAPI service sat in front of an Ollama inference container running OSS models such as Phi 3, Llama 3, CodeQwen, and Mistral, exposing a code-chat endpoint plus a REST API for storing and curating the team's coding guidelines and internal library knowledge, which were injected as context into chat responses. Docker Compose brought up the API, an APM dashboard, and a Gradio chat UI together, and the Quack Companion VS Code extension was its primary client. The premise was that a team's coding standards, not model scale, determine assistant quality. Development stopped and the repository was archived on October 11, 2024, remaining as a read-only archive.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/companion.md)

@@ -1,9 +1,9 @@
 # bmad-code-org/bmad-method
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 94b6727b00c8 @ bdd9c2fe28189310
+Latest snapshot: commit 8f2c13dd0e00 @ a056c76746c75a5e
 
 ## Summary (orientation draft, not independently verified)
 

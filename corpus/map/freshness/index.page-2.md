@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kunal12203/graperoot](../repos/kunal12203/graperoot.md) [coverage: partial]
 - [kusionstack/konfig](../repos/kusionstack/konfig.md) [coverage: complete]
 - [kyaukyuai/gpt-all-star](../repos/kyaukyuai/gpt-all-star.md) [coverage: complete]
 - [kyegomez/swarms](../repos/kyegomez/swarms.md) [coverage: partial]
@@ -439,3 +438,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [vocodedev/vocode-core](../repos/vocodedev/vocode-core.md) [coverage: partial]
 - [waikato-llm/llm-dataset-converter-examples](../repos/waikato-llm/llm-dataset-converter-examples.md) [coverage: partial]
 - [walkingdevflag/mle-star-open](../repos/walkingdevflag/mle-star-open.md) [coverage: complete]
+- [warpdotdev/warp](../repos/warpdotdev/warp.md) [coverage: complete]

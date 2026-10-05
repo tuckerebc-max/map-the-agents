@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Get-Concord-AI
@@ -22,6 +22,8 @@ Repository map entry: [get-concord-ai/concord-mcp](../../repos/get-concord-ai/co
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Concord is the shared nervous system for a set of coding agents working in the same repository: a single MCP server, local-first with SQLite state in a .concord/ folder at the repo root, that lets age
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A single local-first MCP server that gives multiple coding agents a shared work state — presence, live messaging, file claims, decisions, and handoffs with review evidence — backed by SQLite in the repo, with tools start_work, inspect_work, update_work, transfer_work, and finish_work. Explicitly not an orchestrator or agent.
+
+(captured site page body (agents/concord-mcp.md), not a verified repo-code finding)
+Concord is the shared nervous system for a set of coding agents working in the same repository: a single MCP server, local-first with SQLite state in a .concord/ folder at the repo root, that lets agents like Claude Code, Codex, Cursor, Gemini CLI, and Grok Build discover each other, exchange live messages and prompts, claim files before editing to detect overlaps, share decisions, and hand off tasks with review evidence. Its MCP tools are start_work, inspect_work, update_work, transfer_work, and finish_work, plus a CLI (concord status, dashboard, doctor) and a TUI dashboard for humans watching the fleet. The project is explicit about what it is not — not an orchestrator, not an autonomous agent, not a code reviewer, not a hosted sync service — and it sends opt-out telemetry that never includes code or file paths. It is the coordination layer around agents rather than a harness, aimed at teams running several agents against one codebase without a human relaying context between them.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/concord-mcp.md)

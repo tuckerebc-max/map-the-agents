@@ -168,7 +168,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [blaine/fantastty](../repos/blaine/fantastty.md) -- status=distilled, freshness=stale
 - [blazity/nefi](../repos/blazity/nefi.md) -- status=distilled, freshness=current
 - [blushyes/coro-code](../repos/blushyes/coro-code.md) -- status=distilled, freshness=current
-- [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) -- status=distilled, freshness=current
+- [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) -- status=distilled, freshness=stale
 - [bmdavis419/.better-coding-agents](../repos/bmdavis419/.better-coding-agents.md) -- status=distilled, freshness=current
 - [bolt-foundry/gambit](../repos/bolt-foundry/gambit.md) -- status=blocked, freshness=refresh-failed
 - [bombap/tiny-agent](../repos/bombap/tiny-agent.md) -- status=distilled, freshness=current
