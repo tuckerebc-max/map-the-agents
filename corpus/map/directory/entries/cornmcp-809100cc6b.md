@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: yuki-20
@@ -22,6 +22,8 @@ Repository map entry: [yuki-20/cornmcp](../../repos/yuki-20/cornmcp.md) (source:
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Coding agents waste tokens re-reading code, re-deriving call graphs, and repeating lessons from prior sessions, and nothing checks the quality of what they produce before it lands. CornMCP runs locall
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): MCP server + analytics dashboard giving AI coding agents surgical, token-saving access to codebases via 18 tools: semantic memory, AST-based code intelligence, quality gates, session tracking, analytics
+
+(captured site page body (agents/cornmcp.md), not a verified repo-code finding)
+Coding agents waste tokens re-reading code, re-deriving call graphs, and repeating lessons from prior sessions, and nothing checks the quality of what they produce before it lands. CornMCP runs locally as a three-service stack - an MCP server exposing 18 tools, a Hono REST API with a native TypeScript AST engine, and a Next.js analytics dashboard - giving agents surgical codebase access instead of repeated full-file reads. Semantic memory stores persist lessons across sessions, impact analysis traces the blast radius of a proposed change, and quality gates reject agent plans scoring below a threshold before execution proceeds. Session tracking and tool-usage analytics surface in the dashboard for tuning. Developers running Claude Code, Cursor, Codex, or Windsurf against large codebases attach it to cut token spend and enforce standards.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cornmcp.md)

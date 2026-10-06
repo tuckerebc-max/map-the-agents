@@ -5,7 +5,7 @@ Known-dossier source depth (distinct from freshness -- a current commit is not c
 
 Status counts: discovered=10, distilled=990, blocked=62
 
-Freshness counts: current=924, pending=10, stale=65, refresh-failed=63
+Freshness counts: current=923, pending=10, stale=66, refresh-failed=63
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -15,10 +15,10 @@ Navigation: [classes](classes/index.md) | [agents](agents/index.md) | [component
 
 Full index: [classes/index.md](classes/index.md) (4 class(es)).
 
-- [agent](classes/agent.md) (448 repo(s))
+- [agent](classes/agent.md) (449 repo(s))
 - [agent-sdk](classes/agent-sdk.md) (26 repo(s))
 - [multiplexer](classes/multiplexer.md) (182 repo(s))
-- [uncategorized](classes/uncategorized.md) (406 repo(s))
+- [uncategorized](classes/uncategorized.md) (405 repo(s))
 
 ## Agents
 
@@ -135,9 +135,9 @@ Full index: [freshness/index.md](freshness/index.md).
 - [almanaccode/codealmanac](repos/almanaccode/codealmanac.md): stale (stale)
 - [almogdepaz/wolfpack](repos/almogdepaz/wolfpack.md): stale (stale)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
-- ... 108 more; see freshness/index.md
+- ... 109 more; see freshness/index.md
 
 ## Directory
 
 Full index: [directory/index.md](directory/index.md).
-Catalog-evidence entries (no-repo included): 1367 (published=836, backing=1347, pages=400).
+Catalog-evidence entries (no-repo included): 1368 (published=836, backing=1347, pages=425).

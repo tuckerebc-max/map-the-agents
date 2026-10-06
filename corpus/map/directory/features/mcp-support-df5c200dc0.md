@@ -48,6 +48,7 @@
 - [coding-agent-session-search](../entries/coding-agent-session-search-a3c158bbc8.md)
 - [concord-mcp](../entries/concord-mcp-1bb70bdbd3.md)
 - [contextcode-by-contextstream](../entries/contextcode-by-contextstream-bafbba530a.md)
+- [coven](../entries/coven-eb30e82be2.md)
 - [crewai](../entries/crewai-57090017a8.md)
 - [cuga-agent](../entries/cuga-agent-b8ff91417e.md)
 - [deeptide](../entries/deeptide-2f37cef598.md)

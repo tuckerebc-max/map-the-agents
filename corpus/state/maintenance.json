@@ -1,5 +1,5 @@
 {
-  "cursor": "bolt-foundry/gambit",
+  "cursor": "break-into-data/ai-engineer-toolkit",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -645,112 +645,44 @@
         "message": "redirect-refused http-301: https://api.github.com/repos/bolt-foundry/gambit"
       },
       "last_outcome": "snapshot-failed"
+    },
+    "bombap/tiny-agent": {
+      "failures": 0,
+      "last_at": "2026-10-06T15:55:17+00:00",
+      "last_outcome": "reused"
+    },
+    "boneylizard/eloquent": {
+      "failures": 1,
+      "last_at": "2026-10-06T15:55:17+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "http-404: https://api.github.com/repos/boneylizard/eloquent"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "bonk1t/agentic-platform": {
+      "failures": 1,
+      "last_at": "2026-10-06T15:55:18+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "http-404: https://api.github.com/repos/bonk1t/agentic-platform"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "boringcomputers/nehemiah": {
+      "failures": 0,
+      "last_at": "2026-10-06T15:55:20+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "break-into-data/ai-engineer-toolkit": {
+      "failures": 0,
+      "last_at": "2026-10-06T15:55:22+00:00",
+      "last_outcome": "reused"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "aizen-stack/aizen",
-        "aizenvoltprime/damocles",
-        "akarachen/2code",
-        "akashgit/remote-factory",
-        "alanchen4/2024-swe-new-grad"
-      ],
-      "catalog": {
-        "backlog": 0,
-        "changed": false,
-        "commit": "8664d24144c79ac7400a6799c00f070897d856a6",
-        "processed": 0,
-        "slugs": [],
-        "version_changed": true
-      },
-      "failures": [
-        {
-          "code": 8,
-          "error": "FetchFailed",
-          "message": "redirect-refused http-301: https://api.github.com/repos/aizen-stack/aizen",
-          "repo": "aizen-stack/aizen",
-          "stage": "snapshot"
-        }
-      ],
-      "finished": "2026-09-16T14:11:27+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "agentsmesh/agentsmesh",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator",
-        "ai4finance-foundation/finrobot",
-        "aider-ai/aider",
-        "aizenvoltprime/damocles",
-        "akarachen/2code",
-        "akashgit/remote-factory"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "b8787a5e9b69694cd607326dcce721bbf1e04bab",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 2,
-          "repo": "aizenvoltprime/damocles",
-          "reused": false,
-          "snapshot_id": "ee65c6452e13b09e"
-        },
-        {
-          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
-          "explicit_paths": [],
-          "files_stored": 9,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "akarachen/2code",
-          "reused": false,
-          "snapshot_id": "409dde3a23ed8f38"
-        },
-        {
-          "commit": "a267f509a2b2621f239f6733ce4d980ace9b3248",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 37,
-          "repo": "akashgit/remote-factory",
-          "reused": false,
-          "snapshot_id": "5b6b09d3e85b1034"
-        },
-        {
-          "commit": "cd04f5464b1e3cf5f2d2644205b56217b4469ffa",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "alanchen4/2024-swe-new-grad",
-          "reused": true,
-          "snapshot_id": "768e86730d467c7f"
-        }
-      ],
-      "started": "2026-09-16T14:11:11+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 16.389,
-        "max_seconds": 420,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 1.456,
-          "snapshots": 14.897
-        }
-      }
-    },
     {
       "attempted": [
         "alanchen4/summer-2024-swe-internships",
@@ -4302,6 +4234,216 @@
         "stages": {
           "catalog": 0.882,
           "snapshots": 8.127
+        }
+      }
+    },
+    {
+      "attempted": [
+        "bombap/tiny-agent",
+        "boneylizard/eloquent",
+        "bonk1t/agentic-platform",
+        "boringcomputers/nehemiah",
+        "break-into-data/ai-engineer-toolkit"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": true,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 48,
+        "slugs": [
+          "vt-code",
+          "waku",
+          "wallfacer",
+          "warp",
+          "we0",
+          "weaver",
+          "web-code-agent",
+          "webcode",
+          "webwright",
+          "whitebox-code-gpt",
+          "winx-code-agent",
+          "wolfpack",
+          "wordpressify",
+          "workflow-dispatch",
+          "workflows-samples",
+          "workgpt",
+          "workstation",
+          "workstreams",
+          "wrongstack",
+          "xcoding",
+          "xuanji-landing",
+          "yagents",
+          "yao",
+          "yeoman",
+          "youtrack-workflows",
+          "yoyo",
+          "yt-channels-ds-ai-ml-cs",
+          "zap",
+          "zellij",
+          "zentara-code",
+          "zero",
+          "zeroshot",
+          "zerostack",
+          "zhikuncode",
+          "zhin",
+          "zoo-code",
+          "zoo-code-extension",
+          "zorow",
+          "zot",
+          "10x",
+          "10x-tool-calls",
+          "10xproductivity",
+          "1code",
+          "2024-swe-new-grad",
+          "2code",
+          "30-agents-every-ai-engineer-must-build",
+          "49agents",
+          "5dive"
+        ],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "http-404: https://api.github.com/repos/boneylizard/eloquent",
+          "repo": "boneylizard/eloquent",
+          "stage": "snapshot"
+        },
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "http-404: https://api.github.com/repos/bonk1t/agentic-platform",
+          "repo": "bonk1t/agentic-platform",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-10-06T15:55:22+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot",
+        "bhouston/mycoder",
+        "big-pony/pocketshell",
+        "blaine/fantastty",
+        "bmad-code-org/bmad-method",
+        "boringcomputers/nehemiah"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "explicit_paths": [
+            "src/runtimes/reactRuntime.ts",
+            "src/context.ts"
+          ],
+          "files_stored": 3,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "bombap/tiny-agent",
+          "reused": true,
+          "snapshot_id": "f365606f97822f06"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 12,
+          "repo": "boringcomputers/nehemiah",
+          "reused": false,
+          "snapshot_id": "7119cf91ed3cee8f"
+        },
+        {
+          "commit": "190516e4959abd69d025cd174f28efadf89eb2cf",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "break-into-data/ai-engineer-toolkit",
+          "reused": true,
+          "snapshot_id": "9d13cdbeb65acfbe"
+        }
+      ],
+      "started": "2026-10-06T15:55:15+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 6.55,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.707,
+          "snapshots": 5.791
         }
       }
     }

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: stravu
@@ -22,6 +22,8 @@ Repository map entry: [stravu/crystal](../../repos/stravu/crystal.md) (source: b
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Crystal solved a specific workflow problem: developers running multiple Claude Code or Codex sessions against the same repository would collide over working-tree state. The Electron app gave every ses
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Desktop app (now deprecated, replaced by Nimbalyst) for running multiple Codex and Claude Code sessions in parallel git worktrees to test, compare approaches, and manage AI-assisted development workflows.
+
+(captured site page body (agents/crystal.md), not a verified repo-code finding)
+Crystal solved a specific workflow problem: developers running multiple Claude Code or Codex sessions against the same repository would collide over working-tree state. The Electron app gave every session an isolated git worktree, letting users run competing approaches in parallel, compare diffs, and merge the winner. It was MIT-licensed and gathered about 3,100 stars before development ended. As of February 2026 the project was renamed to Nimbalyst, and the repository now directs users to the successor rather than accepting feature work; existing users can still run Crystal, but active development happens elsewhere.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/crystal.md)

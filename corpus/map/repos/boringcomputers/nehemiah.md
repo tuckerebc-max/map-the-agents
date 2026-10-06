@@ -1,9 +1,9 @@
 # boringcomputers/nehemiah
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit fea6f0a52991 @ 492454999a25ebcf
+Latest snapshot: commit fea6f0a52991 @ 7119cf91ed3cee8f
 
 ## Summary (orientation draft, not independently verified)
 

@@ -61,6 +61,7 @@
 - [context-hub](../entries/context-hub-663b92ba0a.md)
 - [coral](../entries/coral-f39fd90734.md)
 - [cortex-code-cli](../entries/cortex-code-cli-9cae66ca22.md)
+- [coven](../entries/coven-eb30e82be2.md)
 - [coze-studio](../entries/coze-studio-47d58acde7.md)
 - [crewai](../entries/crewai-57090017a8.md)
 - [crystal](../entries/crystal-60a0f78b50.md)

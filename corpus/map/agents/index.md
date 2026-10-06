@@ -174,7 +174,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [bombap/tiny-agent](../repos/bombap/tiny-agent.md) -- status=distilled, freshness=current
 - [boneylizard/eloquent](../repos/boneylizard/eloquent.md) -- status=blocked, freshness=refresh-failed
 - [bonk1t/agentic-platform](../repos/bonk1t/agentic-platform.md) -- status=blocked, freshness=refresh-failed
-- [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) -- status=distilled, freshness=current
+- [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) -- status=distilled, freshness=stale
 - [break-into-data/ai-engineer-toolkit](../repos/break-into-data/ai-engineer-toolkit.md) -- status=distilled, freshness=current
 - [browser-use/video-use](../repos/browser-use/video-use.md) -- status=distilled, freshness=current
 - [browseroperator/browser-operator-core](../repos/browseroperator/browser-operator-core.md) -- status=distilled, freshness=current

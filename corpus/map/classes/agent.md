@@ -121,6 +121,7 @@
 - [dog-qiuqiu/invincat](../repos/dog-qiuqiu/invincat.md)
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md)
 - [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md)
+- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [dyad-sh/dyad](../repos/dyad-sh/dyad.md)
 - [earendil-works/pi](../repos/earendil-works/pi.md)
 - [echovic/blade-code](../repos/echovic/blade-code.md)

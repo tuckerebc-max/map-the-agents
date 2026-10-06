@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kusionstack/konfig](../repos/kusionstack/konfig.md) [coverage: complete]
 - [kyaukyuai/gpt-all-star](../repos/kyaukyuai/gpt-all-star.md) [coverage: complete]
 - [kyegomez/swarms](../repos/kyegomez/swarms.md) [coverage: partial]
 - [l3yx/intentlang](../repos/l3yx/intentlang.md) [coverage: complete]
@@ -439,3 +438,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [waikato-llm/llm-dataset-converter-examples](../repos/waikato-llm/llm-dataset-converter-examples.md) [coverage: partial]
 - [walkingdevflag/mle-star-open](../repos/walkingdevflag/mle-star-open.md) [coverage: complete]
 - [warpdotdev/warp](../repos/warpdotdev/warp.md) [coverage: complete]
+- [we0-dev/we0](../repos/we0-dev/we0.md) [coverage: complete]

@@ -130,7 +130,6 @@
 - [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md)
 - [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md)
 - [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md)
-- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [edantoledo/stoix](../repos/edantoledo/stoix.md)
 - [electric-sql/electric](../repos/electric-sql/electric.md)
 - [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md)

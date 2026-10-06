@@ -176,6 +176,7 @@
 - [cornmcp](../entries/cornmcp-809100cc6b.md)
 - [cortex](../entries/cortex-1ee11af4ed.md)
 - [cosmo](../entries/cosmo-98f4270f09.md)
+- [coven-gateway](../entries/coven-gateway-c70ff94a93.md)
 - [cowork-to-code-bridge](../entries/cowork-to-code-bridge-efa3032906.md)
 - [coze-studio](../entries/coze-studio-47d58acde7.md)
 - [cre-acquisition-orchestrator](../entries/cre-acquisition-orchestrator-b28e102612.md)

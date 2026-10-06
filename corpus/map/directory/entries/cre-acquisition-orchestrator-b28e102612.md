@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: ahacker-1
@@ -22,6 +22,8 @@ Repository map entry: [ahacker-1/cre-acquisition-orchestrator](../../repos/ahack
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Multifamily acquisitions run on unstructured documents - rent rolls, T12s, offering memos - and CRE software has largely missed the agent wave, so this project models the entire deal lifecycle as an a
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Most in-depth open-source CRE acquisition framework: 31-role AI deal team, source-backed extraction with provenance, human approval gates, local-first with optional live Codex web-search runtime, honest open evaluation harness reporting real weaknesses, deterministic Parkview demo requiring no API keys
+
+(captured site page body (agents/cre-acquisition-orchestrator.md), not a verified repo-code finding)
+Multifamily acquisitions run on unstructured documents - rent rolls, T12s, offering memos - and CRE software has largely missed the agent wave, so this project models the entire deal lifecycle as an agent workflow. A 31-role team (six orchestrators, twenty-one acquisition specialists, four document-ingestion agents) processes uploads through document parsing (pandas, PyMuPDF, OCR) into extraction candidates that carry source provenance, and a human approval gate is required before any field becomes an underwriting input. The default runtime is live OpenAI Codex CLI with web search enabled so agents cite real market data, while a deterministic offline simulation engine backs demos and CI without credentials. A React/TypeScript dashboard, 28 JSON Schema contracts, and an eval harness over synthetic deals make the system testable. CRE analysts and AI-in-real-estate practitioners use it as a reference architecture rather than production software.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cre-acquisition-orchestrator.md)

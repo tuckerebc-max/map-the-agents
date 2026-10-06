@@ -59,6 +59,7 @@
 - [codex-security](../entries/codex-security-7b7fe1faf5.md)
 - [coral](../entries/coral-f39fd90734.md)
 - [corecoder](../entries/corecoder-12f0b02b5d.md)
+- [coven](../entries/coven-eb30e82be2.md)
 - [crewai](../entries/crewai-57090017a8.md)
 - [cuga-agent](../entries/cuga-agent-b8ff91417e.md)
 - [deepclaude](../entries/deepclaude-956eb3c4a4.md)

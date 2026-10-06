@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (924)
+## current (923)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -100,7 +100,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [blushyes/coro-code](../repos/blushyes/coro-code.md) [coverage: complete]
 - [bmdavis419/.better-coding-agents](../repos/bmdavis419/.better-coding-agents.md) [coverage: complete]
 - [bombap/tiny-agent](../repos/bombap/tiny-agent.md) [coverage: complete]
-- [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) [coverage: partial]
 - [break-into-data/ai-engineer-toolkit](../repos/break-into-data/ai-engineer-toolkit.md) [coverage: complete]
 - [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]
 - [browseroperator/browser-operator-core](../repos/browseroperator/browser-operator-core.md) [coverage: partial]
@@ -437,3 +436,4 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kuberwastaken/claurst](../repos/kuberwastaken/claurst.md) [coverage: partial]
 - [kunagent/kun](../repos/kunagent/kun.md) [coverage: partial]
 - [kunal12203/graperoot](../repos/kunal12203/graperoot.md) [coverage: partial]
+- [kusionstack/konfig](../repos/kusionstack/konfig.md) [coverage: complete]

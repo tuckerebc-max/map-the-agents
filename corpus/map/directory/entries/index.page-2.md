@@ -74,30 +74,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [Copilot Workspace (`copilot-workspace`)](copilot-workspace-abb10e3a29.md) -- published+backing+pages
 - [CORAL (`coral`)](coral-f39fd90734.md) -- backing+pages
 - [core-termux (`core-termux`)](core-termux-24049b06b8.md) -- backing+pages
-- [CoreCoder (`corecoder`)](corecoder-12f0b02b5d.md) -- published+backing
-- [Corgea (`corgea`)](corgea-49b3b74133.md) -- published+backing
-- [CornMCP (`cornmcp`)](cornmcp-809100cc6b.md) -- backing-only
-- [Coro Code (`coro-code`)](coro-code-d6f7b8cdff.md) -- published+backing
-- [cortex (`cortex`)](cortex-1ee11af4ed.md) -- backing-only
-- [Cortex Code CLI (`cortex-code-cli`)](cortex-code-cli-9cae66ca22.md) -- published+backing
-- [Cosmo (`cosmo`)](cosmo-98f4270f09.md) -- backing-only
-- [Coven (`coven`)](coven-eb30e82be2.md) -- published-only
-- [cowork-to-code-bridge (`cowork-to-code-bridge`)](cowork-to-code-bridge-efa3032906.md) -- backing-only
-- [coze-studio (`coze-studio`)](coze-studio-47d58acde7.md) -- backing-only
-- [cre-acquisition-orchestrator (`cre-acquisition-orchestrator`)](cre-acquisition-orchestrator-b28e102612.md) -- backing-only
-- [Create-Actionsprs (`create-actionsprs`)](create-actionsprs-f12f24fb31.md) -- backing-only
-- [Create.xyz (`createxyz`)](createxyz-05ea2f34f3.md) -- published+backing
-- [Creatr (`creatr`)](creatr-d92312626d.md) -- published+backing
-- [Crew44 (`crew44`)](crew44-983aec9c99.md) -- published+backing
-- [CrewAI (`crewai`)](crewai-57090017a8.md) -- published+backing
-- [Crewai-101 (`crewai-101`)](crewai-101-3829d2859f.md) -- backing-only
-- [CrewArgo (`crewargo`)](crewargo-02cbf46292.md) -- published+backing
-- [Crewplane (`crewplane`)](crewplane-068742bbba.md) -- published+backing
-- [CrickCoder AI IDE (`crickcoder-ai-ide`)](crickcoder-ai-ide-39845e567d.md) -- published+backing
-- [Crispy (`crispy`)](crispy-127c2817bd.md) -- published+backing
-- [Crush (`crush`)](crush-daecc0bd28.md) -- published+backing
-- [Crystal (`crystal`)](crystal-60a0f78b50.md) -- published+backing
-- [crystl (`crystl`)](crystl-161e855d78.md) -- published+backing
+- [CoreCoder (`corecoder`)](corecoder-12f0b02b5d.md) -- published+backing+pages
+- [Corgea (`corgea`)](corgea-49b3b74133.md) -- published+backing+pages
+- [CornMCP (`cornmcp`)](cornmcp-809100cc6b.md) -- backing+pages
+- [Coro Code (`coro-code`)](coro-code-d6f7b8cdff.md) -- published+backing+pages
+- [cortex (`cortex`)](cortex-1ee11af4ed.md) -- backing+pages
+- [Cortex Code CLI (`cortex-code-cli`)](cortex-code-cli-9cae66ca22.md) -- published+backing+pages
+- [Cosmo (`cosmo`)](cosmo-98f4270f09.md) -- backing+pages
+- [Coven (`coven`)](coven-eb30e82be2.md) -- published+pages
+- [Coven Gateway (`coven-gateway`)](coven-gateway-c70ff94a93.md) -- pages-only
+- [cowork-to-code-bridge (`cowork-to-code-bridge`)](cowork-to-code-bridge-efa3032906.md) -- backing+pages
+- [coze-studio (`coze-studio`)](coze-studio-47d58acde7.md) -- backing+pages
+- [cre-acquisition-orchestrator (`cre-acquisition-orchestrator`)](cre-acquisition-orchestrator-b28e102612.md) -- backing+pages
+- [Create-Actionsprs (`create-actionsprs`)](create-actionsprs-f12f24fb31.md) -- backing+pages
+- [Create.xyz (`createxyz`)](createxyz-05ea2f34f3.md) -- published+backing+pages
+- [Creatr (`creatr`)](creatr-d92312626d.md) -- published+backing+pages
+- [Crew44 (`crew44`)](crew44-983aec9c99.md) -- published+backing+pages
+- [CrewAI (`crewai`)](crewai-57090017a8.md) -- published+backing+pages
+- [Crewai-101 (`crewai-101`)](crewai-101-3829d2859f.md) -- backing+pages
+- [CrewArgo (`crewargo`)](crewargo-02cbf46292.md) -- published+backing+pages
+- [Crewplane (`crewplane`)](crewplane-068742bbba.md) -- published+backing+pages
+- [CrickCoder AI IDE (`crickcoder-ai-ide`)](crickcoder-ai-ide-39845e567d.md) -- published+backing+pages
+- [Crispy (`crispy`)](crispy-127c2817bd.md) -- published+backing+pages
+- [Crush (`crush`)](crush-daecc0bd28.md) -- published+backing+pages
+- [Crystal (`crystal`)](crystal-60a0f78b50.md) -- published+backing+pages
+- [crystl (`crystl`)](crystl-161e855d78.md) -- published+backing+pages
 - [CS146S_CN (`cs146s-cn`)](cs146s-cn-03abd06617.md) -- backing-only
 - [cto.new (`ctonew`)](ctonew-594305ef75.md) -- published+backing
 - [cuga-agent (`cuga-agent`)](cuga-agent-b8ff91417e.md) -- published+backing
@@ -332,5 +333,3 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [Hex (`hex`)](hex-128df13c1e.md) -- published-only
 - [hey (`hey`)](hey-fa690b8206.md) -- backing-only
 - [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing-only
-- [hitch (`hitch`)](hitch-82e910cddf.md) -- backing-only
-- [hive (`hive`)](hive-7640da4029.md) -- published+backing
