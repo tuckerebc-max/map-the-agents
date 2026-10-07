@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [kyaukyuai/gpt-all-star](../repos/kyaukyuai/gpt-all-star.md) [coverage: complete]
-- [kyegomez/swarms](../repos/kyegomez/swarms.md) [coverage: partial]
 - [l3yx/intentlang](../repos/l3yx/intentlang.md) [coverage: complete]
 - [labring/sealos](../repos/labring/sealos.md) [coverage: partial]
 - [laizhou/opencode_ui](../repos/laizhou/opencode_ui.md) [coverage: complete]
@@ -439,3 +437,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [walkingdevflag/mle-star-open](../repos/walkingdevflag/mle-star-open.md) [coverage: complete]
 - [warpdotdev/warp](../repos/warpdotdev/warp.md) [coverage: complete]
 - [we0-dev/we0](../repos/we0-dev/we0.md) [coverage: complete]
+- [wecode-ai/runvsagent](../repos/wecode-ai/runvsagent.md) [coverage: partial]
+- [wei1024/ai-agent-playground](../repos/wei1024/ai-agent-playground.md) [coverage: complete]

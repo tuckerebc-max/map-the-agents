@@ -1,9 +1,9 @@
 # builderz-labs/mission-control
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 5483a0e1eef1 @ 8467a0c3e4579618
+Latest snapshot: commit e28edf8b28c8 @ a92b655f88658634
 
 ## Summary (orientation draft, not independently verified)
 

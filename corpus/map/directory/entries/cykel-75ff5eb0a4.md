@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Cykel AI positions its agents as virtual employees rather than developer tools: Eve handles sales development and outreach, Lucy manages candidate sourcing and screening for recruiters, and Samson pro
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Digital worker platform (not a coding agent) providing AI agents for business-process automation across recruitment (Lucy), sales (Eve), and research (Samson); plug-and-play integration with ATS/CRM; listed on the London Stock Exchange.
+
+(captured site page body (agents/cykel.md), not a verified repo-code finding)
+Cykel AI positions its agents as virtual employees rather than developer tools: Eve handles sales development and outreach, Lucy manages candidate sourcing and screening for recruiters, and Samson produces company research reports for investment and consulting teams. The platform integrates with existing ATS and CRM systems and markets a per-worker daily rate (advertised at $1.63) against claimed 5–10x throughput, with 400+ business customers. The company is LSE-listed and actively maintained, with recent product updates including a DeepSeek R1 integration. Because none of its products use tools in a loop to create or modify software, it falls outside the agent/multiplexer definitions and is categorized as other.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cykel.md)

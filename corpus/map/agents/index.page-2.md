@@ -2,6 +2,7 @@
 
 Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
+- [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) -- status=distilled, freshness=current
 - [fullive-ai/anima](../repos/fullive-ai/anima.md) -- status=distilled, freshness=current
 - [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) -- status=distilled, freshness=current
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) -- status=distilled, freshness=current
 - [openbmb/chatdev](../repos/openbmb/chatdev.md) -- status=distilled, freshness=current
 - [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) -- status=distilled, freshness=current
-- [openbmb/repoagent](../repos/openbmb/repoagent.md) -- status=distilled, freshness=current

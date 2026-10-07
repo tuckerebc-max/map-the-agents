@@ -99,31 +99,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [Crush (`crush`)](crush-daecc0bd28.md) -- published+backing+pages
 - [Crystal (`crystal`)](crystal-60a0f78b50.md) -- published+backing+pages
 - [crystl (`crystl`)](crystl-161e855d78.md) -- published+backing+pages
-- [CS146S_CN (`cs146s-cn`)](cs146s-cn-03abd06617.md) -- backing-only
-- [cto.new (`ctonew`)](ctonew-594305ef75.md) -- published+backing
-- [cuga-agent (`cuga-agent`)](cuga-agent-b8ff91417e.md) -- published+backing
-- [Cursor (`cursor`)](cursor-46a4eebd20.md) -- published+backing
-- [cursor-agent (`cursor-agent`)](cursor-agent-4bae6fa054.md) -- published+backing
-- [Cursor AI Automated Team (`cursor-ai-automated-team`)](cursor-ai-automated-team-49307ac658.md) -- backing-only
-- [Cursor-AI-Pro-Download-2026 (`cursor-ai-pro-download-2026`)](cursor-ai-pro-download-2026-a11a7f74f6.md) -- backing-only
-- [cursor-bridge (`cursor-bridge`)](cursor-bridge-797ce8126a.md) -- backing-only
-- [cursor-in-browser (`cursor-in-browser`)](cursor-in-browser-7ab42a72b9.md) -- backing-only
-- [Cursor Memories / Automations (CMA) (`cursor-memories-automations-cma`)](cursor-memories-automations-cma-3337385c28.md) -- backing-only
-- [CybeDefend (`cybedefend`)](cybedefend-1013dce338.md) -- published+backing
-- [Cyclops (`cyclops`)](cyclops-9ad08878dc.md) -- published+backing
-- [CyCode (`cycode`)](cycode-5d776c6bd1.md) -- published+backing
-- [Cykel (`cykel`)](cykel-75ff5eb0a4.md) -- backing-only
-- [Dagger (`dagger`)](dagger-6415fae65a.md) -- backing-only
-- [damocles (`damocles`)](damocles-bb4ef13a39.md) -- published+backing
-- [Dance-Ai-Research-Project (`dance-ai-research-project`)](dance-ai-research-project-3c395dc869.md) -- backing-only
-- [Darce (`darce`)](darce-c30bddcbda.md) -- published+backing
-- [Databutton (`databutton`)](databutton-e785523bad.md) -- published+backing
-- [Datasette Agent (`datasette-agent`)](datasette-agent-8fe9ea43bb.md) -- published-only
-- [dbt Copilot (`dbt-copilot`)](dbt-copilot-e32017cadd.md) -- published+backing
-- [DD Code GUI (`dd-code-gui`)](dd-code-gui-7ed3b3ccc4.md) -- published+backing
-- [debroid (`debroid`)](debroid-d508741387.md) -- backing-only
-- [Debugai (`debugai`)](debugai-1e5dbd0734.md) -- backing-only
-- [Deep Agents Code (`deep-agents-code`)](deep-agents-code-c38b541e8a.md) -- published+backing
+- [CS146S_CN (`cs146s-cn`)](cs146s-cn-03abd06617.md) -- backing+pages
+- [cto.new (`ctonew`)](ctonew-594305ef75.md) -- published+backing+pages
+- [cuga-agent (`cuga-agent`)](cuga-agent-b8ff91417e.md) -- published+backing+pages
+- [Cursor (`cursor`)](cursor-46a4eebd20.md) -- published+backing+pages
+- [cursor-agent (`cursor-agent`)](cursor-agent-4bae6fa054.md) -- published+backing+pages
+- [Cursor AI Automated Team (`cursor-ai-automated-team`)](cursor-ai-automated-team-49307ac658.md) -- backing+pages
+- [Cursor-AI-Pro-Download-2026 (`cursor-ai-pro-download-2026`)](cursor-ai-pro-download-2026-a11a7f74f6.md) -- backing+pages
+- [cursor-bridge (`cursor-bridge`)](cursor-bridge-797ce8126a.md) -- backing+pages
+- [cursor-in-browser (`cursor-in-browser`)](cursor-in-browser-7ab42a72b9.md) -- backing+pages
+- [Cursor Memories / Automations (CMA) (`cursor-memories-automations-cma`)](cursor-memories-automations-cma-3337385c28.md) -- backing+pages
+- [CybeDefend (`cybedefend`)](cybedefend-1013dce338.md) -- published+backing+pages
+- [Cyclops (`cyclops`)](cyclops-9ad08878dc.md) -- published+backing+pages
+- [CyCode (`cycode`)](cycode-5d776c6bd1.md) -- published+backing+pages
+- [Cykel (`cykel`)](cykel-75ff5eb0a4.md) -- backing+pages
+- [Dagger (`dagger`)](dagger-6415fae65a.md) -- backing+pages
+- [damocles (`damocles`)](damocles-bb4ef13a39.md) -- published+backing+pages
+- [Dance-Ai-Research-Project (`dance-ai-research-project`)](dance-ai-research-project-3c395dc869.md) -- backing+pages
+- [Darce (`darce`)](darce-c30bddcbda.md) -- published+backing+pages
+- [Databutton (`databutton`)](databutton-e785523bad.md) -- published+backing+pages
+- [Datasette Agent (`datasette-agent`)](datasette-agent-8fe9ea43bb.md) -- published+pages
+- [dbt Copilot (`dbt-copilot`)](dbt-copilot-e32017cadd.md) -- published+backing+pages
+- [DD Code GUI (`dd-code-gui`)](dd-code-gui-7ed3b3ccc4.md) -- published+backing+pages
+- [debroid (`debroid`)](debroid-d508741387.md) -- backing+pages
+- [Debugai (`debugai`)](debugai-1e5dbd0734.md) -- backing+pages
+- [Deep Agents Code (`deep-agents-code`)](deep-agents-code-c38b541e8a.md) -- published+backing+pages
 - [deep-swe (`deep-swe`)](deep-swe-05e5f66593.md) -- backing-only
 - [deepagent-code (`deepagent-code`)](deepagent-code-b3b10578e7.md) -- published+backing
 - [deepclaude (`deepclaude`)](deepclaude-956eb3c4a4.md) -- backing-only

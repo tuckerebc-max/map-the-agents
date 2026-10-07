@@ -113,6 +113,7 @@
 - [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md)
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md)
 - [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md)
+- [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [decron/whitebox-code-gpt](../repos/decron/whitebox-code-gpt.md)
 - [deepseek-ai/deepseek-coder](../repos/deepseek-ai/deepseek-coder.md)
 - [devcorexofficial/core-termux](../repos/devcorexofficial/core-termux.md)

@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [wecode-ai/runvsagent](../repos/wecode-ai/runvsagent.md) [coverage: partial]
-- [wei1024/ai-agent-playground](../repos/wei1024/ai-agent-playground.md) [coverage: complete]
 - [weilin0723/purrcode](../repos/weilin0723/purrcode.md) [coverage: partial]
 - [weiyangzen/mbti-coding-agents](../repos/weiyangzen/mbti-coding-agents.md) [coverage: complete]
 - [wellingfeng/ultragamestudio](../repos/wellingfeng/ultragamestudio.md) [coverage: complete]
@@ -62,9 +60,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (10)
+## pending (11)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
+- [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
@@ -75,7 +74,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (66)
+## stale (68)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +142,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
 - [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) [coverage: partial]
 - [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) [coverage: partial]
+- [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]
+- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [coverage: partial]
 
 ## refresh-failed (63)
 

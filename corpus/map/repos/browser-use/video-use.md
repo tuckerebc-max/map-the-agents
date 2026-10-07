@@ -1,9 +1,9 @@
 # browser-use/video-use
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9575612f066a @ 0e448881ca040508
+Latest snapshot: commit b877063835e6 @ 4810ede63380f778
 
 ## Summary (orientation draft, not independently verified)
 

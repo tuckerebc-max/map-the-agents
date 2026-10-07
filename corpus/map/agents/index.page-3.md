@@ -2,6 +2,7 @@
 
 Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [openbmb/repoagent](../repos/openbmb/repoagent.md) -- status=distilled, freshness=current
 - [openchamber/openchamber](../repos/openchamber/openchamber.md) -- status=distilled, freshness=current
 - [opendev-to/opendev](../repos/opendev-to/opendev.md) -- status=distilled, freshness=current
 - [openhands/openhands](../repos/openhands/openhands.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) -- status=distilled, freshness=current
 - [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) -- status=distilled, freshness=current
 - [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) -- status=distilled, freshness=current
-- [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) -- status=distilled, freshness=current

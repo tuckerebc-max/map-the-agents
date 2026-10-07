@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1062 repositories.
+1063 repositories.
 
 [Back to map index](../index.md)
 
@@ -176,11 +176,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [bonk1t/agentic-platform](../repos/bonk1t/agentic-platform.md) -- status=blocked, freshness=refresh-failed
 - [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) -- status=distilled, freshness=stale
 - [break-into-data/ai-engineer-toolkit](../repos/break-into-data/ai-engineer-toolkit.md) -- status=distilled, freshness=current
-- [browser-use/video-use](../repos/browser-use/video-use.md) -- status=distilled, freshness=current
+- [browser-use/video-use](../repos/browser-use/video-use.md) -- status=distilled, freshness=stale
 - [browseroperator/browser-operator-core](../repos/browseroperator/browser-operator-core.md) -- status=distilled, freshness=current
 - [brutusin/instrumentation](../repos/brutusin/instrumentation.md) -- status=distilled, freshness=current
 - [build-with-groq/groq-code-cli](../repos/build-with-groq/groq-code-cli.md) -- status=distilled, freshness=current
-- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) -- status=distilled, freshness=current
+- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) -- status=distilled, freshness=stale
 - [buildownai/tools](../repos/buildownai/tools.md) -- status=distilled, freshness=current
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) -- status=distilled, freshness=current
 - [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) -- status=distilled, freshness=current
@@ -270,6 +270,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) -- status=distilled, freshness=current
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) -- status=distilled, freshness=current
 - [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) -- status=distilled, freshness=current
+- [datasette/datasette-agent](../repos/datasette/datasette-agent.md) -- status=discovered, freshness=pending
 - [dazuiba/handoff](../repos/dazuiba/handoff.md) -- status=distilled, freshness=current
 - [dcouple/pane](../repos/dcouple/pane.md) -- status=distilled, freshness=current
 - [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) -- status=distilled, freshness=current
@@ -354,4 +355,3 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) -- status=distilled, freshness=current
 - [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- status=distilled, freshness=current
 - [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) -- status=distilled, freshness=current
-- [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) -- status=distilled, freshness=current

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (923)
+## current (921)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -101,11 +101,9 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [bmdavis419/.better-coding-agents](../repos/bmdavis419/.better-coding-agents.md) [coverage: complete]
 - [bombap/tiny-agent](../repos/bombap/tiny-agent.md) [coverage: complete]
 - [break-into-data/ai-engineer-toolkit](../repos/break-into-data/ai-engineer-toolkit.md) [coverage: complete]
-- [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]
 - [browseroperator/browser-operator-core](../repos/browseroperator/browser-operator-core.md) [coverage: partial]
 - [brutusin/instrumentation](../repos/brutusin/instrumentation.md) [coverage: complete]
 - [build-with-groq/groq-code-cli](../repos/build-with-groq/groq-code-cli.md) [coverage: complete]
-- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [coverage: partial]
 - [buildownai/tools](../repos/buildownai/tools.md) [coverage: complete]
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
 - [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kunagent/kun](../repos/kunagent/kun.md) [coverage: partial]
 - [kunal12203/graperoot](../repos/kunal12203/graperoot.md) [coverage: partial]
 - [kusionstack/konfig](../repos/kusionstack/konfig.md) [coverage: complete]
+- [kyaukyuai/gpt-all-star](../repos/kyaukyuai/gpt-all-star.md) [coverage: complete]
+- [kyegomez/swarms](../repos/kyegomez/swarms.md) [coverage: partial]

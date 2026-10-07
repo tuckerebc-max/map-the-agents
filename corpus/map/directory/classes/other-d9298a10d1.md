@@ -187,6 +187,7 @@
 - [cursor-ai-pro-download-2026](../entries/cursor-ai-pro-download-2026-a11a7f74f6.md)
 - [cursor-bridge](../entries/cursor-bridge-797ce8126a.md)
 - [cursor-in-browser](../entries/cursor-in-browser-7ab42a72b9.md)
+- [cursor-memories-automations-cma](../entries/cursor-memories-automations-cma-3337385c28.md)
 - [cykel](../entries/cykel-75ff5eb0a4.md)
 - [dagger](../entries/dagger-6415fae65a.md)
 - [dance-ai-research-project](../entries/dance-ai-research-project-3c395dc869.md)

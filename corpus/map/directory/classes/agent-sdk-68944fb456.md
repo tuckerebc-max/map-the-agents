@@ -17,6 +17,7 @@
 - [claude-agent-sdk-typescript](../entries/claude-agent-sdk-typescript-b52c0c1f60.md)
 - [codefuse-muagent](../entries/codefuse-muagent-5e8aeb5da3.md)
 - [crewai](../entries/crewai-57090017a8.md)
+- [deep-agents-code](../entries/deep-agents-code-c38b541e8a.md)
 - [dippin-lang](../entries/dippin-lang-f651643883.md)
 - [langgraph](../entries/langgraph-ad3fc2c957.md)
 - [langroid](../entries/langroid-31d53aa7d9.md)

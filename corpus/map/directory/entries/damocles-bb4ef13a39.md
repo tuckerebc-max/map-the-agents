@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: AizenvoltPrime
@@ -22,6 +22,8 @@ Repository map entry: [aizenvoltprime/damocles](../../repos/aizenvoltprime/damoc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Damocles embeds a full coding agent into VS Code by building on the Pi agent runtime, so the loop, tools, and subagent machinery come from Pi while the extension adds deep editor integration: inline d
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): VS Code extension embedding an AI coding agent powered by the Pi agent runtime, with deep editor integration including inline diff previews, subagent visualization, persistent SQLite-backed memory, collaborative multi-agent teams, a workspace knowledge graph (Compass), integrated stealth browser automation, and hands-free voice input (Jarvis mode).
+
+(captured site page body (agents/damocles.md), not a verified repo-code finding)
+Damocles embeds a full coding agent into VS Code by building on the Pi agent runtime, so the loop, tools, and subagent machinery come from Pi while the extension adds deep editor integration: inline diff previews, checkpointed rewinds and forking, and real-time subagent visualization. Its model providers include Claude, GPT/Codex, StepFun, and DeepSeek, and its MCP client merges servers from Claude Code, Codex, and its own config files with OAuth and auto-reconnect. Beyond single-agent use it supports nested subagents with mid-task steering and optional 2–5 agent collaborative teams with scratchpads and verification ledgers, plus extras such as a knowledge graph over the codebase, browser automation, and voice control. It is a solo-maintained MIT project aimed at developers who want Claude Code-class behavior inside the editor with local, inspectable state.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/damocles.md)

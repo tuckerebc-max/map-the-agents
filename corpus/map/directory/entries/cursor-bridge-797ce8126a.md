@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: lengff123
@@ -22,6 +22,8 @@ Repository map entry: [lengff123/cursor-bridge](../../repos/lengff123/cursor-bri
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-cursor-bridge exists because some users maintain their project notes and plans in Obsidian while doing AI-assisted coding in Cursor, and switching between the two apps manually breaks the flow. The pl
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Obsidian plugin that bridges Obsidian notes with Cursor (AI code editor), enabling one-click opening of notes/folders directly in Cursor for AI-powered coding from a knowledge base.
+
+(captured site page body (agents/cursor-bridge.md), not a verified repo-code finding)
+cursor-bridge exists because some users maintain their project notes and plans in Obsidian while doing AI-assisted coding in Cursor, and switching between the two apps manually breaks the flow. The plugin adds commands, context-menu entries, and a sidebar action to open the current note or vault folder directly in Cursor, on Windows and macOS. It contains no AI logic of its own; all coding behavior belongs to Cursor. The TypeScript plugin gathered about 50 stars and 27 commits before activity tapered off, and its README claims MIT while the repository's LICENSE is AGPL-3.0, a discrepancy worth noting for anyone redistributing it.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cursor-bridge.md)
