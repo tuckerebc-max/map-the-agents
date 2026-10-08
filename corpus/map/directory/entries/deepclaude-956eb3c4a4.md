@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: aattaran
 - License: MIT
 - Language: Shell
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [aattaran/deepclaude](../../repos/aattaran/deepclaude.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-deepclaude addresses the cost problem of running Claude Code for heavy daily use: it leaves the agent's loop, tools, and subagent machinery untouched and routes the model calls to DeepSeek V4 Pro thro
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Swaps Claude Code's model backend while keeping its full autonomous agent loop (file editing, bash, git, subagents), achieving the same UX at ~17x lower cost with DeepSeek. Features live mid-session model switching via slash commands and automatic DeepSeek context caching.
+
+(captured site page body (agents/deepclaude.md), not a verified repo-code finding)
+deepclaude addresses the cost problem of running Claude Code for heavy daily use: it leaves the agent's loop, tools, and subagent machinery untouched and routes the model calls to DeepSeek V4 Pro through a local proxy, cutting output-token cost from $15/M to about $0.87/M. A localhost proxy (port 3200) intercepts requests, supports switching between DeepSeek, OpenRouter, Fireworks, and Anthropic mid-session via slash commands or keybindings, and exposes cost and benchmark endpoints. Users keep Claude Code's file editing, bash, git, and subagent behavior while trading away vision input, MCP server tools, and some complex-reasoning quality. It appeals to individual developers and teams running large volumes of agentic sessions who want the Claude Code UX without Anthropic pricing.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deepclaude.md)

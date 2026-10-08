@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Snyk
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-DeepCode began as a Zurich-based startup applying machine learning to static analysis and was acquired by Snyk in 2020, after which its engine became the analysis core of Snyk Code and the broader Sny
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): DeepCode AI is the AI analysis engine within the Snyk security platform (Snyk acquired DeepCode); not a standalone coding agent harness. Snyk focuses on security scanning and fixing across the SDLC.
+
+(captured site page body (agents/deepcode-snyk.md), not a verified repo-code finding)
+DeepCode began as a Zurich-based startup applying machine learning to static analysis and was acquired by Snyk in 2020, after which its engine became the analysis core of Snyk Code and the broader Snyk AI security platform. Today DeepCode AI functions as the named model stack powering Snyk's code scanning and autofix capabilities rather than as a standalone developer tool: it sits inside the Snyk platform alongside Snyk Code, Evo, and integrations, and is marketed as continuously validating AI-generated code and governing development agents. Developers encounter it through Snyk's editor plugins, CI integrations, and Snyk Code, with Free/Team/Enterprise plans on snyk.io. There is no separate agent harness to install; the entry exists in this census to disambiguate it from the unrelated HKUDS DeepCode agent.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deepcode-snyk.md)

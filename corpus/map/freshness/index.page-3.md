@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [weilin0723/purrcode](../repos/weilin0723/purrcode.md) [coverage: partial]
-- [weiyangzen/mbti-coding-agents](../repos/weiyangzen/mbti-coding-agents.md) [coverage: complete]
-- [wellingfeng/ultragamestudio](../repos/wellingfeng/ultragamestudio.md) [coverage: complete]
 - [wendy7756/vibe-coding-guide](../repos/wendy7756/vibe-coding-guide.md) [coverage: complete]
 - [whut09/opencode-plusplus](../repos/whut09/opencode-plusplus.md) [coverage: partial]
 - [wienerdog-ai/wienerdog](../repos/wienerdog-ai/wienerdog.md) [coverage: partial]
@@ -74,7 +71,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (68)
+## stale (71)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +141,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) [coverage: partial]
 - [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]
 - [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [coverage: partial]
+- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
+- [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
+- [bytedance/deer-flow](../repos/bytedance/deer-flow.md) [coverage: partial]
 
 ## refresh-failed (63)
 

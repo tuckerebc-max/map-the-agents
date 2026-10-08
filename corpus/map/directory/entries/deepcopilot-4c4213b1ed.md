@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: deep-copilot
@@ -22,6 +22,8 @@ Repository map entry: [deep-copilot/deepcopilot](../../repos/deep-copilot/deepco
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-DeepCopilot puts a DeepSeek-powered coding agent into VS Code's sidebar: a multi-turn tool-calling loop handles file reads/writes, ripgrep-backed code search, shell execution, and optional Tavily web
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): VS Code extension providing a conversational AI coding assistant powered by the DeepSeek API with an agentic loop, multi-turn tool calling, and streaming output in the sidebar. Features file tools (read/write/str-replace/apply_patch/list/find/grep), shell execution, web search via Tavily, plan & todos panel, revert last turn, post-tool hooks (.deepcopilot/hooks.json), post-edit LSP diagnostics, parallel sessions, MCP client (mcp__\<server\>__\<tool\>), skills system (compatible with ~/.claude/skills, ...
+
+(captured site page body (agents/deepcopilot.md), not a verified repo-code finding)
+DeepCopilot puts a DeepSeek-powered coding agent into VS Code's sidebar: a multi-turn tool-calling loop handles file reads/writes, ripgrep-backed code search, shell execution, and optional Tavily web search, with streaming output and context-window management to stay inside long sessions. The extension deliberately avoids npm runtime dependencies, shipping a small bundle built on the VS Code Extension API, which keeps install weight and supply-chain surface minimal. Around the loop it adds plan/todo tracking, a pending-edits panel with diff review and one-click revert, persistent user memory, a skills system, and FIM inline completions. It requires a DeepSeek API key (Tavily optional), is MIT-licensed JavaScript by a solo author, and releases frequently on the VS Code Marketplace.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deepcopilot.md)

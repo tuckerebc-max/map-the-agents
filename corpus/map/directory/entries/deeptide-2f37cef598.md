@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: paean-ai
@@ -22,6 +22,8 @@ Repository map entry: [paean-ai/deeptide](../../repos/paean-ai/deeptide.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Deeptide exists because DeepSeek users otherwise have to run general-purpose harnesses tuned for other providers. The three form factors deliberately share one interface contract (tide-spec), so confi
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Built specifically for DeepSeek models with three flavors (native macOS app, TypeScript/Bun CLI, Rust CLI+GUI) that share configuration, sessions, and tools via a shared interface contract (tide-spec). Includes a local DeepSeek inference runtime (Metal engine + OpenAI/Anthropic-compatible gateway). Hooks engine for pre/post tool, user-prompt, session, and compaction shell hooks.
+
+(captured site page body (agents/deeptide.md), not a verified repo-code finding)
+Deeptide exists because DeepSeek users otherwise have to run general-purpose harnesses tuned for other providers. The three form factors deliberately share one interface contract (tide-spec), so configuration, sessions, and tools carry across the native macOS app, the Bun-based CLI, and the Rust binary. The macOS build embeds a local DeepSeek V4 Flash Metal inference engine with an OpenAI/Anthropic-compatible gateway, which lets the agent run fully on-device. It is aimed at DeepSeek-centric developers who want an agent, REPL, and inference runtime from one project rather than assembling them separately.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deeptide.md)

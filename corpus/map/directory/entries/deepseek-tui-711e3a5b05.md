@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Independent
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-deepseek-tui was a terminal coding agent built around DeepSeek V4 models: it streamed the models' reasoning blocks into the terminal, edited local workspaces behind approval gates, ran shell commands,
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal coding agent for DeepSeek V4 models. Streams reasoning blocks, edits local workspaces with approval gates, reads/edits files, runs shell commands, searches the web, manages git, and coordinates sub-agents. Includes auto mode that selects model and thinking level per turn. Has Plan (read-only investigation), Agent, and YOLO modes. MCP support and a Skills system for composable, installable instruction packs from ...
+
+(captured site page body (agents/deepseek-tui.md), not a verified repo-code finding)
+deepseek-tui was a terminal coding agent built around DeepSeek V4 models: it streamed the models' reasoning blocks into the terminal, edited local workspaces behind approval gates, ran shell commands, searched the web, managed git, and coordinated subagents from a TUI. The project attracted an ecosystem — a Homebrew tap, Windows install tutorials, desktop re-implementations, and DeepSeek Harness TUI distributions such as seektty and cocode — indicating real adoption at its peak. The canonical repository at github.com/deepseek-tui/deepseek-tui now returns 404, confirmed via GitHub's API, so the original source is no longer available. Users who want comparable tooling must rely on the surviving fork/companion projects, which complicates provenance and security review.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deepseek-tui.md)

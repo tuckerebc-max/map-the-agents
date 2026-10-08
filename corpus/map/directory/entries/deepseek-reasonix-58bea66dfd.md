@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: esengine
@@ -22,6 +22,8 @@ Repository map entry: [esengine/deepseek-reasonix](../../repos/esengine/deepseek
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Reasonix is a DeepSeek-native coding agent built for long autonomous runs, with mechanics tuned to that goal: cache-aware context maintenance aligned with DeepSeek's prefix-cache pricing, a workspace
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): DeepSeek-native AI coding agent engineered around prefix-cache stability for long-running sessions. Distributed as a self-contained static Go binary. Features plan mode, permissions, workspace sandbox, per-turn checkpoints, config-driven providers/tools/plugins, multi-model support (executor + planner), and Extension Protocol v1 sidecars.
+
+(captured site page body (agents/deepseek-reasonix.md), not a verified repo-code finding)
+Reasonix is a DeepSeek-native coding agent built for long autonomous runs, with mechanics tuned to that goal: cache-aware context maintenance aligned with DeepSeek's prefix-cache pricing, a workspace sandbox, per-turn checkpoints with rewind, and a permission system for unattended operation. It runs as a single static Go binary in terminal/TUI, desktop, browser, or editor via ACP, with a config-driven setup (reasonix.toml), a planner/executor model split, and support for any OpenAI-compatible endpoint. Extensibility goes beyond MCP servers to an Extension Protocol with a Go SDK for sidecars that intercept events and add providers, and subagent profiles are first-class. The project is one of the most popular DeepSeek-focused harnesses (35k+ stars, very active development, bilingual docs, npm/Homebrew/desktop distribution).
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deepseek-reasonix.md)

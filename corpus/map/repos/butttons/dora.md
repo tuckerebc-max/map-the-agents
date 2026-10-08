@@ -1,9 +1,9 @@
 # butttons/dora
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit f4edb8fd349e @ f6d9ac8d861f83d6
+Latest snapshot: commit f4edb8fd349e @ 15e363cf80ca3281
 
 ## Summary (orientation draft, not independently verified)
 

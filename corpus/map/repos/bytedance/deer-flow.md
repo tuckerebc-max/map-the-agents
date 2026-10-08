@@ -1,9 +1,9 @@
 # bytedance/deer-flow
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d5ae3882b670 @ f0af2b8a99cbd610
+Latest snapshot: commit c58d04b6b656 @ e593017ec51b3246
 
 ## Summary (orientation draft, not independently verified)
 

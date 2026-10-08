@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (921)
+## current (918)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -106,9 +106,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [build-with-groq/groq-code-cli](../repos/build-with-groq/groq-code-cli.md) [coverage: complete]
 - [buildownai/tools](../repos/buildownai/tools.md) [coverage: complete]
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
-- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
-- [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
-- [bytedance/deer-flow](../repos/bytedance/deer-flow.md) [coverage: partial]
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
 - [c0sogi/llmchat](../repos/c0sogi/llmchat.md) [coverage: partial]
 - [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [kusionstack/konfig](../repos/kusionstack/konfig.md) [coverage: complete]
 - [kyaukyuai/gpt-all-star](../repos/kyaukyuai/gpt-all-star.md) [coverage: complete]
 - [kyegomez/swarms](../repos/kyegomez/swarms.md) [coverage: partial]
+- [l3yx/intentlang](../repos/l3yx/intentlang.md) [coverage: complete]
+- [labring/sealos](../repos/labring/sealos.md) [coverage: partial]
+- [laizhou/opencode_ui](../repos/laizhou/opencode_ui.md) [coverage: complete]

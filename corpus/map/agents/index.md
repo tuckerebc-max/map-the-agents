@@ -183,9 +183,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) -- status=distilled, freshness=stale
 - [buildownai/tools](../repos/buildownai/tools.md) -- status=distilled, freshness=current
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) -- status=distilled, freshness=current
-- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) -- status=distilled, freshness=current
-- [butttons/dora](../repos/butttons/dora.md) -- status=distilled, freshness=current
-- [bytedance/deer-flow](../repos/bytedance/deer-flow.md) -- status=distilled, freshness=current
+- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) -- status=distilled, freshness=stale
+- [butttons/dora](../repos/butttons/dora.md) -- status=distilled, freshness=stale
+- [bytedance/deer-flow](../repos/bytedance/deer-flow.md) -- status=distilled, freshness=stale
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) -- status=distilled, freshness=current
 - [c0sogi/llmchat](../repos/c0sogi/llmchat.md) -- status=distilled, freshness=current
 - [cactus-compute/needle](../repos/cactus-compute/needle.md) -- status=distilled, freshness=current

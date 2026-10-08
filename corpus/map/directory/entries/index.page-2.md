@@ -124,31 +124,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [debroid (`debroid`)](debroid-d508741387.md) -- backing+pages
 - [Debugai (`debugai`)](debugai-1e5dbd0734.md) -- backing+pages
 - [Deep Agents Code (`deep-agents-code`)](deep-agents-code-c38b541e8a.md) -- published+backing+pages
-- [deep-swe (`deep-swe`)](deep-swe-05e5f66593.md) -- backing-only
-- [deepagent-code (`deepagent-code`)](deepagent-code-b3b10578e7.md) -- published+backing
-- [deepclaude (`deepclaude`)](deepclaude-956eb3c4a4.md) -- backing-only
-- [DeepCode (`deepcode`)](deepcode-392bc5840b.md) -- published+backing
-- [DeepCode (Snyk) (`deepcode-snyk`)](deepcode-snyk-cfa1b3c841.md) -- backing-only
-- [DeepCopilot (`deepcopilot`)](deepcopilot-4c4213b1ed.md) -- published+backing
-- [DeepGame (`deepgame`)](deepgame-240494207d.md) -- backing-only
-- [deepsec (`deepsec`)](deepsec-2530a97db1.md) -- backing-only
-- [deepseek-cli (`deepseek-cli`)](deepseek-cli-0720c33a76.md) -- published+backing
-- [DeepSeek Coder (`deepseek-coder`)](deepseek-coder-b8f4b7a28d.md) -- backing-only
-- [deepseek-engineer (`deepseek-engineer`)](deepseek-engineer-918f89117d.md) -- published+backing
-- [DeepSeek Harness WebUI (`deepseek-harness-webui`)](deepseek-harness-webui-78ea433268.md) -- published+backing
-- [DeepSeek Reasonix (`deepseek-reasonix`)](deepseek-reasonix-58bea66dfd.md) -- published+backing
-- [DeepSeek-TUI (`deepseek-tui`)](deepseek-tui-711e3a5b05.md) -- published+backing
-- [DeepSite (`deepsite`)](deepsite-bac257eaad.md) -- published+backing
-- [deeptide (`deeptide`)](deeptide-2f37cef598.md) -- published+backing
-- [Deepunit (`deepunit`)](deepunit-5e03893bd0.md) -- published+backing
-- [DeerFlow (`deerflow`)](deerflow-ea44dcc436.md) -- published+backing
-- [Delphi-AI-Developer (`delphi-ai-developer`)](delphi-ai-developer-b3b031d9c2.md) -- published+backing
-- [demo (`demo`)](demo-2a97516c35.md) -- backing-only
-- [demo2apk (`demo2apk`)](demo2apk-e607f56eef.md) -- backing-only
-- [DenchClaw (`denchclaw`)](denchclaw-a6aa798f6d.md) -- backing-only
-- [dev-3.0 (`dev-30`)](dev-30-4e32359ec9.md) -- published+backing
-- [Dev Agent (小D同学) (`dev-agent`)](dev-agent-7e542874da.md) -- published+backing
-- [devctx (`devctx`)](devctx-20890aed4f.md) -- backing-only
+- [deep-swe (`deep-swe`)](deep-swe-05e5f66593.md) -- backing+pages
+- [deepagent-code (`deepagent-code`)](deepagent-code-b3b10578e7.md) -- published+backing+pages
+- [deepclaude (`deepclaude`)](deepclaude-956eb3c4a4.md) -- backing+pages
+- [DeepCode (`deepcode`)](deepcode-392bc5840b.md) -- published+backing+pages
+- [DeepCode (Snyk) (`deepcode-snyk`)](deepcode-snyk-cfa1b3c841.md) -- backing+pages
+- [DeepCopilot (`deepcopilot`)](deepcopilot-4c4213b1ed.md) -- published+backing+pages
+- [DeepGame (`deepgame`)](deepgame-240494207d.md) -- backing+pages
+- [deepsec (`deepsec`)](deepsec-2530a97db1.md) -- backing+pages
+- [deepseek-cli (`deepseek-cli`)](deepseek-cli-0720c33a76.md) -- published+backing+pages
+- [DeepSeek Coder (`deepseek-coder`)](deepseek-coder-b8f4b7a28d.md) -- backing+pages
+- [deepseek-engineer (`deepseek-engineer`)](deepseek-engineer-918f89117d.md) -- published+backing+pages
+- [DeepSeek Harness WebUI (`deepseek-harness-webui`)](deepseek-harness-webui-78ea433268.md) -- published+backing+pages
+- [DeepSeek Reasonix (`deepseek-reasonix`)](deepseek-reasonix-58bea66dfd.md) -- published+backing+pages
+- [DeepSeek-TUI (`deepseek-tui`)](deepseek-tui-711e3a5b05.md) -- published+backing+pages
+- [DeepSite (`deepsite`)](deepsite-bac257eaad.md) -- published+backing+pages
+- [deeptide (`deeptide`)](deeptide-2f37cef598.md) -- published+backing+pages
+- [Deepunit (`deepunit`)](deepunit-5e03893bd0.md) -- published+backing+pages
+- [DeerFlow (`deerflow`)](deerflow-ea44dcc436.md) -- published+backing+pages
+- [Delphi-AI-Developer (`delphi-ai-developer`)](delphi-ai-developer-b3b031d9c2.md) -- published+backing+pages
+- [demo (`demo`)](demo-2a97516c35.md) -- backing+pages
+- [demo2apk (`demo2apk`)](demo2apk-e607f56eef.md) -- backing+pages
+- [DenchClaw (`denchclaw`)](denchclaw-a6aa798f6d.md) -- backing+pages
+- [dev-3.0 (`dev-30`)](dev-30-4e32359ec9.md) -- published+backing+pages
+- [Dev Agent (小D同学) (`dev-agent`)](dev-agent-7e542874da.md) -- published+backing+pages
+- [devctx (`devctx`)](devctx-20890aed4f.md) -- backing+pages
 - [DevEco CodeGenie (`deveco-codegenie`)](deveco-codegenie-9cba86d62c.md) -- published+backing
 - [DevGPT (`devgpt`)](devgpt-4ca782343a.md) -- published+backing
 - [Devika (`devika`)](devika-d9c08cf3e5.md) -- published+backing

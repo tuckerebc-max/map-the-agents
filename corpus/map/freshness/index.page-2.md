@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [l3yx/intentlang](../repos/l3yx/intentlang.md) [coverage: complete]
-- [labring/sealos](../repos/labring/sealos.md) [coverage: partial]
-- [laizhou/opencode_ui](../repos/laizhou/opencode_ui.md) [coverage: complete]
 - [lajosdeme/mole](../repos/lajosdeme/mole.md) [coverage: complete]
 - [landing-ai/ade-cli](../repos/landing-ai/ade-cli.md) [coverage: partial]
 - [langchain-ai/deepagents](../repos/langchain-ai/deepagents.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [we0-dev/we0](../repos/we0-dev/we0.md) [coverage: complete]
 - [wecode-ai/runvsagent](../repos/wecode-ai/runvsagent.md) [coverage: partial]
 - [wei1024/ai-agent-playground](../repos/wei1024/ai-agent-playground.md) [coverage: complete]
+- [weilin0723/purrcode](../repos/weilin0723/purrcode.md) [coverage: partial]
+- [weiyangzen/mbti-coding-agents](../repos/weiyangzen/mbti-coding-agents.md) [coverage: complete]
+- [wellingfeng/ultragamestudio](../repos/wellingfeng/ultragamestudio.md) [coverage: complete]

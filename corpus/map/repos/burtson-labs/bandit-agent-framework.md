@@ -1,9 +1,9 @@
 # burtson-labs/bandit-agent-framework
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e926d20a48e6 @ d3f4e5b0d79a465f
+Latest snapshot: commit 8b0cb6e81890 @ 9ae10138734fbdbf
 
 ## Summary (orientation draft, not independently verified)
 

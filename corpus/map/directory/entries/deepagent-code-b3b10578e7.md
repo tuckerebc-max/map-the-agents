@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: deepagent-ltd
@@ -22,6 +22,8 @@ Repository map entry: [deepagent-ltd/deepagent-code](../../repos/deepagent-ltd/d
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-deepagent-code targets work that spans more than one prompt: long-running tasks where the agent must remember decisions, constraints, and past failures across sessions. It builds on opencode and adds
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI coding agent/workspace with durable governed memory (typed, versioned documents with provenance); four-graph unified store (code + knowledge + memory + docs); live steering during running tasks; three collaboration modes (Auto/Loop/Design); Expert Panel for high-risk decisions; LSP-based AI IDE with 38 language servers
+
+(captured site page body (agents/deepagent-code.md), not a verified repo-code finding)
+deepagent-code targets work that spans more than one prompt: long-running tasks where the agent must remember decisions, constraints, and past failures across sessions. It builds on opencode and adds a control plane where project memory is stored as typed, versioned documents with provenance rather than prompt text, and where four graph stores (code symbols, knowledge, memory, documents) feed a shared context assembly with admission gates. During execution, users can steer live goals without aborting in-flight work, and subagents run in isolated worktrees under a generation-fenced lifecycle with review sessions; an Expert Panel mode runs bounded adversarial debate between specialist lenses. It is AGPL-3.0 with a separate enterprise distribution, BYO-model-keys across 75+ providers, and targets teams who need auditable, steerable agent behavior over codebases.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/deepagent-code.md)
