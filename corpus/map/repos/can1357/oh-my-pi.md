@@ -1,9 +1,9 @@
 # can1357/oh-my-pi
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9b2a43514bfc @ d28b45f95a242d11
+Latest snapshot: commit d485860ba15c @ 92ed2fb58807298a
 
 ## Summary (orientation draft, not independently verified)
 

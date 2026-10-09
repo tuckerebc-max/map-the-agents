@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [lajosdeme/mole](../repos/lajosdeme/mole.md) [coverage: complete]
-- [landing-ai/ade-cli](../repos/landing-ai/ade-cli.md) [coverage: partial]
-- [langchain-ai/deepagents](../repos/langchain-ai/deepagents.md) [coverage: complete]
-- [langchain-ai/langchainjs](../repos/langchain-ai/langchainjs.md) [coverage: partial]
 - [langchain-ai/open-swe](../repos/langchain-ai/open-swe.md) [coverage: partial]
 - [langchain-ai/openwiki](../repos/langchain-ai/openwiki.md) [coverage: complete]
 - [langlang03/linecodepro](../repos/langlang03/linecodepro.md) [coverage: partial]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [weilin0723/purrcode](../repos/weilin0723/purrcode.md) [coverage: partial]
 - [weiyangzen/mbti-coding-agents](../repos/weiyangzen/mbti-coding-agents.md) [coverage: complete]
 - [wellingfeng/ultragamestudio](../repos/wellingfeng/ultragamestudio.md) [coverage: complete]
+- [wendy7756/vibe-coding-guide](../repos/wendy7756/vibe-coding-guide.md) [coverage: complete]
+- [whut09/opencode-plusplus](../repos/whut09/opencode-plusplus.md) [coverage: partial]
+- [wienerdog-ai/wienerdog](../repos/wienerdog-ai/wienerdog.md) [coverage: partial]
+- [willynikes2/agent-orchestrator](../repos/willynikes2/agent-orchestrator.md) [coverage: complete]

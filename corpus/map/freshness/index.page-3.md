@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [wendy7756/vibe-coding-guide](../repos/wendy7756/vibe-coding-guide.md) [coverage: complete]
-- [whut09/opencode-plusplus](../repos/whut09/opencode-plusplus.md) [coverage: partial]
-- [wienerdog-ai/wienerdog](../repos/wienerdog-ai/wienerdog.md) [coverage: partial]
-- [willynikes2/agent-orchestrator](../repos/willynikes2/agent-orchestrator.md) [coverage: complete]
 - [winfunc/opcode](../repos/winfunc/opcode.md) [coverage: complete]
 - [wisdomshell/codeshell-vscode](../repos/wisdomshell/codeshell-vscode.md) [coverage: complete]
 - [with-geun/alive-analysis](../repos/with-geun/alive-analysis.md) [coverage: partial]
@@ -71,7 +67,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (71)
+## stale (75)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +140,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
 - [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
 - [bytedance/deer-flow](../repos/bytedance/deer-flow.md) [coverage: partial]
+- [c0sogi/llmchat](../repos/c0sogi/llmchat.md) [coverage: partial]
+- [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
+- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
+- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
 
 ## refresh-failed (63)
 

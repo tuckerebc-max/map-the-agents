@@ -187,10 +187,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [butttons/dora](../repos/butttons/dora.md) -- status=distilled, freshness=stale
 - [bytedance/deer-flow](../repos/bytedance/deer-flow.md) -- status=distilled, freshness=stale
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) -- status=distilled, freshness=current
-- [c0sogi/llmchat](../repos/c0sogi/llmchat.md) -- status=distilled, freshness=current
-- [cactus-compute/needle](../repos/cactus-compute/needle.md) -- status=distilled, freshness=current
-- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) -- status=distilled, freshness=current
-- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) -- status=distilled, freshness=current
+- [c0sogi/llmchat](../repos/c0sogi/llmchat.md) -- status=distilled, freshness=stale
+- [cactus-compute/needle](../repos/cactus-compute/needle.md) -- status=distilled, freshness=stale
+- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) -- status=distilled, freshness=stale
+- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) -- status=distilled, freshness=stale
 - [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) -- status=distilled, freshness=current
 - [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) -- status=distilled, freshness=current
 - [catpaw-ai/catpaw](../repos/catpaw-ai/catpaw.md) -- status=blocked, freshness=refresh-failed

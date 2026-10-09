@@ -149,31 +149,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [dev-3.0 (`dev-30`)](dev-30-4e32359ec9.md) -- published+backing+pages
 - [Dev Agent (小D同学) (`dev-agent`)](dev-agent-7e542874da.md) -- published+backing+pages
 - [devctx (`devctx`)](devctx-20890aed4f.md) -- backing+pages
-- [DevEco CodeGenie (`deveco-codegenie`)](deveco-codegenie-9cba86d62c.md) -- published+backing
-- [DevGPT (`devgpt`)](devgpt-4ca782343a.md) -- published+backing
-- [Devika (`devika`)](devika-d9c08cf3e5.md) -- published+backing
-- [Devin AI (`devin-ai`)](devin-ai-41d363cee0.md) -- published+backing
-- [Devin Sessions (`devin-sessions`)](devin-sessions-6b04390765.md) -- published+backing
-- [Devle (`devle`)](devle-475e7d57a8.md) -- backing-only
-- [Devlo (`devlo`)](devlo-6d8326e48c.md) -- published+backing
-- [Devon (`devon`)](devon-742639f0f3.md) -- published+backing
-- [DevOpsGPT (`devopsgpt`)](devopsgpt-a2b2b15b1e.md) -- published+backing
-- [DevoxxGenie (`devoxxgenie`)](devoxxgenie-c8c24881d3.md) -- published+backing
-- [Devra (`devra`)](devra-ea545e103a.md) -- published+backing
-- [devstral2 (`devstral2`)](devstral2-d5306077b9.md) -- published+backing
-- [Devstream (`devstream`)](devstream-2fe248390a.md) -- published+backing
-- [Dexto (`dexto`)](dexto-91da8d3ba1.md) -- published+backing
-- [Dia (`dia`)](dia-0addcc1de2.md) -- backing-only
-- [Dify (`dify`)](dify-dba3ebfefb.md) -- backing-only
-- [dinotty (`dinotty`)](dinotty-6f7cd41cc2.md) -- published+backing
-- [Dippin (`dippin-lang`)](dippin-lang-f651643883.md) -- published-only
-- [discord (`discord`)](discord-e1ba4807a1.md) -- backing-only
-- [django-completion (`django-completion`)](django-completion-a64a706788.md) -- backing-only
-- [dmux (`dmux`)](dmux-3a659bb92a.md) -- published+backing
-- [Doable (`doable`)](doable-158da069ef.md) -- published+backing
-- [docs (`docs`)](docs-46b42b4229.md) -- backing-only
-- [dora (`dora`)](dora-69db31976e.md) -- backing-only
-- [Doubao-Seed-Code (`doubao-seed-code`)](doubao-seed-code-77047a9541.md) -- backing-only
+- [DevEco CodeGenie (`deveco-codegenie`)](deveco-codegenie-9cba86d62c.md) -- published+backing+pages
+- [DevGPT (`devgpt`)](devgpt-4ca782343a.md) -- published+backing+pages
+- [Devika (`devika`)](devika-d9c08cf3e5.md) -- published+backing+pages
+- [Devin AI (`devin-ai`)](devin-ai-41d363cee0.md) -- published+backing+pages
+- [Devin Sessions (`devin-sessions`)](devin-sessions-6b04390765.md) -- published+backing+pages
+- [Devle (`devle`)](devle-475e7d57a8.md) -- backing+pages
+- [Devlo (`devlo`)](devlo-6d8326e48c.md) -- published+backing+pages
+- [Devon (`devon`)](devon-742639f0f3.md) -- published+backing+pages
+- [DevOpsGPT (`devopsgpt`)](devopsgpt-a2b2b15b1e.md) -- published+backing+pages
+- [DevoxxGenie (`devoxxgenie`)](devoxxgenie-c8c24881d3.md) -- published+backing+pages
+- [Devra (`devra`)](devra-ea545e103a.md) -- published+backing+pages
+- [devstral2 (`devstral2`)](devstral2-d5306077b9.md) -- published+backing+pages
+- [Devstream (`devstream`)](devstream-2fe248390a.md) -- published+backing+pages
+- [Dexto (`dexto`)](dexto-91da8d3ba1.md) -- published+backing+pages
+- [Dia (`dia`)](dia-0addcc1de2.md) -- backing+pages
+- [Dify (`dify`)](dify-dba3ebfefb.md) -- backing+pages
+- [dinotty (`dinotty`)](dinotty-6f7cd41cc2.md) -- published+backing+pages
+- [Dippin (`dippin-lang`)](dippin-lang-f651643883.md) -- published+pages
+- [discord (`discord`)](discord-e1ba4807a1.md) -- backing+pages
+- [django-completion (`django-completion`)](django-completion-a64a706788.md) -- backing+pages
+- [dmux (`dmux`)](dmux-3a659bb92a.md) -- published+backing+pages
+- [Doable (`doable`)](doable-158da069ef.md) -- published+backing+pages
+- [docs (`docs`)](docs-46b42b4229.md) -- backing+pages
+- [dora (`dora`)](dora-69db31976e.md) -- backing+pages
+- [Doubao-Seed-Code (`doubao-seed-code`)](doubao-seed-code-77047a9541.md) -- backing+pages
 - [dream (`dream`)](dream-30fde358b3.md) -- published+backing
 - [Droid (`droid`)](droid-fab16132ae.md) -- published+backing
 - [druk (`druk`)](druk-63e00133ba.md) -- backing-only

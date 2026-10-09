@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Thanks Ben
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Devin normally lives in a browser tab, which breaks the loop of reading code while directing the agent. Devin Sessions surfaces the agent inside VS Code and derivatives: the sidebar lists sessions wit
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): View, manage, chat with, and create Devin AI sessions in the editor
+
+(captured site page body (agents/devin-sessions.md), not a verified repo-code finding)
+Devin normally lives in a browser tab, which breaks the loop of reading code while directing the agent. Devin Sessions surfaces the agent inside VS Code and derivatives: the sidebar lists sessions with statuses, PR links, and ACU costs; the chat pane renders history with syntax highlighting and sends new instructions; and credentials ride in the editor's OS keychain. It is an unofficial third-party client built on Cognition's public API v3, not made by Cognition. Developers who delegate work to Devin but review diffs locally use it to keep sessions and context in one window.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/devin-sessions.md)

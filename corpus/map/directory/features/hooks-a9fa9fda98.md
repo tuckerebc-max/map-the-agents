@@ -43,6 +43,7 @@
 - [deep-swe](../entries/deep-swe-05e5f66593.md)
 - [deeptide](../entries/deeptide-2f37cef598.md)
 - [deerflow](../entries/deerflow-ea44dcc436.md)
+- [dippin-lang](../entries/dippin-lang-f651643883.md)
 - [dmux](../entries/dmux-3a659bb92a.md)
 - [droid](../entries/droid-fab16132ae.md)
 - [emdash](../entries/emdash-ba1061ee5c.md)

@@ -1,9 +1,9 @@
 # caplet1989/brokies-ai-foundry
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1b6b2bcf1c4c @ 653b0164162df9bb
+Latest snapshot: commit 255c6940802f @ be08a3f035fcbdad
 
 ## Summary (orientation draft, not independently verified)
 

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (918)
+## current (914)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -107,10 +107,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [buildownai/tools](../repos/buildownai/tools.md) [coverage: complete]
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
-- [c0sogi/llmchat](../repos/c0sogi/llmchat.md) [coverage: partial]
-- [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
-- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
-- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
 - [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
 - [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
 - [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [l3yx/intentlang](../repos/l3yx/intentlang.md) [coverage: complete]
 - [labring/sealos](../repos/labring/sealos.md) [coverage: partial]
 - [laizhou/opencode_ui](../repos/laizhou/opencode_ui.md) [coverage: complete]
+- [lajosdeme/mole](../repos/lajosdeme/mole.md) [coverage: complete]
+- [landing-ai/ade-cli](../repos/landing-ai/ade-cli.md) [coverage: partial]
+- [langchain-ai/deepagents](../repos/langchain-ai/deepagents.md) [coverage: complete]
+- [langchain-ai/langchainjs](../repos/langchain-ai/langchainjs.md) [coverage: partial]

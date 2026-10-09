@@ -1,9 +1,9 @@
 # cactus-compute/needle
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 956840ff176b @ 60917bc650675824
+Latest snapshot: commit ef3cf7543204 @ 263a826397bbebfc
 
 ## Summary (orientation draft, not independently verified)
 

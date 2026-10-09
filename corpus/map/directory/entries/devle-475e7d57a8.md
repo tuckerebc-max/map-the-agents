@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Devle
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Devle was one of many chat-to-app builders launched in the 2024 wave, promising app and website generation from conversational prompts. The domain now serves an empty page with no product, pricing, or
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Domain (devle.ai) is for sale; product no longer operational. Originally described as an AI platform to build apps and websites via chat.
+
+(captured site page body (agents/devle.md), not a verified repo-code finding)
+Devle was one of many chat-to-app builders launched in the 2024 wave, promising app and website generation from conversational prompts. The domain now serves an empty page with no product, pricing, or company information, and no repository or archived docs could be located to verify its mechanics. It is retained in the census as a defunct entry.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/devle.md)

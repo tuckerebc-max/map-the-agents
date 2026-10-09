@@ -35,6 +35,7 @@
 - [deeptide](../entries/deeptide-2f37cef598.md)
 - [deerflow](../entries/deerflow-ea44dcc436.md)
 - [devika](../entries/devika-d9c08cf3e5.md)
+- [dippin-lang](../entries/dippin-lang-f651643883.md)
 - [droid](../entries/droid-fab16132ae.md)
 - [explyt-ai-agent](../entries/explyt-ai-agent-316ea1a342.md)
 - [fuxi](../entries/fuxi-27f9aff7c3.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Dify condenses the pieces of an AI application stack — model access, prompt management, RAG ingestion, agent orchestration, deployment, and monitoring — into one visual workspace. Builders assemble wo
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): No-code visual workflow builder for production-ready agentic workflows, RAG pipelines, and AI apps; turns prompt logic into visible execution paths; Marketplace plugin system for model providers, tools, and MCP integrations; apps publishable as MCP-compatible tools; deploy on cloud, VPC, or self-host.
+
+(captured site page body (agents/dify.md), not a verified repo-code finding)
+Dify condenses the pieces of an AI application stack — model access, prompt management, RAG ingestion, agent orchestration, deployment, and monitoring — into one visual workspace. Builders assemble workflows on a canvas or configure ReAct/function-calling agents over 50+ built-in tools, install model and tool providers from a Marketplace, and expose finished apps through Backend-as-a-Service APIs; apps can also act as MCP servers for other tools. The Community Edition self-hosts via Docker under an Apache-2.0-derived license with multi-tenant SaaS restrictions, while Cloud and Enterprise plans add compliance surfaces (SOC 2, ISO 27001). Its users are product and engineering teams shipping chatbots, RAG assistants, and agentic workflows without writing harness code.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/dify.md)

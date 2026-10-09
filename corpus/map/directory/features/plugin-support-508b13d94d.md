@@ -67,6 +67,7 @@
 - [crystal](../entries/crystal-60a0f78b50.md)
 - [deerflow](../entries/deerflow-ea44dcc436.md)
 - [devoxxgenie](../entries/devoxxgenie-c8c24881d3.md)
+- [dippin-lang](../entries/dippin-lang-f651643883.md)
 - [druk](../entries/druk-63e00133ba.md)
 - [eca](../entries/eca-a278ff5c27.md)
 - [empryo](../entries/empryo-cef249978f.md)

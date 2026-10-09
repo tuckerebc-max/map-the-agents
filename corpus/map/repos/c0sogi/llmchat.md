@@ -1,9 +1,9 @@
 # c0sogi/llmchat
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 01f53de6630e @ c4528827ac059e0d
+Latest snapshot: commit 01f53de6630e @ e5aaa6f6c47d23d6
 
 ## Summary (orientation draft, not independently verified)
 
