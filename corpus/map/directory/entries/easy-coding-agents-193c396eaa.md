@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: yushui2022
@@ -22,6 +22,8 @@ Repository map entry: [yushui2022/easy-coding-agents](../../repos/yushui2022/eas
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-easy-coding-agents is built around a failure mode common to autonomous loops: the model loses track of what it already established, repeats itself, or declares done without evidence. The engine's guar
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Evidence-gated memory system that preserves source refs across context wipe; autonomous terminal coding loop with plan/code/chat modes, custom agents, todo discipline, loop/budget guards, and final-answer quality gates; benchmarked against summary, long-context, FTS, and vector RAG memory baselines.
+
+(captured site page body (agents/easy-coding-agents.md), not a verified repo-code finding)
+easy-coding-agents is built around a failure mode common to autonomous loops: the model loses track of what it already established, repeats itself, or declares done without evidence. The engine's guards detect repeated tool calls, over-exploration of simple tasks, and empty responses, while a final-answer quality gate blocks DONE claims that lack verification evidence. The evidence-gated memory layer persists refs, tool logs, and task state across context wipes, and the repo publishes reproducible benchmark snapshots showing memory-subsystem recall after context wipe against summary, FTS, and vector baselines. It is a single-developer research project for people studying agent memory, not a production harness.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/easy-coding-agents.md)

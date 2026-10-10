@@ -191,11 +191,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [cactus-compute/needle](../repos/cactus-compute/needle.md) -- status=distilled, freshness=stale
 - [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) -- status=distilled, freshness=stale
 - [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) -- status=distilled, freshness=stale
-- [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) -- status=distilled, freshness=current
-- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) -- status=distilled, freshness=current
+- [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) -- status=distilled, freshness=stale
+- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) -- status=distilled, freshness=stale
 - [catpaw-ai/catpaw](../repos/catpaw-ai/catpaw.md) -- status=blocked, freshness=refresh-failed
-- [cfal/garcon](../repos/cfal/garcon.md) -- status=distilled, freshness=current
-- [chaitanyagiri/munder-difflin](../repos/chaitanyagiri/munder-difflin.md) -- status=distilled, freshness=current
+- [cfal/garcon](../repos/cfal/garcon.md) -- status=distilled, freshness=stale
+- [chaitanyagiri/munder-difflin](../repos/chaitanyagiri/munder-difflin.md) -- status=distilled, freshness=refresh-failed
 - [chaitin/monkeycode](../repos/chaitin/monkeycode.md) -- status=distilled, freshness=current
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) -- status=distilled, freshness=current
 - [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) -- status=distilled, freshness=current

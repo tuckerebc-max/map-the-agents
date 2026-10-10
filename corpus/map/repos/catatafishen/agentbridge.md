@@ -1,9 +1,9 @@
 # catatafishen/agentbridge
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 124f7c082dc3 @ b1b11b5b76643edd
+Latest snapshot: commit 5ef7e955a5d9 @ 2c38b9948c535219
 
 ## Summary (orientation draft, not independently verified)
 

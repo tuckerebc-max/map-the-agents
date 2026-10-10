@@ -1,9 +1,9 @@
 # cfal/garcon
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 42a5322794a9 @ 76fa39f541038aba
+Latest snapshot: commit 1c0a0ba26718 @ 9aaeb8be016409c2
 
 ## Summary (orientation draft, not independently verified)
 

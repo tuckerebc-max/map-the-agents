@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Strategic-Automation
@@ -22,6 +22,8 @@ Repository map entry: [strategic-automation/dspy-compounding-engineering](../../
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Most agent tools forget everything between tasks; this CLI's premise is that each unit of engineering work should make the next one easier. Every todo resolution codifies what was learned into a local
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first AI engineering CLI implementing a 'compounding engineering' philosophy: every todo resolution automatically codifies learnings into a knowledge base that informs all future AI operations. Features 10+ parallel specialized review agents (security, performance, architecture), ReAct-based file editing with zero hallucination, isolated git worktrees, built on the DSPy framework.
+
+(captured site page body (agents/dspy-compounding-engineering.md), not a verified repo-code finding)
+Most agent tools forget everything between tasks; this CLI's premise is that each unit of engineering work should make the next one easier. Every todo resolution codifies what was learned into a local knowledge base, and that knowledge base is injected into subsequent planning, review, and editing operations, so recurring issues stop recurring. Under that loop, DSPy programs run ten-plus specialized reviewers in parallel (security, performance, architecture, data integrity), a ReAct file editor gathers context before touching files, and plans can pull live documentation from the web. Work executes in isolated git worktrees with parallel workers, and a local knowledge base keeps code on the machine. It fits solo engineers or small teams who want review-and-implementation automation that accumulates institutional memory.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/dspy-compounding-engineering.md)

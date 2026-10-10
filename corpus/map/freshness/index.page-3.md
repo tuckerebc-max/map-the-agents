@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [winfunc/opcode](../repos/winfunc/opcode.md) [coverage: complete]
-- [wisdomshell/codeshell-vscode](../repos/wisdomshell/codeshell-vscode.md) [coverage: complete]
-- [with-geun/alive-analysis](../repos/with-geun/alive-analysis.md) [coverage: partial]
-- [withastro/flue](../repos/withastro/flue.md) [coverage: partial]
 - [workstream-labs/workstreams](../repos/workstream-labs/workstreams.md) [coverage: partial]
 - [wrongstack/wrongstack](../repos/wrongstack/wrongstack.md) [coverage: partial]
 - [wrtnlabs/autobe](../repos/wrtnlabs/autobe.md) [coverage: complete]
@@ -67,7 +63,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (75)
+## stale (78)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,8 +140,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
 - [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
 - [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
+- [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
+- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
+- [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
 
-## refresh-failed (63)
+## refresh-failed (64)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -159,6 +158,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [boneylizard/eloquent](../repos/boneylizard/eloquent.md) -- FetchFailed
 - [bonk1t/agentic-platform](../repos/bonk1t/agentic-platform.md) -- FetchFailed
 - [catpaw-ai/catpaw](../repos/catpaw-ai/catpaw.md) -- FetchFailed
+- [chaitanyagiri/munder-difflin](../repos/chaitanyagiri/munder-difflin.md) -- FetchFailed [coverage: partial]
 - [chernistry/bernstein](../repos/chernistry/bernstein.md) -- FetchFailed
 - [codebuffai/codebuff](../repos/codebuffai/codebuff.md) -- FetchFailed
 - [coder/mux](../repos/coder/mux.md) -- FetchFailed

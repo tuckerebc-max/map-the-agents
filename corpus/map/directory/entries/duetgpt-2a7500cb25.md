@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: kristoferlund
@@ -22,6 +22,8 @@ Repository map entry: [kristoferlund/duet-gpt](../../repos/kristoferlund/duet-gp
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-DuetGPT is a deliberately minimal take on the AI pair programmer: a conversation where the model's proposed shell commands and file edits are shown for approval and then executed verbatim, with no Lan
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Semi-autonomous conversational CLI coding assistant using OpenAI function calling (no LangChain); AI proposes commands, developer approves, then auto-execution; can also serve as a general bash helper.
+
+(captured site page body (agents/duetgpt.md), not a verified repo-code finding)
+DuetGPT is a deliberately minimal take on the AI pair programmer: a conversation where the model's proposed shell commands and file edits are shown for approval and then executed verbatim, with no LangChain layer and no guardrails beyond the developer's own judgment. It ships as one npm package, asks for an OpenAI key on first run, and works equally well as a general bash helper — writing scripts, grepping trees, drafting PR descriptions from commit logs. The warning in its own README about the absence of guardrails is the design statement: approval is the only safety mechanism. It found its audience among developers experimenting with GPT-4 function calling in 2023; the repo has not been updated since June 2023.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/duetgpt.md)

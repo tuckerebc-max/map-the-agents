@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: juyterman1000
@@ -22,6 +22,8 @@ Repository map entry: [juyterman1000/entroly](../../repos/juyterman1000/entroly.
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Entroly was built on the observation that agent failures often trace to degraded context — truncated, lossy, or unverifiable — and that token cost scales with noisy context. It intercepts requests on
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Drop-in context assurance / local-first Context OS for AI coding agents; content-addressed evidence with byte-exact recovery, auditable Context Receipts, local hallucination detection (WITNESS) without a second API call, cache-aware compression that preserves provider prompt-cache discounts, and panic-rescue for over-long sessions
+
+(captured site page body (agents/entroly.md), not a verified repo-code finding)
+Entroly was built on the observation that agent failures often trace to degraded context — truncated, lossy, or unverifiable — and that token cost scales with noisy context. It intercepts requests on routes it controls, selects the highest-value evidence, compresses it, and issues receipts that make every context decision auditable and recoverable byte-for-byte, with a local WITNESS detector flagging hallucination risk without cloud calls. Attachment paths include an MCP server (with a .mcpb bundle and Smithery config), a Claude Code plugin, an API-key proxy, and an SDK, so teams can adopt it incrementally across Claude Code, Codex, Cursor, Copilot, and Aider. The project is candid that savings are workload-dependent — its own benchmark shows accuracy dropping on some workloads — and \`entroly simulate\` estimates savings before adoption.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/entroly.md)

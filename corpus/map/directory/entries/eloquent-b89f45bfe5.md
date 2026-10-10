@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: boneylizard
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Eloquent consolidates the local-AI stack that users otherwise assemble from half a dozen separate tools, motivated by the position that chat, image generation, voice, and coding should share one local
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local AI workstation combining LLM chat/roleplay, in-house Stable Diffusion image generation, voice cloning, research-grade model ELO testing, forensic linguistics, and a tool-calling code editor into a single application running entirely locally without subscriptions. Features working multi-GPU inference, multi-role chat with story state tracking, voice cloning with paralinguistic cues, and a built-in model ELO testing framework.
+
+(captured site page body (agents/eloquent.md), not a verified repo-code finding)
+Eloquent consolidates the local-AI stack that users otherwise assemble from half a dozen separate tools, motivated by the position that chat, image generation, voice, and coding should share one local runtime with no subscriptions and no third-party data flow. The code editor embeds a tool-calling agent with seven tools covering file operations, automatic .bak backups, and optionally sandboxed shell execution, with chain-of-thought visualization, hallucination rescue, and loop detection to keep long runs usable on local models. The rest of the app serves the same single-machine philosophy: local Stable Diffusion (SD 1.5, SDXL, FLUX) with optional cloud fallback, voice cloning, an ELO-testing framework for comparing models, and forensic linguistics tools. It targets Windows users with NVIDIA GPUs who want experimentation without cloud dependencies or subscriptions.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/eloquent.md)

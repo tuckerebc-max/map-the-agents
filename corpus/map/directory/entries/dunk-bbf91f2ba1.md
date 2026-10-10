@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: amix
@@ -22,6 +22,8 @@ Repository map entry: [amix/dunk](../../repos/amix/dunk.md) (source: backing, fi
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Code review between a human and an agent usually happens through PRs, which are slow and lose the working-tree context. dunk puts the review in the terminal: press a on a hunk to leave a comment, and
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal UI to review git diffs, leave hunk-anchored inline comments (saved to .dunk/comments.json), and let a coding agent read and fix those comments. Human-agent review loop: one human in a terminal reviewing diffs and one coding agent in another terminal fixing flagged issues — comments are hunk-anchored (not line-scoped) and survive small edits via a context hash. No daemon / ...
+
+(captured site page body (agents/dunk.md), not a verified repo-code finding)
+Code review between a human and an agent usually happens through PRs, which are slow and lose the working-tree context. dunk puts the review in the terminal: press a on a hunk to leave a comment, and it lands in .dunk/comments.json as a hunk-scoped note that Claude Code or Codex can read, fix, and delete when resolved. With --watch the diff reloads as the agent commits, and drifted anchors surface at the top instead of silently breaking. It stays deliberately thin — no daemon, no MCP, no session broker — treating the JSON file as the whole contract. The workflow targets developers who review agent output locally, one human terminal next to one agent terminal.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/dunk.md)

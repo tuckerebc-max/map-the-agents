@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: OrionStarAI
@@ -22,6 +22,8 @@ Repository map entry: [orionstarai/easycode](../../repos/orionstarai/easycode.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-EasyCode (OrionStar, formerly DeepV Code) is a Claude Code-style terminal agent built in the open: it plans before editing via /plan, executes through built-in shell, filesystem, and web tools, and ke
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Formerly DeepV Code; highly customizable AI coding assistant that understands entire project context, acts as an autonomous agent with Shell/File/Web tools, persistent session management, and serves as an ACP orchestrator that can delegate tasks to local Claude Code or Codex installations
+
+(captured site page body (agents/easycode.md), not a verified repo-code finding)
+EasyCode (OrionStar, formerly DeepV Code) is a Claude Code-style terminal agent built in the open: it plans before editing via /plan, executes through built-in shell, filesystem, and web tools, and keeps sessions that can be saved, restored, and compressed. MCP servers provide project context and third-party tool access, a hooks mechanism injects custom logic at workflow nodes, and a self-hostable server variant lets teams run the backend themselves. Any OpenAI-compatible or Anthropic-format model works, including local Ollama or LM Studio endpoints, with costs paid directly to providers. It targets developers — particularly in the Chinese ecosystem — who want a customizable, self-hostable alternative to Claude Code or Codex.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/easycode.md)

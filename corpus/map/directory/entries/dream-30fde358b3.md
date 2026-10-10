@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: dreamide
@@ -22,6 +22,8 @@ Repository map entry: [dreamide/dream](../../repos/dreamide/dream.md) (source: b
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Working with several coding agents usually means several terminal windows and no shared view of what changed. Dream is an Electron desktop IDE that arranges multiple agent chats side by side in a mult
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Desktop IDE built specifically for working with multiple AI coding agents. Multi-project workspace with the ability to view multiple agent chats simultaneously alongside standard IDE features. Supports Codex, Claude Code, OpenCode, and Cursor Agent CLIs.
+
+(captured site page body (agents/dream.md), not a verified repo-code finding)
+Working with several coding agents usually means several terminal windows and no shared view of what changed. Dream is an Electron desktop IDE that arranges multiple agent chats side by side in a multi-project workspace, with git status, commit, push, and PR flows, a file explorer, diff rendering, an integrated terminal, and a browser preview panel in the same window. It ships no model of its own — users bring at least one supported agent CLI (Codex, Claude Code, OpenCode, Cursor Agent), and the IDE hosts and visualizes their sessions. Developers juggling parallel agent tasks across repos are the intended users. The repository now lives under umami-software/dream and remains active.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/dream.md)

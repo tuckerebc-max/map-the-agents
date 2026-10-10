@@ -1,9 +1,9 @@
 # carloluisito/omnidesk
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 95f0b96dc802 @ 65711062c53336a3
+Latest snapshot: commit 95f0b96dc802 @ cc7824505522e61f
 
 ## Summary (orientation draft, not independently verified)
 

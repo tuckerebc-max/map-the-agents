@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: launsion-boop
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Long agent sessions are easy to ignore: you switch windows and only find out a task finished — or failed — when you look back. EchoCoding gives the session an audio channel without touching the agent'
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Adds an immersive audio layer to AI coding agents — 23 sound effects, ambient soundscapes, TTS speech, and ASR voice Q&A. 'Pipes, not brains' philosophy: the AI agent decides when and what to say; EchoCoding just provides the audio infrastructure (say / ask / sfx). Three audio layers: discrete SFX, continuous ambient soundscapes, and voice interaction. MCP Server (stdio) with ...
+
+(captured site page body (agents/echocoding.md), not a verified repo-code finding)
+Long agent sessions are easy to ignore: you switch windows and only find out a task finished — or failed — when you look back. EchoCoding gives the session an audio channel without touching the agent's logic: hooks fire sound effects for tool actions, an ambient layer signals editing/reading/thinking state, and TTS speaks at milestones while ASR listens for spoken replies through a floating HUD. The agent decides what to say; EchoCoding only handles the pipes, which is why it installs with one line and no API keys of its own. Developers who run hands-off sessions — or prefer audio over window-switching — are the intended users.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/echocoding.md)

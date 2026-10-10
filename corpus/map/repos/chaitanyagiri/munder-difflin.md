@@ -1,9 +1,10 @@
 # chaitanyagiri/munder-difflin
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit 417d8decf08c @ ba331b94f28a7410
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/chaitanyagiri/munder-difflin
 
 ## Summary (orientation draft, not independently verified)
 

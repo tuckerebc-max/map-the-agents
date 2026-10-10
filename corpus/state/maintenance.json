@@ -1,5 +1,5 @@
 {
-  "cursor": "caplet1989/brokies-ai-foundry",
+  "cursor": "chaitanyagiri/munder-difflin",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -755,173 +755,44 @@
       "failures": 0,
       "last_at": "2026-10-09T16:10:02+00:00",
       "last_outcome": "snapshotted"
+    },
+    "carloluisito/omnidesk": {
+      "failures": 0,
+      "last_at": "2026-10-10T15:21:02+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "catatafishen/agentbridge": {
+      "failures": 0,
+      "last_at": "2026-10-10T15:21:05+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "catpaw-ai/catpaw": {
+      "failures": 1,
+      "last_at": "2026-10-10T15:21:05+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "http-404: https://api.github.com/repos/catpaw-ai/catpaw"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "cfal/garcon": {
+      "failures": 0,
+      "last_at": "2026-10-10T15:21:08+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "chaitanyagiri/munder-difflin": {
+      "failures": 1,
+      "last_at": "2026-10-10T15:21:09+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/chaitanyagiri/munder-difflin"
+      },
+      "last_outcome": "snapshot-failed"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "alpbahadur/49agents",
-        "amal-david/pagecast",
-        "amersarhan/darce-cli",
-        "amix/dunk",
-        "amrit110/oli"
-      ],
-      "catalog": {
-        "backlog": 798,
-        "changed": true,
-        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
-        "processed": 50,
-        "slugs": [
-          "better-agent",
-          "better-coding-agents",
-          "bhil-ai-first-development-toolkit",
-          "bim-llm-code-agent",
-          "binharic",
-          "biscuit",
-          "bitfun",
-          "blade-code",
-          "blinky",
-          "blueprints",
-          "bmad-method",
-          "brokies-ai-foundry",
-          "brood-box",
-          "browser-operator-core",
-          "build-your-own-coding-agent",
-          "building-intelligent-apps-with-anaconda",
-          "buildware-ai",
-          "bumpgen",
-          "callmd",
-          "calyx",
-          "camelai",
-          "carrycode",
-          "cartlis",
-          "cascadeflow",
-          "catnip",
-          "catpaw",
-          "caveman-code",
-          "cavemem",
-          "cersei",
-          "chamberlain-multimodal-multiagent-chatbot",
-          "chatdev",
-          "chaterm",
-          "chatgpt-vscode",
-          "chef",
-          "cherry-studio",
-          "claude-agent-sdk-python",
-          "claude-agent-sdk-typescript",
-          "claude-autopilot",
-          "claude-code",
-          "claude-code-merge-queue",
-          "claude-code-multi-agent",
-          "claude-code-plus",
-          "claude-code-skeleton",
-          "claude-code-sub-agents",
-          "claude-code-tools",
-          "claude-code-viewer",
-          "claude-codex-bridge",
-          "claude-engineer",
-          "claude-flow",
-          "claude-html-test"
-        ],
-        "version_changed": true
-      },
-      "failures": [
-        {
-          "code": 8,
-          "error": "FetchFailed",
-          "message": "redirect-refused http-301: https://api.github.com/repos/alpbahadur/49agents",
-          "repo": "alpbahadur/49agents",
-          "stage": "snapshot"
-        }
-      ],
-      "finished": "2026-09-20T13:34:46+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "agentsmesh/agentsmesh",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator",
-        "ai4finance-foundation/finrobot",
-        "aider-ai/aider",
-        "aizenvoltprime/damocles",
-        "akarachen/2code",
-        "akashgit/remote-factory",
-        "alanchen4/summer-2024-swe-internships",
-        "alchaincyf/fanbox",
-        "alex-reysa/singular-lite",
-        "alexgreensh/outsourcerer",
-        "alibaba/open-code-review",
-        "alihamzaazam/repomon",
-        "almanaccode/codealmanac",
-        "almogdepaz/wolfpack",
-        "amal-david/pagecast",
-        "amix/dunk"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "aa48964e7ca33c95a329fad0766d127bd0ef617b",
-          "explicit_paths": [],
-          "files_stored": 7,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "amal-david/pagecast",
-          "reused": false,
-          "snapshot_id": "edd1bc9b288ecf87"
-        },
-        {
-          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
-          "explicit_paths": [],
-          "files_stored": 1,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "amersarhan/darce-cli",
-          "reused": true,
-          "snapshot_id": "edcbe6956310fb55"
-        },
-        {
-          "commit": "c824593566882378255d0017c4c6bff79d547027",
-          "explicit_paths": [],
-          "files_stored": 7,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "amix/dunk",
-          "reused": false,
-          "snapshot_id": "5f9189fb9261502e"
-        },
-        {
-          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
-          "explicit_paths": [],
-          "files_stored": 6,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "amrit110/oli",
-          "reused": true,
-          "snapshot_id": "9033f0017a5fdc22"
-        }
-      ],
-      "started": "2026-09-20T13:34:37+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 9.335,
-        "max_seconds": 420,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 1.045,
-          "snapshots": 8.25
-        }
-      }
-    },
     {
       "attempted": [
         "amsilf/sc-helm-app",
@@ -4539,6 +4410,176 @@
         "stages": {
           "catalog": 0.87,
           "snapshots": 10.931
+        }
+      }
+    },
+    {
+      "attempted": [
+        "carloluisito/omnidesk",
+        "catatafishen/agentbridge",
+        "catpaw-ai/catpaw",
+        "cfal/garcon",
+        "chaitanyagiri/munder-difflin"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": false,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 0,
+        "slugs": [],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "http-404: https://api.github.com/repos/catpaw-ai/catpaw",
+          "repo": "catpaw-ai/catpaw",
+          "stage": "snapshot"
+        },
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/chaitanyagiri/munder-difflin",
+          "repo": "chaitanyagiri/munder-difflin",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-10-10T15:21:09+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot",
+        "bhouston/mycoder",
+        "big-pony/pocketshell",
+        "blaine/fantastty",
+        "bmad-code-org/bmad-method",
+        "boringcomputers/nehemiah",
+        "browser-use/video-use",
+        "builderz-labs/mission-control",
+        "burtson-labs/bandit-agent-framework",
+        "butttons/dora",
+        "bytedance/deer-flow",
+        "c0sogi/llmchat",
+        "cactus-compute/needle",
+        "can1357/oh-my-pi",
+        "caplet1989/brokies-ai-foundry",
+        "carloluisito/omnidesk",
+        "catatafishen/agentbridge",
+        "cfal/garcon"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 1,
+          "repo": "carloluisito/omnidesk",
+          "reused": false,
+          "snapshot_id": "cc7824505522e61f"
+        },
+        {
+          "commit": "5ef7e955a5d955da24f21a123fbeb278546ad8ca",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 55,
+          "repo": "catatafishen/agentbridge",
+          "reused": false,
+          "snapshot_id": "2c38b9948c535219"
+        },
+        {
+          "commit": "1c0a0ba267185164d904259b73e32d1181a0fc53",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 17,
+          "repo": "cfal/garcon",
+          "reused": false,
+          "snapshot_id": "9aaeb8be016409c2"
+        }
+      ],
+      "started": "2026-10-10T15:20:58+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 10.642,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.758,
+          "snapshots": 9.825
         }
       }
     }
