@@ -1,9 +1,9 @@
 # chaitin/monkeycode
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a67aef068778 @ 2727223fcc195893
+Latest snapshot: commit 3aab1fdbcca4 @ ed2b77a0e1ebd97a
 
 ## Summary (orientation draft, not independently verified)
 

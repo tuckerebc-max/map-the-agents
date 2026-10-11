@@ -1,9 +1,9 @@
 # changkun/wallfacer
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9acd2b092578 @ d09ab0b6a912ca08
+Latest snapshot: commit 9fc9f0614e06 @ 36ed2878be839935
 
 ## Summary (orientation draft, not independently verified)
 

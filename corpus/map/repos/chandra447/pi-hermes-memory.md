@@ -1,9 +1,9 @@
 # chandra447/pi-hermes-memory
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 71ce9f0cf298 @ c661b291c1be6aa1
+Latest snapshot: commit 24fcd8ad26fc @ 7dd41aa44385fe15
 
 ## Summary (orientation draft, not independently verified)
 

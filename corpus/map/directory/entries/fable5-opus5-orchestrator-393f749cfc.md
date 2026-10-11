@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Rylaa
@@ -22,6 +22,8 @@ Repository map entry: [rylaa/fable5-opus5-orchestrator](../../repos/rylaa/fable5
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The plugin addresses a cost problem specific to frontier subscriptions: every token an expensive chair model spends on routine work is a token unavailable for thinking, so Fable 5 is confined to plann
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Claude Code plugin for token-frugal multi-agent orchestration keeping Claude Fable 5 as the chair while delegating volume work to Sonnet 5 and hard tasks to Opus 5; enforces a Requirements Ledger and guard hooks (spawn/task/close) with fresh-eyes verification on every close.
+
+(captured site page body (agents/fable5-opus5-orchestrator.md), not a verified repo-code finding)
+The plugin addresses a cost problem specific to frontier subscriptions: every token an expensive chair model spends on routine work is a token unavailable for thinking, so Fable 5 is confined to planning and arbitration while Sonnet 5 writes code and tests and Opus 5 handles architecture, security review, and final verification. A /fire workflow clarifies the request one question at a time, writes a requirements ledger to .workflow/LEDGER.md, delegates to sized workers, and has a fresh agent verify the result. Five hook-based gates (Clarify, Approve, Spawn, Task list, Close) block non-compliant tool calls rather than trusting instructions, and a watchdog monitors spawned agents for stalled states. Claude Code subscribers on usage-limited plans running multi-step engineering work are the intended users.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/fable5-opus5-orchestrator.md)

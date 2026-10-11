@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [workstream-labs/workstreams](../repos/workstream-labs/workstreams.md) [coverage: partial]
-- [wrongstack/wrongstack](../repos/wrongstack/wrongstack.md) [coverage: partial]
-- [wrtnlabs/autobe](../repos/wrtnlabs/autobe.md) [coverage: complete]
-- [xai-org/grok-build](../repos/xai-org/grok-build.md) [coverage: complete]
 - [xcodinglab/xcoding](../repos/xcodinglab/xcoding.md) [coverage: complete]
 - [xeol-io/bumpgen](../repos/xeol-io/bumpgen.md) [coverage: complete]
 - [xiaomimimo/mimo-code](../repos/xiaomimimo/mimo-code.md) [coverage: partial]
@@ -63,7 +59,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (78)
+## stale (82)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +139,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
 - [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
 - [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
+- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
+- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
+- [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
+- [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
 
 ## refresh-failed (64)
 

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (910)
+## current (906)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -107,11 +107,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [buildownai/tools](../repos/buildownai/tools.md) [coverage: complete]
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
-- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) [coverage: complete]
-- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
-- [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
-- [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
 - [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
 - [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
 - [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [langchain-ai/openwiki](../repos/langchain-ai/openwiki.md) [coverage: complete]
 - [langlang03/linecodepro](../repos/langlang03/linecodepro.md) [coverage: partial]
 - [langroid/langroid](../repos/langroid/langroid.md) [coverage: partial]
+- [langwatch/scenario](../repos/langwatch/scenario.md) [coverage: partial]
+- [larens94/codedna](../repos/larens94/codedna.md) [coverage: partial]
+- [leezhuuuuu/code-interpreter-api](../repos/leezhuuuuu/code-interpreter-api.md) [coverage: complete]
+- [legioncodeinc/honeycomb](../repos/legioncodeinc/honeycomb.md) [coverage: partial]

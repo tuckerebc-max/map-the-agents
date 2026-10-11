@@ -1,9 +1,9 @@
 # charmbracelet/crush
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3502b15a7cf1 @ 7bb77b7deb239b31
+Latest snapshot: commit df5b024a929d @ 501e4f366fd7febb
 
 ## Summary (orientation draft, not independently verified)
 

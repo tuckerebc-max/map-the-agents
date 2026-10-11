@@ -101,6 +101,7 @@
 - [episko](../entries/episko-64f465d9c4.md)
 - [even](../entries/even-ec38063c88.md)
 - [fable5-opus5-orchestrator](../entries/fable5-opus5-orchestrator-393f749cfc.md)
+- [fanbox](../entries/fanbox-8d51dba3a7.md)
 - [fleet-control](../entries/fleet-control-301a60aa68.md)
 - [forge-orchestrator](../entries/forge-orchestrator-0ca3272b89.md)
 - [forgeo](../entries/forgeo-62e8b50f2d.md)

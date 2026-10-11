@@ -196,11 +196,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [catpaw-ai/catpaw](../repos/catpaw-ai/catpaw.md) -- status=blocked, freshness=refresh-failed
 - [cfal/garcon](../repos/cfal/garcon.md) -- status=distilled, freshness=stale
 - [chaitanyagiri/munder-difflin](../repos/chaitanyagiri/munder-difflin.md) -- status=distilled, freshness=refresh-failed
-- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) -- status=distilled, freshness=current
+- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) -- status=distilled, freshness=stale
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) -- status=distilled, freshness=current
-- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) -- status=distilled, freshness=current
-- [changkun/wallfacer](../repos/changkun/wallfacer.md) -- status=distilled, freshness=current
-- [charmbracelet/crush](../repos/charmbracelet/crush.md) -- status=distilled, freshness=current
+- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) -- status=distilled, freshness=stale
+- [changkun/wallfacer](../repos/changkun/wallfacer.md) -- status=distilled, freshness=stale
+- [charmbracelet/crush](../repos/charmbracelet/crush.md) -- status=distilled, freshness=stale
 - [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) -- status=distilled, freshness=current
 - [chaterm/chaterm](../repos/chaterm/chaterm.md) -- status=distilled, freshness=current
 - [chernistry/bernstein](../repos/chernistry/bernstein.md) -- status=blocked, freshness=refresh-failed
