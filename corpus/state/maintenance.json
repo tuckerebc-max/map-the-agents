@@ -1,5 +1,5 @@
 {
-  "cursor": "charmbracelet/crush",
+  "cursor": "choeng-rayu/rayu-cli",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -815,180 +815,39 @@
       "failures": 0,
       "last_at": "2026-10-11T15:37:56+00:00",
       "last_outcome": "snapshotted"
+    },
+    "charmbracelet/fantasy": {
+      "failures": 0,
+      "last_at": "2026-10-12T18:59:49+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "chaterm/chaterm": {
+      "failures": 0,
+      "last_at": "2026-10-12T18:59:53+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "chernistry/bernstein": {
+      "failures": 1,
+      "last_at": "2026-10-12T18:59:53+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/chernistry/bernstein"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "cherryhq/cherry-studio": {
+      "failures": 0,
+      "last_at": "2026-10-12T18:59:57+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "choeng-rayu/rayu-cli": {
+      "failures": 0,
+      "last_at": "2026-10-12T19:00:00+00:00",
+      "last_outcome": "snapshotted"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "andyrewlee/amux",
-        "angleschina/angles-cli",
-        "aniket-508/vercel-doctor",
-        "anipotts/coding-agent-tips",
-        "anishsingh20/useful-generativeai-tools-repo"
-      ],
-      "catalog": {
-        "backlog": 698,
-        "changed": true,
-        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
-        "processed": 50,
-        "slugs": [
-          "codefuse-chatbot",
-          "codefuse-muagent",
-          "codegebragpt",
-          "codegenhelpers",
-          "codehamr",
-          "codeium-react-code-editor",
-          "codekanban",
-          "codel",
-          "codellama",
-          "codellmsurvey",
-          "codemachine-cli",
-          "codemini-cli",
-          "coderabbit-review-helper",
-          "codereview-ai-agent",
-          "codereviewagent",
-          "codeshell-vscode",
-          "codevibes",
-          "codex-cli",
-          "codex-jetbrains",
-          "codex-mobile",
-          "codex-multi-agents",
-          "codex-profiles",
-          "codex-security",
-          "coding-agent",
-          "coding-agent-account-manager",
-          "coding-agent-session-search",
-          "coding-agent-tips",
-          "coding-agents-databricks-apps",
-          "coding-agents-workshop",
-          "coding-the-coding-agents",
-          "coding-tutor",
-          "codingagentexplorer",
-          "codingit",
-          "codinit-dev",
-          "codirigent",
-          "cody-public-snapshot",
-          "colony-repo",
-          "comfyui-workflows",
-          "command-code",
-          "companion",
-          "companion-vscode",
-          "conch",
-          "concord-mcp",
-          "conduit-release",
-          "construct",
-          "context-engine-ai",
-          "context-engineering-intro",
-          "context-hub",
-          "contextvc",
-          "continous-ai"
-        ],
-        "version_changed": false
-      },
-      "failures": [
-        {
-          "code": 8,
-          "error": "FetchFailed",
-          "message": "redirect-refused http-301: https://api.github.com/repos/anipotts/coding-agent-tips",
-          "repo": "anipotts/coding-agent-tips",
-          "stage": "snapshot"
-        }
-      ],
-      "finished": "2026-09-22T14:01:49+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "agentsmesh/agentsmesh",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator",
-        "ai4finance-foundation/finrobot",
-        "aider-ai/aider",
-        "aizenvoltprime/damocles",
-        "akarachen/2code",
-        "akashgit/remote-factory",
-        "alanchen4/summer-2024-swe-internships",
-        "alchaincyf/fanbox",
-        "alex-reysa/singular-lite",
-        "alexgreensh/outsourcerer",
-        "alibaba/open-code-review",
-        "alihamzaazam/repomon",
-        "almanaccode/codealmanac",
-        "almogdepaz/wolfpack",
-        "amal-david/pagecast",
-        "amix/dunk",
-        "anaconda-labs/building-intelligent-apps-with-anaconda",
-        "andrefetch/postal",
-        "andrewyng/context-hub",
-        "andymik90/aperant",
-        "andyrewlee/amux",
-        "angleschina/angles-cli",
-        "aniket-508/vercel-doctor"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "b04fbeb9472a57be03da31f37999b4c9d08f29c1",
-          "explicit_paths": [],
-          "files_stored": 9,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "andyrewlee/amux",
-          "reused": false,
-          "snapshot_id": "a4fcc2d5515fb886"
-        },
-        {
-          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
-          "explicit_paths": [],
-          "files_stored": 8,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "angleschina/angles-cli",
-          "reused": false,
-          "snapshot_id": "10f313c0bf8c7309"
-        },
-        {
-          "commit": "1e03acffc82de30240b91552d8a5e4dd34f9e0f1",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "stale",
-          "omitted_count": 0,
-          "repo": "aniket-508/vercel-doctor",
-          "reused": false,
-          "snapshot_id": "a2081ee260244193"
-        },
-        {
-          "commit": "b2e7d57fdfa391fb72f068df22dd3fb3b37a8732",
-          "explicit_paths": [],
-          "files_stored": 1,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "anishsingh20/useful-generativeai-tools-repo",
-          "reused": true,
-          "snapshot_id": "7bf46bc10f456316"
-        }
-      ],
-      "started": "2026-09-22T14:01:37+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 12.457,
-        "max_seconds": 420,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 0.978,
-          "snapshots": 11.164
-        }
-      }
-    },
     {
       "attempted": [
         "anomalyco/opencode",
@@ -4614,6 +4473,187 @@
         "stages": {
           "catalog": 0.77,
           "snapshots": 10.62
+        }
+      }
+    },
+    {
+      "attempted": [
+        "charmbracelet/fantasy",
+        "chaterm/chaterm",
+        "chernistry/bernstein",
+        "cherryhq/cherry-studio",
+        "choeng-rayu/rayu-cli"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": false,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 0,
+        "slugs": [],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/chernistry/bernstein",
+          "repo": "chernistry/bernstein",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-10-12T19:00:00+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot",
+        "bhouston/mycoder",
+        "big-pony/pocketshell",
+        "blaine/fantastty",
+        "bmad-code-org/bmad-method",
+        "boringcomputers/nehemiah",
+        "browser-use/video-use",
+        "builderz-labs/mission-control",
+        "burtson-labs/bandit-agent-framework",
+        "butttons/dora",
+        "bytedance/deer-flow",
+        "c0sogi/llmchat",
+        "cactus-compute/needle",
+        "can1357/oh-my-pi",
+        "caplet1989/brokies-ai-foundry",
+        "carloluisito/omnidesk",
+        "catatafishen/agentbridge",
+        "cfal/garcon",
+        "chaitin/monkeycode",
+        "chandra447/pi-hermes-memory",
+        "changkun/wallfacer",
+        "charmbracelet/crush",
+        "charmbracelet/fantasy",
+        "chaterm/chaterm",
+        "cherryhq/cherry-studio",
+        "choeng-rayu/rayu-cli"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "2b80c23a3929409317af09430e1f66197c75815d",
+          "explicit_paths": [],
+          "files_stored": 3,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "charmbracelet/fantasy",
+          "reused": false,
+          "snapshot_id": "2e3891af5d32a0af"
+        },
+        {
+          "commit": "2b59d724efb53184ad08948658c913d8077446fa",
+          "explicit_paths": [],
+          "files_stored": 9,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "chaterm/chaterm",
+          "reused": false,
+          "snapshot_id": "6a4008d8f5ce903f"
+        },
+        {
+          "commit": "a5c3f746dfb4802351d5413a49479f049903448e",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 139,
+          "repo": "cherryhq/cherry-studio",
+          "reused": false,
+          "snapshot_id": "fadd9b859a3f8e20"
+        },
+        {
+          "commit": "d259a778e11145d2b38caf1291fd17281b953c27",
+          "explicit_paths": [],
+          "files_stored": 8,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "choeng-rayu/rayu-cli",
+          "reused": false,
+          "snapshot_id": "ae692264f7ea5504"
+        }
+      ],
+      "started": "2026-10-12T18:59:47+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 13.648,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.888,
+          "snapshots": 12.688
         }
       }
     }

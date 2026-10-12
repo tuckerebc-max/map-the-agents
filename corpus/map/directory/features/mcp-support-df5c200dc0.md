@@ -58,6 +58,7 @@
 - [eca](../entries/eca-a278ff5c27.md)
 - [empryo](../entries/empryo-cef249978f.md)
 - [evener](../entries/evener-8039245d0a.md)
+- [fleet-control](../entries/fleet-control-301a60aa68.md)
 - [flue](../entries/flue-6cbb89436a.md)
 - [free-repo-agent](../entries/free-repo-agent-14671883bd.md)
 - [fuxi](../entries/fuxi-27f9aff7c3.md)

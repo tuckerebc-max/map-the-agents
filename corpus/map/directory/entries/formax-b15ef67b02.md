@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: yusifeng
@@ -22,6 +22,8 @@ Repository map entry: [yusifeng/formax](../../repos/yusifeng/formax.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Claude Code is closed source, and formax exists to answer the question of what a Claude Code-style harness looks like on the inside. The author reconstructed its behavior from network traces and obser
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source implementation of a Claude Code-style AI assistant built 100% with Codex (AI-assisted development traces intentionally kept in repo); implements Claude Code behavior by reverse-engineering/observation; offers both terminal (TUI) and web (GUI) interfaces modeled after the Codex UI. Beta stage, suited for learning/experimentation.
+
+(captured site page body (agents/formax.md), not a verified repo-code finding)
+Claude Code is closed source, and formax exists to answer the question of what a Claude Code-style harness looks like on the inside. The author reconstructed its behavior from network traces and observation, then rebuilt it in a TypeScript/Node monorepo with an Ink-based TUI, a web GUI, and a JSON-RPC app-server with a WebSocket bridge mode. It supports Anthropic and OpenAI-compatible endpoints, mirrors Claude Code workflows such as /init CLAUDE.md generation, plan mode, and sub-agent code review, and documents MCP and hooks as known gaps. The repository deliberately preserves the Codex build artifacts, plans, and docs, which makes it a reference for developers studying how agentic coding harnesses are constructed.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/formax.md)

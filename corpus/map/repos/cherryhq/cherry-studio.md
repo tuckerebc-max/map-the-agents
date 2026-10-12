@@ -1,9 +1,9 @@
 # cherryhq/cherry-studio
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 61cac30ece4d @ c0035cf5a75c4323
+Latest snapshot: commit a5c3f746dfb4 @ fadd9b859a3f8e20
 
 ## Summary (orientation draft, not independently verified)
 

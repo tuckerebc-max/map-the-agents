@@ -1,9 +1,9 @@
 # charmbracelet/fantasy
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1dada21b01e8 @ 24e830b636a75709
+Latest snapshot: commit 2b80c23a3929 @ 2e3891af5d32a0af
 
 ## Summary (orientation draft, not independently verified)
 

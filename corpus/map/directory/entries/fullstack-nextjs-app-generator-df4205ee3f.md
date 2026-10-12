@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: spark-engine-opensource-projects
@@ -22,6 +22,8 @@ Repository map entry: [spark-engine-opensource-projects/fullstack-nextjs-app-gen
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The project demonstrates Spark Engine AI's multi-agent generation applied to a concrete stack: Next.js pages, API routes, and Supabase schemas produced through a guided multi-step interface rather tha
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Fullstack Next.js app builder using Spark Engine AI's multi-agent system for interactive generation of pages, APIs, and database schemas, with automated deployment to Vercel + Supabase including database schema generation and serverless API creation through a guided multi-step UI.
+
+(captured site page body (agents/fullstack-nextjs-app-generator.md), not a verified repo-code finding)
+The project demonstrates Spark Engine AI's multi-agent generation applied to a concrete stack: Next.js pages, API routes, and Supabase schemas produced through a guided multi-step interface rather than a one-shot prompt. A backend deployer service, reached through an ngrok tunnel, executes the Vercel deployment and runs the generated SQL against Supabase, so the output is a deployed app with its schema rather than a folder of code. Generation goes through a Spark API key with OpenAI and Groq listed as underlying providers. Development stopped at 33 commits in late 2024, leaving it as a working demonstration of the Spark Engine workflow rather than a maintained product.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/fullstack-nextjs-app-generator.md)

@@ -1,9 +1,9 @@
 # chaterm/chaterm
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1ca378cb7eda @ 64cc986d19eee1ed
+Latest snapshot: commit 2b59d724efb5 @ 6a4008d8f5ce903f
 
 ## Summary (orientation draft, not independently verified)
 

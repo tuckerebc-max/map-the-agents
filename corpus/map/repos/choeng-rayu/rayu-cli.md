@@ -1,9 +1,9 @@
 # choeng-rayu/rayu-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c16466f3b068 @ f8841530529d555b
+Latest snapshot: commit d259a778e111 @ ae692264f7ea5504
 
 ## Summary (orientation draft, not independently verified)
 

@@ -217,8 +217,6 @@
 - [firebender](../entries/firebender-d5f7bfa763.md)
 - [fitten-code](../entries/fitten-code-f377659cff.md)
 - [floot](../entries/floot-764aab4b7f.md)
-- [flounder](../entries/flounder-8802c7af09.md)
-- [forge](../entries/forge-71b41d6dd4.md)
 - [forge-agentic-coding-cli](../entries/forge-agentic-coding-cli-264d9ac99a.md)
 - [forge-norvia-labs](../entries/forge-norvia-labs-0dffe5038b.md)
 - [forgecode](../entries/forgecode-4fc3b33313.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: plasma-ai
@@ -22,6 +22,8 @@ Repository map entry: [plasma-ai/fractal](../../repos/plasma-ai/fractal.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Fractal addresses the failure mode of long autonomous runs: a single agent loop loses coherence on large tasks and burns unbounded budget. It decomposes work recursively, running each node as an auton
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Hierarchical agent loops with recursive self-organization — autonomous agent loops arrange into a tree; each node iterates toward a goal in its own git worktree and spawns child nodes for separable subtasks. Fractal tree grows to fit the problem rather than a fixed plan. Each node runs in an isolated git worktree with hard caps (iterations, depth, children, cost, time). ...
+
+(captured site page body (agents/fractal.md), not a verified repo-code finding)
+Fractal addresses the failure mode of long autonomous runs: a single agent loop loses coherence on large tasks and burns unbounded budget. It decomposes work recursively, running each node as an autonomous session of a backend agent such as Claude Code, Codex, Grok Build, OpenCode, or Oh My Pi, isolated in its own git worktree and capped by configurable iteration, depth, cost, and time limits. Run metadata, including per-node cost, lands in a local SQLite database that the fractal open dashboard renders live. It is installed from PyPI or as a Claude Code and Codex marketplace plugin, and because nodes run with permission prompts disabled by default, it is aimed at operators running it on tasks and hosts they are willing to leave unsupervised.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/fractal.md)

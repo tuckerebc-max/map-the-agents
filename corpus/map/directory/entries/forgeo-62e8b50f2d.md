@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: lucaGazzola
@@ -22,6 +22,8 @@ Repository map entry: [lucagazzola/forgeo](../../repos/lucagazzola/forgeo.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-forgeo serves maintainers who accumulate more well-specified tasks than attention: it reads a backlog from a JSON file or a Jira/GitHub/GitLab/HTTP tracker, selects the oldest OPEN task whose dependen
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Scheduled, agent-driven software factory layer on top of any coding-agent CLI; maintain a plain-JSON backlog and the daemon autonomously picks tasks, runs the agent, commits directly to main (no branches, no PRs), retries transient failures, and runs a refactoring pass when idle; only escalates to a human for genuine decisions; everything stored in inspectable plain files with automatic backup/restore; supports ...
+
+(captured site page body (agents/forgeo.md), not a verified repo-code finding)
+forgeo serves maintainers who accumulate more well-specified tasks than attention: it reads a backlog from a JSON file or a Jira/GitHub/GitLab/HTTP tracker, selects the oldest OPEN task whose dependencies are complete, and runs the configured agent CLI on it — optionally inside a Docker sandbox with the network off by default — committing the result directly to main. When the backlog empties, the daemon switches to refactoring passes instead of idling. Transient agent failures retry automatically while persistent failures and genuine human decisions escalate via BLOCKER.md. Operationally it stays lightweight: \`forgeo validate\` dry-runs the configuration, backlogs are snapshotted automatically, multiple instances per repository feed one aggregate web dashboard, and a token-protected web UI exposes run status for solo maintainers and small teams.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/forgeo.md)

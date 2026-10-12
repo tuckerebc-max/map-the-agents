@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: adshao
 - License: AGPL-3.0
 - Language: TypeScript
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [adshao/flounder](../../repos/adshao/flounder.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Flounder addresses the gap between chat-based vulnerability discussions and real audits: security work needs hours of sustained, skeptical investigation, containerized tooling, and evidence rather tha
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Autonomous white-hat security auditor that turns coding agents (Codex, Claude Code) into an end-to-end security audit pipeline (Prepare-\>Map-\>Dig-\>Synthesize-\>Verify-\>Confirm-\>Report). Audit strategy comes from the model, not hardcoded rules; findings require execution-grounded proof (must cite passing local commands). Sandboxed OCI execution with network-sealed discovery; strong fit for Solidity/EVM and ZK targets.
+
+(captured site page body (agents/flounder.md), not a verified repo-code finding)
+Flounder addresses the gap between chat-based vulnerability discussions and real audits: security work needs hours of sustained, skeptical investigation, containerized tooling, and evidence rather than plausible prose. It runs a seven-phase pipeline (prepare, map, dig, synthesize, verify, confirm, report) around the coding agent, supplying an OCI/Apple container sandbox with network sealing and read-only rootfs, a command policy, SQLite-backed durable state, and execution gates; the model chooses audit strategy while Flounder enforces the boundary. Findings require passing local proof tests with differential confirmation and refutation checks, so false positives get filtered before reporting. Security researchers use it for blind capability audits, incident investigation from transaction hashes, bug bounties, and disclosure preparation, with particular depth in Solidity/EVM, Cairo/Starknet, and TON.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/flounder.md)

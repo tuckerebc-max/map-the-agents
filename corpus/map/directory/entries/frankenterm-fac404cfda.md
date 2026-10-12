@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Dicklesworthstone
@@ -22,6 +22,8 @@ Repository map entry: [dicklesworthstone/frankenterm](../../repos/dicklesworthst
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Running many CLI coding agents means manually watching terminals for the moments an agent goes idle, asks a question, or gets stuck. Frankenterm treats the terminal itself as the integration surface:
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal hypervisor for AI agent swarms; provides real-time pane capture, state-machine pattern detection for agent state, and a JSON API for coordinating fleets of coding agents across WezTerm; turns a terminal multiplexer into a coordination layer for AI agent swarms.
+
+(captured site page body (agents/frankenterm.md), not a verified repo-code finding)
+Running many CLI coding agents means manually watching terminals for the moments an agent goes idle, asks a question, or gets stuck. Frankenterm treats the terminal itself as the integration surface: it captures WezTerm pane content in real time, runs state-machine pattern detection to classify what each agent is doing, and publishes that state through a JSON API that scripts and other tools can query and act on. This lets operators build their own coordination logic on top of unmodified agents rather than adopting a vendor's orchestration format. It targets developers running agent swarms in WezTerm who want programmatic fleet control without changing how each agent is invoked.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/frankenterm.md)

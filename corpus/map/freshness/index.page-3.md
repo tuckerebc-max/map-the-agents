@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [xcodinglab/xcoding](../repos/xcodinglab/xcoding.md) [coverage: complete]
-- [xeol-io/bumpgen](../repos/xeol-io/bumpgen.md) [coverage: complete]
-- [xiaomimimo/mimo-code](../repos/xiaomimimo/mimo-code.md) [coverage: partial]
-- [xichan96/dinotty](../repos/xichan96/dinotty.md) [coverage: partial]
 - [xingyaoww/code-act](../repos/xingyaoww/code-act.md) [coverage: complete]
 - [xmudeeplit/legalgraphrag](../repos/xmudeeplit/legalgraphrag.md) [coverage: complete]
 - [yanhua1010/build-your-own-coding-agent](../repos/yanhua1010/build-your-own-coding-agent.md) [coverage: complete]
@@ -59,7 +55,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (82)
+## stale (86)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +139,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
 - [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
 - [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
+- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
+- [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
+- [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
+- [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) [coverage: partial]
 
 ## refresh-failed (64)
 

@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [legorobotdude/privatecode](../repos/legorobotdude/privatecode.md) [coverage: complete]
-- [lemony-ai/cascadeflow](../repos/lemony-ai/cascadeflow.md) [coverage: partial]
-- [lengff123/cursor-bridge](../repos/lengff123/cursor-bridge.md) [coverage: complete]
-- [leonardcser/smelt](../repos/leonardcser/smelt.md) [coverage: partial]
 - [leox255/loopsy](../repos/leox255/loopsy.md) [coverage: partial]
 - [letstri/druk](../repos/letstri/druk.md) [coverage: partial]
 - [letta-ai/letta-code](../repos/letta-ai/letta-code.md) [coverage: partial]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wrongstack/wrongstack](../repos/wrongstack/wrongstack.md) [coverage: partial]
 - [wrtnlabs/autobe](../repos/wrtnlabs/autobe.md) [coverage: complete]
 - [xai-org/grok-build](../repos/xai-org/grok-build.md) [coverage: complete]
+- [xcodinglab/xcoding](../repos/xcodinglab/xcoding.md) [coverage: complete]
+- [xeol-io/bumpgen](../repos/xeol-io/bumpgen.md) [coverage: complete]
+- [xiaomimimo/mimo-code](../repos/xiaomimimo/mimo-code.md) [coverage: partial]
+- [xichan96/dinotty](../repos/xichan96/dinotty.md) [coverage: partial]

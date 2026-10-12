@@ -224,31 +224,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [Figma Make (`figma-make`)](figma-make-ea11f341d3.md) -- published+backing+pages
 - [Figstack (`figstack`)](figstack-4bd542e491.md) -- backing+pages
 - [FinRobot (`finrobot`)](finrobot-ac611edc4e.md) -- backing+pages
-- [Firebase Studio (`firebase-studio`)](firebase-studio-39bed1ecd3.md) -- published+backing
-- [Firebender (`firebender`)](firebender-d5f7bfa763.md) -- published+backing
-- [FireConnect (`fireconnect`)](fireconnect-6409600bbc.md) -- backing-only
-- [fireproof (`fireproof`)](fireproof-366b6ac67e.md) -- backing-only
-- [Fitten Code (`fitten-code`)](fitten-code-f377659cff.md) -- published+backing
-- [Flare (`flare`)](flare-7797993a4b.md) -- backing-only
-- [Fleet Control (`fleet-control`)](fleet-control-301a60aa68.md) -- published-only
-- [FLEX (`flex`)](flex-222f930b87.md) -- backing-only
-- [Floot (`floot`)](floot-764aab4b7f.md) -- published+backing
-- [flounder (`flounder`)](flounder-8802c7af09.md) -- backing-only
-- [Flue (`flue`)](flue-6cbb89436a.md) -- published+backing
-- [Forge (`forge`)](forge-71b41d6dd4.md) -- backing-only
-- [Forge-Agentic-Coding-CLI (`forge-agentic-coding-cli`)](forge-agentic-coding-cli-264d9ac99a.md) -- published+backing
-- [Forge (Norvia Labs) (`forge-norvia-labs`)](forge-norvia-labs-0dffe5038b.md) -- published+backing
-- [forge-orchestrator (`forge-orchestrator`)](forge-orchestrator-0ca3272b89.md) -- published+backing
-- [ForgeCode (`forgecode`)](forgecode-4fc3b33313.md) -- published+backing
-- [forgeo (`forgeo`)](forgeo-62e8b50f2d.md) -- published+backing
-- [formax (`formax`)](formax-b15ef67b02.md) -- published+backing
-- [fractal (`fractal`)](fractal-60f4bf5ace.md) -- published+backing
-- [frankenterm (`frankenterm`)](frankenterm-fac404cfda.md) -- published+backing
-- [free-ai-coding (`free-ai-coding`)](free-ai-coding-06baf194df.md) -- backing-only
-- [Free Repo Agent (`free-repo-agent`)](free-repo-agent-14671883bd.md) -- published+backing
-- [freshell (`freshell`)](freshell-9d4f5269c0.md) -- published+backing
-- [Fullstack-Nextjs-App-Generator (`fullstack-nextjs-app-generator`)](fullstack-nextjs-app-generator-df4205ee3f.md) -- published+backing
-- [Fume (`fume`)](fume-ab9eb089b7.md) -- backing-only
+- [Firebase Studio (`firebase-studio`)](firebase-studio-39bed1ecd3.md) -- published+backing+pages
+- [Firebender (`firebender`)](firebender-d5f7bfa763.md) -- published+backing+pages
+- [FireConnect (`fireconnect`)](fireconnect-6409600bbc.md) -- backing+pages
+- [fireproof (`fireproof`)](fireproof-366b6ac67e.md) -- backing+pages
+- [Fitten Code (`fitten-code`)](fitten-code-f377659cff.md) -- published+backing+pages
+- [Flare (`flare`)](flare-7797993a4b.md) -- backing+pages
+- [Fleet Control (`fleet-control`)](fleet-control-301a60aa68.md) -- published+pages
+- [FLEX (`flex`)](flex-222f930b87.md) -- backing+pages
+- [Floot (`floot`)](floot-764aab4b7f.md) -- published+backing+pages
+- [flounder (`flounder`)](flounder-8802c7af09.md) -- backing+pages
+- [Flue (`flue`)](flue-6cbb89436a.md) -- published+backing+pages
+- [Forge (`forge`)](forge-71b41d6dd4.md) -- backing+pages
+- [Forge-Agentic-Coding-CLI (`forge-agentic-coding-cli`)](forge-agentic-coding-cli-264d9ac99a.md) -- published+backing+pages
+- [Forge (Norvia Labs) (`forge-norvia-labs`)](forge-norvia-labs-0dffe5038b.md) -- published+backing+pages
+- [forge-orchestrator (`forge-orchestrator`)](forge-orchestrator-0ca3272b89.md) -- published+backing+pages
+- [ForgeCode (`forgecode`)](forgecode-4fc3b33313.md) -- published+backing+pages
+- [forgeo (`forgeo`)](forgeo-62e8b50f2d.md) -- published+backing+pages
+- [formax (`formax`)](formax-b15ef67b02.md) -- published+backing+pages
+- [fractal (`fractal`)](fractal-60f4bf5ace.md) -- published+backing+pages
+- [frankenterm (`frankenterm`)](frankenterm-fac404cfda.md) -- published+backing+pages
+- [free-ai-coding (`free-ai-coding`)](free-ai-coding-06baf194df.md) -- backing+pages
+- [Free Repo Agent (`free-repo-agent`)](free-repo-agent-14671883bd.md) -- published+backing+pages
+- [freshell (`freshell`)](freshell-9d4f5269c0.md) -- published+backing+pages
+- [Fullstack-Nextjs-App-Generator (`fullstack-nextjs-app-generator`)](fullstack-nextjs-app-generator-df4205ee3f.md) -- published+backing+pages
+- [Fume (`fume`)](fume-ab9eb089b7.md) -- backing+pages
 - [fusil (`fusil`)](fusil-595c64e5ec.md) -- backing-only
 - [Fuxi (`fuxi`)](fuxi-27f9aff7c3.md) -- published+backing
 - [fx (`fx`)](fx-6956e1dffd.md) -- published+backing

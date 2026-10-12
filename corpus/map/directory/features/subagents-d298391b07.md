@@ -73,6 +73,7 @@
 - [fanbox](../entries/fanbox-8d51dba3a7.md)
 - [finrobot](../entries/finrobot-ac611edc4e.md)
 - [firebender](../entries/firebender-d5f7bfa763.md)
+- [fleet-control](../entries/fleet-control-301a60aa68.md)
 - [flue](../entries/flue-6cbb89436a.md)
 - [fractal](../entries/fractal-60f4bf5ace.md)
 - [fullstack-nextjs-app-generator](../entries/fullstack-nextjs-app-generator-df4205ee3f.md)

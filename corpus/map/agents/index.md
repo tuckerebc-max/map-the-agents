@@ -201,11 +201,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) -- status=distilled, freshness=stale
 - [changkun/wallfacer](../repos/changkun/wallfacer.md) -- status=distilled, freshness=stale
 - [charmbracelet/crush](../repos/charmbracelet/crush.md) -- status=distilled, freshness=stale
-- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) -- status=distilled, freshness=current
-- [chaterm/chaterm](../repos/chaterm/chaterm.md) -- status=distilled, freshness=current
+- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) -- status=distilled, freshness=stale
+- [chaterm/chaterm](../repos/chaterm/chaterm.md) -- status=distilled, freshness=stale
 - [chernistry/bernstein](../repos/chernistry/bernstein.md) -- status=blocked, freshness=refresh-failed
-- [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) -- status=distilled, freshness=current
-- [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) -- status=distilled, freshness=current
+- [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) -- status=distilled, freshness=stale
+- [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) -- status=distilled, freshness=stale
 - [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) -- status=distilled, freshness=current
 - [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) -- status=distilled, freshness=current
 - [clarisseio/python-agents](../repos/clarisseio/python-agents.md) -- status=distilled, freshness=current

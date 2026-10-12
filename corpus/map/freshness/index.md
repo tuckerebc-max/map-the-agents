@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (906)
+## current (902)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -108,10 +108,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) [coverage: complete]
-- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
-- [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
-- [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
-- [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) [coverage: partial]
 - [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) [coverage: partial]
 - [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) [coverage: partial]
 - [clarisseio/python-agents](../repos/clarisseio/python-agents.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [larens94/codedna](../repos/larens94/codedna.md) [coverage: partial]
 - [leezhuuuuu/code-interpreter-api](../repos/leezhuuuuu/code-interpreter-api.md) [coverage: complete]
 - [legioncodeinc/honeycomb](../repos/legioncodeinc/honeycomb.md) [coverage: partial]
+- [legorobotdude/privatecode](../repos/legorobotdude/privatecode.md) [coverage: complete]
+- [lemony-ai/cascadeflow](../repos/lemony-ai/cascadeflow.md) [coverage: partial]
+- [lengff123/cursor-bridge](../repos/lengff123/cursor-bridge.md) [coverage: complete]
+- [leonardcser/smelt](../repos/leonardcser/smelt.md) [coverage: partial]
