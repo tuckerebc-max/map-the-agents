@@ -1,9 +1,9 @@
 # clarisseio/python-agents
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 84c3bdc93ecd @ 45d89dabc1a851af
+Latest snapshot: commit 84c3bdc93ecd @ 4df93cfdc09637cd
 
 ## Summary (orientation draft, not independently verified)
 

@@ -1,9 +1,9 @@
 # civai-technologies/cursor-agent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0f5bcd94990b @ 4e70f5f0f0abf023
+Latest snapshot: commit 0f5bcd94990b @ c4bf23c75ed2de2a
 
 ## Summary (orientation draft, not independently verified)
 

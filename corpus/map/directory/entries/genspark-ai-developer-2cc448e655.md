@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Genspark
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Genspark markets itself as an all-in-one AI workspace (version 6.0) whose catalog includes several developer-facing generators: an AI App Builder, AI Website Builder, Figma to Code conversion, an AI U
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Genspark is an all-in-one AI workspace with related products including GenTerminal, Figma to Code, AI App Builder, and AI Website Builder. No specific 'Genspark AI Developer' product page was found; the exact coding agent offering could not be verified.
+
+(captured site page body (agents/genspark-ai-developer.md), not a verified repo-code finding)
+Genspark markets itself as an all-in-one AI workspace (version 6.0) whose catalog includes several developer-facing generators: an AI App Builder, AI Website Builder, Figma to Code conversion, an AI UI Generator, and build tools for dashboards, databases, CRM systems, and forms, alongside the standalone GenTerminal product. Each generator produces working output — apps, sites, dashboards — through conversational iteration rather than a manual build. The workspace also hosts general agents (Skills, Second Brain) and multiple frontier models, which is why coding features sit inside a broader subscription product. No standalone 'Genspark AI Developer' product page could be located, so the census entry stands for the workspace's developer toolset as a whole; pricing and exact capabilities require the help center or genterminal.ai.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/genspark-ai-developer.md)

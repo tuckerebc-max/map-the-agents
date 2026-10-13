@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (902)
+## current (898)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -108,10 +108,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) [coverage: complete]
-- [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) [coverage: partial]
-- [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) [coverage: partial]
-- [clarisseio/python-agents](../repos/clarisseio/python-agents.md) [coverage: partial]
-- [clawplays/ospec](../repos/clawplays/ospec.md) [coverage: partial]
 - [cline/cline](../repos/cline/cline.md) [coverage: partial]
 - [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) [coverage: partial]
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) [coverage: complete]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [lemony-ai/cascadeflow](../repos/lemony-ai/cascadeflow.md) [coverage: partial]
 - [lengff123/cursor-bridge](../repos/lengff123/cursor-bridge.md) [coverage: complete]
 - [leonardcser/smelt](../repos/leonardcser/smelt.md) [coverage: partial]
+- [leox255/loopsy](../repos/leox255/loopsy.md) [coverage: partial]
+- [letstri/druk](../repos/letstri/druk.md) [coverage: partial]
+- [letta-ai/letta-code](../repos/letta-ai/letta-code.md) [coverage: partial]
+- [lg-ai-exaone/exaone-3.0](../repos/lg-ai-exaone/exaone-3.0.md) [coverage: complete]

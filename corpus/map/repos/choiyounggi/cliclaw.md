@@ -1,9 +1,9 @@
 # choiyounggi/cliclaw
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 6a5e048a5abf @ 16445cc7ff31dba2
+Latest snapshot: commit 217b10848bb4 @ 75a394a29147f94a
 
 ## Summary (orientation draft, not independently verified)
 

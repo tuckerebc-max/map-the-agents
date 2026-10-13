@@ -225,7 +225,6 @@
 - [fullstack-nextjs-app-generator](../entries/fullstack-nextjs-app-generator-df4205ee3f.md)
 - [fuxi](../entries/fuxi-27f9aff7c3.md)
 - [fx](../entries/fx-6956e1dffd.md)
-- [gadfly](../entries/gadfly-3ef17c290e.md)
 - [gemini-cli](../entries/gemini-cli-e726ab7db4.md)
 - [gemini-code](../entries/gemini-code-4843140067.md)
 - [gemini-code-assist](../entries/gemini-code-assist-1ee1cb72a5.md)

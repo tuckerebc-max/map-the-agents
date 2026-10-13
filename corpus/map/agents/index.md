@@ -206,11 +206,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [chernistry/bernstein](../repos/chernistry/bernstein.md) -- status=blocked, freshness=refresh-failed
 - [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) -- status=distilled, freshness=stale
 - [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) -- status=distilled, freshness=stale
-- [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) -- status=distilled, freshness=current
-- [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) -- status=distilled, freshness=current
-- [clarisseio/python-agents](../repos/clarisseio/python-agents.md) -- status=distilled, freshness=current
-- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md) -- status=discovered, freshness=pending
-- [clawplays/ospec](../repos/clawplays/ospec.md) -- status=distilled, freshness=current
+- [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) -- status=distilled, freshness=stale
+- [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) -- status=distilled, freshness=stale
+- [clarisseio/python-agents](../repos/clarisseio/python-agents.md) -- status=distilled, freshness=stale
+- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md) -- status=snapshotted, freshness=pending
+- [clawplays/ospec](../repos/clawplays/ospec.md) -- status=distilled, freshness=stale
 - [cline/cline](../repos/cline/cline.md) -- status=distilled, freshness=current
 - [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) -- status=distilled, freshness=current
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) -- status=distilled, freshness=current

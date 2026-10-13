@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [leox255/loopsy](../repos/leox255/loopsy.md) [coverage: partial]
-- [letstri/druk](../repos/letstri/druk.md) [coverage: partial]
-- [letta-ai/letta-code](../repos/letta-ai/letta-code.md) [coverage: partial]
-- [lg-ai-exaone/exaone-3.0](../repos/lg-ai-exaone/exaone-3.0.md) [coverage: complete]
 - [lidangzzz/ai-coding-style-guides](../repos/lidangzzz/ai-coding-style-guides.md) [coverage: complete]
 - [lidge-jun/ima2-gen](../repos/lidge-jun/ima2-gen.md) [coverage: partial]
 - [lidge-jun/opencodex](../repos/lidge-jun/opencodex.md) [coverage: partial]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [xeol-io/bumpgen](../repos/xeol-io/bumpgen.md) [coverage: complete]
 - [xiaomimimo/mimo-code](../repos/xiaomimimo/mimo-code.md) [coverage: partial]
 - [xichan96/dinotty](../repos/xichan96/dinotty.md) [coverage: partial]
+- [xingyaoww/code-act](../repos/xingyaoww/code-act.md) [coverage: complete]
+- [xmudeeplit/legalgraphrag](../repos/xmudeeplit/legalgraphrag.md) [coverage: complete]
+- [yanhua1010/build-your-own-coding-agent](../repos/yanhua1010/build-your-own-coding-agent.md) [coverage: complete]
+- [yaoapp/yao](../repos/yaoapp/yao.md) [coverage: complete]

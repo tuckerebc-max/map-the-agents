@@ -249,31 +249,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [freshell (`freshell`)](freshell-9d4f5269c0.md) -- published+backing+pages
 - [Fullstack-Nextjs-App-Generator (`fullstack-nextjs-app-generator`)](fullstack-nextjs-app-generator-df4205ee3f.md) -- published+backing+pages
 - [Fume (`fume`)](fume-ab9eb089b7.md) -- backing+pages
-- [fusil (`fusil`)](fusil-595c64e5ec.md) -- backing-only
-- [Fuxi (`fuxi`)](fuxi-27f9aff7c3.md) -- published+backing
-- [fx (`fx`)](fx-6956e1dffd.md) -- published+backing
-- [Gadfly (`gadfly`)](gadfly-3ef17c290e.md) -- backing-only
-- [Gaia-Meme-Coin-Generator (`gaia-meme-coin-generator`)](gaia-meme-coin-generator-fbf33256b4.md) -- backing-only
-- [Galley (`galley`)](galley-dd3458ae5f.md) -- published+backing
-- [Gambit (`gambit`)](gambit-5e05cb515b.md) -- backing-only
-- [Garcon (`garcon`)](garcon-627182d77d.md) -- published+backing
-- [gastown (`gastown`)](gastown-d40fe73ab6.md) -- published+backing
-- [Gemini CLI (`gemini-cli`)](gemini-cli-e726ab7db4.md) -- published+backing
-- [gemini-code (`gemini-code`)](gemini-code-4843140067.md) -- published+backing
-- [Gemini Code Assist (`gemini-code-assist`)](gemini-code-assist-1ee1cb72a5.md) -- published+backing
-- [GeniA (`genia`)](genia-b88ca7310c.md) -- published+backing
-- [Genie (Cosine) (`genie-cosine`)](genie-cosine-93d2b57c55.md) -- published+backing
-- [GenoMAS (`genomas`)](genomas-3b7ff421ab.md) -- backing-only
-- [Genspark AI Developer (`genspark-ai-developer`)](genspark-ai-developer-2cc448e655.md) -- published+backing
-- [ggez (`ggez`)](ggez-f3cfc66fb3.md) -- backing-only
-- [GigaChat (`gigachat`)](gigachat-4a96600d6c.md) -- backing-only
-- [giselle (`giselle`)](giselle-b6f2418fb5.md) -- published+backing
-- [Git-Collaboration (`git-collaboration`)](git-collaboration-963208b8f0.md) -- backing-only
-- [Gitar (`gitar`)](gitar-b70f7c27b1.md) -- published+backing
-- [github (`github`)](github-c0b0109d94.md) -- backing-only
-- [GitHub Copilot (`github-copilot`)](github-copilot-2562cef034.md) -- published+backing
-- [GitHub Copilot CLI (`github-copilot-cli`)](github-copilot-cli-00932a107b.md) -- published+backing
-- [github profile (`github-profile`)](github-profile-c8411c5716.md) -- backing-only
+- [fusil (`fusil`)](fusil-595c64e5ec.md) -- backing+pages
+- [Fuxi (`fuxi`)](fuxi-27f9aff7c3.md) -- published+backing+pages
+- [fx (`fx`)](fx-6956e1dffd.md) -- published+backing+pages
+- [Gadfly (`gadfly`)](gadfly-3ef17c290e.md) -- backing+pages
+- [Gaia-Meme-Coin-Generator (`gaia-meme-coin-generator`)](gaia-meme-coin-generator-fbf33256b4.md) -- backing+pages
+- [Galley (`galley`)](galley-dd3458ae5f.md) -- published+backing+pages
+- [Gambit (`gambit`)](gambit-5e05cb515b.md) -- backing+pages
+- [Garcon (`garcon`)](garcon-627182d77d.md) -- published+backing+pages
+- [gastown (`gastown`)](gastown-d40fe73ab6.md) -- published+backing+pages
+- [Gemini CLI (`gemini-cli`)](gemini-cli-e726ab7db4.md) -- published+backing+pages
+- [gemini-code (`gemini-code`)](gemini-code-4843140067.md) -- published+backing+pages
+- [Gemini Code Assist (`gemini-code-assist`)](gemini-code-assist-1ee1cb72a5.md) -- published+backing+pages
+- [GeniA (`genia`)](genia-b88ca7310c.md) -- published+backing+pages
+- [Genie (Cosine) (`genie-cosine`)](genie-cosine-93d2b57c55.md) -- published+backing+pages
+- [GenoMAS (`genomas`)](genomas-3b7ff421ab.md) -- backing+pages
+- [Genspark AI Developer (`genspark-ai-developer`)](genspark-ai-developer-2cc448e655.md) -- published+backing+pages
+- [ggez (`ggez`)](ggez-f3cfc66fb3.md) -- backing+pages
+- [GigaChat (`gigachat`)](gigachat-4a96600d6c.md) -- backing+pages
+- [giselle (`giselle`)](giselle-b6f2418fb5.md) -- published+backing+pages
+- [Git-Collaboration (`git-collaboration`)](git-collaboration-963208b8f0.md) -- backing+pages
+- [Gitar (`gitar`)](gitar-b70f7c27b1.md) -- published+backing+pages
+- [github (`github`)](github-c0b0109d94.md) -- backing+pages
+- [GitHub Copilot (`github-copilot`)](github-copilot-2562cef034.md) -- published+backing+pages
+- [GitHub Copilot CLI (`github-copilot-cli`)](github-copilot-cli-00932a107b.md) -- published+backing+pages
+- [github profile (`github-profile`)](github-profile-c8411c5716.md) -- backing+pages
 - [GitIngest (`gitingest`)](gitingest-db03db8a27.md) -- backing-only
 - [gitlab-copilot-coding-agent (`gitlab-copilot-coding-agent`)](gitlab-copilot-coding-agent-18f4e1cc47.md) -- backing-only
 - [GitLab Duo (`gitlab-duo`)](gitlab-duo-9184d9a4ee.md) -- published+backing

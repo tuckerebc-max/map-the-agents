@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: harishkotra
@@ -22,6 +22,8 @@ Repository map entry: [harishkotra/gaia-meme-coin-generator](../../repos/harishk
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The tool automates the mechanical parts of launching a testnet meme token: a Gaia-hosted Llama 3B node proposes the branding and supply limits, and a fixed contract template with max-transaction, max-
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI-powered creative token naming and automatic tokenomics generation using Gaia's AI Agent. Deploys secure ERC20 contracts with built-in anti-whale protections (max transaction limits, max wallet limits, CEX/DEX exclusions). Full deployment record saved to JSON. Built for Base Sepolia testnet. Only 3 commits — hackathon/proof-of-concept project.
+
+(captured site page body (agents/gaia-meme-coin-generator.md), not a verified repo-code finding)
+The tool automates the mechanical parts of launching a testnet meme token: a Gaia-hosted Llama 3B node proposes the branding and supply limits, and a fixed contract template with max-transaction, max-wallet, and exchange-exclusion guards is compiled and deployed to Base Sepolia. Configuration flows through environment variables for the Gaia endpoint, model, RPC node, and deployer key, and the full deployment record lands in a JSON file. Three commits, no releases, and a testnet-only disclaimer mark it as a November 2024 hackathon proof of concept demonstrating Gaia node integration rather than a maintained product.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/gaia-meme-coin-generator.md)

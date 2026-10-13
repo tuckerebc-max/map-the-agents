@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Google
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Gemini Code Assist is Google's business-facing coding assistant, spanning VS Code, JetBrains, Cloud Workstations, Cloud Shell, and the terminal through the Gemini CLI. Its agent mode moves past chat i
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): 1M token context window, enterprise security and IP indemnification, code customization using private codebases, deep integration with Google Cloud services (Firebase, BigQuery, Apigee, Application Integration). Agent mode supports MCP integration. CLI is fully open source (Apache-2.0).
+
+(captured site page body (agents/gemini-code-assist.md), not a verified repo-code finding)
+Gemini Code Assist is Google's business-facing coding assistant, spanning VS Code, JetBrains, Cloud Workstations, Cloud Shell, and the terminal through the Gemini CLI. Its agent mode moves past chat into multi-file edits with full project context, built-in tools, MCP ecosystem integration, and human-in-the-loop approval, grounded in Gemini 3 with a 1M-token context window and private-codebase customization. Pricing runs $19-22.80 per user per month on Standard and $45-54 on Enterprise, with a 30-day trial and a free CLI tier of 60 requests per minute and 1,000 per day. The individual free tier was folded into Antigravity in June 2026, leaving the paid product focused on enterprises that need Google Cloud integration and indemnification.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/gemini-code-assist.md)

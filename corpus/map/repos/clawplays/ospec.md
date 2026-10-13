@@ -1,9 +1,9 @@
 # clawplays/ospec
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit be449f2ce698 @ 01de477712b27c38
+Latest snapshot: commit be449f2ce698 @ 6623e47464116683
 
 ## Summary (orientation draft, not independently verified)
 

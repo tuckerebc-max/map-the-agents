@@ -1,12 +1,13 @@
 # clawdotnet/sharpclawcode
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: agent
 Origins: directory-resolve, alltheagents.org-backing - Projects: directory-intake
+Latest snapshot: commit 72c29670c12c @ 5a10a69710d02f17
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

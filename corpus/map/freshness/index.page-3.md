@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [xingyaoww/code-act](../repos/xingyaoww/code-act.md) [coverage: complete]
-- [xmudeeplit/legalgraphrag](../repos/xmudeeplit/legalgraphrag.md) [coverage: complete]
-- [yanhua1010/build-your-own-coding-agent](../repos/yanhua1010/build-your-own-coding-agent.md) [coverage: complete]
-- [yaoapp/yao](../repos/yaoapp/yao.md) [coverage: complete]
 - [yasasbanukaofficial/claude-code](../repos/yasasbanukaofficial/claude-code.md) [coverage: complete]
 - [yashdev9274/supercli](../repos/yashdev9274/supercli.md) [coverage: partial]
 - [yc-software/qm](../repos/yc-software/qm.md) [coverage: partial]
@@ -55,7 +51,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (86)
+## stale (90)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +139,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
 - [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
 - [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) [coverage: partial]
+- [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) [coverage: partial]
+- [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) [coverage: partial]
+- [clarisseio/python-agents](../repos/clarisseio/python-agents.md) [coverage: partial]
+- [clawplays/ospec](../repos/clawplays/ospec.md) [coverage: partial]
 
 ## refresh-failed (64)
 

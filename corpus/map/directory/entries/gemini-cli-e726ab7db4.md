@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: google-gemini
@@ -22,6 +22,8 @@ Repository map entry: [google-gemini/gemini-cli](../../repos/google-gemini/gemin
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Gemini CLI gives terminal users direct access to Gemini models under a free quota that no third-party harness matches: 60 requests per minute and 1,000 per day with a Google account, or via a Gemini A
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Google's official open-source AI agent that brings Gemini models directly into the terminal; free generous tier with Google account; 1M token context window; built-in tools (Google Search grounding, file ops, shell, web fetch); terminal-first design; GitHub Action integration for PR reviews and issue triage; checkpointing for session save/resume; custom context via GEMINI.md files; MCP client and server support for custom ...
+
+(captured site page body (agents/gemini-cli.md), not a verified repo-code finding)
+Gemini CLI gives terminal users direct access to Gemini models under a free quota that no third-party harness matches: 60 requests per minute and 1,000 per day with a Google account, or via a Gemini API key and Vertex AI for paid use. The agent ships built-in tools for file operations, shell execution, and web fetching with Google Search grounding, keeps a 1M-token context window, and checkpoints sessions for save and resume. Extensibility runs through MCP servers, custom extensions and slash commands, and GEMINI.md context files, with GitHub Actions available for PR review and issue triage. Weekly stable, preview, and nightly releases plus 107k stars mark it as a major maintained project rather than an experiment.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/gemini-cli.md)
