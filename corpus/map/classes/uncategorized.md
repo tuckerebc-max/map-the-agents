@@ -326,6 +326,7 @@
 - [satomic/gitlab-copilot-coding-agent](../repos/satomic/gitlab-copilot-coding-agent.md)
 - [scaleapi/swe-interact](../repos/scaleapi/swe-interact.md)
 - [scarmonit/antigravity-jules-orchestration](../repos/scarmonit/antigravity-jules-orchestration.md)
+- [scgopi/graphcode](../repos/scgopi/graphcode.md)
 - [seandavi/agentic-coding-intro](../repos/seandavi/agentic-coding-intro.md)
 - [securitylab-ucd/ai-agent-security](../repos/securitylab-ucd/ai-agent-security.md)
 - [sfelkner/ai-agent-test](../repos/sfelkner/ai-agent-test.md)

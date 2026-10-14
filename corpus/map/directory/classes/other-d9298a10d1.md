@@ -248,6 +248,7 @@
 - [gitlab-copilot-coding-agent](../entries/gitlab-copilot-coding-agent-18f4e1cc47.md)
 - [glm-5](../entries/glm-5-343fb7bd0d.md)
 - [glm-coding-plan](../entries/glm-coding-plan-83332da5a2.md)
+- [gossip](../entries/gossip-dd73a2f7c7.md)
 - [gpt-code-assistant](../entries/gpt-code-assistant-ba95b46eeb.md)
 - [gpt-rag-orchestrator](../entries/gpt-rag-orchestrator-bea0ae151b.md)
 - [gpteam](../entries/gpteam-21881c74d7.md)

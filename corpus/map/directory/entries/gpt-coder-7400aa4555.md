@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: alicheg
@@ -22,6 +22,8 @@ Repository map entry: [alicheg/gpt-coder](../../repos/alicheg/gpt-coder.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-GPT Coder demonstrates the test-feedback loop that later defined agentic coding, compressed into a single Python script: GPT generates a coding challenge, a solution, and test cases, then the tool com
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Self-supervising AI code generation tool that iteratively generates, refines, compiles, and tests solutions against extracted test cases until they meet expected criteria.
+
+(captured site page body (agents/gpt-coder.md), not a verified repo-code finding)
+GPT Coder demonstrates the test-feedback loop that later defined agentic coding, compressed into a single Python script: GPT generates a coding challenge, a solution, and test cases, then the tool compiles, executes, and tests the solution against them, feeding failures back until they pass. The pipeline is fixed rather than open-ended — there is no general tool use, file editing, or interactivity — and configuration is just an OPENAI_API_KEY in a .env file. One commit, no releases, and 26 stars mark it as a ChatGPT-era experiment published in April 2023 and never developed further. Its value now is historical: an early example of test-driven self-refinement that later harnesses industrialized.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/gpt-coder.md)

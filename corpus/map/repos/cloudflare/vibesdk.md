@@ -1,9 +1,9 @@
 # cloudflare/vibesdk
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9da158d82c59 @ b32132cd1ca47fd1
+Latest snapshot: commit 9da158d82c59 @ 7dcad4cd5d11d21f
 
 ## Summary (orientation draft, not independently verified)
 

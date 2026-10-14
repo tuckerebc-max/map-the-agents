@@ -2,6 +2,7 @@
 
 Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing-only
 - [hitch (`hitch`)](hitch-82e910cddf.md) -- backing-only
 - [hive (`hive`)](hive-7640da4029.md) -- published+backing
 - [Hivelore (`hivelore`)](hivelore-5e12913afc.md) -- backing-only
@@ -330,4 +331,3 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Pane (`pane`)](pane-24a3737d6b.md) -- published+backing
 - [paper (`paper`)](paper-382635c932.md) -- published+backing
 - [PaperBanana-Pro (`paperbanana-pro`)](paperbanana-pro-a95d842ac4.md) -- backing-only
-- [par (`par`)](par-c9d9d2c4be.md) -- published+backing

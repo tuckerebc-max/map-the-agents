@@ -1,9 +1,9 @@
 # cline/cline
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c1c0b55ca03a @ ebde58e88eff80d7
+Latest snapshot: commit 789f79e46d3b @ 08d8c326120938d0
 
 ## Summary (orientation draft, not independently verified)
 

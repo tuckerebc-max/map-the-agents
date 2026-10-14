@@ -1,9 +1,9 @@
 # codeaholicguy/ai-devkit
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1a3a0024eb3b @ fadc9f2153ecec7e
+Latest snapshot: commit 9eae9bff776b @ 26869fdada32fbd8
 
 ## Summary (orientation draft, not independently verified)
 

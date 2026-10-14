@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: satomic
@@ -22,6 +22,8 @@ Repository map entry: [satomic/gitlab-copilot-coding-agent](../../repos/satomic/
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-GitHub's coding agent lives in GitHub's ecosystem, and this project grafts it onto GitLab. A Flask webhook service captures GitLab events — issue assignment, MR comments, reviewer assignment — and tri
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Bridges GitHub Copilot CLI with GitLab CI/CD for fully autonomous coding workflows. Issue assignment triggers automated implementation with MR creation, MR comments trigger code updates, and MR reviewer assignment triggers intelligent comprehensive code review — all without leaving GitLab. Flask webhook service captures GitLab events.
+
+(captured site page body (agents/gitlab-copilot-coding-agent.md), not a verified repo-code finding)
+GitHub's coding agent lives in GitHub's ecosystem, and this project grafts it onto GitLab. A Flask webhook service captures GitLab events — issue assignment, MR comments, reviewer assignment — and triggers CI pipelines in an orchestrator repo, where the Copilot CLI (running in a dedicated Docker image) plans, implements, pushes commits, and opens merge requests, or produces severity-categorized review reports. Setup requires a Copilot subscription with a fine-grained PAT, a dedicated bot GitLab user, and Docker or Kubernetes runners, with CI variables holding the credentials. It is a single-contributor Python project (58 commits, 41 stars) with multilingual docs and video walkthroughs, useful to GitLab shops that want Copilot's agent without leaving their platform.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/gitlab-copilot-coding-agent.md)

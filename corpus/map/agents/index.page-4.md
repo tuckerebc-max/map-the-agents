@@ -2,6 +2,7 @@
 
 Page 4 of 4. [First page](index.md) | [Previous](index.page-3.md)
 
+- [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) -- status=distilled, freshness=current
 - [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) -- status=distilled, freshness=current
 - [zellij-org/zellij](../repos/zellij-org/zellij.md) -- status=distilled, freshness=current
 - [zencoderai/coding-the-coding-agents](../repos/zencoderai/coding-the-coding-agents.md) -- status=distilled, freshness=current

@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1063 repositories.
+1064 repositories.
 
 [Back to map index](../index.md)
 
@@ -211,11 +211,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [clarisseio/python-agents](../repos/clarisseio/python-agents.md) -- status=distilled, freshness=stale
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md) -- status=snapshotted, freshness=pending
 - [clawplays/ospec](../repos/clawplays/ospec.md) -- status=distilled, freshness=stale
-- [cline/cline](../repos/cline/cline.md) -- status=distilled, freshness=current
-- [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) -- status=distilled, freshness=current
+- [cline/cline](../repos/cline/cline.md) -- status=distilled, freshness=stale
+- [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) -- status=distilled, freshness=stale
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) -- status=distilled, freshness=current
-- [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md) -- status=distilled, freshness=current
-- [codealta/codealta](../repos/codealta/codealta.md) -- status=distilled, freshness=current
+- [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md) -- status=distilled, freshness=stale
+- [codealta/codealta](../repos/codealta/codealta.md) -- status=distilled, freshness=stale
 - [codeany-ai/codeany](../repos/codeany-ai/codeany.md) -- status=distilled, freshness=current
 - [codebuffai/codebuff](../repos/codebuffai/codebuff.md) -- status=blocked, freshness=refresh-failed
 - [codebuffai/freebuff](../repos/codebuffai/freebuff.md) -- status=distilled, freshness=current

@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [yasasbanukaofficial/claude-code](../repos/yasasbanukaofficial/claude-code.md) [coverage: complete]
-- [yashdev9274/supercli](../repos/yashdev9274/supercli.md) [coverage: partial]
-- [yc-software/qm](../repos/yc-software/qm.md) [coverage: partial]
-- [yeachan-heo/oh-my-claudecode](../repos/yeachan-heo/oh-my-claudecode.md) [coverage: partial]
 - [yeoman/yeoman](../repos/yeoman/yeoman.md) [coverage: complete]
 - [yerbapage/swe-debate](../repos/yerbapage/swe-debate.md) [coverage: complete]
 - [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) [coverage: partial]
@@ -37,7 +33,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (11)
+## pending (12)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
@@ -46,12 +42,13 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
 - [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
+- [scgopi/graphcode](../repos/scgopi/graphcode.md)
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (90)
+## stale (94)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) [coverage: partial]
 - [clarisseio/python-agents](../repos/clarisseio/python-agents.md) [coverage: partial]
 - [clawplays/ospec](../repos/clawplays/ospec.md) [coverage: partial]
+- [cline/cline](../repos/cline/cline.md) [coverage: partial]
+- [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) [coverage: partial]
+- [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md) [coverage: partial]
+- [codealta/codealta](../repos/codealta/codealta.md) [coverage: partial]
 
 ## refresh-failed (64)
 

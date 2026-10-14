@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (898)
+## current (894)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -108,11 +108,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
 - [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) [coverage: complete]
-- [cline/cline](../repos/cline/cline.md) [coverage: partial]
-- [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) [coverage: partial]
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) [coverage: complete]
-- [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md) [coverage: partial]
-- [codealta/codealta](../repos/codealta/codealta.md) [coverage: partial]
 - [codeany-ai/codeany](../repos/codeany-ai/codeany.md) [coverage: complete]
 - [codebuffai/freebuff](../repos/codebuffai/freebuff.md) [coverage: partial]
 - [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [letstri/druk](../repos/letstri/druk.md) [coverage: partial]
 - [letta-ai/letta-code](../repos/letta-ai/letta-code.md) [coverage: partial]
 - [lg-ai-exaone/exaone-3.0](../repos/lg-ai-exaone/exaone-3.0.md) [coverage: complete]
+- [lidangzzz/ai-coding-style-guides](../repos/lidangzzz/ai-coding-style-guides.md) [coverage: complete]
+- [lidge-jun/ima2-gen](../repos/lidge-jun/ima2-gen.md) [coverage: partial]
+- [lidge-jun/opencodex](../repos/lidge-jun/opencodex.md) [coverage: partial]
+- [limecloud/lime](../repos/limecloud/lime.md) [coverage: partial]

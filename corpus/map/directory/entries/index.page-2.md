@@ -274,30 +274,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [GitHub Copilot (`github-copilot`)](github-copilot-2562cef034.md) -- published+backing+pages
 - [GitHub Copilot CLI (`github-copilot-cli`)](github-copilot-cli-00932a107b.md) -- published+backing+pages
 - [github profile (`github-profile`)](github-profile-c8411c5716.md) -- backing+pages
-- [GitIngest (`gitingest`)](gitingest-db03db8a27.md) -- backing-only
-- [gitlab-copilot-coding-agent (`gitlab-copilot-coding-agent`)](gitlab-copilot-coding-agent-18f4e1cc47.md) -- backing-only
-- [GitLab Duo (`gitlab-duo`)](gitlab-duo-9184d9a4ee.md) -- published+backing
-- [GLM-5 (`glm-5`)](glm-5-343fb7bd0d.md) -- backing-only
-- [GLM Coding Plan (`glm-coding-plan`)](glm-coding-plan-83332da5a2.md) -- backing-only
-- [GoCodeo (`gocodeo`)](gocodeo-4cc659696f.md) -- published+backing
-- [golutra (`golutra`)](golutra-b364c2bcc9.md) -- published+backing
-- [Google AI Studio Build (`google-ai-studio-build`)](google-ai-studio-build-20a348204f.md) -- published+backing
-- [Goose (`goose`)](goose-c2d37dd057.md) -- published+backing
-- [gpt-all-star (`gpt-all-star`)](gpt-all-star-bb65f2277a.md) -- published+backing
-- [Gpt-Code-Assistant (`gpt-code-assistant`)](gpt-code-assistant-ba95b46eeb.md) -- backing-only
-- [gpt-coder (`gpt-coder`)](gpt-coder-7400aa4555.md) -- published+backing
-- [GPT Engineer (`gpt-engineer`)](gpt-engineer-b4f13b78fd.md) -- published+backing
-- [GPT Migrate (`gpt-migrate`)](gpt-migrate-67dac276db.md) -- published+backing
-- [GPT Pilot (`gpt-pilot`)](gpt-pilot-ff78db22bb.md) -- published+backing
-- [gpt-rag-orchestrator (`gpt-rag-orchestrator`)](gpt-rag-orchestrator-bea0ae151b.md) -- backing-only
-- [GPTeam (`gpteam`)](gpteam-21881c74d7.md) -- backing-only
-- [gptme (`gptme`)](gptme-530e41180a.md) -- published+backing
-- [Graft (`graft`)](graft-4e762e9903.md) -- backing-only
-- [GrapeRoot (`graperoot`)](graperoot-c90edbe12b.md) -- backing-only
-- [GraphCode (`graphcode`)](graphcode-8f19c93e35.md) -- published-only
-- [Graphql-Cli (`graphql-cli`)](graphql-cli-84931d0e4c.md) -- backing-only
-- [Graphql-Playground (`graphql-playground`)](graphql-playground-507c3c20e2.md) -- backing-only
-- [great_cto (`great-cto`)](great-cto-a3b043465b.md) -- published+backing
+- [GitIngest (`gitingest`)](gitingest-db03db8a27.md) -- backing+pages
+- [gitlab-copilot-coding-agent (`gitlab-copilot-coding-agent`)](gitlab-copilot-coding-agent-18f4e1cc47.md) -- backing+pages
+- [GitLab Duo (`gitlab-duo`)](gitlab-duo-9184d9a4ee.md) -- published+backing+pages
+- [GLM-5 (`glm-5`)](glm-5-343fb7bd0d.md) -- backing+pages
+- [GLM Coding Plan (`glm-coding-plan`)](glm-coding-plan-83332da5a2.md) -- backing+pages
+- [GoCodeo (`gocodeo`)](gocodeo-4cc659696f.md) -- published+backing+pages
+- [golutra (`golutra`)](golutra-b364c2bcc9.md) -- published+backing+pages
+- [Google AI Studio Build (`google-ai-studio-build`)](google-ai-studio-build-20a348204f.md) -- published+backing+pages
+- [Goose (`goose`)](goose-c2d37dd057.md) -- published+backing+pages
+- [Gossip (`gossip`)](gossip-dd73a2f7c7.md) -- pages-only
+- [gpt-all-star (`gpt-all-star`)](gpt-all-star-bb65f2277a.md) -- published+backing+pages
+- [Gpt-Code-Assistant (`gpt-code-assistant`)](gpt-code-assistant-ba95b46eeb.md) -- backing+pages
+- [gpt-coder (`gpt-coder`)](gpt-coder-7400aa4555.md) -- published+backing+pages
+- [GPT Engineer (`gpt-engineer`)](gpt-engineer-b4f13b78fd.md) -- published+backing+pages
+- [GPT Migrate (`gpt-migrate`)](gpt-migrate-67dac276db.md) -- published+backing+pages
+- [GPT Pilot (`gpt-pilot`)](gpt-pilot-ff78db22bb.md) -- published+backing+pages
+- [gpt-rag-orchestrator (`gpt-rag-orchestrator`)](gpt-rag-orchestrator-bea0ae151b.md) -- backing+pages
+- [GPTeam (`gpteam`)](gpteam-21881c74d7.md) -- backing+pages
+- [gptme (`gptme`)](gptme-530e41180a.md) -- published+backing+pages
+- [Graft (`graft`)](graft-4e762e9903.md) -- backing+pages
+- [GrapeRoot (`graperoot`)](graperoot-c90edbe12b.md) -- backing+pages
+- [GraphCode (`graphcode`)](graphcode-8f19c93e35.md) -- published+pages
+- [Graphql-Cli (`graphql-cli`)](graphql-cli-84931d0e4c.md) -- backing+pages
+- [Graphql-Playground (`graphql-playground`)](graphql-playground-507c3c20e2.md) -- backing+pages
+- [great_cto (`great-cto`)](great-cto-a3b043465b.md) -- published+backing+pages
 - [Greptile (`greptile`)](greptile-b282d274eb.md) -- published+backing
 - [Grinta (`grinta`)](grinta-8df5e1ab5d.md) -- published+backing
 - [Grok Build (`grok-build`)](grok-build-145a4e5cb6.md) -- published+backing
@@ -332,4 +333,3 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [herm (`herm`)](herm-26bbd553cc.md) -- published+backing
 - [Hex (`hex`)](hex-128df13c1e.md) -- published-only
 - [hey (`hey`)](hey-fa690b8206.md) -- backing-only
-- [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing-only

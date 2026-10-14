@@ -121,6 +121,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [satomic/gitlab-copilot-coding-agent](../repos/satomic/gitlab-copilot-coding-agent.md) -- status=distilled, freshness=current
 - [scaleapi/swe-interact](../repos/scaleapi/swe-interact.md) -- status=distilled, freshness=current
 - [scarmonit/antigravity-jules-orchestration](../repos/scarmonit/antigravity-jules-orchestration.md) -- status=distilled, freshness=current
+- [scgopi/graphcode](../repos/scgopi/graphcode.md) -- status=discovered, freshness=pending
 - [seahyinghang8/blinky](../repos/seahyinghang8/blinky.md) -- status=distilled, freshness=current
 - [sean35mm/weaver](../repos/sean35mm/weaver.md) -- status=distilled, freshness=current
 - [seandavi/agentic-coding-intro](../repos/seandavi/agentic-coding-intro.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) -- status=distilled, freshness=current
 - [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) -- status=distilled, freshness=current
 - [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) -- status=distilled, freshness=current
-- [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) -- status=distilled, freshness=current

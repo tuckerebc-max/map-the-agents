@@ -1,9 +1,9 @@
 # codealta/codealta
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 823f847297aa @ 00285a1be4caf16b
+Latest snapshot: commit 502a4c17ba9c @ 2418a6dc6472aa6a
 
 ## Summary (orientation draft, not independently verified)
 

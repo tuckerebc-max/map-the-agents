@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [lidangzzz/ai-coding-style-guides](../repos/lidangzzz/ai-coding-style-guides.md) [coverage: complete]
-- [lidge-jun/ima2-gen](../repos/lidge-jun/ima2-gen.md) [coverage: partial]
-- [lidge-jun/opencodex](../repos/lidge-jun/opencodex.md) [coverage: partial]
-- [limecloud/lime](../repos/limecloud/lime.md) [coverage: partial]
 - [linghungegeg/linghun](../repos/linghungegeg/linghun.md) [coverage: partial]
 - [littlebearapps/untether](../repos/littlebearapps/untether.md) [coverage: partial]
 - [liu-hy/genomas](../repos/liu-hy/genomas.md) [coverage: complete]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [xmudeeplit/legalgraphrag](../repos/xmudeeplit/legalgraphrag.md) [coverage: complete]
 - [yanhua1010/build-your-own-coding-agent](../repos/yanhua1010/build-your-own-coding-agent.md) [coverage: complete]
 - [yaoapp/yao](../repos/yaoapp/yao.md) [coverage: complete]
+- [yasasbanukaofficial/claude-code](../repos/yasasbanukaofficial/claude-code.md) [coverage: complete]
+- [yashdev9274/supercli](../repos/yashdev9274/supercli.md) [coverage: partial]
+- [yc-software/qm](../repos/yc-software/qm.md) [coverage: partial]
+- [yeachan-heo/oh-my-claudecode](../repos/yeachan-heo/oh-my-claudecode.md) [coverage: partial]
