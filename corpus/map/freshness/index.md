@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (894)
+## current (891)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -110,9 +110,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) [coverage: complete]
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) [coverage: complete]
 - [codeany-ai/codeany](../repos/codeany-ai/codeany.md) [coverage: complete]
-- [codebuffai/freebuff](../repos/codebuffai/freebuff.md) [coverage: partial]
-- [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) [coverage: partial]
-- [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) [coverage: partial]
 - [codefuse-ai/codefuse-chatbot](../repos/codefuse-ai/codefuse-chatbot.md) [coverage: partial]
 - [codefuse-ai/codefuse-muagent](../repos/codefuse-ai/codefuse-muagent.md) [coverage: partial]
 - [codehamr/codehamr](../repos/codehamr/codehamr.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [lidge-jun/ima2-gen](../repos/lidge-jun/ima2-gen.md) [coverage: partial]
 - [lidge-jun/opencodex](../repos/lidge-jun/opencodex.md) [coverage: partial]
 - [limecloud/lime](../repos/limecloud/lime.md) [coverage: partial]
+- [linghungegeg/linghun](../repos/linghungegeg/linghun.md) [coverage: partial]
+- [littlebearapps/untether](../repos/littlebearapps/untether.md) [coverage: partial]
+- [liu-hy/genomas](../repos/liu-hy/genomas.md) [coverage: complete]

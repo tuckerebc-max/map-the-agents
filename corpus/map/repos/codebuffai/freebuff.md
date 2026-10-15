@@ -1,10 +1,10 @@
 # codebuffai/freebuff
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: codebuffai/codebuff (github id 826515105).
-Latest snapshot: commit 654a906e6758 @ eb011fd48855153f
+Latest snapshot: commit 74ae5be1f812 @ 5b3e476f6d3ec5ad
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: ITSpecialist111
@@ -22,6 +22,8 @@ Repository map entry: [itspecialist111/hass-ai-orchestrator](../../repos/itspeci
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-HASS-AI-Orchestrator brings LLM reasoning to Home Assistant without giving the model unsupervised control. An agent observes entity states, areas, and device metadata, then proposes changes as recorde
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Policy-aware control plane for the home combining LLM reasoning with deterministic safety controls: Model proposes, Code validates, Humans remain in control, Home Assistant executes. Dry-run-by-default, schema validation, plan interception/approval, atomic checkpointed replay, audit trails, sandboxed generated dashboards, episodic memory (RAG via ChromaDB).
+
+(captured site page body (agents/hass-ai-orchestrator.md), not a verified repo-code finding)
+HASS-AI-Orchestrator brings LLM reasoning to Home Assistant without giving the model unsupervised control. An agent observes entity states, areas, and device metadata, then proposes changes as recorded intents with risk summaries; a deterministic kernel validates each proposal against tool schemas, domain allowlists, and blocked domains (such as shell_command), and a human approves before checkpointed, replayable execution — the model never holds authority over what actually runs. Three reasoning profiles (Rapid, Balanced, Deep) trade iteration depth against latency on a single local or cloud model, and proactive triggers fire on schedules or state changes with cooldowns. Memory combines ChromaDB-backed entity knowledge and past episodes with RAG over manuals, and a React dashboard handles audits, approvals, and generated dashboards in a sandboxed studio. It targets Home Assistant users who want agentic automation under explicit human policy control.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/hass-ai-orchestrator.md)

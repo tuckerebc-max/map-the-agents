@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [linghungegeg/linghun](../repos/linghungegeg/linghun.md) [coverage: partial]
-- [littlebearapps/untether](../repos/littlebearapps/untether.md) [coverage: partial]
-- [liu-hy/genomas](../repos/liu-hy/genomas.md) [coverage: complete]
 - [liumengxuan04/minicode](../repos/liumengxuan04/minicode.md) [coverage: partial]
 - [lnxpy/hey](../repos/lnxpy/hey.md) [coverage: complete]
 - [lnyo-cly/ai4j](../repos/lnyo-cly/ai4j.md) [coverage: partial]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [yashdev9274/supercli](../repos/yashdev9274/supercli.md) [coverage: partial]
 - [yc-software/qm](../repos/yc-software/qm.md) [coverage: partial]
 - [yeachan-heo/oh-my-claudecode](../repos/yeachan-heo/oh-my-claudecode.md) [coverage: partial]
+- [yeoman/yeoman](../repos/yeoman/yeoman.md) [coverage: complete]
+- [yerbapage/swe-debate](../repos/yerbapage/swe-debate.md) [coverage: complete]
+- [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) [coverage: partial]

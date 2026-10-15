@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: robzilla1738
@@ -22,6 +22,8 @@ Repository map entry: [robzilla1738/harness-terminal](../../repos/robzilla1738/h
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-harness-terminal is a macOS terminal emulator designed around the reality that its users spend their day inside coding agents. A process-tree detector identifies which agent (Claude Code, Codex, Curso
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Native macOS terminal with GPU rendering, persistent daemon-owned sessions (survive app quit), CLI automation (harness-cli), remote/headless daemon support, and agent detection — monitors coding agents (Claude Code, Codex, Cursor, etc.) and notifies you when an agent stops or needs approval.
+
+(captured site page body (agents/harness-terminal.md), not a verified repo-code finding)
+harness-terminal is a macOS terminal emulator designed around the reality that its users spend their day inside coding agents. A process-tree detector identifies which agent (Claude Code, Codex, Cursor, Grok, Gemini, Aider, Goose, OpenCode, and others) is running in each session and surfaces that in the UI, with desktop notifications and a sidebell when an agent finishes or awaits permission; agents can also self-notify through harness-cli notify. Beneath the agent features sits a full terminal: Metal-based GPU rendering, 490 themes, ligatures, inline images, shell integration, and a command palette. Sessions are owned by a daemon, so tabs, splits, and scrollback survive app quits and even daemon restarts, and the same daemon runs headless on Linux for remote workflows. A harness-cli exposes send-keys, capture-pane, and attachment commands for scripting, with tmux-parity behavior across four experience modes.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/harness-terminal.md)

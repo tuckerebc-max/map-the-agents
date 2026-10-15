@@ -1,9 +1,9 @@
 # codeflash-ai/codeflash
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a3a38efc9ec3 @ 8a82ef72f57e7431
+Latest snapshot: commit a3a38efc9ec3 @ e455e5a3fd8fa2c1
 
 ## Summary (orientation draft, not independently verified)
 

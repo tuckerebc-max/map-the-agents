@@ -218,9 +218,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [codealta/codealta](../repos/codealta/codealta.md) -- status=distilled, freshness=stale
 - [codeany-ai/codeany](../repos/codeany-ai/codeany.md) -- status=distilled, freshness=current
 - [codebuffai/codebuff](../repos/codebuffai/codebuff.md) -- status=blocked, freshness=refresh-failed
-- [codebuffai/freebuff](../repos/codebuffai/freebuff.md) -- status=distilled, freshness=current
-- [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) -- status=distilled, freshness=current
-- [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) -- status=distilled, freshness=current
+- [codebuffai/freebuff](../repos/codebuffai/freebuff.md) -- status=distilled, freshness=stale
+- [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) -- status=distilled, freshness=stale
+- [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) -- status=distilled, freshness=stale
 - [codefuse-ai/codefuse-chatbot](../repos/codefuse-ai/codefuse-chatbot.md) -- status=distilled, freshness=current
 - [codefuse-ai/codefuse-muagent](../repos/codefuse-ai/codefuse-muagent.md) -- status=distilled, freshness=current
 - [codehamr/codehamr](../repos/codehamr/codehamr.md) -- status=distilled, freshness=current

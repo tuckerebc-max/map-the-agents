@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [yeoman/yeoman](../repos/yeoman/yeoman.md) [coverage: complete]
-- [yerbapage/swe-debate](../repos/yerbapage/swe-debate.md) [coverage: complete]
-- [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) [coverage: partial]
 - [youssefvdel/qwengate](../repos/youssefvdel/qwengate.md) [coverage: partial]
 - [youwangd/sagecli](../repos/youwangd/sagecli.md) [coverage: partial]
 - [yuki-20/cornmcp](../repos/yuki-20/cornmcp.md) [coverage: complete]
@@ -48,7 +45,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (94)
+## stale (97)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +141,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) [coverage: partial]
 - [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md) [coverage: partial]
 - [codealta/codealta](../repos/codealta/codealta.md) [coverage: partial]
+- [codebuffai/freebuff](../repos/codebuffai/freebuff.md) [coverage: partial]
+- [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) [coverage: partial]
+- [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) [coverage: partial]
 
 ## refresh-failed (64)
 

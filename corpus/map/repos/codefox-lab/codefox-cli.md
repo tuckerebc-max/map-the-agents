@@ -1,9 +1,9 @@
 # codefox-lab/codefox-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 7b5f855fb6b5 @ 33c5a99fd2de433d
+Latest snapshot: commit 7b5f855fb6b5 @ 013e7456b1500a13
 
 ## Summary (orientation draft, not independently verified)
 

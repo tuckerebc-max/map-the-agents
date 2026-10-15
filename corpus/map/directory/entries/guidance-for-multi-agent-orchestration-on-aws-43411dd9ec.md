@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: aws-solutions-library-samples
@@ -22,6 +22,8 @@ Repository map entry: [aws-solutions-library-samples/guidance-for-multi-agent-or
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository is an AWS Solutions Library guidance deployment demonstrating Amazon Bedrock's multi-agent collaboration feature in a customer-support scenario. A supervisor agent coordinates five spe
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Reference implementation for multi-agent collaboration on Amazon Bedrock using a Supervisor Agent as central orchestrator routing queries to specialized sub-agents (Order Management, Product Recommendation, Troubleshooting, Personalization), each with its own knowledge base and action groups (text-2-SQL via Athena, vector search on S3).
+
+(captured site page body (agents/guidance-for-multi-agent-orchestration-on-aws.md), not a verified repo-code finding)
+This repository is an AWS Solutions Library guidance deployment demonstrating Amazon Bedrock's multi-agent collaboration feature in a customer-support scenario. A supervisor agent coordinates five specialized sub-agents — order management via text-to-SQL over Athena, product recommendation, troubleshooting through a knowledge base, and personalization — behind a React web app served from S3/CloudFront with Cognito authentication and a WebSocket API on API Gateway. The CDK project provisions the full stack and documents the cost profile, roughly $606–761 per month at 100,000 requests driven mostly by Bedrock Knowledge Bases. Its purpose is architectural demonstration for teams building Bedrock-based agent systems in retail support contexts, not software development, and it remains available as a maintained sample.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/guidance-for-multi-agent-orchestration-on-aws.md)

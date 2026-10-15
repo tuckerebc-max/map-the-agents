@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-x.ai is the developer-facing home for xAI's Grok models, offering a single API across text, code, voice, image, and video modalities with OpenAI SDK compatibility for migration. The service runs on th
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Single unified API for all modalities (text, code, voice, images, video); trained on Colossus (150K GPUs); \<200ms median latency; OpenAI SDK compatibility for easy migration; available via Amazon Bedrock and GitHub Copilot.
+
+(captured site page body (agents/grok-build-xai.md), not a verified repo-code finding)
+x.ai is the developer-facing home for xAI's Grok models, offering a single API across text, code, voice, image, and video modalities with OpenAI SDK compatibility for migration. The service runs on the Colossus training cluster and advertises sub-200ms median API latency, usage-based self-serve access, and enterprise plans with custom rate limits, SSO, and data residency. The coding agent product, Grok Build, is listed separately on the site and tracked as its own census entry; this page functions as the model gateway and documentation entry point behind it. Developers reach it through console.x.ai for API keys and docs.x.ai for integration guides.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/grok-build-xai.md)

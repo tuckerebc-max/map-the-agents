@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: OpenSource03
@@ -22,6 +22,8 @@ Repository map entry: [opensource03/harnss](../../repos/opensource03/harnss.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-harnss is a desktop application for running several AI coding agents side by side without losing context between them. It embeds Claude Code through the Anthropic Agent SDK, Codex through its JSON-RPC
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Unified desktop interface for multiple AI coding agents built on the Agent Client Protocol (ACP), enabling simultaneous side-by-side agent sessions without context loss. Rich tool visualization transforms raw JSON into interactive cards with word-level diffs; all-in-one workspace with terminal, browser, git, MCP, and file panels scoped per project.
+
+(captured site page body (agents/harnss.md), not a verified repo-code finding)
+harnss is a desktop application for running several AI coding agents side by side without losing context between them. It embeds Claude Code through the Anthropic Agent SDK, Codex through its JSON-RPC app-server, and any Agent Client Protocol-compatible agent such as Gemini CLI, Goose, or Docker cagent, keeping each session's state independent while allowing instant switching. The interface renders tool calls in detail — word-level diffs, syntax-highlighted code, inline command output, nested subagent trees — and layers on MCP server management per project, git operations with AI-generated commit messages, built-in terminal tabs, and a browser panel. Permission handling offers three levels from ask-first to full autonomy, with plan mode and background task agents for longer work. The project is early-stage and open about a pending rewrite, distributing unsigned binaries for macOS, Windows, and Linux.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/harnss.md)

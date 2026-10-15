@@ -299,31 +299,31 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [Graphql-Cli (`graphql-cli`)](graphql-cli-84931d0e4c.md) -- backing+pages
 - [Graphql-Playground (`graphql-playground`)](graphql-playground-507c3c20e2.md) -- backing+pages
 - [great_cto (`great-cto`)](great-cto-a3b043465b.md) -- published+backing+pages
-- [Greptile (`greptile`)](greptile-b282d274eb.md) -- published+backing
-- [Grinta (`grinta`)](grinta-8df5e1ab5d.md) -- published+backing
-- [Grok Build (`grok-build`)](grok-build-145a4e5cb6.md) -- published+backing
-- [Grok Build (xAI) (`grok-build-xai`)](grok-build-xai-f8b0d2e3af.md) -- backing-only
-- [Grok CLI (`grok-cli`)](grok-cli-91890f641d.md) -- published+backing
-- [Grok Studio (`grok-studio`)](grok-studio-d3dcd09d16.md) -- backing-only
-- [Groq (`groq`)](groq-0b79cf2de0.md) -- backing-only
-- [Groq Code CLI (`groq-code-cli`)](groq-code-cli-c769723b54.md) -- published+backing
-- [groundhog (`groundhog`)](groundhog-3b6435145e.md) -- backing-only
-- [guidance-for-multi-agent-orchestration-on-aws (`guidance-for-multi-agent-orchestration-on-aws`)](guidance-for-multi-agent-orchestration-on-aws-43411dd9ec.md) -- backing-only
-- [Guidewire AI Agent (`guidewire-ai-agent`)](guidewire-ai-agent-ae95f318d0.md) -- published+backing
-- [gwq (`gwq`)](gwq-28b19240f9.md) -- backing-only
-- [h5i (`h5i`)](h5i-6d993d4705.md) -- backing-only
-- [hal-9000 (`hal-9000`)](hal-9000-be0b72f095.md) -- backing-only
-- [HALO (`halo`)](halo-a4e63bcacf.md) -- backing-only
-- [handoff (`handoff`)](handoff-249215fed8.md) -- published+backing
-- [hapi (`hapi`)](hapi-0a98f7946d.md) -- published+backing
-- [harness-engineering-from-cc-to-ai-coding (`harness-engineering-from-cc-to-ai-coding`)](harness-engineering-from-cc-to-ai-coding-5982fd9cf5.md) -- backing-only
-- [Harness Starter Kit (`harness-starter-kit`)](harness-starter-kit-4c9cb1307d.md) -- backing-only
-- [harness-terminal (`harness-terminal`)](harness-terminal-5c5713b79c.md) -- published+backing
-- [HarnessRouter (`harnessrouter`)](harnessrouter-f947b974b8.md) -- published+backing
-- [harnss (`harnss`)](harnss-0ca4aaf355.md) -- published+backing
-- [HashAgent (`hashagent`)](hashagent-ae64cb3251.md) -- backing-only
-- [HASS-AI-Orchestrator (`hass-ai-orchestrator`)](hass-ai-orchestrator-52afdfa78e.md) -- backing-only
-- [hax (`hax`)](hax-e6ffaf87ee.md) -- published+backing
+- [Greptile (`greptile`)](greptile-b282d274eb.md) -- published+backing+pages
+- [Grinta (`grinta`)](grinta-8df5e1ab5d.md) -- published+backing+pages
+- [Grok Build (`grok-build`)](grok-build-145a4e5cb6.md) -- published+backing+pages
+- [Grok Build (xAI) (`grok-build-xai`)](grok-build-xai-f8b0d2e3af.md) -- backing+pages
+- [Grok CLI (`grok-cli`)](grok-cli-91890f641d.md) -- published+backing+pages
+- [Grok Studio (`grok-studio`)](grok-studio-d3dcd09d16.md) -- backing+pages
+- [Groq (`groq`)](groq-0b79cf2de0.md) -- backing+pages
+- [Groq Code CLI (`groq-code-cli`)](groq-code-cli-c769723b54.md) -- published+backing+pages
+- [groundhog (`groundhog`)](groundhog-3b6435145e.md) -- backing+pages
+- [guidance-for-multi-agent-orchestration-on-aws (`guidance-for-multi-agent-orchestration-on-aws`)](guidance-for-multi-agent-orchestration-on-aws-43411dd9ec.md) -- backing+pages
+- [Guidewire AI Agent (`guidewire-ai-agent`)](guidewire-ai-agent-ae95f318d0.md) -- published+backing+pages
+- [gwq (`gwq`)](gwq-28b19240f9.md) -- backing+pages
+- [h5i (`h5i`)](h5i-6d993d4705.md) -- backing+pages
+- [hal-9000 (`hal-9000`)](hal-9000-be0b72f095.md) -- backing+pages
+- [HALO (`halo`)](halo-a4e63bcacf.md) -- backing+pages
+- [handoff (`handoff`)](handoff-249215fed8.md) -- published+backing+pages
+- [hapi (`hapi`)](hapi-0a98f7946d.md) -- published+backing+pages
+- [harness-engineering-from-cc-to-ai-coding (`harness-engineering-from-cc-to-ai-coding`)](harness-engineering-from-cc-to-ai-coding-5982fd9cf5.md) -- backing+pages
+- [Harness Starter Kit (`harness-starter-kit`)](harness-starter-kit-4c9cb1307d.md) -- backing+pages
+- [harness-terminal (`harness-terminal`)](harness-terminal-5c5713b79c.md) -- published+backing+pages
+- [HarnessRouter (`harnessrouter`)](harnessrouter-f947b974b8.md) -- published+backing+pages
+- [harnss (`harnss`)](harnss-0ca4aaf355.md) -- published+backing+pages
+- [HashAgent (`hashagent`)](hashagent-ae64cb3251.md) -- backing+pages
+- [HASS-AI-Orchestrator (`hass-ai-orchestrator`)](hass-ai-orchestrator-52afdfa78e.md) -- backing+pages
+- [hax (`hax`)](hax-e6ffaf87ee.md) -- published+backing+pages
 - [hcf (`hcf`)](hcf-08d914300f.md) -- backing-only
 - [hcom (`hcom`)](hcom-7e11a79610.md) -- published+backing
 - [HCS (Hashgraph Consensus Service) (`hcs-hashgraph-consensus-service`)](hcs-hashgraph-consensus-service-5c49f37849.md) -- backing-only

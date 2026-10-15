@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: harnessworks
@@ -22,6 +22,8 @@ Repository map entry: [harnessworks/harness-starter-kit](../../repos/harnesswork
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-harness-starter-kit applies the idea that a repository itself can be engineered to make coding agents fail less often. Rather than shipping a tool, it provides a structured kit — instructions, constra
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Prompt-first starter kit that reframes the problem from 'prompt engineering the agent' to 'engineering the repository'; converts recurring agent failures into durable artifacts (instruction, constraint, check, memory record, drift check) for a continuous improvement loop grounded in repository evidence; separates failure types (functional, schema, workflow, boundary, timeout, hidden-access) instead of reducing to pass/fail; ships runtime-native skills for Codex and Claude ...
+
+(captured site page body (agents/harness-starter-kit.md), not a verified repo-code finding)
+harness-starter-kit applies the idea that a repository itself can be engineered to make coding agents fail less often. Rather than shipping a tool, it provides a structured kit — instructions, constraints, feedback loops, memory files, evaluation tasks, and governance documents — plus router prompts (/harness doctor, adopt, review, update, refresh) that a developer pastes into their existing agent, or installs as a Claude Code or Codex plugin for convenience. The kit's core loop converts each recurring agent failure into a durable artifact: an instruction, an automated check, a failure record, a memory entry, or a benchmark task, with a taxonomy separating functional, schema, workflow, boundary, timeout, and hidden-access failures. It takes an explicit measurement stance that harness health and agent effectiveness are separate metrics and ships templates for both. Teams adopting it range from solo developers to platform groups standardizing how agents interact with their repos.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/harness-starter-kit.md)
