@@ -251,7 +251,6 @@
 - [groq-code-cli](../entries/groq-code-cli-c769723b54.md)
 - [guidewire-ai-agent](../entries/guidewire-ai-agent-ae95f318d0.md)
 - [hax](../entries/hax-e6ffaf87ee.md)
-- [hcf](../entries/hcf-08d914300f.md)
 - [helixent](../entries/helixent-cbd02b8e8b.md)
 - [herm](../entries/herm-26bbd553cc.md)
 - [hex](../entries/hex-128df13c1e.md)

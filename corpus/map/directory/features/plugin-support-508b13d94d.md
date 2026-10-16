@@ -86,6 +86,7 @@
 - [graphql-cli](../entries/graphql-cli-84931d0e4c.md)
 - [h5i](../entries/h5i-6d993d4705.md)
 - [helixent](../entries/helixent-cbd02b8e8b.md)
+- [hex](../entries/hex-128df13c1e.md)
 - [hindsight](../entries/hindsight-aa47562598.md)
 - [holyclaude](../entries/holyclaude-945841ef57.md)
 - [huicai-ai](../entries/huicai-ai-e240395c3a.md)

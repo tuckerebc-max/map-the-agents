@@ -85,6 +85,7 @@
 - [gptme](../entries/gptme-530e41180a.md)
 - [greptile](../entries/greptile-b282d274eb.md)
 - [halo](../entries/halo-a4e63bcacf.md)
+- [hex](../entries/hex-128df13c1e.md)
 - [iflow-cli](../entries/iflow-cli-cdae2ef3fc.md)
 - [inkos](../entries/inkos-e335e3bab9.md)
 - [ix](../entries/ix-ed171375d0.md)

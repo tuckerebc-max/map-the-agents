@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ChenBo
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-HuiCai AI's JetBrains edition exists so users of the HuiCai assistant get the same agent core across VSCode, CLI, and IDE without separate accounts or behavior. The plugin embeds a chat tool window ba
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): JetBrains edition of the HuiCai AI assistant with agent core
+
+(captured site page body (agents/huicai-ai.md), not a verified repo-code finding)
+HuiCai AI's JetBrains edition exists so users of the HuiCai assistant get the same agent core across VSCode, CLI, and IDE without separate accounts or behavior. The plugin embeds a chat tool window backed by a local Node.js process: file edits pass through inline diff review inside the editor, commands run on the local machine, and sub-agents can be dispatched in hybrid mode combining platform orchestration with local tools. Streaming replies show reasoning traces, tool-call progress, and task lists, and document uploads (PDF, Word, Excel, PPT) are parsed server-side into context. It targets Chinese-speaking teams that want one agent core synced with a platform knowledge base and business digital-human workflows.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/huicai-ai.md)

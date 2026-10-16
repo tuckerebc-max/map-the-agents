@@ -324,12 +324,12 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [HashAgent (`hashagent`)](hashagent-ae64cb3251.md) -- backing+pages
 - [HASS-AI-Orchestrator (`hass-ai-orchestrator`)](hass-ai-orchestrator-52afdfa78e.md) -- backing+pages
 - [hax (`hax`)](hax-e6ffaf87ee.md) -- published+backing+pages
-- [hcf (`hcf`)](hcf-08d914300f.md) -- backing-only
-- [hcom (`hcom`)](hcom-7e11a79610.md) -- published+backing
-- [HCS (Hashgraph Consensus Service) (`hcs-hashgraph-consensus-service`)](hcs-hashgraph-consensus-service-5c49f37849.md) -- backing-only
-- [helixent (`helixent`)](helixent-cbd02b8e8b.md) -- published+backing
-- [herdr (`herdr`)](herdr-78193ef266.md) -- published+backing
-- [herdrm (`herdrm`)](herdrm-767da0e0d5.md) -- published+backing
-- [herm (`herm`)](herm-26bbd553cc.md) -- published+backing
-- [Hex (`hex`)](hex-128df13c1e.md) -- published-only
-- [hey (`hey`)](hey-fa690b8206.md) -- backing-only
+- [hcf (`hcf`)](hcf-08d914300f.md) -- backing+pages
+- [hcom (`hcom`)](hcom-7e11a79610.md) -- published+backing+pages
+- [HCS (Hashgraph Consensus Service) (`hcs-hashgraph-consensus-service`)](hcs-hashgraph-consensus-service-5c49f37849.md) -- backing+pages
+- [helixent (`helixent`)](helixent-cbd02b8e8b.md) -- published+backing+pages
+- [herdr (`herdr`)](herdr-78193ef266.md) -- published+backing+pages
+- [herdrm (`herdrm`)](herdrm-767da0e0d5.md) -- published+backing+pages
+- [herm (`herm`)](herm-26bbd553cc.md) -- published+backing+pages
+- [Hex (`hex`)](hex-128df13c1e.md) -- published+pages
+- [hey (`hey`)](hey-fa690b8206.md) -- backing+pages

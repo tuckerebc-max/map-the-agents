@@ -1,9 +1,9 @@
 # codefuse-ai/codefuse-muagent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ebc8c3fbc886 @ f5bf97e1930924d2
+Latest snapshot: commit ebc8c3fbc886 @ 47f001b54c1f5bab
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: aduermael
@@ -22,6 +22,8 @@ Repository map entry: [aduermael/herm](../../repos/aduermael/herm.md) (source: b
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-herm is a coding agent built around the idea that isolation removes the need for constant permission prompts. The CLI runs on the host, but the agent's file edits and shell commands execute inside a D
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Model-agnostic, general-purpose AI coding agent that runs in containers by default; terminal-native, supports multiple isolation methods (Docker containers, in-process Unix-like sandboxes, host sandboxes like sandbox_exec/bubblewrap). Self-building dev environments scoped per project.
+
+(captured site page body (agents/herm.md), not a verified repo-code finding)
+herm is a coding agent built around the idea that isolation removes the need for constant permission prompts. The CLI runs on the host, but the agent's file edits and shell commands execute inside a Docker container scoped to the current working directory, with alternative isolation backends (in-process sandboxes, macOS sandbox-exec, Linux bubblewrap) for environments without Docker. When a project needs tooling that is not installed, herm writes a per-project Dockerfile itself and rebuilds the environment, so setup happens inside the agent loop rather than as a manual prerequisite. Models are provider-agnostic and can be mixed per role — one model for main coding, a cheaper one for exploration, another for vision — across Anthropic, OpenAI, Gemini, Grok, OpenRouter, and cloud endpoints. System prompts, skills, and tool implementations are all public in the repository, and a native iOS/macOS companion app with an on-device sandbox is in development.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/herm.md)

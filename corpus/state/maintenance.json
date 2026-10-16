@@ -1,5 +1,5 @@
 {
-  "cursor": "codefox-lab/codefox-cli",
+  "cursor": "coder/mux",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -925,196 +925,44 @@
       "failures": 0,
       "last_at": "2026-10-15T14:09:39+00:00",
       "last_outcome": "snapshotted"
+    },
+    "codefuse-ai/codefuse-chatbot": {
+      "failures": 0,
+      "last_at": "2026-10-16T13:56:36+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "codefuse-ai/codefuse-muagent": {
+      "failures": 0,
+      "last_at": "2026-10-16T13:56:39+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "codehamr/codehamr": {
+      "failures": 1,
+      "last_at": "2026-10-16T13:56:39+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/codehamr/codehamr"
+      },
+      "last_outcome": "snapshot-failed"
+    },
+    "codeintegrity-ai/mutahunter": {
+      "failures": 0,
+      "last_at": "2026-10-16T13:56:40+00:00",
+      "last_outcome": "reused"
+    },
+    "coder/mux": {
+      "failures": 1,
+      "last_at": "2026-10-16T13:56:41+00:00",
+      "last_error": {
+        "code": 8,
+        "error": "FetchFailed",
+        "message": "redirect-refused http-301: https://api.github.com/repos/coder/mux"
+      },
+      "last_outcome": "snapshot-failed"
     }
   },
   "runs": [
-    {
-      "attempted": [
-        "arphanetx/monocle",
-        "arul28/ade",
-        "ascorbic/am-i-vibing",
-        "asheshgoplani/agent-deck",
-        "ashish200729/orbiteditor"
-      ],
-      "catalog": {
-        "backlog": 498,
-        "changed": true,
-        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
-        "processed": 50,
-        "slugs": [
-          "graft",
-          "graperoot",
-          "graphql-cli",
-          "graphql-playground",
-          "great-cto",
-          "grinta",
-          "grok-build",
-          "grok-cli",
-          "groq-code-cli",
-          "groundhog",
-          "guidance-for-multi-agent-orchestration-on-aws",
-          "gwq",
-          "h5i",
-          "hal-9000",
-          "halo",
-          "handoff",
-          "hapi",
-          "harness-engineering-from-cc-to-ai-coding",
-          "harness-starter-kit",
-          "harness-terminal",
-          "harnessrouter",
-          "harnss",
-          "hass-ai-orchestrator",
-          "hax",
-          "hcf",
-          "hcom",
-          "helixent",
-          "herdr",
-          "herdrm",
-          "herm",
-          "hey",
-          "hindsight",
-          "hitch",
-          "hive",
-          "hivelore",
-          "hivemoot",
-          "hmrag",
-          "hof",
-          "holyclaude",
-          "honeycomb",
-          "honeydew-ai-coding-agents-plugins",
-          "httpclientcodegenerator",
-          "humanlayer",
-          "hyperagent",
-          "hypernovum",
-          "ibm-bob-premium-package-for-java-modernization",
-          "icodes",
-          "ifai",
-          "ima2-gen",
-          "incredibledev"
-        ],
-        "version_changed": false
-      },
-      "failures": [],
-      "finished": "2026-09-26T13:44:34+00:00",
-      "kind": "maintain",
-      "lease_reclaimed": false,
-      "needs_distillation": [
-        "agentsmesh/agentsmesh",
-        "agnusdei1207/opencode-orchestrator",
-        "ahacker-1/cre-acquisition-orchestrator",
-        "ai4finance-foundation/finrobot",
-        "aider-ai/aider",
-        "aizenvoltprime/damocles",
-        "akarachen/2code",
-        "akashgit/remote-factory",
-        "alanchen4/summer-2024-swe-internships",
-        "alchaincyf/fanbox",
-        "alex-reysa/singular-lite",
-        "alexgreensh/outsourcerer",
-        "alibaba/open-code-review",
-        "alihamzaazam/repomon",
-        "almanaccode/codealmanac",
-        "almogdepaz/wolfpack",
-        "amal-david/pagecast",
-        "amix/dunk",
-        "anaconda-labs/building-intelligent-apps-with-anaconda",
-        "andrefetch/postal",
-        "andrewyng/context-hub",
-        "andymik90/aperant",
-        "andyrewlee/amux",
-        "angleschina/angles-cli",
-        "aniket-508/vercel-doctor",
-        "anomalyco/opencode",
-        "anthropics/claude-agent-sdk-python",
-        "anthropics/claude-agent-sdk-typescript",
-        "anthropics/claude-code",
-        "antigmalabs/ante",
-        "antonosika/gpt-engineer",
-        "aozyildirim/agena",
-        "apvcode/termux-dev",
-        "arch1esun/arcgentic",
-        "arctic-cli/interface",
-        "arjia-labs/clu",
-        "arul28/ade",
-        "asheshgoplani/agent-deck",
-        "ashish200729/orbiteditor"
-      ],
-      "parked": [],
-      "snapshots": [
-        {
-          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
-          "explicit_paths": [],
-          "files_stored": 2,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "arphanetx/monocle",
-          "reused": true,
-          "snapshot_id": "82058386115fbb7c"
-        },
-        {
-          "commit": "6ed7c542ae45a64cce4383e86e0e26b776fb6da8",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 102,
-          "repo": "arul28/ade",
-          "reused": false,
-          "snapshot_id": "3aeae0a1ce58a285"
-        },
-        {
-          "commit": "39a2d1383d337a0d79c75bb002c5ac559146e88d",
-          "explicit_paths": [],
-          "files_stored": 3,
-          "freshness": "current",
-          "omitted_count": 0,
-          "repo": "ascorbic/am-i-vibing",
-          "reused": true,
-          "snapshot_id": "317225db7798894d"
-        },
-        {
-          "commit": "8d3f9e234192adf9a9fb2031b6a19c922e105e4e",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 67,
-          "repo": "asheshgoplani/agent-deck",
-          "reused": false,
-          "snapshot_id": "336ba1fd696f3e80"
-        },
-        {
-          "commit": "6acd0c1e9ae08fc11f0ab7abacfb22c892a75b6c",
-          "explicit_paths": [],
-          "files_stored": 12,
-          "freshness": "stale",
-          "omitted_count": 12,
-          "repo": "ashish200729/orbiteditor",
-          "reused": false,
-          "snapshot_id": "ef3f9ed6bc9aabf6"
-        }
-      ],
-      "started": "2026-09-26T13:44:24+00:00",
-      "stopped": null,
-      "timing": {
-        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
-        "elapsed": 10.196,
-        "max_seconds": 420,
-        "stage_timeouts": {
-          "build": "local file work, bounded by corpus size, not by time",
-          "kernel_call_seconds": 300.0,
-          "kernel_calls": {
-            "apply": 1,
-            "prepare": 3
-          },
-          "model_seconds": 180.0,
-          "network_seconds": 120.0
-        },
-        "stages": {
-          "catalog": 0.657,
-          "snapshots": 9.481
-        }
-      }
-    },
     {
       "attempted": [
         "athasdev/athas",
@@ -4761,6 +4609,198 @@
         "stages": {
           "catalog": 0.909,
           "snapshots": 12.141
+        }
+      }
+    },
+    {
+      "attempted": [
+        "codefuse-ai/codefuse-chatbot",
+        "codefuse-ai/codefuse-muagent",
+        "codehamr/codehamr",
+        "codeintegrity-ai/mutahunter",
+        "coder/mux"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": false,
+        "commit": "61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0",
+        "processed": 0,
+        "slugs": [],
+        "version_changed": false
+      },
+      "failures": [
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/codehamr/codehamr",
+          "repo": "codehamr/codehamr",
+          "stage": "snapshot"
+        },
+        {
+          "code": 8,
+          "error": "FetchFailed",
+          "message": "redirect-refused http-301: https://api.github.com/repos/coder/mux",
+          "repo": "coder/mux",
+          "stage": "snapshot"
+        }
+      ],
+      "finished": "2026-10-16T13:56:41+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai4finance-foundation/finrobot",
+        "aider-ai/aider",
+        "aizenvoltprime/damocles",
+        "akarachen/2code",
+        "akashgit/remote-factory",
+        "alanchen4/summer-2024-swe-internships",
+        "alchaincyf/fanbox",
+        "alex-reysa/singular-lite",
+        "alexgreensh/outsourcerer",
+        "alibaba/open-code-review",
+        "alihamzaazam/repomon",
+        "almanaccode/codealmanac",
+        "almogdepaz/wolfpack",
+        "amal-david/pagecast",
+        "amix/dunk",
+        "anaconda-labs/building-intelligent-apps-with-anaconda",
+        "andrefetch/postal",
+        "andrewyng/context-hub",
+        "andymik90/aperant",
+        "andyrewlee/amux",
+        "angleschina/angles-cli",
+        "aniket-508/vercel-doctor",
+        "anomalyco/opencode",
+        "anthropics/claude-agent-sdk-python",
+        "anthropics/claude-agent-sdk-typescript",
+        "anthropics/claude-code",
+        "antigmalabs/ante",
+        "antonosika/gpt-engineer",
+        "aozyildirim/agena",
+        "apvcode/termux-dev",
+        "arch1esun/arcgentic",
+        "arctic-cli/interface",
+        "arjia-labs/clu",
+        "arul28/ade",
+        "asheshgoplani/agent-deck",
+        "ashish200729/orbiteditor",
+        "athasdev/athas",
+        "atmosphere/atmosphere",
+        "atomgit-atomcode/atomcode",
+        "atrayee-dev/secure-ai-agent-boundary",
+        "augmentcode/auggie",
+        "aurasgit/public-agent-framwork",
+        "autohandai/code-cli",
+        "automazeio/vibeproxy",
+        "autoresearch-factory/agon",
+        "avelikiy/great_cto",
+        "aws-samples/remote-swe-agents",
+        "aws-samples/sample-multi-agent-orchestration-chat-on-agentcore",
+        "aws/amazon-q-developer-cli",
+        "awslabs/cli-agent-orchestrator",
+        "axflow/axflow",
+        "azure/gpt-rag-orchestrator",
+        "backbay-labs/clawdstrike",
+        "bahdotsh/indxr",
+        "basilisk-labs/agentplane",
+        "bastani-inc/atomic",
+        "bbarit/bbarit-agent-oss",
+        "benbasha/claude-autopilot",
+        "bhouston/mycoder",
+        "big-pony/pocketshell",
+        "blaine/fantastty",
+        "bmad-code-org/bmad-method",
+        "boringcomputers/nehemiah",
+        "browser-use/video-use",
+        "builderz-labs/mission-control",
+        "burtson-labs/bandit-agent-framework",
+        "butttons/dora",
+        "bytedance/deer-flow",
+        "c0sogi/llmchat",
+        "cactus-compute/needle",
+        "can1357/oh-my-pi",
+        "caplet1989/brokies-ai-foundry",
+        "carloluisito/omnidesk",
+        "catatafishen/agentbridge",
+        "cfal/garcon",
+        "chaitin/monkeycode",
+        "chandra447/pi-hermes-memory",
+        "changkun/wallfacer",
+        "charmbracelet/crush",
+        "charmbracelet/fantasy",
+        "chaterm/chaterm",
+        "cherryhq/cherry-studio",
+        "choeng-rayu/rayu-cli",
+        "choiyounggi/cliclaw",
+        "civai-technologies/cursor-agent",
+        "clarisseio/python-agents",
+        "clawdotnet/sharpclawcode",
+        "clawplays/ospec",
+        "cline/cline",
+        "cloudflare/vibesdk",
+        "codeaholicguy/ai-devkit",
+        "codealta/codealta",
+        "codebuffai/freebuff",
+        "codeflash-ai/codeflash",
+        "codefox-lab/codefox-cli",
+        "codefuse-ai/codefuse-chatbot",
+        "codefuse-ai/codefuse-muagent"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "d6932ecfc855035fdcb25140b80e339e6137652c",
+          "explicit_paths": [],
+          "files_stored": 5,
+          "freshness": "stale",
+          "omitted_count": 0,
+          "repo": "codefuse-ai/codefuse-chatbot",
+          "reused": false,
+          "snapshot_id": "4fe338a46c361094"
+        },
+        {
+          "commit": "ebc8c3fbc886969befb6be18d4f85787de29b086",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 7,
+          "repo": "codefuse-ai/codefuse-muagent",
+          "reused": false,
+          "snapshot_id": "47f001b54c1f5bab"
+        },
+        {
+          "commit": "97221a1aedca8a8e92bf67843903af26cacab5b7",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "codeintegrity-ai/mutahunter",
+          "reused": true,
+          "snapshot_id": "71c01af5105f3c94"
+        }
+      ],
+      "started": "2026-10-16T13:56:34+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 7.147,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.78,
+          "snapshots": 6.299
         }
       }
     }

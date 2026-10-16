@@ -1,9 +1,9 @@
 # codefuse-ai/codefuse-chatbot
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d6932ecfc855 @ 47aa09f8683950cb
+Latest snapshot: commit d6932ecfc855 @ 4fe338a46c361094
 
 ## Summary (orientation draft, not independently verified)
 

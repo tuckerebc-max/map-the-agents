@@ -68,6 +68,7 @@
 - [gptme](../entries/gptme-530e41180a.md)
 - [graft](../entries/graft-4e762e9903.md)
 - [graperoot](../entries/graperoot-c90edbe12b.md)
+- [hex](../entries/hex-128df13c1e.md)
 - [hindsight](../entries/hindsight-aa47562598.md)
 - [holyclaude](../entries/holyclaude-945841ef57.md)
 - [iflow-cli](../entries/iflow-cli-cdae2ef3fc.md)

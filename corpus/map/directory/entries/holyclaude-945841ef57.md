@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: CoderLuii
@@ -22,6 +22,8 @@ Repository map entry: [coderluii/holyclaude](../../repos/coderluii/holyclaude.md
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-HolyClaude packages a full AI development environment into a single docker compose command. The container runs the genuine Claude Code CLI behind a browser-based web UI, alongside eight other AI CLIs,
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Containerized AI development workstation bundling Claude Code + 8 AI CLIs + headless browser (Chromium/Playwright) + 50+ dev tools, all pre-configured and ready via one \`docker compose up\` command.
+
+(captured site page body (agents/holyclaude.md), not a verified repo-code finding)
+HolyClaude packages a full AI development environment into a single docker compose command. The container runs the genuine Claude Code CLI behind a browser-based web UI, alongside eight other AI CLIs, a headless Chromium with Playwright for browser tasks, and roughly fifty preconfigured development tools, so an agent can edit code, run tests, and drive a browser without host setup. The project's value is in the operational details it has already solved: correct shared-memory sizing for Chromium, UID/GID mapping for volume permissions, SQLite locking on NAS mounts, and supervision via s6-overlay, plus Apprise notifications when agents finish. It uses the user's own Anthropic subscription or API keys directly rather than proxying them, ships multi-arch images with a slim variant, and targets self-hosting enthusiasts running on macOS, Linux, WSL2, and NAS hardware.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/holyclaude.md)

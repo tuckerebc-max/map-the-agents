@@ -1,9 +1,10 @@
 # codehamr/codehamr
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit 8ad8eae6cc57 @ 3adff9ea9eb023a4
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/codehamr/codehamr
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [youssefvdel/qwengate](../repos/youssefvdel/qwengate.md) [coverage: partial]
-- [youwangd/sagecli](../repos/youwangd/sagecli.md) [coverage: partial]
-- [yuki-20/cornmcp](../repos/yuki-20/cornmcp.md) [coverage: complete]
 - [yushui2022/easy-coding-agents](../repos/yushui2022/easy-coding-agents.md) [coverage: partial]
 - [yusifeng/formax](../repos/yusifeng/formax.md) [coverage: partial]
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) [coverage: complete]
@@ -45,7 +42,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (97)
+## stale (99)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,8 +141,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [codebuffai/freebuff](../repos/codebuffai/freebuff.md) [coverage: partial]
 - [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) [coverage: partial]
 - [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) [coverage: partial]
+- [codefuse-ai/codefuse-chatbot](../repos/codefuse-ai/codefuse-chatbot.md) [coverage: partial]
+- [codefuse-ai/codefuse-muagent](../repos/codefuse-ai/codefuse-muagent.md) [coverage: partial]
 
-## refresh-failed (64)
+## refresh-failed (65)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -162,6 +161,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [chaitanyagiri/munder-difflin](../repos/chaitanyagiri/munder-difflin.md) -- FetchFailed [coverage: partial]
 - [chernistry/bernstein](../repos/chernistry/bernstein.md) -- FetchFailed
 - [codebuffai/codebuff](../repos/codebuffai/codebuff.md) -- FetchFailed
+- [codehamr/codehamr](../repos/codehamr/codehamr.md) -- FetchFailed [coverage: complete]
 - [coder/mux](../repos/coder/mux.md) -- FetchFailed
 - [codium-ai/pr-agent](../repos/codium-ai/pr-agent.md) -- FetchFailed
 - [continous-ai/continous](../repos/continous-ai/continous.md) -- FetchFailed

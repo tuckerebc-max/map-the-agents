@@ -269,6 +269,7 @@
 - [harness-starter-kit](../entries/harness-starter-kit-4c9cb1307d.md)
 - [hashagent](../entries/hashagent-ae64cb3251.md)
 - [hass-ai-orchestrator](../entries/hass-ai-orchestrator-52afdfa78e.md)
+- [hcf](../entries/hcf-08d914300f.md)
 - [hcs-hashgraph-consensus-service](../entries/hcs-hashgraph-consensus-service-5c49f37849.md)
 - [hey](../entries/hey-fa690b8206.md)
 - [hindsight](../entries/hindsight-aa47562598.md)

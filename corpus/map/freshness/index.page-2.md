@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [liumengxuan04/minicode](../repos/liumengxuan04/minicode.md) [coverage: partial]
-- [lnxpy/hey](../repos/lnxpy/hey.md) [coverage: complete]
-- [lnyo-cly/ai4j](../repos/lnyo-cly/ai4j.md) [coverage: partial]
 - [locoremind/locooperator](../repos/locoremind/locooperator.md) [coverage: complete]
 - [locoremind/locotrainer](../repos/locoremind/locotrainer.md) [coverage: complete]
 - [loganthorneloe/ai-for-software-engineers](../repos/loganthorneloe/ai-for-software-engineers.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [yeoman/yeoman](../repos/yeoman/yeoman.md) [coverage: complete]
 - [yerbapage/swe-debate](../repos/yerbapage/swe-debate.md) [coverage: complete]
 - [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) [coverage: partial]
+- [youssefvdel/qwengate](../repos/youssefvdel/qwengate.md) [coverage: partial]
+- [youwangd/sagecli](../repos/youwangd/sagecli.md) [coverage: partial]
+- [yuki-20/cornmcp](../repos/yuki-20/cornmcp.md) [coverage: complete]

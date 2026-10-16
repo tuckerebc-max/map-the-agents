@@ -2,22 +2,22 @@
 
 Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
-- [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing-only
-- [hitch (`hitch`)](hitch-82e910cddf.md) -- backing-only
-- [hive (`hive`)](hive-7640da4029.md) -- published+backing
-- [Hivelore (`hivelore`)](hivelore-5e12913afc.md) -- backing-only
-- [Hivemoot (`hivemoot`)](hivemoot-9bdccd0c20.md) -- published+backing
-- [HMRAG (`hmrag`)](hmrag-4dbc5bbc01.md) -- backing-only
-- [hof (`hof`)](hof-639097e715.md) -- backing-only
-- [HolyClaude (`holyclaude`)](holyclaude-945841ef57.md) -- backing-only
-- [honeycomb (`honeycomb`)](honeycomb-dd0cf4ed95.md) -- backing-only
-- [honeydew-ai-coding-agents-plugins (`honeydew-ai-coding-agents-plugins`)](honeydew-ai-coding-agents-plugins-46996306ad.md) -- backing-only
-- [Hoplite (`hoplite`)](hoplite-4f28d75377.md) -- published+backing
-- [Hostinger Horizons (`hostinger-horizons`)](hostinger-horizons-f0f492f222.md) -- published+backing
-- [HttpClientCodeGenerator (`httpclientcodegenerator`)](httpclientcodegenerator-702192f3e2.md) -- backing-only
-- [Huawei CodeArts (`huawei-codearts`)](huawei-codearts-6ae6838880.md) -- published+backing
-- [HUD (`hud-mode`)](hud-mode-c617c02cb3.md) -- published+backing
-- [HuiCai AI (`huicai-ai`)](huicai-ai-e240395c3a.md) -- published+backing
+- [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing+pages
+- [hitch (`hitch`)](hitch-82e910cddf.md) -- backing+pages
+- [hive (`hive`)](hive-7640da4029.md) -- published+backing+pages
+- [Hivelore (`hivelore`)](hivelore-5e12913afc.md) -- backing+pages
+- [Hivemoot (`hivemoot`)](hivemoot-9bdccd0c20.md) -- published+backing+pages
+- [HMRAG (`hmrag`)](hmrag-4dbc5bbc01.md) -- backing+pages
+- [hof (`hof`)](hof-639097e715.md) -- backing+pages
+- [HolyClaude (`holyclaude`)](holyclaude-945841ef57.md) -- backing+pages
+- [honeycomb (`honeycomb`)](honeycomb-dd0cf4ed95.md) -- backing+pages
+- [honeydew-ai-coding-agents-plugins (`honeydew-ai-coding-agents-plugins`)](honeydew-ai-coding-agents-plugins-46996306ad.md) -- backing+pages
+- [Hoplite (`hoplite`)](hoplite-4f28d75377.md) -- published+backing+pages
+- [Hostinger Horizons (`hostinger-horizons`)](hostinger-horizons-f0f492f222.md) -- published+backing+pages
+- [HttpClientCodeGenerator (`httpclientcodegenerator`)](httpclientcodegenerator-702192f3e2.md) -- backing+pages
+- [Huawei CodeArts (`huawei-codearts`)](huawei-codearts-6ae6838880.md) -- published+backing+pages
+- [HUD (`hud-mode`)](hud-mode-c617c02cb3.md) -- published+backing+pages
+- [HuiCai AI (`huicai-ai`)](huicai-ai-e240395c3a.md) -- published+backing+pages
 - [humanlayer (`humanlayer`)](humanlayer-da58e43b1b.md) -- published+backing
 - [HuoHuaAI (`huohuaai`)](huohuaai-0f812d2deb.md) -- published+backing
 - [HyperAgent (`hyperagent`)](hyperagent-53026c4a7f.md) -- published+backing
