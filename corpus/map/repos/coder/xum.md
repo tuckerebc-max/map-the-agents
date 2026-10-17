@@ -1,10 +1,10 @@
 # coder/xum
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: coder/mux (github id 1058825816).
-Latest snapshot: commit fbbea2b16403 @ 519b231f1435b189
+Latest snapshot: commit e4461a1c191b @ fc8602e70ebdb290
 
 ## Summary (orientation draft, not independently verified)
 

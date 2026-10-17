@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [locoremind/locooperator](../repos/locoremind/locooperator.md) [coverage: complete]
-- [locoremind/locotrainer](../repos/locoremind/locotrainer.md) [coverage: complete]
-- [loganthorneloe/ai-for-software-engineers](../repos/loganthorneloe/ai-for-software-engineers.md) [coverage: complete]
 - [longngn204/local-coding-agent](../repos/longngn204/local-coding-agent.md) [coverage: partial]
 - [looptroop-ai/looptroop](../repos/looptroop-ai/looptroop.md) [coverage: partial]
 - [lore-hex/quillcode](../repos/lore-hex/quillcode.md) [coverage: partial]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [youssefvdel/qwengate](../repos/youssefvdel/qwengate.md) [coverage: partial]
 - [youwangd/sagecli](../repos/youwangd/sagecli.md) [coverage: partial]
 - [yuki-20/cornmcp](../repos/yuki-20/cornmcp.md) [coverage: complete]
+- [yushui2022/easy-coding-agents](../repos/yushui2022/easy-coding-agents.md) [coverage: partial]
+- [yusifeng/formax](../repos/yusifeng/formax.md) [coverage: partial]
+- [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) [coverage: complete]

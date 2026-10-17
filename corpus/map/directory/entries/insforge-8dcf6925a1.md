@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: InsForge
@@ -22,6 +22,8 @@ Repository map entry: [insforge/insforge](../../repos/insforge/insforge.md) (sou
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-InsForge inverts the usual relationship between coding agents and backends: instead of the agent writing Supabase glue code, the backend exposes itself as MCP tools and CLI skills the agent calls dire
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): All-in-one open-source backend platform designed specifically for agentic coding, providing AI coding agents with database, auth, storage, compute, hosting, and an AI gateway through MCP server and CLI+Skills interfaces, enabling agents to operate the backend like backend engineers.
+
+(captured site page body (agents/insforge.md), not a verified repo-code finding)
+InsForge inverts the usual relationship between coding agents and backends: instead of the agent writing Supabase glue code, the backend exposes itself as MCP tools and CLI skills the agent calls directly — run migrations, deploy edge functions, create buckets, configure auth, fetch logs. Postgres with pgvector, OAuth-ready auth, S3-compatible storage, Deno edge functions, and an OpenAI-compatible model gateway cover the full-stack surface, and self-hosting is one curl script plus Docker Compose, with Railway, Zeabur, and Sealos templates for one-click deploys. Teams building with Claude Code or Codex use it to let the agent operate infrastructure like a backend engineer rather than generating boilerplate against a foreign API.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/insforge.md)

@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [yushui2022/easy-coding-agents](../repos/yushui2022/easy-coding-agents.md) [coverage: partial]
-- [yusifeng/formax](../repos/yusifeng/formax.md) [coverage: partial]
-- [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) [coverage: complete]
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) [coverage: complete]
 - [zachblume/autospec](../repos/zachblume/autospec.md) [coverage: complete]
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) [coverage: complete]
@@ -42,7 +39,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (99)
+## stale (102)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +140,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) [coverage: partial]
 - [codefuse-ai/codefuse-chatbot](../repos/codefuse-ai/codefuse-chatbot.md) [coverage: partial]
 - [codefuse-ai/codefuse-muagent](../repos/codefuse-ai/codefuse-muagent.md) [coverage: partial]
+- [coder/xum](../repos/coder/xum.md) [coverage: partial]
+- [coderamp-labs/gitingest](../repos/coderamp-labs/gitingest.md) [coverage: partial]
+- [coderluii/holyclaude](../repos/coderluii/holyclaude.md) [coverage: partial]
 
 ## refresh-failed (65)
 

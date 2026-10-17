@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: humanlayer
@@ -22,6 +22,8 @@ Repository map entry: [humanlayer/humanlayer](../../repos/humanlayer/humanlayer.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-HumanLayer started as an open-source toolkit for routing agent questions and approvals to humans, the check-in points where autonomous coding agents most often go wrong. That codebase is deprecated: t
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI coding agent platform focused on enabling agents to tackle difficult problems in complex codebases with human-in-the-loop oversight. Repository is explicitly deprecated; code being rebuilt at humanlayer.com. Despite deprecation, retains significant community traction (11.3k stars).
+
+(captured site page body (agents/humanlayer.md), not a verified repo-code finding)
+HumanLayer started as an open-source toolkit for routing agent questions and approvals to humans, the check-in points where autonomous coding agents most often go wrong. That codebase is deprecated: the repository now serves as an issue tracker while the team rebuilds the product at humanlayer.com as a commercial multiplayer agent IDE and cloud. The new product groups agent sessions into team tasks with worktrees, runs a six-phase QRSPI pipeline (questions, research, design, structure, plan, implement) with human checkpoints, and lets reviewers comment on design artifacts that feed back into agent context. Local and cloud daemons keep agent sessions running when a laptop closes, and teams bring their own model subscriptions rather than buying per-token credits.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/humanlayer.md)

@@ -1,9 +1,9 @@
 # coderluii/holyclaude
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 651c48fc01a9 @ ec0da588070ffb78
+Latest snapshot: commit c3420f297fe1 @ 1dbeddb617877cbe
 
 ## Summary (orientation draft, not independently verified)
 

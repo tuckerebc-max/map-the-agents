@@ -226,9 +226,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [codehamr/codehamr](../repos/codehamr/codehamr.md) -- status=distilled, freshness=refresh-failed
 - [codeintegrity-ai/mutahunter](../repos/codeintegrity-ai/mutahunter.md) -- status=distilled, freshness=current
 - [coder/mux](../repos/coder/mux.md) -- status=blocked, freshness=refresh-failed
-- [coder/xum](../repos/coder/xum.md) -- status=distilled, freshness=current
-- [coderamp-labs/gitingest](../repos/coderamp-labs/gitingest.md) -- status=distilled, freshness=current
-- [coderluii/holyclaude](../repos/coderluii/holyclaude.md) -- status=distilled, freshness=current
+- [coder/xum](../repos/coder/xum.md) -- status=distilled, freshness=stale
+- [coderamp-labs/gitingest](../repos/coderamp-labs/gitingest.md) -- status=distilled, freshness=stale
+- [coderluii/holyclaude](../repos/coderluii/holyclaude.md) -- status=distilled, freshness=stale
 - [codingmoh/open-codex](../repos/codingmoh/open-codex.md) -- status=distilled, freshness=current
 - [codingthefuturewithai/software-dev-prompt-library](../repos/codingthefuturewithai/software-dev-prompt-library.md) -- status=distilled, freshness=current
 - [codinit-dev/codinit-dev](../repos/codinit-dev/codinit-dev.md) -- status=distilled, freshness=current

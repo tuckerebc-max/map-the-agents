@@ -23,6 +23,7 @@
 - [fastagency](../entries/fastagency-78d668612d.md)
 - [flue](../entries/flue-6cbb89436a.md)
 - [giselle](../entries/giselle-b6f2418fb5.md)
+- [intentlang](../entries/intentlang-a4e5bf1002.md)
 - [langgraph](../entries/langgraph-ad3fc2c957.md)
 - [langroid](../entries/langroid-31d53aa7d9.md)
 - [llama-cpp-agent](../entries/llama-cpp-agent-8da6d74f1e.md)

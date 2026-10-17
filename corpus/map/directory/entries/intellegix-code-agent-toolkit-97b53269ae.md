@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: intellegix
 - License: MIT
 - Language: Python, Node.js
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [intellegix/intellegix-code-agent-toolkit](../../repos/intellegix/intellegix-code-agent-toolkit.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The toolkit treats Claude Code as a runtime and layers operational discipline on top. The loop driver keeps sessions continuous, enforces token budgets, detects stagnation, and scales models to task w
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Automated loop driver with session continuity, budget enforcement, and stagnation detection; multi-agent parallel orchestration via git worktrees; multi-model council automation through Perplexity; portfolio governance with tier-based project management; 31 custom slash commands.
+
+(captured site page body (agents/intellegix-code-agent-toolkit.md), not a verified repo-code finding)
+The toolkit treats Claude Code as a runtime and layers operational discipline on top. The loop driver keeps sessions continuous, enforces token budgets, detects stagnation, and scales models to task weight, while the multi-agent orchestrator farms work into isolated git worktrees under a guard hook that keeps the orchestrator from editing code directly. The Perplexity council is the distinctive piece: it drives a logged-in Perplexity session through Playwright to consult GPT, Claude, and Gemini at zero marginal cost, then synthesizes with Opus. Thirty-one commands cover planning, implementation, review, and a seven-tier frontend E2E pipeline. It installs by cloning straight into ~/.claude and assumes the operator accepts --dangerously-skip-permissions for autonomous runs.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/intellegix-code-agent-toolkit.md)

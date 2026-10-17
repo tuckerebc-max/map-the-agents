@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Pardesco
@@ -22,6 +22,8 @@ Repository map entry: [pardesco/hypernovum](../../repos/pardesco/hypernovum.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Hypernovum treats a personal knowledge vault as mission control for AI coding agents. Each project note becomes a procedurally generated building in a Three.js city, with status as color, priority as
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Obsidian plugin (desktop-only) that turns vault projects into a live 3D 'code city' visualization built on Three.js with integrated agent ops; each project note becomes a procedurally-generated building (color=status, height=priority, category=district); vault backlinks become glowing neural arcs; agent sessions appear as colored orbs orbiting buildings with conflict detection; installs agent heartbeat hooks (.hypernovum/heartbeat.js) with ready-to-paste hook JSON for Claude Code ...
+
+(captured site page body (agents/hypernovum.md), not a verified repo-code finding)
+Hypernovum treats a personal knowledge vault as mission control for AI coding agents. Each project note becomes a procedurally generated building in a Three.js city, with status as color, priority as height, and vault backlinks as glowing arcs, while live agent sessions appear as colored orbs that expose file conflicts between concurrently running agents. Setup commands install a heartbeat hook script and print ready-to-paste JSON for Claude Code settings, so session state streams into the visualization. When launching an agent, the plugin publishes SKILL.md skills and an AGENTS.md context file so the agent starts with vault-specific knowledge. Everything runs locally with no network calls, and a paid Pro app adds MCP, Engram agent memory, and whole-drive scanning.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/hypernovum.md)

@@ -18,31 +18,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Huawei CodeArts (`huawei-codearts`)](huawei-codearts-6ae6838880.md) -- published+backing+pages
 - [HUD (`hud-mode`)](hud-mode-c617c02cb3.md) -- published+backing+pages
 - [HuiCai AI (`huicai-ai`)](huicai-ai-e240395c3a.md) -- published+backing+pages
-- [humanlayer (`humanlayer`)](humanlayer-da58e43b1b.md) -- published+backing
-- [HuoHuaAI (`huohuaai`)](huohuaai-0f812d2deb.md) -- published+backing
-- [HyperAgent (`hyperagent`)](hyperagent-53026c4a7f.md) -- published+backing
-- [hypernovum (`hypernovum`)](hypernovum-9a65cce6ad.md) -- published+backing
-- [IBM Bob Premium Package for Java Modernization (`ibm-bob-premium-package-for-java-modernization`)](ibm-bob-premium-package-for-java-modernization-e60629d41a.md) -- published+backing
-- [Icodes (`icodes`)](icodes-92bd30cb59.md) -- backing-only
-- [ifai (`ifai`)](ifai-0e1a1b3163.md) -- published+backing
-- [iFlow CLI (`iflow-cli`)](iflow-cli-cdae2ef3fc.md) -- published+backing
-- [iFlyCode (`iflycode`)](iflycode-bcb9ae4289.md) -- backing-only
-- [igni (`igni`)](igni-fc28b01537.md) -- published+backing
-- [ima2-gen (`ima2-gen`)](ima2-gen-364c33fbcd.md) -- backing-only
-- [Incredible.Dev (`incredibledev`)](incredibledev-9c05a6263a.md) -- published+backing
-- [indxr (`indxr`)](indxr-ad4e00c99e.md) -- backing-only
-- [InfCode (`infcode`)](infcode-7f0684698f.md) -- published+backing
-- [InkOS (`inkos`)](inkos-e335e3bab9.md) -- backing-only
-- [InsForge (`insforge`)](insforge-8dcf6925a1.md) -- backing-only
-- [InstallCursorEditorLinux (`installcursoreditorlinux`)](installcursoreditorlinux-fc1db900b0.md) -- backing-only
-- [Instantrun (`instantrun`)](instantrun-4dede4bad3.md) -- published+backing
-- [instrumentation (`instrumentation`)](instrumentation-62f83620a2.md) -- backing-only
-- [intellegix-code-agent-toolkit (`intellegix-code-agent-toolkit`)](intellegix-code-agent-toolkit-97b53269ae.md) -- backing-only
-- [Intellego Grok AI Assistant (`intellego-grok-ai-assistant`)](intellego-grok-ai-assistant-dd59eef0c3.md) -- published+backing
-- [Intelligent-Agent (`intelligent-agent`)](intelligent-agent-f9a12e851d.md) -- backing-only
-- [Intent (`intent`)](intent-282bcbc3f0.md) -- published+backing
-- [intentlang (`intentlang`)](intentlang-a4e5bf1002.md) -- published+backing
-- [Interactive-Dev-Environment-for-AI-Engineers (`interactive-dev-environment-for-ai-engineers`)](interactive-dev-environment-for-ai-engineers-1f84ebac33.md) -- backing-only
+- [humanlayer (`humanlayer`)](humanlayer-da58e43b1b.md) -- published+backing+pages
+- [HuoHuaAI (`huohuaai`)](huohuaai-0f812d2deb.md) -- published+backing+pages
+- [HyperAgent (`hyperagent`)](hyperagent-53026c4a7f.md) -- published+backing+pages
+- [hypernovum (`hypernovum`)](hypernovum-9a65cce6ad.md) -- published+backing+pages
+- [IBM Bob Premium Package for Java Modernization (`ibm-bob-premium-package-for-java-modernization`)](ibm-bob-premium-package-for-java-modernization-e60629d41a.md) -- published+backing+pages
+- [Icodes (`icodes`)](icodes-92bd30cb59.md) -- backing+pages
+- [ifai (`ifai`)](ifai-0e1a1b3163.md) -- published+backing+pages
+- [iFlow CLI (`iflow-cli`)](iflow-cli-cdae2ef3fc.md) -- published+backing+pages
+- [iFlyCode (`iflycode`)](iflycode-bcb9ae4289.md) -- backing+pages
+- [igni (`igni`)](igni-fc28b01537.md) -- published+backing+pages
+- [ima2-gen (`ima2-gen`)](ima2-gen-364c33fbcd.md) -- backing+pages
+- [Incredible.Dev (`incredibledev`)](incredibledev-9c05a6263a.md) -- published+backing+pages
+- [indxr (`indxr`)](indxr-ad4e00c99e.md) -- backing+pages
+- [InfCode (`infcode`)](infcode-7f0684698f.md) -- published+backing+pages
+- [InkOS (`inkos`)](inkos-e335e3bab9.md) -- backing+pages
+- [InsForge (`insforge`)](insforge-8dcf6925a1.md) -- backing+pages
+- [InstallCursorEditorLinux (`installcursoreditorlinux`)](installcursoreditorlinux-fc1db900b0.md) -- backing+pages
+- [Instantrun (`instantrun`)](instantrun-4dede4bad3.md) -- published+backing+pages
+- [instrumentation (`instrumentation`)](instrumentation-62f83620a2.md) -- backing+pages
+- [intellegix-code-agent-toolkit (`intellegix-code-agent-toolkit`)](intellegix-code-agent-toolkit-97b53269ae.md) -- backing+pages
+- [Intellego Grok AI Assistant (`intellego-grok-ai-assistant`)](intellego-grok-ai-assistant-dd59eef0c3.md) -- published+backing+pages
+- [Intelligent-Agent (`intelligent-agent`)](intelligent-agent-f9a12e851d.md) -- backing+pages
+- [Intent (`intent`)](intent-282bcbc3f0.md) -- published+backing+pages
+- [intentlang (`intentlang`)](intentlang-a4e5bf1002.md) -- published+backing+pages
+- [Interactive-Dev-Environment-for-AI-Engineers (`interactive-dev-environment-for-ai-engineers`)](interactive-dev-environment-for-ai-engineers-1f84ebac33.md) -- backing+pages
 - [interface (`interface`)](interface-c796d37c6d.md) -- published+backing
 - [invincat (`invincat`)](invincat-0bfe4b498a.md) -- published+backing
 - [iosm-cli (`iosm-cli`)](iosm-cli-a4086c0802.md) -- published+backing

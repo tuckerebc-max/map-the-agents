@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Alibaba (Xinliu)
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-iFlow CLI put Alibaba-affiliated open platform models — Kimi K2, Qwen3 Coder, DeepSeek V3, GLM 4.5 — behind a free terminal agent built on the Gemini CLI codebase. It ran four permission modes includi
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Free Chinese terminal coding agent
+
+(captured site page body (agents/iflow-cli.md), not a verified repo-code finding)
+iFlow CLI put Alibaba-affiliated open platform models — Kimi K2, Qwen3 Coder, DeepSeek V3, GLM 4.5 — behind a free terminal agent built on the Gemini CLI codebase. It ran four permission modes including plan mode, dispatched preconfigured SubAgents with automatic context compression at 70%, and installed MCP tools and workflows from a curated marketplace. Configuration stayed OpenAI-compatible via ~/.iflow/settings.json, and plugins reached VS Code and JetBrains IDEs. The economics relied on the iFlow open platform absorbing model costs, which is the part that ended: the team announced service shutdown for April 17, 2026 and pointed users to Qoder CLI for migration.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/iflow-cli.md)

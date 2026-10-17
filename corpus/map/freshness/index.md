@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (888)
+## current (885)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -111,9 +111,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) [coverage: complete]
 - [codeany-ai/codeany](../repos/codeany-ai/codeany.md) [coverage: complete]
 - [codeintegrity-ai/mutahunter](../repos/codeintegrity-ai/mutahunter.md) [coverage: complete]
-- [coder/xum](../repos/coder/xum.md) [coverage: partial]
-- [coderamp-labs/gitingest](../repos/coderamp-labs/gitingest.md) [coverage: partial]
-- [coderluii/holyclaude](../repos/coderluii/holyclaude.md) [coverage: partial]
 - [codingmoh/open-codex](../repos/codingmoh/open-codex.md) [coverage: complete]
 - [codingthefuturewithai/software-dev-prompt-library](../repos/codingthefuturewithai/software-dev-prompt-library.md) [coverage: complete]
 - [codinit-dev/codinit-dev](../repos/codinit-dev/codinit-dev.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [liumengxuan04/minicode](../repos/liumengxuan04/minicode.md) [coverage: partial]
 - [lnxpy/hey](../repos/lnxpy/hey.md) [coverage: complete]
 - [lnyo-cly/ai4j](../repos/lnyo-cly/ai4j.md) [coverage: partial]
+- [locoremind/locooperator](../repos/locoremind/locooperator.md) [coverage: complete]
+- [locoremind/locotrainer](../repos/locoremind/locotrainer.md) [coverage: complete]
+- [loganthorneloe/ai-for-software-engineers](../repos/loganthorneloe/ai-for-software-engineers.md) [coverage: complete]

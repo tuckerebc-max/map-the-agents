@@ -1,9 +1,9 @@
 # coderamp-labs/gitingest
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 4e259a02fe72 @ eb9e6585fa5a3412
+Latest snapshot: commit 4e259a02fe72 @ 9280b2e6bd8b575a
 
 ## Summary (orientation draft, not independently verified)
 

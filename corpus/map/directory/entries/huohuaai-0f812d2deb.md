@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: huohuaai
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-HuoHuaAI targets Chinese-speaking developers who want a fully localized agentic assistant inside VS Code. Built on the Roo/Cline architecture, it breaks tasks into steps, applies edits as reviewable d
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Chinese AI programming assistant with completion, debugging, project creation
+
+(captured site page body (agents/huohuaai.md), not a verified repo-code finding)
+HuoHuaAI targets Chinese-speaking developers who want a fully localized agentic assistant inside VS Code. Built on the Roo/Cline architecture, it breaks tasks into steps, applies edits as reviewable diffs, monitors linter and compiler output, and auto-fixes problems like missing imports; a terminal integration runs commands through VS Code shell integration and keeps long-running dev servers alive. The agent can also drive a headless browser with screenshots and console logs to verify and fix visual bugs. Context tools (@file, @folder, @url, @problems) and screenshot input support mockup-to-app workflows. All model costs flow through the user's own API keys, and the extension remains free with roughly 7,000 installs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/huohuaai.md)
