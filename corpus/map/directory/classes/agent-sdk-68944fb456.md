@@ -24,6 +24,7 @@
 - [flue](../entries/flue-6cbb89436a.md)
 - [giselle](../entries/giselle-b6f2418fb5.md)
 - [intentlang](../entries/intentlang-a4e5bf1002.md)
+- [ix](../entries/ix-ed171375d0.md)
 - [langgraph](../entries/langgraph-ad3fc2c957.md)
 - [langroid](../entries/langroid-31d53aa7d9.md)
 - [llama-cpp-agent](../entries/llama-cpp-agent-8da6d74f1e.md)

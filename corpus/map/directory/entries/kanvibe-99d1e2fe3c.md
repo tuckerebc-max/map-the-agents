@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: rookedsysc
@@ -22,6 +22,8 @@ Repository map entry: [rookedsysc/kanvibe](../../repos/rookedsysc/kanvibe.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Agentic CLI work tends to disappear into terminal windows, making it hard to track several parallel tasks. Kanvibe gives each task its own branch and worktree, runs the coding CLI in a tmux or zellij
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Keyboard-first Kanban workspace that ties AI coding agents to branch-based git worktrees and tmux/zellij terminal sessions; automatically tracks task status via agent hooks across four AI CLIs (Claude Code, Gemini CLI, Codex CLI, OpenCode); live AI session tracking on board cards; in-app AI account/usage management without extra API keys; built-in GitHub-style diff viewer.
+
+(captured site page body (agents/kanvibe.md), not a verified repo-code finding)
+Agentic CLI work tends to disappear into terminal windows, making it hard to track several parallel tasks. Kanvibe gives each task its own branch and worktree, runs the coding CLI in a tmux or zellij pane attached to the card, and uses the CLIs' hook mechanisms to detect status changes such as a completed edit or an agent waiting on a follow-up question. The board also tracks AI account usage in-app so no extra API keys are needed, and includes a diff viewer for reviewing what each agent changed. It targets solo developers and small teams that run multiple Claude Code, Codex, Gemini CLI, or OpenCode sessions in parallel.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/kanvibe.md)

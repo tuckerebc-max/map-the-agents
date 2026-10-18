@@ -2,7 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) [coverage: complete]
 - [zachblume/autospec](../repos/zachblume/autospec.md) [coverage: complete]
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) [coverage: complete]
 - [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) [coverage: partial]
@@ -24,7 +23,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (12)
+## pending (13)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
@@ -34,12 +33,13 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
 - [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
 - [scgopi/graphcode](../repos/scgopi/graphcode.md)
+- [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (102)
+## stale (103)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -143,6 +143,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [coder/xum](../repos/coder/xum.md) [coverage: partial]
 - [coderamp-labs/gitingest](../repos/coderamp-labs/gitingest.md) [coverage: partial]
 - [coderluii/holyclaude](../repos/coderluii/holyclaude.md) [coverage: partial]
+- [coleam00/archon](../repos/coleam00/archon.md) [coverage: partial]
 
 ## refresh-failed (65)
 

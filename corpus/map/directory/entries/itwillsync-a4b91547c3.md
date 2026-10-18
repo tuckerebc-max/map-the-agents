@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: shrijayan
@@ -22,6 +22,8 @@ Repository map entry: [shrijayan/itwillsync](../../repos/shrijayan/itwillsync.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-itwillsync answers a small but constant pain: your agent is working, but you are not at the desk. It wraps the agent command in a PTY, streams the terminal over an encrypted WebSocket, and renders it
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Syncs any terminal-based AI coding agent to your phone over a local network (WiFi/Tailscale/localhost); privacy-first E2E encrypted with per-session NaCl secretbox tokens, zero cloud/accounts/telemetry; multi-session dashboard with attention detection and sleep prevention; agent-agnostic (works with Claude Code, Aider, Codex, Goose, Cline, Copilot CLI, or any terminal tool).
+
+(captured site page body (agents/itwillsync.md), not a verified repo-code finding)
+itwillsync answers a small but constant pain: your agent is working, but you are not at the desk. It wraps the agent command in a PTY, streams the terminal over an encrypted WebSocket, and renders it in a mobile browser after a QR scan — approve prompts, type commands, and watch output from a phone. A hub daemon tracks all running sessions with attention detection and can keep the machine awake during long runs. Everything stays on the local network or Tailscale, encrypted end-to-end with per-session NaCl keys and no accounts. It is deliberately agent-agnostic plumbing rather than an agent itself.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/itwillsync.md)

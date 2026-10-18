@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: dog-qiuqiu
@@ -22,6 +22,8 @@ Repository map entry: [dog-qiuqiu/invincat](../../repos/dog-qiuqiu/invincat.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-invincat targets developers who want an agent that remembers and persists rather than restarting each session. Memory splits into user and project scopes, with a background agent distilling learnings
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-native AI coding assistant with hierarchical memory (user + project scopes, background memory agent), goal mode for long-running objectives, 4 built-in subagents (explorer, worker, researcher, document-worker), skills system (docx/pdf/pptx/xlsx), WeCom bot daemon for remote turns, scheduled tasks in natural language.
+
+(captured site page body (agents/invincat.md), not a verified repo-code finding)
+invincat targets developers who want an agent that remembers and persists rather than restarting each session. Memory splits into user and project scopes, with a background agent distilling learnings after non-trivial turns and an optional dedicated memory model. Plan mode produces a read-only, approval-gated checklist before implementation; goal mode keeps the agent driving toward long-running objectives across turns, with state persisted per thread. Four built-in subagents split exploration, implementation, research, and office-document work, and a WeCom bridge lets enterprise-WeChat messages drive sessions remotely. Scheduled tasks accept natural-language timing, and skills handle PDF, DOCX, PPTX, and XLSX work.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/invincat.md)

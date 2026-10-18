@@ -43,31 +43,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Intent (`intent`)](intent-282bcbc3f0.md) -- published+backing+pages
 - [intentlang (`intentlang`)](intentlang-a4e5bf1002.md) -- published+backing+pages
 - [Interactive-Dev-Environment-for-AI-Engineers (`interactive-dev-environment-for-ai-engineers`)](interactive-dev-environment-for-ai-engineers-1f84ebac33.md) -- backing+pages
-- [interface (`interface`)](interface-c796d37c6d.md) -- published+backing
-- [invincat (`invincat`)](invincat-0bfe4b498a.md) -- published+backing
-- [iosm-cli (`iosm-cli`)](iosm-cli-a4086c0802.md) -- published+backing
-- [itwillsync (`itwillsync`)](itwillsync-a4b91547c3.md) -- published+backing
-- [Ivy Tendril (`ivy-tendril`)](ivy-tendril-ff4daf20d9.md) -- published+backing
-- [IX (`ix`)](ix-ed171375d0.md) -- published+backing
-- [JACoB (`jacob`)](jacob-c35d6aaf3b.md) -- published+backing
-- [JAIPilot - One-Click AI Agent for Java Unit Testing (`jaipilot-one-click-ai-agent-for-java-unit-testing`)](jaipilot-one-click-ai-agent-for-java-unit-testing-73255b77de.md) -- published+backing
-- [jarvis (`jarvis`)](jarvis-dda820158d.md) -- published+backing
-- [Java-Ai-Sbus-Test (`java-ai-sbus-test`)](java-ai-sbus-test-e5461d87cc.md) -- backing-only
-- [JCode (`jcode`)](jcode-913b41407d.md) -- published+backing
-- [JetBrains AI (`jetbrains-ai`)](jetbrains-ai-ce38a5308e.md) -- published+backing
-- [Jouzu (`jouzu`)](jouzu-236c4d5403.md) -- published-only
-- [JoyCode (`joycode`)](joycode-249fb6aee3.md) -- published+backing
-- [JoyCoder (`joycoder`)](joycoder-f8383e8fe4.md) -- published+backing
-- [jrdev (`jrdev`)](jrdev-e23511eed1.md) -- published+backing
-- [juggler (`juggler`)](juggler-3b7c383af0.md) -- published+backing
-- [Jules (`jules`)](jules-9caeb25ba8.md) -- published+backing
-- [junie (`junie`)](junie-edd2858a3c.md) -- published+backing
-- [Junie CLI (`junie-cli`)](junie-cli-c3cd9fc4dc.md) -- published+backing
-- [Just Bruce AI (`just-bruce-ai`)](just-bruce-ai-d3a7030507.md) -- published+backing
-- [Kade (`kade`)](kade-c8d14d7d8d.md) -- published+backing
-- [Kaku (`kaku`)](kaku-b9e5b11592.md) -- published+backing
-- [Kane AI (`kane-ai`)](kane-ai-8d272c53f8.md) -- published+backing
-- [kanvibe (`kanvibe`)](kanvibe-99d1e2fe3c.md) -- published+backing
+- [interface (`interface`)](interface-c796d37c6d.md) -- published+backing+pages
+- [invincat (`invincat`)](invincat-0bfe4b498a.md) -- published+backing+pages
+- [iosm-cli (`iosm-cli`)](iosm-cli-a4086c0802.md) -- published+backing+pages
+- [itwillsync (`itwillsync`)](itwillsync-a4b91547c3.md) -- published+backing+pages
+- [Ivy Tendril (`ivy-tendril`)](ivy-tendril-ff4daf20d9.md) -- published+backing+pages
+- [IX (`ix`)](ix-ed171375d0.md) -- published+backing+pages
+- [JACoB (`jacob`)](jacob-c35d6aaf3b.md) -- published+backing+pages
+- [JAIPilot - One-Click AI Agent for Java Unit Testing (`jaipilot-one-click-ai-agent-for-java-unit-testing`)](jaipilot-one-click-ai-agent-for-java-unit-testing-73255b77de.md) -- published+backing+pages
+- [jarvis (`jarvis`)](jarvis-dda820158d.md) -- published+backing+pages
+- [Java-Ai-Sbus-Test (`java-ai-sbus-test`)](java-ai-sbus-test-e5461d87cc.md) -- backing+pages
+- [JCode (`jcode`)](jcode-913b41407d.md) -- published+backing+pages
+- [JetBrains AI (`jetbrains-ai`)](jetbrains-ai-ce38a5308e.md) -- published+backing+pages
+- [Jouzu (`jouzu`)](jouzu-236c4d5403.md) -- published+pages
+- [JoyCode (`joycode`)](joycode-249fb6aee3.md) -- published+backing+pages
+- [JoyCoder (`joycoder`)](joycoder-f8383e8fe4.md) -- published+backing+pages
+- [jrdev (`jrdev`)](jrdev-e23511eed1.md) -- published+backing+pages
+- [juggler (`juggler`)](juggler-3b7c383af0.md) -- published+backing+pages
+- [Jules (`jules`)](jules-9caeb25ba8.md) -- published+backing+pages
+- [junie (`junie`)](junie-edd2858a3c.md) -- published+backing+pages
+- [Junie CLI (`junie-cli`)](junie-cli-c3cd9fc4dc.md) -- published+backing+pages
+- [Just Bruce AI (`just-bruce-ai`)](just-bruce-ai-d3a7030507.md) -- published+backing+pages
+- [Kade (`kade`)](kade-c8d14d7d8d.md) -- published+backing+pages
+- [Kaku (`kaku`)](kaku-b9e5b11592.md) -- published+backing+pages
+- [Kane AI (`kane-ai`)](kane-ai-8d272c53f8.md) -- published+backing+pages
+- [kanvibe (`kanvibe`)](kanvibe-99d1e2fe3c.md) -- published+backing+pages
 - [Karato - Agent for Sakana AI fugu (`karato-agent-for-sakana-ai-fugu`)](karato-agent-for-sakana-ai-fugu-15420222da.md) -- published+backing
 - [Kata (`kata`)](kata-340859adf9.md) -- backing-only
 - [Kilo Code (`kilo-code`)](kilo-code-9a56d96235.md) -- published+backing

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Just Bruce AI
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Just Bruce AI 2.0.0 is a ground-up rebuild of a small JetBrains assistant into something closer to an in-IDE agent. It scans the project, then works across files — reading, creating, editing, and reve
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI-powered coding assistant built into JetBrains IDEs
+
+(captured site page body (agents/just-bruce-ai.md), not a verified repo-code finding)
+Just Bruce AI 2.0.0 is a ground-up rebuild of a small JetBrains assistant into something closer to an in-IDE agent. It scans the project, then works across files — reading, creating, editing, and reverting via applied diffs — while running build, test, and terminal commands and tracking git state. Conversation and project memory persist across sessions, and a slash-command system covers common actions. Model access is user-configured: OpenAI-compatible providers plus Ollama for fully local operation, with connection testing and live provider status. Adoption is minimal (13 installs at review time), making this a very early-stage entrant in the JetBrains assistant field.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/just-bruce-ai.md)

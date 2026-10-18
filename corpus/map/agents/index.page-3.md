@@ -138,6 +138,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [shawhint/ai-builders-bootcamp-2](../repos/shawhint/ai-builders-bootcamp-2.md) -- status=distilled, freshness=current
 - [shinpr/agentic-code](../repos/shinpr/agentic-code.md) -- status=distilled, freshness=current
 - [shinpr/galley](../repos/shinpr/galley.md) -- status=distilled, freshness=current
+- [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md) -- status=discovered, freshness=pending
 - [shotgun-sh/shotgun](../repos/shotgun-sh/shotgun.md) -- status=distilled, freshness=current
 - [shouzhengai/cs146s_cn](../repos/shouzhengai/cs146s_cn.md) -- status=distilled, freshness=current
 - [shoyann/thrush-swe-agent](../repos/shoyann/thrush-swe-agent.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [zachnoel/multiagentworkflow](../repos/zachnoel/multiagentworkflow.md) -- status=blocked, freshness=refresh-failed
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) -- status=distilled, freshness=current
 - [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) -- status=distilled, freshness=current
-- [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) -- status=distilled, freshness=current

@@ -1,0 +1,1714 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Changed
+
+- `archon doctor` no longer checks SDLC forge access, and its exit code no longer depends on it. Run `archon workflow run archon-forge-check` from a checkout instead: the new bundled workflow runs the same check the pack's delivery workflows run first, and names the credential source used or says why it refused. (#4435)
+
+## [0.12.1] - 2026-10-17
+
+Release binaries no longer hand a target repository's `.env` to providers.
+
+### Security
+
+- Release binaries, including the Claude, Codex and Pi provider plugins and the forge-github and chat-slack plugins, no longer load `.env` or `bunfig.toml` from their working directory. In v0.12.0 a provider started in a target repository loaded that repository's `.env` and undid Archon's strip of it, so a project's `ANTHROPIC_API_KEY` could reach Claude and override your subscription. Source installs were not affected. If you ran v0.12.0 in a repository whose `.env` holds provider keys, upgrade, then run `archon provider add` again for each provider you use. (#4426, #4427)
+
+## [0.12.0] - 2026-10-17
+
+Providers become separate installs for release binaries. The SDLC pack gains intake, build and merge queues, a discoveries drain and attention pauses. Runs wait out usage and rate limits. Workflows can run without a database, keep durable state, and answer through one attention queue.
+
+**Upgrading a release binary (quick installer, Homebrew, GitHub asset): add your providers.** Release binaries no longer include Claude, Codex or Pi. After upgrading, run:
+
+```bash
+archon provider add claude codex pi   # only the ones you use
+```
+
+or `archon setup`, which asks. Until you do, a workflow or chat message that needs a provider fails before it starts and prints this command, and `archon doctor` fails with the same command. Your config, credentials, database and native provider logins are unchanged. Docker images and source checkouts run all three from source and need no step. (#3645)
+
+**SDLC forge access remains on `gh` by default.** Set `ARCHON_SDLC_FORGE=forge` to opt in after installing a plugin that supports every pack operation. Released GitHub plugin v0.11.1 is insufficient; preflight names missing operations before any AI node runs, after worktree setup. On the forge path the host tries `GH_TOKEN`, `GITHUB_TOKEN`, then `gh auth token`; in Docker that login must be inside the container. GitHub App runs refresh through the run's gh shim. Per-user runs without credentials refuse rather than borrowing the host login. (#3433)
+
+### Breaking
+
+- Release binaries ship without the Claude, Codex and Pi providers and run only the ones installed with `archon provider add`. An installed provider whose version differs from the CLI is refused with the reinstall command, so rerun `archon provider add <ids>` after every upgrade. The binary no longer contains the Claude Agent SDK, Codex or Pi. OpenCode and GitHub Copilot stay bundled. (#3645)
+- Archon no longer falls back to `claude` when no default provider is configured. A default is chosen only when you set one, or when exactly one provider is installed. This affects binary installs where `archon setup` never ran and Docker deployments whose `.env` has no `DEFAULT_AI_ASSISTANT` line, unless a project sets `assistant:` in its `.archon/config.yaml`. Workflows fail before they start and chat messages fail with `No default provider: set 'defaultAssistant' in ~/.archon/config.yaml or run archon setup`. To fix it, add `defaultAssistant: claude` (or your provider) to `~/.archon/config.yaml`, or `DEFAULT_AI_ASSISTANT=claude` to the Docker `.env`. (#3645)
+- An invalid `tiers`, `aliases`, `workflows`, `streaming`, `attentionNotices` or `concurrency` block in `.archon/config.yaml` (global or repository), invalid YAML, a top level that is not a map of settings, or a config file Archon cannot read now fails to load with a message naming the file and the key, instead of being logged while every setting in the file was replaced by defaults. Startup, `archon doctor`, run starts, chat messages and workflow listings such as `archon workflow list` report the failure. A missing file behaves as before. Fix the named value to recover. (#4363)
+- Pi no longer runs Anthropic models on a Claude Pro/Max subscription connected in Archon. Archon stopped delivering the subscription to Pi, in workflows and in chat, and removed the system prompt that hid Pi's identity from Anthropic: a Claude subscription runs only on the Claude provider. A Pi node or chat turn on an `anthropic/*` model that relied on the connected subscription now fails before it starts, and the error names `provider: claude`. Switch those nodes, tiers, aliases or the chat default to `provider: claude`; you do not need to log in again, because the Claude provider already receives the same stored subscription. Or give Pi an `ANTHROPIC_API_KEY`. `archon doctor` reports the same. Pi-native Claude Pro/Max OAuth (`pi /login`) is also unsupported: Anthropic can reject Pi's default system prompt with a subscription token. Pi's native credential files remain intact; use `provider: claude` or give Pi an `ANTHROPIC_API_KEY` for Anthropic models. ([#4175](https://github.com/coleam00/Archon/issues/4175))
+- A workflow whose `when:` could never be evaluated now fails to load with an error naming the node, instead of loading and skipping that node on every run. This covers grouping parentheses, malformed comparisons, a trailing invalid clause such as `A || <garbage>`, `when: 'false'` used to disable a node, and a numeric operator against a non-numeric literal such as `$score.output > 'high'`. (#3911)
+- The legacy bundled workflows are removed. A fresh install ships only the `sdlc` pack, so `run pr` and `run review` each resolve to one workflow again. The legacy `archon-*` workflows deprecated since v0.10.0 and `archon-assist` no longer ship, and neither do the commands under `.archon/commands/defaults/` or the legacy `archon-review-block` include block. A run paused before the upgrade still resumes from the source it captured. To keep one, copy its YAML from [`.archon/workflows/defaults/legacy/` at v0.11.1](https://github.com/coleam00/Archon/tree/v0.11.1/.archon/workflows/defaults/legacy) into your project or global `.archon/workflows/`, and copy every command it names from [`.archon/commands/defaults/` at v0.11.1](https://github.com/coleam00/Archon/tree/v0.11.1/.archon/commands/defaults) into the matching `.archon/commands/`. `archon-idea-to-pr`, `archon-plan-to-pr` and `archon-issue-review-full` also need `archon-review-block.yaml` from the same folder, which they include. Save that copy under another name, such as `legacy-review-block` (its file name and its `name:`), and point the three workflows' `include:` at it: the `sdlc` pack ships its own `archon-review-block`, and a project or global copy with that name would replace it. A copied workflow whose commands are missing fails with a command-not-found error. (#3526)
+
+  | Removed workflow | Use instead |
+  | --- | --- |
+  | `archon-adversarial-dev` | None |
+  | `archon-architect` | None |
+  | `archon-assist` | None. Ask in chat: the router answers questions directly. At v0.11.1 its YAML is [`.archon/workflows/defaults/archon-assist.yaml`](https://github.com/coleam00/Archon/blob/v0.11.1/.archon/workflows/defaults/archon-assist.yaml). |
+  | `archon-comprehensive-pr-review` | `archon-review` |
+  | `archon-create-issue` | None |
+  | `archon-feature-development` | `archon-deliver`, with the plan as its input |
+  | `archon-fix-github-issue` | `archon-ship` |
+  | `archon-idea-to-pr` | `archon-ship` |
+  | `archon-interactive-prd` | None |
+  | `archon-issue-review-full` | `archon-ship` |
+  | `archon-piv-loop` | None with human checkpoints. `archon-plan` then `archon-deliver` covers the same phases without them. |
+  | `archon-plan-to-pr` | `archon-deliver`, with the plan as its input |
+  | `archon-ralph-dag` | `archon-implement` |
+  | `archon-refactor-safely` | None |
+  | `archon-remotion-generate` | None |
+  | `archon-resolve-conflicts` | None |
+  | `archon-smart-pr-review` | `archon-review` |
+  | `archon-test-loop-dag` | None |
+  | `archon-validate-pr` | `archon-validate` runs the project's checks. Nothing replaces the base-versus-branch end-to-end comparison. |
+  | `archon-workflow-builder` | None |
+
+- An attention wait's output is now its answer instead of `{ status, waited_ms }`, so a workflow that reads `status` or `waited_ms` from an attention wait fails to load; read `text` instead. A run paused at such a wait usually resumes from the workflow source it captured, which still reads the old fields, so it cannot resume: abandon it and start a fresh run of the edited workflow. An attention wait paused before the upgrade that nothing reads continues with `archon workflow resume`, and the web console may send one repeat push notification for it. (#4038)
+- An authored gate now offers and accepts only its declared decisions. The console, chat, Slack and the CLI show each declared decision with its label, and every response path refuses an undeclared decision ID with an error listing the allowed ones. A stale gate action fails without changing a later gate. (#3831, #4048)
+- The old workflow marketplace is retired. `archon workflow search` and `archon workflow install` are removed, archon.diy no longer serves the registry or `workflows.json` (older binaries report `Marketplace fetch failed: HTTP 404`), and `archon.diy/workflows/` redirects to the installed workflow packs guide. Install someone else's workflows with `archon plugin add owner/repo[/path][@tag]`; a workflow pack is published by adding `archon-plugin.json` to its own repository. Workflows the old installer copied into `.archon/workflows/` are ordinary project files and keep loading. The CI job that auto-reviewed, merged or closed registry pull requests is gone with it. (#2376)
+- Codex workflow nodes no longer load the user's Codex plugins, ChatGPT apps, or the MCP servers in the user's or project's Codex config. A node gets exactly the MCP servers its `mcp:` file declares; Archon checks the servers Codex loaded before the turn starts and fails the node as `misconfigured` if an undeclared one is live. A node that needs a plugin names it with `plugins: [name@marketplace]` and gets that plugin's skills and hooks; its MCP servers come only through `mcp:`, under the plugin's own server name. A named plugin that is not installed fails the node before its turn, and so does an `mcp:` server whose name your Codex `config.toml` already uses: rename it in the `mcp:` file. Your `config.toml` settings, hooks and `AGENTS.md` keep loading, and Archon never writes to your Codex home. A workflow that relied on an ambient Codex plugin or server adds it to `plugins:` or `mcp:`. (#1118, #2843)
+- Claude workflow nodes no longer load the Claude Code plugins installed on the machine. A node that needs a plugin names it with `plugins: [name@marketplace]` and gets that plugin's agents, hooks, LSP servers and commands; its skills and MCP servers still come through the node's own `skills:` and `mcp:` lists. A node fails before its first model turn when a named plugin is not installed, or when Claude Code loads a plugin the node did not name. Your own settings, hooks, permissions and CLAUDE.md keep loading. Naming plugins on a provider that cannot scope them (every provider except Claude and Codex) fails the run before any node starts, and so does naming MCP servers or skills a provider cannot load; `archon validate workflows` reports the same mismatch. (#3574, #3578)
+- A GitHub trigger binding whose `inputMapping` copies an event `field` into a workflow that has no `inputs:` block is now rejected at preparation: the receipt's binding is recorded as `rejected` (`launch_preparation_failed`), and the drain reports `Workflow '<name>' declares no inputs; a trigger cannot pass event-mapped input '<input>'`. Event content is untrusted, so it reaches only inputs a workflow declares. To fix it, declare each mapped input under the workflow's `inputs:`. `literal` mappings and the literal `launch.inputs` of a binding or timer still pass through to a workflow without `inputs:`. (#3980)
+- When web auth is on or `ARCHON_WEB_AUTH_HEADER` is set, a `web` or `cli` conversation is reachable only by the user who started it. A non-owner gets 404 `Conversation not found`. Chats that have no recorded owner become unreachable; start a fresh chat. Solo installs behave as before. (#4224)
+- Stored project paths that are not absolute now fail with the project name and a `/register-project` command to recover. Re-registering a legacy project repairs its path and keeps its identity and history. (#3747)
+
+### Security
+
+- The Discord adapter no longer installs vulnerable `undici` and `lodash` versions: `discord.js` resolves to 14.27.0, `undici` to 6.29.1 and `lodash` to 4.18.1. (#4389)
+- A forge token is sent only to its well-known public host (`github.com`, `gitlab.com`, `gitea.com`) or to the exact authority of the matching `GITLAB_URL`, `GITEA_URL` or `FORGEJO_URL`. A host that merely looks like a forge gets no credentials. (#4154)
+- Runs and chat turns authenticate only as the identity they were given, or fail naming the credential. Tokens are no longer sent in cleartext or kept in run evidence. (#4282)
+- The Gitea webhook signature is checked over the exact received bytes before the body is parsed, and the Gitea route gets the same 32 MiB body limit as GitHub. Oversized GitHub and source webhook deliveries are refused before authentication and create no receipt. (#4031, #4075)
+- Diagnostic and failure logs no longer record platform identities, webhook token fragments, SQL bound values or message contents. Chat SSE no longer carries provider session IDs. (#3628, #3888, #3991)
+
+### Added
+
+- `archon provider add <claude|codex|pi...>` installs or replaces a maintained provider from the Archon release matching the CLI version, verified against the release's `checksums.txt`. `archon setup` asks which providers to install and installs them; `archon setup --providers codex` (or `ARCHON_PROVIDERS`) skips the question. The quick installers ask the same question after installing the CLI, or take `--providers` (shell), `-Providers` (PowerShell) or `ARCHON_PROVIDERS`; without a selection or a terminal to ask on, they install none and print the command. The Homebrew formula names `archon setup` and `archon provider add` in its caveats. Providers also run as plugins over the `archon-provider/1` protocol, so a third party can publish one. See [Installation → Providers](https://archon.diy/getting-started/installation/#providers). (#3645, #3895, #3903, #3935, #4004, #4078, #4118)
+- Every release publishes a standalone server executable, `archon-server-<os>-<arch>`, beside the CLI. (#3908)
+- Workflows can run without a database: set `store: files` in `~/.archon/config.yaml` to run, pause, approve, resume, inspect and list workflows, admit triggers and keep state documents on the file system. The database stays the default. (#3947, #4007, #4089)
+- `archon state` keeps small, durable JSON documents across runs, with revisioned history. Operators and `bash:`/`script:` nodes can read, replace, patch (`--if-revision` for a conditional patch), list (`--values` returns every document in one call), audit and delete them, at project or install scope (`--install`). Each revision records the surface or the run and node that wrote it. (#3981, #4066, #4128, #4376)
+- `archon workflow attention --watch` streams the attention queue as JSON lines across every run in scope, including runs started after the stream by triggers, schedules, the server or another session: the open items first, then `ready`, then a line whenever an item opens or is relabelled (`attention`), stops needing an answer (`resolved`), leaves a `--label` filter (`unmatched`), a run ends (`terminal`), is resumed (`resumed`), or loses its owner (`owner_lost`). Run-specific lines carry their project; `degraded` carries no run or project identity. `--project` and `--all` scope it as they scope the list. `--after <cursor>` resumes readable deliveries after that cursor; unreadable deliveries may be omitted after a `degraded` warning (see the guide below for repair and replay); a cursor the store cannot read ends the stream with an `error` line and exit 4. Idle `bookmark` lines arrive only while the stream can read the store. Every write that changes the queue now commits an event, including a resume of a paused run (`workflow_unpaused`) and a wait a resume reached again (`wait_continued`). See [Stream the queue](https://archon.diy/guides/attention-queue/#stream-the-queue). (#3050, #4309)
+- Outside answerers can work the attention queue as JSON. `archon workflow attention --json` lists every paused run that needs someone in the current project, another one (`--project`) or the whole install (`--all`), filtered by exact `--label k=v` matches and sorted by age or a label; `--count-by project|label:<key>` counts them, and `archon workflow attention <run> --json` reads one item, following a blocked parent to its child's. Each item carries its run, occurrence, node, workflow, message, form and options, labels and `revision`, `pausedAt`, a typed `project` whose `key` is the one `archon state` uses, a `fanOut` position for fan-out children, and pointers to its artifacts, transcript, checkout and branch. `wait: attention` takes `labels:`, and `archon workflow attention label <run> --occurrence <id> --set k=v --unset k` lets a handler classify an item; each write bumps `revision` and records an `attention_labeled` event. `GET /api/runs/attention` takes the same parameters, `GET /api/runs/<run-id>/attention` reads one item, `POST /api/runs/<run-id>/attention/labels` writes labels, and `manage_run` gains a `label` action. See [The Attention Queue](https://archon.diy/guides/attention-queue/). (#4039)
+- `wait: attention` takes an answer in a declared `form`: `message` (free text), `approval`, `select` or `multi_select` with `options`, which may be a literal list or one whole `$node.output.<field>` reference resolved when the wait pauses. Answer it with `archon workflow answer <run> --occurrence <id> [--choose <id>]… [--text <t>]`, `POST /api/workflows/runs/<run-id>/answer`, or the console; `approve`, `reject` and `respond` work as shorthand, and `reject` never cancels the run there. The next node reads the answer as `{ text }`, `{ decision, text }` or `{ decisions, text }`, and run-attention reports the wait as one `attention` kind with its form and options. Every answer records the surface it came through, and every surface can refuse a stale answer. See [Attention waits](https://archon.diy/guides/authoring-workflows/#attention-waits). (#4038, #4063)
+- `archon workflow wake` continues due durable waits from the CLI, with `--watch` and an optional macOS timer, and `archon workflow signal` wakes one exact event occurrence. An answered gate is continued by whichever host is running (`archon serve`, `workflow wake`, or the native schedule), and the answer response says the run continues on its own. (#3660, #4050, #4188)
+- A run whose failed nodes all hit a provider usage limit with a known reset now pauses until the reset and resumes by itself, holding no resource slot while it waits; the wait shows in the attention queue, `workflow status`, `workflow get` and the console. `autoResumeOnQuotaReset` now defaults to `true`; set it to `false` to fail instead. `quotaFallbackDelayMs`, `quotaMaxAttempts` and `quotaDeadlineMs` are ignored with a deprecation warning. A node whose provider rate limit outlasts its five retries pauses on the same wait. Pi still fails on usage limits, because it reports no structured limit. (#4225, #4338)
+- A provider overload (Codex `serverOverloaded`, Claude `overloaded`) is its own failure class with five retries and capped exponential backoff, and each provider retry of a model call shows as a warning in the transcript and CLI. (#3610, #3849)
+- A repository can list `worktree.postCreate` commands that run in order in each new worktree before it is handed out, each with `worktree.postCreateTimeout` (default 300000 ms). Each command's start, completion and failure are recorded on the run. (#3973)
+- Children of one `fan_out` node can share the parent's checkout and run up to `max_parallel` at once. A fan-out child that pauses now waits as its own run, and the parent pauses on a `fan_out` gate listing its unfinished children, instead of the child being cancelled. (#3965, #4125)
+- Output references can reach nested fields: `$node.output.a.b` and `$LOOP_PREV.node.output.a.b` work in templates, bindings and scalar `when:` conditions. (#3616, #3675)
+- A command or prompt in a `loop_group` can continue a named pre-loop session with `context: { resume: <node> }`, forked once and continued across iterations. (#3961)
+- `archon workflow logs <run-id> --format text` prints a run's transcript as readable progress lines, and `archon workflow runs --json --verbose` reports each run's nodes and what it waits on. Each AI node records the provider session ID it ran, shown by `workflow get --verbose`. (#3542, #3543, #3595)
+- Runs record every provider event unchanged. `GET /api/workflows/runs/{runId}/provider-events` serves them, and the console shows tool calls paired with their results under the node that made them, plus native hook events in time order. An overdue tool call or background subtask raises advisory attention. (#3576, #3902, #4137)
+- The console can alert when a run waits for you or finishes, with a chime and browser notifications that also reach opted-in browsers when the console is closed. It lists every run that needs input, shows token usage per node, shows the workflow's explanation beside the outcome, and can rename a project (`PATCH /api/codebases/{id}`) without moving its storage. (#3704, #3711, #3830, #3949, #3978, #4015)
+- `archon doctor` tells a working connected credential from a dead one (`usable`, `not_connected`, `unusable`, `check_failed`), checks each assistant's native login, reports each registered provider's diagnostics and plugin status, and fails with install guidance when the OpenCode executable is missing. Runs check the credentials their AI nodes need before launch. (#3603, #3635, #3695, #3708, #4004)
+- `archon user link <user-id> <platform>:<platform-user-id> [--move]` binds a platform identity to an existing Archon user. (#3977)
+- `/detach-project "<name>"` detaches the current conversation from a project without unregistering it, and a git root can be registered as a folder project that runs in place with no worktree, branch or PR. (#3741, #4027)
+- Poll scripts can send a stable delivery key with JSON event inputs; a retried delivery with the same key and content reuses the accepted one instead of starting another run. (#4009)
+- Any service that signs webhooks with the [Standard Webhooks](https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md) `v1` HMAC scheme can now start a workflow run, through a bundled source plugin you configure with a signing-secret environment variable and trigger bindings. Archon checks the signature over the exact received bytes and a timestamp within 300 seconds before it records anything; an unsigned, tampered or stale delivery gets HTTP 401 and leaves no record. A retried delivery with the same `webhook-id` and body starts nothing new, and reusing a `webhook-id` with different content gets HTTP 409. The delivery body can only fill the inputs a binding maps from it with JSON Pointers, and only inputs the workflow declares; the binding alone chooses the workflow, checkout, isolation, host, resource and run-as user. See [Start workflows from any signed webhook](https://archon.diy/guides/workflow-triggers/#start-workflows-from-any-signed-webhook). (#3975, #3980)
+- A workflow node can name its MCP servers as optional with `mcp: { path: <file>, optional: true }`. When the provider cannot load MCP servers (Pi, OpenCode) or the config file does not exist, the node runs without them instead of failing validation or the run, and its lifecycle rows record `mcp_unavailable` with the path and reason. A plain `mcp: <file>` stays required. Codex and Copilot now also report each MCP server's status, so a declared server that fails to start is recorded and warned about as it already was on Claude. See [Optional servers](https://archon.diy/guides/mcp-servers/#optional-servers). (#3994)
+- Chat plugins: the server installs and supervises chat plugins over the `archon-chat/1` contract, and the Slack chat plugin posts attention notices to a channel configured as an `attentionNotices` route: a gate with its decisions, or a `wait: attention` with its form as buttons, a multi-select menu, or an answer modal for free text and interactive-loop replies. Answers go through the same authorization as every surface and record `slack` as their surface; a stale answer is refused in the notice's thread. A run's completion follows up in that thread. See [Chat plugins](https://archon.diy/guides/publishing-plugins/#chat-plugins). (#2907, #3910, #3922, #3940)
+- Forge plugins can merge pinned to a head, rerun failed checks, convert a pull request back to draft, create marked work items, manage and read labels, list items by label, comment on and close issues, and deliver comment and label-actor events. (#3887, #3893, #3894, #4108, #4117)
+- `archon validate workflows` warns about loose output schemas, unsafe bare output references, and a join whose only dependency is conditional. (#3702, #3722, #3847)
+- A pack can ship `.md` documents in its `.shared/` directory. They are bundled with the pack's modules, so a binary install has them too, and a script finds them relative to its own location. See [Share code within a pack](https://archon.diy/guides/script-nodes/#share-code-within-a-pack). (#4100)
+- `POST /api/workflows/runs/<run-id>/approve` and `/reject` accept an optional `expectedGate`, as `/respond` does: a node name or `{ nodeId, pauseId }`. When the run is no longer paused at that gate, the request gets HTTP 409 and the later gate stays open; an empty node name, `nodeId` or `pauseId` gets HTTP 400. Omitting it behaves as before. (#4162)
+- The SDLC pack gains `archon-intake`, which triages a maintainer's issue, holds an outside author's issue for promotion, and closes a duplicate or already delivered issue with a link to what resolved it. Triage now searches for open duplicates and records type, size, complexity, importance and urgency as separate fields. (#4116, #4127, #4207, #4302)
+- The SDLC pack gains `archon-build-queue`, which takes a triaged work item to a reviewed pull request and asks a person only what a person must decide, and `archon-merge-queue`, which merges a clear bug fix or small feature pinned to its head and holds everything else as one attention item. An approval survives a clean merge of the default branch. Both are opt-in: bind a trigger to run them. (#4304, #4319, #4348)
+- The SDLC pack gains `archon-discoveries`, which drains finished runs' discoveries into a new issue, evidence on the issue that already covers it, a recorded drop, or a question for a maintainer. (#4283)
+- The SDLC pack gains an opt-in `archon-worktree-cleanup` workflow that releases merged worktrees on CLI-only installs. (#4328)
+- SDLC delivery now reads a pull request's unresolved review threads from any reviewer, judges each like a blocking finding, replies, and resolves it, and the CI agent re-runs a flake outside the change once before judging. (#4082, #4358)
+
+### Changed
+
+- A `bash:` or `script:` node, and an `until_bash` check, now runs until it exits unless the workflow declares `timeout:`. The implicit 120 s limit is gone. A declared timeout ends the node's whole process tree, on Windows and on POSIX. (#4307, #4355)
+- A public SDLC stage pauses where nothing would take it forward, instead of ending. When `archon-deliver` ends not ready, `archon-plan` or `archon-triage` stops on a question for a person, `archon-ship` stops for either reason, or `archon-review` ends Ready on a draft pull request, the run pauses as one attention item labelled `stage: <workflow>`, with the agent's recommendation, confidence and evidence and the choices it declared. It continues on the answer: `rerun` runs the stage again with your note, `ready` takes the pull request out of draft, and `finish` keeps the outcome as it stands. Each stage's graph is its own `-block` workflow (`archon-deliver-block`, `archon-plan-block`, `archon-triage-block`, `archon-review-block`, `archon-ship-block`), which the queues, intake and upkeep include, so a run a queue started never raises a second item for a decision the queue owns. A project or global copy of the legacy `archon-review-block.yaml` now replaces the pack's own review block; rename it as the legacy entry under Breaking describes. (#4311)
+- SDLC delivery is one round loop of implement, review and CI with a round limit, review depth scales with the change's risk, and `archon-deliver` and `archon-ship` always end with a report, including after a failed node. A delivery's pull request closes its issue only when the review finds every required item met; otherwise the body says `Refs #N` and lists what is left. `archon-ship` takes a `part` input to deliver one part of a plan. The pack's prompts now treat a risk no supported path reaches as no reason for a guard or a test. (#3533, #3804, #3869, #4107, #4158, #4180, #4220, #4398)
+- The bundled SDLC workflows use the GitHub CLI by default; `ARCHON_SDLC_FORGE=forge` selects a compatible forge plugin. Standalone `archon-review` given a pull-request number, URL or branch, or run on a branch with an open pull request, still reads that pull request with `gh pr view` and `gh pr diff`; inside delivery it reviews the recorded pull request and reads nothing from the forge. `archon-ship`, `archon-deliver`, `archon-upkeep` and `archon-pr` check that the selected source can act before any agent runs, and the CI agent acts on the pull request the run recorded rather than one found from the checkout's remote. They no longer declare `requires: [github]`, so per-user GitHub mode no longer refuses a user without a connected GitHub identity before the run starts; a missing credential refuses at that first check instead, naming the connect step. `archon doctor` checks the selected source and credential. See [Use the forge path in the SDLC pack](https://archon.diy/reference/forge/#use-the-forge-path-in-the-sdlc-pack). (#3433)
+- SDLC triage reads the project's `.archon/sdlc/policy/triage.md` and falls back to a default the pack ships. Under the default, triage closes an item without a person only when it duplicates an open item or a merged change already delivered it; any other item that looks closable, such as an obsolete or out-of-scope one, is `BLOCKED` for a maintainer. Copy the default from the pack's `.shared/policy/triage.md` to change it. (#4100)
+- Branches that change different bundled pack files no longer conflict on a committed generated bundle. A source checkout reads the bundled packs from disk; only the binary build embeds them. The `generate:bundled` and `check:bundled` scripts are gone. (#4395)
+- A paused run gives back its resource slot while it waits and reacquires one ahead of new starts when it continues. A same-run gate that pauses while another is open is presented when the run resumes. (#3751, #4135)
+- A new run resolves its AI configuration (assistant, provider defaults, tiers, aliases, model bindings) from the checkout it was launched from, including uncommitted content, and keeps that configuration for its whole life, including resume and child runs. (#3827, #3899)
+- A run on an existing branch continues the branch at its own head instead of resetting it to the base; a branch that has diverged from its remote fails before any work starts. New projects follow the remote's default branch unless you choose a base. Run commits are authored by the initiating user when per-user GitHub is connected. (#3742, #3746, #4123)
+- `workflow abandon` and `/reset` remove the worktree the abandoned run created, keeping the branch. A completed run releases its own clean, fully pushed worktree, a failed run unlocks its worktree once its outcome is settled, and the age sweep never deletes work that exists nowhere else. `archon complete` refuses an environment a run can still resume. (#3856, #4152, #4189, #4328)
+- GitHub operations prefer `GH_TOKEN`, then `GITHUB_TOKEN`, across adapter API calls, clones and forge operations. Inside a workflow, a GitHub token the forge command inherits wins over both `.env` files. GitHub App credentials now reach CLI workflows, URL registration, clones and worktree Git on any server port. (#3795, #3806, #4111, #4146, #4324)
+- `archon setup` can configure a GitHub App as well as a personal token, and switching to App mode removes stale PAT credentials. (#4149, #4155)
+- New projects get separate storage folders, including `$STATE_DIR`, when their derived names collide. Registering a second clone of an already-registered remote is refused with the registered project's path; use worktrees for parallel checkouts. A new project whose name or storage folder another path already holds registers under the first free suffixed name, such as `_local/api-2` for a second no-remote repo called `api` or `my-app-2` for a folder project. `archon workflow run` no longer continues unregistered under the shared `_cwd/<folder name>` storage when registration fails, even with `--no-worktree`; it fails with the registration error. Existing projects keep their names and storage. (#1192)
+- A relative `mcp:` path in a home workflow (`~/.archon/workflows/`) now also resolves next to that workflow's YAML file when the run's checkout has no such file, so a personal workflow can keep its MCP config beside it. The checkout is still checked first, and project, bundled and installed workflows use only the checkout. An optional declaration (`optional: true`) that used to run without servers because the checkout had no file now loads the servers from the file next to the workflow if one is there. A missing-file error lists every location tried. See [MCP servers](https://archon.diy/guides/mcp-servers/#optional-servers). (#1604)
+- Chat on Claude, Codex and Pi launches workflows and registers projects through typed `invoke_workflow` and `register_project` tools instead of writing `/invoke-workflow` and `/register-project` lines into the reply. A launch runs after the reply ends, through the same dispatch as before, so the console and forges behave as they did. `manage_run` no longer has a `start` action; `invoke_workflow` replaces it and applies the dispatch checks `start` skipped. OpenCode and Copilot still use the command lines. (#1886, #4202, #4236)
+- A workflow that can pause now starts with `archon workflow run --detach`, from the web console's background dispatch, from `manage_run`, and from a trigger. Before, a workflow with an approval gate, an interactive loop gate, or a gate composed through `include:` was refused at all four. Its pause waits durably in the attention queue until someone answers, then the run continues. Workflow-level `interactive:` is deprecated and has no effect: a workflow that declares it loads with a warning, and the web console no longer runs it in the foreground. (#4041)
+- Providers, plugins and skills now use `archon provider add`, `archon plugin add` and `archon skill add`. Adding a provider connects Archon to your agent CLI or SDK; it does not install that CLI. The unshipped provider `install` verb is refused; the shipped plugin and skill `install` verbs remain deprecated aliases that print a warning. (#4133)
+- Slack is available as an optional Socket Mode chat plugin: `archon plugin add coleam00/Archon/plugins/chat-slack`. Restart the server after installing. In the plugin, `/archon connect github` now points to the Web UI or `archon auth github`; the bundled Slack adapter remains available during the transition. (#3646, #4006)
+- The CLI no longer bundles the server or chat adapters. `archon serve` downloads the version-matched server and web UI on first use, verifies embedded checksums, and runs the server as a child. `--download-only` caches both. (#3644)
+- New Archon users are explicitly created as `member`. Operators can list users with `archon user list` and designate or demote admins with `archon user role <id> admin|member`. Existing users keep their roles, and the database default remains `admin` for older writers. This is role policy only; run-action enforcement ships separately. Existing multi-user installs remain unprotected until enforcement ships and the operator deliberately demotes users who should not be admins. (#3651, #3829)
+- The repo-local `repo-triage` and `repo-triage-minimax` maintainer workflows are removed; they were no longer used. `scripts/migrate-state-dir.ts` still moves a legacy `.archon/state/` into `$STATE_DIR`, but no longer writes the `.initialized` marker, which only those workflows read. (#4000)
+- The chat router no longer uses `archon-assist` as its example or describes it as the fallback: its examples now name `archon-ship`, `archon-plan` and `archon-investigate`, and questions still get a direct answer. (#3525)
+- Provider SDKs updated to latest: Claude Agent SDK 0.3.302, Codex 0.163.0 and Pi 1.3.0, with Copilot SDK 1.0.16 and OpenCode SDK 1.18.34. When Claude Code refuses to start, its stated reason now decides the failure class: a sign-in the organization rejects is an auth failure and is not retried, and a configuration problem such as an invalid proxy URL is no longer retried as a crashed process. A Pi node that resumes or forks a session from a node with restricted tools gets a fresh session's tools again. (#3565, #3726, #3798, #4408)
+- A provider setup error is now reported as a `misconfigured` failure and is never retried, even with `on_error: all`; chat and the run's failure message say to fix the configuration. Claude reports it for a configuration reason it refuses to start with, a missing or unlaunchable executable, and an unknown model. Claude, Codex and Copilot report it for an unreadable MCP config file, Claude and Codex for a binary that cannot be found, and Pi for a missing or malformed model. Claude's `provider_not_allowed` refusal moves from an auth failure to `misconfigured`, and Pi with no credentials for its provider is now an auth failure. (#3566)
+- `persist_session` nodes on OpenCode and Copilot no longer continue the session an earlier run saved, because those providers cannot fork a session and two runs would write into one conversation. Each such run starts fresh, says so in chat, and records a `node_session_not_continued` event; `archon validate workflows` warns when the provider is written in the workflow file. Claude, Codex and Pi still continue it. (#2667)
+- A `persist_session` node on Codex continues the session an earlier run saved by forking the saved Codex thread into a new one, so two runs never write into one conversation, and the fork keeps the node's scoped MCP servers and plugins. If the saved thread can no longer be forked, for example because its rollout file was deleted, the node fails as `unknown` with Codex's error on every run until `archon workflow reset-sessions` clears the saved session. (#3612)
+- Codex now runs each turn on `codex app-server` instead of `codex exec`, so a failed turn reports a typed failure class from Codex's own error code instead of `unknown`: missing or rejected credentials are `auth`, a used-up usage limit is `quota_exhausted` (with the reset time when Codex reports a full window, so the run can wait for the reset), and rate limits, overload and a crashed Codex process are retried as `rate_limited` or `transient`. A Codex that exits before answering (a binary without `app-server`, or one that rejects a flag) is `misconfigured`, with its stderr as evidence. A Codex thread that can no longer be resumed fails the node as `unknown` with Codex's error; the documented fallback to a fresh thread never ran for Codex. Cancelling a Codex node interrupts the turn before stopping the process, and stops the process anyway if Codex does not answer. `CODEX_API_KEY` still switches Codex to an API key; the key is held in memory and never written into your Codex home. A changed `codexBinaryPath` now applies to the next turn, and a broken one fails it as `misconfigured`. Source installs depend on `@openai/codex` instead of `@openai/codex-sdk`. (#3564, #3573)
+- Whether a failed node is retried now depends only on the kind of failure Archon recorded, never on the error message. A `bash:` or `script:` node's output no longer decides retry: a script whose stderr says "timeout" or "503" is no longer retried under the default `on_error: transient`, and one that prints "unauthorized" is retried under `on_error: all`. To retry a failing script, set `on_error: all`. Every timeout is now transient: a script's `timeout` is retried when `retry:` is set, and an AI node that idles out after output, or before its structured output, is retried by default; each of those retries can wait another full `idle_timeout`, so a hung AI node with the defaults can take three `idle_timeout` windows to fail. Config errors (a missing command file, a bad input reference, an `output_format` that cannot compile) and cancelled nodes are never retried, even with `on_error: all`. A provider error without a typed failure class is `unknown`, whatever its message says; every built-in provider reports typed classes, so this affects only third-party providers. A loop's retry settings now apply to its failed iteration. (#3522, #3528, #3608, #3620, #4023)
+- An AI node or loop iteration finishes when its provider settles, after any background work it reported, not at its first result. (#3530, #3740, #3821)
+- A chat message that the platform rejects no longer aborts the run, whatever the error says. Before, a send error that read like an auth failure (for example from a revoked Slack token) stopped the run. Now a failed send is logged and the run continues. A pause whose notice cannot be delivered (an approval gate, an interactive `loop` or `loop_group` gate, or an attention wait) stays paused and is answered from the attention queue; the failed delivery is recorded on the run as a `pause_notice_undelivered` event, which the console's run view and the CLI's progress output show. Failure and completion messages are retried on every send failure instead of stopping at an auth-looking one. (#3608, #4041)
+- Feedback on an interactive loop's final gate now runs one more iteration with the feedback as `$LOOP_USER_INPUT`. (#4325)
+
+### Deprecated
+
+- Archon's Codex setup variables are renamed to `ARCHON_CODEX_ID_TOKEN`, `ARCHON_CODEX_ACCESS_TOKEN`, `ARCHON_CODEX_REFRESH_TOKEN` and `ARCHON_CODEX_ACCOUNT_ID`. Archon passes its environment to Codex, and Codex reads `CODEX_ACCESS_TOKEN` as an auth input, so the old name could override your own Codex login. `archon setup` now writes the new names, and re-running it moves an old Codex setup in your `.env` to the new names and removes the old lines. Until the next release, the old `CODEX_*` names are still read, but only when `CODEX_ID_TOKEN` is set and no `ARCHON_CODEX_*` variable is; the server then logs a warning naming each replacement. Old lines left beside new ones are ignored by Archon but still reach Codex, so they are warned about too. A `CODEX_ACCESS_TOKEN` without `CODEX_ID_TOKEN` is treated as your own Codex auth and passed to Codex untouched. (#3562)
+- `approval:` gates, `approval.decisions`, `approval.capture_response`, `approval.on_reject` with `$REJECTION_REASON`, and interactive loop gates (`interactive: true` with `gate_message`, and `$LOOP_USER_INPUT`) are deprecated in favor of `wait: attention` forms. They still load and run unchanged, and paused runs of these shapes stay answerable with `approve`, `reject` and `respond`. Each workflow file that uses one gets one load warning per shape, naming its nodes and the replacement. One rewrite changes behavior and is not done for you: a legacy reject cancels the run, while `form: approval` continues with decision `reject`, so add a `cancel:` node on reject where rejecting should end the run. The bundled example workflows and the docs use attention forms only, and `--dry-run` stubs can now answer an attention wait. See [Migrating from approval gates](https://archon.diy/guides/approval-nodes/#migrating-from-approval-gates). (#4042)
+- The OpenCode and Copilot providers are deprecated. No Archon maintainer owns them; they keep working unchanged and stay bundled, with no removal date, until a community owner publishes each as a plugin. `archon doctor` warns when one is your default assistant, `archon ai default` prints the notice when you select one, and the first run in a process that uses one prints it once on stderr (the server logs it instead). An install that uses neither never sees the notice: doctor checks their runtimes only when one is your default assistant or has settings under `assistants`, and does not list them as installed providers. To take one on, see [Deprecated providers](https://archon.diy/getting-started/ai-assistants/#deprecated-providers). (#3684, #4132)
+- `quotaFallbackDelayMs`, `quotaMaxAttempts` and `quotaDeadlineMs` are ignored and warn on load; a usage-limit wait now ends at the provider's reported reset. (#4225)
+
+### Removed
+
+- Configuration fields that had no effect, unused SQL files and stale docs are removed. Older config files that still set the removed keys keep loading. (#4196)
+
+### Fixed
+
+- Cancelling a run under `archon serve` now ends its running `bash:` and `script:` node process trees within about a second. Pressing Ctrl-C on a foreground `archon workflow run`, `workflow resume` or `trigger execute` also ends the process tree of the node that was running, so a later `workflow resume` no longer runs that node while the interrupted attempt is still alive. The run is still recorded `failed` with its `stop_reason` and stays resumable. On macOS and Linux, a terminal hangup or a killed owner also ends that tree. A descendant that starts its own session or process group (`setsid`, a daemon) escapes this and can still overlap a resume. Worktree setup commands end their process trees too. (#3552, #4014, #4375)
+- A run no longer fails when the host running it cannot read its frozen source for a named `script:` node, a command node, or a composed block (an unreadable scripts directory, a permissions change, a capture missing from that host, exhausted file descriptors). The run pauses with a `source_released` event, keeps its completed nodes and its resource slot, and is continued about a minute later by `workflow wake`, the server, or `archon workflow resume` on any host that can read the source. This includes a quota-resumed run. A container-isolated run is not continued automatically: it appears in the attention queue until you resume it by hand. A script that is missing or changed in the frozen source still fails the run. (#4209, #4227)
+- Two worktree setups at the same moment no longer fail one of them on git's global config lock on macOS and Linux, and repeated setup no longer adds duplicate `safe.directory` entries. (#4184, #4390)
+- The Slack card for a parent run waiting on a child workflow shows the command Slack accepts, and its buttons point to the child instead of failing. The web console shows the same guidance without offering parent approval controls. (#3615, #4391)
+- A run started from a source checkout whose built-in provider code changed under it now fails with the `archon workflow resume <run id>` command instead of telling you to update a plugin that isn't installed. (#4422)
+- A ChatGPT subscription connected in Archon no longer replaces `CODEX_HOME` for Codex nodes, so your Codex config, global `AGENTS.md`, hooks, plugins and MCP servers load as they do for `codex` itself. Codex now logs in with the subscription in memory, which also makes it work in direct chat. A connected OpenAI API key now reaches Codex as `CODEX_API_KEY` (it was ignored before), so Codex bills that key instead of your native login. A run started under an older build with a connected ChatGPT subscription cannot continue its earlier Codex threads after upgrading; restart it. (#2841)
+- Pi subscription OAuth works in the compiled binary, Pi nodes with extensions run in parallel again, and a timed-out or aborted Pi node no longer wedges the process or blocks its retry. Pi extension errors, including on Windows, fail the node that loaded the extension. (#3537, #3592, #3627, #3634, #3677, #4076, #4122)
+- Token and cost totals are now complete: a Codex node counts every request in its turn, a Claude node counts delegated models and resumed sessions in source installs, loop groups keep usage on early exits, and deferred gate spend counts once after resume. (#3618, #3624, #3896, #4020, #4028, #4053)
+- The idle watchdog no longer fails nodes when the machine wakes from sleep. (#3589)
+- `persist_session` continues across runs started from the web UI, the node after a structured-output re-ask continues the real session, and a `loop_group` resumed at its body gate continues the paused iteration's session. (#3534, #3586, #3587)
+- Long-lived `workflow wake --watch` and server processes stop retrying missing, unreadable, or unverifiable frozen workflow source on this host after three attempts per continuation occurrence and warn once per run per process with the run, path when available, and resume or abandon actions. Other hosts can still resume the run; transient failures keep retrying. Installed wake schedules keep one watch process alive to accumulate the bound. Later waits after manual recovery can wake in the same process. The bound resets on process restart; one-shot wakes do not accumulate it. (#3404)
+- On a database shared by several machines, `archon workflow wait` no longer reports `owner_lost` for a run that another machine, or another user on this machine, is executing. It reports on its `waiting` line that the owner's liveness is unknown and keeps waiting on the run's stored state. Slow owner handshakes are retried before a run is reported `owner_lost`, and a slow Windows stop no longer refuses a live owner. (#3531, #3750, #4079)
+- A busy SQLite lock now waits instead of failing the run, a run's events commit and read back in order on PostgreSQL and the file store, runs are found by ID prefix on PostgreSQL, and concurrent state-document patches no longer fail under contention. (#3730, #3796, #3993, #3997, #4092, #4121)
+- A late failure write after a cancel no longer reports a false storage error, and an all-refused fan-out fails instead of looking finished. (#3803, #4322)
+- Template values from users and runs reach a node exactly as written, and a workflow started over HTTP receives the caller's message byte for byte. Loop-body command files get `$LOOP_USER_INPUT` and `$LOOP_PREV`, command files resolve include outputs and their own bindings, `until_bash` checks receive named inputs, and a dry run resolves `$LOOP_PREV` and stubs a 1:1 child workflow node like a real run. (#3951, #4022, #4029, #4062, #4087, #4179, #4187)
+- A `when:` with a numeric comparison against non-numeric output is false, so a later `||` clause can still decide whether the node runs. CRLF and LF workflow files load identically. (#3811, #4321)
+- A loop group's output is the iteration's work, whether or not it paused to ask. (#4129)
+- A chat-launched workflow no longer starts with a truncated task when the agent's `--prompt` contains an escaped quote. `--prompt "Fix the \"login\" bug"` used to launch with the task `Fix the \`. (#1886)
+- In GitHub App mode, `gh` in a long workflow run no longer fails with 401 once the token resolved at run start expires. Runs whose process has `ARCHON_PORT` (all server-dispatched runs, except on Windows) put a `gh` shim first on `PATH` that fetches a current installation token from the server's loopback endpoint on each call. A CLI run without `ARCHON_PORT`, a run on Windows, and `gh` called by a Codex agent keep the start-time token; the first two log `workflow.gh_token_refresh_unavailable` each time the run's GitHub environment is resolved. First GitHub clones succeed and a failed clone can be retried. See [Long-running workflow `gh`](https://archon.diy/adapters/github-app-setup/#long-running-workflow-gh). (#3439, #4097)
+- Worktree and project cleanup no longer removes the wrong thing: a failed add rolls back only the checkout it created, a failed conversation link no longer marks a live worktree destroyed, cleanup retires only the registration it observed and keeps replacement directories, container environments stay visible for cleanup, and deleting a codebase with missing worktree ancestors works. Reusing an existing worktree warns and is recorded. (#3828, #3919, #4049, #4211, #4228, #4232, #4281)
+- Nested repositories resolve as their own projects, a missing registered project directory gets guidance naming the project and path, `/workflow run` asks which project to use instead of picking the only one, new unpinned projects follow the configured assistant, and chat stops registering a project when Git detection fails. (#3631, #3656, #3698, #3707, #3721, #4139)
+- Container runs start Claude without a host binary, and source installs honor `CLAUDE_BIN_PATH` and `assistants.claude.claudeBinaryPath`. (#3735, #3813)
+- The source CLI starts from any working directory, so trigger-started runs run. (#3950)
+- A corrupt process-owner record can no longer release a lock or slot its owner still holds, a stale wait release can no longer free a later pause's slot, and terminating a Windows process tree no longer fails when the root exits mid-kill. (#4051, #4065, #4222)
+- Plugin commands: one unreadable plugin receipt no longer blocks every plugin command, a failed update leaves no backup executable behind, and an install no longer fails when Windows briefly locks the new executable. (#3971, #4008, #4094)
+- The console builder edits and saves workflows as authored, keeping comments, anchors and formatting, and validates loop completion fields inline. The console shows the engine's node state and cost scope, keeps chat pinned as content grows, keeps dashboards live across tabs and other processes' runs, and shows when personal settings fail to load. (#3378, #3379, #3668, #3674, #3712, #3716, #3844, #3846, #3966, #4054, #4073, #4221)
+- Workflow run titles use the small tier's model and effort, and a user without a usable credential keeps the existing title instead of borrowing another user's. (#3877, #4289)
+- The console's per-node cost no longer counts a composed fan-out, a loop group or a retried node twice. A node whose cost restates spend other nodes already show now reads `total $X` instead of looking like its own spend, so the per-node costs that are not marked as totals add up to the run total. (#3657)
+- Codex title generation now starts with no ambient skills catalog, plugins, apps or MCP servers and a read-only sandbox. Native guidance and provider settings still load; failures still fall back to a truncated message title. (#3626)
+- Workflow nodes whose output only mentions a credit balance or session limit no longer fail as out of credit. Quota failures now come only from the provider's typed failure, and the node error includes the reset time when reported and tells the operator to resume once the limit reopens. (#3619)
+- Parallel nodes that all declare `mutates_checkout: false` now run in parallel instead of one at a time. When one of them changes the checkout, every guarded node running at that moment fails, and the error names the other guarded nodes that ran in the layer, since the change may not be the failing node's alone. A layer that mixes guarded nodes with any node that isn't checkout-guarded still runs one node at a time. (#3606)
+- Two overlapping runs of one workflow in one conversation no longer share a persisted session. Each run's `persist_session` nodes continue from the session saved when that run started, never from one a sibling run saved later, and a node that finishes without a session id no longer erases the saved one. (#2667)
+- A `script:`/`bash:` node that reads a variable from `.archon/.env`, `~/.archon/.env`, or `config.yaml`'s `env:` section no longer warns as if it were a typo, on a fresh listing or a real run. The bundled `sdlc` pack no longer trips this warning for its own `ARCHON_SDLC_FORGE` operator switch. A name no configured source supplies still warns. (#3509, #3514)
+- Invalid `STALE_THRESHOLD_DAYS`, `SESSION_RETENTION_DAYS` and `CLEANUP_INTERVAL_HOURS` values are rejected at startup with the variable and value, the global conversation limit controls server admission, and `workflow answer` rejects flags it would ignore. (#4183, #4185, #4195)
+- Answer commands report an answer that waits for capacity as success, and `workflow status`/`get --verbose` show a node reset on resume as pending. (#3611, #4214)
+- GitHub webhook deliveries without a repository owner are acknowledged and ignored instead of erroring. (#3802)
+
+## [0.11.1] - 2026-09-25
+
+A patch release: copied workflow packs load cleanly, and release notes now come from this changelog.
+
+### Fixed
+
+- A workflow pack copied into a project with `archon plugin copy` no longer reports a load error for a YAML file at the pack's root, such as an example config. A directory that holds `archon-plugin.json` is read only by the pack loader, so installed and copied packs load the same tree the same way. (#3505, #3512)
+- Release notes on GitHub are built from this changelog's section for the version, with breaking changes first, instead of being replaced by generated notes. (#3518)
+- The schema-upgrade check reads the v0.11.0 SQLite schema, so pull-request CI passes again. (#3517)
+
+## [0.11.0] - 2026-09-25
+
+Workflow packs install straight from GitHub, workflows can start from schedules and GitHub events, forge plugins carry the delivery pack's pull-request work, and all three provider SDKs move to their latest releases.
+
+### Breaking
+
+- A repository's `.archon/.env` can no longer set `ARCHON_HOME`, `HOME`, `USERPROFILE`, `ARCHON_DOCKER`, `WORKSPACE_PATH` or `PATH`. Archon refuses to start and names the file and the key. Move the key to your shell environment or to `~/.archon/.env`. This keeps one Archon home per process tree, so detached runs, `trigger execute`, detached `approve`/`resume` and CLI calls from workflow scripts read plugins from the same home as their parent. (#3501, #3506)
+- `assistants.<provider>` in `.archon/config.yaml` (global and repo) is now validated when the config loads, by the provider's own parser. A value the provider would have silently dropped, such as `modelReasoningEffort: extreme`, a misspelled key, or a `settingSources` entry other than `project` or `user`, stops the load with a message naming the file, provider, key and accepted values. `archon doctor` reports it as a failed **Config files** check, and the settings API answers `400` naming the refused key. A settings change that fixes an invalid value already in `~/.archon/config.yaml` is still saved. Two OpenCode keys are now refused: `assistants.opencode.agent`, which nothing read, and `assistants.opencode.baseUrl`, which every OpenCode run already rejected. (#2582, #3461)
+- `none_failed_min_one_success` now blocks a dependency that was skipped because something upstream failed, even when another dependency succeeded, including across chains, includes and resumed runs. A join that used to run after a failure now skips and keeps the original failed node as its skip cause. Condition skips and `on_timeout: skip` skips still count as admissible. (#3156, #3249)
+- `thinking:` is removed. `effort:` is the only reasoning-depth setting in workflows, tiers, aliases and config, and any `thinking:` fails validation with a message pointing to `effort:`. The effort ladder gains a `persistent` rung. (#3094)
+- Abandon and cancel now mean different things. A `failed` run is stopped and can be resumed; a `cancelled` run is discarded. `archon workflow abandon`, chat `/workflow abandon`, the Slack cancel button, the `manage_run` cancel action and `POST /api/workflows/runs/{id}/abandon` now stop a reachable detached owner before recording the run `cancelled`, so its worktree and resource slot are no longer released while the old process is still writing. If no owner answers, abandon still cancels and shows the recorded host, pid and last activity. If an owner answers but cannot be stopped, abandon fails and leaves the run unchanged (HTTP `409`). A run executing inside a live Archon server is refused; cancel it from that server. (#2325, #3446)
+- A `when:` condition that compares an object or array, from `$node.output.field` or `$INPUTS.<name>`, now fails the node with an actionable error instead of comparing JSON text and quietly skipping. (#2995, #3037)
+- A plain `loop.until` or `loop_group.until` signal must now sit alone on the final line of the output. A mention inside prose, such as "not COMPLETE yet", no longer ends the loop. XML-wrapped signals work as before. (#2994)
+- A `workflow:` node can no longer declare its own `output_format`. The child's `returns:` node owns the result contract, and a caller-side schema is a load error naming that node. (#3148)
+
+### Added
+
+- The plugin command installs a workflow pack from GitHub as one complete tree at one commit. `archon plugin update`, `remove` and `list` manage installed packs, and `archon plugin copy <id>` makes an editable copy under `.archon/workflows/`. (#2767, #3485)
+- Installed packs run from the workflow catalog as `owner/pack:entrypoint` from the CLI, chat, the router, run management and the API. Only a pack's declared entrypoints can be dispatched. A run freezes the pack at the commit it started with, so `update` or `remove` affects only later runs. (#2835, #3486)
+- Forge plugins: Archon can talk to a code forge through an installable executable plugin. Each release publishes the GitHub plugin, available through the plugin command, including inside Docker. The delivery pack reads pull-request checks, including external commit statuses, through it, and with `ARCHON_SDLC_FORGE=forge` also creates, edits, comments on and flips pull requests through it, verifying each write by reading it back. (#3417, #3447, #3457)
+- Event-triggered workflows: trigger bindings start ordinary governed runs from native macOS schedules and verified GitHub issue, pull-request, label, check and status webhooks. A binding names a shared resource and chooses `skip` or FIFO `queue` when a run already holds it, and queued work survives restarts. The server hosts triggers when `ARCHON_TRIGGER_HOST` is set; the CLI adds `archon trigger fire`, `drain` and `whoami`. See the workflow triggers guide. (#3415)
+- Provider SDKs updated to latest: Claude Agent SDK 0.3.282, Codex SDK 0.157.0, Pi 0.87.1. Claude cost stays per query after a resume or fork, and Pi usage now includes cache-warming and compaction calls. (#3076, #3504)
+- `concurrency.providers.<provider-id>: N` in `~/.archon/config.yaml` caps simultaneous attempts per provider across every process sharing the database. There are no default caps; `archon ai capacity release` frees a slot held by an owner on another host. (#3460)
+- `archon workflow logs <run-id> [--follow]` prints or follows a run's transcript, and `workflow get` shows its path. The transcript now marks resumes with a `workflow_resume` row and records every gate approve, reject or response as a `gate_decision` row. (#3096, #3482)
+- An interrupted run records why it stopped. After Ctrl-C, `workflow get` shows `Stopped: interrupted by the operator (SIGINT)` and the console labels the run `Interrupted`; it stays resumable. (#3502)
+- Runs record the checkout they started from (`checkout_baseline` in `workflow get` and the API), and every node attempt records its starting checkout. (#3443, #3463)
+- A workflow's authored outcome is shown beside its execution status in the CLI, console, chat, Slack and dry runs. Every terminal run keeps a structured record (status, outcome, node states, skip causes, artifact inventory) that `workflow get` and the API can read even when reporting nodes never ran. (#3082, #3110, #3254)
+- A `bash:` or `script:` node can declare `output_format` and certify its own JSON result, and a result may point at an artifact file with `{ "type": "archon_artifact", "run_id", "path" }`. An `output_format` schema that does not compile is a load error. (#3148, #3158)
+- `bash:` and `script:` nodes accept `on_timeout: skip`, so optional work can time out without failing the run. (#3174)
+- Workflows can declare an action-required durable wait. Delivery runs pause on inherited or environment CI failures and resume after an operator acts, and a concluded GitHub check wakes the waiting run right away. Waits report `owner_lost` when a run's owning process disappears. (#3115, #3172, #3175)
+- Packaged Bun and Python scripts can import pack-local `.shared` modules, in source checkouts, global workflows and binary installs. (#3252)
+- Script and bash nodes receive `$TYPED_ARTIFACTS_FILE`, a listing of typed artifacts grouped by `output_type` with read errors reported, and `ADOPTED_RUN_DIR` for adopted runs. (#3085, #3418)
+- More workflow problems are caught before a run spends money: `output_format` schemas Codex would reject for missing `required` keys, unbound `INPUTS_*` reads in script and bash nodes, and single-quoted `$node.output` references in shell. (#2970, #3084, #3310)
+- Provider capabilities declare cost reporting separately from spend-limit support, plus which token, stop-reason, turn-count and model metrics each provider reports. (#3398, #3412)
+- `archon <command> --help` and `archon help <command>` print help for that command only. (#3118)
+- Run lists in the CLI, API, console and `manage_run` show the nodes currently running. (#3116)
+- Delivery pack: `archon-validate` can compare a change, its base and the composed tree, and report a blocking `interaction` when only the combination fails. Triage judges whether an item is a usable contract and applies area labels when launched with `publish`. Deliver repairs an existing pull request when launched on its branch. Implement reads the repository's `engineering.md` when one exists. A late red CI result routes back into one correction round instead of failing the run. (#3059, #3071, #3220, #3224, #3413)
+
+### Changed
+
+- CLI commands write logs to stderr, so stdout carries only the command's output: `archon workflow list --full > out.txt` captures the listing and nothing else. Every command except `archon serve` logs at `warn` by default; pass `--verbose` or set `LOG_LEVEL=debug` for more. `archon serve` still logs at `info` on stdout. (#3444, #3445)
+- Workflow definition problems (deprecated or unknown keys, ignored fields, files that fail to load) are no longer logged at `warn` on every discovery. They appear in `archon validate workflows`, `archon workflow list`, the `workflow run` preamble and `/api/workflows`, and are still logged at `debug`. (#3406, #3444)
+- `archon workflow status` shows active runs for the current project; pass `--all` for the whole install. `archon workflow list` shows compact descriptions; `workflow list <name> --full` shows the whole one. (#3114, #3121)
+- Command suggestions are spelled for the surface showing them: `/archon-workflow …` in Slack, `archon workflow …` in the CLI, `/workflow …` elsewhere. (#3489, #3503)
+- `archon doctor` fails on retired or stale Archon skill folders, reports an expired or unreadable Pi credential instead of passing, and labels stored provider credentials `connected (not validated)`. (#3182, #3426, #3500)
+- `archon setup` recommends a classic GitHub token, because fine-grained tokens cannot read check runs. (#3425)
+- A run's frozen workflow source now lives outside its artifacts directory and is re-verified before every read, and container runs mount the run's artifacts directory read-write. Source and binary builds ship the same bundled packs. (#3131, #3132, #3134, #3301)
+- `workflow get --json` lists only a run's reports in `artifactFiles`, with engine bookkeeping counted in `artifactFilesOmitted`. (#3454)
+- Run transcripts record idle-watchdog renewals once per burst instead of once per streamed chunk, cutting large transcripts by up to 95%. (#3088, #3456)
+- Telemetry sends one startup event per process, one start and one final outcome per run whatever path ends it, the install channel, and the shape of custom workflows (never their names). Crashed chat turns are counted. Telemetry no longer delays CLI exit. (#3256, #3483, #3491, #3497)
+- Delivery pack: validation runs the project's gate in a script for up to two hours and reports an interrupted gate as "didn't finish" rather than unexplained red. The review checks the change against the contract's acceptance list. Every reasoning node receives the operator's request. The pack's deterministic scripts are TypeScript. (#3030, #3090, #3296, #3465, #3470, #3511)
+- Bun is 1.4.2 across development, CI and Docker images. (#3078, #3210)
+
+### Fixed
+
+- On Windows, detached runs no longer flash a console window for every git and subprocess call. (12875f1d2)
+- On Windows, stopping a run's owner waits until its whole process tree has exited, and `archon serve` extracts the web UI from any shell. (#3280, #3487)
+- The Docker container no longer crash-loops on start when `~/.gitconfig` holds several `credential.https://github.com.helper` values, as `gh auth login` inside the container leaves behind. With `GH_TOKEN` set, the entrypoint replaces them all with its own helper. (#3401)
+- Registering a local checkout, including automatic registration on `archon workflow run`, no longer repoints a same-named project that Archon cloned into its managed workspace, which silently broke other hosts sharing the database. Registration fails with a conflict naming both paths and the `/update-project` fix, and a refused registration leaves nothing behind on disk. (#3403, #3405, #3440, #3442)
+- Archon decides whether a path is in its managed workspace by comparing it with the configured workspaces root. On Windows no path was recognized, and lookalike paths such as `~/.archon/workspaces-old/...` were treated as managed and could be hard-reset. (#3441, #3442)
+- A worktree whose setup fails (git identity, submodule init or configured file copies) is removed instead of being adopted as ready by a later run. Worktrees are created locked until setup finishes, and a run that finds a locked one refuses it and names the command that clears it. (#3448, #3453)
+- Worktree cleanup recognizes squash-merged branches through PR state, judges merges against the remote base branch, and still judges a worktree whose local branch ref is gone. (#3002, #3038, #3476)
+- Parallel launches no longer fail on git ref-lock races during workspace sync, repository sync and PR or fork-PR fetches, and concurrent fork-PR launches share one review worktree. (#3087, #3112, #3144, #3159, #3164)
+- Resumed runs keep writing to their original conversation, keep the base branch and workflow source they started with across a gate, and show already-completed nodes as completed in Slack and the Web UI. (#3308, #3337, #3458)
+- `--supersedes` accepts short run-id prefixes and works on runs that failed before creating an output root. `--adopt` keeps an explicitly chosen workflow source and accepts runs whose isolation environment was created mid-run. Persisted output roots are always resolved inside `ARCHON_HOME`. (#3047, #3070, #3113, #3122, #3221)
+- A detached or foreground CLI run resumes its own timed or event wait when the deadline passes, without `archon serve`. A resume that cannot continue suggests the same-branch relaunch command. (#3165, #3316)
+- Loop nodes honor their provider, model, tool and timeout settings, and a `loop_group` forwards its model to body nodes. Loop groups in two-level includes run correctly, and sink warnings see include-composed sinks. (#3248, #3284, #3406, #3459)
+- Workflows in a symlinked scope root such as `~/.archon/workflows` run instead of reporting "not found", and fixtures in a top-level workflow folder no longer load as broken workflows. (#3233, #3408)
+- The console builder flags `$node.output` references inside Markdown code spans, matching the loader. (#3345)
+- Providers: OpenCode nodes fail on an unresolved permission request instead of hanging; Pi records usage and cost for every model call, lets its own retries finish inside the node, and works with `manage_run` on Vertex; Pi's model-not-found error names `pi update --models`; Copilot tool failures show their error message; Codex and Claude binary pins give actionable errors, and source installs honor Codex pins. (#3045, #3200, #3299, #3344, #3409, #3414, #3455)
+- Node durations in `workflow get --verbose` are correct across daylight-saving changes. (#3343)
+- GitHub App auth keeps working through a transient outage of GitHub's installation-lookup endpoints. (#3435)
+- Clone credentials for GitHub, GitLab, Gitea and Forgejo stay out of git arguments, persisted remotes, errors and logs. Credentials written to stderr by a successful node are redacted in chat as they are in the transcript. (#3067, #3120)
+- The artifact preview API refuses symlinks that escape a run's artifacts directory. (#3163)
+- Hashed web assets are served with an immutable cache policy, so a deploy is no longer hidden behind a stale page. (#3424)
+- A worktree whose hashed server port is taken starts on the next free port instead of failing to bind. (#3177)
+- A bare `reset` in Slack works as `/reset`, and an empty rejection reason over REST records the default "Rejected". (#3181, #3300)
+- Delivery pack: a PR merged while its run is still delivering counts as delivered; a delivery that dies after opening its PR is never reported delivered; a failed gate or unreadable check state blocks the ready flip; resuming at the validation gate re-runs validation; `archon-ship` ends cleanly when the work was already delivered. (#3000, #3095, #3100, #3145, #3368, #3473)
+
+### Removed
+
+- The legacy Web UI. The console is the only Web UI, and old URLs and run bookmarks redirect into it. (#3402)
+- The experimental `archon-stabilize` workflow. (#3066)
+
+## [0.10.1] - 2026-08-30
+
+**This patch release contains a breaking change.** Built-in model tiers now ship for `claude` and `codex` only. If your install runs `pi`, `copilot`, or `opencode` and you have never configured `tiers:`, bundled workflows will refuse to load until you set them — read the Breaking section before upgrading. Everyone else gets a smaller review bill and four fixes.
+
+### Breaking
+
+- **Built-in model tiers ship for `claude` and `codex` only, at the provider's default reasoning effort.** Tier defaults previously existed for five providers, and the entries for providers Archon does not actively curate pinned third-party model IDs that rot invisibly — a `pi` or `opencode` install silently resolved `small`/`medium`/`large` to models nobody chose. Those entries are gone.
+
+  **What breaks:** an install whose provider is `pi`, `copilot`, or `opencode` and which has no configured tiers now fails at workflow load with an error naming every fix surface. Nothing is silently downgraded and no run starts, so no provider is called and no money is spent — but the workflow does not run.
+
+  **The fix, once:** `archon ai tier set <small|medium|large> <provider> <model>` for each tier, or set them in console AI Settings, or add a `tiers:` block to `config.yaml`. See the configuration reference for the full shape.
+
+  **Codex tiers also changed.** They now resolve to `gpt-5.6-luna` (small), `gpt-5.6-terra` (medium), and `gpt-5.6-sol` (large), replacing the old `gpt-5.5` plus `minimal`/`medium`/`high` effort ladder. That ladder was removed rather than ported: a configured tier replaces the built-in wholesale, so the effort settings only ever survived on installs that never touched a tier. Effort is now an explicit per-tier choice — add `effort` to a tier if codex `large` reasons less than you want.
+
+  `archon setup` now shows what the three tiers resolve to on claude and codex and asks you to confirm, and warns when the selected provider ships no built-ins. Accepting the defaults writes nothing, so future default bumps still reach existing installs on upgrade. Installs with configured tiers are unaffected. (#3007)
+
+### Changed
+
+- The bundled `sdlc` review workflow runs its agent nodes on the `medium` tier instead of `large`. Review is the pack's widest fan-out, so it is where tier spend concentrates. Installs that want deeper review reasoning rebind `medium` or give it an `effort`, rather than the pack hardcoding the top tier. (#3005)
+
+- The seams review lens reports a hand-synced pair — two declarations kept in agreement by nothing but a comment — as an Important finding the moment it exists, instead of waiting for the copies to drift apart. It also traces a discriminant dispatch back to the table that defines it. (#3003)
+
+### Fixed
+
+- The tier-resolution error reached chat users as a generic "Try /reset" because the error formatter length-gated messages over 100 characters. The guidance now survives to the user verbatim. (#3007)
+
+- `archon ai tier unset` claimed the tier would fall back to a built-in default even for providers that ship none. It now names the actual fallback, or says none exists and how to set one. (#3007)
+
+- The console Model Tiers panel hinted "built-in default" for unset rows on providers without built-ins. (#3007)
+
+- SQLite vintage fixtures were stale after the v0.10.0 tag, failing the `schema-upgrade` check on every dev-based pull request. (#3008)
+
+## [0.10.0] - 2026-08-30
+
+This is the largest release since Archon became a workflow engine, and it changes three things you will notice on day one.
+
+**The bundled coding workflows have a successor.** A new `sdlc` pack takes a work item from an open question to a reviewed, CI-green, ready-to-merge pull request, composed from eight reusable primitives instead of one monolithic prompt. The twenty pre-rewrite `archon-*` workflows still run exactly as before, but they have moved to `.archon/workflows/defaults/legacy/`, they now announce their deprecation on every run, and they will be deleted in an upcoming release. Copy the YAML into your own `.archon/workflows/` if you want to keep one.
+
+**Talking to a paused run now means what you said.** Any plain message at an approval gate used to be recorded as an approval — including an objection. The open gate is now handed to the chat agent, which resolves it through confirm-gated `approve`/`reject` verbs: a clear approval approves, a clear objection rejects with your own words as the reason, and an ambiguous message resolves nothing and asks you a question back. The slash commands remain the deterministic path.
+
+**Values stop degrading as they move.** A structured node result now keeps its type through persistence, resume, `with:` bindings, child runs, and fan-out aggregates, and `command:`/`script:` nodes bind upstream values by name instead of passing them through artifact files. Alongside that: workflows can pause durably for a duration, a clock time, or an external event; a run reads its workflow source from a copy it owns rather than from the target repository; a single run can rebind model tiers or load a sparse config layer without touching shared configuration; and `archon workflow wait <run-id>` replaces polling loops.
+
+The CLI also got stricter and smaller. Unknown flags are now a hard error instead of a silent drop, `archon continue` is gone in favour of `--adopt <run-id>`, and the `archon` and `manage-run` skills are replaced by one `archon-cli` skill. Read the Breaking section before upgrading — several previously silent shapes are now load-time errors.
+
+### Breaking
+
+- **A plain message at an approval gate no longer approves it.** While a run was paused at a human gate, any message that did not start with `/` was recorded as an approval — so "no, stop, why is it editing the schema?" resolved the gate as approved, stored the objection itself as the approval comment (and as `$gate.output` under `capture_response: true`), and continued doing the thing the user objected to. There was no interpretation step and no natural-language way to reject. The open gate is now given to the chat agent as context for the turn, and the agent resolves it through the same confirm-gated `approve`/`reject` verbs the slash commands drive: a clear approval approves, a clear objection rejects with the user's own words as the reason, and an ambiguous message resolves nothing and gets a question back. Providers without native tools reach the same verbs over the `archon workflow approve|reject` CLI. Resolving a gate now also continues the run on every chat surface — including `/workflow approve` and `/workflow reject`, which previously told you to "type your response in this conversation to resume" and left the run parked. Deterministic behaviour is still available: use the slash commands. (#2565, #2577)
+
+- **`archon continue <branch>` is removed.** It selected a run by inferring it from a branch name and then injected a hand-assembled prose preamble of git history, PR text, and prior artifacts into the message — a second, hidden continuation route that serialized engine-owned context as a wire format for the agent. Continuation is now identified by exact run id through the central adoption resolver: `archon workflow run <name> --adopt <run-id>`, with prior artifacts reaching the new run as `$ADOPTED_RUN_DIR`. Stale invocations fail from any directory with that pointer, and the continue-only flags are gone. `workflow resume`, `workflow runs --open`, and explicit branch execution are untouched. (#2873)
+
+- **Unknown CLI flags are a hard error.** `archon workflow run` ran with `strict: false` and silently discarded any argument it did not recognize, so a mistyped `--dry-run` still launched a full real run — providers called, worktree created, run row written. Any `-`-prefixed argument the CLI does not recognize now fails naming the offending flag, before anything is created or contacted. Valid invocations, string-option values, and free-text positionals parse exactly as before. (#2778)
+
+- **`interactive:` is now a load-bearing class declaration.** It used to be checked in exactly one place, so `workflow run --detach` and the `manage_run` tool would happily background an interactive workflow that later paused with nobody watching. Now an unattended workflow cannot load with a pause node anywhere in its own DAG, and an interactive workflow is refused by every background-dispatch surface. A workflow that declared the wrong class and got away with it will now fail to load or fail to dispatch. Paused gates gained one drive verb across every surface: `archon workflow respond <run-id> <decision> [text]`. (#2730)
+
+- **A `when:` that compares a whole free-form AI reply to a literal now fails at load.** `when: "$analyze.output == 'BUG'"` invited the model to write `This is a BUG.`, making the byte-for-byte comparison false — the node was skipped with no event and no warning, and the run reached a terminal state looking successful while having quietly done less than the author asked for. Compare a declared field of a structured output instead. The same change teaches `when:` a `$INPUTS.<name>` branch, so a `workflow:` sub-run child can finally branch on an input it could already read. (#2579)
+
+- **A composed workflow runs with the configuration its own file declares.** `include:` used to discard every workflow-level field of the included file with only a warning, so a block declaring `provider: codex` / `model: large` / `effort: high` silently ran on the *parent's* provider and model, and a block declaring nothing inherited the parent's values instead of resolving from config as it would standalone. `include:` now means "run this workflow here", not "borrow this file's nodes" — so a composed block whose declarations differ from its parent's will now run on its own settings. (#2604)
+
+- **`context: shared` on nodes in the same parallel layer is now a load error.** The executor clears the ambient session cursor before dispatching a parallel layer, so those nodes silently started fresh sessions instead of sharing one. Scalar `context: shared` remains the sequential contract; parallel nodes must name an upstream session with `context: { resume: <upstream-node-id> }` or be serialized with dependencies. The rule is structural and applies even when sibling `when:` conditions are mutually exclusive. Workflows that previously got a silent fresh session now fail to load with migration guidance. (#2785)
+
+- **Reading a failed producer's output now throws, everywhere.** A consumer joined past a failed producer through `trigger_rule: all_done` could read that producer's stale last-completed text as if it had succeeded — one observed run flipped a PR to ready on an unreviewed commit while the workflow itself reported `failed`. All four readers — `when:` conditions, inline `$node.output` substitution in `prompt:`/`bash:`/`command:` bodies, plain `with:` values, and the `{ from, if_skipped }` binding directive — now throw uniformly when the referenced producer's state is `failed`, fielded or not. A workflow that was quietly depending on that stale value will now fail loudly at the consumer. (#2710, #2719)
+
+- **Fan-out aggregates are single-encoded.** A fan-out node's `$<id>.output` array used to hold each structured child's result as a JSON *string* — `["{\"v\":1}"]` — forcing collectors to parse twice. A completed child's element is now its logical result value (`[{"v":1}]`); children whose output is plain text still contribute the exact raw string they always did. Because a structured child's slot is now an object, the `join: all_done` failure marker gained a reserved discriminator: a failed/cancelled child's slot is `{ archon_failed: true, error, status }`, and collectors should check `archon_failed === true` rather than the presence of `error`/`status` — a child whose own schema declares those two fields is a result, not a failure. A collector that parsed elements a second time should now parse the aggregate once. (#2637)
+
+- **`effort:` is the one way to ask for more reasoning, on every provider that has one.** Reasoning depth had two workflow-level spellings — cross-provider `effort:` and Codex-only `modelReasoningEffort:` — and an author had to know which one their node's provider wanted, even though the provider can be decided by a tier or an `@alias` rather than written in the YAML. Codex now reads the node-level `effort:` field and translates it internally, the way Claude, Pi and Copilot already did, so `effort:` applies everywhere and can be set per node. Its vocabulary widened to `minimal | low | medium | high | xhigh | max` — the union of what the providers accept — and a provider clamps a rung its model does not offer to the nearest one it does (`max` → `xhigh` on Codex and Copilot, `minimal` → `low` on Claude and Copilot; Pi accepts all six unclamped), so `effort: max` means "as deep as this model goes" whichever provider a node resolves to. Two side effects worth knowing: a Claude node can now ask for `xhigh`, which its SDK has supported for a while and Archon never exposed; and a tier or `@alias` carrying `effort` now reaches Pi and Copilot, where it was previously dropped. Workflow-level `modelReasoningEffort:` is deprecated and is now translated into `effort:` when a workflow is loaded, with a warning naming what it became. Two consequences the warning also states: because `effort:` is cross-provider and the old field was Codex-only, a workflow declaring it now applies that depth to its **non-Codex nodes too**, where it previously applied to none; and declaring both keeps `effort:` and drops the old field. `assistants.<provider>.modelReasoningEffort` in `.archon/config.yaml` is a different setting and is unaffected. (#2556, #2581)
+
+- **A run no longer copies `.archon` into the target checkout.** Archon used to copy the whole `.archon` tree into the worktree so a run could find its commands and scripts, which carried `.archon/.env` and cross-run `state/` along with it and overwrote the target's own tracked files, dirtying `git status`. A run now freezes its own `.archon/{workflows,commands,scripts}` into its artifacts at start and resolves from there; the target receives nothing. Anything that relied on those files appearing in the target checkout must read them from the run's own source instead. A run's executable source cannot change once the run has started — resume executes what the run began with, and the next fresh run picks up authoring edits. (#2660)
+
+- **The bundled `archon` and `manage-run` skills are removed.** They taught the pre-campaign authoring model, hardcoded a workflow-name-to-intent table that the sdlc pack invalidates, and duplicated run-control content across two install targets. One `archon-cli` skill replaces both — a router plus five capability folders (running-workflows, manage-run, setup-and-config, authoring-workflows, prompting-mistakes) — installed to `.claude/skills/archon-cli/` and `.agents/skills/archon-cli/`. It also covers the surfaces the old skills never mentioned: `--model`, `--config`, `workflow respond`, `workflow test`, `doctor`, and the `ai auth`/tier commands. (#2812)
+
+### Added
+
+- **An `sdlc` workflow pack: from an open question to a reviewed, ready-to-merge PR.** Eleven workflows — eight reusable primitives compose into `fix` (check the current truth, optionally plan or investigate, then deliver through implementation, draft PR, bounded review/correction convergence, project validation, CI wait, and ready-for-review handoff), plus two problem-class compositions, `upkeep` for dependency and advisory currency and `stabilize` for flaky-test elimination, reusing the same assess → gate → deliver template. This pack is the reference implementation the legacy `archon-*` workflows no longer are. (#2627)
+
+- **Between-run continuation: adoption, `$ADOPTED_RUN_DIR`, and an open-work inbox.** An unattended run that ended mid-goal used to leave its branch, worktree and artifacts unreachable by any follow-up — no queryable record of what a terminal run left behind, no way for a new run to continue from it, no way to list runs whose work is still unclaimed. `workflow run <name> --adopt <run-id>` now continues from a prior terminal run's branch and worktree, the prior run's artifacts reach the new run as `$ADOPTED_RUN_DIR`, and unclaimed work is listable. (#2792, #2747)
+
+- **`archon workflow test` runs a package's declared dry-run fixtures.** Every bundled package ships fixture files that nothing executed, so running a fixture matrix meant hand-rolling a shell loop that reconstructed each invocation from prose header comments — one such loop silently dropped its `--dry-run` flags and launched sixteen unintended real runs. `workflow test [<pack-or-workflow>] [--json]` discovers declared fixtures, runs each as a genuine dry run, and reports per-fixture pass or fail. (#2793, #2772)
+
+- **Workflows can pause durably for time and events.** A workflow can wait on a duration, an absolute time, or a bounded external event without holding a provider or subprocess slot open. The database owns suspension and resume claims, so process restarts and competing scanners cannot reset a wait, duplicate a continuation, or falsely complete a run; the server resumes runs that come due. Quota-window failures can opt into the same bounded continuation path (off by default). This does not add start triggers or a generic webhook bus. (#2779)
+
+- **A composed block can fan out inside the parent run.** An `include:` node now accepts `fan_out:` (#2512, #2795). Where a `workflow:` node with `fan_out:` gives every item its own governed child run — its own row, artifacts, cost line and gates — an `include:` node with `fan_out:` repeats the statically named block once per item *inside this run*: one `workflow_runs` row, instance-qualified parent events, bounded parallelism, and input-ordered aggregation into `$<id>.output`. Load time resolves and validates the full static block and its packaged resources; runtime decides only its width. The required `as:` binding delivers each item through the block's declared `$INPUTS`, and `returns:` selects each instance's value. The first content-addressed instance snapshot is durably persisted before scheduling and stays authoritative on resume; completed inner nodes are reused, ambiguous started-without-terminal work blocks automatic replay, and aggregate rows cannot double-count cost. Gates and isolation remain invalid inside this in-parent shape, checkout mutation is rejected before spend when concurrency would be unsafe, cancellation stops new items from starting, and loop iteration identity keeps engine-managed artifacts distinct. Existing `workflow:` fan-out behavior is unchanged.
+
+- **Workflow values keep their type across every boundary, and command/script nodes bind them by name.** A structured node result used to be faithfully typed only inside the run that produced it: persistence kept the text, a cold resume re-parsed it, every `with:` value was a string, and a command file or named script could only receive an upstream VALUE through an artifact file the producer wrote and the consumer re-read. Now the logical value rides along everywhere. `node_completed` events persist it beside the text and resume rehydrates it, so a resumed run's `$node.output.field` reads are identical to a fresh run's. `with:` maps and `inputs:` defaults accept any JSON value — `flag: true` reaches the child as a boolean, not `"true"`. A child run's terminal structured value threads back typed to its parent. And `command:`/`script:` nodes accept their own `with:` map, binding upstream values by name through the surfaces those bodies already read (`$INPUTS.<name>` in a command file, `INPUTS_<UPPER_SNAKE>` env vars in a script) — with an explicit `{ from, if_skipped }` form for reading across a skipped branch at an `all_done` join, so a mutually-exclusive-branches join no longer needs a touch-file latch. Bindings fail loudly: an unknown or non-upstream producer is a load error, and a skipped producer without `if_skipped` fails the node naming the fix — never a silent empty string. (#2637, #2692)
+
+- **A loop can terminate on a validated field instead of a string match.** A `loop:` node now accepts `output_format`, and `loop.until_field` names a declared boolean in that schema whose `true` ends the loop. Completion that is genuinely the model's judgment — "is the backlog empty?" — becomes a schema-validated value rather than a sentinel the model could emit by accident while reasoning about its own criteria. The name must be declared, listed in `required`, and typed `boolean`, all checked when the workflow loads, so a typo fails immediately instead of looping to `max_iterations` and reporting the wrong cause. Termination is strict: `true`, never `"true"` or `1`. A loop's structured output also becomes readable downstream — `$loopId.output.field` gets the same strict access every other producer enforces. Per-provider behavior matches every other node: enforced decoding on Claude/Codex/OpenCode, and on Pi/Copilot an invalid payload is re-asked up to three times *within the same iteration* before the node fails rather than degrading into another iteration. `until_field` is deliberately not offered on `loop_group`, where a body node's `output_format` plus `until_bash` already expresses it. (#2563, #2588)
+
+- **Gate nodes produce structured decision output.** A gate that declares `approval.decisions:` resolves with ordinary `{decision, text}` output the moment a human responds, readable via `$<gateId>.output.decision` / `.text` through the same `when:`/substitution wiring every other node uses. Authors wire a rejection's rework path as an explicit `when:` edge instead of relying on the engine's private `on_reject` template. Opt-in: a gate that does not declare decisions behaves exactly as before. (#2721, #2707)
+
+- **A gate can terminate a `loop_group` body.** Load-time guidance and runtime pause/resume make a gate inside a group body work end to end, including restoring `$LOOP_PREV` body outputs on interactive resume. (#2749, #2750)
+
+- **`archon workflow wait <run-id>` blocks instead of polling.** A run started outside a chat thread — `--detach`, the HTTP API — reaches a state it will not leave on its own and nothing told the launcher. `wait` blocks until the run finishes or parks on an unresolved human gate, then prints what it needs. Paired with the `--detach --json` acknowledgement now carrying `runId`, launch-then-wait is expressible end to end, and polling becomes a diagnostic rather than the orchestration contract. (#2872, #2914, #2923)
+
+- **A run can rebind model tiers and aliases without editing shared config.** `--model large=openai/gpt-5.6` changes only `large`; `medium`, `small`, aliases and literal model pins keep their existing resolution. Available on the CLI, the HTTP JSON and multipart APIs, and the workflow console. (#2784)
+
+- **A run can load a sparse config layer.** `archon workflow run x --config ./config.minimax.yaml` applies a file as a run-scoped layer for one fresh run and its descendants — it survives continuation without re-reading caller input, never leaks plaintext config secrets, and rejects a key that cannot affect that run. HTTP callers can supply the same validated layer as inline content. (#2790)
+
+- **A node can resume a named upstream AI session.** Session continuity used to be a single mutable cursor, so a fresh or parallel AI step erased the ability to return to an earlier conversation lineage. Command and prompt nodes can now declare `context: { resume: <upstream-node-id> }` to fork that exact completed upstream session, including after a process restart. Named resume never mutates the source session and never degrades to a fresh, missing, or different-provider one. (#2643)
+
+- **A workflow can declare its own success verdict.** `outcome_field`, declared relative to `returns`, exposes `outcome: succeeded | failed | null` durably beside lifecycle status — so a valid `{ "green": false }` no longer has to appear as `status: completed`. Status remains the sole owner of terminality, resumability, cancellation, filters, telemetry, and CLI exit behavior. (#2652)
+
+- **A run reads its workflow source from a copy it owns, and `--workflow-source <path>` runs an uncommitted workflow against another checkout.** A workflow authored in checkout A and run against worktree B used to look for `B/.archon/...` and find nothing, so running an uncommitted workflow against a separate target meant committing and merging it first. (#2660)
+
+- **The run transcript records what each node and the run cost.** `node_complete` rows carry `cost_usd`, and the `workflow_complete` row carries run totals as `cost_usd` and `tokens`, so reconstructing spend from `~/.archon/workspaces/<project>/logs/<runId>.jsonl` no longer means pricing four token axes by hand — `tokens.input` is gross prompt input, with cache reads and writes as components of it, which is the part that was easiest to get wrong. (#2676)
+
+- **The engine retains what every exec node printed.** Every deterministic subprocess the engine runs — `bash:` nodes, `script:` nodes, and `until_bash` probes in both loop variants — writes one `exec_output` row into the run's transcript, on success and failure alike, so evidence of what an irreversible action actually did survives the run. (#2983)
+
+- **`--detach` works on the control verbs.** `approve`, `reject`, and `resume` used to host the executor in the calling shell, so a reaped shell left the run wedged mid-resume — decision recorded, workflow never continued. The parent now validates read-only and spawns a detached child that owns every state mutation in its own process group. (#2204)
+
+- **Reusable blocks can repeat inside loop groups.** The loader rejected `include:` inside a `loop_group` body, so authors duplicated the block or manually unrolled a fixed number of rounds. A block included in a group body now expands during discovery and its namespaced nodes execute on every iteration; the executor still receives a fully resolved static graph. (#2641)
+
+- **Sparse dry-run fixtures.** `--stubs-init <path>` writes a complete schema-aware fixture, and `--default-stubs` lets a dry run supply only the load-bearing overrides instead of an explicit stub for every reachable flattened node. Explicit stubs always win, generated structured values validate against `output_format`, and strict missing-stub coverage stays the default. (#2639)
+
+- **`mutates_checkout: false` is enforced.** A node could declare itself read-only and still dirty the working tree, silently corrupting later nodes' assumptions. A node that declares it and then modifies the tree is now rewritten to a `failed` result naming the node and the paths it touched, surfaced through the standard `node_failed` event. Nodes without the declaration behave bit-identically. (#2789)
+
+- **A workflow that declares required inputs can be run directly.** Declaring an input a workflow actually needs used to make it uninvokable — `assertWorkflowInputsSatisfiable` refused every top-level run, calling it "a reusable block" only `include:`/`workflow:` could call, so a workflow became callable-only at exactly the moment it became worth composing. (#2560)
+
+- **A dry run resolves declared inputs like a real run.** A workflow declaring `inputs:` could not be simulated at all — the simulator resolved no `$INPUTS.<name>` on any surface and the CLI rejected `--dry-run` with `--input` outright, so every signature-carrying workflow failed its dry run while the identical real run worked. A workflow with defaulted inputs now dry-runs green with no flags, and `--dry-run --input name=value` binds values visibly in the trace. (#2615)
+
+- **Every compiled Archon invocation records its own path and version** in `<ARCHON_HOME>/install.json`, so GUI and service consumers can find the executable without inheriting a login shell or guessing an install path. Explicit consumer configuration stays authoritative, and source/Bun runs never claim the record. (#2409)
+
+- **Pi falls back to the operator's own default model** when neither the workflow node nor `assistants.pi.model` names one, mirroring how the standalone `pi` CLI behaves and keeping Archon free of any hardcoded vendor model. (#2383)
+
+- **`workflow test` can target a whole pack**, by name (`sdlc`) or directory path (`.archon/workflows/sdlc`), matching what `--help` already documented. (#2864)
+
+- **Failed `script:`/`bash:` diagnostics include stdout.** Node errors carried only stderr, so a well-behaved script that printed its failure context to stdout reported "no diagnostic output" and the operator had to re-run it by hand. Both stream tails are now included. (#2865)
+
+- **SDLC delivery gained CI-aware correction rounds, five attributable review lenses, and run-owned PR identity.** Each correction round now opens by reading the concluded check state for the run's own PR, so a failure CI can prove in minutes feeds the fixer instead of surfacing an hour later as a dead run (#2985). Full reviews always run code, seams and tests, with errors conditional and docs automatic for shipped-documentation changes, every finding carrying its contributing lenses (#2904) — and the simplify lens returned with a values frame, a stronger tier, and the ability to block a merge on a proved simplification (#2917). Public PR actions proceed only when the checked-out branch and GitHub PR head match the PR record the run created, rather than rediscovering a PR from ambient branch state (#2950). Terminal reports now surface validated out-of-scope discoveries (#2887), reviews continue from prior findings (#2863), and delivery stays inside its accepted work order (#2855).
+
+### Changed
+
+- **A loop no longer has to invent a completion signal it doesn't use.** `until:` and `until_bash:` are now *at least one of* rather than `until:` unconditionally, so a loop whose completion is deterministic declares only the check — and then has no prose-matching path at all, which is the point: a sentinel the model happens to emit while reasoning about its own exit criteria can no longer end the loop early. Every existing workflow still loads, and no loop's completion verdict changes. What does change: a `loop:` node now skips `until_bash` on an iteration another channel already completed, matching what `loop_group:` has always done — so a side-effecting check runs one time fewer. (#2563, #2583)
+- Provider SDKs moved forward: Claude Agent SDK 0.3.247 (#2831), Codex SDK 0.150.1 (#2834), Pi SDK 0.84.2 (#2762). (#2642) also brings Codex configuration handling up to date.
+- `Node` is now a discriminated union by body kind, and the failed-producer guard holds by construction rather than by check. (#2716, #2728)
+- All five gate pauses share one persist helper, and template traversal is centralized. (#2711, #2936)
+- Pi SDK also moved to 0.84.3 (#2832), and dead validation-result parsing was removed after losing its only production caller (#2569).
+- Renovate replaces the Dependabot updater, which cannot read `bun.lock`. (#2681)
+- Generated web API types are verified in CI. (#2931)
+- Project guidance is durable and lives at canonical paths: `.archon/direction.md` is the direction doc (#2773), `.archon/engineering.md` is the engineering-craft sidecar (#2900), and `AGENTS.md` is the agent-guidance channel (#2838). Recorded decisions cover runtime repetition of static bodies (#2636), governed child workflows owning their AI policy (#2638), where Archon stands on isolation (#2661), keeping bash and script execution separate (#2727), destructive verification against scratch databases (#2894), and correcting proved simplifications on the change rather than deferring them (#2913).
+- Docs: the schema parity guard's precedence pinning is now stated honestly (#2592), plus recipes for Pi web search and MCP through your own extensions (#2776), previous-loop output conditions (#2951), a warning that hard-deleting a conversation cascades away its runs (#2956), a version disambiguation page (#2023), an explicit AI-bot allowlist in `robots.txt` (#2065), and JSON-LD structured data (#2068).
+
+### Deprecated
+
+- **The twenty pre-rewrite bundled workflows are deprecated and will be removed.** All `archon-*` defaults moved to `.archon/workflows/defaults/legacy/` and carry a new declared `deprecated:` field. Every run announces at the invocation surface — CLI stderr, chat and web message, durable trace event — that the workflow will be removed in an upcoming release, and names both exits: switch to the `sdlc` pack, or copy the YAML into your project or global `.archon/workflows/` to keep using it. Behaviour is otherwise identical: same filenames, same routing, same execution, same output, and the notice never blocks a run. Nothing is deleted in this release. (#2833, #2781)
+- **An undeclared native pause node infers `interactive: true` for one release.** The load-time class check (#2730) would otherwise have made every workflow written before the class declaration existed a hard load error, including ones that only ever ran in the foreground and were never unsafe. `parseWorkflow` now infers the class for the rest of that parse and warns once per file in the log plus on every load through `parseWarnings`. Declare `interactive:` explicitly — the grace period ends in an upcoming release. (#2736)
+- Workflow-level `modelReasoningEffort:` is deprecated in favour of `effort:` and is translated at load time with a warning. See Breaking. (#2556)
+
+### Removed
+
+- `archon continue` — replaced by `workflow run <name> --adopt <run-id>`. See Breaking. (#2873)
+- The bundled `archon` and `manage-run` skills — replaced by `archon-cli`. See Breaking. (#2812)
+- The SDLC review-target preflight, in favour of a written guard rule (#2969), and the delivery tail's leftover machinery, with the checks-gate recovery named explicitly (#2988).
+
+### Fixed
+
+- **A run records what it spent even when it fails or is cancelled.** Cost and token totals were previously written only on the success path. (#2608, #2694)
+- **A failed terminal status write now fails the run.** Terminal status writes were best-effort, so a failed `completeWorkflowRun`/`failWorkflowRun` could let a finished execution return normally while its row stayed `running` — the run looked live, held its worktree lock, and hid the failed write. (#2921, #2837)
+- **Rejecting an approval gate to termination now writes a `workflow_cancelled` event.** The reject path that ends a run flipped the run row to `cancelled` while recording only the `approval_received` audit row, so the durable event log had no terminal transition for a whole class of cancellation — anything reading events rather than the run row silently missed it. The cancellation event is now written in the same transaction as the status flip, matching every other terminal writer, and carries the gate's step name with `reason: approval_rejected`. The rejection text itself stays on the `approval_received` row where it always was. (#2906, #2912)
+- **A terminal workflow run can be adopted on SQLite again.** `workflow run <name> --adopt <run-id>` crashed with `createdBefore.toISOString is not a function` on the default SQLite database before creating the continuation run. SQLite stores every workflow-run timestamp as TEXT (UTC "YYYY-MM-DD HH:MM:SS") while the `WorkflowRun` type declares them `Date` — normalization parsed only metadata, so `resolveWorkflowAdoption` handed that raw string to the estate-ownership lookup's cutoff comparison, which calls `.toISOString()`. The row normalizer now hydrates `started_at`, `completed_at`, and `last_activity_at` into real UTC dates for both dialects, preserving the rule that an adopted environment must satisfy `environment.created_at <= run.started_at`. (#2845, #2847)
+- **A chat command with leading whitespace is now recognized as a command.** `handleMessage`'s slash-command checks tested the raw inbound message. Slack and Discord already hand it pre-trimmed as a side effect of their bot-mention-stripping regexes, but Telegram, the CLI, and direct API callers pass the message through untouched, so a leading space (e.g. `"   /workflow list"`) silently fell through to the AI instead of running deterministically. Command detection is now anchored to the trimmed message start; the raw message is unchanged everywhere else. (#2547)
+- **An explicit `effort:` on a Codex node no longer cancels its tier's reasoning depth.** A node combining a model tier that carries `effort` with its own `effort:` ran with no reasoning effort at all — the explicit value suppressed the tier's, then went to a field Codex did not read. Such a node ran shallower than the same node with the `effort:` line deleted. (#2556)
+- **`/reset` is now a real escape hatch.** It used to deactivate the AI session and leave the conversation's execution binding (`cwd` + `isolation_env_id`) and every resumable run untouched, so the next message still resolved to the prior worktree and could silently continue a stale `paused`/`failed` run with its old arguments and completed nodes. `/reset` now nulls the binding and abandons each resumable run tree through the shared abandonment pipeline, preserving `codebase_id` (detaching the project is `/setproject none`'s job) and atomically limiting every reset cancellation to `paused`/`failed` rows. `pending`/`running` work is never touched — those rows may belong to another process entirely. Session, run, and binding cleanup failures are isolated and reported; an incomplete reset asks the user to retry instead of promising that the next message starts fresh. (#2291, #2731)
+- **Rate-limited and silently-dead provider streams retry patiently.** A node's own short `maxRetries` exhausted within seconds while the provider's load-shedding window is minutes-scale, and loop iterations had no transient retry at all — one 429 killed the whole loop node. Rate-limited failures now retry up to five times with a flat ~45s ±50% jitter backoff, and loop-node AI iterations survive transient errors, including silent stream death, under the same policy. FATAL failures still fail immediately. (#2798, #2706)
+- **`output_format` declared on a `workflow:` node is validated against what the child actually returned**, before any `node_completed` row is written — a schema-mismatched child used to pass silently, with downstream `.field` reads failing late or resolving a declared-but-absent field to `''`. (#2788)
+- **A dry run no longer writes inside the simulated repository.** `ARTIFACTS_DIR`/`STATE_DIR` pointed at `<cwd>/.archon/dry-run/`, so every simulation left untracked residue in the user's repo — and nothing created those directories, so a bash node's redirect into `$ARTIFACTS_DIR` failed while the node still reported success, surfacing as a confusing failure two nodes downstream. Simulations are now hermetic. (#2620, #2619, #2617)
+- **A transient project-identity lookup failure no longer permanently pins a run's `output_root`** to the `_cwd/<basename>` fallback; a faulted resolution is stamped `metadata.identity_unresolved` so it is distinguishable from a genuinely unregistered project. (#2304)
+- **`workflow status` rejects a run ID** instead of misreading it, and `workflow events` accepts run-ID prefixes. (#2625, #2626)
+- **A cached prior-success node is invalidated when a dependency re-ran**, so a resumed run cannot reuse a result computed from stale inputs. (#2705)
+- **A resumed run's completed nodes no longer report as skipped.** (#2975)
+- **A failed `loop_group`'s binding now fails its consumer** instead of handing over the last completed iteration's text. (#2710)
+- **Loop artifacts and raw output are preserved per iteration and across resume**, and interactive `loop_group` resume restores `$LOOP_PREV` body outputs. (#2647, #2649, #2750)
+- **Loop-group checks can read body outputs**, bash `loop_group` body nodes receive `$LOOP_USER_INPUT`, loop gates name the actual completion channel, `until_bash` fails on unavailable output refs, quoted loop-group output refs warn, and a `loop_group` warns when its pause escalation cannot reach a nested interactive loop. (#2630, #2733, #2635, #2808, #2811, #2754)
+- **Silent loop watchdog retries are gone.** (#2902)
+- **A wait-terminated `loop_group` no longer completes on a still-pending probe.** Node-output values in `bash:` and `until_bash` are already shell-quoted, so a hand-quoted comparison compared the wrong thing; the quoted-ref warning above (#2811) now catches the authoring shape that caused it. (#2799, #2794)
+- **A staged source capture is adopted at the rename site**, so a failed rename inside `executeWorkflow` no longer orphans the staged directory under `~/.archon/staged-source/` until the hourly sweep reaps it — now portable to Windows. (#2758, #2755, #2690)
+- **Composition fixes:** skipped composed blocks stay airtight (#2628), nested `include:` input bindings are preserved (#2634), and a composed `command:` node keeps its own `with:` binding (#2981).
+- **Dry-run tolerates a missing stub on an `all_done` join and on an `all_done` loop node.** (#2958, #2979)
+- **A faulted codebase lookup no longer pins a run to an empty fallback location.** (#2720)
+- **Oversized output spills are isolated per run**, and `script:` node output is capped and resume-safe on both runtimes. (#2640, #2732)
+- **Adopted runs stay on their original branch.** When an adopted run's worktree had been cleaned up, Archon treated its branch as ancestry for a new generated branch, splitting continuation from the existing pull-request branch. Explicit adoption now reuses the prior worktree or rematerializes the exact historical local branch, and one persisted `working_path` is the mutable checkout for every agent, bash, script, source-capture, resume, and audit path. (#2809)
+- **`--adopt` accepts run-id prefixes.** (#2948)
+- **A detached run that fails fast is not reported as a launch failure.** (#2925)
+- **Detached workflow runs can actually be stopped.** (#2766)
+- **A Windows cancel no longer fails for a run whose process tree already stopped.** (#2953)
+- **`archon serve` can no longer hang extracting the web UI on Windows.** (#2928)
+- **A folder project registered by the CLI is found again by every other command.** On Windows, a project registered by `workflow run --folder` was stored under a different string than the lookup asked for, so `workflow get`, `wait`, `cancel`, `runs`, `resume`, `approve` and `reject` all refused with `Error: Not in a git repository` — which was never true. (#2929)
+- **Linked worktrees keep their registered project identity.** (#2633)
+- **Explicit worktree branch names are preserved.** (#2930)
+- **`/worktree remove` refuses to destroy a worktree owned by a live run**, `--force` included, matching isolation cleanup. (#2919)
+- **Isolation cleanup is pinned by live runs, not conversation history.** (#2879)
+- **`archon complete` works after a squash merge and for never-pushed branches with no unique commits.** A GitHub-deleted branch ref was treated as unpushed work, and a branch byte-identical to its base was treated as a blocker; both forced `--force` on an operator just cleaning up. Cleanup still only proceeds when the content is proven to be on the default branch, and an unverifiable case still fails closed. (#2949, #2433, #2703)
+- **HTTP approve/reject/resume now advance CLI-launched runs.** (#2712)
+- **The web adapter persists message category, matching the CLI.** (#2701)
+- **Streaming run logs stay pinned to the tail**, unrecognised workflow sources are surfaced verbatim, and builder node reference validation matches the engine. (#2655, #2717, #2631) The builder also stopped rejecting `when:` conditions the engine accepts (#2591), settled on one definition of a node id — its previous four copies used `\w`, which excludes the hyphen and so validated none of the hyphenated node ids the bundled workflows actually use (#2570) — and the chat UI now reads the server's message category instead of guessing from a leading emoji, which had made the live view and the reloaded conversation disagree (#2571).
+- **`manage_run`'s reject action, `workflow reject`, and the Slack reject button all default empty text to `Rejected`** instead of recording an empty reason. (#2739, #2741)
+- **A chat turn is refused when its worktree or project directory is gone**, rather than silently resolving somewhere else. (#2551, #2665)
+- **`/reset`, cancellation, and adoption no longer inherit the previous gate's cache tokens**, and a partial cache total is reported as a floor instead of withheld. (#2675, #2671, #2654)
+- **Pi loads native project guidance**, and invalid Pi model references are reported clearly. (#2839, #2918)
+- **Codex OAuth refresh errors route to Codex auth guidance** rather than a generic failure (#2702), bare `401`/`403` no longer match Claude's auth patterns (#2743), malformed stored OpenAI OAuth expiry is rejected (#2775), and GitHub Copilot subscription login no longer hangs on the enterprise-domain prompt (#2770).
+- **Claude tool-scoped hook activity appears in the audit stream.** `buildBaseClaudeOptions` omitted `includeHookEvents`, so the SDK suppressed `hook_started`/`hook_response` frames for every hook type except SessionStart and Setup — a node-level PreToolUse hook that denied Bash was invisible to the audit stream. (#2723, #2324)
+- **`console.log` is piped through `writeStdout`**, so a slow reader gets the whole payload. (#2704)
+- **`workflow test` reports load errors, resolves paths from the caller's cwd, and suggests only workflows that carry fixtures.** (#2920, #2952, #2862)
+- **Exec-code fixtures execute in a scratch worktree, not the caller's tree**, and keep `PWD` there. (#2861, #2932)
+- **`SqliteAdapter` finalizes prepared statements so `close()` releases the database file.** (#2878)
+- **The nothing-to-resume fallback captures fresh source.** (#2700)
+- **Running `validate` with a nested worktree no longer fails**, and cold lint stays within Node's default heap. (#2658, #2858)
+- **The reported workflow path is derived once, with forward slashes.** (#2957)
+- **SDLC pack corrections:** red-cause gating, failed-run discoveries and lens-gate re-evaluation (#2942); a `red_cause` schema Codex rejected, which killed every deliver run at the first turn (#2944); a correction round with nothing left to change no longer kills the delivery (#2977); the delivery tails report the PR from the run's record rather than the checkout (#2980); optional reviews follow the classified scope (#2840); the delivered-fixture bar is restored after the review-complete join (#2867); and `archon-fix-issue` stops asking questions nobody can answer (#2257).
+- **Test-suite and CI stabilization.** Roughly two dozen changes removed wall-clock dependence, accidental subprocesses, real database opens, and temp-directory cleanup races from the suites, and added SQLite upgrade verification against every released schema vintage. (#2823, #2824, #2826, #2852, #2853, #2854, #2866, #2874, #2876, #2877, #2881, #2883, #2886, #2911, #2915, #2916, #2922, #2943, #2984, #2685, #2829, #2903, #2880, #2987, #2402, #2603, #2605, #2780)
+
+### Security
+
+- **Credentials are redacted from container exec failures.** Container-isolated deterministic nodes pass environment variables through `docker exec -e NAME=value`, and on failure Bun includes the command and subprocess output in the rejected error — so a credential echoed in argv, stdout, or stderr could reach workflow events, platform messages, and detached-run logs. Deterministic subprocess failures now redact every exact Archon-delivered credential value from `message`, `stack`, and `cmd`. (#2431)
+- **`ws` pinned past two advisories** covering the hoisted `8.19.0` that `discord.js` uses for its live gateway socket, including a high-severity memory-exhaustion DoS reachable from remote frame traffic on any install running the Discord adapter. (#2659)
+- **Better Auth upgraded to 1.6.30** from a `~1.6.22` floor, clearing the full listed advisory set; PostgreSQL users and sessions survive the upgrade and unauthenticated protected `/api/*` requests still return 401. (#2765)
+- **Pi SDK 0.84.2** clears the vulnerable `undici@8.5.0` (six advisories, one high) that the old pin held under `pi-coding-agent`. (#2762)
+- **`sharp` bumped to the patched 0.35.0 line**, clearing the libvips advisories the docs build's image pipeline inherited. (#2752)
+- **Custom Pi providers resolve their configured keys and headers from project/request env** through Pi's own provider contract, instead of being handed the full merged env — which would have let a custom provider select credentials Archon injected for another provider or for GitHub. (#2656)
+
+## [0.9.0] - 2026-08-17
+
+Workflows become properly composable: a workflow can now declare the arguments it takes and the result it returns, ship as one self-contained folder, and be simulated end to end without contacting a provider. Alongside that, a workflow node's capabilities become what its YAML declares rather than whatever happens to be configured on the operator's machine — see Breaking before upgrading.
+
+### Breaking
+
+- **Claude workflow nodes no longer inherit ambient skills and MCP servers.** A Claude node now sees exactly the skills and MCP servers its YAML declares, plus the native tools Archon injects for the run. User, project, and plugin MCP configuration on the operator's machine no longer reaches workflow nodes: a node that relied on an ambiently configured server must declare it with `mcp:`, and one that relied on an ambient skill must list it under `skills:`. Declared skills are now also checked before spend — a skill that is installed but unreachable from the node's enabled `settingSources` fails up front instead of silently going missing, while built-in and plugin-qualified (`plugin:skill`) names warn and are left for the SDK to resolve. Direct Claude chat, `CLAUDE.md`, and built-in, filesystem, and inline agents are unchanged. (#2535)
+- **An included command body must resolve, and may only reference its own workflow.** `command:` and `loop.command` files inside an `include:` block are now resolved, validated, namespaced, and input-bound during load-time composition, recursing through nested `loop_group` bodies. Two previously tolerated shapes now fail: a body that references a node id outside the included workflow (it could bind whatever the caller happened to have) is rejected, and a body that cannot be resolved or read fails a fresh execution instead of warning and being skipped. Declare an input and pass it with `with:` instead of reaching outward. A paused loop still resumes from its persisted prompt snapshot even if its command file is later deleted. Included command bodies gained the other half of this trade: they can now use `$INPUTS.<name>`, which Phase 1 rejected outright. (#2534, #2532)
+
+### Added
+
+- **Workflow signatures — `inputs:`, `returns:`, and `with:` on sub-runs.** A workflow can declare the named arguments it accepts and which node's output is its result, and a `workflow:` sub-run node can bind those arguments by name with `with:` instead of passing a single opaque `input:` string. Values arrive as `$INPUTS.<name>` in prompts and command bodies, and as `INPUTS_<UPPER_SNAKE>` in `bash:`/`script:` node environments. Missing required inputs and undeclared arguments are rejected before any worktree, clone, or provider cost, and `returns:` gives a stable author-chosen result channel in place of guessing the terminal sink. Workflows without `inputs:` keep their existing passthrough behavior byte for byte. (#2523)
+- **`archon workflow run <name> --dry-run` simulates a workflow without spending anything.** An in-memory simulator walks the DAG — routing, `when:` conditions, strict `$node.output` references, gates, and loops — and prints a deterministic human or `--json` trace. No provider is contacted and nothing is persisted: no run row, events, sessions, or worktrees. Node outputs can be stubbed, approval behavior chosen, and code nodes actually executed with `--exec-code` (they are stubbed by default). (#2530)
+- **Packaged workflows — one folder holds a workflow and everything it uses.** `.archon/workflows/<pack>/<workflow>/` is discovered as a package in both repo and home scope, and bare `command:` / `script:` references in that workflow's YAML bind to its own `commands/` and `scripts/` directories instead of the shared trees. Copying a workflow to another repo is now copying one folder rather than a scavenger hunt across three. Packaged resources are embedded in binary builds, and the Web API's workflow GET/PUT/DELETE lifecycle preserves the layout. Flat and one-level grouped YAML layouts are unaffected. (#2528)
+
+### Changed
+
+- **Codex workflow nodes no longer advertise ambient skills automatically.** Workflow commands and prompts now invoke installed Codex skills explicitly with `$skill-name`, an empty `skills: []` declaration is valid, and unsupported YAML fields warn honestly instead of implying support. Direct Codex chat is unchanged. This is a behavioral guard rather than filesystem isolation, and Codex MCP configuration remains additive to ambient servers. (#2498, #2533)
+- **A malformed `settingSources` entry can only narrow Claude's scope, never widen it.** An unrecognized entry previously left the key unset, falling through to the permissive `['project', 'user']` default — so `settingSources: [projct]`, written to lock a node to project scope, silently granted full user-scope ambient access. Unrecognized entries are now dropped and logged, and workflow validation shares one parser with execution so the two can no longer disagree about a node's effective sources. (#2535)
+- **Agent instructions live in one file.** `AGENTS.md` — which Codex, Pi, and OpenCode read natively — had drifted about six months behind `CLAUDE.md`. It is now the canonical instruction file, with `CLAUDE.md` reduced to a one-line pointer that Claude Code resolves as an import. No rule changed in the move. (#2497)
+
+### Fixed
+
+- **A schema upgrade can no longer crash-loop on an index that predates its column.** An index or `COMMENT ON COLUMN` placed beside its table body names a column that does not exist yet on an upgrade, because `CREATE TABLE IF NOT EXISTS` is a no-op there and the column only arrives in the later additive `ALTER TABLE` block. Since the schema applies in one transaction and re-throws, a single such statement aborted the whole apply and crash-looped every boot — on Postgres this broke startup and every CLI invocation for installs upgrading past #2414, and on SQLite it meant `new SqliteAdapter(...)` simply could not open a database created before `parent_conversation_id` existed. Every index and column comment now sits below the additive block. A new `check:schema-upgrades` CI job proves the current schema applies cleanly on top of every schema vintage ever released, re-applies idempotently, and lands on exactly the fresh-install shape. (#2513, #2552)
+- **Workflow-level `modelReasoningEffort:` and `webSearchMode:` reach Codex.** Both had been schema-declared, loader-validated, and documented as working workflow-level options since March, but the executor never read them off the workflow definition — a workflow declaring either parsed cleanly, warned about nothing, and ran at the `config.yaml` or SDK default. Declaring either on a non-Codex node now produces the same loud capability-mismatch warning every other unsupported field produces. (#2559)
+- **The container write-back no longer mis-decodes hostile or merely unusual filenames.** The two overlay walk scripts — the one place a container run writes the live root — decoded each entry by forking `basename`, `dirname`, and `sed`, which produced three reachable defects: a whiteout marker under a `-`-prefixed directory was planted as a literal `.wh.*` file instead of deleting its target (no adversary required, just a leading dash); a whiteout whose name ended in a newline deleted a different, innocent file and could write outside the live root while reporting success; and a TAB inside a filename or symlink target forged the positionally-decoded fields after it, presenting an escaping symlink to the approval gate as safe. Shell parameter expansion replaces the forks, closing all three and cutting forks per entry from 8 to 4 for a regular file and 6 to 1 for a whiteout. (#2561)
+- **Archon no longer guesses the default branch.** `getDefaultBranch` ended its fallback chain by checking whether `<remote>/main` merely existed and returning it if so. On a repository shaped like this one — `dev` is the default and `main` is the release branch — a run silently cut its worktree from `main` and targeted its pull request at `main`, with nothing erroring at the moment it happened. When `<remote>/HEAD` is not a symbolic ref it now throws, naming `--base`, `worktree.baseBranch`, and the codebase `default_branch` field. (#2503)
+- **`WORKFLOW_ID` is delivered to `bash:` and `script:` node subprocesses.** It substituted into the node body but was missing from the environment bag, unlike `ARTIFACTS_DIR`, `STATE_DIR`, and `LOG_DIR` sitting beside it — so a heredoc'd `python3` or `node` block reading `os.environ` failed inside the nested interpreter with a bare `KeyError` and no hint that its siblings worked fine. The `e2e-deterministic` fixture that demonstrated the wrong way to consume an output reference was corrected too. (#2511)
+- **A dry run of the state migration no longer creates a database.** `scripts/migrate-state-dir.ts` consulted the codebase registry unconditionally, and the SQLite adapter connects lazily and applies the full schema on first use — so a read-only run wrote a 704 KB database while printing `Dry run — nothing was moved`. (#2557)
+
+## [0.8.0] - 2026-08-06
+
+Run output moves out of the repository for good — see Breaking below before upgrading. Alongside it, workflow composition grows up: sub-run nodes can now fan out over a runtime list and take their own worktree, and include blocks accept parameters. Plus a batch of fixes for failures that were previously silent.
+
+### Breaking
+
+- **Repo-local `.archon/state/` is no longer read, and is never migrated automatically.** Cross-run state now lives at `$STATE_DIR` (`~/.archon/workspaces/<project>/state/`). A run that finds a legacy directory emits exactly one warning containing the literal `mv` command and then proceeds with an empty state directory — so a workflow depending on prior state will not error, it will behave as though it is running for the first time. **Move it before upgrading, or on the first warning.** From a source checkout, `bun run scripts/migrate-state-dir.ts` reports what would move (dry run by default) and `--apply` performs it; binary installs should use the `mv` printed in the warning. (#2299)
+- **Runs in an unregistered directory no longer write artifacts and logs into `<cwd>/.archon/`.** The engine's fallback previously placed its own output inside the working directory — inside a user's repository, where it was stageable. Output now resolves under `~/.archon/workspaces/` for every run. Anything reading run artifacts from a repo-relative path must be repointed at `$ARTIFACTS_DIR`. (#2299)
+- **`GET /api/runs/:runId/artifacts` returns 404 instead of an empty list** when a run's project storage cannot be resolved. It previously answered HTTP 200 with `{ files: [] }` for folder projects and local repos without a remote, which was indistinguishable from a run that wrote nothing. Consumers treating an empty list as "no artifacts" must now also handle 404. (#2299)
+
+### Added
+
+- **Dynamic fan-out for `workflow:` sub-run nodes.** `fan_out: { items, max_parallel, join }` expands one governed child run per item of a runtime list, bounded by a sliding concurrency window and joined by `all_done` (default) or `all_success`. Results aggregate as a JSON array in item order and thread back as `$nodeId.output`. Previously a sub-run node was strictly 1:1 with its width fixed in YAML, so the orchestrator-worker pattern had no encoding short of a `bash:` dispatcher spawning detached children with hand-rolled polling — out of process, with no native await, cost roll-up, or run tree. (#2224)
+- **Per-child worktree isolation for `workflow:` sub-run nodes.** A sub-run node may declare `isolation: worktree` to get its own checkout and branch instead of sharing the parent's. Isolation is explicit-only and never inferred from `fan_out` — concurrent children on a shared checkout are refused by a spawn-time preflight rather than silently given a worktree. (#2223)
+- **Parameterised include blocks.** `with:` on an `include:` node plus the `$INPUTS.<name>` macro let one shared sub-DAG be reused with different values instead of forked. Substitution resolves entirely at load time, so the executor still sees a flat static DAG and load-time validation, resume, and the audit trail are unaffected. An unsupplied input fails the load rather than substituting silently. (#2467)
+- **`$STATE_DIR` for cross-run state.** A per-project directory alongside `$ARTIFACTS_DIR`, pre-created by the executor and living outside the repository. It replaces the `.archon/state/` convention, which had no engine support at all — prompts did `mkdir -p .archon/state` relative to cwd, so inside an isolated run the "cross-run memory" wrote to the worktree and died at cleanup, and in a user's repo it was stageable. A legacy directory produces one warning with the exact `mv` and is never moved. (#2299)
+
+### Changed
+
+- **One resolver now backs every run-output path.** The identity-to-storage-path rule had been implemented three times at three levels of correctness — the executor, the CLI's `continue`, and the two HTTP artifact routes — which is what allowed the artifact routes to silently fail for two of the three project kinds Archon can register. A single `resolveProjectStorageKey` in `@archon/paths` now backs all four call sites. (#2299)
+- **Run artifacts stay addressable across a project rename.** A durable `output_root` pointer is recorded once at run start and never rewritten on resume, so historical runs keep resolving to the tree they actually wrote to even if the codebase is later renamed. (#2299)
+- **Unknown YAML keys are reported instead of silently stripped.** Unrecognised keys now surface as non-blocking warnings across every surface an author looks at — `archon validate workflows` (human and `--json`), chat, the console workflow picker, and the API — each naming the node and the key, and persisted to the audit trail as a `workflow_parse_warnings` event. Warn rather than reject, so workflows that load today keep loading. (#2455)
+
+### Fixed
+
+- **A declared `output_format` no longer silences an unparseable output.** "No parseable object at all" was treated as a declared-optional field and resolved to empty on the declared-schema path while the schemaless path threw — so declaring `output_format` made a broken producer quieter than declaring nothing. It bit hardest on `workflow:` sub-run nodes, where a child returning prose instead of JSON turned every declared field into an empty string with no error or warning. Both paths now fail. Genuine leniency is untouched: a field missing from a payload that actually parsed still resolves to empty. (#2460)
+- **The issue-fix workflow stops when its specification is missing.** A run that had already lost its specification would spend a large-model implement node plus four review-tail nodes and then post a public comment on the issue announcing it was blocked — an AI node that *declines* still exits 0, and the one cheap deterministic precondition check only warned. The check now fails, and the investigate step runs its command directly instead of delegating to an ambient skill that routed on the leading verb of the input. Applied to both the experimental and bundled default workflows. (#2499, #2500)
+- **Archon telemetry stays out of target-repo pull requests.** Repo-local `.archon/artifacts/`, `.archon/logs/`, and `.archon/state/` are documented as never belonging in git, but no bundled default told the agent to ignore them or refuse to stage them. Every "never stage" blocklist in the bundled defaults now lists them, and runs that create or modify a `.gitignore` must include them. (#2199)
+- **Truncation is named correctly in clipped-output errors.** The truncation marker was matched against the exact tail, so a single trailing newline was enough to report the generic "not a JSON object" error instead of naming the truncation. (#2493)
+- **Include-expander warnings are visible to tests again.** The expander cached its logger at module scope behind a comment stating the deferral existed so test mocks could intercept it — the cache defeated exactly that, and three loader tests failed whenever they shared a process with the expander's own tests. CI had been protected only by the accident of running them in different batches. (#2461)
+- **Installer environment-variable documentation corrected**, along with the release tooling's changelog commit boundary. (#2437)
+
+## [0.7.1] - 2026-08-04
+
+Workflow runs now record what they actually resolved to — assistant, model, effort, isolation, base branch — so two runs can be told apart after the fact. Plus retry classification for transient Codex failures, and a batch of installer and CLI repairs.
+
+### Added
+
+- **Per-dispatch `--base` override** — `archon workflow run --base <branch>` sets the branch the worktree is cut from and the PR targets, for that run only. Base resolution was static per codebase (`worktree.baseBranch` → `default_branch` → git auto-detect), all of which describe the repo rather than the run, so fanning out parallel dispatches against one repo with different bases had no encoding short of editing repo config. (#2203)
+- **`archon-parse-user-request`** replaces `extract-issue-number`, parsing the operator's message into structured fields — the verbatim request, issue number, repo shorthand, and repo URL — instead of a number alone. (#2420)
+- **Compact node summaries in verbose JSON** — `--verbose --json` returns ordered node summaries including `startedAt` by default, with stable ordering for tied timestamps, so machine consumers no longer have to recreate the CLI's node-state fold or filter tool-event noise. (#2414)
+
+### Changed
+
+- **Run start events snapshot the resolved configuration.** `workflow_started` previously carried only the workflow name, forcing consumers to reconstruct run context from other records. It now records the resolved assistant/provider/model, isolation mode, base branch, and persisted user/input context, so a run is classifiable from a single durable event. (#2428)
+- **Tool lifecycle events can be correlated.** `tool_called` and `tool_completed` now carry the resolved `tool_call_id`, a structured `tool_outcome`, and an optional `exit_code` through persistence, SSE, and CLI — so repeated or interleaved tool calls can be paired, and per-invocation latency and failures are traceable. (#2421)
+- **Resolved effort is recorded on node start.** Effort was applied to node execution but discarded before `node_started` was persisted, leaving two runs indistinguishable when effort was their only material difference. (#2415)
+- **`archon complete` counts only commits reachable solely from the refs being deleted.** Dev-based worktree branches holding no unique work are no longer blocked behind `--force`, which would also have bypassed unrelated safety checks. (#2416)
+- **Bash node stdout previews are retained** after a successful run, so gate verdicts stay auditable. (#2388)
+- **Planning treats issue comments as authoritative** — comments outrank the issue body, and linked issues count as part of the input. (#2404, #2411)
+- Documentation points GUI callers at the native CLI. (#2387)
+
+### Fixed
+
+- **Transient Codex availability failures retry again.** `classifyError` tested `FATAL_PATTERNS` first, and that list held the bare substring `auth error` — so Codex's circuit-breaker text `auth error: 503` classified FATAL and never reached the transient check two lines below. Because FATAL is an absolute veto, `on_error: all` did not rescue it either; there was no author-side escape hatch. Classification is now three-tier: decisive fatal evidence (explicit credentials, authorization, quota and limit windows) first, transient second, and the ambiguous `auth error` wrapper last. Separately, `Selected model is at capacity` matched neither list and fell through to `UNKNOWN`; it is now transient. (#2434, closes #2386 and #2425)
+- **SQLite upgrades no longer break on `event_order`** — the index and trigger ran before the `ALTER` that adds the column. (#2418)
+- **Issue URLs keep their repository identity.** A bare issue number no longer resolves against whatever checkout the run happens to be in; this also unblocks fixes that target `.archon/` itself. (#2417)
+- **Piped `--json` output no longer truncates** mid-stream. (#2389)
+- **`workflow resume` guidance in the CLI is correct.** (#2422)
+- **Detached workflow startup acknowledgement.** (#2390)
+- **Codex tool duration reporting.** (#2378)
+- **Git repositories without remotes no longer error.** (#2380)
+- **The PowerShell installer fails when its version check exits non-zero**, instead of reporting a successful install. (#2391)
+- **Incompatible x64 quick installs are rejected** rather than installing a binary that cannot run. (#2379)
+- **`archon doctor` honors the `claudeBinaryPath` config fallback.** (#2275, #2263)
+### Added
+
+- **Pi model-default fallback** — when no model is set on a workflow node or in `.archon/config.yaml`, the Pi provider now falls back to the operator's own Pi default (`defaultProvider`/`defaultModel` in `~/.pi/agent/settings.json`, as written by the `pi` CLI). This keeps Pi workflows model-agnostic — no vendor model hardcoded — so setups whose catalog drifts (e.g. a LiteLLM proxy) work without pinning a specific model, mirroring how the standalone `pi` CLI boots. Falls through to the existing explicit "requires a model" error when no default is configured.
+
+## [0.7.0] - 2026-08-01
+
+Runtime sub-runs (`workflow:`), the connected Studio builder, usage accounting you can trust, a repaired `curl | bash` install path, and a security batch across cloning, transport, and path resolution.
+
+### Added
+
+- **`workflow:` runtime sub-run node** — run another workflow as a governed **child** run with its own `workflow_runs` row, artifacts, approval gates, cost line, and audit trail. The child's terminal output threads back as `$<nodeId>.output`, and a child gate pauses the whole tree (approve the child by run id; the parent auto-resumes on completion). Slice 1 is sequential composition in a shared checkout — dynamic fan-out, per-child worktrees, `first_success` racing, and `with:` parameter mapping are reserved in the schema and rejected fail-fast. (#2121, #2169)
+- **Archon Studio connected mode** — `/console/builder[/:name]` loads, saves, creates, renames, and deletes real workflows through the existing CRUD endpoints, with a project picker, explicit Save behind a dirty + navigation guard, server-tier validation surfaced in the issue panel, and bundled → Save-as. (#2051)
+- **Evidence gate** — optional workflow-level `evidence_policy: { required: true }` refuses terminal `completed` unless `$ARTIFACTS_DIR/evidence.json` exists; the run is marked `failed` with a structured note, an `evidence_validation_failed` event, and the expected path named. The engine gates on file **presence** only — what counts as valid evidence is produced by the workflow's own bash/script nodes. (#2230, #2235)
+- **Configurable git remote** — `worktree.remote` in `.archon/config.yaml` plus auto-detection (`origin` if present → sole remote → actionable error on ambiguity), threaded through worktrees, workspace sync, PR-state lookup, forge detection, and cleanup. A repo whose only remote isn't named `origin` previously could not use isolation at all. (#2234)
+- **Database schema vintage** — installs record the schema version they were created at, and the additive-only migration rule is stated in the codebase and checkable. (#2317)
+- **Forge detection** — `detectForge()` in `@archon/git` resolves a remote to GitHub / GitLab / Gitea, including self-hosted instances via `GITHUB_URL` / `GITEA_URL` / `GITLAB_URL`. Lands as the reviewed foundation for forge-agnostic adapters; no consumers wired yet, by design. (#2210)
+- Per-node `settingSources` override for Claude nodes. (#2216)
+- `DISCORD_REQUIRE_MENTION` lets the Discord adapter respond without an @mention. (#2209)
+- Opt-in Docker root fallback (`ARCHON_ALLOW_ROOT_FALLBACK`) for macOS bind mounts. (#2228)
+- Published container images carry provenance and SBOM attestations. (#2297)
+- Marketplace: `archon-resolve-mr-conflicts`. (#1687)
+
+### Security
+
+- **Clone hardening.** Both clone paths now pass `GIT_TERMINAL_PROMPT=0`, so a clone with missing or invalid credentials fails fast instead of hanging indefinitely on an interactive prompt. The credential sanitizer gains `GITLAB_TOKEN` / `GITEA_TOKEN`, and URL redaction is generalized from `@github.com`-only to the userinfo of any `scheme://user[:pass]@host` form — closing a path where a failed GitLab/Gitea clone could surface an embedded token to chat platforms and logs. (#2221)
+- Codebase names shaped like SSH URLs are rejected during worktree path resolution. (#1583)
+- The bundled-defaults generator refuses to embed untracked files from `defaults/`, so an uncommitted local file cannot silently ship inside a binary. (#2237)
+
+### Changed
+
+- **Per-node token usage is persisted, and cumulative totals survive a resume.** Token counts are recorded per node as they are produced, and a resumed run no longer under-reports its totals by roughly the work completed before the resume. (#2347, #2353)
+- **Resolved model metadata is recorded per node** — what actually ran, not only what was requested. (#2337)
+- Tool timing is completed at the result boundary rather than left open. (#2336)
+- `tool_result` payloads are bounded at 16 KiB at the SSE emit and message-hydration boundaries, so a multi-megabyte tool output no longer costs every viewer a full parse and full cache residency. Database writes keep the **full** output — the DB and logs remain the authoritative record. (#2244)
+- Message queries carry an id tie-breaker so `LIMIT` windows are deterministic. (#2220)
+- Owner/repo identity resolution is unified on `@archon/paths`. (#2231)
+- The generated provider capability matrix surfaces per-cell caveats. (#2222)
+
+### Fixed
+
+- **`curl -fsSL https://archon.diy/install | bash` was broken for every user and is repaired**, along with the PowerShell mirror, which had drifted from it. Installer tests now run in CI to keep the two in sync, and Rosetta architecture detection on macOS no longer selects the wrong binary. (#2340, #2335, #2330)
+- **Chat resume prefers a paused run over a newer failed one**, so approving from chat resumes the run actually waiting on you. (#2292)
+- **Stale errors are cleared on resume**, so a run that succeeds after resuming no longer carries the previous failure's error text. (#2348)
+- A node whose AI prompt substitution fails emits `node_failed` instead of failing quietly. (#2205)
+- New conversations resolve the configured default assistant. (#2245)
+- Pi sessions authenticated with an Anthropic subscription receive a default system prompt. (#2243)
+- SQLite/Postgres schema parity checks compare columns, not only table names. (#2346)
+- "Open in IDE" resolves correctly for workflow runs and under WSL2. (#2003, #1504)
+- Workflow invocations split across message chunks parse correctly. (#1542)
+- Detached re-invoke drops Bun's single-file-executable virtual `argv[1]`. (#2273)
+- Bundled defaults pin `gh pr create` to the origin repo. (#2229)
+- The console composer and approval input guard IME composition, so committing a candidate no longer submits the message. (#2217)
+- `archon-fix-issue` no longer stops on the dirty run worktree it is expected to be working in: the clean-tree requirement is scoped to the base-branch case, and the checkout is classified with `git-dir` vs `git-common-dir` rather than `git worktree list`, which cannot distinguish them. (#2358)
+- Docs: the docs build is repaired and guarded against silent rot, cloud Docker auth setup is clarified, `llms.txt` coverage is improved, and the workflow constitution is clarified as governing the YAML surface rather than prompt content. (#2301, #2259, #2066, #2067, #2300)
+- Test hygiene: unit tests no longer reach the live network or a real database, and adapter tests no longer write to a real `ARCHON_HOME`. (#2303, #2307, #2310)
+
+## [0.6.0] - 2026-07-20
+
+Folder projects, opt-in Docker container isolation, three new workflow-composition primitives (`include:`, `loop_group`, `loop.command`), the Archon Studio builder preview, and a large security + reliability batch spanning gates, providers, Windows, Docker, and the console.
+
+### Added
+
+- **Folder projects** — register non-git workspaces and multi-repo roots as projects; they run in place with named `_folder/<slug>/` storage. Non-git local paths auto-register instead of erroring. (#2055)
+- **Container isolation for folder projects (opt-in, Docker)** — kind-routed backend seam, per-run overlay containers, pause/resume, and approval-gated write-back to the live root; bundled e2e smoke workflow + CI job. Zero impact unless enabled. (#2145, #2153, #2160, #2158, #2161)
+- **`include:` workflow primitive** — load-time inlining of another workflow's nodes as a flattened, namespaced sub-DAG. (#2129)
+- **`loop_group:` node** — repeat a multi-node sub-DAG until a signal, `until_bash`, or `max_iterations`. (#2032)
+- **`loop.command:`** — loop nodes can load their per-iteration prompt from a command file (exactly-one-of with inline `prompt:`), with the body snapshotted per run so pause-time file edits can't change a running loop. (#1759, #1789)
+- **Archon Studio visual workflow builder (preview, PR-2)** on the console. (#2015)
+- **Per-user default chat model** — `default_model` per user, written atomically with the provider; `archon ai default <provider> [<model>]` CLI + console support, plus a default-chat-model step in `archon setup`. (#2082, #2087)
+- **Cross-invocation artifact scope + cold-resume pointer recovery** — resumed runs can locate prior-invocation artifacts by reference. (#2081)
+- Portable per-node Pi extension posture in workflow YAML, and planning-mode extensions no longer leak into non-planner nodes. (#2144, #2124)
+- `archon doctor` now checks the Codex binary and the OpenCode embedded runtime. (#2151)
+- Base branch falls back to the codebase default branch when auto-detection fails; CLI run-addressing commands accept short run-id prefixes. (#2092, #2109)
+- Workflow language constitution (design charter for the YAML surface) and a provider capability matrix generated from the runtime capability constants. (#2128, #2171)
+
+### Security
+
+- **Script nodes receive user-controlled variables via the subprocess environment instead of source splicing.** `$ARGUMENTS`, `$USER_MESSAGE`, `$CONTEXT`, `$LOOP_*`, and `$REJECTION_REASON` are no longer interpolated into executable script source — read them via `process.env.X` (bun) / `os.environ['X']` (python). Custom workflows referencing them in script bodies get an empty value plus a one-release migration warning. `$nodeId.output` refs are unchanged. (#2168)
+- **Compiled binaries embed the web-dist tarball hash at build time**, so `archon serve` verifies downloads against a hash a compromised release cannot alter; dev installs keep the remote-checksum path. (#1246, #1251)
+- Duplicate GitHub webhook deliveries are dropped at ingest (bounded dedup keyed on delivery identity), preventing double workflow runs from redeliveries and dual subscriptions. (#1951, #1987)
+- Artifact API routes validate project names through the shared `parseOwnerRepo` helper (defense-in-depth against traversal shapes). (#1243)
+
+### Changed
+
+- **Session/usage-limit errors are FATAL — never retried.** A run hitting "Claude session limit reached" fails on the first occurrence with the reset time in the error instead of burning its retry budget inside the same quota window; chat surfaces an actionable "AI usage limit reached (resets …)" message instead of suggesting `/reset`. (#2181, #1761)
+- **`CLAUDE_API_KEY` is mirrored to `ANTHROPIC_API_KEY`** for the Claude subprocess. Note: a host using subscription login that also carries a stray `CLAUDE_API_KEY` in `.env` now bills to that key — explicit `ANTHROPIC_API_KEY`, OAuth tokens, and per-user credentials still win. (#1941)
+- Interactive-loop gates: `signal_completes`, finalize-on-bare-approve, honest agent-steerable gate semantics, and cross-gate session continuity restored. (#2126, #2046, #2074)
+- Strict structured-output refs: `$node.output.field` on unknown nodes or undeclared fields fails loudly (including `$LOOP_PREV` refs and after resume). (#2143, #2165, #2093)
+- Codex SDK 0.144.5 with GPT-5.6 support; Claude Agent SDK 0.3.209; Pi 0.80.6; stale GPT model references swept to the 5.6 lineup. (#2162, #2105, #2149)
+
+### Fixed
+
+- **Windows reliability:** mid-run deaths stopped (system keep-awake + a real detaching `--detach`), and `bash`/`until_bash` resolve the Git-Bash binary correctly instead of the WSL launcher (with `ARCHON_BASH_PATH` override). (#2063, #1326, #1808, #1779)
+- **Docker:** image builds and container starts no longer spend 20–50 minutes in recursive `chown`; ownership is fixed only where wrong. (#1943, #1970, #1981)
+- **Console:** run detail now shows chat-dispatched runs' messages (previously "0 messages" for every chat-started run); timestamps render in the viewer's local timezone; model picker no longer truncates model names; abandoned in-flight loads resubscribe correctly; store cache released on last unsubscribe. (#2048, #2188, #1990, #2189, #2031, #2187, #2101, #2148, #1933, #1938)
+- **Approval-gate integrity:** approve/reject double-resolution closed with a compare-and-swap; gate rejection keeps runs paused instead of staging a fake `failed`; CLI `workflow approve` no longer marks paused runs failed on process exit; WebUI-dispatched runs honor `worktree.enabled: false`. (#2113, #2146, #2112, #1123, #2191, #1368, #2192)
+- Claude API errors surfaced as text now fail the node instead of completing it; transient "tool use concurrency" 400s retry as rate limits (narrowly scoped, policy documented in `UNTYPED_TRANSIENT_PATTERNS`). (#2125, #1341, #2175)
+- Pi provider: `text_delta` chunks coalesce (no more fragmented output), the Bedrock backend loads in compiled binaries, and extension-registered models resolve on later DAG nodes. (#2173, #2174, #2111)
+- Conversation titles generate with the `small` tier instead of a hardcoded Codex model that 400s on ChatGPT-plan accounts. (#1855, #2190)
+- Workflows stored as `.yml` resolve on the by-name GET/DELETE routes (deleting removes both extension twins); namespaced workflow names (`dir/name`) work over the HTTP launch/read routes; conversation IDs containing `/`/`#` URL-encode in PATCH/DELETE. (#1711, #2007, #2047, #1657)
+- `retry:` is honored on bash/script nodes; loop nodes wait for live background Agent tasks, keep a full audit trail, and check cancellation mid-stream; `loop_group` body lifecycle events are namespaced. (#2088, #2096, #2134, #2136, #2090, #2098)
+- Skill validation uses the same search roots as the execution resolver (no more false "skill not found" warnings); the bundled workflow-builder saves generated YAML into the live checkout instead of a throwaway worktree. (#2178, #2179, #1220, #2183)
+- Marketplace auto-review no longer crashes on submissions missing `sourceUrl`/`sha`. (#1691)
+- Assorted: `/setproject` binds by conversation DB id; project-scoped conversation cwd resolution; `manage_run` get on SQLite timestamps; failed runs abandonable via HTTP; resume resolves the covering codebase instead of re-registering the worktree; folder projects skip base-branch auto-detection; no-remote repos' logs/artifacts route under `_local/<basename>`; session ids no longer thread across provider boundaries; Codex receives `systemPrompt` by prompt-prepending; `requires: [github]` enforced on the CLI run path; unknown `allowed_tools`/`denied_tools` names warn at validation. (#1937, #1994, #2106, #2140, #2141, #2164, #2150, #2120, #2118, #2095, #2108)
+
+## [0.5.0] - 2026-06-26
+
+Per-user AI credentials (API keys + subscription OAuth) with a zero-config
+encryption vault, the run-centric Console as the default UI, opt-in web login,
+model tiers/aliases with per-user overrides, and broad workflow reliability work.
+
+### Added
+
+- **Per-user AI-provider credentials.** Connect API keys and subscriptions (Claude
+  Pro/Max, ChatGPT/Codex, GitHub Copilot) per user; credentials are encrypted at
+  rest and injected into the acting user's runs/chat at execution time. Vendor-
+  canonical credential catalog derived from provider registrations, per-agent
+  credential cards in the console, and an Archon-owned PKCE flow for ChatGPT/Codex
+  subscription login (#1899, #1911, #1921, #1958, #1962, #1973).
+- **Zero-config credential vault.** The credential vault now works out of the box —
+  an encryption key is auto-provisioned at `~/.archon/credential-key` (0600) when
+  `TOKEN_ENCRYPTION_KEY` isn't set, so `archon ai login`/`ai key set` work on a
+  plain CLI/SQLite install. Additive: an unconnected user's ambient API keys are
+  untouched (#2040).
+- **Console is the default UI.** The run-centric console replaces the classic UI
+  (re-rooted under `/legacy`): chat restyle, run provenance, workflow-completion
+  cards, per-node cost/turns, agent-aware model pickers, settings panels, GitHub
+  identity panel, and chat file uploads (#1915, #1819, #1881, #1885, #1890, #1896,
+  #1903, #1907, #1916, #1964).
+- **Opt-in web login** via Better Auth (PostgreSQL) with a user-identity seam, a
+  server-side API gate, and safe-by-default signup posture; per-user GitHub
+  identity via device flow (#1841, #1823).
+- **Model tiers, aliases, and per-user AI preferences.** `small`/`medium`/`large`
+  tiers and `@custom` aliases resolve provider+model+options across providers;
+  per-user tiers/aliases/default-assistant overrides; an AI Settings UI and full
+  `archon ai tier|alias|default` CLI parity (#1867, #1873, #1926, #1948).
+- **CLI tier transparency.** Workflow run output now shows each AI node's resolved
+  `provider/model (← tier)`, plus a one-time notice when a run uses tiers you
+  haven't configured (#2038).
+- **Cross-provider run management** from the CLI — `workflow get/runs --json`,
+  `--detach`, a `manage-run` skill, and a native `manage_run` tool for Claude/Pi;
+  live console updates for out-of-process (CLI) runs via a DB-tail poller +
+  Postgres LISTEN/NOTIFY (#1853, #1861).
+- **Workflow engine:** typed artifacts (`output_type` sidecars), reliable
+  cross-provider structured output (validate + repair + reask + fail-fast),
+  per-node provider session persistence (`persist_session`), recommended workflows
+  pinned per project, and a model-alias resolver wired into execution (#1851,
+  #1883, #1889, #1790, #1929).
+- **`/setproject`** command to bind a conversation to a registered codebase (#1917).
+- **Session-resume outcome** (`resumed`) surfaced with a warning on cold resume
+  (#1842); **unpushed work** in `source/` surfaced after chat turns (#1978); SDK
+  lifecycle events (tasks + hooks) forwarded to the Web UI (#975).
+- **Anonymous telemetry** schema v3/v4: server heartbeat, chat turns, failure
+  taxonomy, activation funnel, and usage totals (tokens/cost) (#1944, #1949).
+- **Archon Studio** builder data model + node variants (PR-1) and a marketing
+  landing page above the docs site (#1870, #1829).
+
+### Changed
+
+- **Bumped `@anthropic-ai/claude-agent-sdk` to 0.3.193** (#2037) and migrated the
+  Pi SDK to `@earendil-works` (#1800); standardized on zod v4 (#1813).
+- PostgreSQL schema is auto-applied on startup; workspace sync is now
+  non-destructive by default (#1810, #1864).
+- `DEFAULT_AI_ASSISTANT` is treated as a fallback default, not a hard override
+  (#1919).
+
+### Fixed
+
+- DAG nodes no longer silently complete when `idle_timeout` fires before any
+  output — they fail with a clear, actionable error (#1807, #1812).
+- Direct chat now resolves credentials from the message sender and delivers Claude
+  subscriptions to Pi in chat; clarified Claude auth posture on per-user installs
+  (#1982, #1984, #2002).
+- Concurrency-safe workflow resume/cancel (CAS guards); Codex session resume
+  captures the thread id; the loader stops dropping workflow-level
+  effort/thinking/fallbackModel/betas/sandbox (#1830, #1840, #1799).
+- SQLite parity for `remote_agent_user_ai_prefs`; the Pi extension loader is
+  reused per process to stop 2nd-session hangs (#2033, #1877).
+
+### Removed
+
+- The stale `CLAUDECODE=1` nested-session warning and the
+  `ARCHON_SUPPRESS_NESTED_CLAUDE_WARNING` env var — running the CLI inside a
+  coding agent is a supported, normal path now (#2039).
+
+## [0.4.1] - 2026-05-28
+
+Hotfix for the v0.4.0 upgrade path.
+
+### Fixed
+
+- **Upgrading from v0.3.x to v0.4.0 left every operation broken with `Error: no such column: user_id`.** The v0.4.0 SQLite schema initializer (`createSchema()`) added two `CREATE INDEX` statements referencing `user_id` on `conversations` and `workflow_runs`, but the columns themselves are added by `migrateColumns()` — which runs after `createSchema()`. On any database created before v0.4.0, `CREATE INDEX` aborted the entire init block, the `SqliteAdapter` constructor threw, and every subsequent DB call failed. New users with a fresh `~/.archon/archon.db` were unaffected because the columns are present from table creation. The fix moves both index creations into `migrateColumns()` so they run after the matching `ALTER TABLE`. A regression test seeds a pre-v0.4.0 schema and asserts the upgrade path now completes cleanly (#1792).
+
+## [0.4.0] - 2026-05-28
+
+GitHub App auth for the bot, multi-user attribution, Slack UX overhaul, experimental `/console`, two new community providers (OpenCode and GitHub Copilot), Codex MCP support, and broad workflow/provider hardening.
+
+### Added
+
+- **GitHub App authentication for the bot**: replaces the shared `GITHUB_TOKEN` PAT with a GitHub App + multi-installation routing. Each repo resolves to the installation that owns it; tokens are minted on demand, cached per installation, refreshed before expiry, and never persisted. Includes a loopback-only `/internal/git-credential` endpoint (with a hard `127.0.0.1` bind check, opt-out via `ARCHON_ALLOW_INTERNAL_ON_PUBLIC_BIND=1`) so long-running workflow `git` operations can transparently refresh installation tokens via a `git-credential-archon` helper installed into the worktree's `.git/config` (#1788).
+- **Per-user attribution**: `user_id` is now plumbed from chat and forge adapters through the orchestrator into `conversations`, `messages`, `workflow_runs`, and `isolation_environments`. New `users` and `user_identities` tables map platform identities (Slack U-id, Telegram chat id, Discord snowflake, GitHub login) to an Archon-internal user, created lazily on first sight (#1783).
+- **Slack UX upgrade**: interactive buttons, status reactions, and native slash commands replace the previous text-only flow. Approval gates, run status, and errors are now surfaced through Slack's UI primitives (#1757).
+- **Experimental run-centric console UI** at `/console`, mounted as an isolated in-repo spike under `packages/web/src/experiments/console/`. Lint-guarded against importing production web modules so it can be dropped in or deleted cleanly (#1747).
+- **`assistants.opencode` provider**: community provider that runs OpenCode as an embedded runtime, with per-node agent materialization, multi-agent sessions, structured output, token usage, and multi-agent MCP tool execution (#1384).
+- **GitHub Copilot community provider**: registered as a `builtIn: false` provider in the registry (#1505).
+- **Codex MCP nodes**: MCP server support for Codex workflow nodes via the shared `loadMcpConfig` module — pass `mcp: <path>` on a Codex node and the config is translated to Codex's `mcp_servers` overrides at runtime. MCP client errors are surfaced to the workflow author as `system` chunks when MCP is explicitly configured for the node (#1459).
+- **`always_run` node opt-out for resume caching**: opt-out for nodes that must re-execute on every resume rather than being skipped as "already completed" (closes #1391, #1730).
+- **Pi deferred extension model resolution** so Pi workflows can reference models that are only available after extension loading (#1509).
+- **Brand foundation page** at https://archon.diy/brand/, sourced from `packages/docs-web/src/content/docs/brand/` (#1745).
+- **New marketplace workflows**: `piv-system-evolution` and `archon-comprehensive-mr-review`.
+
+### Changed
+
+- **Streaming chat continuity**: typing indicators and message boundaries are more readable; rapid successive chunks no longer fragment visually (#1617).
+- **Web chat bubbles** wrap long unbreakable strings instead of overflowing (fixes #1738, #1742).
+- **Web DAG builder** recognizes `loop` and `approval` node types and renders them correctly (#1744).
+- **Web execution graph** surfaces workflow-definition fetch errors instead of silently rendering an empty graph (#1683, #1698).
+- **Web copy-message button** handles clipboard failures gracefully (#1564).
+- **Telegramify-markdown** bumped to 1.3.3 for correct blockquote escaping (#1340).
+- **Webhook clones** are placed in the workspace `source/` subdirectory to match the standard workspace layout (#1554).
+- **Global workflows** are now editable through the Web UI builder (#1557).
+- **`safeSendMessage`** consolidated into `executor-shared` to remove duplication across executor variants (#1496).
+- **Direction docs**: community-providers policy section added (#1736).
+
+### Fixed
+
+- **`workflow approve/resume/reject` no longer fail with "Workflow not found" when the run's working path is a worktree or workspace clone.** Resume, approve, and reject now use `codebase.default_cwd` for workflow YAML discovery, falling back to `working_path` when no codebase record is found. Fixes #1663 (#1743).
+- **Resume interactive workflows on chat platforms**: previously failed because the resume code path assumed web; now works for Slack and Telegram (#1756).
+- **Web approve/reject responses** surface the CLI resume command so users can copy it directly instead of having to look it up (#1523).
+- **`DEFAULT_AI_ASSISTANT`** is now read in `createCodebase` so the env var actually controls the default assistant for newly registered codebases (fixes #1703, #1746).
+- **Marketplace `decide` node** hardened against non-JSON ai-review output so a prose-prefixed verdict doesn't crash the workflow.
+- **MCP config env vars** now expand `${VAR_NAME}` brace syntax in addition to `$VAR_NAME` (#1728).
+- **`archon-refactor-safely`** persists read-only node outputs via bash bridges so downstream nodes can reference them (#1734).
+- **Workflow builder** injects `$ARGUMENTS` into generated YAMLs so user arguments reach the first node (#1733).
+- **Codex provider**: removed stale `attemptController.abort()` that crashed after SDK cleanup (#1735, #1739); fresh `AbortController` per retry attempt so a previously-aborted controller can't kill the new attempt (#1266, #1371).
+- **Claude provider** rejects directory paths in `claudeBinaryPath` and expands npm platform-package directories (e.g. `@anthropic-ai/claude-code-darwin-arm64`) to the bundled binary (#1723, #1737).
+- **Default assistant resolution**: now consults config + per-folder detection on every codebase registration, not just the first (#1729).
+- **Large node outputs** are written to a temp file and referenced rather than inlined into bash substitution, preventing argument-list corruption on big payloads (fixes #1717, #1718).
+- **Forge clone auth** resolves credentials via configured `*_URL` env vars rather than assuming `github.com` (fixes #1704, #1706); non-GitHub forge URLs authenticate via `GITLAB_TOKEN` / `GITEA_TOKEN` (fixes #1655, #1658).
+- **DAG multi-resume**: completed node state is now preserved across multiple resume cycles instead of being recomputed (#1530).
+- **Bash node variables**: user-controlled variables are passed via env vars, not shell substitution, to avoid quoting bugs and injection edge cases (#1651).
+- **Scripts**: `ARCHON_STATE_JSON` marker extraction uses line-anchored regex so embedded marker-like strings in script output don't confuse the parser (#1695).
+- **Workflows**: `condition_json_parse_failed` is now surfaced as a workflow error instead of silently skipping the conditional branch (#1673, #1694).
+
+## [0.3.12] - 2026-05-14
+
+Orchestrator prompt-cache fix, SDK termination edge cases, marketplace expansion, and broad workflow fixes.
+
+### Added
+
+- **New marketplace workflow `archon-idea-to-wo`**: interactive 8-node workflow that turns a raw idea into BKM-format Work Orders through four AI phases with approval gates between each. Authored by @lamachine, published via the community marketplace registry (closes #1647).
+
+### Changed
+
+- `maintainer-review-pr`: dropped the direction/scope gate node. The gate used Pi/Minimax to return a structured JSON verdict that the DAG branched on, but Pi intermittently wrapped the JSON in markdown fences or preamble prose, silently skipping every downstream review. In practice the gate returned "review" on every hand-picked PR (13/13 runs over two days), adding no signal. Workflow now reviews all PRs directly (#1675).
+
+### Fixed
+
+- **Claude `stop_sequence` terminations no longer fail as "SDK returned success"**: the Claude Agent SDK's `SDKResultSuccess` declares `is_error: boolean` (not literal `false`), and stop-sequence terminations carry `is_error: true` alongside `subtype: 'success'` — its encoding of "non-default termination, not a failure". The Claude provider now normalises this pair to a clean success at the provider boundary, with defense-in-depth guards in `dag-executor` (main + loop branches) and `orchestrator-agent` (direct chat) so a third-party `IAgentProvider` forwarding the raw SDK pair can't reintroduce the bug. Workflows using `output_format` (which implies a stop sequence) — including the `archon-fix-github-issue` `classify` → `synthesize` pipeline — now complete cleanly instead of throwing `Node 'X' failed: SDK returned success`. Closes #1425 (#1662).
+- **Orchestrator prompt caching restored**: static system context (projects, workflows, routing rules) was embedded in the per-turn `prompt`, forcing the Anthropic API to rebuild the cache prefix on every request (high `cache_creation_input_tokens`, zero `cache_read_input_tokens`). Moved into `systemPrompt.append`, which extends the Claude Code preset and is part of the cacheable system prefix. Fixes #1591 (#1634).
+- **Native Claude tools no longer stripped when `skills:` is set without `allowed_tools:`**: the AgentDefinition wrapper previously defaulted `tools` to `['Skill']` only, removing Read/Bash/Write/etc. Now omits `tools` when not explicitly set, letting the SDK provide its full default tool set; `Skill` is still appended when `allowed_tools` is explicit (#1605, #1661).
+- **SSH repo URLs from non-GitHub hosts**: the SSH-to-HTTPS converter only matched `git@github.com:` literally, so custom SSH host aliases, GitHub Enterprise, Gitea, GitLab, and Bitbucket SSH URLs produced workspace paths containing literal `git@<host>:` segments — `ENOTDIR` on Windows, malformed owner extraction on Unix. Now uses a generic `git@([^:]+):(.+)` regex at both call sites. Closes #1614 (#1656).
+- **`$node.output.field` for Pi/Minimax structured output**: provider-parsed fence-wrapped or preamble-prefixed JSON was captured locally but never persisted onto `NodeOutput`. Downstream `substituteNodeOutputRefs` and `condition-evaluator` consumers then `JSON.parse`d the original prose-prefixed text, threw, and resolved `$node.output.field` to empty. `structuredOutput` is now persisted on `NodeOutput` (single-shot + loop-terminal-iteration success paths) and both consumers prefer the parsed object. Closes #1571 (#1654).
+- **Marketplace auto-review CI**: workflow now triggers on `ready_for_review` (was missed by default `pull_request_target` event list); `gh pr review --approve` falls back to `gh pr comment` when GitHub Actions lacks approve permission, so PR authors still receive the review even without "Allow GitHub Actions to create and approve pull requests" enabled.
+
+## [0.3.11] - 2026-05-12
+
+Workflow marketplace, expanded setup wizard, and broad Pi/workflow engine fixes.
+
+### Added
+
+- **Workflow marketplace v0**: browse and install community workflows via `archon workflow search [query]` and `archon workflow install <slug>` (#1624). Includes an automated marketplace PR review-and-merge workflow that runs schema validation, security scanning, and AI review on submissions (#1638), plus a `video-generic` entry as the first published workflow.
+- **`archon setup` overhaul**: full interactive credential and config wizard, plus `archon doctor` to verify Claude binary, gh auth, DB, and adapters end-to-end (#1566). Pi is now a first-class provider option in the wizard (#1609).
+- **Bundled skill command**: install the bundled Archon skill into `.claude/skills/archon` from the CLI without needing the source tree (#1445).
+- **Pi/Minimax variants** of the maintainer workflows: `repo-triage-minimax` (#1562) joins `maintainer-standup-minimax` for daily triage when nested-Claude-Code sessions block the Claude variants.
+- **Public roadmap page** at `/roadmap` on the docs site (#1570).
+- Docker: `/home/appuser` is now persisted by default via the `archon_user_home` named volume, so user-installed Claude Code skills/commands/agents/hooks, Codex/Pi auth, `~/.gitconfig`, and shell history survive container rebuilds. Set `ARCHON_USER_HOME=/host/path` in `.env` to bind-mount a host path instead (#1517, #1518).
+
+### Changed
+
+- Claude provider default `settingSources` changed from `['project']` to `['project', 'user']`, so skills, commands, agents, and `CLAUDE.md` from `~/.claude/` are now loaded by default in all environments — not just Docker. Without this, the new `/home/appuser` persistence would not actually surface user-installed Claude resources. Set `assistants.claude.settingSources: ['project']` in `.archon/config.yaml` to restore the previous project-only behavior (#1518).
+- `.env.example`, `docker-compose.yml`, `deploy/docker-compose.yml`, and `reference/configuration.md` now document that `ARCHON_HOME` is silently overridden inside Docker and `ARCHON_DATA` is a Compose-only host token never read by source. The Docker entrypoint emits a one-line stderr warning when either is set in the container env (#1517).
+- Bump `hono` to ^4.12.16 and `@hono/node-server` to ^1.19.13 (closes #1484, #1499).
+- Pi provider now loads user settings files (`~/.pi/agent/auth.json` etc.) as the session baseline (#1559).
+
+### Fixed
+
+- **Resume is now explicit**: `archon workflow run` no longer silently auto-resumes the previous failed run for the same `(workflow_name, cwd)` pair. The implicit `findResumableRun` call inside `executeWorkflow` was the cause of cross-invocation state leaks — completed-node outputs from a prior failed run would bleed into the next invocation of the same workflow at the same path. Use `archon workflow run --resume`, `archon workflow resume <id>`, or the web UI resume button to opt in. `executeWorkflow`'s trailing positional args are consolidated into an options bag and a new `prepareResumedRun` / `hydrateResumableRun` pair handles resume preparation at call sites. Closes #1392 (#1646).
+- **Pi multi-chunk slash commands**: Pi agent can now successfully use `/invoke-workflow` and `/register-project` when the assistant streams the command across multiple chunks. The orchestrator continues accumulating assistant text past prefix detection until the full command is parsed (#1581).
+- **Pi concurrency + error surfacing**: SDK error messages now surface to the user instead of being masked, and Pi concurrency is capped to prevent cascade failures (#1572).
+- Chat hydration shows newest messages instead of oldest (#1532).
+- `GET /api/workflows/:name` now resolves home-scoped (`~/.archon/workflows/`) workflows that were previously invisible to the Web UI builder (#1405).
+- `GET /api/workflows` no longer returns an empty array when no `cwd` query param is provided and no codebases are registered — bundled and home-scoped workflows now surface correctly on first run, making the workflow picker functional on first launch before any project is registered (#1173).
+- `archon workflow run` propagates `$ARTIFACTS_DIR`, `$LOG_DIR`, `$BASE_BRANCH` to script-node subprocesses (#1640).
+- `archon-assist` now runs in the live checkout (`worktree.enabled: false`) — closes #1546 (#1555).
+- Bundled `opus[1m]` implement nodes now set `provider: claude` explicitly (#1622).
+- DAG executor no longer leaves zombie workflow runs behind when Pi cleanup hangs (#1563).
+- Workflow runs no longer sweep scratch artifacts from `git add -A` sites in the live checkout (#1506).
+- `$nodeId.output` substitution stringifies array/object fields as JSON (#1482).
+- `archon doctor` and `archon setup` no longer interleave `[archon] loaded N keys` boot lines and Pino info JSON with their checklist output. Set `ARCHON_VERBOSE_BOOT=1` or `LOG_LEVEL=debug` to restore the boot lines; pass `--verbose` to re-enable structured Pino logs for those commands (#1608).
+- `archon --version`, `-V`, `-version`, and lone `-v` are now all treated as version requests (#1444).
+- Docker: resolve Claude binary to the glibc variant on Debian images (#1521).
+- Docker: `git config --global --add safe.directory` in the entrypoint now de-duplicates entries before adding, preventing unbounded growth of `~/.gitconfig` now that `/home/appuser` is persisted (#1518).
+- Docker: `setup-auth` now warns at startup when `CODEX_*` env vars are absent but a persisted `~/.codex/auth.json` from a previous run still exists, so operators don't accidentally use stale or revoked credentials (#1518).
+- Orchestrator creates `~/.archon/workspaces` before spawning an AI provider (#1529).
+- Marketplace auto-review pipeline hardening: pin glibc Claude binary in CI and handle multi-line diff values (#1641), import `@archon/workflows/loader` by relative path (#1642), validate-schema exits 0 so decide can route invalid submissions (#1643), silence loader Pino logs (#1644), and only validate workflow-shaped YAMLs while registering providers (#1645).
+
+## [0.3.10] - 2026-04-29
+
+Maintainer workflow suite, loop output variables, and broad workflow engine fixes
+
+### Added
+
+- Bundled maintainer workflow suite: `maintainer-standup` for daily PR/issue triage (#1428), contributor-reply surfacing (#1457), `maintainer-review-pr` for automated code review (#1430), cross-workflow review memory (#1458), and a Pi/Minimax variant of standup (#1480).
+- `$LOOP_PREV_OUTPUT` substitution variable in loop node prompts, giving each iteration access to the cleaned output of the previous pass (#1367).
+- `mutates_checkout` flag on workflow nodes to permit concurrent runs against a live checkout without requiring worktree isolation (#1438).
+- Explicit `tags` field in workflow YAML for categorization and filtering (#1190).
+- Pi provider `ModelRegistry` support for custom model slugs and automatic auth bypass for unmapped providers (#1284).
+- Autodetection of canonical Claude and Codex binary install paths so explicit config is not required on standard installations (#1361).
+
+### Changed
+
+- Model validation delegated entirely to provider SDKs; Archon no longer rejects unknown model strings at workflow load time, so new vendor models work immediately without an Archon update (#1463).
+- Claude Agent SDK updated to 0.2.121 and Codex SDK to 0.125.0 (#1460).
+- Default Opus model pin switched to the `opus[1m]` alias (#1395).
+
+### Fixed
+
+- PR-creating workflows now correctly target `$BASE_BRANCH` instead of a hardcoded branch name (#1479).
+- Markdown code blocks inside `$nodeId.output` values no longer trigger false DAG validation errors (#1478).
+- `CLAUDE_BIN_PATH` environment variable now honoured in dev mode on hosts with libc mismatches (#1481).
+- Orchestrator clears stale session IDs on `error_during_execution` to prevent infinite failure loops (#1294).
+- Bash and script node failure messages shortened and made more actionable (#1393).
+- Pi provider structured-output parser now tolerates prose preamble before the JSON payload (#1440).
+- Docker bind-mount restarts now register `safe.directory` for all repos, not only the primary one (#1307).
+- CLI commands such as `--version` and `--help` no longer crash when bundled skill source files are absent (#1394).
+- `--no-env-file` flag no longer incorrectly passed to the native Claude binary in dev mode (#1461).
+- `$nodeId.output` references now substituted correctly inside approval gate messages (#1426).
+- `ARTIFACTS_DIR`, `LOG_DIR`, and `BASE_BRANCH` now exported into bash node subprocess environments (#1387).
+- Approval gate no longer bypassed after a reject-with-redraft on workflow resume (#1435).
+- Discord login failure now contained so it does not crash the server process (#1365).
+- Pi provider package-directory shim installed in compiled binary so Pi workflows run correctly outside a source checkout (#1360).
+
+### Added
+
+- **`$LOOP_PREV_OUTPUT` workflow variable (loop nodes only)** — exposes the previous iteration's cleaned output (after `<promise>` tag stripping) to the current iteration's prompt. Empty on the first iteration and on the first iteration after resuming from an interactive approval gate. Enables `fresh_context: true` loops to reference what the prior pass said or did without carrying full session history. (#1367)
+
+### Changed
+
+- **Provider/model resolution: trust the SDK, drop allow-lists.** Removed `inferProviderFromModel` and `isModelCompatible` entirely. Provider is now resolved via a flat explicit chain — `node.provider ?? workflow.provider ?? config.assistant` — and never inferred from the model string. Model strings pass through to the SDK unchanged; the SDK validates them at request time. Codex's stream loop now matches Claude's contract (every terminal close emits exactly one `result` chunk; `error` events without a recovering `turn.completed` synthesize `result.isError` with subtype `codex_stream_incomplete`; `turn.failed` becomes `codex_turn_failed`). AI nodes that exit the streaming loop with empty assistant text and no structured output now fail loudly with `dag.node_empty_output` instead of completing as silent zero-output successes. Provider-id typos (workflow-level and per-node) are caught at YAML load time. **Migration**: workflows that previously relied on cross-provider model inference (e.g. `model: gpt-5.2-codex` with no `provider:`, expecting Archon to pick `codex` because Claude's allow-list rejected the string) must now set `provider:` explicitly. Workflows that already set both `provider:` and `model:` — and workflows that set only `model:` matching `config.assistant` — keep working unchanged. (#1463)
+
+### Fixed
+
+- **Bash and script node failures no longer leak the inline script body into user-visible errors and logs.** When a `bash:` or `script:` DAG node failed, the error string interpolated `err.message` from Node's `ExecFileException`, which begins with `Command failed: bash -c <body>` (or `bun -e <body>`) — embedding the entire substituted script body. Pino's default error serializer compounded this by writing `err.message`, `err.stack`, and `err.cmd` separately, producing three copies of the body per failure across the CLI, Web UI, and `node_failed` event payload. Diagnostic output (e.g. `Expected ")" but found "x" at [eval]:4:241`) was buried at the end. A new `formatSubprocessFailure()` helper now strips the `Command failed:` prefix line, prefers `stderr` over the message body, tail-caps at 2 KB, and exposes a controlled `{exitCode, killed, stderrTail}` log subset — never the raw error. Timeout / ENOENT / EACCES branches now also log through the sanitized helper, so the body cannot leak via the timeout path either. (#1389)
+- **Claude provider crashed in dev mode with `error: unknown option '--no-env-file'`.** The Claude Agent SDK switched from shipping `cli.js` to per-platform native binaries (via optional deps) in the 0.2.x series. Archon's `shouldPassNoEnvFile` predicate kept emitting the Bun-only `--no-env-file` flag in dev mode (when the SDK resolves its bundled binary), which the native binary rejects. Tightened the predicate to only emit the flag for explicitly-configured Bun-runnable JS entry points (`.js`/`.mjs`/`.cjs`). Target-repo `.env` isolation is unchanged — `stripCwdEnv()` at process boot remains the primary guard, and the native Claude binary does not auto-load `.env` from its cwd. (#1461)
+- **Pi structured-output now tolerates reasoning-model prose preamble.** `tryParseStructuredOutput` previously returned `undefined` whenever the assistant text wasn't pure JSON, even when the JSON object was clearly emitted at the end of a "Let me evaluate..." preamble. Reasoning models — observed on Minimax M2.7 — routinely "think out loud" before emitting structured output despite explicit JSON-only prompts. The parser now falls back to a forward-scan from the first `{` when the clean parse fails, recovering the structured output without changing the success path for fully compliant models. (#1440)
+- **`CLAUDE_BIN_PATH` is now honored in dev mode.** Previously the env var was silently ignored when running from source (`BUNDLED_IS_BINARY=false`) — `resolveClaudeBinaryPath()` early-returned `undefined` before reading it, leaving glibc Linux contributors with no working escape hatch when the Claude SDK's bundled-binary auto-resolution picked the musl variant first. The env-var check now runs in both modes; config-file path (`assistants.claude.claudeBinaryPath`) remains binary-mode-only since it's a per-repo, not per-machine setting. Env-loading and target-repo `.env` isolation are unchanged — same `stripCwdEnv()` boot-time guard and same `shouldPassNoEnvFile()` predicate run downstream. (#1481)
+
+## [0.3.9] - 2026-04-22
+
+First release with working compiled binaries since v0.3.6. Both v0.3.7 and v0.3.8 were tagged but neither shipped release assets — v0.3.7 was blocked by two genuine binary-runtime bugs (Pi SDK's module-init crash + Bun `--bytecode` producing broken output), and v0.3.8 was blocked by an unrelated CI smoke-test regression where `release.yml`'s Claude resolver test required an `origin` remote that the fresh `git init` test repo didn't have. Both superseded tags remain for history; their GitHub Releases were deleted at the time of tagging so `releases/latest` fell back to v0.3.6 throughout, keeping `install.sh` and Homebrew safe. v0.3.9 is what users actually install.
+
+### Fixed
+
+- **Release binary smoke test no longer fails on the fresh `git init` test repo.** The Claude resolver smoke in `release.yml` ran `archon workflow run archon-assist` against a tempdir with no `origin` remote; as of #1310's worktree auto-sync logic this fails with "neither origin/HEAD nor origin/main exist" before the resolver is reached, so the CI assertion (`"Claude Code not found"` in output) never matched and the linux-x64 build aborted — taking the entire release matrix down via fail-fast. Adding `--no-worktree` to both the negative and positive resolver tests skips isolation, which is what the tests actually want: they exercise the Claude resolver path, not worktree setup. (#1357)
+
+## [0.3.8] - 2026-04-22
+
+Tagged but never released. Intended as the hotfix for v0.3.7's binary-runtime crashes; the code fixes shipped in v0.3.9 actually originated here (Pi SDK module-init lazy-load, Bun `--bytecode` removal). v0.3.8's own release CI aborted on an unrelated smoke-test assertion in `release.yml` and no binaries were uploaded. The GitHub Release was deleted; the tag remains for history. See v0.3.9 for the release users actually install.
+
+### Fixed
+
+- **Compiled archon binaries no longer crash at startup when the Pi provider is bundled.** `@mariozechner/pi-coding-agent/dist/config.js` runs `readFileSync(getPackageJsonPath(), 'utf-8')` at module top-level, which inside a compiled binary resolves to `dirname(process.execPath) + '/package.json'` — a path that doesn't exist next to `/usr/local/bin/archon`, making every archon command (including `archon version`) crash with ENOENT before it ran. The Pi SDK and all Pi-dependent helper modules are now dynamically imported inside `PiProvider.sendQuery()`; registering Pi and instantiating the provider no longer touches Pi's module-init side effects. A regression test (`provider-lazy-load.test.ts`) walks the same `registerCommunityProviders()` + `getAgentProvider('pi')` path the CLI and server take and asserts neither SDK package was resolved. Claude and Codex providers keep their static import style — their SDKs have no equivalent module-init side effect. Unblocks the v0.3.7 release binaries that could not ship because of this bug. (#1355)
+- **Release binary compile no longer silently produces broken bytecode.** `scripts/build-binaries.sh` dropped the `--bytecode` flag: Bun 1.3.11's bytecode step failed with `Failed to generate bytecode for ./cli.js` against the 0.3.7 module graph and fell through to producing a binary that crashed at module instantiation with "Expected CommonJS module to have a function wrapper". Windows was already excluded; this removes the flag everywhere. Release parity preserved via `--minify`. (#1354)
+
+## [0.3.7] - 2026-04-22
+
+Pi community provider, home-scoped workflows/commands/scripts, worktree policy, Web UI approval-gate auto-resume, three-path env model, and a breaking change to Claude Code binary resolution for compiled binary users.
+
+### Added
+
+- **Pi community provider (`@mariozechner/pi-coding-agent`).** First community provider under the Phase 2 registry (`builtIn: false`). One adapter exposes ~20 LLM backends (Anthropic, OpenAI, Google, Groq, Mistral, Cerebras, xAI, OpenRouter, Hugging Face, and more) via a `<pi-provider-id>/<model-id>` model format. Reads credentials from `~/.pi/agent/auth.json` (populated by running `pi /login` for OAuth subscriptions like Claude Pro/Max, ChatGPT Plus, GitHub Copilot) AND from env vars (env vars take priority per-request). Per-node workflow options supported: `effort`/`thinking` → Pi `thinkingLevel`; `allowed_tools`/`denied_tools` → filter Pi's 7 built-in coding tools; `skills` → resolved against `.agents/skills`, `.claude/skills` (project + user-global); `systemPrompt`; codebase env vars; session resume via `sessionId` round-trip. Unsupported fields (MCP, hooks, structured output, cost limits, fallback model, sandbox) trigger an explicit dag-executor warning rather than silently dropping. Use in workflow YAML: `provider: pi` + `model: anthropic/claude-haiku-4-5`. (#1270)
+- **Inline sub-agent definitions on DAG nodes (`agents:`).** Define Claude Agent SDK `AgentDefinition`s directly in workflow YAML, keyed by kebab-case agent ID. The main agent can spawn them in parallel via the `Task` tool — useful for map-reduce patterns where a cheap model (e.g. Haiku) briefs items and a stronger model reduces. Removes the need to author `.claude/agents/*.md` files for workflow-scoped helpers. Claude only; Codex and community providers that don't support inline agents emit a capability warning and ignore the field. Merges with the internal `dag-node-skills` wrapper set by `skills:` on the same node — user-defined agents win on ID collision (a warning is logged). (#1276)
+- **Home-scoped commands at `~/.archon/commands/`** — personal command helpers now reusable across every repo. Resolution precedence: `<repoRoot>/.archon/commands/` > `~/.archon/commands/` > bundled defaults. Surfaced in the Web UI workflow-builder node palette under a dedicated "Global (~/.archon/commands/)" section.
+- **Home-scoped scripts at `~/.archon/scripts/`** — personal Bun/uv scripts now reusable across every repo. Script nodes (`script: my-helper`) resolve via `<repoRoot>/.archon/scripts/` first, then `~/.archon/scripts/`. Repo-scoped scripts with the same name override home-scoped ones silently; within a single scope, duplicate basenames across extensions still throw (unchanged from prior behavior).
+- **1-level subfolder support for workflows, commands, and scripts.** Files can live one folder deep under their respective `.archon/` root (e.g. `.archon/workflows/triage/foo.yaml`) and resolve by name or filename regardless of subfolder. Matches the existing `defaults/` convention. Deeper nesting is ignored silently — see docs for the full convention.
+- **`'global'` variant on `WorkflowSource`** — workflows at `~/.archon/workflows/` and commands at `~/.archon/commands/` now render with a distinct source label (no longer coerced to `'project'`). Web UI badges updated.
+- **`getHomeWorkflowsPath()`, `getHomeCommandsPath()`, `getHomeScriptsPath()`, `getLegacyHomeWorkflowsPath()`** helpers in `@archon/paths`, exported for both internal discovery and external callers that want to target the home scope directly.
+- **`discoverScriptsForCwd(cwd)`** in `@archon/workflows/script-discovery` — merges home-scoped + repo-scoped scripts with repo winning on name collisions. Used by the DAG executor and validator; callers no longer need to know about the two-scope shape.
+- **Workflow-level worktree policy (`worktree.enabled` in workflow YAML).** A workflow can now pin whether its runs use isolation regardless of how they were invoked: `worktree.enabled: false` always runs in the live checkout (CLI `--branch` / `--from` hard-error; web/chat/orchestrator short-circuits `validateAndResolveIsolation`), `worktree.enabled: true` requires isolation (CLI `--no-worktree` hard-errors). Omit the block to let the caller decide (current default). First consumer: `.archon/workflows/repo-triage.yaml` pinned to `enabled: false` since it's read-only.
+- **Per-project worktree path (`worktree.path` in `.archon/config.yaml`).** Opt-in repo-relative directory (e.g. `.worktrees`) where Archon places worktrees for that repo, instead of the default `~/.archon/workspaces/<owner>/<repo>/worktrees/`. Co-locates worktrees with the project so they appear in the IDE file tree. Validated as a safe relative path (no absolute, no `..`); malformed values fail loudly at worktree creation. Users opting in are responsible for `.gitignore`ing the directory themselves — no automatic file mutation. Credits @joelsb for surfacing the need in #1117.
+- **Three-path env model with operator-visible log lines.** The CLI and server now load env vars from `~/.archon/.env` (user scope) and `<cwd>/.archon/.env` (repo scope, overrides user) at boot, both with `override: true`. A new `[archon] loaded N keys from <path>` line is emitted per source (only when N > 0). `[archon] stripped N keys from <cwd> (...)` now also prints when stripCwdEnv removes target-repo env keys, replacing the misleading `[dotenv@17.3.1] injecting env (0) from .env` preamble that always reported 0. The `quiet: true` flag suppresses dotenv's own output. (#1302)
+- **`archon setup --scope home|project` and `--force` flags.** Default is `--scope home` (writes `~/.archon/.env`). `--scope project` targets `<cwd>/.archon/.env` instead. `--force` overwrites the target wholesale rather than merging; a timestamped backup is still written. (#1303)
+- **Merge-only setup writes with timestamped backups.** `archon setup` now reads the existing target file, preserves non-empty values, carries user-added custom keys forward, and writes a `<target>.archon-backup-<ISO-ts>` before every rewrite. Fixes silent PostgreSQL→SQLite downgrade and silent token loss on re-run. (#1303)
+- **`getArchonEnvPath()` and `getRepoArchonEnvPath(cwd)`** helpers in `@archon/paths`, plus a new `@archon/paths/env-loader` subpath exporting `loadArchonEnv(cwd)` shared by the CLI and server entry points.
+- **`registerCommunityProviders()` aggregator** in `@archon/providers`. Process entrypoints (CLI, server, config-loader) now call one function to register every bundled community provider. Adding a new community provider is a single-line edit to this aggregator rather than touching each entrypoint — makes the Phase 2 "community providers are a localized addition" promise real.
+- **`contributing/adding-a-community-provider.md` guide** — contributor-facing walkthrough of the Phase 2 registry pattern using Pi as the reference implementation.
+- **`CLAUDE_BIN_PATH` environment variable** — highest-precedence override for the Claude Code SDK `cli.js` path (#1176)
+- **`assistants.claude.claudeBinaryPath` config option** — durable config-file alternative to the env var (#1176)
+- **Release-workflow Claude subprocess smoke test** — the release CI now installs Claude Code on the Linux runner and exercises the resolver + subprocess spawn, catching binary-resolution regressions before they ship
+
+### Changed
+
+- **Claude Code binary resolution** (breaking for compiled binary users): Archon no longer embeds the Claude Code SDK into compiled binaries. In compiled builds, you must install Claude Code separately (`curl -fsSL https://claude.ai/install.sh | bash` on macOS/Linux, `irm https://claude.ai/install.ps1 | iex` on Windows, or `npm install -g @anthropic-ai/claude-code`) and point Archon at the executable via `CLAUDE_BIN_PATH` env var or `assistants.claude.claudeBinaryPath` in `.archon/config.yaml`. The Claude Agent SDK accepts either the native compiled binary (from the curl/PowerShell installer at `~/.local/bin/claude`) or a JS `cli.js` (from the npm install). Dev mode (`bun run`) is unaffected — the SDK resolves via `node_modules` as before. The Docker image ships Claude Code pre-installed with `CLAUDE_BIN_PATH` pre-set, so `docker run` still works out of the box. Resolves silent "Module not found /Users/runner/..." failures on macOS (#1210) and Windows (#1087).
+- **Home-scoped workflow location moved to `~/.archon/workflows/`** (was `~/.archon/.archon/workflows/` — a double-nested path left over from reusing the repo-relative discovery helper for home scope). The new path sits next to `~/.archon/workspaces/`, `archon.db`, and `config.yaml`, matching the rest of the `~/.archon/` convention. If Archon detects workflows at the old location, it emits a one-time WARN per process with the exact migration command: `mv ~/.archon/.archon/workflows ~/.archon/workflows && rmdir ~/.archon/.archon`. The old path is no longer read — users must migrate manually (clean cut, no deprecation window). Rollback caveat: if you downgrade after migrating, move the directory back to the old location.
+- **Workflow discovery no longer takes a `globalSearchPath` option.** `discoverWorkflows()` and `discoverWorkflowsWithConfig()` now consult `~/.archon/workflows/` automatically — every caller gets home-scoped discovery for free. Previously-missed call sites in the chat command handler (`command-handler.ts`), the Web UI workflow picker (`api.ts GET /api/workflows`), and the orchestrator's single-codebase resolve path now see home-scoped workflows without needing a maintainer patch at every new call site. Closes #1136; supersedes that PR (credits @jonasvanderhaegen for surfacing the bug class).
+- **Dashboard nav tab** now shows a numeric count of running workflows instead of a binary pulse dot. Reads from the existing `/api/dashboard/runs` `counts.running` field; same 10s polling interval.
+- **Workflow run destructive actions** (Abandon, Cancel, Delete, Reject) now use a proper confirmation dialog matching the codebase-delete UX, replacing the browser's native `window.confirm()` popups. Each dialog includes context-appropriate copy describing what the action does to the run record.
+
+### Fixed
+
+- **Web UI approval gates now auto-resume.** Previously, clicking Approve or Reject on a paused workflow from the Web UI only recorded the decision — the workflow never continued, and the user had to send a follow-up chat message (or use the CLI) to resume. Three fixes: (1) orchestrator-agent now threads `parentConversationId` through `executeWorkflow` for every web dispatch, (2) the `POST /approve` and `POST /reject` API handlers dispatch `/workflow run <name> <userMessage>` back through the orchestrator when `parent_conversation_id` is set and points at a web-platform parent (mirrors `workflowApproveCommand`/`workflowRejectCommand` on the CLI; non-web parents skip the auto-resume to prevent cross-adapter misrouting), and (3) the during-streaming status check in the DAG executor tolerates the `paused` state so a concurrent AI node in the same topological layer finishes its own stream rather than being aborted when a sibling approval node pauses the run. The Web UI reject button uses the proper `ConfirmRunActionDialog` with an optional reason textarea (was `window.confirm` in the chat card, and lacked a reason input on the dashboard) — the trimmed reason propagates to `$REJECTION_REASON` in the workflow's `on_reject` prompt. Credits @jonasvanderhaegen for surfacing and diagnosing the bug in #1147 (that PR was 87 commits stale on a dev that had since refactored the reject UX; this is a fresh re-do on current `dev`). Closes #1131.
+- **Server startup no longer marks actively-running workflows as failed.** The `failOrphanedRuns()` call has been removed from `packages/server/src/index.ts` to match the CLI precedent (`packages/cli/src/cli.ts:256-258`). Per the new CLAUDE.md principle "No Autonomous Lifecycle Mutation Across Process Boundaries", a stuck `running` row is now transitioned explicitly by the user: via the per-row Cancel/Abandon buttons on the dashboard workflow card, or `archon workflow abandon <run-id>` from the CLI. (`archon workflow cleanup` is a separate command that deletes OLD terminal runs for disk hygiene — it does not handle stuck `running` rows.) Closes #1216.
+- **`MCP server connection failed: <plugin>` noise no longer surfaces in workflow runs.** The dag-executor now loads the workflow node's `mcp:` config file once and filters the SDK's failure message to only the servers the workflow actually configured. User-level Claude plugin MCPs (e.g. `telegram` inherited from `~/.claude/`) that fail to connect in the headless subprocess are debug-logged as `dag.mcp_plugin_connection_suppressed` instead of being forwarded to the conversation. Other provider warnings (⚠️) surface unchanged. Credits @MrFadiAi for reporting the issue in #1134 (that PR was 9 days stale and conflicting; this is a fresh re-do on current `dev`).
+- **`archon setup` no longer writes to `<repo>/.env`.** Prior versions unconditionally wrote the generated config to both `~/.archon/.env` and `<repo>/.env`, destroying user-added secrets and silently downgrading PostgreSQL configs to SQLite when re-run in "Add" mode. The write side now targets exactly one archon-owned file (home or project scope via `--scope`), merges into existing content by default, and writes a timestamped backup. `<repo>/.env` is never touched — it belongs to the user's target project. (#1303)
+- **CLI and server no longer silently lose repo-local env vars.** Previously, env vars in `<repo>/.env` were parsed, deleted from `process.env` by `stripCwdEnv()`, and the only output operators saw was `[dotenv@17.3.1] injecting env (0) from .env` — which read as "file was empty." Workflows that needed `SLACK_WEBHOOK` or similar had no way to recover without knowing to use `~/.archon/.env`. The new `<cwd>/.archon/.env` path + archon-owned log lines make the load state observable and recoverable. (#1302)
+- **Bumped transitive `axios` to `^1.15.0` via root `overrides` to clear CVE-2025-62718** (NO_PROXY bypass via hostname normalization → potential SSRF). Archon pulls `axios` transitively through `@slack/bolt` and `@slack/web-api`; both semver ranges (`^1.12.0` and `^1.13.5`) accept the override cleanly, so no API surface changes. Credits @stefans71 for identifying and reporting the vulnerability in #1153. Closes #1053.
+- **Stale workspace symlink no longer reported as "not in a git repository" by the CLI.** When `archon workflow run` (or `--resume`) is invoked from a valid git repo whose `~/.archon/workspaces/<owner>/<repo>/source` symlink points somewhere else (common after moving/renaming the checkout), auto-registration fails but the repo is fine. Previously both the worktree-creation and resume paths fell through to the generic `Cannot create worktree: not in a git repository` / `Cannot resume: Not in a git repository` errors — a lie that sent users down the wrong diagnostic path. Both sites now preserve the registration error and throw `Cannot {create worktree,resume}: repository registration failed.` with the original cause and a concrete cleanup hint (`Remove the stale workspace entry at <path> and retry`) when the failure matches the `createProjectSourceSymlink()` shape. Credits @Bortlesboat for identifying the root cause and the parser approach in #1157. Closes #1146.
+- **Cross-clone worktree isolation**: prevent workflows in one local clone from silently adopting worktrees or DB state owned by another local clone of the same remote. Two clones sharing a remote previously resolved to the same `codebase_id`, causing the isolation resolver's DB-driven paths (`findReusable`, `findLinkedIssueEnv`, `tryBranchAdoption`) to return the other clone's environment. All adoption paths now verify the worktree's `.git` pointer matches the requesting clone and throw a classified error on mismatch. `archon-implement` prompt was also tightened to stop AI agents from adopting unrelated branches they see via `git branch`. Thanks to @halindrome for the three-issue root-cause mapping. (#1193, #1188, #1183, #1198, #1206)
+
+### Removed
+
+- **`globalSearchPath` option** from `discoverWorkflows()` and `discoverWorkflowsWithConfig()`. Callers that previously passed `{ globalSearchPath: getArchonHome() }` should drop the argument; home-scoped discovery is now automatic.
+- **`@anthropic-ai/claude-agent-sdk/embed` import** — the Bun `with { type: 'file' }` asset-embedding path and its `$bunfs` extraction logic. The embed was a bundler-dependent optimization that failed silently when Bun couldn't produce a usable virtual FS path (#1210, #1087); it is replaced by explicit binary-path resolution.
+
+## [0.3.6] - 2026-04-12
+
+Web UI workflow experience improvements, CWD environment leak protection, and bug fixes.
+
+### Added
+
+- Workflow result card now shows status, duration, node count, and artifact links in chat (#1015)
+- Loop iteration progress display in the workflow execution view (#1014)
+- Artifact file paths in chat messages are now clickable (#1023)
+
+### Changed
+
+- CWD `.env` variables are now stripped from AI subprocess environments at the `@archon/paths` layer, replacing the old `SUBPROCESS_ENV_ALLOWLIST` approach. Prevents accidental credential leaks from target repo `.env` files (#1067, #1030, #1098, #1070)
+- Update check cache TTL reduced from 24 hours to 1 hour
+
+### Fixed
+
+- Duplicate text and tool calls appearing in workflow execution view
+- `workflow_step` SSE events not handled correctly, causing missing progress updates
+- Nested interactive elements in workflow UI causing React warnings
+- Workflow status messages not splitting correctly in WorkflowLogs
+- Incorrect `remainingMessage` suppression in stream mode causing lost output
+- Binary builds now use `BUNDLED_VERSION` for the app version instead of reading `package.json`
+
+## [0.3.5] - 2026-04-10
+
+Fixes for `archon serve` process lifecycle and static file serving.
+
+### Fixed
+
+- **`archon serve` process exits immediately**: the CLI called `process.exit(0)` after `startServer()` returned, killing the server. Now blocks on SIGINT/SIGTERM so the server stays running (#1047)
+- **Web dist path existence check**: server logs a warning at startup if the web dist directory is missing, instead of silently serving 404s
+- **Favicon route**: added explicit `/favicon.png` route for the web UI
+
+## [0.3.4] - 2026-04-10
+
+Binary env loading fix and release infrastructure improvements.
+
+### Added
+
+- **Docs site redesign**: logo, dark theme, feature cards, and enhanced CSS (#1022)
+
+### Changed
+
+- **Server env loading for binary support**: removed redundant CWD `.env` stripping — `SUBPROCESS_ENV_ALLOWLIST` and the env-leak gate already prevent target repo credentials from reaching AI subprocesses. Server now loads `~/.archon/.env` with `override: true` for all keys (not just `DATABASE_URL`), skips the `import.meta.dir` `.env` path in binary mode, and defaults `CLAUDE_USE_GLOBAL_AUTH=true` when no explicit credentials are set (#1045)
+- **Workspace version sync**: all `packages/*/package.json` versions now sync from the root `package.json` during releases via `scripts/sync-versions.sh`
+
+### Fixed
+
+- **`archon serve` crash in compiled binaries**: the CWD env stripping + baked `import.meta.dir` path caused all credentials to be lost, triggering `no_ai_credentials` exit on every startup
+- **CLI `version` command reading stale version**: dev mode now reads from the monorepo root `package.json` instead of the CLI package's own version field
+- **Release CI web build**: fixed `bun --filter` syntax and added missing `remark-gfm` transitive dependencies for Bun hoisting
+
+## [0.3.3] - 2026-04-10
+
+Binary distribution improvements, new workflow node type, and a batch of bug fixes.
+
+### Added
+
+- **`archon serve` command**: one-command way for compiled binary users to start the web UI server. Downloads a pre-built web UI tarball from GitHub releases on first run, verifies SHA-256 checksum, caches locally, then starts the full server (#1011)
+- **Automatic update check**: binary users see a notification when a newer version is available on GitHub. Non-blocking, cached for 24 hours (#1039)
+- **Script node type for DAG workflows**: `script:` nodes run inline TypeScript/Python or named scripts from `.archon/scripts/` via `bun` or `uv` runtimes. Supports `deps:` for dependency installation and `timeout:` in milliseconds (#999)
+- **Codex native binary auto-resolution**: compiled builds now locate the Codex CLI binary automatically instead of requiring a manual `CODEX_CLI_PATH` override (#995, #1012)
+
+### Fixed
+
+- **Workflow reject ignores positional reason**: `archon workflow reject <id> <reason>` now correctly passes the reason argument to the rejection handler
+- **Windows script path separators**: normalize backslashes to forward slashes in script node paths for cross-platform compatibility
+- **PowerShell `Add-ToUserPath` corruption**: installer no longer corrupts `PATH` when only a single entry exists (#1000)
+- **Validator `Promise.any` race condition**: script runtime checks no longer fail intermittently due to a `Promise.any` edge case (#1007, #1010)
+- **Interactive-prd workflow bugs**: fixes to loop gate handling, variable substitution, and node ordering (#1001, #1002, #1003, #1005)
+- **Community forge adapter exports**: added explicit export entries for Gitea and GitLab adapters so they resolve correctly in compiled builds (#1041)
+- **Workflow graph view without codebase**: the web UI workflow graph now loads correctly even when no codebase is selected (#958)
+
+## [0.3.2] - 2026-04-08
+
+Critical hotfix: compiled binaries could not spawn Claude. Also fixes an env-leak gate false-positive for unregistered working directories.
+
+### Fixed
+
+- **Claude SDK spawn in compiled binaries**: the Claude Agent SDK was resolving its `cli.js` via `import.meta.url` of the bundled module, which `bun build --compile` freezes at build time to the build host's absolute `node_modules` path. Every binary shipped from CI carried a `/Users/runner/work/Archon/...` path that existed only on the GitHub Actions runner, and every `workflow run` hit `Module not found` after three retries. Now imports `@anthropic-ai/claude-agent-sdk/embed` so `cli.js` is embedded into the binary's `$bunfs` and extracted to a real temp path at runtime (#990).
+- **Env-leak gate false-positive for unregistered cwd**: pre-spawn scan now skips cwd paths that aren't registered as codebases instead of blocking the workflow (#991, #992).
+
+## [0.3.1] - 2026-04-08
+
+Patch release: SQLite migration fix for existing databases and release build pipeline fix.
+
+### Fixed
+
+- **SQLite migration for `allow_env_keys`**: add the missing `allow_env_keys` column to the `codebases` schema and a migration so databases created before v0.3.0 upgrade cleanly instead of erroring on first query (#988).
+- **Release workflow binary builds**: wire `.github/workflows/release.yml` back to `scripts/build-binaries.sh` so tagged releases actually produce platform binaries and `checksums.txt` (#986, #987).
+
+## [0.3.0] - 2026-04-08
+
+Env-leak gate hardening, SSE reliability fixes, isolation cleanup smarter merge detection, build/version improvements, and deploy hardening.
+
+### Added
+
+- **Env-leak gate (target repo `.env` keys)**: scan auto-loaded `.env` filenames for 7 sensitive keys (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, etc.) and refuse to register or spawn into a codebase whose `.env` would silently re-inject keys into Claude/Codex subprocesses. Default is fail-closed (`allow_env_keys = false`). Includes a per-codebase consent column, registration gate, pre-spawn check in both Claude and Codex clients, and a 422 API error with web UI checkbox (#1036).
+- **CLI `--allow-env-keys` flag** for `archon workflow run` — grant env-leak-gate consent during auto-registration without needing the Web UI. Audit-logged as `env_leak_consent_granted` with `actor: 'user-cli'` (#973, #983).
+- **Global `allow_target_repo_keys` flag** in `~/.archon/config.yaml` — bypass the env-leak gate for all codebases on this machine. Per-repo `.archon/config.yaml` `allow_target_repo_keys: false` re-enables the gate for that repo. The server emits `env_leak_gate_disabled` once per process per source the first time `loadConfig` resolves the bypass as active (#973, #983).
+- **`PATCH /api/codebases/:id`** endpoint to flip `allow_env_keys` on existing codebases without delete/re-add. Audit-logged at `warn` level on every grant and revoke, including a `scanStatus` field that distinguishes "scanned" from "scan failed" so audit reviewers can tell empty key lists apart (#973, #983).
+- **Settings → Projects per-row toggle** to grant or revoke env-key consent retroactively, with an "env keys allowed" badge and inline error feedback if the PATCH fails (#973, #983).
+- **Startup env-leak scan**: when `allow_target_repo_keys` is not set, the server emits one `startup_env_leak_gate_will_block` warn per registered codebase whose `.env` would block the next spawn. Skipped entirely when the global bypass is active (#973, #983).
+- **Squash-merge and PR-merge detection** for `isolation cleanup --merged`. Unions three signals (ancestry via `git branch --merged`, patch equivalence via `git cherry`, and PR state via `gh`) to safely clean up worktrees whose branches were squash-merged. Adds `--include-closed` flag to also remove worktrees whose PRs were closed without merging (#1027).
+- **Git commit hash in `archon version`** output. Read at runtime via `git rev-parse` in dev or from a build-time constant in compiled binaries; falls back to `unknown` (#1035).
+
+### Changed
+
+- **Env-leak gate error messages** are now context-aware: separate remediation copy for Web Add-Project, CLI auto-register, and pre-spawn-of-existing-codebase paths. Previously every error pointed at the Web UI checkbox even from the CLI (#973, #983).
+- **SSE event buffer TTL** raised from 3s to 60s and capacity from 50 to 500 events, fixing dropped `tool_result` events during the 5s reconnect grace window that left tool cards perpetually spinning. Cleanup timer now resets on each new event so the buffer is held for TTL past the most recent event, not the first one. Buffer overflow and TTL expiration now log at `warn` level for observability (#1037).
+- **Binary build detection** moved from runtime env sniffing (`import.meta.dir` / `process.execPath`) to a build-time `BUNDLED_IS_BINARY` constant in `@archon/paths`. Logger uses `pino-pretty` as a destination stream on the main thread instead of a worker-thread transport, eliminating the `require.resolve('pino-pretty')` lookup that crashed inside Bun's `$bunfs` virtual filesystem in compiled binaries. Same code path runs in dev and binaries — no environment detection (#982).
+- **Cloud-init deployment script** hardened: dedicated `archon` user (docker group, no sudo) with SSH keys copied from the default cloud user, 2GB swapfile to prevent OOM during docker build on small VPSes, `ufw allow 443/tcp` and `443/udp` for HTTP/3 QUIC, fail-fast on network errors, and clearer setup-complete messaging (#981).
+
+### Fixed
+
+- **Env-leak gate worktree path lookup**: pre-spawn consent check now falls back to `findCodebaseByPathPrefix()` when the exact path lookup misses, so workflow runs in `.../worktrees/feature-branch` correctly inherit consent from the source codebase (#1036).
+- **`EnvLeakError` FATAL classification** in the workflow executor now checks `error.name === 'EnvLeakError'` directly instead of pattern-matching the message, immune to message rewording (#1036).
+- **Scanner unreadable-file handling**: distinguishes `ENOENT` (skip) from `EACCES` and other errors so unreadable `.env` files surface as findings instead of silently bypassing the gate (#1036).
+
+### Security
+
+- The default `allow_env_keys` per codebase is `false` (fail-closed). Codebases with sensitive keys in their auto-loaded `.env` files (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, etc.) are blocked at the next workflow run. **Remediation paths** (any one): (1) remove the key from `.env`, (2) rename to `.env.secrets`, (3) toggle "Allow env keys" in Settings → Projects, (4) `archon workflow run --allow-env-keys ...`, (5) set `allow_target_repo_keys: true` in `~/.archon/config.yaml`. See `docs/reference/security.md` for full details (#1036, #973, #983).
+
+
+## [0.2.12] - 2026-03-20
+
+Chat-first navigation redesign, DAG graph viewer, per-node MCP and skills, and extensive bug fixes across the web UI and workflow engine.
+
+### Added
+
+- **Chat-first layout redesign** with top-level tab navigation replacing sidebar nav (#666, #673)
+- **DAG workflow graph viewer** with split-panel layout for visual workflow inspection (#712)
+- **Per-node MCP servers** for DAG workflows — configure MCP server files per node with env var expansion (#688)
+- **Per-node skills** for DAG workflows — preload skills via AgentDefinition wrapping (#689)
+- **Default worktree isolation** for CLI workflows with auto-detected base branch (#692)
+- **Mission Control cards** with richer grouping by parent chat (#673)
+- **Tool result capture** via PostToolUse hook streamed live to Web UI
+- **Zustand state management** for workflow store, replacing manual state (#693)
+- **Welcoming empty chat state** with suppressed disconnected/no-project noise (#670)
+- Issue context details in workflow startup log events (#737)
+- Running workflow count in health endpoint (#718, #719)
+- Prerequisites section added to README quickstart
+
+### Changed
+
+- README restructured with content extracted to `/docs` directory
+- Shared executor infrastructure extracted from monolithic executor (#685)
+- Workflow discovery split into its own module for cleaner loading
+- Duplicated helpers extracted across executor, command-handler, and cleanup-service (#633)
+- Worktree-per-codebase limit removed
+- Deduplicated `setConversationDbId` pattern across adapters (#651)
+
+### Fixed
+
+- SSE race condition causing loading indicators to break after first workflow invocation
+- Tool call cards not rendering during live SSE streaming in chat (#754)
+- Standalone active workflows not grouped into shared grid (#755)
+- Conversation list not scrollable in sidebar (#747, #750)
+- Duplicate tool calls in WorkflowLogs from SSE+DB merge conflicts (#705, #720, #721)
+- Ghost DB entries in CLI isolation commands
+- Tool output lost across periodic flush in workflow logs
+- `conversationId` not URL-encoded in SSE EventSource for forge adapters (#658)
+- Claude SDK crash when invoked as root (#733)
+- Worktree sharing across conversations and web workers (#716)
+- Orphan conversation cleanup and rename error surfacing (#726)
+- Query error states missing from sidebar and context components (#727)
+- localStorage guard and background polling issues (#725)
+- Workflow builder black screen and DAG log filtering (#675)
+- Idle timeout not detecting stuck tool calls during execution (#649)
+- `commitAllChanges` failing on empty commits (#745)
+- Explicit base branch config now required for worktree creation (#686)
+- Subprocess-level retry added to CodexProvider (#641)
+- Validate `cwd` query param against registered codebases (#630)
+- Server-internal paths redacted from `/api/config` response (#632)
+- SQLite conversations index missing `WHERE deleted_at IS NULL` (#629)
+
+## [0.2.11] - 2026-03-16
+
+Git workflow and release automation.
+
+### Added
+
+- **Dev branch workflow** — `dev` is now the working branch; `main` is the release branch. All feature work branches off `dev` (#684)
+- **`/release` skill** — stack-agnostic release automation that generates changelog entries, bumps version, and creates a PR to main
+
+### Changed
+
+- GitHub default branch changed from `main` to `dev`
+
+## [0.2.10] - 2026-03-16
+
+CLI-Web observability overhaul, comprehensive test coverage, and per-node hooks.
+
+### Added
+
+- **CLI-Web observability overhaul** — DAG visualization, cancel support, metadata display, and progress tracking across CLI and Web UI
+- **Per-node SDK hooks** for DAG workflows — attach static hook callbacks to individual Claude nodes for tool control and context injection (#634)
+- **Multi-layer transient error retry** for SDK subprocess crashes with exponential backoff (#639)
+- **Comprehensive test coverage** across all packages — postgres adapter, clone handler, orchestrator agent, error formatter, API routes (#645)
+- **Windows test compatibility** — resolved 33 Windows-specific test failures (#644)
+
+### Changed
+
+- Tool call persistence decoupled from web adapter for cleaner architecture (#642, #652)
+- Loop and DAG executors now emit structured SSE events for live tool cards (#656)
+
+### Fixed
+
+- Loading indicator race condition and workflow tool call duration display (#654, #655, #657)
+- DAG node cancel detection during streaming and UTC timestamp elapsed time
+- Idle timeout excluded from post-loop cancel classification
+- Flaky message-cache test caused by `Date.now()` drift
+
+## [0.2.9] - 2026-03-13
+
+DAG hardening, security fixes, validate-pr workflow, and worktree lifecycle management.
+
+### Added
+
+- **`archon complete <branch>` command** for worktree lifecycle cleanup — removes worktree + local/remote branches (#601)
+- **`--json` flag for `workflow list`** — machine-readable workflow output (#594)
+- **`archon-validate-pr` workflow** with per-node idle timeout support (#635)
+- **Typed SessionMetadata** with Zod validation for safer metadata handling (#600)
+- **`persistSession: false`** in ClaudeProvider to avoid disk pollution from session transcripts (#626)
+- **DAG workflow for GitHub issue resolution** with structured node pipeline
+
+### Changed
+
+- Claude Agent SDK updated to v0.2.74 (#625)
+
+### Fixed
+
+- **Shell injection via `$nodeId.output` in bash nodes** — output is now properly escaped (#591)
+- DAG `when:` parse errors now fail-closed (skip node) instead of fail-open (#590)
+- Unknown `$nodeId.output` refs warn instead of silently returning empty string (#593)
+- Isolation resolver no longer swallows errors or leaks partial state (#597)
+- `extractOwnerRepo` no longer silently produces `undefined` path segments (#592)
+- Chat stuck states after failed message send (#578, #589)
+- DAG node events properly wired to frontend (#577, #602)
+- Worktree creation no longer moves canonical repo HEAD (#572)
+- Conversation DELETE/PATCH now use platform ID instead of internal DB ID (#575)
+- DAG workflow duration computed once for consistency (#570, #573)
+- SSE gaps from ordered lock events and retract preserving tool calls (#581)
+- Sidebar delete now clears selection and guards localStorage (#582)
+- Git fetch errors classified in syncRepository (#574)
+- `DATABASE_URL` loaded from `~/.archon/.env` for CLI/server parity
+- API returns 400 when `conversationId` is provided in POST `/api/conversations` (#595)
+
+## [0.2.8] - 2026-03-06
+
+Skills system overhaul and workshop documentation.
+
+### Added
+
+- **Archon-dev skill** with routing to 10 specialized cookbooks (research, plan, implement, review, debug, commit, PR, issue)
+- **Rulecheck skill** — autonomous agent that scans for CLAUDE.md rule violations, creates PRs with fixes, and notifies via Slack
+- **Triage skill** — upgraded from command to skill with custom agent for GitHub issue labeling
+- **Save-task-list skill** — upgraded from command to skill with SessionStart hook for task restoration
+- **Replicate-issue skill** for systematic GitHub issue reproduction
+- **Workshop documentation** — part 1 and part 2 guides, combined rundown, and feature coverage matrix
+
+### Changed
+
+- Default AI assistant switched from Codex to Claude
+- Skills upgraded from `.claude/commands` to `.claude/skills` with dedicated directories
+
+## [0.2.7] - 2026-02-26
+
+Monorepo deep extraction and visual workflow builder.
+
+### Added
+
+- **Visual workflow builder** with React Flow for drag-and-drop workflow creation (#471)
+- **AI-generated conversation titles** + CLI-to-Web UI integration (#515)
+- **Workflow Command Center** — unified dashboard for cross-project workflow observability with pagination and filtering
+- **`@archon/paths` package** extracted from `@archon/core` — path resolution and logger with zero internal deps (#483)
+- **`@archon/git` package** extracted from `@archon/core` — git operations with branded types (#492)
+- **`@archon/isolation` package** extracted from `@archon/core` — worktree isolation with provider abstraction (#492)
+- **`@archon/adapters` package** extracted from `@archon/server` — platform adapters for Slack, Telegram, GitHub, Discord (#499)
+- **`@archon/workflows` package** extracted from `@archon/core` — workflow engine with loader, router, executor, DAG (#507)
+
+### Changed
+
+- Backward-compat re-exports removed from `@archon/core` — use direct package imports (#512)
+
+### Fixed
+
+- Workflow dispatch history loss, cancel, and streaming UX (#475, #480)
+- Workflow summary duplicate on chat navigation (#490)
+- Text buffer flushed before workflow_dispatch SSE events (#491, #498)
+- SQLite adapter RETURNING test fixture (#508)
+- Mock restoration in 3 test files to prevent cross-file pollution (#509, #510)
+- Windows path fixes for Archon directories
+
+## [0.2.6] - 2026-02-21
+
+DAG workflow engine, orchestrator agent, and per-node tool restrictions.
+
+### Added
+
+- **DAG workflow engine** with parallel execution, conditional branching, and `$nodeId.output` substitution (#450)
+- **Orchestrator agent** that routes natural language to workflows and passes prompts through (#452)
+- **Per-node and per-step tool restrictions** — `allowed_tools` and `denied_tools` for Claude nodes (#454)
+- **Workflow builder backend APIs** (Phase A) — validate, fetch, save, and delete workflows (#471)
+- **Session retention policy** for automatic cleanup of old sessions (#306)
+- **Failed workflow resume** from prior artifacts on same branch (#440)
+
+### Changed
+
+- Claude Agent SDK upgraded to 0.2.45 and Codex SDK to 0.104.0 (#448)
+- Workflow step lifecycle logs promoted from debug to info (#469)
+
+### Fixed
+
+- Router bypass when AI uses tools instead of `/invoke-workflow` (#449)
+- Cancelled workflow status handled in frontend (#458)
+- Workflows always run in isolated worktree regardless of registration method (#457)
+- `--branch` and `--no-worktree` conflict in CLI (#545)
+- `/invoke-workflow` chunk suppressed before streaming to frontend (#486)
+- Idle timeout added to streaming loops to prevent executor hang (#552)
+- Codex model access errors surfaced with actionable guidance (#438)
+
+## [0.2.5] - 2026-02-17
+
+Web UI launch, structured logging, and major stabilization.
+
+### Added
+
+- **Archon Web UI** — React frontend with SSE streaming, workflow events, and conversation management
+- **Pino structured logging** replacing console.log across all packages (#388)
+- **Project-centric `~/.archon/` layout** — workspaces organized by `owner/repo` (#382)
+- **Session deactivation reasons** stored in database for audit trail (#303, #385)
+- **Remote branch cleanup** when PR is merged
+- **Workflow log duration, tokens, and validation events** (#417)
+- **Save-task-list command** for persisting task lists across sessions
+
+### Changed
+
+- `~/.archon/` restructured to project-centric layout (#382)
+- Database command templates deprecated in favor of filesystem commands (#425)
+- SQLite-first documentation with Postgres as optional (#418)
+- `transitionSession` wrapped in database transaction for atomicity (#408)
+- Codex SDK bumped to 0.101.0
+
+### Fixed
+
+- `.env` resolution in worktrees with credential error guidance (#404)
+- CLI picking up `DATABASE_URL` from target repo `.env` (#389)
+- PRs targeting wrong base branch instead of configured one (#387)
+- Client error handling and GitHub self-triggering (#223, #240, #407)
+- Handler bugs: JSON parsing, dotenv worktree, error messages (#392-#395, #406)
+- Model selection and Codex options wiring (#428)
+- SQLite busy timeout to prevent database locks (#418, #420)
+- Workflow load errors and router failures surfaced to users (#410)
+- WorkflowInvoker crash from workflows API type mismatch (#436)
+- `getCodebaseCommands()` returning mutable reference (#379, #384)
+
+## [0.2.4] - 2026-02-05
+
+SQLite as default database and simplified CLI setup.
+
+### Added
+
+- **SQLite as default database** — zero-config setup with `~/.archon/archon.db`, no PostgreSQL required
+- **Simplified CLI setup** — streamlined first-run experience on macOS/Linux
+
+### Fixed
+
+- Combined SQL schema syntax error (extra comma)
+- Post-install configuration for Ubuntu VPS deployments
+
+## [0.2.3] - 2026-01-31
+
+Archon CLI skill, workflow routing improvements, and configuration fixes.
+
+### Added
+
+- **Archon CLI skill** for Claude Code — run workflows from within Claude Code sessions (#331, #332, #333)
+- **Interactive setup wizard** and config editor for the Archon skill
+- **`/workflow run` command** for direct workflow invocation from CLI
+- **`archon-plan-to-merge` workflow** for end-to-end plan execution (#346)
+- **Workflow error visibility** — `/workflow list` and `/workflow reload` show per-file load errors (#260, #263, #264)
+- **Case-insensitive workflow routing** — router falls back to case-insensitive match (#263)
+
+### Changed
+
+- Workflow artifacts standardized with workflow-scoped paths (#352)
+- Resilient workflow loading — one broken YAML no longer aborts loading all workflows (#260)
+- `baseBranch` config option wired up for worktree creation (#330, #334)
+
+### Fixed
+
+- Config parse errors surfaced to users instead of silently failing (#284, #286)
+- Workflow router prioritizes user intent over context (#365)
+- Issue context passed to workflows for non-slash commands (#215)
+- Cross-platform path splitting for worktree isolation (#245)
+- WorktreeProvider error handling and silent failures (#276)
+- Router error feedback with available workflow names (#263)
+- Metadata serialization failure when `github_context` present (#262)
+- Consecutive unknown errors tracked in workflow executor (#259)
+- Thread inheritance error handling with logging and tests (#269)
+- Isolation environments partial index replaces full unique constraint (#239)
+
+## [0.2.2] - 2026-01-22
+
+Documentation improvements and bug fixes.
+
+### Added
+
+- **CLI documentation** - User guide and developer guide with architecture diagrams (#326)
+- **Private repo installation guide** using `gh` CLI for authenticated cloning
+- **Manual release process** documentation for when GitHub Actions unavailable
+
+### Changed
+
+- **Repository ownership** migrated from `raswonders` to `dynamous-community`
+
+### Fixed
+
+- Dockerfile monorepo workspace structure for proper package resolution
+
+## [0.2.1] - 2026-01-21
+
+Server migration to Hono and CLI binary distribution infrastructure.
+
+### Added
+
+- **CLI binary distribution** - Standalone binaries for macOS/Linux with curl install and Homebrew formula (#325)
+- **Bundled defaults** - Commands and workflows embedded at compile time for binary builds (#325)
+- **Runtime default loading** - Load default commands/workflows at runtime instead of copying on clone (#324)
+- **Default opt-out** - Config options `loadDefaultCommands` and `loadDefaultWorkflows` (#324)
+- **Version command enhancements** - Shows platform, build type (binary/source), and database type (#325)
+
+### Changed
+
+- **Express to Hono migration** - Replaced Express with Hono for improved performance and Bun integration (#318)
+- **Default port** changed from 3000 to 3090
+- **ESLint zero-warnings policy** enforced in CI (#316)
+- **CLAUDE.md consolidation** - Removed duplications and streamlined documentation (#317)
+
+## [0.2.0] - 2026-01-21
+
+Monorepo restructure introducing the CLI package for local workflow execution.
+
+### Added
+
+- **Monorepo structure** with `@archon/core`, `@archon/server`, and `@archon/cli` packages (#311)
+- **CLI entry point** with `workflow list`, `workflow run`, and `version` commands (#313)
+- **Database abstraction layer** supporting both PostgreSQL and SQLite (#314)
+- **SQLite auto-detection** - uses `~/.archon/archon.db` when `DATABASE_URL` not set (#314)
+- **Isolation commands** - `isolation list` and `isolation cleanup` for worktree management (#313)
+
+### Fixed
+
+- Surface git utility errors instead of swallowing silently (#292)
+
+## [0.1.6] - 2026-01-19
+
+Provider selection and session audit trail.
+
+### Added
+
+- **Config-based provider selection** for workflows - choose Claude or Codex per workflow (#283)
+- **Session state machine** with immutable sessions for full audit trail (#302)
+- **Workflow status visibility** - track running workflows per conversation (#256)
+- Codex sandbox/network settings and progress logging (#290)
+
+### Changed
+
+- Comprehensive isolation module code review (#274)
+
+### Fixed
+
+- Stale workspace: sync before worktree creation (#287)
+- Add defaults subdirectory to command search paths (#289)
+
+## [0.1.5] - 2026-01-18
+
+Major stability release with comprehensive bug fixes and test coverage.
+
+### Added
+
+- **Worktree-aware automatic port allocation** for parallel development (#178)
+- **GitHub thread history** - fetch previous PR/issue comments as context (#185)
+- **Cloud deployment support** for `with-db` profile (#134)
+- Integration tests for orchestrator workflow routing (#181)
+- Concurrent workflow detection tests (#179)
+- Comprehensive AI error handling tests for workflow executor (#176)
+
+### Changed
+
+- Deep orchestrator code review refactor (#265)
+- Improve error handling and code clarity in server entry point (#257)
+
+### Fixed
+
+- Workflows should only load from `.archon/workflows/` (#200)
+- PR worktrees use actual branch for same-repo PRs (#238)
+- GitHub adapter parameter bug causes clone failures (#209)
+- Auto-detect Claude auth when `CLAUDE_USE_GLOBAL_AUTH` not set (#236)
+- Worktree provider cleans up branches when worktrees are deleted (#222)
+- Extract port utilities to prevent test conflicts with running server (#251)
+- Workflows ensure artifacts committed before completing (#203)
+- Worktree creation fails when orphan directory exists (#208)
+- Add logging to detect silent updateConversation failures (#235)
+- Auto-sync `.archon` folder to worktrees before workflow discovery (#219)
+- Consolidate startup messages into single workflow start comment (#177)
+- Show repo identifier instead of server filesystem path (#175)
+- Check for existing PR before creating new one (#195)
+- Use empty Slack token placeholders in .env.example (#249)
+
+## [0.1.4] - 2026-01-15
+
+Developer experience improvements and worktree stability.
+
+### Added
+
+- **Auto-copy default commands/workflows** on `/clone` (#243)
+- **Pre-commit hook** to prevent formatting drift (#229)
+- **Claude global auth** - `CLAUDE_USE_GLOBAL_AUTH` for SDK built-in authentication (#228)
+
+### Changed
+
+- Update README with accurate command reference and new features (#242)
+
+### Fixed
+
+- Copy `.archon` directory to worktrees by default (#210)
+- Stale workflow cleanup and defense-in-depth error handling (#237)
+- Cleanup service handles missing worktree directories gracefully (#207)
+- Worktree limit blocks workflow execution instead of falling back to main (#197)
+- Bot self-triggering on own comments (#202)
+- Remove unnecessary String() calls in workflow db operations (#182)
+
+## [0.1.3] - 2026-01-13
+
+Workflow engine improvements with autonomous execution and parallel steps.
+
+### Added
+
+- **Ralph-style autonomous iteration loops** for plan-until-done execution (#168)
+- **Parallel block execution** for workflows - run multiple steps concurrently (#217)
+- **Workflow router** with platform context for intelligent intent detection (#170)
+- **Emoji status indicators** for workflow messages (#160)
+- Tests for logger filesystem error handling (#133)
+
+### Changed
+
+- Make `WorkflowDefinition.steps` readonly for immutability (#136)
+
+### Fixed
+
+- Detect and block concurrent workflow execution (#196)
+- RouterContext not populated for non-slash commands on GitHub (#173)
+- Workflow executor missing GitHub issue context (#212)
+- Skip step notification for single-step workflows (#159)
+- Remove redundant workflow completion message on GitHub (#162)
+- Add message length handling for GitHub adapter (#163)
+- Use code formatting for workflow/command names (#161)
+
+## [0.1.2] - 2026-01-07
+
+Introduction of the YAML-based workflow engine.
+
+### Added
+
+- **Workflow engine** for multi-step AI orchestration with YAML definitions (#108)
+- Improve workflow router to always invoke a workflow (#135)
+
+### Changed
+
+- Improve error handling in workflow engine (#150)
+
+### Fixed
+
+- Add ConversationLock to GitHub webhook handler (#142)
+- Bot no longer responds to @mentions in issue/PR descriptions (#143)
+- Copy git-ignored files to worktrees (#145)
+- `/repo <name>` fails due to owner/repo folder structure mismatch (#148)
+- Load workflows from conversation.cwd instead of server cwd (#149)
+- Revert to Bun native YAML parser and add Windows CI (#141)
+- Wrap platform.sendMessage calls in try-catch in executor (#132)
+- Cloud database pooler idle disconnects gracefully (#118)
+
+## [0.1.1] - 2025-12-17
+
+Isolation architecture overhaul and Bun runtime migration.
+
+### Added
+
+- **Bun runtime migration** - replaced Node.js/npm/Jest with Bun (#85)
+- **Unified isolation environment architecture** with provider abstraction (#87, #92)
+- **Scheduled cleanup service** for stale worktree environments (#94)
+- **Worktree limits** with user feedback (#98)
+- **Force-thread response model** for Discord (#93)
+- **Archon distribution config** and `~/.archon/` directory structure (#101)
+- User feedback messages for GitHub worktree operations (#90)
+- Required SDK options for permissions and system prompt (#91)
+- Test coverage for PR worktree creation (#77)
+
+### Changed
+
+- Drop legacy isolation columns in favor of new architecture (#99)
+- Use `isolation_env_id` with fallback to `worktree_path` (#88)
+
+### Fixed
+
+- Fork PR support in worktree creation (#76)
+- Multi-repository path collision bug (#78)
+- Status command displays `isolation_env_id` (#89)
+- Worktree path collision for repos with same name (#106)
+
+## [0.1.0] - 2025-12-08
+
+Initial release of the Remote Agentic Coding Platform.
+
+### Added
+
+- **Platform Adapters**
+  - Telegram adapter with streaming support and markdown formatting
+  - Slack adapter with Socket Mode for real-time messaging (#73)
+  - Discord adapter with thread support
+  - GitHub adapter with webhook integration for issues and PRs (#43)
+  - Test adapter for HTTP-based integration testing
+
+- **AI Assistant Clients**
+  - Claude Code SDK integration with session persistence
+  - Codex SDK integration as alternative AI assistant
+
+- **Core Features**
+  - PostgreSQL persistence for conversations, codebases, and sessions
+  - Generic command system with user-defined markdown commands
+  - Variable substitution ($1, $2, $ARGUMENTS, $PLAN)
+  - Worktree isolation per conversation for parallel development (#43)
+  - Session resume capability across restarts
+
+- **Workflow Commands** (exp-piv-loop)
+  - `/plan` - Deep implementation planning with codebase analysis
+  - `/implement` - Execute implementation plans
+  - `/commit` - Quick commits with natural language targeting
+  - `/create-pr` - Create PRs from current branch
+  - `/merge-pr` - Merge PRs with rebase handling
+  - `/review-pr` - Comprehensive PR code review
+  - `/rca` - Root cause analysis for issues
+  - `/fix-rca` - Implement fixes from RCA reports
+  - `/prd` - Product requirements documents
+  - `/worktree` - Parallel branch development
+  - `/worktree-cleanup` - Clean up merged worktrees
+  - `/router` - Natural language intent detection (#59)
+
+- **Platform Features**
+  - Configurable streaming modes (stream/batch) per platform
+  - Platform-specific authorization (whitelist users)
+  - Configurable GitHub bot mention via environment variable (#66)
+
+- **Developer Experience**
+  - ESLint 9 with flat config and Prettier integration
+  - Jest test framework with mocks
+  - Docker Compose for local development
+  - Builtin command templates (configurable via LOAD_BUILTIN_COMMANDS)
+
+### Fixed
+
+- Shared worktree cleanup preventing duplicate removal errors (#72)
+- Case-sensitive bot mention detection in GitHub adapter
+- PR review to checkout actual PR branch instead of creating new branch (#48)
+- Template commands treated as documentation (#35, #63)
+- Auto-load commands in /clone like /repo does (#55)
+- /status and /repos codebase active state inconsistency (#60)
+- WORKSPACE_PATH configuration to avoid nested repos (#37, #54)
+- Shorten displayed paths in worktree and status messages (#33, #45)
+- Create worktrees retroactively for legacy conversations (#56)
+
+### Security
+
+- Use commit SHA for reproducible PR reviews (#52, #75)
+- Add retry logic to GitHub API calls for transient network failures (#64)

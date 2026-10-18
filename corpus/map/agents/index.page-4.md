@@ -2,6 +2,7 @@
 
 Page 4 of 4. [First page](index.md) | [Previous](index.page-3.md)
 
+- [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) -- status=distilled, freshness=current
 - [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) -- status=distilled, freshness=current
 - [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) -- status=distilled, freshness=current
 - [zellij-org/zellij](../repos/zellij-org/zellij.md) -- status=distilled, freshness=current

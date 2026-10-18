@@ -292,7 +292,6 @@
 - [intellegix-code-agent-toolkit](../entries/intellegix-code-agent-toolkit-97b53269ae.md)
 - [intelligent-agent](../entries/intelligent-agent-f9a12e851d.md)
 - [interactive-dev-environment-for-ai-engineers](../entries/interactive-dev-environment-for-ai-engineers-1f84ebac33.md)
-- [ix](../entries/ix-ed171375d0.md)
 - [java-ai-sbus-test](../entries/java-ai-sbus-test-e5461d87cc.md)
 - [kata](../entries/kata-340859adf9.md)
 - [kimi-k27](../entries/kimi-k27-dc2ee35f4d.md)

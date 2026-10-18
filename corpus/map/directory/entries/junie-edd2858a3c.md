@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: JetBrains
@@ -22,6 +22,8 @@ Repository map entry: [jetbrains/junie](../../repos/jetbrains/junie.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-This repository is the front door for Junie, JetBrains' LLM-agnostic coding agent — installer scripts for stable, EAP, nightly, and experimental channels, version registries, and issue tracking, while
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): LLM-agnostic terminal-native AI coding agent by JetBrains; IDE/CI-CD integration; GitHub Action for auto-responding to issues/PRs/CI failures; multiple update channels (stable, EAP, nightly, experimental).
+
+(captured site page body (agents/junie.md), not a verified repo-code finding)
+This repository is the front door for Junie, JetBrains' LLM-agnostic coding agent — installer scripts for stable, EAP, nightly, and experimental channels, version registries, and issue tracking, while the agent implementation itself stays closed under JetBrains AI Service Terms. The agent runs in terminals, JetBrains IDEs, and CI: a GitHub Action lets Junie respond to issues, review PRs, and react to CI failures autonomously. Authentication goes through JetBrains Account, Junie API keys, or BYOK across Anthropic, OpenAI, Google, xAI, OpenRouter, and Copilot. Users track bugs via /feedback or GitHub issues, and the Discord community handles support alongside docs at junie.jetbrains.com/docs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/junie.md)

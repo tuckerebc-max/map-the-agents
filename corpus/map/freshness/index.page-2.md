@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [longngn204/local-coding-agent](../repos/longngn204/local-coding-agent.md) [coverage: partial]
 - [looptroop-ai/looptroop](../repos/looptroop-ai/looptroop.md) [coverage: partial]
 - [lore-hex/quillcode](../repos/lore-hex/quillcode.md) [coverage: partial]
 - [lostintangent/conduit-release](../repos/lostintangent/conduit-release.md) [coverage: complete]
@@ -439,3 +438,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [yushui2022/easy-coding-agents](../repos/yushui2022/easy-coding-agents.md) [coverage: partial]
 - [yusifeng/formax](../repos/yusifeng/formax.md) [coverage: partial]
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) [coverage: complete]
+- [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) [coverage: complete]

@@ -1,9 +1,9 @@
 # coleam00/archon
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a7e300b2a740 @ dfc91846333717e8
+Latest snapshot: commit 0f608e1f45c1 @ d52f9cd8eb124772
 
 ## Summary (orientation draft, not independently verified)
 

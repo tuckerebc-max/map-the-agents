@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: rokoss21
@@ -22,6 +22,8 @@ Repository map entry: [rokoss21/iosm-cli](../../repos/rokoss21/iosm-cli.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-iosm-cli enforces a measurable engineering discipline on top of LLM execution: every change cycle passes through Improve, Optimize, Shrink, and Modularize phases in strict order, scored on six canonic
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-native AI runtime (not a chat interface) for controlled engineering execution. Features the IOSM methodology (Improve -\> Optimize -\> Shrink -\> Modularize) with 6 canonical metrics, IOSM-Index health score, deterministic orchestration (/contract -\> /singular -\> /swarm), filesystem checkpointing/rollback, session persistence, and artifact history.
+
+(captured site page body (agents/iosm-cli.md), not a verified repo-code finding)
+iosm-cli enforces a measurable engineering discipline on top of LLM execution: every change cycle passes through Improve, Optimize, Shrink, and Modularize phases in strict order, scored on six canonical metrics rolled into an IOSM-Index, with guardrail breaches blocking progression. Complex work follows /contract to define the change, /singular to pick among three trade-off options, and /swarm for deterministic parallel execution with scopes, locks, and gates. Safety tooling includes checkpoints, rollback, snapshot/restore, a trust ledger, and optional bwrap sandboxing. Profiles switch between everyday coding, read-only planning, and orchestration-first meta mode, and integrations span JSON-RPC for IDEs, a Telegram bridge, and a TypeScript SDK.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/iosm-cli.md)

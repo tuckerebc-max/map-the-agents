@@ -334,6 +334,7 @@
 - [shawhint/ai-builders-bootcamp-1](../repos/shawhint/ai-builders-bootcamp-1.md)
 - [shawhint/ai-builders-bootcamp-2](../repos/shawhint/ai-builders-bootcamp-2.md)
 - [shinpr/agentic-code](../repos/shinpr/agentic-code.md)
+- [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
 - [shouzhengai/cs146s_cn](../repos/shouzhengai/cs146s_cn.md)
 - [shurutech/mql](../repos/shurutech/mql.md)
 - [sivaramadi/claude-html-test](../repos/sivaramadi/claude-html-test.md)

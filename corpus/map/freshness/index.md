@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (885)
+## current (884)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -115,7 +115,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [codingthefuturewithai/software-dev-prompt-library](../repos/codingthefuturewithai/software-dev-prompt-library.md) [coverage: complete]
 - [codinit-dev/codinit-dev](../repos/codinit-dev/codinit-dev.md) [coverage: complete]
 - [cogitatortech/binharic-cli](../repos/cogitatortech/binharic-cli.md) [coverage: complete]
-- [coleam00/archon](../repos/coleam00/archon.md) [coverage: partial]
 - [coleam00/claude-memory-compiler](../repos/coleam00/claude-memory-compiler.md) [coverage: complete]
 - [coleam00/context-engineering-intro](../repos/coleam00/context-engineering-intro.md) [coverage: complete]
 - [coleam00/linear-coding-agent-harness](../repos/coleam00/linear-coding-agent-harness.md) [coverage: complete]
@@ -437,3 +436,4 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [locoremind/locooperator](../repos/locoremind/locooperator.md) [coverage: complete]
 - [locoremind/locotrainer](../repos/locoremind/locotrainer.md) [coverage: complete]
 - [loganthorneloe/ai-for-software-engineers](../repos/loganthorneloe/ai-for-software-engineers.md) [coverage: complete]
+- [longngn204/local-coding-agent](../repos/longngn204/local-coding-agent.md) [coverage: partial]

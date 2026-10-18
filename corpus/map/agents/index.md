@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1064 repositories.
+1065 repositories.
 
 [Back to map index](../index.md)
 
@@ -234,7 +234,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [codinit-dev/codinit-dev](../repos/codinit-dev/codinit-dev.md) -- status=distilled, freshness=current
 - [codium-ai/pr-agent](../repos/codium-ai/pr-agent.md) -- status=blocked, freshness=refresh-failed
 - [cogitatortech/binharic-cli](../repos/cogitatortech/binharic-cli.md) -- status=distilled, freshness=current
-- [coleam00/archon](../repos/coleam00/archon.md) -- status=distilled, freshness=current
+- [coleam00/archon](../repos/coleam00/archon.md) -- status=distilled, freshness=stale
 - [coleam00/claude-memory-compiler](../repos/coleam00/claude-memory-compiler.md) -- status=distilled, freshness=current
 - [coleam00/context-engineering-intro](../repos/coleam00/context-engineering-intro.md) -- status=distilled, freshness=current
 - [coleam00/linear-coding-agent-harness](../repos/coleam00/linear-coding-agent-harness.md) -- status=distilled, freshness=current
