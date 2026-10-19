@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: fivetaku
@@ -22,6 +22,8 @@ Repository map entry: [fivetaku/kkirikkiri](../../repos/fivetaku/kkirikkiri.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Assembling a useful set of Claude Code subagents by hand is slow and error-prone, so kkirikkiri automates team construction: the user describes the goal in one sentence, the plugin interviews briefly,
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Natural language team builder plugin for Claude Code Agent Teams - describe what you want in one sentence and it assembles a purpose-driven AI team with validation loops (up to 3 rounds) and shared memory for cross-session persistence.
+
+(captured site page body (agents/kkirikkiri.md), not a verified repo-code finding)
+Assembling a useful set of Claude Code subagents by hand is slow and error-prone, so kkirikkiri automates team construction: the user describes the goal in one sentence, the plugin interviews briefly, proposes members with strictly scoped roles, and delegates execution to a team leader that plans and validates but never writes code directly. Well-performing members can be saved back to .claude/agents/ for reuse, and shared state (plans, progress) persists in .kkirikkiri/teams/ across sessions. Validation loops of up to three rounds swap underperforming members or rebuild the team. It targets Claude Code users with the experimental Agent Teams flag enabled who want repeatable multi-agent setups without hand-editing agent definitions.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/kkirikkiri.md)

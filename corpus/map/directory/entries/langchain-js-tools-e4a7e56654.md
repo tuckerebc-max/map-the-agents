@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
-- Category: other
+- Category: agent-sdk
 - Provider/maker: langchain-ai
 - License: MIT
 - Language: TypeScript
@@ -22,10 +22,12 @@ Repository map entry: [langchain-ai/langchainjs](../../repos/langchain-ai/langch
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=agent-sdk, backing=other, page=
+- category: published=agent-sdk, backing=other, page=agent-sdk
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-LangChain JS gives JavaScript and TypeScript developers composable interfaces for agents, models, tools, retrievers, and vector stores so LLM application code does not couple to any one provider's SDK
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Framework for building LLM-powered applications that helps developers chain together interoperable components and third-party integrations, simplifying AI application development while future-proofing decisions as the underlying technology evolves.
+
+(captured site page body (agents/langchain-js-tools.md), not a verified repo-code finding)
+LangChain JS gives JavaScript and TypeScript developers composable interfaces for agents, models, tools, retrievers, and vector stores so LLM application code does not couple to any one provider's SDK. It runs on Node 20/22/24, edge runtimes, Deno, Bun, and browsers, and integrates with the wider LangChain ecosystem — LangGraph.js for orchestration, Deep Agents for higher-level planning packages, LangSmith for observability. Application developers use it to assemble chat, RAG, and agent products rather than to run a coding loop; teams that need a coding harness typically build one on LangGraph or Deep Agents instead. It is MIT-licensed and actively maintained with 18k+ stars.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/langchain-js-tools.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Kimi-K2-7
@@ -22,6 +22,8 @@ Repository map entry: [kimi-k2-7/kimi-k2.7](../../repos/kimi-k2-7/kimi-k2.7.md) 
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository describes a desktop 'Swarm Workstation' that coordinates up to 300 parallel sub-agents running Moonshot's Kimi K2.7 Code model, with per-agent MCP toolsets and an Anthropic/OpenAI-compa
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Desktop app (Kimi K2.7 Swarm Workstation) that turns your computer into a distributed AI command center, coordinating up to 300 parallel sub-agents powered by Moonshot AI's Kimi K2.7 Code (1T-param MoE, 32B active). Claims 81.1% MCPMark. Features hyper-parallel browser, live reasoning visualization (ThoughtStream), auto report generation, multimodal vision, custom agent-role tuning, and a Swarm Bridge providing an Anthropic/OpenAI-compatible API.
+
+(captured site page body (agents/kimi-k27.md), not a verified repo-code finding)
+The repository describes a desktop 'Swarm Workstation' that coordinates up to 300 parallel sub-agents running Moonshot's Kimi K2.7 Code model, with per-agent MCP toolsets and an Anthropic/OpenAI-compatible bridge. No application source accompanies the claims — only README text, a package.json, and .7z/.dmg download links — and the referenced benchmarks, model names, and hardware targets do not correspond to any released products. The distribution account is not Moonshot AI's GitHub organization, and the described free 'proxy pool' would route prompts and code through an anonymous third party. The census treats this entry as an unverifiable binary distribution rather than a working harness, and the files should not be downloaded.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/kimi-k27.md)

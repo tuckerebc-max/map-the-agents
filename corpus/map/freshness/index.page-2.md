@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [looptroop-ai/looptroop](../repos/looptroop-ai/looptroop.md) [coverage: partial]
 - [lore-hex/quillcode](../repos/lore-hex/quillcode.md) [coverage: partial]
 - [lostintangent/conduit-release](../repos/lostintangent/conduit-release.md) [coverage: complete]
 - [luangjokaj/wordpressify](../repos/luangjokaj/wordpressify.md) [coverage: complete]
@@ -439,3 +438,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [yusifeng/formax](../repos/yusifeng/formax.md) [coverage: partial]
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) [coverage: complete]
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) [coverage: complete]
+- [zachblume/autospec](../repos/zachblume/autospec.md) [coverage: complete]

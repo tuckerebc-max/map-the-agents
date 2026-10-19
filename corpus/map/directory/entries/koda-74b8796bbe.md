@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Koda
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Western AI coding assistants often require payment methods and network access that are awkward from Russia, so Koda packages the open-source Continue extension with Russian-language support, local pay
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Russian AI service for developers (AI coding assistant)
+
+(captured site page body (agents/koda.md), not a verified repo-code finding)
+Western AI coding assistants often require payment methods and network access that are awkward from Russia, so Koda packages the open-source Continue extension with Russian-language support, local payment-free access, and Telegram-based community support. It runs four modes: inline completion, context-aware chat in Russian or English, retrieval over project or custom data sources, and an agent mode that decomposes multi-step tasks and automates them. The extension lists about 39,600 installs on the VS Code Marketplace with a roughly 4.5-star rating. It targets Russian-speaking developers who want an assistant that works out of the box without a VPN.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/koda.md)

@@ -239,7 +239,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [coleam00/context-engineering-intro](../repos/coleam00/context-engineering-intro.md) -- status=distilled, freshness=current
 - [coleam00/linear-coding-agent-harness](../repos/coleam00/linear-coding-agent-harness.md) -- status=distilled, freshness=current
 - [coleam00/mcp-crawl4ai-rag](../repos/coleam00/mcp-crawl4ai-rag.md) -- status=distilled, freshness=current
-- [commandcodeai/command-code](../repos/commandcodeai/command-code.md) -- status=distilled, freshness=current
+- [commandcodeai/command-code](../repos/commandcodeai/command-code.md) -- status=distilled, freshness=stale
 - [composable-models/llm_multiagent_debate](../repos/composable-models/llm_multiagent_debate.md) -- status=distilled, freshness=current
 - [construct-worlds/construct](../repos/construct-worlds/construct.md) -- status=distilled, freshness=current
 - [context-labs/halo](../repos/context-labs/halo.md) -- status=distilled, freshness=current

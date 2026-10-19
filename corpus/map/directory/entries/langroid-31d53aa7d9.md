@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: langroid
@@ -22,6 +22,8 @@ Repository map entry: [langroid/langroid](../../repos/langroid/langroid.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Langroid came out of CMU and UW-Madison research as an alternative to monolithic agent chains: each agent is an actor that transforms messages, and Task objects compose them into parent-child hierarch
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Intuitive, lightweight, extensible Python framework (from CMU/UW-Madison researchers) for building LLM-powered multi-agent applications. Agent-as-actor paradigm with hierarchical task delegation via TaskTool. Does NOT depend on LangChain. Pydantic-based tool/function definitions, built-in RAG with source citation (DocChatAgent), SQL chat, knowledge graph chat (Neo4j/ArangoDB), lineage tracking. Works with practically any LLM. Has a Claude Code plugin (claude plugin install langroid@langroid).
+
+(captured site page body (agents/langroid.md), not a verified repo-code finding)
+Langroid came out of CMU and UW-Madison research as an alternative to monolithic agent chains: each agent is an actor that transforms messages, and Task objects compose them into parent-child hierarchies with explicit delegation and addressing. The library ships RAG agents, structured extraction, SQL/table agents, and vector-store integrations (Qdrant, Chroma, Milvus, pgvector, and others), and since v0.53.0 any agent can consume MCP server tools through an adapter. It targets Python developers building multi-agent LLM applications, including production users such as Nullify, and is released under MIT with monthly releases.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/langroid.md)

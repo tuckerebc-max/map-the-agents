@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: KlaatAI
@@ -22,6 +22,8 @@ Repository map entry: [klaatai/klaatcode](../../repos/klaatai/klaatcode.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-klaatcode targets the cost problem of terminal coding agents: most tokens are spent re-reading files the agent has already seen. Indexing the project into a call graph with semantic search lets the ag
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-native AI coding agent with per-request smart model routing across 6 cost tiers; real code knowledge graph (call graph, semantic search, blast-radius); no Continue button (free unlimited tool rounds); visible cost caps and burn-rate monitoring; compaction with self-check; reproducible benchmarks.
+
+(captured site page body (agents/klaatcode.md), not a verified repo-code finding)
+klaatcode targets the cost problem of terminal coding agents: most tokens are spent re-reading files the agent has already seen. Indexing the project into a call graph with semantic search lets the agent query callers, callees, and blast radius directly, and routing each request through Klaatu-o1 escalates or de-escalates the model tier per task. Tool calls within a request are free; only user messages consume quota, and cost guards with burn-rate monitoring bound runaway sessions. Subagents, lifecycle hooks, plan mode, and MCP presets cover the standard harness surface, and the claimed $0.027-per-solved-task benchmark ships as a reproducible bun run bench script for verification.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/klaatcode.md)

@@ -298,7 +298,6 @@
 - [konfig](../entries/konfig-c71a35025e.md)
 - [kusho](../entries/kusho-e7cb89f343.md)
 - [landing-page](../entries/landing-page-6097c64ac5.md)
-- [langchain-js-tools](../entries/langchain-js-tools-e4a7e56654.md)
 - [language-ai-engineering-lab](../entries/language-ai-engineering-lab-deec7dea1b.md)
 - [lazyide](../entries/lazyide-c57cda90cd.md)
 - [learn-coding-agent](../entries/learn-coding-agent-3cc681d16c.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-AutoGen is Microsoft Research's framework for constructing multi-agent applications, and its project page catalogs the architecture rather than shipping an agent itself. Version 0.4 rebuilt the librar
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Associated link: the Microsoft Research project page for AutoGen, an open-source programming framework for building multi-agent AI applications with an asynchronous, event-driven architecture enabling scalable, distributed agentic workflows; supports MCP servers via McpWorkbench
+
+(captured site page body (agents/landing-page.md), not a verified repo-code finding)
+AutoGen is Microsoft Research's framework for constructing multi-agent applications, and its project page catalogs the architecture rather than shipping an agent itself. Version 0.4 rebuilt the library around asynchronous, event-driven message passing so agents cooperate through request/response and event patterns, with pluggable agents, tools, memory, and models, OpenTelemetry tracing, and build-time type checking. Distributed agent networks can span organizational boundaries, which is the feature that distinguishes it from single-process agent libraries. Researchers and engineering teams use it as the substrate for their own agent applications rather than as a ready coding harness.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/landing-page.md)

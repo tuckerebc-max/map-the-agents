@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: sinameraji
@@ -22,6 +22,8 @@ Repository map entry: [sinameraji/kimiflare](../../repos/sinameraji/kimiflare.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Kimiflare addresses token-cost opacity by running inference on the user's own Cloudflare Workers AI account and routing traffic through Cloudflare AI Gateway, which returns authoritative per-turn cost
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal coding agent running entirely on your own Cloudflare account via Workers AI; 262k context window, AI Gateway-confirmed cost tracking, local SQLite+embeddings memory, image understanding, OS-aware shell (Windows support), headless SDK + RPC mode; 5 hook events (PreToolUse, PostToolUse, UserPromptSubmit, Stop, PreCompact).
+
+(captured site page body (agents/kimiflare.md), not a verified repo-code finding)
+Kimiflare addresses token-cost opacity by running inference on the user's own Cloudflare Workers AI account and routing traffic through Cloudflare AI Gateway, which returns authoritative per-turn costs, cache-hit ratios, and per-feature breakdowns instead of estimates. The agent ships 262k-context models, image understanding, MCP tool extension, LSP integration, local SQLite memory, and veto-capable hooks at five lifecycle points managed through a /hooks catalog. Modes cycle between plan (read-only research), edit (approval per mutation), and auto. Individual developers and small teams use it to keep coding-agent spend inside a Cloudflare bill they already control.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/kimiflare.md)

@@ -68,31 +68,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Kaku (`kaku`)](kaku-b9e5b11592.md) -- published+backing+pages
 - [Kane AI (`kane-ai`)](kane-ai-8d272c53f8.md) -- published+backing+pages
 - [kanvibe (`kanvibe`)](kanvibe-99d1e2fe3c.md) -- published+backing+pages
-- [Karato - Agent for Sakana AI fugu (`karato-agent-for-sakana-ai-fugu`)](karato-agent-for-sakana-ai-fugu-15420222da.md) -- published+backing
-- [Kata (`kata`)](kata-340859adf9.md) -- backing-only
-- [Kilo Code (`kilo-code`)](kilo-code-9a56d96235.md) -- published+backing
-- [kimchi (`kimchi`)](kimchi-a4174086c3.md) -- published+backing
-- [Kimi CLI (`kimi-cli`)](kimi-cli-fed1778cf7.md) -- published+backing
-- [Kimi Code CLI (`kimi-code-cli`)](kimi-code-cli-9af26769f9.md) -- published+backing
-- [kimi-K2.7 (`kimi-k27`)](kimi-k27-dc2ee35f4d.md) -- backing-only
-- [kimiflare (`kimiflare`)](kimiflare-bee21a4faf.md) -- published+backing
-- [Kiro (`kiro`)](kiro-6e885b8578.md) -- published+backing
-- [kkirikkiri (`kkirikkiri`)](kkirikkiri-776c541b79.md) -- published+backing
-- [klaatcode (`klaatcode`)](klaatcode-45845c67dd.md) -- published+backing
-- [Koda (`koda`)](koda-74b8796bbe.md) -- published+backing
-- [koder (`koder`)](koder-bc7163ef70.md) -- published+backing
-- [kodo (`kodo`)](kodo-3d724cd574.md) -- published+backing
-- [Kodu (`kodu`)](kodu-ce6990654b.md) -- published+backing
-- [Kombai (`kombai`)](kombai-d8e66525f4.md) -- published+backing
-- [Konfig (`konfig`)](konfig-c71a35025e.md) -- backing-only
-- [kota (`kota`)](kota-8e29d5aabc.md) -- published+backing
-- [Kun (`kun`)](kun-495ba379cc.md) -- published+backing
-- [Kusho (`kusho`)](kusho-e7cb89f343.md) -- backing-only
-- [L2MAC (`l2mac`)](l2mac-fc13aad935.md) -- published+backing
-- [landing page (`landing-page`)](landing-page-6097c64ac5.md) -- backing-only
-- [LangChain JS Tools (`langchain-js-tools`)](langchain-js-tools-e4a7e56654.md) -- published+backing
-- [LangGraph (`langgraph`)](langgraph-ad3fc2c957.md) -- published+backing
-- [Langroid (`langroid`)](langroid-31d53aa7d9.md) -- published+backing
+- [Karato - Agent for Sakana AI fugu (`karato-agent-for-sakana-ai-fugu`)](karato-agent-for-sakana-ai-fugu-15420222da.md) -- published+backing+pages
+- [Kata (`kata`)](kata-340859adf9.md) -- backing+pages
+- [Kilo Code (`kilo-code`)](kilo-code-9a56d96235.md) -- published+backing+pages
+- [kimchi (`kimchi`)](kimchi-a4174086c3.md) -- published+backing+pages
+- [Kimi CLI (`kimi-cli`)](kimi-cli-fed1778cf7.md) -- published+backing+pages
+- [Kimi Code CLI (`kimi-code-cli`)](kimi-code-cli-9af26769f9.md) -- published+backing+pages
+- [kimi-K2.7 (`kimi-k27`)](kimi-k27-dc2ee35f4d.md) -- backing+pages
+- [kimiflare (`kimiflare`)](kimiflare-bee21a4faf.md) -- published+backing+pages
+- [Kiro (`kiro`)](kiro-6e885b8578.md) -- published+backing+pages
+- [kkirikkiri (`kkirikkiri`)](kkirikkiri-776c541b79.md) -- published+backing+pages
+- [klaatcode (`klaatcode`)](klaatcode-45845c67dd.md) -- published+backing+pages
+- [Koda (`koda`)](koda-74b8796bbe.md) -- published+backing+pages
+- [koder (`koder`)](koder-bc7163ef70.md) -- published+backing+pages
+- [kodo (`kodo`)](kodo-3d724cd574.md) -- published+backing+pages
+- [Kodu (`kodu`)](kodu-ce6990654b.md) -- published+backing+pages
+- [Kombai (`kombai`)](kombai-d8e66525f4.md) -- published+backing+pages
+- [Konfig (`konfig`)](konfig-c71a35025e.md) -- backing+pages
+- [kota (`kota`)](kota-8e29d5aabc.md) -- published+backing+pages
+- [Kun (`kun`)](kun-495ba379cc.md) -- published+backing+pages
+- [Kusho (`kusho`)](kusho-e7cb89f343.md) -- backing+pages
+- [L2MAC (`l2mac`)](l2mac-fc13aad935.md) -- published+backing+pages
+- [landing page (`landing-page`)](landing-page-6097c64ac5.md) -- backing+pages
+- [LangChain JS Tools (`langchain-js-tools`)](langchain-js-tools-e4a7e56654.md) -- published+backing+pages
+- [LangGraph (`langgraph`)](langgraph-ad3fc2c957.md) -- published+backing+pages
+- [Langroid (`langroid`)](langroid-31d53aa7d9.md) -- published+backing+pages
 - [language-ai-engineering-lab (`language-ai-engineering-lab`)](language-ai-engineering-lab-deec7dea1b.md) -- backing-only
 - [Latta (`latta`)](latta-51cfea0293.md) -- published+backing
 - [lavra (`lavra`)](lavra-f988a1956f.md) -- backing-only

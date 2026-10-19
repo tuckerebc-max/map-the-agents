@@ -1,9 +1,9 @@
 # commandcodeai/command-code
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 5c8f1b48c9d6 @ 5960e9e356d6db47
+Latest snapshot: commit c48f96fb959c @ e47893b83f30311a
 
 ## Summary (orientation draft, not independently verified)
 
