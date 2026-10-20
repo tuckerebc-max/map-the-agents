@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: LinkAI
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-LinkAI marketed a zero-code platform for constructing and operating AI agents at enterprise scale in the Chinese market. The domain linkai.cn no longer resolves — DNS lookups fail outright — so the pr
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Enterprise-grade AI agent building platform with zero-code agent construction. The domain linkai.cn does not resolve (DNS lookup fails), indicating the product is no longer active at this URL.
+
+(captured site page body (agents/linkai.md), not a verified repo-code finding)
+LinkAI marketed a zero-code platform for constructing and operating AI agents at enterprise scale in the Chinese market. The domain linkai.cn no longer resolves — DNS lookups fail outright — so the product's website, documentation, and service are unreachable and its current operational status cannot be verified from any primary source. No successor domain or relaunch announcement was located during research. The entry is recorded as dead at its registered URL.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/linkai.md)

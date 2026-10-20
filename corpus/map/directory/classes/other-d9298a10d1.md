@@ -299,6 +299,7 @@
 - [kusho](../entries/kusho-e7cb89f343.md)
 - [landing-page](../entries/landing-page-6097c64ac5.md)
 - [language-ai-engineering-lab](../entries/language-ai-engineering-lab-deec7dea1b.md)
+- [lavra](../entries/lavra-f988a1956f.md)
 - [lazyide](../entries/lazyide-c57cda90cd.md)
 - [learn-coding-agent](../entries/learn-coding-agent-3cc681d16c.md)
 - [legalgraphrag](../entries/legalgraphrag-0a896fcaf0.md)

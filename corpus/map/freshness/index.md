@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (883)
+## current (880)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -120,10 +120,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [coleam00/linear-coding-agent-harness](../repos/coleam00/linear-coding-agent-harness.md) [coverage: complete]
 - [coleam00/mcp-crawl4ai-rag](../repos/coleam00/mcp-crawl4ai-rag.md) [coverage: complete]
 - [composable-models/llm_multiagent_debate](../repos/composable-models/llm_multiagent_debate.md) [coverage: complete]
-- [construct-worlds/construct](../repos/construct-worlds/construct.md) [coverage: partial]
 - [context-labs/halo](../repos/context-labs/halo.md) [coverage: complete]
-- [continuedev/continue](../repos/continuedev/continue.md) [coverage: partial]
-- [cortexkit/aft](../repos/cortexkit/aft.md) [coverage: partial]
 - [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) [coverage: partial]
 - [cosmtrek/mindwalk](../repos/cosmtrek/mindwalk.md) [coverage: complete]
 - [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [loganthorneloe/ai-for-software-engineers](../repos/loganthorneloe/ai-for-software-engineers.md) [coverage: complete]
 - [longngn204/local-coding-agent](../repos/longngn204/local-coding-agent.md) [coverage: partial]
 - [looptroop-ai/looptroop](../repos/looptroop-ai/looptroop.md) [coverage: partial]
+- [lore-hex/quillcode](../repos/lore-hex/quillcode.md) [coverage: partial]
+- [lostintangent/conduit-release](../repos/lostintangent/conduit-release.md) [coverage: complete]
+- [luangjokaj/wordpressify](../repos/luangjokaj/wordpressify.md) [coverage: complete]

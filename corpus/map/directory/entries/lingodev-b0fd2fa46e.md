@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Lingo.dev (ex Replexica)
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Lingo.dev solves continuous localization for software teams: instead of shipping translation files to a vendor, developers provision localization engines that persist glossaries, brand voice, locale r
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI localization engineer that ships translated code (YC)
+
+(captured site page body (agents/lingodev.md), not a verified repo-code finding)
+Lingo.dev solves continuous localization for software teams: instead of shipping translation files to a vendor, developers provision localization engines that persist glossaries, brand voice, locale rules, and a ranked model chain, then call them from an HTTP API, CLI, GitHub Action, or MCP server. Its Retrieval Augmented Localization injects matched glossary terms at inference time and re-processes only changed content, with published research showing 17-45% fewer terminology errors across 42,000+ GEMBA-MQM judgments. A fixed six-stage pipeline (refinement, context enrichment, translation, optional human post-editing, review, delivery) replaces the source rather than an autonomous loop. Mistral AI, Cal.com, and Supabase use it; the platform is SOC 2 Type II with EU/US data residency.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/lingodev.md)

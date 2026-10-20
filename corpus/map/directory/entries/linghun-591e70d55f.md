@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: linghungegeg
@@ -22,6 +22,8 @@ Repository map entry: [linghungegeg/linghun](../../repos/linghungegeg/linghun.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Linghun's premise is that hallucinated success is the worst failure mode of coding agents, so it enforces evidence as a runtime constraint rather than a prompt instruction: answers are classified PASS
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first, evidence-first AI coding terminal with an anti-hallucination system enforcing evidence-first engineering (reading facts, verifying, distinguishing verification scopes, refusing unverified claims, and expressing uncertainty as runtime constraints); Chinese and Windows are first-class citizens
+
+(captured site page body (agents/linghun.md), not a verified repo-code finding)
+Linghun's premise is that hallucinated success is the worst failure mode of coding agents, so it enforces evidence as a runtime constraint rather than a prompt instruction: answers are classified PASS/PARTIAL/FAIL against what was actually read and verified, and the final-answer gate refuses unverified claims. The harness adds workspace snapshots, git stable points and worktrees, controlled memory with failure learning, multi-model role routing, and an App Bridge capability runtime for connecting external applications via manifests and local HTTP connectors. Windows, PowerShell, and Chinese paths are first-class, reflecting its user base. It ships as an npm-distributed Apache-2.0 CLI with a published whitepaper in Chinese and English.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/linghun.md)

@@ -93,31 +93,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [LangChain JS Tools (`langchain-js-tools`)](langchain-js-tools-e4a7e56654.md) -- published+backing+pages
 - [LangGraph (`langgraph`)](langgraph-ad3fc2c957.md) -- published+backing+pages
 - [Langroid (`langroid`)](langroid-31d53aa7d9.md) -- published+backing+pages
-- [language-ai-engineering-lab (`language-ai-engineering-lab`)](language-ai-engineering-lab-deec7dea1b.md) -- backing-only
-- [Latta (`latta`)](latta-51cfea0293.md) -- published+backing
-- [lavra (`lavra`)](lavra-f988a1956f.md) -- backing-only
-- [lazyide (`lazyide`)](lazyide-c57cda90cd.md) -- backing-only
-- [Lean AI (`lean-ai`)](lean-ai-5748d3aff8.md) -- published+backing
-- [Leap.new (`leapnew`)](leapnew-768b1c6bae.md) -- published+backing
-- [learn-coding-agent (`learn-coding-agent`)](learn-coding-agent-3cc681d16c.md) -- backing-only
-- [LegalGraphRAG (`legalgraphrag`)](legalgraphrag-0a896fcaf0.md) -- backing-only
-- [Letta Code (`letta-code`)](letta-code-f5190c71ad.md) -- published+backing
-- [Letta-Deepseek (`letta-deepseek`)](letta-deepseek-1f04d2d4b5.md) -- published+backing
-- [Libraria (`libraria`)](libraria-d687b41fda.md) -- backing-only
-- [lime (`lime`)](lime-efbaa8cbff.md) -- published+backing
-- [Lindy (`lindy`)](lindy-8a8ad6859c.md) -- backing-only
-- [Line0 (`line0`)](line0-0646ca79ca.md) -- published+backing
-- [Linear-Coding-Agent-Harness (`linear-coding-agent-harness`)](linear-coding-agent-harness-f12b939c97.md) -- published+backing
-- [LineCodePro (`linecodepro`)](linecodepro-eda7413130.md) -- published+backing
-- [Linghun (`linghun`)](linghun-591e70d55f.md) -- published+backing
-- [Lingo.dev (`lingodev`)](lingodev-b0fd2fa46e.md) -- backing-only
-- [LinkAI (`linkai`)](linkai-2d66c9068e.md) -- backing-only
-- [linkedin (`linkedin`)](linkedin-84308bea45.md) -- backing-only
-- [LISA AI Assistant (`lisa-ai-assistant`)](lisa-ai-assistant-b5a4750c0a.md) -- published+backing
-- [little-coder (`little-coder`)](little-coder-b2a6bbda21.md) -- published+backing
-- [live-swe-agent (`live-swe-agent`)](live-swe-agent-76992b44df.md) -- published+backing
-- [LiyaAI Coding Agent (`liyaai-coding-agent`)](liyaai-coding-agent-b98973f62c.md) -- published+backing
-- [LLama Cpp Agent (`llama-cpp-agent`)](llama-cpp-agent-8da6d74f1e.md) -- published+backing
+- [language-ai-engineering-lab (`language-ai-engineering-lab`)](language-ai-engineering-lab-deec7dea1b.md) -- backing+pages
+- [Latta (`latta`)](latta-51cfea0293.md) -- published+backing+pages
+- [lavra (`lavra`)](lavra-f988a1956f.md) -- backing+pages
+- [lazyide (`lazyide`)](lazyide-c57cda90cd.md) -- backing+pages
+- [Lean AI (`lean-ai`)](lean-ai-5748d3aff8.md) -- published+backing+pages
+- [Leap.new (`leapnew`)](leapnew-768b1c6bae.md) -- published+backing+pages
+- [learn-coding-agent (`learn-coding-agent`)](learn-coding-agent-3cc681d16c.md) -- backing+pages
+- [LegalGraphRAG (`legalgraphrag`)](legalgraphrag-0a896fcaf0.md) -- backing+pages
+- [Letta Code (`letta-code`)](letta-code-f5190c71ad.md) -- published+backing+pages
+- [Letta-Deepseek (`letta-deepseek`)](letta-deepseek-1f04d2d4b5.md) -- published+backing+pages
+- [Libraria (`libraria`)](libraria-d687b41fda.md) -- backing+pages
+- [lime (`lime`)](lime-efbaa8cbff.md) -- published+backing+pages
+- [Lindy (`lindy`)](lindy-8a8ad6859c.md) -- backing+pages
+- [Line0 (`line0`)](line0-0646ca79ca.md) -- published+backing+pages
+- [Linear-Coding-Agent-Harness (`linear-coding-agent-harness`)](linear-coding-agent-harness-f12b939c97.md) -- published+backing+pages
+- [LineCodePro (`linecodepro`)](linecodepro-eda7413130.md) -- published+backing+pages
+- [Linghun (`linghun`)](linghun-591e70d55f.md) -- published+backing+pages
+- [Lingo.dev (`lingodev`)](lingodev-b0fd2fa46e.md) -- backing+pages
+- [LinkAI (`linkai`)](linkai-2d66c9068e.md) -- backing+pages
+- [linkedin (`linkedin`)](linkedin-84308bea45.md) -- backing+pages
+- [LISA AI Assistant (`lisa-ai-assistant`)](lisa-ai-assistant-b5a4750c0a.md) -- published+backing+pages
+- [little-coder (`little-coder`)](little-coder-b2a6bbda21.md) -- published+backing+pages
+- [live-swe-agent (`live-swe-agent`)](live-swe-agent-76992b44df.md) -- published+backing+pages
+- [LiyaAI Coding Agent (`liyaai-coding-agent`)](liyaai-coding-agent-b98973f62c.md) -- published+backing+pages
+- [LLama Cpp Agent (`llama-cpp-agent`)](llama-cpp-agent-8da6d74f1e.md) -- published+backing+pages
 - [llama-vscode (`llama-vscode`)](llama-vscode-74b10531be.md) -- published+backing
 - [LlamaCloud by LlamaIndex (`llamacloud-by-llamaindex`)](llamacloud-by-llamaindex-9a3e951bad.md) -- backing-only
 - [Llamatik Code (`llamatik-code`)](llamatik-code-d488639529.md) -- published+backing

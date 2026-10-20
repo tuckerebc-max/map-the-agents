@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: XMUDeepLIT
@@ -22,6 +22,8 @@ Repository map entry: [xmudeeplit/legalgraphrag](../../repos/xmudeeplit/legalgra
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-LegalGraphRAG addresses reliability of legal reasoning with retrieval-audgment generation structured as a graph over a 14,049-case corpus of Chinese criminal law, evaluated on charge prediction, law-a
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Evaluation framework for legal judgment prediction integrating multi-agent graph retrieval-augmented generation (RAG); computes charge, law-article, and imprisonment prediction metrics on CAIL/CMDL datasets using a 14,049-case graph corpus.
+
+(captured site page body (agents/legalgraphrag.md), not a verified repo-code finding)
+LegalGraphRAG addresses reliability of legal reasoning with retrieval-audgment generation structured as a graph over a 14,049-case corpus of Chinese criminal law, evaluated on charge prediction, law-article prediction, and imprisonment-sentence metrics against CAIL (568 cases) and CMDL (1,374 records) benchmarks. The repository reproduces the paper's main experiment table and supports a range of open and hosted models (Qwen3-8B, Qwen2.5-7B, DeepSeek-V3, GPT-4o-mini, InternLM3, GLM-4, Gemma3) with multi-GPU execution and a local Ollama embedding service. It is research code accompanying an academic paper rather than a tool: fifteen commits, no releases, and no license file. Legal-NLP researchers use it to reproduce the paper's Table 2 results.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/legalgraphrag.md)

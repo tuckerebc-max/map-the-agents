@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [lore-hex/quillcode](../repos/lore-hex/quillcode.md) [coverage: partial]
-- [lostintangent/conduit-release](../repos/lostintangent/conduit-release.md) [coverage: complete]
-- [luangjokaj/wordpressify](../repos/luangjokaj/wordpressify.md) [coverage: complete]
 - [lucagazzola/forgeo](../repos/lucagazzola/forgeo.md) [coverage: partial]
 - [lucasduys/forge](../repos/lucasduys/forge.md) [coverage: partial]
 - [lucianodiisouza/semaphore](../repos/lucianodiisouza/semaphore.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) [coverage: complete]
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) [coverage: complete]
 - [zachblume/autospec](../repos/zachblume/autospec.md) [coverage: complete]
+- [zai-org/glm-5](../repos/zai-org/glm-5.md) [coverage: complete]
+- [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) [coverage: partial]
+- [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) [coverage: partial]

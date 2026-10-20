@@ -1,9 +1,9 @@
 # cortexkit/aft
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c0c8e80220ac @ 6ee76353dadd17a8
+Latest snapshot: commit cc7a16257820 @ ec5d957a204af659
 
 ## Summary (orientation draft, not independently verified)
 

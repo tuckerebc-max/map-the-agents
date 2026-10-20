@@ -1,9 +1,9 @@
 # construct-worlds/construct
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit cf75b7398c78 @ c959755ce3b13c69
+Latest snapshot: commit cddd3a51fbfb @ 419e16b478e38627
 
 ## Summary (orientation draft, not independently verified)
 

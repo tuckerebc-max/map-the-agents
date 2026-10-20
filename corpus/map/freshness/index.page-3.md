@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [zai-org/glm-5](../repos/zai-org/glm-5.md) [coverage: complete]
-- [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) [coverage: partial]
-- [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) [coverage: partial]
 - [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) [coverage: complete]
 - [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) [coverage: complete]
 - [zellij-org/zellij](../repos/zellij-org/zellij.md) [coverage: partial]
@@ -38,7 +35,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (104)
+## stale (107)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +141,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [coderluii/holyclaude](../repos/coderluii/holyclaude.md) [coverage: partial]
 - [coleam00/archon](../repos/coleam00/archon.md) [coverage: partial]
 - [commandcodeai/command-code](../repos/commandcodeai/command-code.md) [coverage: complete]
+- [construct-worlds/construct](../repos/construct-worlds/construct.md) [coverage: partial]
+- [continuedev/continue](../repos/continuedev/continue.md) [coverage: partial]
+- [cortexkit/aft](../repos/cortexkit/aft.md) [coverage: partial]
 
 ## refresh-failed (65)
 

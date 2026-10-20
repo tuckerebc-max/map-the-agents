@@ -302,7 +302,6 @@
 - [kun](../entries/kun-495ba379cc.md)
 - [l2mac](../entries/l2mac-fc13aad935.md)
 - [latta](../entries/latta-51cfea0293.md)
-- [lavra](../entries/lavra-f988a1956f.md)
 - [lean-ai](../entries/lean-ai-5748d3aff8.md)
 - [leapnew](../entries/leapnew-768b1c6bae.md)
 - [letta-code](../entries/letta-code-f5190c71ad.md)

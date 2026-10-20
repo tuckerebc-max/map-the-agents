@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: letta-ai
@@ -22,6 +22,8 @@ Repository map entry: [letta-ai/letta-code](../../repos/letta-ai/letta-code.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Letta Code applies the MemGPT research lineage (memory blocks, sleep-time compute) to coding: agents hold identity and experience in editable memory blocks, learn skills at global, project, and agent
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Stateful agent harness where agents self-improve by rewriting their own memory, skills, prompts, and harness; supports subagents, hooks, crons, and messaging integrations (Slack/Telegram/Discord).
+
+(captured site page body (agents/letta-code.md), not a verified repo-code finding)
+Letta Code applies the MemGPT research lineage (memory blocks, sleep-time compute) to coding: agents hold identity and experience in editable memory blocks, learn skills at global, project, and agent scope, and can rewrite their own prompts and even their harness through a mods mechanism. Memory is git-tracked and syncable to GitHub, /sleeptime runs periodic offline 'dreaming' to consolidate context, and /doctor audits memory health. Subagents, hooks, message search, and messaging integrations (Slack, Telegram, Discord) extend it beyond a single terminal session, with optional Letta Cloud for remote state and GitHub Actions. The harness is Apache-2.0 and free; the cloud layer is the paid part.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/letta-code.md)

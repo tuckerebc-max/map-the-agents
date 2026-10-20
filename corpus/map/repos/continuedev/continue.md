@@ -1,9 +1,9 @@
 # continuedev/continue
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 5522c6f44ca0 @ 41756b650b1e5612
+Latest snapshot: commit 5522c6f44ca0 @ 4be57c766e4ad092
 
 ## Summary (orientation draft, not independently verified)
 

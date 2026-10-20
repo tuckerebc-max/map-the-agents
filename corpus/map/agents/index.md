@@ -241,11 +241,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [coleam00/mcp-crawl4ai-rag](../repos/coleam00/mcp-crawl4ai-rag.md) -- status=distilled, freshness=current
 - [commandcodeai/command-code](../repos/commandcodeai/command-code.md) -- status=distilled, freshness=stale
 - [composable-models/llm_multiagent_debate](../repos/composable-models/llm_multiagent_debate.md) -- status=distilled, freshness=current
-- [construct-worlds/construct](../repos/construct-worlds/construct.md) -- status=distilled, freshness=current
+- [construct-worlds/construct](../repos/construct-worlds/construct.md) -- status=distilled, freshness=stale
 - [context-labs/halo](../repos/context-labs/halo.md) -- status=distilled, freshness=current
 - [continous-ai/continous](../repos/continous-ai/continous.md) -- status=blocked, freshness=refresh-failed
-- [continuedev/continue](../repos/continuedev/continue.md) -- status=distilled, freshness=current
-- [cortexkit/aft](../repos/cortexkit/aft.md) -- status=distilled, freshness=current
+- [continuedev/continue](../repos/continuedev/continue.md) -- status=distilled, freshness=stale
+- [cortexkit/aft](../repos/cortexkit/aft.md) -- status=distilled, freshness=stale
 - [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) -- status=distilled, freshness=current
 - [cosmtrek/mindwalk](../repos/cosmtrek/mindwalk.md) -- status=distilled, freshness=current
 - [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) -- status=distilled, freshness=current
