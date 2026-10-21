@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: LongNgn204
@@ -22,6 +22,8 @@ Repository map entry: [longngn204/local-coding-agent](../../repos/longngn204/loc
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The project addresses the trust gap that opens when cloud agents are allowed to operate on a real workstation. Every capability - file reads and patches, command execution, git inspection, bounded bro
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first MCP server with a live dashboard showing health metrics. Compact & Resume feature for context handoff across ChatGPT sessions. Named multi-root permission profiles with per-path rights. Optional Chrome Companion and Windows tray app with DPAPI-encrypted key storage. Works with any MCP client.
+
+(captured site page body (agents/local-coding-agent.md), not a verified repo-code finding)
+The project addresses the trust gap that opens when cloud agents are allowed to operate on a real workstation. Every capability - file reads and patches, command execution, git inspection, bounded browser preview - is exposed as an MCP tool bounded by permission profiles, with a balanced policy that routes risky actions through a local approval request. A dashboard at localhost shows health scores, latency, tool calls, and git diffs in real time, and compact/resume prompts let ChatGPT sessions hand context across conversation boundaries. An Electron tray app supervises the server with secrets held in Windows DPAPI or macOS Keychain. Developers who want Claude Code, Codex, Cursor, or ChatGPT to work on their machine under explicit, revocable permissions are the target users.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/local-coding-agent.md)

@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) [coverage: complete]
-- [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) [coverage: complete]
-- [zellij-org/zellij](../repos/zellij-org/zellij.md) [coverage: partial]
 - [zencoderai/coding-the-coding-agents](../repos/zencoderai/coding-the-coding-agents.md) [coverage: complete]
 - [zentar-ai/zentara-code](../repos/zentar-ai/zentara-code.md) [coverage: partial]
 - [zhanghandong/harness-engineering-from-cc-to-ai-coding](../repos/zhanghandong/harness-engineering-from-cc-to-ai-coding.md) [coverage: partial]
@@ -35,7 +32,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (107)
+## stale (110)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +141,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [construct-worlds/construct](../repos/construct-worlds/construct.md) [coverage: partial]
 - [continuedev/continue](../repos/continuedev/continue.md) [coverage: partial]
 - [cortexkit/aft](../repos/cortexkit/aft.md) [coverage: partial]
+- [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) [coverage: partial]
+- [cpoile/claudemacs](../repos/cpoile/claudemacs.md) [coverage: complete]
+- [crewaiinc/crewai](../repos/crewaiinc/crewai.md) [coverage: partial]
 
 ## refresh-failed (65)
 

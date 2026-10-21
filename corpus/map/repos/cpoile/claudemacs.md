@@ -1,9 +1,9 @@
 # cpoile/claudemacs
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1f2fe7bbc718 @ 21761bc18dec649d
+Latest snapshot: commit 354ba3537401 @ 81c2cee4f0bba6a1
 
 ## Summary (orientation draft, not independently verified)
 

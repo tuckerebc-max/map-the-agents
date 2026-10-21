@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: nexu-io
@@ -22,6 +22,8 @@ Repository map entry: [nexu-io/looper](../../repos/nexu-io/looper.md) (source: b
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Looper automates the issue-to-merge pipeline for maintainers who cannot babysit every ticket: register a repo, and the looperd daemon polls the forge for assigned or looper-labeled issues, then runs a
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Loop-based agents with success criteria (not fixed steps); forge is source of truth (no external tracker/YAML); parallel-safe git worktrees; local/inspectable/stoppable daemon; multi-repo support; bring-your-own-agent with no vendor lock-in
+
+(captured site page body (agents/looper.md), not a verified repo-code finding)
+Looper automates the issue-to-merge pipeline for maintainers who cannot babysit every ticket: register a repo, and the looperd daemon polls the forge for assigned or looper-labeled issues, then runs a planner (until the spec is reviewable), a worker (implements the spec when checks pass), and a reviewer-fixer pair that ping-pongs until no actionable threads remain, all gated by a label state machine. A takeover mode drives a single PR through review-and-fix cycles to merge, and a multi-node loopernet mode distributes webhook-driven work. The vendor layer is pluggable - opencode, claude-code, codex, cursor-cli, grok-build, pi, omp - so teams keep their existing agent subscriptions, and everything runs locally as two Go binaries with no hosted control plane. Open-source maintainers drowning in labeled issues are the target user.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/looper.md)

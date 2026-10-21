@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: LocoreMind
@@ -22,6 +22,8 @@ Repository map entry: [locoremind/locotrainer](../../repos/locoremind/locotraine
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-LocoTrainer addresses a narrow, recurring need: engineers working with the MS-SWIFT training framework need codebase analysis and structured reports, and a frontier-model agent is expensive for that r
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): 4B-parameter MS-SWIFT domain expert agent distilled from Qwen3-Coder-Next; simulates a Claude Code-style agent environment; trained on 361K samples with 32K context; runs locally via GGUF quantization at zero API cost; auto-clones ms-swift on first run; key insight that absolute paths + tolerant tool argument parsing yields reliable agent behavior.
+
+(captured site page body (agents/locotrainer.md), not a verified repo-code finding)
+LocoTrainer addresses a narrow, recurring need: engineers working with the MS-SWIFT training framework need codebase analysis and structured reports, and a frontier-model agent is expensive for that repetitive task. The accompanying model was trained on 361,830 samples (agent trajectories, MS-SWIFT knowledge, and project structure paths) over roughly 25 hours on 8x H100s, and the surrounding framework replicates the Claude Code-style environment the model saw in training, down to absolute paths and system reminders, because that fidelity is what makes small-model tool calling reliable. The agent loop reads, searches, and analyzes the MS-SWIFT repository and emits markdown reports, running locally through GGUF quantization at zero API cost or through OpenAI-compatible providers. ML engineers fine-tuning with MS-SWIFT are the intended users.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/locotrainer.md)

@@ -1,10 +1,10 @@
 # crewaiinc/crewai
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent-sdk
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: joaomdmoura/crewai (github id 710601088).
-Latest snapshot: commit 894898f84c4a @ 0d6e6df1020dcd85
+Latest snapshot: commit af4efdc68500 @ 91b7108b94e9babc
 
 ## Summary (orientation draft, not independently verified)
 

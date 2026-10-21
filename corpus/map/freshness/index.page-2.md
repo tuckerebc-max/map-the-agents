@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [lucagazzola/forgeo](../repos/lucagazzola/forgeo.md) [coverage: partial]
-- [lucasduys/forge](../repos/lucasduys/forge.md) [coverage: partial]
-- [lucianodiisouza/semaphore](../repos/lucianodiisouza/semaphore.md) [coverage: complete]
 - [luckeyfaraday/athena](../repos/luckeyfaraday/athena.md) [coverage: complete]
 - [luoyuctl/agenttrace](../repos/luoyuctl/agenttrace.md) [coverage: partial]
 - [lupantech/agentflow](../repos/lupantech/agentflow.md) [coverage: complete]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) [coverage: complete]
 - [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) [coverage: partial]
 - [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) [coverage: partial]
+- [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) [coverage: complete]
+- [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) [coverage: complete]
+- [zellij-org/zellij](../repos/zellij-org/zellij.md) [coverage: partial]

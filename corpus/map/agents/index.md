@@ -246,11 +246,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [continous-ai/continous](../repos/continous-ai/continous.md) -- status=blocked, freshness=refresh-failed
 - [continuedev/continue](../repos/continuedev/continue.md) -- status=distilled, freshness=stale
 - [cortexkit/aft](../repos/cortexkit/aft.md) -- status=distilled, freshness=stale
-- [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) -- status=distilled, freshness=current
+- [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) -- status=distilled, freshness=stale
 - [cosmtrek/mindwalk](../repos/cosmtrek/mindwalk.md) -- status=distilled, freshness=current
 - [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) -- status=distilled, freshness=current
-- [cpoile/claudemacs](../repos/cpoile/claudemacs.md) -- status=distilled, freshness=current
-- [crewaiinc/crewai](../repos/crewaiinc/crewai.md) -- status=distilled, freshness=current
+- [cpoile/claudemacs](../repos/cpoile/claudemacs.md) -- status=distilled, freshness=stale
+- [crewaiinc/crewai](../repos/crewaiinc/crewai.md) -- status=distilled, freshness=stale
 - [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) -- status=distilled, freshness=current
 - [crustocean/conch](../repos/crustocean/conch.md) -- status=distilled, freshness=current
 - [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) -- status=distilled, freshness=current

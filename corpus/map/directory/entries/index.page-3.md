@@ -118,31 +118,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [live-swe-agent (`live-swe-agent`)](live-swe-agent-76992b44df.md) -- published+backing+pages
 - [LiyaAI Coding Agent (`liyaai-coding-agent`)](liyaai-coding-agent-b98973f62c.md) -- published+backing+pages
 - [LLama Cpp Agent (`llama-cpp-agent`)](llama-cpp-agent-8da6d74f1e.md) -- published+backing+pages
-- [llama-vscode (`llama-vscode`)](llama-vscode-74b10531be.md) -- published+backing
-- [LlamaCloud by LlamaIndex (`llamacloud-by-llamaindex`)](llamacloud-by-llamaindex-9a3e951bad.md) -- backing-only
-- [Llamatik Code (`llamatik-code`)](llamatik-code-d488639529.md) -- published+backing
-- [llm-coding-agent (`llm-coding-agent`)](llm-coding-agent-1323baa9f7.md) -- published+backing
-- [Llm-Dataset-Converter-Examples (`llm-dataset-converter-examples`)](llm-dataset-converter-examples-ff46aab996.md) -- backing-only
-- [Llm-Detect-Ai-Generated-Text (`llm-detect-ai-generated-text`)](llm-detect-ai-generated-text-c532d0350b.md) -- backing-only
-- [Llm_Rag (`llm-rag`)](llm-rag-d35b0742d8.md) -- backing-only
-- [Llm-Research-Backend-Django (`llm-research-backend-django`)](llm-research-backend-django-f68c16f100.md) -- backing-only
-- [Llm-Tools (`llm-tools`)](llm-tools-649e9f68f0.md) -- backing-only
-- [Llm4Mol (`llm4mol`)](llm4mol-817ea1cbc1.md) -- backing-only
-- [Llmchat (`llmchat`)](llmchat-d88a9270ec.md) -- backing-only
-- [LLMCode (`llmcode`)](llmcode-54367a87f5.md) -- published+backing
-- [Llmrix Devtool (`llmrix-devtool`)](llmrix-devtool-6b90bfce91.md) -- published+backing
-- [Llms-Learning (`llms-learning`)](llms-learning-a712d4c78e.md) -- backing-only
-- [Llmstack (`llmstack`)](llmstack-e387ada0de.md) -- backing-only
-- [local-ai-code-assistant (`local-ai-code-assistant`)](local-ai-code-assistant-4274a464b7.md) -- published+backing
-- [local-coding-agent (`local-coding-agent`)](local-coding-agent-8bf90da0bb.md) -- backing-only
-- [LocoOperator (`locooperator`)](locooperator-f9e671014f.md) -- backing-only
-- [LocoTrainer (`locotrainer`)](locotrainer-b7a40cdd17.md) -- published+backing
-- [Locus (`locus`)](locus-0b597595a0.md) -- published+backing
-- [loom (`loom`)](loom-784a2ddf5d.md) -- backing-only
-- [looper (`looper`)](looper-63a2676c5e.md) -- published+backing
-- [Loopsy (`loopsy`)](loopsy-4dee87cbaa.md) -- published+backing
-- [LoopTroop (`looptroop`)](looptroop-96bdb9fd19.md) -- published+backing
-- [loushang (`loushang`)](loushang-6f8471b709.md) -- published+backing
+- [llama-vscode (`llama-vscode`)](llama-vscode-74b10531be.md) -- published+backing+pages
+- [LlamaCloud by LlamaIndex (`llamacloud-by-llamaindex`)](llamacloud-by-llamaindex-9a3e951bad.md) -- backing+pages
+- [Llamatik Code (`llamatik-code`)](llamatik-code-d488639529.md) -- published+backing+pages
+- [llm-coding-agent (`llm-coding-agent`)](llm-coding-agent-1323baa9f7.md) -- published+backing+pages
+- [Llm-Dataset-Converter-Examples (`llm-dataset-converter-examples`)](llm-dataset-converter-examples-ff46aab996.md) -- backing+pages
+- [Llm-Detect-Ai-Generated-Text (`llm-detect-ai-generated-text`)](llm-detect-ai-generated-text-c532d0350b.md) -- backing+pages
+- [Llm_Rag (`llm-rag`)](llm-rag-d35b0742d8.md) -- backing+pages
+- [Llm-Research-Backend-Django (`llm-research-backend-django`)](llm-research-backend-django-f68c16f100.md) -- backing+pages
+- [Llm-Tools (`llm-tools`)](llm-tools-649e9f68f0.md) -- backing+pages
+- [Llm4Mol (`llm4mol`)](llm4mol-817ea1cbc1.md) -- backing+pages
+- [Llmchat (`llmchat`)](llmchat-d88a9270ec.md) -- backing+pages
+- [LLMCode (`llmcode`)](llmcode-54367a87f5.md) -- published+backing+pages
+- [Llmrix Devtool (`llmrix-devtool`)](llmrix-devtool-6b90bfce91.md) -- published+backing+pages
+- [Llms-Learning (`llms-learning`)](llms-learning-a712d4c78e.md) -- backing+pages
+- [Llmstack (`llmstack`)](llmstack-e387ada0de.md) -- backing+pages
+- [local-ai-code-assistant (`local-ai-code-assistant`)](local-ai-code-assistant-4274a464b7.md) -- published+backing+pages
+- [local-coding-agent (`local-coding-agent`)](local-coding-agent-8bf90da0bb.md) -- backing+pages
+- [LocoOperator (`locooperator`)](locooperator-f9e671014f.md) -- backing+pages
+- [LocoTrainer (`locotrainer`)](locotrainer-b7a40cdd17.md) -- published+backing+pages
+- [Locus (`locus`)](locus-0b597595a0.md) -- published+backing+pages
+- [loom (`loom`)](loom-784a2ddf5d.md) -- backing+pages
+- [looper (`looper`)](looper-63a2676c5e.md) -- published+backing+pages
+- [Loopsy (`loopsy`)](loopsy-4dee87cbaa.md) -- published+backing+pages
+- [LoopTroop (`looptroop`)](looptroop-96bdb9fd19.md) -- published+backing+pages
+- [loushang (`loushang`)](loushang-6f8471b709.md) -- published+backing+pages
 - [lsp-mcp (`lsp-mcp`)](lsp-mcp-bad774069f.md) -- backing-only
 - [lumnicode (`lumnicode`)](lumnicode-981e6bf02e.md) -- published+backing
 - [lunaroute (`lunaroute`)](lunaroute-e9d4e4179c.md) -- backing-only

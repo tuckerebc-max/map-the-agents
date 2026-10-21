@@ -321,7 +321,6 @@
 - [llmcode](../entries/llmcode-54367a87f5.md)
 - [llmrix-devtool](../entries/llmrix-devtool-6b90bfce91.md)
 - [local-ai-code-assistant](../entries/local-ai-code-assistant-4274a464b7.md)
-- [locooperator](../entries/locooperator-f9e671014f.md)
 - [locotrainer](../entries/locotrainer-b7a40cdd17.md)
 - [locus](../entries/locus-0b597595a0.md)
 - [looper](../entries/looper-63a2676c5e.md)

@@ -1,9 +1,9 @@
 # cosai-oasis/project-codeguard
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d6a04cc5bfee @ 343681b93c681609
+Latest snapshot: commit 41160d54980b @ 8e4a2f0ec4c9932b
 
 ## Summary (orientation draft, not independently verified)
 

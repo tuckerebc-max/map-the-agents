@@ -319,6 +319,7 @@
 - [llms-learning](../entries/llms-learning-a712d4c78e.md)
 - [llmstack](../entries/llmstack-e387ada0de.md)
 - [local-coding-agent](../entries/local-coding-agent-8bf90da0bb.md)
+- [locooperator](../entries/locooperator-f9e671014f.md)
 - [loom](../entries/loom-784a2ddf5d.md)
 - [lsp-mcp](../entries/lsp-mcp-bad774069f.md)
 - [lunaroute](../entries/lunaroute-e9d4e4179c.md)

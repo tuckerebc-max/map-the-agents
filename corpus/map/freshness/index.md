@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (880)
+## current (877)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -121,11 +121,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [coleam00/mcp-crawl4ai-rag](../repos/coleam00/mcp-crawl4ai-rag.md) [coverage: complete]
 - [composable-models/llm_multiagent_debate](../repos/composable-models/llm_multiagent_debate.md) [coverage: complete]
 - [context-labs/halo](../repos/context-labs/halo.md) [coverage: complete]
-- [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) [coverage: partial]
 - [cosmtrek/mindwalk](../repos/cosmtrek/mindwalk.md) [coverage: complete]
 - [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) [coverage: partial]
-- [cpoile/claudemacs](../repos/cpoile/claudemacs.md) [coverage: complete]
-- [crewaiinc/crewai](../repos/crewaiinc/crewai.md) [coverage: partial]
 - [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) [coverage: partial]
 - [crustocean/conch](../repos/crustocean/conch.md) [coverage: complete]
 - [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [lore-hex/quillcode](../repos/lore-hex/quillcode.md) [coverage: partial]
 - [lostintangent/conduit-release](../repos/lostintangent/conduit-release.md) [coverage: complete]
 - [luangjokaj/wordpressify](../repos/luangjokaj/wordpressify.md) [coverage: complete]
+- [lucagazzola/forgeo](../repos/lucagazzola/forgeo.md) [coverage: partial]
+- [lucasduys/forge](../repos/lucasduys/forge.md) [coverage: partial]
+- [lucianodiisouza/semaphore](../repos/lucianodiisouza/semaphore.md) [coverage: complete]

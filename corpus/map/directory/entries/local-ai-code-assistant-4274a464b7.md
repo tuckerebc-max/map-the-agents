@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: MIKOTOKAWAII25
@@ -22,6 +22,8 @@ Repository map entry: [mikotokawaii25/local-ai-code-assistant](../../repos/mikot
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-CodeLoom is built for developers who want multi-model AI assistance with zero cloud dependency: all inference runs locally through llama.cpp, ExLlama, or MLX backends, with no telemetry, accounts, or
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Desktop AI 'weaver' (CodeLoom) for multi-model development; orchestrates multiple open-source LLMs (Mistral, Llama, Phi) into a single fully offline desktop coding environment; multi-weave architecture with up to 5 concurrent model sessions; contextual thread fusion between models; privacy-first with no telemetry; cross-platform with 12-language UI
+
+(captured site page body (agents/local-ai-code-assistant.md), not a verified repo-code finding)
+CodeLoom is built for developers who want multi-model AI assistance with zero cloud dependency: all inference runs locally through llama.cpp, ExLlama, or MLX backends, with no telemetry, accounts, or network calls. The loom metaphor is structural, not decorative - warp slots hold large models for architecture and refactoring while weft slots run 1-3B models for fast completion, and a cross-thread shuttle passes context between them so a small model's draft can be refined by a larger one. Up to five concurrent sessions can debate or collaborate, and prompt looms fan one task out to several models for parallel review. Models import from Hugging Face, Ollama, or local GGUF/GPTQ files with automatic quantization selection based on available VRAM. The repository is primarily a distribution and marketing page (the actual code ships as release downloads), and its Claude-related SEO tags contradict the open-models pitch, warranting caution.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/local-ai-code-assistant.md)
