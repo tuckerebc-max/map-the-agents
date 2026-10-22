@@ -1,9 +1,9 @@
 # crewplaneai/crewplane
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit bc0b5eef5762 @ 321edf963f9ad975
+Latest snapshot: commit 762143ada196 @ 99a50241d8e4e8fb
 
 ## Summary (orientation draft, not independently verified)
 

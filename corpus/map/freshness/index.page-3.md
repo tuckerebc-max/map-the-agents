@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [zencoderai/coding-the-coding-agents](../repos/zencoderai/coding-the-coding-agents.md) [coverage: complete]
-- [zentar-ai/zentara-code](../repos/zentar-ai/zentara-code.md) [coverage: partial]
 - [zhanghandong/harness-engineering-from-cc-to-ai-coding](../repos/zhanghandong/harness-engineering-from-cc-to-ai-coding.md) [coverage: partial]
 - [zhangliang605/carrycode](../repos/zhangliang605/carrycode.md) [coverage: complete]
 - [zhijiewong/openharness](../repos/zhijiewong/openharness.md) [coverage: partial]
@@ -16,7 +14,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (13)
+## pending (14)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
@@ -29,10 +27,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
+- [tontinton/maki](../repos/tontinton/maki.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (110)
+## stale (112)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -144,6 +143,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) [coverage: partial]
 - [cpoile/claudemacs](../repos/cpoile/claudemacs.md) [coverage: complete]
 - [crewaiinc/crewai](../repos/crewaiinc/crewai.md) [coverage: partial]
+- [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) [coverage: partial]
+- [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) [coverage: partial]
 
 ## refresh-failed (65)
 

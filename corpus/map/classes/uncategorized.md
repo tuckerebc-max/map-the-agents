@@ -368,6 +368,7 @@
 - [tmux/tmux](../repos/tmux/tmux.md)
 - [tndata/codingagentexplorer](../repos/tndata/codingagentexplorer.md)
 - [tom-doerr/vim_codex](../repos/tom-doerr/vim_codex.md)
+- [tontinton/maki](../repos/tontinton/maki.md)
 - [trailhq/graft](../repos/trailhq/graft.md)
 - [trypear/pear-landing-page](../repos/trypear/pear-landing-page.md)
 - [trypromptly/llmstack](../repos/trypromptly/llmstack.md)

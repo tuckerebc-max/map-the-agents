@@ -143,31 +143,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Loopsy (`loopsy`)](loopsy-4dee87cbaa.md) -- published+backing+pages
 - [LoopTroop (`looptroop`)](looptroop-96bdb9fd19.md) -- published+backing+pages
 - [loushang (`loushang`)](loushang-6f8471b709.md) -- published+backing+pages
-- [lsp-mcp (`lsp-mcp`)](lsp-mcp-bad774069f.md) -- backing-only
-- [lumnicode (`lumnicode`)](lumnicode-981e6bf02e.md) -- published+backing
-- [lunaroute (`lunaroute`)](lunaroute-e9d4e4179c.md) -- backing-only
-- [m1nd (`m1nd`)](m1nd-533934b349.md) -- backing-only
-- [macad-gym (`macad-gym`)](macad-gym-cc80a7e409.md) -- backing-only
-- [Machine-Learning-Examples (`machine-learning-examples`)](machine-learning-examples-b5592d9c63.md) -- backing-only
-- [maestro (`maestro`)](maestro-233e1cded6.md) -- published+backing
-- [MAGE (`mage`)](mage-6661473579.md) -- published+backing
-- [Magic (`magic`)](magic-3be7a50548.md) -- backing-only
-- [Magicoder (`magicoder`)](magicoder-6161fe1826.md) -- backing-only
-- [Maige (`maige`)](maige-b578a8d1eb.md) -- published+backing
-- [maki (`maki`)](maki-90f8a03f23.md) -- published-only
-- [Mantlecore AI (`mantlecore-ai`)](mantlecore-ai-3d183e4c4c.md) -- published+backing
-- [Manus (`manus`)](manus-7cdbc9084f.md) -- published+backing
-- [MapCoder (`mapcoder`)](mapcoder-83af4be846.md) -- published+backing
-- [MarbleOS (`marbleos`)](marbleos-9d32d7cf4a.md) -- published+backing
-- [Marblism (`marblism`)](marblism-62a37584df.md) -- backing-only
-- [marg-reviewer (`marg-reviewer`)](marg-reviewer-06886bcdda.md) -- backing-only
-- [Mastra (`mastra`)](mastra-3a1c177e94.md) -- published+backing
-- [mathcode (`mathcode`)](mathcode-2cfa9f56b9.md) -- published+backing
-- [Mava (`mava`)](mava-01bc946ca3.md) -- backing-only
-- [mbti-coding-agents (`mbti-coding-agents`)](mbti-coding-agents-56fc55b75f.md) -- backing-only
-- [mcp-crawl4ai-rag (`mcp-crawl4ai-rag`)](mcp-crawl4ai-rag-5b817d61a0.md) -- backing-only
-- [MCPlato (`mcplato`)](mcplato-35cb018d2f.md) -- backing-only
-- [Mechanical Orchard (`mechanical-orchard`)](mechanical-orchard-b4918a615b.md) -- published+backing
+- [lsp-mcp (`lsp-mcp`)](lsp-mcp-bad774069f.md) -- backing+pages
+- [lumnicode (`lumnicode`)](lumnicode-981e6bf02e.md) -- published+backing+pages
+- [lunaroute (`lunaroute`)](lunaroute-e9d4e4179c.md) -- backing+pages
+- [m1nd (`m1nd`)](m1nd-533934b349.md) -- backing+pages
+- [macad-gym (`macad-gym`)](macad-gym-cc80a7e409.md) -- backing+pages
+- [Machine-Learning-Examples (`machine-learning-examples`)](machine-learning-examples-b5592d9c63.md) -- backing+pages
+- [maestro (`maestro`)](maestro-233e1cded6.md) -- published+backing+pages
+- [MAGE (`mage`)](mage-6661473579.md) -- published+backing+pages
+- [Magic (`magic`)](magic-3be7a50548.md) -- backing+pages
+- [Magicoder (`magicoder`)](magicoder-6161fe1826.md) -- backing+pages
+- [Maige (`maige`)](maige-b578a8d1eb.md) -- published+backing+pages
+- [maki (`maki`)](maki-90f8a03f23.md) -- published+pages
+- [Mantlecore AI (`mantlecore-ai`)](mantlecore-ai-3d183e4c4c.md) -- published+backing+pages
+- [Manus (`manus`)](manus-7cdbc9084f.md) -- published+backing+pages
+- [MapCoder (`mapcoder`)](mapcoder-83af4be846.md) -- published+backing+pages
+- [MarbleOS (`marbleos`)](marbleos-9d32d7cf4a.md) -- published+backing+pages
+- [Marblism (`marblism`)](marblism-62a37584df.md) -- backing+pages
+- [marg-reviewer (`marg-reviewer`)](marg-reviewer-06886bcdda.md) -- backing+pages
+- [Mastra (`mastra`)](mastra-3a1c177e94.md) -- published+backing+pages
+- [mathcode (`mathcode`)](mathcode-2cfa9f56b9.md) -- published+backing+pages
+- [Mava (`mava`)](mava-01bc946ca3.md) -- backing+pages
+- [mbti-coding-agents (`mbti-coding-agents`)](mbti-coding-agents-56fc55b75f.md) -- backing+pages
+- [mcp-crawl4ai-rag (`mcp-crawl4ai-rag`)](mcp-crawl4ai-rag-5b817d61a0.md) -- backing+pages
+- [MCPlato (`mcplato`)](mcplato-35cb018d2f.md) -- backing+pages
+- [Mechanical Orchard (`mechanical-orchard`)](mechanical-orchard-b4918a615b.md) -- published+backing+pages
 - [Melty (`melty`)](melty-056e7c2922.md) -- published+backing
 - [Memex (`memex`)](memex-22e09db18c.md) -- published+backing
 - [memorax-code (`memorax-code`)](memorax-code-79b0f40294.md) -- backing-only

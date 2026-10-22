@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (877)
+## current (875)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -123,10 +123,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [context-labs/halo](../repos/context-labs/halo.md) [coverage: complete]
 - [cosmtrek/mindwalk](../repos/cosmtrek/mindwalk.md) [coverage: complete]
 - [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) [coverage: partial]
-- [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) [coverage: partial]
 - [crustocean/conch](../repos/crustocean/conch.md) [coverage: complete]
 - [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) [coverage: complete]
-- [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) [coverage: partial]
 - [cursor/cursor](../repos/cursor/cursor.md) [coverage: complete]
 - [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) [coverage: partial]
 - [d-kuro/gwq](../repos/d-kuro/gwq.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [lucagazzola/forgeo](../repos/lucagazzola/forgeo.md) [coverage: partial]
 - [lucasduys/forge](../repos/lucasduys/forge.md) [coverage: partial]
 - [lucianodiisouza/semaphore](../repos/lucianodiisouza/semaphore.md) [coverage: complete]
+- [luckeyfaraday/athena](../repos/luckeyfaraday/athena.md) [coverage: complete]
+- [luoyuctl/agenttrace](../repos/luoyuctl/agenttrace.md) [coverage: partial]

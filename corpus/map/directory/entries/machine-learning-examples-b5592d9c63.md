@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: aaronkub
@@ -22,6 +22,8 @@ Repository map entry: [aaronkub/machine-learning-examples](../../repos/aaronkub/
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository holds a handful of worked machine-learning examples, with the IMDB sentiment classifier as its main artifact, each implemented as a self-contained notebook or script. Learners use it as
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A collection of machine learning workflow examples (e.g., imdb-sentiment-analysis). Not a coding agent harness.
+
+(captured site page body (agents/machine-learning-examples.md), not a verified repo-code finding)
+The repository holds a handful of worked machine-learning examples, with the IMDB sentiment classifier as its main artifact, each implemented as a self-contained notebook or script. Learners use it as reference material for standard workflows rather than as software, and the repository carries no license and has seen only three commits, making it a static, archival example collection.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/machine-learning-examples.md)

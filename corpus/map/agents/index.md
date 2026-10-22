@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1065 repositories.
+1066 repositories.
 
 [Back to map index](../index.md)
 
@@ -251,10 +251,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) -- status=distilled, freshness=current
 - [cpoile/claudemacs](../repos/cpoile/claudemacs.md) -- status=distilled, freshness=stale
 - [crewaiinc/crewai](../repos/crewaiinc/crewai.md) -- status=distilled, freshness=stale
-- [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) -- status=distilled, freshness=current
+- [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) -- status=distilled, freshness=stale
 - [crustocean/conch](../repos/crustocean/conch.md) -- status=distilled, freshness=current
 - [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) -- status=distilled, freshness=current
-- [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) -- status=distilled, freshness=current
+- [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) -- status=distilled, freshness=stale
 - [cursor/cursor](../repos/cursor/cursor.md) -- status=distilled, freshness=current
 - [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) -- status=distilled, freshness=current
 - [d-kuro/gwq](../repos/d-kuro/gwq.md) -- status=distilled, freshness=current

@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [luckeyfaraday/athena](../repos/luckeyfaraday/athena.md) [coverage: complete]
-- [luoyuctl/agenttrace](../repos/luoyuctl/agenttrace.md) [coverage: partial]
 - [lupantech/agentflow](../repos/lupantech/agentflow.md) [coverage: complete]
 - [mac999/bim_llm_code_agent](../repos/mac999/bim_llm_code_agent.md) [coverage: complete]
 - [madarco/agentbox](../repos/madarco/agentbox.md) [coverage: partial]
@@ -439,3 +437,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) [coverage: complete]
 - [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md) [coverage: complete]
 - [zellij-org/zellij](../repos/zellij-org/zellij.md) [coverage: partial]
+- [zencoderai/coding-the-coding-agents](../repos/zencoderai/coding-the-coding-agents.md) [coverage: complete]
+- [zentar-ai/zentara-code](../repos/zentar-ai/zentara-code.md) [coverage: partial]

@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: weiyangzen
 - License: unknown
 - Language: JavaScript, Node.js
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [weiyangzen/mbti-coding-agents](../../repos/weiyangzen/mbti-coding-agents.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The project's thesis is that a persona encoded in the system prompt changes coding-agent behavior as much as the underlying model, so it packages sixteen agents spanning analysts, diplomats, sentinels
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Collection of 16 specialized AI coding agent personas mapped to Myers-Briggs (MBTI) personality types (Analysts, Diplomats, Sentinels, Explorers) to provide distinct cognitive styles; /squad for dynamic team selection, /battle arena where agents compete on tasks, /my-coding-mbti for personal coding MBTI detection; optional Text-to-Speech summaries.
+
+(captured site page body (agents/mbti-coding-agents.md), not a verified repo-code finding)
+The project's thesis is that a persona encoded in the system prompt changes coding-agent behavior as much as the underlying model, so it packages sixteen agents spanning analysts, diplomats, sentinels, and explorers, each with distinct approaches to planning, risk, and communication. Teams can be composed dynamically with /squad for a given task, or run in a /battle arena where personas compete on the same task and a report compares their results; /my-coding-mbti turns the mapping back on the user. Agents run inside Claude Code and Gemini CLI, with an optional text-to-speech layer (MiniMax and Gemini) for spoken summaries, and documentation is bilingual with an eight-language README. It is a small solo-maintained persona collection (37 stars, no license file).
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mbti-coding-agents.md)

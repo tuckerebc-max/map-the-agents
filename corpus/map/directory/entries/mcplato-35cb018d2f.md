@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: MCPlato
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-MCPlato's website was unreachable for content analysis on repeated attempts, returning empty page bodies that indicate a fully client-rendered site or a placeholder. The name suggests an MCP-related p
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Could not verify details from the website (returned empty content).
+
+(captured site page body (agents/mcplato.md), not a verified repo-code finding)
+MCPlato's website was unreachable for content analysis on repeated attempts, returning empty page bodies that indicate a fully client-rendered site or a placeholder. The name suggests an MCP-related product, but nothing verifiable establishes what it does, who maintains it, or whether it involves an agentic coding loop. The census entry records an unverifiable web product; no functional claims or maintenance status can be stated from available evidence.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mcplato.md)

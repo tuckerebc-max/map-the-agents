@@ -138,6 +138,7 @@
 - [loopsy](../entries/loopsy-4dee87cbaa.md)
 - [looptroop](../entries/looptroop-96bdb9fd19.md)
 - [maestro](../entries/maestro-233e1cded6.md)
+- [mantlecore-ai](../entries/mantlecore-ai-3d183e4c4c.md)
 - [marbleos](../entries/marbleos-9d32d7cf4a.md)
 - [mission-control](../entries/mission-control-67b7b26de9.md)
 - [mobilevc](../entries/mobilevc-864e55e510.md)

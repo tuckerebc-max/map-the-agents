@@ -331,6 +331,7 @@
 - [marblism](../entries/marblism-62a37584df.md)
 - [marg-reviewer](../entries/marg-reviewer-06886bcdda.md)
 - [mava](../entries/mava-01bc946ca3.md)
+- [mbti-coding-agents](../entries/mbti-coding-agents-56fc55b75f.md)
 - [mcp-crawl4ai-rag](../entries/mcp-crawl4ai-rag-5b817d61a0.md)
 - [mcplato](../entries/mcplato-35cb018d2f.md)
 - [memorax-code](../entries/memorax-code-79b0f40294.md)

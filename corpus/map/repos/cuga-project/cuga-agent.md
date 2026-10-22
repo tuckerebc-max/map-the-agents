@@ -1,9 +1,9 @@
 # cuga-project/cuga-agent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 65bdf2fb376d @ 17a8859526cc0069
+Latest snapshot: commit 858380346492 @ 662a2b9d4be0ed8f
 
 ## Summary (orientation draft, not independently verified)
 

@@ -251,6 +251,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [tokfinity/infcode](../repos/tokfinity/infcode.md) -- status=distilled, freshness=current
 - [tom-doerr/vim_codex](../repos/tom-doerr/vim_codex.md) -- status=distilled, freshness=current
 - [tomlin7/biscuit](../repos/tomlin7/biscuit.md) -- status=distilled, freshness=current
+- [tontinton/maki](../repos/tontinton/maki.md) -- status=discovered, freshness=pending
 - [touchpoint-labs/gadfly](../repos/touchpoint-labs/gadfly.md) -- status=distilled, freshness=current
 - [touwaeriol/claude-code-plus](../repos/touwaeriol/claude-code-plus.md) -- status=distilled, freshness=current
 - [tractorjuice/arc-kit](../repos/tractorjuice/arc-kit.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [zachblume/autospec](../repos/zachblume/autospec.md) -- status=distilled, freshness=current
 - [zachnoel/multiagentworkflow](../repos/zachnoel/multiagentworkflow.md) -- status=blocked, freshness=refresh-failed
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) -- status=distilled, freshness=current
-- [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) -- status=distilled, freshness=current
