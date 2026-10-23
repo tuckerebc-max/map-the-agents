@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: XiaomiMiMo
@@ -22,6 +22,8 @@ Repository map entry: [xiaomimimo/mimo-code](../../repos/xiaomimimo/mimo-code.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-MiMo Code extends OpenCode's terminal harness with the persistence and autonomy layer Xiaomi wanted for long-running work. Memory lives in SQLite with FTS5: project knowledge in MEMORY.md, session che
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Persistent cross-session memory via SQLite FTS5, subagent orchestration with parallel execution, goal-driven autonomous loops with independent judge models, compose workflows (specs-driven development), self-improvement via /dream and /distill, voice input via MiMo ASR, Max Mode (parallel best-of-N reasoning). Forked from OpenCode.
+
+(captured site page body (agents/mimo-code.md), not a verified repo-code finding)
+MiMo Code extends OpenCode's terminal harness with the persistence and autonomy layer Xiaomi wanted for long-running work. Memory lives in SQLite with FTS5: project knowledge in MEMORY.md, session checkpoints written by a dedicated checkpoint-writer subagent, scratch notes, and per-task progress logs, all re-injected automatically when a session resumes. The agent operates in build mode (full write permissions), plan mode (read-only exploration and design), or compose mode — a specs-driven workflow isolated from interactive editing — and a /goal condition is judged by an independent model so the loop does not stop prematurely. Deterministic JavaScript workflows orchestrate multi-agent pipelines (deep-research, fact-check, research-experiment built-ins) with bounded retries and parallelization, while subagents spawn on demand and run in parallel with lifecycle tracking. Voice input routes through MiMo ASR, and Max Mode runs best-of-N reasoning in parallel. The project is very active with roughly 12.9k stars, works with any OpenAI-compatible provider plus OAuth against Xiaomi MiMo, OpenAI, and xAI, and explicitly does not run in macOS Terminal.app.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mimo-code.md)

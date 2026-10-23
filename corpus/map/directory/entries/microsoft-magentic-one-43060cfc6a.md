@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Magentic-One came out of Microsoft Research as a demonstration that a small set of generalist agents, well-coordinated, could match specialized systems on open-ended tasks — GAIA, AssistantBench, and
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A generalist multi-agent system with a modular, plug-and-play design where agents can be added/removed without reworking the system. An Orchestrator leads four specialized agents (WebSurfer, FileSurfer, Coder, ComputerTerminal) with error recovery through re-planning. Achieves competitive performance on GAIA, AssistantBench, and WebArena benchmarks without task-specific modifications. Now integrated into autogen-agentchat as MagenticOneGroupChat.
+
+(captured site page body (agents/microsoft-magentic-one.md), not a verified repo-code finding)
+Magentic-One came out of Microsoft Research as a demonstration that a small set of generalist agents, well-coordinated, could match specialized systems on open-ended tasks — GAIA, AssistantBench, and WebArena — without task-specific tuning. The Orchestrator keeps a Task Ledger of facts, guesses, and the current plan in an outer loop, re-planning when progress stalls, and an inner Progress Ledger that each step assigns the next subtask to one of four specialists: a Chromium-driving WebSurfer using accessibility-tree and set-of-marks prompting, a FileSurfer reading documents through markdown previews, a Coder, and a ComputerTerminal. Specialists are interchangeable — the system keeps working when one is swapped or removed — and per-agent model assignments allow heterogeneous LLM configurations. It ships as part of autogen-agentchat (MagenticOneGroupChat) with AutoGenBench for isolated, repeated benchmark runs, and Microsoft positions it for research use inside sandboxed containers with human monitoring rather than as a production harness.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/microsoft-magentic-one.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: rasbt
@@ -22,6 +22,8 @@ Repository map entry: [rasbt/mini-coding-agent](../../repos/rasbt/mini-coding-ag
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Raschka wrote mini-coding-agent as the runnable companion to his essay on the components of a coding agent, with the constraint that the entire harness fit in one readable file with no dependencies be
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Intentionally minimal and readable coding agent harness designed for educational purposes to explain the six core components of a coding agent (live repo context, prompt cache reuse, structured tools/permissions, context reduction, transcripts/memory/resumption, bounded subagents). No runtime dependencies beyond the Python standard library. Runs locally via Ollama.
+
+(captured site page body (agents/mini-coding-agent.md), not a verified repo-code finding)
+Raschka wrote mini-coding-agent as the runnable companion to his essay on the components of a coding agent, with the constraint that the entire harness fit in one readable file with no dependencies beyond the Python standard library. The loop sends prompts to a local Ollama model (qwen3.5:4b by default) that must answer with either a tool call or a final answer; tools cover repo-context gathering, file operations, and shell commands, each validated and gated by an approval mode (ask, auto, never) so risky actions require consent. The implementation demonstrates the standard efficiency patterns directly: a stable prompt prefix for cache reuse, clipped outputs and deduplicated reads for context reduction, durable transcripts with distilled working memory, and subagents scoped to bounded subtasks. Sessions persist under .mini-coding-agent/sessions and resume by ID. Readers use it alongside the essay to understand agent internals rather than to ship code with it — fifteen commits and a default six-step cap signal its educational scope.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mini-coding-agent.md)

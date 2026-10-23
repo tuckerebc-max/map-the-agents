@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: WalkingDevFlag
@@ -22,6 +22,8 @@ Repository map entry: [walkingdevflag/mle-star-open](../../repos/walkingdevflag/
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-MLE-STAR demonstrated that search-and-refine loops make LLM agents competitive at machine-learning engineering, but the reference implementation depended on Google infrastructure. MLE-STAR-Open reimpl
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Google-free, local-friendly unofficial reimplementation of MLE-STAR. No API keys required for search (DuckDuckGo) and leverages free-tier LLMs via OpenRouter, making multi-agent AutoML experimentation accessible without enterprise infrastructure. Multi-agent pipeline stages: initialization, refinement, ensembling, submission.
+
+(captured site page body (agents/mle-star-open.md), not a verified repo-code finding)
+MLE-STAR demonstrated that search-and-refine loops make LLM agents competitive at machine-learning engineering, but the reference implementation depended on Google infrastructure. MLE-STAR-Open reimplements the pipeline for constrained setups: an initialization agent produces a first solution for a tabular task, refinement agents target specific components identified through web search (DuckDuckGo, no API key), an ensembling stage merges the best candidates, and a submission stage formats predictions.csv for Kaggle. Runs execute through OpenRouter's OpenAI-compatible API on free-tier models, with automated data-leakage and usage checks guarding the generated pipelines and a minimal low-token runner for cheap iteration. Each task gets a workspace directory holding init, refine, ensemble, predictions, and logs. Kaggle competitors and ML practitioners use it to experiment with agent-driven AutoML on a budget, accepting its constraints — roughly 50 free requests per day, an eight-commit codebase from a single maintainer, and an Ollama adapter still deferred.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mle-star-open.md)

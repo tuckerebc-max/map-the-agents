@@ -1,9 +1,9 @@
 # dallay/agentsync
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 7102a4d56da0 @ 5a41a0627fdde6f2
+Latest snapshot: commit d4075505c956 @ 2638750d7c49ac5d
 
 ## Summary (orientation draft, not independently verified)
 

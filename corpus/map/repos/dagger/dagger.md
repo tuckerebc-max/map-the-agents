@@ -1,9 +1,9 @@
 # dagger/dagger
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 7c35e6274737 @ 409fbc1fde736715
+Latest snapshot: commit 930485687df5 @ 1d7de5010afd04a5
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [lupantech/agentflow](../repos/lupantech/agentflow.md) [coverage: complete]
-- [mac999/bim_llm_code_agent](../repos/mac999/bim_llm_code_agent.md) [coverage: complete]
-- [madarco/agentbox](../repos/madarco/agentbox.md) [coverage: partial]
-- [magiccube/helixent](../repos/magiccube/helixent.md) [coverage: partial]
 - [mahawi1992/letta-deepseek](../repos/mahawi1992/letta-deepseek.md) [coverage: complete]
 - [manaflow-ai/cmux](../repos/manaflow-ai/cmux.md) [coverage: partial]
 - [marcusschiesser/edge-pi](../repos/marcusschiesser/edge-pi.md) [coverage: complete]
@@ -439,3 +435,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zellij-org/zellij](../repos/zellij-org/zellij.md) [coverage: partial]
 - [zencoderai/coding-the-coding-agents](../repos/zencoderai/coding-the-coding-agents.md) [coverage: complete]
 - [zentar-ai/zentara-code](../repos/zentar-ai/zentara-code.md) [coverage: partial]
+- [zhanghandong/harness-engineering-from-cc-to-ai-coding](../repos/zhanghandong/harness-engineering-from-cc-to-ai-coding.md) [coverage: partial]
+- [zhangliang605/carrycode](../repos/zhangliang605/carrycode.md) [coverage: complete]
+- [zhijiewong/openharness](../repos/zhijiewong/openharness.md) [coverage: partial]
+- [zhikunqingtao/zhikuncode](../repos/zhikunqingtao/zhikuncode.md) [coverage: partial]

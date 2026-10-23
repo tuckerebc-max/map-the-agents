@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (875)
+## current (871)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -126,11 +126,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [crustocean/conch](../repos/crustocean/conch.md) [coverage: complete]
 - [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) [coverage: complete]
 - [cursor/cursor](../repos/cursor/cursor.md) [coverage: complete]
-- [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) [coverage: partial]
-- [d-kuro/gwq](../repos/d-kuro/gwq.md) [coverage: partial]
-- [dagger/dagger](../repos/dagger/dagger.md) [coverage: partial]
 - [dalestewart/promptengineering](../repos/dalestewart/promptengineering.md) [coverage: complete]
-- [dallay/agentsync](../repos/dallay/agentsync.md) [coverage: partial]
 - [danau5tin/tbench-agentic-data-pipeline](../repos/danau5tin/tbench-agentic-data-pipeline.md) [coverage: complete]
 - [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) [coverage: partial]
 - [danish296/codevibes](../repos/danish296/codevibes.md) [coverage: complete]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [lucianodiisouza/semaphore](../repos/lucianodiisouza/semaphore.md) [coverage: complete]
 - [luckeyfaraday/athena](../repos/luckeyfaraday/athena.md) [coverage: complete]
 - [luoyuctl/agenttrace](../repos/luoyuctl/agenttrace.md) [coverage: partial]
+- [lupantech/agentflow](../repos/lupantech/agentflow.md) [coverage: complete]
+- [mac999/bim_llm_code_agent](../repos/mac999/bim_llm_code_agent.md) [coverage: complete]
+- [madarco/agentbox](../repos/madarco/agentbox.md) [coverage: partial]
+- [magiccube/helixent](../repos/magiccube/helixent.md) [coverage: partial]

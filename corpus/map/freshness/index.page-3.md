@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [zhanghandong/harness-engineering-from-cc-to-ai-coding](../repos/zhanghandong/harness-engineering-from-cc-to-ai-coding.md) [coverage: partial]
-- [zhangliang605/carrycode](../repos/zhangliang605/carrycode.md) [coverage: complete]
-- [zhijiewong/openharness](../repos/zhijiewong/openharness.md) [coverage: partial]
-- [zhikunqingtao/zhikuncode](../repos/zhikunqingtao/zhikuncode.md) [coverage: partial]
 - [zhinjs/zhin](../repos/zhinjs/zhin.md) [coverage: partial]
 - [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md) [coverage: partial]
 - [zhnt/loushang](../repos/zhnt/loushang.md) [coverage: partial]
@@ -31,7 +27,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (112)
+## stale (116)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -145,6 +141,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [crewaiinc/crewai](../repos/crewaiinc/crewai.md) [coverage: partial]
 - [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) [coverage: partial]
 - [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) [coverage: partial]
+- [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) [coverage: partial]
+- [d-kuro/gwq](../repos/d-kuro/gwq.md) [coverage: partial]
+- [dagger/dagger](../repos/dagger/dagger.md) [coverage: partial]
+- [dallay/agentsync](../repos/dallay/agentsync.md) [coverage: partial]
 
 ## refresh-failed (65)
 

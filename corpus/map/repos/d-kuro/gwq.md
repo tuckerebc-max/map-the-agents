@@ -1,9 +1,9 @@
 # d-kuro/gwq
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c4247734968b @ 554853775b2f91fa
+Latest snapshot: commit ec0a9f3d6aef @ 5738220b041faeaa
 
 ## Summary (orientation draft, not independently verified)
 

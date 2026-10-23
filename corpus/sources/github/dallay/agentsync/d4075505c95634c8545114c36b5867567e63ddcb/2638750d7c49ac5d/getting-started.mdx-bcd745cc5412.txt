@@ -1,0 +1,210 @@
+---
+title: Getting started
+description: Quickstart for installing and using agentsync in your project.
+---
+
+import BaseLink from "../../../components/BaseLink.astro";
+import CommandTabs from '../../../components/CommandTabs.astro';
+
+`agentsync` is a fast, portable CLI tool for synchronizing AI agent configurations across multiple coding assistants using symbolic links.
+
+## Installation
+
+### Node.js Package Managers (Recommended)
+
+If you have Node.js (>=18) installed, the easiest way to install AgentSync is through a package manager.
+
+#### Global Installation
+
+```bash
+
+# Using npm
+
+npm install -g @dallay/agentsync
+
+# Using pnpm
+
+pnpm add -g @dallay/agentsync
+
+# Using yarn (Classic v1)
+
+yarn global add @dallay/agentsync
+
+# Using bun
+
+bun i -g @dallay/agentsync
+```
+
+#### One-off Execution
+
+```bash
+
+# Using npx (npm)
+
+npx @dallay/agentsync apply
+
+# Using dlx (pnpm)
+
+pnpm dlx @dallay/agentsync apply
+
+# Using dlx (yarn v2+)
+
+yarn dlx @dallay/agentsync apply
+
+# Using bunx (bun)
+
+bunx @dallay/agentsync apply
+```
+
+### From GitHub Releases
+
+Download the latest release for your platform:
+
+#### macOS (Apple Silicon)
+
+```bash
+curl -LO https://github.com/dallay/agentsync/releases/latest/download/agentsync-aarch64-apple-darwin.tar.gz
+tar xzf agentsync-aarch64-apple-darwin.tar.gz
+sudo mv agentsync-*/agentsync /usr/local/bin/
+```
+
+#### Linux (x86_64)
+
+```bash
+curl -LO https://github.com/dallay/agentsync/releases/latest/download/agentsync-x86_64-unknown-linux-gnu.tar.gz
+tar xzf agentsync-x86_64-unknown-linux-gnu.tar.gz
+sudo mv agentsync-*/agentsync /usr/local/bin/
+```
+
+### From Source (Requires Rust 1.89+)
+
+If you have Rust (1.89+) and Node.js (22.22.0+) installed, you can install directly from [crates.io](https://crates.io/crates/agentsync) or from the repository:
+
+```bash
+
+# From crates.io
+
+cargo install agentsync
+
+# From GitHub
+
+cargo install --git https://github.com/dallay/agentsync
+```
+
+## Basic Usage
+
+### 1. Initialize Configuration
+
+#### New Projects
+
+Run `init` in your project root to create the default structure:
+
+<CommandTabs command="init" />
+
+This creates a `.agents/` directory with an initial `agentsync.toml` and an `AGENTS.md` file.
+
+**Tip: Personal defaults**
+
+If you regularly use only a subset of agents, create a user-level template so `init` generates a leaner config every time:
+
+```bash
+mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config}/agentsync"
+# Copy and edit the default config, keeping only the agents you need
+agentsync init && cp .agents/agentsync.toml "${XDG_CONFIG_HOME:-$HOME/.config}/agentsync/config.toml"
+# Edit the config to keep only your preferred agents
+```
+
+Or use `--template` to point to any TOML file:
+
+<CommandTabs command="init --template ~/my-template.toml" />
+
+See <BaseLink href="/reference/cli/">CLI Reference</BaseLink> for details.
+
+#### Existing Projects with Agent Files
+
+If you already have agent configuration files (like `CLAUDE.md`, `.cursor/`, or `.github/copilot-instructions.md`), use the interactive wizard:
+
+<CommandTabs command="init --wizard" />
+
+The wizard will:
+1. **Scan** your project for existing agent-related files — instruction files (CLAUDE.md, AGENTS.md, GEMINI.md, .windsurfrules, AMPCODE.md, etc.), skill directories (.claude/skills/, .cursor/skills/, .codex/skills/, and more), command directories (.claude/commands/, .gemini/commands/, .opencode/command/), and MCP configurations
+2. **Let you select** which files to migrate to `.agents/`
+3. **Migrate skills** from any detected agent into `.agents/skills/` (with collision detection — duplicates are skipped with a warning)
+4. **Migrate commands** into `.agents/commands/` as the canonical location
+5. **Note MCP configs** found in agent directories and suggest manual migration to `[mcp_servers]` in your config
+6. Optionally **create backups** of your original files (with confirmation)
+7. **Generate a configuration** that manages everything with symlinks
+
+This makes it easy to transition from manual file management to AgentSync — even if you already have skills, commands, or configs spread across multiple agent directories!
+
+### 2. Configure your Agents
+
+Edit `.agents/agentsync.toml` to define which assistants you use. By default, it includes configurations for Claude Code, GitHub Copilot, Cursor, Codex CLI, Gemini CLI, OpenCode, and a root AGENTS.md target.
+
+```toml
+[agents.claude]
+enabled = true
+
+# ... configuration ...
+
+```
+
+**Optional: Limit default agents**
+
+If you work with many agents but only want a subset to run by default, add the `default_agents` field:
+
+```toml
+# Only these agents will run when using 'agentsync apply' without --agents
+default_agents = ["copilot", "claude"]
+
+[agents.copilot]
+enabled = true
+
+[agents.claude]
+enabled = true
+
+[agents.gemini]
+enabled = true  # Enabled, but won't run by default
+```
+
+See <BaseLink href="/reference/configuration/">Configuration Reference</BaseLink> for more options.
+
+### 3. Apply Symlinks
+
+Create the symbolic links in your project root:
+
+<CommandTabs command="apply" />
+
+This will create files like `CLAUDE.md` and `.github/copilot-instructions.md` that point back to your single source of truth in `.agents/`.
+
+By default, `agentsync apply` also manages a marker-delimited `.gitignore` block for those destinations. Most teams should keep that default. If your team instead wants to commit AgentSync-managed destinations, treat that as an intentional opt-out and follow the <BaseLink href="/guides/gitignore-team-workflows/">Gitignore Team Workflows guide</BaseLink> rather than changing setup ad hoc.
+
+If you run AgentSync from Windows and hit symlink-permission or shell-context issues, use the <BaseLink href="/guides/windows-symlink-setup/">Windows Symlink Setup guide</BaseLink> for native prerequisites, WSL guidance, and verification steps.
+
+### 4. Integration with pnpm/npm
+
+We recommend adding the apply command to your `prepare` script to ensure symlinks are always present for your team:
+
+```json
+{
+  "scripts": {
+    "prepare": "agentsync apply || true"
+  }
+}
+```
+
+> **Note:** `|| true` ensures the install process does not fail if `agentsync` is not yet installed, such as on a fresh clone or in CI environments.
+
+If you use a `prepare` hook, collaborators can usually rely on that automation after pulling changes. They should still run `agentsync apply` manually when the hook does not run or after changing AgentSync config.
+
+If your team also wants symlinks refreshed after branch switches, merges, or rebases, follow the <BaseLink href="/guides/git-hook-automation/">Git Hook Automation guide</BaseLink> for Lefthook, Husky, `simple-git-hooks`, and native Git hook examples.
+
+## Next Steps
+
+- Learn more about <BaseLink href="/reference/configuration/">Configuration Options</BaseLink>
+- Choose a team policy in <BaseLink href="/guides/gitignore-team-workflows/">Gitignore Team Workflows</BaseLink>
+- Automate branch/merge/rebase refreshes with <BaseLink href="/guides/git-hook-automation/">Git Hook Automation</BaseLink>
+- Onboard Windows contributors with <BaseLink href="/guides/windows-symlink-setup/">Windows Symlink Setup</BaseLink>
+- Explore <BaseLink href="/guides/mcp/">MCP Integration</BaseLink>
+- See the <BaseLink href="/reference/cli/">CLI Reference</BaseLink>
+- Learn about <BaseLink href="/guides/skills/">Skills</BaseLink> — how to install, author, and manage AgentSync skills (SKILL.md manifest, registry, and CLI usage)

@@ -1,9 +1,9 @@
 # d-kimuson/claude-code-viewer
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9367cf006be9 @ d2e4b2b80b9562f7
+Latest snapshot: commit 9367cf006be9 @ 091435d41d8b2e4b
 
 ## Summary (orientation draft, not independently verified)
 

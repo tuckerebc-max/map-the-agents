@@ -256,11 +256,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) -- status=distilled, freshness=current
 - [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) -- status=distilled, freshness=stale
 - [cursor/cursor](../repos/cursor/cursor.md) -- status=distilled, freshness=current
-- [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) -- status=distilled, freshness=current
-- [d-kuro/gwq](../repos/d-kuro/gwq.md) -- status=distilled, freshness=current
-- [dagger/dagger](../repos/dagger/dagger.md) -- status=distilled, freshness=current
+- [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) -- status=distilled, freshness=stale
+- [d-kuro/gwq](../repos/d-kuro/gwq.md) -- status=distilled, freshness=stale
+- [dagger/dagger](../repos/dagger/dagger.md) -- status=distilled, freshness=stale
 - [dalestewart/promptengineering](../repos/dalestewart/promptengineering.md) -- status=distilled, freshness=current
-- [dallay/agentsync](../repos/dallay/agentsync.md) -- status=distilled, freshness=current
+- [dallay/agentsync](../repos/dallay/agentsync.md) -- status=distilled, freshness=stale
 - [danau5tin/tbench-agentic-data-pipeline](../repos/danau5tin/tbench-agentic-data-pipeline.md) -- status=distilled, freshness=current
 - [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) -- status=distilled, freshness=current
 - [danish296/codevibes](../repos/danish296/codevibes.md) -- status=distilled, freshness=current

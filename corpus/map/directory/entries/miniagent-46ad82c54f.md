@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ZhuLinsen
@@ -22,6 +22,8 @@ Repository map entry: [zhulinsen/miniagent](../../repos/zhulinsen/miniagent.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-MiniAgent is built as an agent textbook: the entire engine — LLM interaction, tool dispatch, context compression — sits in one readable agent.py of about a thousand lines, positioned as an alternative
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Minimal, transparent CLI agent framework combining Claude Code-style coding with Manus-style OS control; single-file core engine (agent.py, ~1,000 lines) with no hidden abstractions. Achieves extensibility using just 6 code tools + bash; Skill system with built-in roles (coder/researcher/reviewer/tester); MCP client built-in; dual tool-calling modes (text parsing + native Function Calling); minimal dependencies (only 7).
+
+(captured site page body (agents/miniagent.md), not a verified repo-code finding)
+MiniAgent is built as an agent textbook: the entire engine — LLM interaction, tool dispatch, context compression — sits in one readable agent.py of about a thousand lines, positioned as an alternative to opaque frameworks like LangChain or pydantic-ai. Its design argument is that a small tool surface composes further than a large one: six code tools plus bash cover coding, while OS tools (browser, apps, clipboard, document creation) extend it toward Manus-style desktop control, and new tools register with a three-line decorator. Tool calling runs in two modes — transparent text parsing for learners and native function calling for reliability — with dangerous commands intercepted for confirmation. Skill objects bundle a prompt with a tool whitelist into reusable roles (coder, researcher, reviewer, tester), and an optional MCP client loads external servers' tools into the same namespace. Learners and tinkerers use it to read and modify a complete agent in one sitting rather than navigate a framework.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/miniagent.md)
