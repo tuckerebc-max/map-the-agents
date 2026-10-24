@@ -2,6 +2,7 @@
 
 Page 4 of 4. [First page](index.md) | [Previous](index.page-3.md)
 
+- [zai-org/glm-5](../repos/zai-org/glm-5.md) -- status=distilled, freshness=current
 - [zap-coding-agent/zap-coding-agent](../repos/zap-coding-agent/zap-coding-agent.md) -- status=distilled, freshness=current
 - [zaxbyhub/opencode-swarm](../repos/zaxbyhub/opencode-swarm.md) -- status=distilled, freshness=current
 - [zclllyybb/opengiraffe](../repos/zclllyybb/opengiraffe.md) -- status=distilled, freshness=current

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: tegridydev
@@ -22,6 +22,8 @@ Repository map entry: [tegridydev/multi-agent-secops-llm](../../repos/tegridydev
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This is a personal proof-of-concept for LLM-driven security analysis, notable mainly for its simplicity: one Python file reads text files from a dataops folder, passes them through four specialized ag
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Multi-agent security framework using multiple specialized LLM agents (Threat Intelligence, Log Analysis, Vulnerability Assessment, Incident Response) plus an Overseer agent to analyze text files and generate a comprehensive security summary brief. Uses local LLMs via Ollama with optional Together API.
+
+(captured site page body (agents/multi-agent-secops-llm.md), not a verified repo-code finding)
+This is a personal proof-of-concept for LLM-driven security analysis, notable mainly for its simplicity: one Python file reads text files from a dataops folder, passes them through four specialized agents — threat intelligence, log analysis, vulnerability assessment, incident response — and has an Overseer agent compile their outputs into a summary brief written to disk. The agents run against local models through Ollama, with an optional Together API path, so the whole pipeline runs on a laptop without cloud dependencies beyond an optional API key. The project's own framing is analytical — summarizing threats and anomalies from text files — rather than agentic software modification; no code is written or executed beyond the analysis itself. Eight commits, no issues, and no releases since May 2024 mark it as a dormant prototype. It demonstrates the multi-agent security-analysis pattern at its smallest viable scale and was never developed into a maintained tool.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/multi-agent-secops-llm.md)

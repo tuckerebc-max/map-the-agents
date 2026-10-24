@@ -2,6 +2,7 @@
 
 Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) -- status=distilled, freshness=current
 - [openbmb/repoagent](../repos/openbmb/repoagent.md) -- status=distilled, freshness=current
 - [openchamber/openchamber](../repos/openchamber/openchamber.md) -- status=distilled, freshness=current
 - [opendev-to/opendev](../repos/opendev-to/opendev.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) -- status=distilled, freshness=current
 - [zachblume/autospec](../repos/zachblume/autospec.md) -- status=distilled, freshness=current
 - [zachnoel/multiagentworkflow](../repos/zachnoel/multiagentworkflow.md) -- status=blocked, freshness=refresh-failed
-- [zai-org/glm-5](../repos/zai-org/glm-5.md) -- status=distilled, freshness=current

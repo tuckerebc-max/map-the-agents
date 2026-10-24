@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: arjunhw97
@@ -22,6 +22,8 @@ Repository map entry: [arjunhw97/msn-flocking-formation-control](../../repos/arj
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This entry is a census false positive: the word 'agent' in its name refers to mobile sensor nodes, not AI agents. The repository implements a multi-agent flocking control algorithm from a control-theo
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): MATLAB program implementing multi-agent flocking control for Mobile Sensor Networks (MSN), including target following and obstacle avoidance. Simulates flocking of 100 sensor nodes across 5 scenarios: network fragmentation, quasi-lattice formation with static target, dynamic target following sine wave trajectory, dynamic target following circular trajectory, obstacle avoidance. NOTE: This is a robotics/sensor-network simulation, NOT an AI coding agent harness.
+
+(captured site page body (agents/msn-flocking-formation-control.md), not a verified repo-code finding)
+This entry is a census false positive: the word 'agent' in its name refers to mobile sensor nodes, not AI agents. The repository implements a multi-agent flocking control algorithm from a control-theory paper in MATLAB, simulating 100 sensor nodes that maintain formation spacing while tracking a target node across five scenarios — network fragmentation, static and dynamic target following, and obstacle avoidance. Each scenario runs as a standalone MATLAB script (MSN1.m through MSN5.m) requiring nothing beyond a MATLAB installation; there are no LLMs, no tool loops, and no software-engineering capability anywhere in the code. The project dates from 2020 with its last change in January 2021 and serves students studying formation control. For the census's purposes it belongs to neither the agent nor multiplexer categories — it is robotics simulation captured by a keyword-driven crawl.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/msn-flocking-formation-control.md)

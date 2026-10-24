@@ -193,31 +193,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [MobileVC (`mobilevc`)](mobilevc-864e55e510.md) -- published+backing+pages
 - [Mocha (`mocha`)](mocha-2cc34347ce.md) -- backing+pages
 - [ModelCode (`modelcode`)](modelcode-3ed779ebcd.md) -- published+backing+pages
-- [Moderne (`moderne`)](moderne-84204cdda7.md) -- published+backing
-- [Mole (`mole`)](mole-e18ebaabb9.md) -- backing-only
-- [momo-code (`momo-code`)](momo-code-c211f315f7.md) -- published+backing
-- [Monk (`monk`)](monk-9b550d15e2.md) -- published+backing
-- [MonkeyCode (`monkeycode`)](monkeycode-da44093bce.md) -- published+backing
-- [Monocle (`monocle`)](monocle-c9945a27fd.md) -- backing-only
-- [MoonBit Pilot (`moonbit-pilot`)](moonbit-pilot-af913d2394.md) -- backing-only
-- [Moore Threads AI Coding (`moore-threads-ai-coding`)](moore-threads-ai-coding-d51955aec6.md) -- published+backing
-- [MPLAB AI Coding Assistant (`mplab-ai-coding-assistant`)](mplab-ai-coding-assistant-400ddf2ded.md) -- published+backing
-- [Mql (`mql`)](mql-c6f1c2fc49.md) -- backing-only
-- [MSN-Flocking-Formation-Control (`msn-flocking-formation-control`)](msn-flocking-formation-control-6520ab7218.md) -- backing-only
-- [multi-agent-ai-sdr-flink-orchestrator (`multi-agent-ai-sdr-flink-orchestrator`)](multi-agent-ai-sdr-flink-orchestrator-758e71d451.md) -- backing-only
-- [Multi-Agent-AI-System (`multi-agent-ai-system`)](multi-agent-ai-system-70c0c68645.md) -- backing-only
-- [multi-agent-emergence-environments (`multi-agent-emergence-environments`)](multi-agent-emergence-environments-7b911c8677.md) -- backing-only
-- [Multi-Agent-Secops-Llm (`multi-agent-secops-llm`)](multi-agent-secops-llm-e3e5ddedc6.md) -- backing-only
-- [multi-agent-training-grpo (`multi-agent-training-grpo`)](multi-agent-training-grpo-f98af680a1.md) -- backing-only
-- [multi-agent-workflow-kit (`multi-agent-workflow-kit`)](multi-agent-workflow-kit-dc46df3cf0.md) -- published+backing
-- [Multiagent Debate (`multiagent-debate`)](multiagent-debate-7e2a79ff1c.md) -- backing-only
-- [Multiagentworkflow (`multiagentworkflow`)](multiagentworkflow-aec2b7fc26.md) -- backing-only
-- [multiplayer (`multiplayer`)](multiplayer-2d39f94fb9.md) -- published+backing
-- [Multistack (`multistack`)](multistack-13ef186250.md) -- published-only
-- [Munder Difflin (`munder-difflin`)](munder-difflin-1f94ed717c.md) -- published+backing
-- [Murmell (`murmell`)](murmell-094def63a8.md) -- published+backing
-- [Muse Code (`muse-code`)](muse-code-7fba317ff2.md) -- backing-only
-- [mutable.ai (`mutableai`)](mutableai-71d5427296.md) -- backing-only
+- [Moderne (`moderne`)](moderne-84204cdda7.md) -- published+backing+pages
+- [Mole (`mole`)](mole-e18ebaabb9.md) -- backing+pages
+- [momo-code (`momo-code`)](momo-code-c211f315f7.md) -- published+backing+pages
+- [Monk (`monk`)](monk-9b550d15e2.md) -- published+backing+pages
+- [MonkeyCode (`monkeycode`)](monkeycode-da44093bce.md) -- published+backing+pages
+- [Monocle (`monocle`)](monocle-c9945a27fd.md) -- backing+pages
+- [MoonBit Pilot (`moonbit-pilot`)](moonbit-pilot-af913d2394.md) -- backing+pages
+- [Moore Threads AI Coding (`moore-threads-ai-coding`)](moore-threads-ai-coding-d51955aec6.md) -- published+backing+pages
+- [MPLAB AI Coding Assistant (`mplab-ai-coding-assistant`)](mplab-ai-coding-assistant-400ddf2ded.md) -- published+backing+pages
+- [Mql (`mql`)](mql-c6f1c2fc49.md) -- backing+pages
+- [MSN-Flocking-Formation-Control (`msn-flocking-formation-control`)](msn-flocking-formation-control-6520ab7218.md) -- backing+pages
+- [multi-agent-ai-sdr-flink-orchestrator (`multi-agent-ai-sdr-flink-orchestrator`)](multi-agent-ai-sdr-flink-orchestrator-758e71d451.md) -- backing+pages
+- [Multi-Agent-AI-System (`multi-agent-ai-system`)](multi-agent-ai-system-70c0c68645.md) -- backing+pages
+- [multi-agent-emergence-environments (`multi-agent-emergence-environments`)](multi-agent-emergence-environments-7b911c8677.md) -- backing+pages
+- [Multi-Agent-Secops-Llm (`multi-agent-secops-llm`)](multi-agent-secops-llm-e3e5ddedc6.md) -- backing+pages
+- [multi-agent-training-grpo (`multi-agent-training-grpo`)](multi-agent-training-grpo-f98af680a1.md) -- backing+pages
+- [multi-agent-workflow-kit (`multi-agent-workflow-kit`)](multi-agent-workflow-kit-dc46df3cf0.md) -- published+backing+pages
+- [Multiagent Debate (`multiagent-debate`)](multiagent-debate-7e2a79ff1c.md) -- backing+pages
+- [Multiagentworkflow (`multiagentworkflow`)](multiagentworkflow-aec2b7fc26.md) -- backing+pages
+- [multiplayer (`multiplayer`)](multiplayer-2d39f94fb9.md) -- published+backing+pages
+- [Multistack (`multistack`)](multistack-13ef186250.md) -- published+pages
+- [Munder Difflin (`munder-difflin`)](munder-difflin-1f94ed717c.md) -- published+backing+pages
+- [Murmell (`murmell`)](murmell-094def63a8.md) -- published+backing+pages
+- [Muse Code (`muse-code`)](muse-code-7fba317ff2.md) -- backing+pages
+- [mutable.ai (`mutableai`)](mutableai-71d5427296.md) -- backing+pages
 - [MutahunterAI (`mutahunterai`)](mutahunterai-bdb36f2aab.md) -- published+backing
 - [MutyAgent – AI Agent (`mutyagent-ai-agent`)](mutyagent-ai-agent-8276895cf6.md) -- published+backing
 - [mux (`mux`)](mux-99830b20a9.md) -- published+backing

@@ -1,9 +1,9 @@
 # danilofalcao/jarvis
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 38a7c80794d7 @ 365be3cf06291d31
+Latest snapshot: commit 38a7c80794d7 @ de439fb4972c7a60
 
 ## Summary (orientation draft, not independently verified)
 

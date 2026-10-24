@@ -159,6 +159,7 @@
 - [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md)
 - [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md)
 - [getworkloop/gambit](../repos/getworkloop/gambit.md)
+- [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md)
 - [giselles-ai/giselle](../repos/giselles-ai/giselle.md)
 - [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md)

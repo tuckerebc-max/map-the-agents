@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Moderne
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Moderne's substrate is the OpenRewrite Lossless Semantic Tree: each repository is sequenced into a compiler-accurate, type-attributed, format-preserving model, and deterministic recipes rewrite precis
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Mass-scale automated refactoring (OpenRewrite core) + Moddy agent
+
+(captured site page body (agents/moderne.md), not a verified repo-code finding)
+Moderne's substrate is the OpenRewrite Lossless Semantic Tree: each repository is sequenced into a compiler-accurate, type-attributed, format-preserving model, and deterministic recipes rewrite precisely the matched constructs without disturbing surrounding code — the mechanism behind a single Log4Shell recipe fixing 38,000 call-sites across 400 repositories with no regressions. The company's agent-era positioning splits the labor explicitly: an LLM plans, recipes execute, making Moderne 'the deterministic harness between the agent and your code.' Its first-party agent Moddy takes natural-language requests such as upgrading to Spring Boot 3.5, finds the appropriate recipes, and executes them across repository fleets; Prethink supplies pre-resolved context (endpoints, dependencies, test coverage) so external coding agents stop inferring architecture from raw source. Enterprises running from one to 100,000+ repositories deploy it as SaaS, a managed service, or air-gapped DX for vulnerability remediation and framework migrations; pricing is enterprise sales-driven rather than published.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/moderne.md)

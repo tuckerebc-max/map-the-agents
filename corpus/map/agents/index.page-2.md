@@ -31,6 +31,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [getpaseo/paseo](../repos/getpaseo/paseo.md) -- status=distilled, freshness=current
 - [getworkloop/gambit](../repos/getworkloop/gambit.md) -- status=distilled, freshness=current
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) -- status=distilled, freshness=current
+- [gi-dellav/multistack](../repos/gi-dellav/multistack.md) -- status=discovered, freshness=pending
 - [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) -- status=distilled, freshness=current
 - [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) -- status=distilled, freshness=current
 - [giselles-ai/giselle](../repos/giselles-ai/giselle.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [openautocoder/agentless](../repos/openautocoder/agentless.md) -- status=distilled, freshness=current
 - [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) -- status=distilled, freshness=current
 - [openbmb/chatdev](../repos/openbmb/chatdev.md) -- status=distilled, freshness=current
-- [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) -- status=distilled, freshness=current

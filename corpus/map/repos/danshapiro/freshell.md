@@ -1,9 +1,9 @@
 # danshapiro/freshell
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e68ae40a2b3e @ 101631a4d3dba4f6
+Latest snapshot: commit b5f86817ce3a @ 4732267ba40b6337
 
 ## Summary (orientation draft, not independently verified)
 

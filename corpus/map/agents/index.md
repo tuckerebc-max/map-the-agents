@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1066 repositories.
+1067 repositories.
 
 [Back to map index](../index.md)
 
@@ -262,9 +262,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [dalestewart/promptengineering](../repos/dalestewart/promptengineering.md) -- status=distilled, freshness=current
 - [dallay/agentsync](../repos/dallay/agentsync.md) -- status=distilled, freshness=stale
 - [danau5tin/tbench-agentic-data-pipeline](../repos/danau5tin/tbench-agentic-data-pipeline.md) -- status=distilled, freshness=current
-- [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) -- status=distilled, freshness=current
+- [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) -- status=distilled, freshness=stale
 - [danish296/codevibes](../repos/danish296/codevibes.md) -- status=distilled, freshness=current
-- [danshapiro/freshell](../repos/danshapiro/freshell.md) -- status=distilled, freshness=current
+- [danshapiro/freshell](../repos/danshapiro/freshell.md) -- status=distilled, freshness=stale
 - [dansiegel/codegenhelpers](../repos/dansiegel/codegenhelpers.md) -- status=distilled, freshness=current
 - [darrenapfel/claudecode-orchestrator](../repos/darrenapfel/claudecode-orchestrator.md) -- status=distilled, freshness=current
 - [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) -- status=distilled, freshness=current

@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [mahawi1992/letta-deepseek](../repos/mahawi1992/letta-deepseek.md) [coverage: complete]
-- [manaflow-ai/cmux](../repos/manaflow-ai/cmux.md) [coverage: partial]
 - [marcusschiesser/edge-pi](../repos/marcusschiesser/edge-pi.md) [coverage: complete]
 - [markshust/hcf](../repos/markshust/hcf.md) [coverage: complete]
 - [marsz42/awel](../repos/marsz42/awel.md) [coverage: complete]
@@ -439,3 +437,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zhangliang605/carrycode](../repos/zhangliang605/carrycode.md) [coverage: complete]
 - [zhijiewong/openharness](../repos/zhijiewong/openharness.md) [coverage: partial]
 - [zhikunqingtao/zhikuncode](../repos/zhikunqingtao/zhikuncode.md) [coverage: partial]
+- [zhinjs/zhin](../repos/zhinjs/zhin.md) [coverage: partial]
+- [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md) [coverage: partial]

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (871)
+## current (869)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -128,9 +128,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [cursor/cursor](../repos/cursor/cursor.md) [coverage: complete]
 - [dalestewart/promptengineering](../repos/dalestewart/promptengineering.md) [coverage: complete]
 - [danau5tin/tbench-agentic-data-pipeline](../repos/danau5tin/tbench-agentic-data-pipeline.md) [coverage: complete]
-- [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) [coverage: partial]
 - [danish296/codevibes](../repos/danish296/codevibes.md) [coverage: complete]
-- [danshapiro/freshell](../repos/danshapiro/freshell.md) [coverage: partial]
 - [dansiegel/codegenhelpers](../repos/dansiegel/codegenhelpers.md) [coverage: complete]
 - [darrenapfel/claudecode-orchestrator](../repos/darrenapfel/claudecode-orchestrator.md) [coverage: complete]
 - [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mac999/bim_llm_code_agent](../repos/mac999/bim_llm_code_agent.md) [coverage: complete]
 - [madarco/agentbox](../repos/madarco/agentbox.md) [coverage: partial]
 - [magiccube/helixent](../repos/magiccube/helixent.md) [coverage: partial]
+- [mahawi1992/letta-deepseek](../repos/mahawi1992/letta-deepseek.md) [coverage: complete]
+- [manaflow-ai/cmux](../repos/manaflow-ai/cmux.md) [coverage: partial]

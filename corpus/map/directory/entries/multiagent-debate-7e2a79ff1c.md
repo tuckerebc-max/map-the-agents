@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: composable-models
@@ -22,6 +22,8 @@ Repository map entry: [composable-models/llm_multiagent_debate](../../repos/comp
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository holds the code behind one of the most-cited LLM-collaboration papers: multiple model instances propose, critique, and refine answers across rounds of debate, and the final answer's fac
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Official implementation of the ICML 2024 paper 'Improving Factuality and Reasoning in Language Models through Multiagent Debate', using multiagent debate to enhance factuality and reasoning.
+
+(captured site page body (agents/multiagent-debate.md), not a verified repo-code finding)
+This repository holds the code behind one of the most-cited LLM-collaboration papers: multiple model instances propose, critique, and refine answers across rounds of debate, and the final answer's factuality improves over single-model baselines. The four task directories cover arithmetic and math problems, grade-school math, biography generation, and MMLU multiple choice, each runnable as standalone scripts against OpenAI models. The implementation is explicitly preliminary — the README promises future task releases that never arrived — and the repository carries no license file, so reuse beyond reading is technically unlicensed. It has served as the reference point for a wave of follow-up work, including community alternatives like LLM-Agora that extended debate to open-source models. The code is an archival research artifact from 2023: no coding tools, no agentic loop over software, and no maintenance since 2025.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/multiagent-debate.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: MutableAI
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Mutable.ai built codebase-intelligence tooling for teams drowning in undocumented repositories: its flagship AI Wiki generated and maintained architecture documentation automatically, updating with ev
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A YC W22 codebase-intelligence startup whose AI Wiki auto-generated and auto-updated codebase documentation with architecture diagrams on every push, plus codebase-aware chat and PR summaries — its Codegen agent remained 'coming soon' before the company disappeared, leaving the domain unresolvable since 2024.
+
+(captured site page body (agents/mutableai.md), not a verified repo-code finding)
+Mutable.ai built codebase-intelligence tooling for teams drowning in undocumented repositories: its flagship AI Wiki generated and maintained architecture documentation automatically, updating with every push and rendering code structure as diagrams, while a chat interface answered questions grounded in the codebase and CI integration produced smart PR summaries and diffs. A full code-generation product — auto-generating features, fixing bugs, orchestrating migrations — was announced as 'coming soon' and apparently never shipped as a generally available agent. The company, a Y Combinator W22 startup with ex-DeepMind and ex-OpenAI staff, offered open-source-free and paid tiers plus an on-premises enterprise option, and drew endorsements from figures like Vercel's CEO and the GitHub Copilot creator. The domain stopped resolving at some point after the last archived capture in November 2024, and the product line did not surface elsewhere under the same name. The census retains mutable.ai as a historical entry documenting the pre-agent-era codebase-intelligence category.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mutableai.md)
