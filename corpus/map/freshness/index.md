@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (869)
+## current (867)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -131,9 +131,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [danish296/codevibes](../repos/danish296/codevibes.md) [coverage: complete]
 - [dansiegel/codegenhelpers](../repos/dansiegel/codegenhelpers.md) [coverage: complete]
 - [darrenapfel/claudecode-orchestrator](../repos/darrenapfel/claudecode-orchestrator.md) [coverage: complete]
-- [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) [coverage: partial]
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) [coverage: complete]
-- [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) [coverage: partial]
 - [dazuiba/handoff](../repos/dazuiba/handoff.md) [coverage: partial]
 - [dcouple/pane](../repos/dcouple/pane.md) [coverage: partial]
 - [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [magiccube/helixent](../repos/magiccube/helixent.md) [coverage: partial]
 - [mahawi1992/letta-deepseek](../repos/mahawi1992/letta-deepseek.md) [coverage: complete]
 - [manaflow-ai/cmux](../repos/manaflow-ai/cmux.md) [coverage: partial]
+- [marcusschiesser/edge-pi](../repos/marcusschiesser/edge-pi.md) [coverage: complete]
+- [markshust/hcf](../repos/markshust/hcf.md) [coverage: complete]

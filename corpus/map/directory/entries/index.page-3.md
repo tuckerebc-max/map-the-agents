@@ -218,31 +218,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Murmell (`murmell`)](murmell-094def63a8.md) -- published+backing+pages
 - [Muse Code (`muse-code`)](muse-code-7fba317ff2.md) -- backing+pages
 - [mutable.ai (`mutableai`)](mutableai-71d5427296.md) -- backing+pages
-- [MutahunterAI (`mutahunterai`)](mutahunterai-bdb36f2aab.md) -- published+backing
-- [MutyAgent – AI Agent (`mutyagent-ai-agent`)](mutyagent-ai-agent-8276895cf6.md) -- published+backing
-- [mux (`mux`)](mux-99830b20a9.md) -- published+backing
-- [Mux (Rust) (`mux-rs`)](mux-rs-0bddeb48ea.md) -- published-only
-- [MyCoder (`mycoder`)](mycoder-1a9f306539.md) -- published+backing
-- [MyFlicker (`myflicker`)](myflicker-1d71cd69a7.md) -- published+backing
-- [Naixt (`naixt`)](naixt-72419d6648.md) -- published+backing
-- [Nano-Bots (`nano-bots`)](nano-bots-949880da0c.md) -- backing-only
-- [NanoClaw (`nanoclaw`)](nanoclaw-8028a2cf6d.md) -- published-only
-- [Nanocoder (`nanocoder`)](nanocoder-c250095568.md) -- published+backing
-- [nasiko (`nasiko`)](nasiko-3bc62fd5ea.md) -- backing-only
-- [Needle2 (`needle2`)](needle2-c7929e79b1.md) -- backing-only
-- [nefi (`nefi`)](nefi-ec4a5e02f3.md) -- published+backing
-- [nehemiah (`nehemiah`)](nehemiah-6c0a1e944e.md) -- backing-only
-- [NeoCode (`neocode`)](neocode-322badab43.md) -- published+backing
-- [Neovate Code (`neovate-code`)](neovate-code-687008cefc.md) -- published+backing
-- [NetEase Youdao Lobster (`netease-youdao-lobster`)](netease-youdao-lobster-9fc87140e4.md) -- backing-only
-- [Netlify AI (`netlify-ai`)](netlify-ai-25768d97af.md) -- published+backing
-- [neuralinverse (`neuralinverse`)](neuralinverse-0c1e9a7bd5.md) -- published+backing
-- [next-ai-starter (`next-ai-starter`)](next-ai-starter-391e744977.md) -- backing-only
-- [nezha (`nezha`)](nezha-f5ed62cfbb.md) -- published+backing
-- [Nimbalyst (`nimbalyst`)](nimbalyst-afd6d85e62.md) -- published+backing
-- [Niteshift (`niteshift`)](niteshift-a7dd4a797c.md) -- published-only
-- [Nl2Iac (`nl2iac`)](nl2iac-77caaa7486.md) -- published+backing
-- [Nlp-With-Llms (`nlp-with-llms`)](nlp-with-llms-8b375af843.md) -- backing-only
+- [MutahunterAI (`mutahunterai`)](mutahunterai-bdb36f2aab.md) -- published+backing+pages
+- [MutyAgent – AI Agent (`mutyagent-ai-agent`)](mutyagent-ai-agent-8276895cf6.md) -- published+backing+pages
+- [mux (`mux`)](mux-99830b20a9.md) -- published+backing+pages
+- [Mux (Rust) (`mux-rs`)](mux-rs-0bddeb48ea.md) -- published+pages
+- [MyCoder (`mycoder`)](mycoder-1a9f306539.md) -- published+backing+pages
+- [MyFlicker (`myflicker`)](myflicker-1d71cd69a7.md) -- published+backing+pages
+- [Naixt (`naixt`)](naixt-72419d6648.md) -- published+backing+pages
+- [Nano-Bots (`nano-bots`)](nano-bots-949880da0c.md) -- backing+pages
+- [NanoClaw (`nanoclaw`)](nanoclaw-8028a2cf6d.md) -- published+pages
+- [Nanocoder (`nanocoder`)](nanocoder-c250095568.md) -- published+backing+pages
+- [nasiko (`nasiko`)](nasiko-3bc62fd5ea.md) -- backing+pages
+- [Needle2 (`needle2`)](needle2-c7929e79b1.md) -- backing+pages
+- [nefi (`nefi`)](nefi-ec4a5e02f3.md) -- published+backing+pages
+- [nehemiah (`nehemiah`)](nehemiah-6c0a1e944e.md) -- backing+pages
+- [NeoCode (`neocode`)](neocode-322badab43.md) -- published+backing+pages
+- [Neovate Code (`neovate-code`)](neovate-code-687008cefc.md) -- published+backing+pages
+- [NetEase Youdao Lobster (`netease-youdao-lobster`)](netease-youdao-lobster-9fc87140e4.md) -- backing+pages
+- [Netlify AI (`netlify-ai`)](netlify-ai-25768d97af.md) -- published+backing+pages
+- [neuralinverse (`neuralinverse`)](neuralinverse-0c1e9a7bd5.md) -- published+backing+pages
+- [next-ai-starter (`next-ai-starter`)](next-ai-starter-391e744977.md) -- backing+pages
+- [nezha (`nezha`)](nezha-f5ed62cfbb.md) -- published+backing+pages
+- [Nimbalyst (`nimbalyst`)](nimbalyst-afd6d85e62.md) -- published+backing+pages
+- [Niteshift (`niteshift`)](niteshift-a7dd4a797c.md) -- published+pages
+- [Nl2Iac (`nl2iac`)](nl2iac-77caaa7486.md) -- published+backing+pages
+- [Nlp-With-Llms (`nlp-with-llms`)](nlp-with-llms-8b375af843.md) -- backing+pages
 - [No Fate AI (`no-fate-ai`)](no-fate-ai-3d875a74e1.md) -- backing-only
 - [nodeterm (`nodeterm`)](nodeterm-7739ca76d0.md) -- published+backing
 - [Nora (`nora`)](nora-b21ec07eff.md) -- backing-only

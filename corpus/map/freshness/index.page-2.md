@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [marcusschiesser/edge-pi](../repos/marcusschiesser/edge-pi.md) [coverage: complete]
-- [markshust/hcf](../repos/markshust/hcf.md) [coverage: complete]
 - [marsz42/awel](../repos/marsz42/awel.md) [coverage: complete]
 - [martian56/lumnicode](../repos/martian56/lumnicode.md) [coverage: complete]
 - [maruakshay/miii-cli](../repos/maruakshay/miii-cli.md) [coverage: complete]
@@ -439,3 +437,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zhikunqingtao/zhikuncode](../repos/zhikunqingtao/zhikuncode.md) [coverage: partial]
 - [zhinjs/zhin](../repos/zhinjs/zhin.md) [coverage: partial]
 - [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md) [coverage: partial]
+- [zhnt/loushang](../repos/zhnt/loushang.md) [coverage: partial]
+- [zhulinsen/miniagent](../repos/zhulinsen/miniagent.md) [coverage: complete]

@@ -108,6 +108,7 @@
 - [mole](../entries/mole-e18ebaabb9.md)
 - [mux](../entries/mux-99830b20a9.md)
 - [mycoder](../entries/mycoder-1a9f306539.md)
+- [nanoclaw](../entries/nanoclaw-8028a2cf6d.md)
 - [nasiko](../entries/nasiko-3bc62fd5ea.md)
 - [neovate-code](../entries/neovate-code-687008cefc.md)
 - [nodeterm](../entries/nodeterm-7739ca76d0.md)

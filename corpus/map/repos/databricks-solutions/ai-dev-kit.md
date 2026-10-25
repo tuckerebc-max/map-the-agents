@@ -1,9 +1,9 @@
 # databricks-solutions/ai-dev-kit
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b059fd017a2c @ 8f133f51eafee394
+Latest snapshot: commit 026662a5a27a @ 904e09f9c13981b9
 
 ## Summary (orientation draft, not independently verified)
 

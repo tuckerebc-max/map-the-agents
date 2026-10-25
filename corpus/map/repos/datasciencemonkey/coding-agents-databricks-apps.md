@@ -1,9 +1,9 @@
 # datasciencemonkey/coding-agents-databricks-apps
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e4a4b216e439 @ d20a4ad5ff34cf66
+Latest snapshot: commit e4a4b216e439 @ d3c19940f4f69bf5
 
 ## Summary (orientation draft, not independently verified)
 

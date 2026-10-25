@@ -1,12 +1,13 @@
 # datasette/datasette-agent
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: none recorded
 Origins: directory-resolve - Projects: directory-intake
+Latest snapshot: commit c811e8235215 @ da65e6579e38d299
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

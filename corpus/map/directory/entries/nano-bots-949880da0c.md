@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: icebaker
 - License: unknown
 - Language: YAML, Ruby
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [icebaker/nano-bots](../../repos/icebaker/nano-bots.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Nano Bots defines bots as single YAML cartridge files that anyone can download, copy, or author and run through any conforming implementation. The specification covers adapters, provider configuration
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Repository for Nano Bots' Cartridges — small AI-powered bots shareable as a single YAML file, supporting multiple LLM providers and tool/function calling. Implementations exist for Sublime Text and VS Code, plus a CLI, API, and Clinic live editor. Recommends CC0-1.0 for individual cartridges.
+
+(captured site page body (agents/nano-bots.md), not a verified repo-code finding)
+Nano Bots defines bots as single YAML cartridge files that anyone can download, copy, or author and run through any conforming implementation. The specification covers adapters, provider configuration, tool/function calling, and a marketplace metadata section with tags and honestly auto-generated sample outputs. A profile.yml convention organizes community cartridges under author namespaces on nbots.io. Because prompts' intellectual property status is unsettled, the project recommends authors license individual cartridges under SPDX terms such as CC0-1.0. The repo itself has only nine commits, and the cartridge collection has not changed since mid-2023.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/nano-bots.md)

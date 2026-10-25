@@ -93,6 +93,7 @@
 - [mission-control](../entries/mission-control-67b7b26de9.md)
 - [mole](../entries/mole-e18ebaabb9.md)
 - [mux](../entries/mux-99830b20a9.md)
+- [mux-rs](../entries/mux-rs-0bddeb48ea.md)
 - [mycoder](../entries/mycoder-1a9f306539.md)
 - [nasiko](../entries/nasiko-3bc62fd5ea.md)
 - [neovate-code](../entries/neovate-code-687008cefc.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: nimbalyst
@@ -22,6 +22,8 @@ Repository map entry: [nimbalyst/nimbalyst](../../repos/nimbalyst/nimbalyst.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Nimbalyst gives developers a visual surface for working with coding agents instead of reading terminal transcripts. Parallel sessions run in isolated git worktrees managed from a kanban board, and age
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source local visual workspace and session/task manager for coding agents (Codex, Claude Code, OpenCode, Copilot). Visual WYSIWYG collaboration: see agent changes as red/green diffs, approve/edit/annotate directly in markdown, mockups, Mermaid, Excalidraw, CSV, data models, Monaco. Parallel session management (Kanban board, search/resume, link files to sessions) plus task tracking both humans and agents can edit. Mobile companion iOS app. Extension system ...
+
+(captured site page body (agents/nimbalyst.md), not a verified repo-code finding)
+Nimbalyst gives developers a visual surface for working with coding agents instead of reading terminal transcripts. Parallel sessions run in isolated git worktrees managed from a kanban board, and agent changes land as inspectable diffs that a human steps through before anything is committed. Task tracking, git staging, AI-drafted commits, and an embedded Ghostty terminal live alongside the editors, and an MCP client renders tool results as visual widgets. Everything is plain files in the user's git repository with no proprietary store, and iOS/Android companions surface which agents need attention. The project is MIT-licensed Electron/TypeScript with an open collaboration wire protocol.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/nimbalyst.md)

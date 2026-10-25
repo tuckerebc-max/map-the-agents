@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: NetEase
 - License: Proprietary
 - Language: unknown
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-LobsterAI is NetEase Youdao's always-on personal assistant agent, positioned for 7x24 use across general scenarios rather than software development. It installs locally with one click so that user dat
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): NetEase Youdao's 7x24 all-scenario personal assistant agent. Runs via secure local deployment, supports remote control through direct chat, and uses a dual-layer memory system for continuous growth. Supports rich Skills and is based on the 'openclaw framework ecosystem.'
+
+(captured site page body (agents/netease-youdao-lobster.md), not a verified repo-code finding)
+LobsterAI is NetEase Youdao's always-on personal assistant agent, positioned for 7x24 use across general scenarios rather than software development. It installs locally with one click so that user data stays on the machine, connects to mainstream LLM providers, and extends its capabilities through a skills system. A dual-layer memory design lets the agent accumulate context over time, and remote chat control lets the owner direct it when away from the machine. The product is aimed at Chinese consumers rather than developers, and sits within Youdao's broader education and productivity portfolio. Documentation, tutorials, and a changelog are published on the product site.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/netease-youdao-lobster.md)

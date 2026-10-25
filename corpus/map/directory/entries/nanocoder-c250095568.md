@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Nano-Collective
@@ -22,6 +22,8 @@ Repository map entry: [nano-collective/nanocoder](../../repos/nano-collective/na
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Nanocoder targets developers who want Claude Code-style terminal assistance without vendor lock-in or telemetry. It boots into one of four development modes (normal, auto-accept, yolo, plan) and combi
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source terminal agentic coding assistant; bring-your-own-model, no telemetry, skills system (commands/subagents/tools/event triggers), checkpointing, and plan/auto-accept/yolo dev modes.
+
+(captured site page body (agents/nanocoder.md), not a verified repo-code finding)
+Nanocoder targets developers who want Claude Code-style terminal assistance without vendor lock-in or telemetry. It boots into one of four development modes (normal, auto-accept, yolo, plan) and combines slash commands, a per-project daemon, checkpointing, and MCP servers configured per project. The skills system unifies commands, subagents, tools, and event triggers, and a non-interactive run mode supports scripting. Distribution is npm, Homebrew, or Nix Flakes, and the project is governed as a community collective under the Nano Collective umbrella with shared conventions across its projects.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/nanocoder.md)

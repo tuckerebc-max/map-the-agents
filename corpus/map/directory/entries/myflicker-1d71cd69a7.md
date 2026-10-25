@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: kuaishou
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-MyFlicker is Kuaishou's internal-grade coding assistant released publicly as the kwaipilot VS Code extension, covering the three interaction modes that define current AI coding tools. Its Agent Mode c
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Kuaishou intelligent coding tool with agent mode, code continuation, edit prediction
+
+(captured site page body (agents/myflicker.md), not a verified repo-code finding)
+MyFlicker is Kuaishou's internal-grade coding assistant released publicly as the kwaipilot VS Code extension, covering the three interaction modes that define current AI coding tools. Its Agent Mode carries environment awareness, autonomous decision-making, and tool calling: the agent plans multi-step work dynamically from tool results and executes repository-level, cross-file changes without per-step confirmation, with MCP tools, rules, and skills configurable to team standards. Alongside the agent, editor-native features handle the interactive layer — line- and function-level code continuation with partial acceptance, and edit prediction that anticipates the next modification site during refactoring. A skill self-evolution system adds APIs for forking, history, rollback, and recording of skills, indicating that Kuaishou treats skill assets as first-class versioned artifacts. The tool is free, published under Kuaishou's corporate publisher ID, and documented primarily through internal corporate links, suggesting its audience is Kuaishou developers and partner organizations rather than the general public.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/myflicker.md)

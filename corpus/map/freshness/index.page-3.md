@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [zhnt/loushang](../repos/zhnt/loushang.md) [coverage: partial]
-- [zhulinsen/miniagent](../repos/zhulinsen/miniagent.md) [coverage: complete]
 - [zjrosen/perles](../repos/zjrosen/perles.md) [coverage: partial]
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
@@ -26,7 +24,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (118)
+## stale (120)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -146,6 +144,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [dallay/agentsync](../repos/dallay/agentsync.md) [coverage: partial]
 - [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) [coverage: partial]
 - [danshapiro/freshell](../repos/danshapiro/freshell.md) [coverage: partial]
+- [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) [coverage: partial]
+- [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) [coverage: partial]
 
 ## refresh-failed (65)
 

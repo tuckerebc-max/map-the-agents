@@ -267,10 +267,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [danshapiro/freshell](../repos/danshapiro/freshell.md) -- status=distilled, freshness=stale
 - [dansiegel/codegenhelpers](../repos/dansiegel/codegenhelpers.md) -- status=distilled, freshness=current
 - [darrenapfel/claudecode-orchestrator](../repos/darrenapfel/claudecode-orchestrator.md) -- status=distilled, freshness=current
-- [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) -- status=distilled, freshness=current
+- [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) -- status=distilled, freshness=stale
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) -- status=distilled, freshness=current
-- [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) -- status=distilled, freshness=current
-- [datasette/datasette-agent](../repos/datasette/datasette-agent.md) -- status=discovered, freshness=pending
+- [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) -- status=distilled, freshness=stale
+- [datasette/datasette-agent](../repos/datasette/datasette-agent.md) -- status=snapshotted, freshness=pending
 - [dazuiba/handoff](../repos/dazuiba/handoff.md) -- status=distilled, freshness=current
 - [dcouple/pane](../repos/dcouple/pane.md) -- status=distilled, freshness=current
 - [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) -- status=distilled, freshness=current
