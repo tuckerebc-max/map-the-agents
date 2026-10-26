@@ -1,9 +1,9 @@
 # deadwavewave/demo2apk
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1405c4405c96 @ df9b1e3a27b62d02
+Latest snapshot: commit 1405c4405c96 @ 5eadf8d155a73889
 
 ## Summary (orientation draft, not independently verified)
 

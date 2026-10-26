@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (867)
+## current (863)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -132,10 +132,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [dansiegel/codegenhelpers](../repos/dansiegel/codegenhelpers.md) [coverage: complete]
 - [darrenapfel/claudecode-orchestrator](../repos/darrenapfel/claudecode-orchestrator.md) [coverage: complete]
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) [coverage: complete]
-- [dazuiba/handoff](../repos/dazuiba/handoff.md) [coverage: partial]
-- [dcouple/pane](../repos/dcouple/pane.md) [coverage: partial]
-- [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) [coverage: partial]
-- [decolua/9remote](../repos/decolua/9remote.md) [coverage: complete]
 - [decron/whitebox-code-gpt](../repos/decron/whitebox-code-gpt.md) [coverage: complete]
 - [deep-copilot/deepcopilot](../repos/deep-copilot/deepcopilot.md) [coverage: complete]
 - [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [manaflow-ai/cmux](../repos/manaflow-ai/cmux.md) [coverage: partial]
 - [marcusschiesser/edge-pi](../repos/marcusschiesser/edge-pi.md) [coverage: complete]
 - [markshust/hcf](../repos/markshust/hcf.md) [coverage: complete]
+- [marsz42/awel](../repos/marsz42/awel.md) [coverage: complete]
+- [martian56/lumnicode](../repos/martian56/lumnicode.md) [coverage: complete]
+- [maruakshay/miii-cli](../repos/maruakshay/miii-cli.md) [coverage: complete]
+- [mason131928/hashagent](../repos/mason131928/hashagent.md) [coverage: complete]

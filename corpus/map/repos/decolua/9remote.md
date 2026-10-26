@@ -1,9 +1,9 @@
 # decolua/9remote
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 2f5d212b1d04 @ ec56ca565012a576
+Latest snapshot: commit 29ff890d6c96 @ 64213a6d12f7c0c7
 
 ## Summary (orientation draft, not independently verified)
 

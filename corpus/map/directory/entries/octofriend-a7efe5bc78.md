@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: synthetic-lab
@@ -22,6 +22,8 @@ Repository map entry: [synthetic-lab/octofriend](../../repos/synthetic-lab/octof
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Octofriend is a terminal coding assistant built around tolerating weak or eccentric models rather than assuming a frontier provider. Two fine-tuned open-source models automatically repair the broken t
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Ships open-sourced, custom-trained autofix models (diff-apply and fix-json on Hugging Face) that repair mangled JSON tool calls and bad diffs from any coding model — plus zero telemetry and mid-conversation model switching.
+
+(captured site page body (agents/octofriend.md), not a verified repo-code finding)
+Octofriend is a terminal coding assistant built around tolerating weak or eccentric models rather than assuming a frontier provider. Two fine-tuned open-source models automatically repair the broken tool calls and malformed diffs that smaller models produce, so users can run cheaper or local models without the loop collapsing. It works with any OpenAI- or Anthropic-compatible API plus local runtimes, and models can be swapped mid-conversation when one gets stuck. Rules files, session resume, image attachments, Docker sandboxing, MCP servers, and automatic LSP integration round out the feature set. The project is MIT-licensed with a zero-telemetry privacy stance and recommends its own zero-data-retention Synthetic provider.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/octofriend.md)

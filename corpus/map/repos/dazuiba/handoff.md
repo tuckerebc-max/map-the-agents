@@ -1,9 +1,9 @@
 # dazuiba/handoff
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 717ac79e1885 @ 7e70da208eba64cc
+Latest snapshot: commit 717ac79e1885 @ 09c5caf4221e1262
 
 ## Summary (orientation draft, not independently verified)
 

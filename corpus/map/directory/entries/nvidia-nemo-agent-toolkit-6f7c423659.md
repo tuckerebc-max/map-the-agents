@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: NVIDIA
@@ -22,6 +22,8 @@ Repository map entry: [nvidia/nemo-agent-toolkit](../../repos/nvidia/nemo-agent-
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-NeMo Agent Toolkit connects teams of AI agents to data sources and tools without requiring replatforming onto NVIDIA's stack, wrapping existing frameworks rather than replacing them. Workflows are dec
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source library for connecting and optimizing teams of AI agents across any framework. Supports MCP as both client and server (FastMCP), a public Plugin API, distributed agent teams via Agent-to-Agent (A2A) Protocol with authentication, and runtime telemetry hooks. Enterprise-grade instrumentation, observability, and continuous learning.
+
+(captured site page body (agents/nvidia-nemo-agent-toolkit.md), not a verified repo-code finding)
+NeMo Agent Toolkit connects teams of AI agents to data sources and tools without requiring replatforming onto NVIDIA's stack, wrapping existing frameworks rather than replacing them. Workflows are declared in a YAML file with pre-built agent types (ReAct, ReWOO, reasoning, router, parallel/sequential executors) and run via the nat CLI. Evaluation and profiling are first-class: workflow-level tracing down to individual tools with token and timing attribution, optimizers, and trajectory formats for evaluation runs. A public plugin API covers custom LLM providers, retrievers, evaluators, memory providers, and telemetry exporters, shareable as packages. The A2A protocol support allows distributed agent teams, and observability integrates with LangSmith, Phoenix, Langfuse, and OpenTelemetry.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/nvidia-nemo-agent-toolkit.md)

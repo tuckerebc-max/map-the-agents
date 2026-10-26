@@ -271,10 +271,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) -- status=distilled, freshness=current
 - [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) -- status=distilled, freshness=stale
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md) -- status=snapshotted, freshness=pending
-- [dazuiba/handoff](../repos/dazuiba/handoff.md) -- status=distilled, freshness=current
-- [dcouple/pane](../repos/dcouple/pane.md) -- status=distilled, freshness=current
-- [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) -- status=distilled, freshness=current
-- [decolua/9remote](../repos/decolua/9remote.md) -- status=distilled, freshness=current
+- [dazuiba/handoff](../repos/dazuiba/handoff.md) -- status=distilled, freshness=stale
+- [dcouple/pane](../repos/dcouple/pane.md) -- status=distilled, freshness=refresh-failed
+- [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) -- status=distilled, freshness=stale
+- [decolua/9remote](../repos/decolua/9remote.md) -- status=distilled, freshness=stale
 - [decron/whitebox-code-gpt](../repos/decron/whitebox-code-gpt.md) -- status=distilled, freshness=current
 - [deep-copilot/deepcopilot](../repos/deep-copilot/deepcopilot.md) -- status=distilled, freshness=current
 - [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) -- status=distilled, freshness=current

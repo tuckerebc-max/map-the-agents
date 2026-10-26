@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: kommander
@@ -22,6 +22,8 @@ Repository map entry: [kommander/oc-plugin-vault-tec](../../repos/kommander/oc-p
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-oc-plugin-vault-tec is an OpenCode plugin that reskins the entire agent experience as a Fallout-themed RobCo terminal. Installation goes through OpenCode's plugin command or the in-editor palette, and
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Personality matrix plugin for OpenCode that transforms it into a Fallout-themed RobCo terminal assistant with Vault-Tec branding. Features retro terminal aesthetics (scanlines, vignette effects), custom vault-tec theme, sidebar modifications, and all 122 vault experiment dossiers. Bugs become 'containment breaches' and deploys become 'surface excursions.'
+
+(captured site page body (agents/oc-plugin-vault-tec.md), not a verified repo-code finding)
+oc-plugin-vault-tec is an OpenCode plugin that reskins the entire agent experience as a Fallout-themed RobCo terminal. Installation goes through OpenCode's plugin command or the in-editor palette, and configuration via opencode.json and tui.json controls prompt mode, theme, effects, sidebar, and tips. Beyond the personality prompt, the plugin ships a custom command set, a vault experiment dossier system, and retro CRT visual effects. It is primarily a demonstration of OpenCode's plugin surface — prompt injection plus TUI theming — packaged as an npm module. The project maintains an active repository with community stars and an npm release.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/oc-plugin-vault-tec.md)

@@ -243,31 +243,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [Niteshift (`niteshift`)](niteshift-a7dd4a797c.md) -- published+pages
 - [Nl2Iac (`nl2iac`)](nl2iac-77caaa7486.md) -- published+backing+pages
 - [Nlp-With-Llms (`nlp-with-llms`)](nlp-with-llms-8b375af843.md) -- backing+pages
-- [No Fate AI (`no-fate-ai`)](no-fate-ai-3d875a74e1.md) -- backing-only
-- [nodeterm (`nodeterm`)](nodeterm-7739ca76d0.md) -- published+backing
-- [Nora (`nora`)](nora-b21ec07eff.md) -- backing-only
-- [NotionAI (`notionai`)](notionai-d50e52b655.md) -- backing-only
-- [Nous (`nous`)](nous-60dc2d5aed.md) -- published+backing
-- [npm (`npm`)](npm-d796771886.md) -- backing-only
-- [ntm (`ntm`)](ntm-4963841fe0.md) -- published+backing
-- [Nullify (`nullify`)](nullify-6230942d6a.md) -- published+backing
-- [NVIDIA NeMo Agent Toolkit (`nvidia-nemo-agent-toolkit`)](nvidia-nemo-agent-toolkit-6f7c423659.md) -- published+backing
-- [O1_Agent_Test (`o1-agent-test`)](o1-agent-test-25e8593886.md) -- backing-only
-- [obby-dev (`obby-dev`)](obby-dev-09a0565b78.md) -- published+backing
-- [oc-plugin-vault-tec (`oc-plugin-vault-tec`)](oc-plugin-vault-tec-b0ebbaf9ee.md) -- backing-only
-- [ocode (`ocode`)](ocode-af6ae2e3d0.md) -- published+backing
-- [octo-web (`octo-web`)](octo-web-3f4c349892.md) -- published+backing
-- [Octofriend (`octofriend`)](octofriend-a7efe5bc78.md) -- published+backing
-- [ogcode (`ogcode`)](ogcode-a33a090696.md) -- published+backing
-- [oh-my-claudecode (`oh-my-claudecode`)](oh-my-claudecode-1e36aab98c.md) -- published+backing
-- [oh-my-cli (`oh-my-cli`)](oh-my-cli-99af8975ac.md) -- published+backing
-- [oh-my-cursor (`oh-my-cursor`)](oh-my-cursor-ff24e61eab.md) -- backing-only
-- [OH-MY-PI (`oh-my-pi`)](oh-my-pi-e6de263005.md) -- published+backing
-- [oi (`oi`)](oi-87f633634c.md) -- published+backing
-- [oinone-pamirs (`oinone-pamirs`)](oinone-pamirs-4809d61a87.md) -- backing-only
-- [oli (`oli`)](oli-9b532be169.md) -- published+backing
-- [OMK (`omk`)](omk-b5cfdaed23.md) -- published+backing
-- [Omnara (`omnara`)](omnara-16d1919c1c.md) -- published+backing
+- [No Fate AI (`no-fate-ai`)](no-fate-ai-3d875a74e1.md) -- backing+pages
+- [nodeterm (`nodeterm`)](nodeterm-7739ca76d0.md) -- published+backing+pages
+- [Nora (`nora`)](nora-b21ec07eff.md) -- backing+pages
+- [NotionAI (`notionai`)](notionai-d50e52b655.md) -- backing+pages
+- [Nous (`nous`)](nous-60dc2d5aed.md) -- published+backing+pages
+- [npm (`npm`)](npm-d796771886.md) -- backing+pages
+- [ntm (`ntm`)](ntm-4963841fe0.md) -- published+backing+pages
+- [Nullify (`nullify`)](nullify-6230942d6a.md) -- published+backing+pages
+- [NVIDIA NeMo Agent Toolkit (`nvidia-nemo-agent-toolkit`)](nvidia-nemo-agent-toolkit-6f7c423659.md) -- published+backing+pages
+- [O1_Agent_Test (`o1-agent-test`)](o1-agent-test-25e8593886.md) -- backing+pages
+- [obby-dev (`obby-dev`)](obby-dev-09a0565b78.md) -- published+backing+pages
+- [oc-plugin-vault-tec (`oc-plugin-vault-tec`)](oc-plugin-vault-tec-b0ebbaf9ee.md) -- backing+pages
+- [ocode (`ocode`)](ocode-af6ae2e3d0.md) -- published+backing+pages
+- [octo-web (`octo-web`)](octo-web-3f4c349892.md) -- published+backing+pages
+- [Octofriend (`octofriend`)](octofriend-a7efe5bc78.md) -- published+backing+pages
+- [ogcode (`ogcode`)](ogcode-a33a090696.md) -- published+backing+pages
+- [oh-my-claudecode (`oh-my-claudecode`)](oh-my-claudecode-1e36aab98c.md) -- published+backing+pages
+- [oh-my-cli (`oh-my-cli`)](oh-my-cli-99af8975ac.md) -- published+backing+pages
+- [oh-my-cursor (`oh-my-cursor`)](oh-my-cursor-ff24e61eab.md) -- backing+pages
+- [OH-MY-PI (`oh-my-pi`)](oh-my-pi-e6de263005.md) -- published+backing+pages
+- [oi (`oi`)](oi-87f633634c.md) -- published+backing+pages
+- [oinone-pamirs (`oinone-pamirs`)](oinone-pamirs-4809d61a87.md) -- backing+pages
+- [oli (`oli`)](oli-9b532be169.md) -- published+backing+pages
+- [OMK (`omk`)](omk-b5cfdaed23.md) -- published+backing+pages
+- [Omnara (`omnara`)](omnara-16d1919c1c.md) -- published+backing+pages
 - [OmniCode Agent (`omnicode-agent`)](omnicode-agent-47402c60f3.md) -- published+backing
 - [omnidesk (`omnidesk`)](omnidesk-7c45ecf05b.md) -- published+backing
 - [Omnigent (`omnigent`)](omnigent-ab9a1a62bc.md) -- published+backing

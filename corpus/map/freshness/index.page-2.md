@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [marsz42/awel](../repos/marsz42/awel.md) [coverage: complete]
-- [martian56/lumnicode](../repos/martian56/lumnicode.md) [coverage: complete]
-- [maruakshay/miii-cli](../repos/maruakshay/miii-cli.md) [coverage: complete]
-- [mason131928/hashagent](../repos/mason131928/hashagent.md) [coverage: complete]
 - [mastra-ai/mastra](../repos/mastra-ai/mastra.md) [coverage: partial]
 - [math-ai-org/mathcode](../repos/math-ai-org/mathcode.md) [coverage: complete]
 - [matteraiorg/orbital-extension](../repos/matteraiorg/orbital-extension.md) [coverage: complete]
@@ -439,3 +435,10 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md) [coverage: partial]
 - [zhnt/loushang](../repos/zhnt/loushang.md) [coverage: partial]
 - [zhulinsen/miniagent](../repos/zhulinsen/miniagent.md) [coverage: complete]
+- [zjrosen/perles](../repos/zjrosen/perles.md) [coverage: partial]
+- [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
+- [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
+
+## pending (15)
+
+- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)

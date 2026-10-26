@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Nora
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Nora targets consumer device companies shipping agentic experiences in hardware such as wearables, AI companions, health devices, and smart toys, where raw LLM output cannot be tolerated in a shipped
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Harness/control layer for AI consumer devices (wearables, companions, health devices, smart toys, edge AI). Turns AI output into structured product behavior and manages reliability/operations across device fleets - state, edge cases, failure recovery, fleet-wide behavior updates/rollbacks. Early access / design partners only.
+
+(captured site page body (agents/nora.md), not a verified repo-code finding)
+Nora targets consumer device companies shipping agentic experiences in hardware such as wearables, AI companions, health devices, and smart toys, where raw LLM output cannot be tolerated in a shipped product. The layer sits between the model and the product stack, converting AI output into structured device behavior while managing state, failure recovery, and edge cases. Operations tooling covers rolling out and rolling back agent behavior across deployed device fleets. The company is early stage and works through selected design partners rather than a self-serve product.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/nora.md)

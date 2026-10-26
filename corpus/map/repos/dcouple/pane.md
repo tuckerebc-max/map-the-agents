@@ -1,9 +1,10 @@
 # dcouple/pane
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit df04c767aa66 @ 8a95ecdbaaeaa09d
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/dcouple/pane
 
 ## Summary (orientation draft, not independently verified)
 

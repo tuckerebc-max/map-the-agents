@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Yeachan-Heo
@@ -22,6 +22,8 @@ Repository map entry: [yeachan-heo/oh-my-claudecode](../../repos/yeachan-heo/oh-
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-oh-my-claudecode extends Claude Code with a teams-first orchestration layer: a staged pipeline (plan, PRD, execute, verify, fix) using Claude Code's native agent teams, with autopilot and persistent v
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Teams-first multi-agent orchestration for Claude Code with zero learning curve, offering multiple orchestration modes (Team, Autopilot, Ralph, Ultrawork, UltraQA, Pipeline), smart model routing for cost savings, and cross-provider orchestration via tmux CLI workers.
+
+(captured site page body (agents/oh-my-claudecode.md), not a verified repo-code finding)
+oh-my-claudecode extends Claude Code with a teams-first orchestration layer: a staged pipeline (plan, PRD, execute, verify, fix) using Claude Code's native agent teams, with autopilot and persistent verify-fix loops for autonomous runs. As a plugin plus companion CLI it also spawns tmux worker panes running Codex, Gemini, Antigravity, Grok, or Cursor CLIs, letting one model review another's output. Smart model routing downgrades cheap tasks to smaller models for token savings, and a skill-learning system extracts reusable procedures into project files. Natural-language shortcuts and zero-config defaults target users who do not want to study Claude Code's internals. Installation is via the Claude Code plugin marketplace or npm, with tmux required for team features.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/oh-my-claudecode.md)

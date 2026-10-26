@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: omnara-ai
@@ -22,6 +22,8 @@ Repository map entry: [omnara-ai/omnara](../../repos/omnara-ai/omnara.md) (sourc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Omnara provides the execution and state layer for agents that teams define themselves, separating infrastructure from model choice, tooling, and user interface. Agent state commits atomically to Postg
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Positions itself as the API for production-grade agents — durable agent state committed atomically to Postgres with auto-recovery, hot-add/remove machines mid-run, and direct SQL access to agent state for analytics when self-hosted.
+
+(captured site page body (agents/omnara.md), not a verified repo-code finding)
+Omnara provides the execution and state layer for agents that teams define themselves, separating infrastructure from model choice, tooling, and user interface. Agent state commits atomically to Postgres so runs survive crashes and disconnects, and machines — cloud sandboxes or the operator's own hardware — can join or leave a run without restarts. Tools come from built-ins, custom code, skills, or MCP servers, and access control uses organization and project roles. Teams interact through a dashboard, a Slack connector, or the REST/TypeScript API rather than a chat product. The Apache-2.0 codebase self-hosts via Docker Compose, with a hosted cloud offering alongside it.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/omnara.md)

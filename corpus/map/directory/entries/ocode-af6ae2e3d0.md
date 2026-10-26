@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: haasonsaas
@@ -22,6 +22,8 @@ Repository map entry: [haasonsaas/ocode](../../repos/haasonsaas/ocode.md) (sourc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-ocode is a terminal-native coding assistant that streams from a local Ollama instance, requiring no API keys or cloud proxies. It ships nineteen specialized tools covering file operations, grep and di
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-native AI coding assistant powered by local Ollama models; 19+ specialized tools; full MCP server support (resources, tools, prompts); agent tool delegates complex tasks to specialized agents; fully offline and self-hosted
+
+(captured site page body (agents/ocode.md), not a verified repo-code finding)
+ocode is a terminal-native coding assistant that streams from a local Ollama instance, requiring no API keys or cloud proxies. It ships nineteen specialized tools covering file operations, grep and diff, git, shell execution, Jupyter notebooks, and architecture analysis, with a smart tool-selection layer that detects multi-action requests. An agent tool delegates complex tasks to specialized subagents for multi-step work. Full MCP support lets it expose resources, tools, and prompts as a server as well as consume them. The permission system is whitelist-first with sandboxed shell execution and blocked paths by default, reflecting a security-first posture rare in solo hobby agents.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ocode.md)

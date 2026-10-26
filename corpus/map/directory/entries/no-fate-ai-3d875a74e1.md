@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: No Fate AI
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-No Fate AI cannot be researched as a product. The domain no longer resolves, and the only archived snapshot of the website — from March 2024 — displays the default Next.js starter page with no product
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Nothing could be verified: the domain nofateai.com no longer resolves, and the only Wayback Machine capture (March 2024) shows an unmodified Next.js starter template with no product content.
+
+(captured site page body (agents/no-fate-ai.md), not a verified repo-code finding)
+No Fate AI cannot be researched as a product. The domain no longer resolves, and the only archived snapshot of the website — from March 2024 — displays the default Next.js starter page with no product description, features, or pricing. Whatever the project intended to become, its public web presence never went beyond a placeholder template. It is retained in the census as a dead entry.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/no-fate-ai.md)

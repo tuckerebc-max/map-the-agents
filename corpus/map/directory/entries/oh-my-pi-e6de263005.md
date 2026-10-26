@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: can1357
@@ -22,6 +22,8 @@ Repository map entry: [can1357/oh-my-pi](../../repos/can1357/oh-my-pi.md) (sourc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-oh-my-pi is a fork of Mario Zechner's Pi rewritten as a coding-first agent with IDE-grade plumbing wired into a terminal interface. About 80,000 lines of Rust implement grep, shell, AST editing, and P
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Coding agent with the IDE wired in. Features 31 built-in tools including LSP-integrated edits, real debugger driving (lldb/dlv/debugpy), persistent Python/JS execution cells, in-process shell, browser and desktop control, 23 web search backends, GitHub as filesystem, memory/learning, code review with verdicts, hash-anchored edits, AST-based edits, collaboration sessions, and time-traveling stream rules for hooks.
+
+(captured site page body (agents/oh-my-pi.md), not a verified repo-code finding)
+oh-my-pi is a fork of Mario Zechner's Pi rewritten as a coding-first agent with IDE-grade plumbing wired into a terminal interface. About 80,000 lines of Rust implement grep, shell, AST editing, and PTY handling in-process, eliminating fork/exec from the hot path. Every file write passes through LSP validation, and a debugger drives lldb, delve, and debugpy over DAP. A task tool fans out workspace-isolated subagents returning schema-validated results, and regex-triggered stream rules abort and retry mid-token for course correction. It inherits MCP servers, rules, and skills already on disk from eight other agent formats, so switching tools requires no migration. Ten model routing roles plus fallback chains cover sixty-plus providers.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/oh-my-pi.md)

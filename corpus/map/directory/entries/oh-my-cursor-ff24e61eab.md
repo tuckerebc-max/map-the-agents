@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: tmcfarlane
 - License: MIT
 - Language: Markdown config, shell scripts
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [tmcfarlane/oh-my-cursor](../../repos/tmcfarlane/oh-my-cursor.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-oh-my-cursor turns Cursor's native subagent system into a themed eight-agent team using only Markdown configuration files, hooks, and slash commands — no plugin system or external runtime. Each specia
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Avatar: The Last Airbender-themed 8-agent team; pure Markdown config with zero runtime/CLI wrapper; per-agent model routing; hooks that deterministically block destructive commands and bad commits; Cactus Juice swarm mode (up to 10 parallel workers); cross-tool support (Cursor/Claude Code/Codex)
+
+(captured site page body (agents/oh-my-cursor.md), not a verified repo-code finding)
+oh-my-cursor turns Cursor's native subagent system into a themed eight-agent team using only Markdown configuration files, hooks, and slash commands — no plugin system or external runtime. Each specialist agent routes to a specific model chosen for its role, such as a multimodal model for image generation work. An orchestrator rule keeps the root thread dispatching while specialists execute, and cactus-juice swarm mode spawns up to ten parallel workers. Hooks deterministically block destructive shell commands and low-quality commits, while a permissions policy reduces approval prompts. The same files can also install for Claude Code and Codex, and a validation culture with per-build model-slug verification guards against Cursor's silent model downgrade behavior.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/oh-my-cursor.md)

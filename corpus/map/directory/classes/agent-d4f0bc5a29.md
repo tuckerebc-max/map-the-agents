@@ -377,7 +377,6 @@
 - [octofriend](../entries/octofriend-a7efe5bc78.md)
 - [ogcode](../entries/ogcode-a33a090696.md)
 - [oh-my-cli](../entries/oh-my-cli-99af8975ac.md)
-- [oh-my-cursor](../entries/oh-my-cursor-ff24e61eab.md)
 - [oh-my-pi](../entries/oh-my-pi-e6de263005.md)
 - [oi](../entries/oi-87f633634c.md)
 - [oli](../entries/oli-9b532be169.md)

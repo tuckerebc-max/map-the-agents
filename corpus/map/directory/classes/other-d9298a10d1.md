@@ -365,6 +365,7 @@
 - [npm](../entries/npm-d796771886.md)
 - [o1-agent-test](../entries/o1-agent-test-25e8593886.md)
 - [oc-plugin-vault-tec](../entries/oc-plugin-vault-tec-b0ebbaf9ee.md)
+- [oh-my-cursor](../entries/oh-my-cursor-ff24e61eab.md)
 - [oinone-pamirs](../entries/oinone-pamirs-4809d61a87.md)
 - [onui](../entries/onui-b4165ee6d9.md)
 - [open-agent-hub](../entries/open-agent-hub-d5dbae09e7.md)

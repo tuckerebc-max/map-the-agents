@@ -2,13 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [zjrosen/perles](../repos/zjrosen/perles.md) [coverage: partial]
-- [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
-- [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
-
-## pending (15)
-
-- [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
@@ -24,7 +17,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (120)
+## stale (123)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -146,8 +139,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [danshapiro/freshell](../repos/danshapiro/freshell.md) [coverage: partial]
 - [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) [coverage: partial]
 - [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) [coverage: partial]
+- [dazuiba/handoff](../repos/dazuiba/handoff.md) [coverage: partial]
+- [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) [coverage: partial]
+- [decolua/9remote](../repos/decolua/9remote.md) [coverage: complete]
 
-## refresh-failed (65)
+## refresh-failed (66)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -168,6 +164,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [coder/mux](../repos/coder/mux.md) -- FetchFailed
 - [codium-ai/pr-agent](../repos/codium-ai/pr-agent.md) -- FetchFailed
 - [continous-ai/continous](../repos/continous-ai/continous.md) -- FetchFailed
+- [dcouple/pane](../repos/dcouple/pane.md) -- FetchFailed [coverage: partial]
 - [deepseek-tui/deepseek-tui](../repos/deepseek-tui/deepseek-tui.md) -- FetchFailed
 - [dmae97/open-multi-agent-kit](../repos/dmae97/open-multi-agent-kit.md) -- FetchFailed
 - [dnouri/pi-coding-agent](../repos/dnouri/pi-coding-agent.md) -- FetchFailed
