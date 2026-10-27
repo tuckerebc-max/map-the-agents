@@ -268,31 +268,31 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [oli (`oli`)](oli-9b532be169.md) -- published+backing+pages
 - [OMK (`omk`)](omk-b5cfdaed23.md) -- published+backing+pages
 - [Omnara (`omnara`)](omnara-16d1919c1c.md) -- published+backing+pages
-- [OmniCode Agent (`omnicode-agent`)](omnicode-agent-47402c60f3.md) -- published+backing
-- [omnidesk (`omnidesk`)](omnidesk-7c45ecf05b.md) -- published+backing
-- [Omnigent (`omnigent`)](omnigent-ab9a1a62bc.md) -- published+backing
-- [OmniPilot - Bring Your Own Model (`omnipilot-bring-your-own-model`)](omnipilot-bring-your-own-model-2fcac40703.md) -- published+backing
-- [Ona (`ona`)](ona-b87e811a94.md) -- published+backing
-- [OneCLI (`onecli`)](onecli-ac2784de4d.md) -- published+backing
-- [onUI (`onui`)](onui-b4165ee6d9.md) -- backing-only
-- [Onuro - AI Code Assistant (`onuro-ai-code-assistant`)](onuro-ai-code-assistant-5ca8cc4f16.md) -- published+backing
-- [opcode (`opcode`)](opcode-5c14f71237.md) -- published+backing
-- [open-agent-hub (`open-agent-hub`)](open-agent-hub-d5dbae09e7.md) -- backing-only
-- [open-aware (`open-aware`)](open-aware-f71b0c6edb.md) -- backing-only
-- [Open Codex (`open-codex`)](open-codex-15b838a29a.md) -- published+backing
-- [Open Interpreter (`open-interpreter`)](open-interpreter-779e4edd86.md) -- published+backing
-- [open-multi-agent (`open-multi-agent`)](open-multi-agent-9ce9b25bd8.md) -- published+backing
-- [open-spdd (`open-spdd`)](open-spdd-57acaf25d4.md) -- backing-only
-- [Open SWE (`open-swe`)](open-swe-ba7e188349.md) -- published+backing
-- [Open-Webui-Tools (`open-webui-tools`)](open-webui-tools-a8ba6a985b.md) -- backing-only
-- [openagent (`openagent`)](openagent-ac56ac1145.md) -- published+backing
-- [OpenAlpha_Evolve (`openalpha-evolve`)](openalpha-evolve-ff34fe31ad.md) -- published+backing
-- [OpenBlock Agent (OB-1) (`openblock-agent-ob-1`)](openblock-agent-ob-1-6003d41df4.md) -- backing-only
-- [OpenCastle (`opencastle`)](opencastle-c47d0db380.md) -- backing-only
-- [OpenChamber (`openchamber`)](openchamber-d926af35e9.md) -- published+backing
-- [openclaw-code-agent (`openclaw-code-agent`)](openclaw-code-agent-3923cac69c.md) -- published+backing
-- [OpenCode (`opencode`)](opencode-62f8e1ec09.md) -- published+backing
-- [opencode-android (`opencode-android`)](opencode-android-a9e449ec55.md) -- backing-only
+- [OmniCode Agent (`omnicode-agent`)](omnicode-agent-47402c60f3.md) -- published+backing+pages
+- [omnidesk (`omnidesk`)](omnidesk-7c45ecf05b.md) -- published+backing+pages
+- [Omnigent (`omnigent`)](omnigent-ab9a1a62bc.md) -- published+backing+pages
+- [OmniPilot - Bring Your Own Model (`omnipilot-bring-your-own-model`)](omnipilot-bring-your-own-model-2fcac40703.md) -- published+backing+pages
+- [Ona (`ona`)](ona-b87e811a94.md) -- published+backing+pages
+- [OneCLI (`onecli`)](onecli-ac2784de4d.md) -- published+backing+pages
+- [onUI (`onui`)](onui-b4165ee6d9.md) -- backing+pages
+- [Onuro - AI Code Assistant (`onuro-ai-code-assistant`)](onuro-ai-code-assistant-5ca8cc4f16.md) -- published+backing+pages
+- [opcode (`opcode`)](opcode-5c14f71237.md) -- published+backing+pages
+- [open-agent-hub (`open-agent-hub`)](open-agent-hub-d5dbae09e7.md) -- backing+pages
+- [open-aware (`open-aware`)](open-aware-f71b0c6edb.md) -- backing+pages
+- [Open Codex (`open-codex`)](open-codex-15b838a29a.md) -- published+backing+pages
+- [Open Interpreter (`open-interpreter`)](open-interpreter-779e4edd86.md) -- published+backing+pages
+- [open-multi-agent (`open-multi-agent`)](open-multi-agent-9ce9b25bd8.md) -- published+backing+pages
+- [open-spdd (`open-spdd`)](open-spdd-57acaf25d4.md) -- backing+pages
+- [Open SWE (`open-swe`)](open-swe-ba7e188349.md) -- published+backing+pages
+- [Open-Webui-Tools (`open-webui-tools`)](open-webui-tools-a8ba6a985b.md) -- backing+pages
+- [openagent (`openagent`)](openagent-ac56ac1145.md) -- published+backing+pages
+- [OpenAlpha_Evolve (`openalpha-evolve`)](openalpha-evolve-ff34fe31ad.md) -- published+backing+pages
+- [OpenBlock Agent (OB-1) (`openblock-agent-ob-1`)](openblock-agent-ob-1-6003d41df4.md) -- backing+pages
+- [OpenCastle (`opencastle`)](opencastle-c47d0db380.md) -- backing+pages
+- [OpenChamber (`openchamber`)](openchamber-d926af35e9.md) -- published+backing+pages
+- [openclaw-code-agent (`openclaw-code-agent`)](openclaw-code-agent-3923cac69c.md) -- published+backing+pages
+- [OpenCode (`opencode`)](opencode-62f8e1ec09.md) -- published+backing+pages
+- [opencode-android (`opencode-android`)](opencode-android-a9e449ec55.md) -- backing+pages
 - [opencode-orchestrator (`opencode-orchestrator`)](opencode-orchestrator-3718d01eb0.md) -- backing-only
 - [opencode-plusplus (`opencode-plusplus`)](opencode-plusplus-b135259cb5.md) -- backing-only
 - [opencode-swarm (`opencode-swarm`)](opencode-swarm-7fffa3faac.md) -- backing-only

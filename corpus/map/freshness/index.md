@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (863)
+## current (862)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -134,7 +134,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) [coverage: complete]
 - [decron/whitebox-code-gpt](../repos/decron/whitebox-code-gpt.md) [coverage: complete]
 - [deep-copilot/deepcopilot](../repos/deep-copilot/deepcopilot.md) [coverage: complete]
-- [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) [coverage: partial]
 - [deepseek-ai/deepseek-coder](../repos/deepseek-ai/deepseek-coder.md) [coverage: complete]
 - [denchhq/denchclaw](../repos/denchhq/denchclaw.md) [coverage: complete]
 - [devcorexofficial/core-termux](../repos/devcorexofficial/core-termux.md) [coverage: complete]
@@ -437,3 +436,4 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [martian56/lumnicode](../repos/martian56/lumnicode.md) [coverage: complete]
 - [maruakshay/miii-cli](../repos/maruakshay/miii-cli.md) [coverage: complete]
 - [mason131928/hashagent](../repos/mason131928/hashagent.md) [coverage: complete]
+- [mastra-ai/mastra](../repos/mastra-ai/mastra.md) [coverage: partial]

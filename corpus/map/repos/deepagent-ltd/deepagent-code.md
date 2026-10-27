@@ -1,9 +1,9 @@
 # deepagent-ltd/deepagent-code
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 57be03002bc4 @ 0b8d0383da0604bb
+Latest snapshot: commit 87403bac1d42 @ b2d84fa3e47df110
 
 ## Summary (orientation draft, not independently verified)
 

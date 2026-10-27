@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: mulkymalikuldhrs
@@ -22,6 +22,8 @@ Repository map entry: [mulkymalikuldhrs/opencode-android](../../repos/mulkymalik
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The OpenCode agent lives in a desktop terminal, which leaves its sessions unreachable from a phone. This Kotlin app (Jetpack Compose, Material Design 3, MVVM) connects to a running OpenCode server and
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Native Android client for the OpenCode AI coding agent — combines SSE streaming AI chat, remote terminal (WebSocket), code editor with syntax highlighting, and file manager in a Material Design 3 dark theme. Thin-client architecture where all heavy lifting runs on the OpenCode server.
+
+(captured site page body (agents/opencode-android.md), not a verified repo-code finding)
+The OpenCode agent lives in a desktop terminal, which leaves its sessions unreachable from a phone. This Kotlin app (Jetpack Compose, Material Design 3, MVVM) connects to a running OpenCode server and mirrors it on Android: SSE-streaming AI chat, a WebSocket terminal that executes on the server machine, a code editor with syntax highlighting, and a file manager, all in a dark Material 3 interface. The README is explicit about the architecture's limits — nothing works offline, the phone manages no API keys, terminal commands execute on the server host, and security hardening (certificate pinning, encrypted preferences) is only partially implemented. APKs ship via GitHub Releases for Android 7.0+, and a Termux guide documents running the server on-device. It is a small early-stage project (27 stars, 70 commits) marked for education and research use. Developers running OpenCode who want to monitor and steer sessions from Android are the audience.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/opencode-android.md)

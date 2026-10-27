@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: codingmoh
@@ -22,6 +22,8 @@ Repository map entry: [codingmoh/open-codex](../../repos/codingmoh/open-codex.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Most terminal coding assistants require cloud API keys, which blocks offline use and raises cost concerns for simple tasks. Open Codex takes the opposite position: a lightweight Python CLI inspired by
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Runs 100% locally with no OpenAI API key, translating natural language into shell commands via small local models or Ollama, and executes nothing without explicit per-command user confirmation.
+
+(captured site page body (agents/open-codex.md), not a verified repo-code finding)
+Most terminal coding assistants require cloud API keys, which blocks offline use and raises cost concerns for simple tasks. Open Codex takes the opposite position: a lightweight Python CLI inspired by OpenAI Codex that converts natural-language requests into shell commands using local models or an Ollama backend such as llama3 or mistral on localhost:11434. The interaction is deliberately one-shot — prompt, suggested command, then confirm, copy, or abort — with execution gated behind explicit user approval, so nothing runs without consent. It installs via Homebrew, pipx, or Debian packaging and runs on macOS, Linux, and Windows. The project is early-stage (36 commits, 696 stars), with interactive chat, TUI, function calling, and a plugin system listed as unimplemented future plans. It fits users who want an offline, zero-API-cost natural-language shell helper rather than a full agentic harness.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/open-codex.md)

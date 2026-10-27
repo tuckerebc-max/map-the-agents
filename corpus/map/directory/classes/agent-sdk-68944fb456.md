@@ -34,6 +34,7 @@
 - [microsoft-magentic-one](../entries/microsoft-magentic-one-43060cfc6a.md)
 - [mux-rs](../entries/mux-rs-0bddeb48ea.md)
 - [nvidia-nemo-agent-toolkit](../entries/nvidia-nemo-agent-toolkit-6f7c423659.md)
+- [open-multi-agent](../entries/open-multi-agent-9ce9b25bd8.md)
 - [par](../entries/par-c9d9d2c4be.md)
 - [praisonai](../entries/praisonai-78c3e2d673.md)
 - [strands-agents-sdk](../entries/strands-agents-sdk-2be3ceb5d1.md)

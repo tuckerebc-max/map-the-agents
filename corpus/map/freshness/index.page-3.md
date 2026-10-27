@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
-- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
@@ -17,7 +15,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (123)
+## stale (124)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -142,6 +140,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [dazuiba/handoff](../repos/dazuiba/handoff.md) [coverage: partial]
 - [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) [coverage: partial]
 - [decolua/9remote](../repos/decolua/9remote.md) [coverage: complete]
+- [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) [coverage: partial]
 
 ## refresh-failed (66)
 

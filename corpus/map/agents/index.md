@@ -277,7 +277,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [decolua/9remote](../repos/decolua/9remote.md) -- status=distilled, freshness=stale
 - [decron/whitebox-code-gpt](../repos/decron/whitebox-code-gpt.md) -- status=distilled, freshness=current
 - [deep-copilot/deepcopilot](../repos/deep-copilot/deepcopilot.md) -- status=distilled, freshness=current
-- [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) -- status=distilled, freshness=current
+- [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) -- status=distilled, freshness=stale
 - [deepseek-ai/deepseek-coder](../repos/deepseek-ai/deepseek-coder.md) -- status=distilled, freshness=current
 - [deepseek-tui/deepseek-tui](../repos/deepseek-tui/deepseek-tui.md) -- status=blocked, freshness=refresh-failed
 - [denchhq/denchclaw](../repos/denchhq/denchclaw.md) -- status=distilled, freshness=current
