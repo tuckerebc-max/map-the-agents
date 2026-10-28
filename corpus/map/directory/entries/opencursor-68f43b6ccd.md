@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: PawanOsman
@@ -22,6 +22,8 @@ Repository map entry: [pawanosman/opencursor](../../repos/pawanosman/opencursor.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Cursor-class assistants assume cloud APIs and per-token billing, which excludes air-gapped machines, sensitive codebases, and users avoiding subscription lock-in. OpenCursor takes the Cursor experienc
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first / offline capable (built-in llama.cpp, Ollama, on-device ONNX MiniLM embeddings for semantic search), no cloud required; per-hunk inline review CodeLenses without git; OAuth subscription reuse for Claude Code, OpenAI Codex, Google Antigravity; 25 tools; 11 lifecycle hooks (Cursor/Claude-Code compatible); risk-heuristic approval policies.
+
+(captured site page body (agents/opencursor.md), not a verified repo-code finding)
+Cursor-class assistants assume cloud APIs and per-token billing, which excludes air-gapped machines, sensitive codebases, and users avoiding subscription lock-in. OpenCursor takes the Cursor experience into a VS Code extension with a 25-tool agentic loop — workspace reading, file editing, command execution, semantic search — and makes the offline path first-class: it spawns and manages a llama.cpp server for GGUF models pulled from Hugging Face, supports Ollama, and computes semantic-search embeddings on-device with ONNX MiniLM, so it works in airplane mode. When cloud models are wanted, OAuth sign-in reuses Claude Code, OpenAI Codex, or Google Antigravity subscriptions instead of API keys, alongside standard OpenAI/Anthropic/Gemini/OpenRouter keys and MCP, hooks, and subagents across Agent/Ask/Plan/Debug/Multitask modes. It installs from the VS Code Marketplace under MIT. Developers who want a Cursor-style agent under their own hardware and terms are the audience.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/opencursor.md)

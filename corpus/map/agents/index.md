@@ -282,7 +282,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [deepseek-tui/deepseek-tui](../repos/deepseek-tui/deepseek-tui.md) -- status=blocked, freshness=refresh-failed
 - [denchhq/denchclaw](../repos/denchhq/denchclaw.md) -- status=distilled, freshness=current
 - [devcorexofficial/core-termux](../repos/devcorexofficial/core-termux.md) -- status=distilled, freshness=current
-- [devdanzin/fusil](../repos/devdanzin/fusil.md) -- status=distilled, freshness=current
+- [devdanzin/fusil](../repos/devdanzin/fusil.md) -- status=distilled, freshness=stale
 - [developersdigest/llm-answer-engine](../repos/developersdigest/llm-answer-engine.md) -- status=distilled, freshness=current
 - [devill/refakts](../repos/devill/refakts.md) -- status=distilled, freshness=current
 - [dharllc/speech-to-code](../repos/dharllc/speech-to-code.md) -- status=distilled, freshness=current

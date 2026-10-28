@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
-- [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
 - [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
@@ -15,7 +13,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (124)
+## stale (125)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -141,6 +139,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) [coverage: partial]
 - [decolua/9remote](../repos/decolua/9remote.md) [coverage: complete]
 - [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) [coverage: partial]
+- [devdanzin/fusil](../repos/devdanzin/fusil.md) [coverage: partial]
 
 ## refresh-failed (66)
 

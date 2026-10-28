@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [math-ai-org/mathcode](../repos/math-ai-org/mathcode.md) [coverage: complete]
 - [matteraiorg/orbital-extension](../repos/matteraiorg/orbital-extension.md) [coverage: complete]
 - [matthewzmd/aidermacs](../repos/matthewzmd/aidermacs.md) [coverage: complete]
 - [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md) [coverage: partial]
@@ -443,3 +442,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
+- [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
+- [gi-dellav/multistack](../repos/gi-dellav/multistack.md)

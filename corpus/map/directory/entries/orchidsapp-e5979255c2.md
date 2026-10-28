@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Orchids
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Orchids was an AI project-building tool that generated web applications and wired them to managed infrastructure: Vercel handled deployments and Supabase managed databases, while an Orchids Desktop ap
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Project-building tool that created projects with Vercel deployments and Supabase-managed databases, with a desktop version for local storage. Sunset on July 18 — the team joined Figma on July 7. Users could still download/claim their projects at time of verification.
+
+(captured site page body (agents/orchidsapp.md), not a verified repo-code finding)
+Orchids was an AI project-building tool that generated web applications and wired them to managed infrastructure: Vercel handled deployments and Supabase managed databases, while an Orchids Desktop application kept projects stored locally. The product ended on two dates — the team announced its move to Figma on July 7, and Orchids sunset on July 18. The site now serves only a migration page offering three exit paths: download any project as a ZIP archive, claim deployed projects into the user's own Vercel account, or transfer managed Supabase databases into the user's own Supabase organization. Desktop users already hold projects locally, typically under an orchids-projects folder, and support inquiries route to hello@orchids.app. No new development, generation, or sign-ups remain, so the census records a product absorbed into Figma with its end-user tooling discontinued.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/orchidsapp.md)

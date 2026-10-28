@@ -160,6 +160,7 @@
 - [onecli](../entries/onecli-ac2784de4d.md)
 - [opcode](../entries/opcode-5c14f71237.md)
 - [openclaw-code-agent](../entries/openclaw-code-agent-3923cac69c.md)
+- [opengiraffe](../entries/opengiraffe-5d54d05014.md)
 - [openhands](../entries/openhands-ead627e2b1.md)
 - [orca](../entries/orca-e0c924608f.md)
 - [orch](../entries/orch-0c09a48c4a.md)

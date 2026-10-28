@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: LaiZhou
@@ -22,6 +22,8 @@ Repository map entry: [laizhou/opencode_ui](../../repos/laizhou/opencode_ui.md) 
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-OpenCode runs in a terminal, which leaves JetBrains users copying file paths by hand and reviewing agent changes in raw git diffs. This Kotlin plugin bridges the gap: Quick Launch attaches to a runnin
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): JetBrains IDE plugin integrating OpenCode AI coding agent. Native diff viewer with chronological navigation, smart file path links in terminal, automatic session persistence, and seamless context sharing from editor/project view directly to AI terminal.
+
+(captured site page body (agents/opencode-ui.md), not a verified repo-code finding)
+OpenCode runs in a terminal, which leaves JetBrains users copying file paths by hand and reviewing agent changes in raw git diffs. This Kotlin plugin bridges the gap: Quick Launch attaches to a running OpenCode server (with optional password) or spawns a local terminal via Cmd+Esc, and Add to Terminal sends the current file or selection as context with Opt+Cmd+K. Diff review uses the IDE's native viewer with accept/reject actions that stage through git add, agent output renders file paths as clickable links, and sessions auto-resume with notifications when tasks complete. It installs from the JetBrains Marketplace, requires the opencode-ai CLI alongside, and works across IntelliJ IDEA, WebStorm, and PyCharm on 2025.2+. Its README candidly notes it lacks diagnostic sharing compared to Claude Code's plugin, since OpenCode relies on built-in LSP. JetBrains users who adopted OpenCode and want it embedded in their IDE are the audience.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/opencode-ui.md)

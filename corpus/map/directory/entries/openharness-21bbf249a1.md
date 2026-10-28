@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: zhijiewong
@@ -22,6 +22,8 @@ Repository map entry: [zhijiewong/openharness](../../repos/zhijiewong/openharnes
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Claude Code's terminal workflow is compelling but locks users to Anthropic models and accounts, and local-model users have no equivalent harness. OpenHarness reimplements that surface as a Node CLI ca
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Works with ANY LLM via Ollama local models or cloud APIs (not locked to one provider); ~95% feature parity with Claude Code for CLI use; 44 tools and 80+ slash commands; auto git-commits every edit, reversible via /undo and /rewind; 27 hook event types configurable via .oh/config.yaml; full MCP server support (stdio + HTTP/SSE, OAuth 2.1); 11 specialized sub-agent roles; ...
+
+(captured site page body (agents/openharness.md), not a verified repo-code finding)
+Claude Code's terminal workflow is compelling but locks users to Anthropic models and accounts, and local-model users have no equivalent harness. OpenHarness reimplements that surface as a Node CLI called oh: 44 built-in tools, 80-plus slash commands, MCP server support, 27 hook events, permission modes, checkpoints with rewind, sub-agents, and a headless mode for CI/CD with a --max-budget-usd cost cap. Providers include Ollama (auto-detected, no key needed), OpenAI, Anthropic, OpenRouter, llama.cpp/GGUF, and LM Studio, so the same harness runs free on local models or BYOK in the cloud. Distribution covers npm plus official Python and TypeScript SDKs and a VS Code extension, and the repo publishes SWE-bench-Lite evaluations alongside its benchmarks. The project is small (96 stars) but actively developed with 1,502 passing tests. Developers who want the Claude Code interaction model on their own provider mix — especially local models — are the audience.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/openharness.md)

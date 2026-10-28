@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: StartupHakk
@@ -22,6 +22,8 @@ Repository map entry: [startuphakk/openmonoagent.ai](../../repos/startuphakk/ope
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Local-first coding agents usually stop at supporting whatever inference server the user happens to run, leaving setup as the user's problem. OpenMono bundles the whole stack: a .NET 10 CLI paired with
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): 100% local-first coding agent bundled with llama.cpp in Docker; zero per-token cost, zero data egress. Auto-detects hardware (NVIDIA/CPU/Apple Silicon), supports distributed inference (agent on laptop, inference on remote GPU box), 20 built-in tools with 12-step pipeline, Docker sandboxing, Roslyn + LSP deep code intelligence, self-hosted SearXNG private web search, vision support, and a VS Code/Cursor extension. Philosophy: 'AI as infrastructure ...
+
+(captured site page body (agents/openmonoagentai.md), not a verified repo-code finding)
+Local-first coding agents usually stop at supporting whatever inference server the user happens to run, leaving setup as the user's problem. OpenMono bundles the whole stack: a .NET 10 CLI paired with a llama.cpp server in Docker that auto-detects NVIDIA GPUs, Apple Silicon, or plain CPU and ships Qwen model defaults tuned per backend, so one install script yields a working agent with no API keys and no network egress. Around the core it layers 20 built-in tools, five sub-agents, Docker-sandboxed execution, and Roslyn-powered code intelligence, with OpenAI/Anthropic/Ollama providers marked work-in-progress. A free relay at app.openmonoagent.ai enables distributed inference — the agent on a laptop, compute elsewhere — and iOS, Android, and VS Code/Cursor clients exist alongside the CLI. The project is a public beta under AGPL-3.0 with hardware demands (64 GB RAM recommended on Apple Silicon, 24 GB NVIDIA on Linux). Privacy-sensitive developers and offline environments are the audience.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/openmonoagentai.md)

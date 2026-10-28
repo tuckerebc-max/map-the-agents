@@ -1,9 +1,9 @@
 # devdanzin/fusil
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a7aa4e94bd84 @ fe73214caf262697
+Latest snapshot: commit a7aa4e94bd84 @ 7af19e6fab9e5ee4
 
 ## Summary (orientation draft, not independently verified)
 
