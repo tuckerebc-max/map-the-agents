@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: Piotr1215
 - License: MIT
 - Language: Lua
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [piotr1215/pairup.nvim](../../repos/piotr1215/pairup.nvim.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Chat-panel AI plugins force a copy-paste loop between conversation and buffer, and the file under edit never contains the instruction that motivated the change. pairup.nvim embeds the instructions in
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Inline AI pair programming Neovim plugin using cc: markers in code that Claude edits directly; supports plan markers (ccp:) with CURRENT/PROPOSED conflict review and a peripheral Claude mode running a second autonomous instance in a sibling git worktree.
+
+(captured site page body (agents/pairupnvim.md), not a verified repo-code finding)
+Chat-panel AI plugins force a copy-paste loop between conversation and buffer, and the file under edit never contains the instruction that motivated the change. pairup.nvim embeds the instructions in the code itself: developers write cc: markers (or apply gC{motion} operators), save, and the Claude Code CLI edits the file in place and removes the marker. Variants extend the pattern — cc!: extracts a durable rule into CLAUDE.md as it edits, ccp: wraps proposed changes in CURRENT/PROPOSED conflict markers so acceptance is a deliberate merge rather than an overwrite, and uu: surfaces Claude's clarifying questions inline. A 'peripheral Claude' mode runs a second autonomous instance in a sibling git worktree that implements spec-file changes in parallel, with statusline todo tracking and proposal diff views keeping state visible. Version 4.0 stripped overlays, sessions, and RPC in favor of this simpler inline model, with the legacy design on a branch. Neovim 0.11+ users with a Claude Code subscription who prefer editor-embedded, marker-driven AI editing are the audience.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pairupnvim.md)

@@ -1,9 +1,9 @@
 # dicklesworthstone/coding_agent_session_search
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 6d445f64db1a @ ec453b73017ae594
+Latest snapshot: commit 73876fd538b7 @ 79b7c2f94012f7e3
 
 ## Summary (orientation draft, not independently verified)
 

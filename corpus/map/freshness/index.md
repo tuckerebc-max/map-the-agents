@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (861)
+## current (857)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -141,10 +141,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [devill/refakts](../repos/devill/refakts.md) [coverage: complete]
 - [dharllc/speech-to-code](../repos/dharllc/speech-to-code.md) [coverage: complete]
 - [dhurng/raven-test-ai](../repos/dhurng/raven-test-ai.md) [coverage: complete]
-- [dicklesworthstone/coding_agent_account_manager](../repos/dicklesworthstone/coding_agent_account_manager.md) [coverage: partial]
-- [dicklesworthstone/coding_agent_session_search](../repos/dicklesworthstone/coding_agent_session_search.md) [coverage: partial]
-- [dicklesworthstone/frankenterm](../repos/dicklesworthstone/frankenterm.md) [coverage: partial]
-- [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) [coverage: partial]
 - [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) [coverage: partial]
 - [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md) [coverage: complete]
 - [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mason131928/hashagent](../repos/mason131928/hashagent.md) [coverage: complete]
 - [mastra-ai/mastra](../repos/mastra-ai/mastra.md) [coverage: partial]
 - [math-ai-org/mathcode](../repos/math-ai-org/mathcode.md) [coverage: complete]
+- [matteraiorg/orbital-extension](../repos/matteraiorg/orbital-extension.md) [coverage: complete]
+- [matthewzmd/aidermacs](../repos/matthewzmd/aidermacs.md) [coverage: complete]
+- [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md) [coverage: partial]
+- [maximerobeyns/self_improving_coding_agent](../repos/maximerobeyns/self_improving_coding_agent.md) [coverage: complete]

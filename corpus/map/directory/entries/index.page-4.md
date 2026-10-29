@@ -2,17 +2,18 @@
 
 Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index.page-5.md)
 
-- [par (`par`)](par-c9d9d2c4be.md) -- published+backing
-- [Parallel Code (`parallel-code`)](parallel-code-96315e97e5.md) -- published+backing
-- [Parley (`parley`)](parley-d689dfcda2.md) -- backing-only
-- [Paseo (`paseo`)](paseo-68a32dd6b2.md) -- published+backing
-- [PATAPIM (`patapim`)](patapim-291e49bc2d.md) -- published+backing
-- [Patchwork (`patchwork`)](patchwork-3af082fc9b.md) -- published+backing
-- [pear-landing-page (`pear-landing-page`)](pear-landing-page-ade813651f.md) -- backing-only
-- [PearAI (`pearai`)](pearai-66ac4f8f01.md) -- published+backing
-- [peerd (`peerd`)](peerd-c00c9e69b3.md) -- published+backing
-- [Pentestgpt (`pentestgpt`)](pentestgpt-e09f6687e7.md) -- backing-only
-- [perles (`perles`)](perles-03dcf1c483.md) -- backing-only
+- [PaperBanana-Pro (`paperbanana-pro`)](paperbanana-pro-a95d842ac4.md) -- backing+pages
+- [par (`par`)](par-c9d9d2c4be.md) -- published+backing+pages
+- [Parallel Code (`parallel-code`)](parallel-code-96315e97e5.md) -- published+backing+pages
+- [Parley (`parley`)](parley-d689dfcda2.md) -- backing+pages
+- [Paseo (`paseo`)](paseo-68a32dd6b2.md) -- published+backing+pages
+- [PATAPIM (`patapim`)](patapim-291e49bc2d.md) -- published+backing+pages
+- [Patchwork (`patchwork`)](patchwork-3af082fc9b.md) -- published+backing+pages
+- [pear-landing-page (`pear-landing-page`)](pear-landing-page-ade813651f.md) -- backing+pages
+- [PearAI (`pearai`)](pearai-66ac4f8f01.md) -- published+backing+pages
+- [peerd (`peerd`)](peerd-c00c9e69b3.md) -- published+backing+pages
+- [Pentestgpt (`pentestgpt`)](pentestgpt-e09f6687e7.md) -- backing+pages
+- [perles (`perles`)](perles-03dcf1c483.md) -- backing+pages
 - [Perplexity-Inspired LLM Answer Engine (`perplexity-inspired-llm-answer-engine`)](perplexity-inspired-llm-answer-engine-dc04ed369c.md) -- backing-only
 - [Perplexity Pro AI Chat (`perplexity-pro-ai-chat`)](perplexity-pro-ai-chat-0f3896183e.md) -- published+backing
 - [Personal Assistant by HyperWrite (`personal-assistant-by-hyperwrite`)](personal-assistant-by-hyperwrite-6e62477010.md) -- backing-only
@@ -333,4 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing
 - [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing-only
 - [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing
-- [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing

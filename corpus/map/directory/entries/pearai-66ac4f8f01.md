@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: trypear
@@ -22,6 +22,8 @@ Repository map entry: [trypear/pearai-app](../../repos/trypear/pearai-app.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-PearAI emerged as an open-source answer to the wave of closed AI editors, forking VS Code and building its AI layer on a fork of Continue so that code context stays stored locally rather than on a ven
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open source AI-powered code editor — a fork of VS Code with AI integration. Submodule is a fork of Continue. Stores code context locally. Familiar VS Code feel with AI-powered features. 706 stars on GitHub.
+
+(captured site page body (agents/pearai.md), not a verified repo-code finding)
+PearAI emerged as an open-source answer to the wave of closed AI editors, forking VS Code and building its AI layer on a fork of Continue so that code context stays stored locally rather than on a vendor's servers. The editor ships a chat, an autocomplete layer, and an agent mode powered by Roo Code/Cline that implements features and fixes bugs across files, while PearAI Router selects the strongest available coding model behind a single subscription. The project is YC-backed and developed in the open, with the editor code in the trypear organization and the marketing site in its own repository. Several announced features remain marked as coming soon, and the product has been quieter than competitors since its 2024 launch, but the site and repository remain live. Its users are developers who want a VS Code-familiar AI editor with an open-source license and local context storage.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pearai.md)

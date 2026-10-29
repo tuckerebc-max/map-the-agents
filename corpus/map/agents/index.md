@@ -287,10 +287,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [devill/refakts](../repos/devill/refakts.md) -- status=distilled, freshness=current
 - [dharllc/speech-to-code](../repos/dharllc/speech-to-code.md) -- status=distilled, freshness=current
 - [dhurng/raven-test-ai](../repos/dhurng/raven-test-ai.md) -- status=distilled, freshness=current
-- [dicklesworthstone/coding_agent_account_manager](../repos/dicklesworthstone/coding_agent_account_manager.md) -- status=distilled, freshness=current
-- [dicklesworthstone/coding_agent_session_search](../repos/dicklesworthstone/coding_agent_session_search.md) -- status=distilled, freshness=current
-- [dicklesworthstone/frankenterm](../repos/dicklesworthstone/frankenterm.md) -- status=distilled, freshness=current
-- [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) -- status=distilled, freshness=current
+- [dicklesworthstone/coding_agent_account_manager](../repos/dicklesworthstone/coding_agent_account_manager.md) -- status=distilled, freshness=stale
+- [dicklesworthstone/coding_agent_session_search](../repos/dicklesworthstone/coding_agent_session_search.md) -- status=distilled, freshness=stale
+- [dicklesworthstone/frankenterm](../repos/dicklesworthstone/frankenterm.md) -- status=distilled, freshness=stale
+- [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) -- status=distilled, freshness=stale
 - [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) -- status=distilled, freshness=current
 - [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md) -- status=distilled, freshness=current
 - [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) -- status=distilled, freshness=current

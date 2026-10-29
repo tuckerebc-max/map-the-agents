@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [matteraiorg/orbital-extension](../repos/matteraiorg/orbital-extension.md) [coverage: complete]
-- [matthewzmd/aidermacs](../repos/matthewzmd/aidermacs.md) [coverage: complete]
-- [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md) [coverage: partial]
-- [maximerobeyns/self_improving_coding_agent](../repos/maximerobeyns/self_improving_coding_agent.md) [coverage: complete]
 - [maximilian-winter/llama-cpp-agent](../repos/maximilian-winter/llama-cpp-agent.md) [coverage: partial]
 - [maxkle1nz/m1nd](../repos/maxkle1nz/m1nd.md) [coverage: partial]
 - [maxktz/hitch](../repos/maxktz/hitch.md) [coverage: complete]
@@ -444,3 +440,11 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
+- [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
+- [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
+- [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
+- [scgopi/graphcode](../repos/scgopi/graphcode.md)
+- [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
+- [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
+- [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
+- [tontinton/maki](../repos/tontinton/maki.md)

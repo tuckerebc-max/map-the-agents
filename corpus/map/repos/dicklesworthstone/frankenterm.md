@@ -1,9 +1,9 @@
 # dicklesworthstone/frankenterm
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9416f404da44 @ 89d4a383e008b698
+Latest snapshot: commit ad4a8573c5b7 @ 5194f4a07b198dd9
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: jcz2020
@@ -22,6 +22,8 @@ Repository map entry: [jcz2020/par](../../repos/jcz2020/par.md) (source: backing
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-PAR positions itself as the agent plumbing layer that OCaml's ecosystem lacked, handling the ReAct loop, tool dispatch, multi-provider LLM calls, persistence, and an event bus so developers write only
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Modular, type-safe agent runtime for building LLM-powered applications ('LangChain + LangGraph for OCaml'). Written in OCaml 5.4 using Eio structured concurrency (no callback hell, compile-time type safety), usable from both OCaml and Python. Features type-safe shell commands (ADT-based, injection-free), structured concurrency with no orphan fibers, 23 built-in tools, and 9 middleware.
+
+(captured site page body (agents/par.md), not a verified repo-code finding)
+PAR positions itself as the agent plumbing layer that OCaml's ecosystem lacked, handling the ReAct loop, tool dispatch, multi-provider LLM calls, persistence, and an event bus so developers write only tools and workflows. Its OCaml 5.4 core uses effects and Eio structured concurrency, eliminating orphan fibers and callback nesting, and compiles shell commands into a type-safe ADT that rules out injection at compile time. Nine built-in middleware cover logging, retry, rate limiting, timeouts, argument and output validation, PII masking, and sanitization at every model and tool boundary, while SQLite persistence and an audit log make runs reproducible. Python bindings on PyPI open the runtime to the larger ecosystem, and a companion project, par-code, builds a CLI coding agent on top. Its audience is OCaml developers and Python teams that want a verified, concurrency-safe agent substrate.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/par.md)

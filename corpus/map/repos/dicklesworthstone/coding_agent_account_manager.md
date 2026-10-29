@@ -1,9 +1,9 @@
 # dicklesworthstone/coding_agent_account_manager
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ef01b6411acc @ 111e1c3e595f5ddc
+Latest snapshot: commit 7383fcdac6d7 @ a9e759ad936bb109
 
 ## Summary (orientation draft, not independently verified)
 

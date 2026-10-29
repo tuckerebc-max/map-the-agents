@@ -129,6 +129,7 @@
 - [openmonoagentai](../entries/openmonoagentai-bdc78537fe.md)
 - [openrath](../entries/openrath-f790548ed0.md)
 - [oracle-ai-developer-hub](../entries/oracle-ai-developer-hub-47c3ed4b22.md)
+- [ourocodus](../entries/ourocodus-13027a6e39.md)
 - [pairupnvim](../entries/pairupnvim-3881bd6425.md)
 - [paper](../entries/paper-382635c932.md)
 - [paseo](../entries/paseo-68a32dd6b2.md)

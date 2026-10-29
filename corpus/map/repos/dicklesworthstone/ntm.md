@@ -1,9 +1,9 @@
 # dicklesworthstone/ntm
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3c35f474879f @ 5c8f6d031fcbbfb6
+Latest snapshot: commit f525475587bc @ 518c91bbe5e757c3
 
 ## Summary (orientation draft, not independently verified)
 

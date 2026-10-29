@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: patched-codes
@@ -22,6 +22,8 @@ Repository map entry: [patched-codes/patchwork](../../repos/patched-codes/patchw
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Patchwork was built by Patched Codes to automate the repetitive maintenance work — dependency upgrades, PR reviews, docstring generation, security fixes — that piles up between feature projects. Inste
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Development gruntwork is codified as six predefined 'patchflows' (AutoFix, ResolveIssue, PRReview, GenerateDocstring, GenerateREADME, DependencyUpgrade) built from reusable Steps and prompt templates, runnable locally, in the IDE, or in CI, and extensible by composing new flows from an Apache-2.0 template repo.
+
+(captured site page body (agents/patchwork.md), not a verified repo-code finding)
+Patchwork was built by Patched Codes to automate the repetitive maintenance work — dependency upgrades, PR reviews, docstring generation, security fixes — that piles up between feature projects. Instead of a free-form chat loop, it executes predefined patchflows: pipelines of reusable steps (scan code, call an LLM, edit files, open a PR) driven by customizable prompt templates, with six flows shipped out of the box including AutoFix, PRReview, and DependencyUpgrade. The same patchflows run from the CLI, inside an IDE, or in CI pipelines, and custom patchflows compose existing steps or new ones contributed through an Apache-2.0 template repository, while the core stays AGPL-3.0. Model access is flexible, spanning OpenAI, Gemini, Groq, Together, and local llama.cpp, Ollama, or vLLM endpoints configured by CLI arguments or YAML. Its users are engineering teams automating code-maintenance workflows in CI rather than developers seeking an interactive coding partner.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/patchwork.md)

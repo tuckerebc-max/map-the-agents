@@ -2,18 +2,10 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
-- [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
-- [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
-- [scgopi/graphcode](../repos/scgopi/graphcode.md)
-- [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
-- [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
-- [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
-- [tontinton/maki](../repos/tontinton/maki.md)
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (125)
+## stale (129)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -140,6 +132,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [decolua/9remote](../repos/decolua/9remote.md) [coverage: complete]
 - [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) [coverage: partial]
 - [devdanzin/fusil](../repos/devdanzin/fusil.md) [coverage: partial]
+- [dicklesworthstone/coding_agent_account_manager](../repos/dicklesworthstone/coding_agent_account_manager.md) [coverage: partial]
+- [dicklesworthstone/coding_agent_session_search](../repos/dicklesworthstone/coding_agent_session_search.md) [coverage: partial]
+- [dicklesworthstone/frankenterm](../repos/dicklesworthstone/frankenterm.md) [coverage: partial]
+- [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) [coverage: partial]
 
 ## refresh-failed (66)
 
