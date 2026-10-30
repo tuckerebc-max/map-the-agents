@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Muzzafar Rather
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Perplexity Pro AI Chat exists for developers who subscribe to Perplexity and want its research-grounded answers inside VS Code rather than in a browser tab. The extension wraps the Perplexity API in a
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Mimics Copilot Chat agent functionality using Perplexity Pro as backend
+
+(captured site page body (agents/perplexity-pro-ai-chat.md), not a verified repo-code finding)
+Perplexity Pro AI Chat exists for developers who subscribe to Perplexity and want its research-grounded answers inside VS Code rather than in a browser tab. The extension wraps the Perplexity API in a chat sidebar, using sonar-pro for quick questions and sonar-research for deeper multi-step investigations, and mimics Copilot Chat's layout rather than its infrastructure. An agent mode accepts natural-language file creation and edit requests, executing them only after user confirmation, and a /command syntax runs shell commands from the chat; codebase context comes from whatever the user pastes or selects. Everything runs against the user's own Perplexity subscription, stored in VS Code's secret storage. With roughly 8,500 installs, a five-star rating, and last updates in October 2025, it serves individual Perplexity subscribers who want editor integration without switching tools.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/perplexity-pro-ai-chat.md)

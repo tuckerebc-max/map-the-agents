@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [maximilian-winter/llama-cpp-agent](../repos/maximilian-winter/llama-cpp-agent.md) [coverage: partial]
-- [maxkle1nz/m1nd](../repos/maxkle1nz/m1nd.md) [coverage: partial]
 - [maxktz/hitch](../repos/maxktz/hitch.md) [coverage: complete]
 - [mayday-wpf/snow-cli](../repos/mayday-wpf/snow-cli.md) [coverage: partial]
 - [mbruhler/claude-orchestration](../repos/mbruhler/claude-orchestration.md) [coverage: partial]
@@ -448,3 +446,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
 - [tontinton/maki](../repos/tontinton/maki.md)
+- [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
+- [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
+
+## stale (131)
+

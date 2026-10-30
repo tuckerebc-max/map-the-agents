@@ -1,9 +1,9 @@
 # dimitrigeelen/agentic-engineering-framework
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 35aaaaedc1c3 @ a8e042de383354ce
+Latest snapshot: commit 0230eeb9ebda @ 71462f20b9d1ba7a
 
 ## Summary (orientation draft, not independently verified)
 

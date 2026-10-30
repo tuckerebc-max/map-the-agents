@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: nicobailon
 - License: unknown
 - Language: TypeScript
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [nicobailon/pi-boomerang](../../repos/nicobailon/pi-boomerang.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-pi-boomerang exists because autonomous agent tasks generate enormous turn histories that crowd out useful context in every later turn. The extension runs a task from start to finish without questions,
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Token-efficient autonomous task execution with automatic context summarization for pi coding agent. Executes tasks autonomously, then replaces raw turn history in future context with an expanded handoff summary (changed files, relevant reads, commands, failures, outcome) — saving tokens while preserving work. Supports chain execution, rethrow/loop execution, prompt templates, anchor mode, and an agent-callable tool.
+
+(captured site page body (agents/pi-boomerang.md), not a verified repo-code finding)
+pi-boomerang exists because autonomous agent tasks generate enormous turn histories that crowd out useful context in every later turn. The extension runs a task from start to finish without questions, then a heuristic summarizer condenses the recorded tool calls and results into a handoff block — outcome, changed files, relevant reads, commands, validation results, failures — which replaces the raw history for all subsequent turns while the full session tree remains navigable. Templates with frontmatter configure model, skills, and thinking level per task, chaining turns multi-stage flows into pipelines, and rethrow or loop modes re-run failed tasks with accumulated context. An optional agent-callable tool lets the model boomerang its own subtasks, and file state is never touched, only context. Pi users running long autonomous tasks use it to keep later turns cheap without losing the work record.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pi-boomerang.md)

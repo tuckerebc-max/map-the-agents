@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: multiplexer
+- Category: other
 - Provider/maker: pi0
 - License: unknown
 - Language: unknown
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=multiplexer, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This extension is the pi project's own bridge into VS Code: it runs the pi CLI (a prerequisite, installed globally) in an integrated terminal with full PTY support, then bundles a pi extension that fe
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): VS Code extension for the pi coding agent
+
+(captured site page body (agents/pi-coding-agent-vscode.md), not a verified repo-code finding)
+This extension is the pi project's own bridge into VS Code: it runs the pi CLI (a prerequisite, installed globally) in an integrated terminal with full PTY support, then bundles a pi extension that feeds the agent around 25 tools reflecting live editor state. The agent can query active editors, selections, diagnostics, symbols, and definitions, and apply workspace edits synchronized with open buffers, while a footer shows the active file, cursor position, and diagnostic counts inside the TUI. A @pi chat participant brings streamed RPC-backed replies into VS Code Chat, and a package-manager sidebar installs pi extensions, skills, prompts, and themes without leaving the editor. With about 7,800 installs, it serves pi users who want the CLI's autonomy without leaving VS Code, keeping the agent loop itself entirely in pi.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pi-coding-agent-vscode.md)

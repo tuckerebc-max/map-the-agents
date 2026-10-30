@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (857)
+## current (855)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -141,9 +141,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [devill/refakts](../repos/devill/refakts.md) [coverage: complete]
 - [dharllc/speech-to-code](../repos/dharllc/speech-to-code.md) [coverage: complete]
 - [dhurng/raven-test-ai](../repos/dhurng/raven-test-ai.md) [coverage: complete]
-- [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) [coverage: partial]
 - [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md) [coverage: complete]
-- [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) [coverage: partial]
 - [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md) [coverage: complete]
 - [divar-ir/ai-doc-gen](../repos/divar-ir/ai-doc-gen.md) [coverage: complete]
 - [dmae97/omk](../repos/dmae97/omk.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [matthewzmd/aidermacs](../repos/matthewzmd/aidermacs.md) [coverage: complete]
 - [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md) [coverage: partial]
 - [maximerobeyns/self_improving_coding_agent](../repos/maximerobeyns/self_improving_coding_agent.md) [coverage: complete]
+- [maximilian-winter/llama-cpp-agent](../repos/maximilian-winter/llama-cpp-agent.md) [coverage: partial]
+- [maxkle1nz/m1nd](../repos/maxkle1nz/m1nd.md) [coverage: partial]

@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: chandra447
 - License: MIT
 - Language: TypeScript
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [chandra447/pi-hermes-memory](../../repos/chandra447/pi-hermes-memory.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-pi-hermes-memory addresses the core complaint about coding agents — that each session starts ignorant of everything learned before. Ported from Nous Research's Hermes agent, it maintains a two-tier me
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Memory and learning extension for the Pi coding agent (ported from Hermes by Nous Research): persistent two-tier (global + per-project) memory, failure learning, correction detection, procedural skills saved as SKILL.md files, secret scanning to block API keys, and auto-consolidation. Hybrid Markdown + SQLite FTS5 storage.
+
+(captured site page body (agents/pi-hermes-memory.md), not a verified repo-code finding)
+pi-hermes-memory addresses the core complaint about coding agents — that each session starts ignorant of everything learned before. Ported from Nous Research's Hermes agent, it maintains a two-tier memory of global preferences and per-project knowledge as Markdown files, mirrors them into a SQLite FTS5 index, and makes entire past sessions searchable. The system learns from failures and corrections explicitly, categorizing memories by type (failure, correction, insight, preference, convention, tool-quirk), and it saves procedural skills as SKILL.md files with structured verification steps and duplicate detection, exposed through pi's resource-discovery hook. Background review runs every ten turns, session flush happens on compaction or shutdown, and consolidation triggers automatically when stores overflow. Secret scanning blocks API keys from ever entering memory files. Pi users who run long-lived projects adopt it to keep institutional knowledge — conventions, past failures, working procedures — alive across sessions.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pi-hermes-memory.md)

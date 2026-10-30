@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: abcwyc
@@ -22,6 +22,8 @@ Repository map entry: [abcwyc/pi-agent-desktop](../../repos/abcwyc/pi-agent-desk
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-pi-agent-desktop exists for developers who want pi's terminal-grade coding agent without maintaining a CLI environment, packaging the agent core, the pi-web interface, and the Pi SDK into a Tauri appl
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local AI agent desktop app for macOS, Windows, and Linux that packages the agent capabilities of pi into a standalone installable application — bringing the Claude Code experience to your desktop. Manages models, OAuth/API keys, skills, and plugins.
+
+(captured site page body (agents/pi-agent-desktop.md), not a verified repo-code finding)
+pi-agent-desktop exists for developers who want pi's terminal-grade coding agent without maintaining a CLI environment, packaging the agent core, the pi-web interface, and the Pi SDK into a Tauri application for macOS (Apple Silicon), Windows, and Linux (x64). The app reads pi's existing local data directory, so prior sessions, model credentials, and configuration carry over, and it manages models, API keys, skills, and plugins through a GUI instead of CLI flags. A signed auto-updater ships complete new builds in-app, with daily GitHub workflows syncing upstream pi and pi-web releases and gating publishing on conflict-free merges. Server requests honor standard proxy variables, and keys stay local. Its users are pi-curious developers on macOS or Windows who want the agent without a terminal setup, and the project tracks upstream pi releases automatically.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pi-agent-desktop.md)

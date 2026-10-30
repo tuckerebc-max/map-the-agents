@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: minghinmatthewlam
@@ -22,6 +22,8 @@ Repository map entry: [minghinmatthewlam/pi-gui](../../repos/minghinmatthewlam/p
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-pi-gui exists because pi's terminal-first interface limits visibility once developers run several threads, supervise workers, or review diffs across parallel work. The Electron app wraps the pi runtim
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Native desktop (Electron) shell around the pi coding agent runtime with a Codex-style threaded timeline UI, git worktrees per thread, multi-agent orchestration (supervisor/worker), integrated PTY terminal, and inline diff viewer. Uses pi's JSONL session files as the source of truth via a thin pi-sdk-driver adapter.
+
+(captured site page body (agents/pi-gui.md), not a verified repo-code finding)
+pi-gui exists because pi's terminal-first interface limits visibility once developers run several threads, supervise workers, or review diffs across parallel work. The Electron app wraps the pi runtime without forking it: a Codex-style timeline shows threaded sessions, each thread can run in an isolated git worktree, and an orchestrator thread spawns and supervises worker threads for multi-agent runs. An integrated PTY terminal, inline diff viewer, session archive, and notification system cover the day-to-day loop, while pi's JSONL session files stay the source of truth so CLI and GUI sessions interoperate. Public beta builds ship signed and notarized for Apple Silicon Macs and Linux, with a Homebrew cask and source build for contributors. Its users are pi users who want desktop ergonomics and structured orchestration instead of a raw terminal.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pi-gui.md)

@@ -291,9 +291,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [dicklesworthstone/coding_agent_session_search](../repos/dicklesworthstone/coding_agent_session_search.md) -- status=distilled, freshness=stale
 - [dicklesworthstone/frankenterm](../repos/dicklesworthstone/frankenterm.md) -- status=distilled, freshness=stale
 - [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) -- status=distilled, freshness=stale
-- [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) -- status=distilled, freshness=current
+- [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) -- status=distilled, freshness=stale
 - [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md) -- status=distilled, freshness=current
-- [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) -- status=distilled, freshness=current
+- [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) -- status=distilled, freshness=stale
 - [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md) -- status=distilled, freshness=current
 - [divar-ir/ai-doc-gen](../repos/divar-ir/ai-doc-gen.md) -- status=distilled, freshness=current
 - [dmae97/omk](../repos/dmae97/omk.md) -- status=distilled, freshness=current

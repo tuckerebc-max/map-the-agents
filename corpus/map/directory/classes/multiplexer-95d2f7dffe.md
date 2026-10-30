@@ -172,8 +172,6 @@
 - [parallel-code](../entries/parallel-code-96315e97e5.md)
 - [paseo](../entries/paseo-68a32dd6b2.md)
 - [patapim](../entries/patapim-291e49bc2d.md)
-- [pi-agent-launcher](../entries/pi-agent-launcher-923df1d1e7.md)
-- [pi-coding-agent-vscode](../entries/pi-coding-agent-vscode-fa04e670d8.md)
 - [pi-gui](../entries/pi-gui-6e36f2e424.md)
 - [pi-web](../entries/pi-web-ba6bf77c6a.md)
 - [pixtuoid](../entries/pixtuoid-ec31b6d406.md)

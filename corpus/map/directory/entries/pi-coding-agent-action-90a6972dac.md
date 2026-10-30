@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: agent
+- Category: other
 - Provider/maker: shaftoe
 - License: MIT
 - Language: TypeScript
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 Repository map entry: [shaftoe/pi-coding-agent-action](../../repos/shaftoe/pi-coding-agent-action.md) (source: backing, field: `source_code_url`).
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=agent, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-pi-coding-agent-action puts the pi coding agent inside continuous-integration workflows so repositories get an agent that responds to /pi-prefixed comments on issues and pull requests, reviews PRs, an
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): CI/CD GitHub Action integrating the Pi coding agent with git hosting platform workflows (GitHub, Codeberg, Forgejo); enables interactive (/pi in comments) and non-interactive agent runs for issue assistance, PR reviews, automated code reviews; extensible via npm packages, git repos, and local .ts files
+
+(captured site page body (agents/pi-coding-agent-action.md), not a verified repo-code finding)
+pi-coding-agent-action puts the pi coding agent inside continuous-integration workflows so repositories get an agent that responds to /pi-prefixed comments on issues and pull requests, reviews PRs, and executes scheduled maintenance such as dependency audits or documentation syncs. The action wraps the pi SDK with built-in tools for GitHub APIs — commenting, reviewing, opening PRs — and loads the same skills, extensions, and AGENTS.md files a local pi session would, so behavior matches between terminal and CI. It also targets Codeberg and self-hosted Forgejo or Gitea instances, covering the GitHub-API-compatible forge ecosystem rather than GitHub alone. Sessions can be exported as HTML or JSONL artifacts or shared as gist links for postmortems. Released under MIT with semantic-release automation, it serves maintainers who want agent-powered automation on infrastructure they control.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pi-coding-agent-action.md)

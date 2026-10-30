@@ -1,9 +1,9 @@
 # dinoanderson/qwen_cli_coder
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit dbf277291908 @ 6cb863d3cc58a3c7
+Latest snapshot: commit dbf277291908 @ 384c9cd7d72e0f04
 
 ## Summary (orientation draft, not independently verified)
 

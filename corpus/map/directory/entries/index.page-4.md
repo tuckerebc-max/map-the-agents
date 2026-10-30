@@ -14,31 +14,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [peerd (`peerd`)](peerd-c00c9e69b3.md) -- published+backing+pages
 - [Pentestgpt (`pentestgpt`)](pentestgpt-e09f6687e7.md) -- backing+pages
 - [perles (`perles`)](perles-03dcf1c483.md) -- backing+pages
-- [Perplexity-Inspired LLM Answer Engine (`perplexity-inspired-llm-answer-engine`)](perplexity-inspired-llm-answer-engine-dc04ed369c.md) -- backing-only
-- [Perplexity Pro AI Chat (`perplexity-pro-ai-chat`)](perplexity-pro-ai-chat-0f3896183e.md) -- published+backing
-- [Personal Assistant by HyperWrite (`personal-assistant-by-hyperwrite`)](personal-assistant-by-hyperwrite-6e62477010.md) -- backing-only
-- [Phind (`phind`)](phind-0c32f6ed7a.md) -- backing-only
-- [Pi (`pi`)](pi-85b42e1702.md) -- published+backing
-- [pi-agent-desktop (`pi-agent-desktop`)](pi-agent-desktop-b09aff9dfe.md) -- published+backing
-- [Pi Agent Launcher (`pi-agent-launcher`)](pi-agent-launcher-923df1d1e7.md) -- backing-only
-- [pi-boomerang (`pi-boomerang`)](pi-boomerang-bb7e336dfa.md) -- backing-only
-- [pi-coding-agent (`pi-coding-agent`)](pi-coding-agent-9baf21de11.md) -- backing-only
-- [pi-coding-agent-action (`pi-coding-agent-action`)](pi-coding-agent-action-90a6972dac.md) -- backing-only
-- [Pi Coding Agent (`pi-coding-agent-vscode`)](pi-coding-agent-vscode-fa04e670d8.md) -- backing-only
-- [pi-extensions (`pi-extensions`)](pi-extensions-9aca753388.md) -- backing-only
-- [pi-gui (`pi-gui`)](pi-gui-6e36f2e424.md) -- published+backing
-- [pi-hermes-memory (`pi-hermes-memory`)](pi-hermes-memory-a1a0b68c74.md) -- backing-only
-- [pi-interactive-shell (`pi-interactive-shell`)](pi-interactive-shell-a0f8819046.md) -- backing-only
-- [pi-mem (`pi-mem`)](pi-mem-d546503b06.md) -- backing-only
-- [pi-reflect (`pi-reflect`)](pi-reflect-5935cde232.md) -- backing-only
-- [pi-web (`pi-web`)](pi-web-ba6bf77c6a.md) -- published+backing
-- [piclaw (`piclaw`)](piclaw-25aa1b1346.md) -- published+backing
-- [picocode (`picocode`)](picocode-9c314be853.md) -- published+backing
-- [Pieces for Developers (`pieces-for-developers`)](pieces-for-developers-891a2c0376.md) -- backing-only
-- [PilotDeck (`pilotdeck`)](pilotdeck-a33edf3343.md) -- published+backing
-- [Pineify (`pineify`)](pineify-002ec3cd07.md) -- published+backing
-- [pi.nvim (`pinvim`)](pinvim-1d500baae2.md) -- backing-only
-- [Pixee (`pixee`)](pixee-83504cbc49.md) -- published+backing
+- [Perplexity-Inspired LLM Answer Engine (`perplexity-inspired-llm-answer-engine`)](perplexity-inspired-llm-answer-engine-dc04ed369c.md) -- backing+pages
+- [Perplexity Pro AI Chat (`perplexity-pro-ai-chat`)](perplexity-pro-ai-chat-0f3896183e.md) -- published+backing+pages
+- [Personal Assistant by HyperWrite (`personal-assistant-by-hyperwrite`)](personal-assistant-by-hyperwrite-6e62477010.md) -- backing+pages
+- [Phind (`phind`)](phind-0c32f6ed7a.md) -- backing+pages
+- [Pi (`pi`)](pi-85b42e1702.md) -- published+backing+pages
+- [pi-agent-desktop (`pi-agent-desktop`)](pi-agent-desktop-b09aff9dfe.md) -- published+backing+pages
+- [Pi Agent Launcher (`pi-agent-launcher`)](pi-agent-launcher-923df1d1e7.md) -- backing+pages
+- [pi-boomerang (`pi-boomerang`)](pi-boomerang-bb7e336dfa.md) -- backing+pages
+- [pi-coding-agent (`pi-coding-agent`)](pi-coding-agent-9baf21de11.md) -- backing+pages
+- [pi-coding-agent-action (`pi-coding-agent-action`)](pi-coding-agent-action-90a6972dac.md) -- backing+pages
+- [Pi Coding Agent (`pi-coding-agent-vscode`)](pi-coding-agent-vscode-fa04e670d8.md) -- backing+pages
+- [pi-extensions (`pi-extensions`)](pi-extensions-9aca753388.md) -- backing+pages
+- [pi-gui (`pi-gui`)](pi-gui-6e36f2e424.md) -- published+backing+pages
+- [pi-hermes-memory (`pi-hermes-memory`)](pi-hermes-memory-a1a0b68c74.md) -- backing+pages
+- [pi-interactive-shell (`pi-interactive-shell`)](pi-interactive-shell-a0f8819046.md) -- backing+pages
+- [pi-mem (`pi-mem`)](pi-mem-d546503b06.md) -- backing+pages
+- [pi-reflect (`pi-reflect`)](pi-reflect-5935cde232.md) -- backing+pages
+- [pi-web (`pi-web`)](pi-web-ba6bf77c6a.md) -- published+backing+pages
+- [piclaw (`piclaw`)](piclaw-25aa1b1346.md) -- published+backing+pages
+- [picocode (`picocode`)](picocode-9c314be853.md) -- published+backing+pages
+- [Pieces for Developers (`pieces-for-developers`)](pieces-for-developers-891a2c0376.md) -- backing+pages
+- [PilotDeck (`pilotdeck`)](pilotdeck-a33edf3343.md) -- published+backing+pages
+- [Pineify (`pineify`)](pineify-002ec3cd07.md) -- published+backing+pages
+- [pi.nvim (`pinvim`)](pinvim-1d500baae2.md) -- backing+pages
+- [Pixee (`pixee`)](pixee-83504cbc49.md) -- published+backing+pages
 - [PixelPilot Copilot (`pixelpilot-copilot`)](pixelpilot-copilot-6890dc642c.md) -- published+backing
 - [pixtuoid (`pixtuoid`)](pixtuoid-ec31b6d406.md) -- published+backing
 - [PKU_MDAgent (`pku-mdagent`)](pku-mdagent-879c6778f7.md) -- published+backing

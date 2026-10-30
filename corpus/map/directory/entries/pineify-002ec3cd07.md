@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Pineify
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Pineify exists because trading-platform scripting is a niche where general LLMs stumble: Pine Script, MQL5, NinjaScript, and thinkScript have version-specific syntax and platform quirks that generic m
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Web-based AI trading toolkit including an AI coding agent that generates trading code (Pine Script, MQL5, cTrader C#, NinjaScript, thinkScript) plus a finance research agent, AI stock picker, custom screener, market insights dashboard, chart analysis, trading journal, and no-code visual editor. Hosted MCP server connects ChatGPT, Claude, Codex, Cursor, Gemini to Pineify's financial tools (Expert plan only). One-time payment lifetime ...
+
+(captured site page body (agents/pineify.md), not a verified repo-code finding)
+Pineify exists because trading-platform scripting is a niche where general LLMs stumble: Pine Script, MQL5, NinjaScript, and thinkScript have version-specific syntax and platform quirks that generic models mishandle. The platform's AI coding agent turns natural-language prompts or chart screenshots into indicators, strategies, expert advisors, and bots for TradingView, MetaTrader, cTrader, NinjaTrader, and thinkorswim, with automatic syntax-error detection, a documentation knowledge base, and conversation memory, alongside a no-code visual editor. Surrounding tools cover a finance research agent (Perplexity-backed web search), stock and options pickers, chart analysis, a trading journal, and backtest reporting. A hosted MCP server (Expert plan) exposes read-only financial-data and code-validation tools to ChatGPT, Claude, Codex, and Cursor. One-time lifetime pricing ($99–$259) is transitioning to subscriptions, and the audience is retail traders rather than professional developers.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pineify.md)

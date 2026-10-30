@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: developersdigest
@@ -22,6 +22,8 @@ Repository map entry: [developersdigest/llm-answer-engine](../../repos/developer
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository emerged from the early-2024 wave of Perplexity clones as a teachable, single-repo implementation of an answer engine: Brave and Serper supply search results, the content gets scraped a
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Perplexity-like answer engine returning sources, answers, images, videos, and follow-up questions. Combines web search (Brave/Serper) with LLMs (Groq/OpenAI/Ollama), function calling (maps, shopping, stocks, Spotify), semantic caching via Upstash, rate limiting, AI gateway support for 15+ providers, dynamic UI rendering, and dual deployment (Next.js or Express-only).
+
+(captured site page body (agents/perplexity-inspired-llm-answer-engine.md), not a verified repo-code finding)
+This repository emerged from the early-2024 wave of Perplexity clones as a teachable, single-repo implementation of an answer engine: Brave and Serper supply search results, the content gets scraped and embedded, and a hosted LLM synthesizes answers with sources, images, videos, and suggested follow-ups. Function calling extends it to maps, shopping, stock data, and Spotify, while a Portkey gateway route adds a dozen additional inference providers and an Upstash layer adds semantic caching and rate limits. Deployment paths cover Vercel, Docker, and a standalone Express API. The project's value is educational — it has 5,000+ stars and an accompanying YouTube walkthrough — but development stalled on a Next.js 14 stack with Groq's deprecated Mixtral model ID, and its issues and pull requests have gone unanswered. It is studied rather than operated.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/perplexity-inspired-llm-answer-engine.md)
