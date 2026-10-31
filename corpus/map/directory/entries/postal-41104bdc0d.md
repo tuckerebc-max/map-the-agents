@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: andrefetch
@@ -22,6 +22,8 @@ Repository map entry: [andrefetch/postal](../../repos/andrefetch/postal.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Postal targets developers who want a terminal coding agent with fine-grained control over autonomy rather than an all-or-nothing auto mode. Its loop runs plan, read, edit, and bash tools with every mu
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Bring-any-model via OpenRouter; six graduated approval policies with dangerous-command rejection; context pruning + history compaction for long sessions; per-turn session checkpointing with /rewind; readable object-oriented Python codebase; modular component-based Rich TUI
+
+(captured site page body (agents/postal.md), not a verified repo-code finding)
+Postal targets developers who want a terminal coding agent with fine-grained control over autonomy rather than an all-or-nothing auto mode. Its loop runs plan, read, edit, and bash tools with every mutating action passing one of six approval policies, switched mid-session with /approval, while dangerous commands are rejected outright regardless of policy. Sessions are checkpointed after every turn, so /rewind can roll conversation state back to any point, and long sessions survive through context pruning plus automatic compaction into a continuation brief when the window fills. Five subagents handle investigation, review, architecture, test writing, and debugging, each subject to the same approval gates. It runs on OpenRouter alone, so users pay their own API costs, and it picks up AGENTS.md per project automatically.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/postal.md)

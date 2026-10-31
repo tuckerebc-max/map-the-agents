@@ -1,10 +1,10 @@
 # dnouri/pilish
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-verified-rename, alltheagents.org-backing - Projects: Observatory
 Formerly: dnouri/pi-coding-agent (github id 1125438750).
-Latest snapshot: commit 894d1e7be124 @ 5f45544ad87d0a76
+Latest snapshot: commit a38fbdadecb5 @ 4eac3ce455cde838
 
 ## Summary (orientation draft, not independently verified)
 

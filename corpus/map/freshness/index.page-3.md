@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
-- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
-- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
 - [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
 - [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
 - [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
@@ -133,6 +130,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) [coverage: partial]
 - [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) [coverage: partial]
 - [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) [coverage: partial]
+- [dmae97/omk](../repos/dmae97/omk.md) [coverage: partial]
+- [dnouri/pilish](../repos/dnouri/pilish.md) [coverage: complete]
+- [doable-me/doable](../repos/doable-me/doable.md) [coverage: partial]
 
 ## refresh-failed (66)
 

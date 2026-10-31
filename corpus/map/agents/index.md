@@ -296,11 +296,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) -- status=distilled, freshness=stale
 - [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md) -- status=distilled, freshness=current
 - [divar-ir/ai-doc-gen](../repos/divar-ir/ai-doc-gen.md) -- status=distilled, freshness=current
-- [dmae97/omk](../repos/dmae97/omk.md) -- status=distilled, freshness=current
+- [dmae97/omk](../repos/dmae97/omk.md) -- status=distilled, freshness=stale
 - [dmae97/open-multi-agent-kit](../repos/dmae97/open-multi-agent-kit.md) -- status=blocked, freshness=refresh-failed
 - [dnouri/pi-coding-agent](../repos/dnouri/pi-coding-agent.md) -- status=blocked, freshness=refresh-failed
-- [dnouri/pilish](../repos/dnouri/pilish.md) -- status=distilled, freshness=current
-- [doable-me/doable](../repos/doable-me/doable.md) -- status=distilled, freshness=current
+- [dnouri/pilish](../repos/dnouri/pilish.md) -- status=distilled, freshness=stale
+- [doable-me/doable](../repos/doable-me/doable.md) -- status=distilled, freshness=stale
 - [dog-qiuqiu/invincat](../repos/dog-qiuqiu/invincat.md) -- status=distilled, freshness=current
 - [dongdongunique/llm_rag](../repos/dongdongunique/llm_rag.md) -- status=distilled, freshness=current
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) -- status=distilled, freshness=current

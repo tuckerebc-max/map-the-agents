@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-PlayAI appeared in the census under its play.ai domain as a conversational voice AI vendor, a lineage that traces to PlayHT, a text-to-speech and voice-cloning company known for voice models rather th
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Conversational AI voice solutions, enabling customizable natural language-based user interfaces
+
+(captured site page body (agents/playai.md), not a verified repo-code finding)
+PlayAI appeared in the census under its play.ai domain as a conversational voice AI vendor, a lineage that traces to PlayHT, a text-to-speech and voice-cloning company known for voice models rather than for building software. The company's offerings centered on speech generation and conversational voice interfaces rather than an agentic coding loop. As of this research, the play.ai domain no longer resolves at all — DNS lookup fails from multiple networks, and the related play.ht domains are equally unreachable — so the service appears to have shut down or migrated under a different brand. No successor product or redirect is live, and the entry is treated as defunct.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/playai.md)

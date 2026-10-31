@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Powerdrill is a no-code AI data analysis workspace aimed at people who need answers from documents, spreadsheets, and databases without writing queries. Questions posed in plain language are answered
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): No-code AI data analysis workspace with memory (agents learn from every analysis); every result traceable to source data (page, row, figure); supports on-premise or private cloud deployment; SOC 2 Type 2, ISO 27001, GDPR compliant. Not a coding agent.
+
+(captured site page body (agents/powerdrill-ai.md), not a verified repo-code finding)
+Powerdrill is a no-code AI data analysis workspace aimed at people who need answers from documents, spreadsheets, and databases without writing queries. Questions posed in plain language are answered with citations down to the page, row, or figure the number came from, which makes results auditable rather than taken on faith. Agent teams process spreadsheets into insights and presentations automatically, a Scheduled Agent re-runs recurring analyses, and a memory layer lets the workspace learn from each analysis session. Deployment options include on-premise or private cloud through DataFact, backed by SOC 2 Type 2, GDPR, and ISO 27001 compliance for enterprise buyers. Analysts, financial teams, and healthcare or logistics organizations use it when answer provenance matters as much as the answer itself.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/powerdrill-ai.md)

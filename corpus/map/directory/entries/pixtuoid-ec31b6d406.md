@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: IvanWng97
@@ -22,6 +22,8 @@ Repository map entry: [ivanwng97/pixtuoid](../../repos/ivanwng97/pixtuoid.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-pixtuoid addresses the visibility gap that opens up when several coding-agent sessions run at once: nothing shows at a glance which agent is working, blocked on a permission prompt, or finished. The t
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal pixel-art office TUI that visualizes AI coding agents as pixel-art coworkers at desks; agents type while working, raise ? when waiting for permission, and sleep when done; A*-routed pathfinding, office pets, lofi soundtrack, floating desktop window mode, local-only privacy
+
+(captured site page body (agents/pixtuoid.md), not a verified repo-code finding)
+pixtuoid addresses the visibility gap that opens up when several coding-agent sessions run at once: nothing shows at a glance which agent is working, blocked on a permission prompt, or finished. The tool watches sessions read-only — through a hook shim and JSONL transcript tails for Claude Code, Codex, and roughly a dozen other CLIs — and renders each as a pixel-art character at a desk: typing while working, raising a ? when waiting for approval, sleeping when done. Characters walk between desks via A* pathfinding, office pets wander the floor, and a lofi soundtrack plays, with a floating desktop-window mode keeping the office visible during real work. Everything stays local with no telemetry; state arrives through the hook shim and transcript files rather than any agent integration, so pixtuoid never touches the agents themselves. Built in Rust and distributed via Homebrew, npm, and Cargo, it targets developers running multiple agent sessions who want ambient, glanceable status.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pixtuoid.md)

@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [maxktz/hitch](../repos/maxktz/hitch.md) [coverage: complete]
-- [mayday-wpf/snow-cli](../repos/mayday-wpf/snow-cli.md) [coverage: partial]
-- [mbruhler/claude-orchestration](../repos/mbruhler/claude-orchestration.md) [coverage: partial]
 - [mckaywrigley/buildware-ai](../repos/mckaywrigley/buildware-ai.md) [coverage: complete]
 - [md-ashraful-pramanik/mapcoder](../repos/md-ashraful-pramanik/mapcoder.md) [coverage: complete]
 - [meltylabs/melty](../repos/meltylabs/melty.md) [coverage: complete]
@@ -449,5 +446,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (131)
+## stale (134)
 
+- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
+- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
+- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]

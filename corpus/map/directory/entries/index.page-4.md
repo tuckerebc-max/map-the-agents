@@ -39,31 +39,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Pineify (`pineify`)](pineify-002ec3cd07.md) -- published+backing+pages
 - [pi.nvim (`pinvim`)](pinvim-1d500baae2.md) -- backing+pages
 - [Pixee (`pixee`)](pixee-83504cbc49.md) -- published+backing+pages
-- [PixelPilot Copilot (`pixelpilot-copilot`)](pixelpilot-copilot-6890dc642c.md) -- published+backing
-- [pixtuoid (`pixtuoid`)](pixtuoid-ec31b6d406.md) -- published+backing
-- [PKU_MDAgent (`pku-mdagent`)](pku-mdagent-879c6778f7.md) -- published+backing
-- [Plandex (`plandex`)](plandex-589ec82581.md) -- published+backing
-- [PlayAI (`playai`)](playai-969d35b7a9.md) -- backing-only
-- [PlayCode Agent (`playcode-agent`)](playcode-agent-b7a2a548d1.md) -- published+backing
-- [PlayerZero (`playerzero`)](playerzero-d3260a262f.md) -- published+backing
-- [plugins-coding-agents (`plugins-coding-agents`)](plugins-coding-agents-004a6198ff.md) -- backing-only
-- [PlusB (`plusb`)](plusb-f3072bf5f9.md) -- backing-only
-- [pocketshell (`pocketshell`)](pocketshell-f700aeb229.md) -- published+backing
-- [Podiom (`podiom`)](podiom-f1fa6a776f.md) -- published+backing
-- [Poke (`poke`)](poke-d138d52935.md) -- backing-only
-- [polytoken (`polytoken`)](polytoken-a1913b3151.md) -- published-only
-- [Poolside AI (`poolside-ai`)](poolside-ai-68fd18a6b4.md) -- published+backing
-- [postal (`postal`)](postal-41104bdc0d.md) -- published+backing
-- [postmortemthis (`postmortemthis`)](postmortemthis-ccdda15f2e.md) -- published+backing
-- [Potpie AI (`potpie-ai`)](potpie-ai-66e5a21be7.md) -- published+backing
-- [Powerdrill AI (`powerdrill-ai`)](powerdrill-ai-be7a8fa251.md) -- backing-only
-- [PR-Agent (`pr-agent`)](pr-agent-65d549f22a.md) -- published+backing
-- [PraisonAI (`praisonai`)](praisonai-78c3e2d673.md) -- published+backing
-- [PRarena (`prarena`)](prarena-3b1917fdd4.md) -- backing-only
-- [Prime Agent (`prime-agent`)](prime-agent-b8a56f763c.md) -- published+backing
-- [PrivateCode (`privatecode`)](privatecode-23ab75ec1a.md) -- published+backing
-- [project-codeguard (`project-codeguard`)](project-codeguard-17b3db1640.md) -- backing-only
-- [project-os-for-codex (`project-os-for-codex`)](project-os-for-codex-8dc290eec9.md) -- published+backing
+- [PixelPilot Copilot (`pixelpilot-copilot`)](pixelpilot-copilot-6890dc642c.md) -- published+backing+pages
+- [pixtuoid (`pixtuoid`)](pixtuoid-ec31b6d406.md) -- published+backing+pages
+- [PKU_MDAgent (`pku-mdagent`)](pku-mdagent-879c6778f7.md) -- published+backing+pages
+- [Plandex (`plandex`)](plandex-589ec82581.md) -- published+backing+pages
+- [PlayAI (`playai`)](playai-969d35b7a9.md) -- backing+pages
+- [PlayCode Agent (`playcode-agent`)](playcode-agent-b7a2a548d1.md) -- published+backing+pages
+- [PlayerZero (`playerzero`)](playerzero-d3260a262f.md) -- published+backing+pages
+- [plugins-coding-agents (`plugins-coding-agents`)](plugins-coding-agents-004a6198ff.md) -- backing+pages
+- [PlusB (`plusb`)](plusb-f3072bf5f9.md) -- backing+pages
+- [pocketshell (`pocketshell`)](pocketshell-f700aeb229.md) -- published+backing+pages
+- [Podiom (`podiom`)](podiom-f1fa6a776f.md) -- published+backing+pages
+- [Poke (`poke`)](poke-d138d52935.md) -- backing+pages
+- [polytoken (`polytoken`)](polytoken-a1913b3151.md) -- published+pages
+- [Poolside AI (`poolside-ai`)](poolside-ai-68fd18a6b4.md) -- published+backing+pages
+- [postal (`postal`)](postal-41104bdc0d.md) -- published+backing+pages
+- [postmortemthis (`postmortemthis`)](postmortemthis-ccdda15f2e.md) -- published+backing+pages
+- [Potpie AI (`potpie-ai`)](potpie-ai-66e5a21be7.md) -- published+backing+pages
+- [Powerdrill AI (`powerdrill-ai`)](powerdrill-ai-be7a8fa251.md) -- backing+pages
+- [PR-Agent (`pr-agent`)](pr-agent-65d549f22a.md) -- published+backing+pages
+- [PraisonAI (`praisonai`)](praisonai-78c3e2d673.md) -- published+backing+pages
+- [PRarena (`prarena`)](prarena-3b1917fdd4.md) -- backing+pages
+- [Prime Agent (`prime-agent`)](prime-agent-b8a56f763c.md) -- published+backing+pages
+- [PrivateCode (`privatecode`)](privatecode-23ab75ec1a.md) -- published+backing+pages
+- [project-codeguard (`project-codeguard`)](project-codeguard-17b3db1640.md) -- backing+pages
+- [project-os-for-codex (`project-os-for-codex`)](project-os-for-codex-8dc290eec9.md) -- published+backing+pages
 - [Project-S.O.C.R.A.T.E.S. (`project-socrates`)](project-socrates-d2a3dfb0b6.md) -- published+backing
 - [Proliferate (`proliferate`)](proliferate-ec971a9b64.md) -- published+backing
 - [Prometheus (`prometheus`)](prometheus-1809f7cd0c.md) -- published+backing

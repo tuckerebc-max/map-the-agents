@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: herry2059
@@ -22,6 +22,8 @@ Repository map entry: [herry2059/project-os-for-codex](../../repos/herry2059/pro
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Project OS for Codex exists because handing a coding agent a long-running project usually means sharing passwords, losing context between sessions, and having no auditable record of what the agent act
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Git-as-durable-project-record design; fail-closed MCP preflight with strict two-tool surface; short-lived (24h/7d) project-bound credentials instead of password sharing; handoff packages readable by humans and AI; built from real delivery experience (14,570 Codex tasks, 8.8B tokens); not affiliated with OpenAI
+
+(captured site page body (agents/project-os-for-codex.md), not a verified repo-code finding)
+Project OS for Codex exists because handing a coding agent a long-running project usually means sharing passwords, losing context between sessions, and having no auditable record of what the agent actually did. It provides a web dashboard plus a strict two-tool MCP server: one tool returns the current kickoff card, acceptance criteria, and handoff package, and the other appends one validated, idempotent progress event with an agent-reported verification note and a matching commit in a separate record repository. A fail-closed preflight verifies the credential, project binding, and exact tool surface before Codex starts, and high-risk operations like key management or deployment are deliberately kept outside the MCP surface for humans. Handoffs use short-lived, scope-limited credentials — 24-hour or 7-day expiry — instead of shared passwords, with everything hashed and independently revocable. Solo developers running Codex on multi-session projects use it to keep work auditable and handoff-safe.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/project-os-for-codex.md)

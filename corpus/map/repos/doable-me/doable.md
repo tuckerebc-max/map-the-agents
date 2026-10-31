@@ -1,9 +1,9 @@
 # doable-me/doable
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0be4ebf5df45 @ 8579e6e121fc73e8
+Latest snapshot: commit 0be4ebf5df45 @ 0bf32dc0676b4cff
 
 ## Summary (orientation draft, not independently verified)
 

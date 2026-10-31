@@ -1,10 +1,10 @@
 # dmae97/omk
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: dmae97/open-multi-agent-kit (github id 1225139405).
-Latest snapshot: commit 4e820f879503 @ 5a51db1e1ff93d41
+Latest snapshot: commit 61fedca36247 @ d2f3366364d345c8
 
 ## Summary (orientation draft, not independently verified)
 

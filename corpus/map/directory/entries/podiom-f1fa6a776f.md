@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Podiom
@@ -22,6 +22,8 @@ Repository map entry: [podiom/podiom](../../repos/podiom/podiom.md) (source: bac
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Podiom targets developers running Claude Code and OpenAI Codex side by side whose sessions, context, and task state live nowhere durable — each CLI restarts from scratch and nothing links the two. The
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source, local-first workspace for Claude Code and OpenAI Codex that provides durable context, sessions, projects, tasks, and scheduling for local LLM agents while the native CLIs do the work. Thin orchestration layer with full audit trails and agent identities. Lead agents can delegate work to other agents and turn outcomes into roadmap tasks.
+
+(captured site page body (agents/podiom.md), not a verified repo-code finding)
+Podiom targets developers running Claude Code and OpenAI Codex side by side whose sessions, context, and task state live nowhere durable — each CLI restarts from scratch and nothing links the two. The Go daemon provides that missing layer: named agent identities with workspace, model, profile, and permission mode; projects with shared context and roadmap tasks; scheduled recurring runs; and Goals, where a lead agent pursues a long-running outcome, delegates to other agents, and converts outcomes into roadmap tasks with an auditable trail. Sessions keep canonical history and can replay it onto a fresh CLI session after a provider or profile switch, and the layer never replaces the CLIs' own models, tools, or authentication. State lives under ~/.podiom with an embedded web UI, native mobile apps, and a Home Assistant add-on option. Its early adopters are local-first developers running multi-agent workflows entirely on their own machines.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/podiom.md)

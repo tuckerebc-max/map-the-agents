@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (855)
+## current (852)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -144,9 +144,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md) [coverage: complete]
 - [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md) [coverage: complete]
 - [divar-ir/ai-doc-gen](../repos/divar-ir/ai-doc-gen.md) [coverage: complete]
-- [dmae97/omk](../repos/dmae97/omk.md) [coverage: partial]
-- [dnouri/pilish](../repos/dnouri/pilish.md) [coverage: complete]
-- [doable-me/doable](../repos/doable-me/doable.md) [coverage: partial]
 - [dog-qiuqiu/invincat](../repos/dog-qiuqiu/invincat.md) [coverage: complete]
 - [dongdongunique/llm_rag](../repos/dongdongunique/llm_rag.md) [coverage: complete]
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [maximerobeyns/self_improving_coding_agent](../repos/maximerobeyns/self_improving_coding_agent.md) [coverage: complete]
 - [maximilian-winter/llama-cpp-agent](../repos/maximilian-winter/llama-cpp-agent.md) [coverage: partial]
 - [maxkle1nz/m1nd](../repos/maxkle1nz/m1nd.md) [coverage: partial]
+- [maxktz/hitch](../repos/maxktz/hitch.md) [coverage: complete]
+- [mayday-wpf/snow-cli](../repos/mayday-wpf/snow-cli.md) [coverage: partial]
+- [mbruhler/claude-orchestration](../repos/mbruhler/claude-orchestration.md) [coverage: partial]

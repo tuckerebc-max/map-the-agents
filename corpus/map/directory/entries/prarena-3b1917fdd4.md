@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: aavetis
@@ -22,6 +22,8 @@ Repository map entry: [aavetis/prarena](../../repos/aavetis/prarena.md) (source:
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-PRarena answers a question benchmarks avoid: when real coding agents open pull requests against real GitHub repositories, how often do those PRs get merged? It runs GitHub search queries keyed on agen
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Tracks opened and merged pull requests created by top SWE coding agents (Copilot, Codex, Cursor, Devin, Codegen, Jules) to provide analytics on PR volume versus success (merge) rates.
+
+(captured site page body (agents/prarena.md), not a verified repo-code finding)
+PRarena answers a question benchmarks avoid: when real coding agents open pull requests against real GitHub repositories, how often do those PRs get merged? It runs GitHub search queries keyed on agent-specific identifiers — branch prefixes like head:codex/ or bot accounts such as devin-ai-integration\[bot\] — and tracks opened versus merged PRs per agent, updating a public dashboard and chart automatically. Comparisons use ready PRs only, since agents like Codex iterate privately before opening while Copilot and Codegen open drafts first, which would otherwise skew merge rates. The distinction between draft, ready, and merged states makes the comparison more honest than raw PR counts. Researchers and buyers of coding agents use it as one of the few population-scale measures of whether agent-authored work actually survives review.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/prarena.md)
