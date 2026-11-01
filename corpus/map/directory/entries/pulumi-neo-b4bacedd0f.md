@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Pulumi
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Pulumi Neo applies the agentic coding pattern to infrastructure engineering, where a bad change can take a production system down rather than just failing a test. Neo takes a natural-language infrastr
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI agent that writes/updates infrastructure-as-code
+
+(captured site page body (agents/pulumi-neo.md), not a verified repo-code finding)
+Pulumi Neo applies the agentic coding pattern to infrastructure engineering, where a bad change can take a production system down rather than just failing a test. Neo takes a natural-language infrastructure request, generates code in Pulumi's general-purpose IaC languages (TypeScript, Python, Go, C#, YAML, HCL) across 170+ providers, runs tests and policy-as-code checks, and deploys with pulumi up — either autonomously or with human approval gates. Because it sits on Pulumi's platform, it inherits organizational context: existing stacks, policy enforcement, secrets management, and cloud discovery, which keeps agent-generated infrastructure from drifting from organizational rules. Pulumi also publishes open-source skills so coding agents developers already use can drive Pulumi workflows directly. Platform and DevOps teams use Neo for provisioning, drift remediation, and — through Neo Security — continuous threat modeling and attack-path tracing across their cloud estate.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pulumi-neo.md)

@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
-- Category: agent
+- Category: multiplexer
 - Provider/maker: yc-software
 - License: MIT
 - Language: TypeScript
@@ -22,10 +22,12 @@ Repository map entry: [yc-software/qm](../../repos/yc-software/qm.md) (source: b
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=multiplexer, backing=agent, page=
+- category: published=multiplexer, backing=agent, page=multiplexer
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-qm is built for companies that want one agent platform shared across employees rather than a personal CLI: each person gets an isolated workspace with their own memory, files, keychain view, permissio
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A 'multiplayer agent harness for work': each employee gets an isolated workspace (own memory, files, keychain view, crons, durable sandbox) while collaborating through shared Slack channels and projects, with the agent loop itself pluggable across Pi, OpenCode, Codex, or Claude Code. Contributions are accepted as written ADRs, not code — maintainers implement proposals themselves.
+
+(captured site page body (agents/qm.md), not a verified repo-code finding)
+qm is built for companies that want one agent platform shared across employees rather than a personal CLI: each person gets an isolated workspace with their own memory, files, keychain view, permissions, and durable sandbox, while shared scopes cover Slack channels, group messages, and team projects. The headless TypeScript core runs an agent loop over a fixed tool surface — notably an execute tool confined to each scope's sandbox — with Postgres storing sessions, memory, and queue state, and the web UI, admin panel, and Slack integration all plugins over its HTTP API. Which underlying harness (Pi, OpenCode, Codex, or Claude Code) drives the loop is an org-level configuration, behind interfaces swapped through one wiring file. Security postures range from per-tool human approval to a classifier-screened auto mode, with hard denials for destructive commands in all postures and auditing throughout. Organizations self-host it in their own Fly or AWS accounts, and contribute architectural proposals as written ADRs that maintainers implement.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/qm.md)

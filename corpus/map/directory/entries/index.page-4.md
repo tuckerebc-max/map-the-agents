@@ -64,31 +64,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [PrivateCode (`privatecode`)](privatecode-23ab75ec1a.md) -- published+backing+pages
 - [project-codeguard (`project-codeguard`)](project-codeguard-17b3db1640.md) -- backing+pages
 - [project-os-for-codex (`project-os-for-codex`)](project-os-for-codex-8dc290eec9.md) -- published+backing+pages
-- [Project-S.O.C.R.A.T.E.S. (`project-socrates`)](project-socrates-d2a3dfb0b6.md) -- published+backing
-- [Proliferate (`proliferate`)](proliferate-ec971a9b64.md) -- published+backing
-- [Prometheus (`prometheus`)](prometheus-1809f7cd0c.md) -- published+backing
-- [Promptengineering (`promptengineering`)](promptengineering-3eec3894d6.md) -- backing-only
-- [Promptly (`promptly`)](promptly-abfaf122ce.md) -- backing-only
-- [Public-Agent-Framwork (`public-agent-framwork`)](public-agent-framwork-75bc5342db.md) -- published+backing
-- [Pulumi Neo (`pulumi-neo`)](pulumi-neo-b4bacedd0f.md) -- published+backing
-- [PUNK (`punk`)](punk-3d9da0471c.md) -- published+backing
-- [PurrCode (`purrcode`)](purrcode-cd013151e4.md) -- published+backing
-- [Pu.sh (`push`)](push-d107ea3629.md) -- published+backing
-- [PyCodeAGI (`pycodeagi`)](pycodeagi-cc2c3a4f01.md) -- published+backing
-- [Pythagora (`pythagora`)](pythagora-5e6d26ab44.md) -- published+backing
-- [Python-Agents (`python-agents`)](python-agents-c23c381d07.md) -- published+backing
-- [QAX CodeGen (`qax-codegen`)](qax-codegen-a83a0c3112.md) -- published+backing
-- [qm (`qm`)](qm-1dc1a057de.md) -- published+backing
-- [QodeAssist (`qodeassist`)](qodeassist-8d2de0bdff.md) -- published+backing
-- [Qoder (`qoder`)](qoder-9d2fb6404c.md) -- published+backing
-- [qoder-cli (`qoder-cli`)](qoder-cli-2e64e9384f.md) -- published+backing
-- [Qodo (`qodo`)](qodo-5b3767eb23.md) -- backing-only
-- [QonQrete (`qonqrete`)](qonqrete-e5e7a90765.md) -- published+backing
-- [Quanta AI (`quanta-ai`)](quanta-ai-0bc758a501.md) -- published+backing
-- [QuillCode (`quillcode`)](quillcode-7f2c40cf76.md) -- published+backing
-- [Qwen-Agent (`qwen-agent`)](qwen-agent-d8daab4f7a.md) -- published+backing
-- [qwen_cli_coder (`qwen-cli-coder`)](qwen-cli-coder-575d35e8a8.md) -- published+backing
-- [Qwen Code (`qwen-code`)](qwen-code-b8377054ee.md) -- published+backing
+- [Project-S.O.C.R.A.T.E.S. (`project-socrates`)](project-socrates-d2a3dfb0b6.md) -- published+backing+pages
+- [Proliferate (`proliferate`)](proliferate-ec971a9b64.md) -- published+backing+pages
+- [Prometheus (`prometheus`)](prometheus-1809f7cd0c.md) -- published+backing+pages
+- [Promptengineering (`promptengineering`)](promptengineering-3eec3894d6.md) -- backing+pages
+- [Promptly (`promptly`)](promptly-abfaf122ce.md) -- backing+pages
+- [Public-Agent-Framwork (`public-agent-framwork`)](public-agent-framwork-75bc5342db.md) -- published+backing+pages
+- [Pulumi Neo (`pulumi-neo`)](pulumi-neo-b4bacedd0f.md) -- published+backing+pages
+- [PUNK (`punk`)](punk-3d9da0471c.md) -- published+backing+pages
+- [PurrCode (`purrcode`)](purrcode-cd013151e4.md) -- published+backing+pages
+- [Pu.sh (`push`)](push-d107ea3629.md) -- published+backing+pages
+- [PyCodeAGI (`pycodeagi`)](pycodeagi-cc2c3a4f01.md) -- published+backing+pages
+- [Pythagora (`pythagora`)](pythagora-5e6d26ab44.md) -- published+backing+pages
+- [Python-Agents (`python-agents`)](python-agents-c23c381d07.md) -- published+backing+pages
+- [QAX CodeGen (`qax-codegen`)](qax-codegen-a83a0c3112.md) -- published+backing+pages
+- [qm (`qm`)](qm-1dc1a057de.md) -- published+backing+pages
+- [QodeAssist (`qodeassist`)](qodeassist-8d2de0bdff.md) -- published+backing+pages
+- [Qoder (`qoder`)](qoder-9d2fb6404c.md) -- published+backing+pages
+- [qoder-cli (`qoder-cli`)](qoder-cli-2e64e9384f.md) -- published+backing+pages
+- [Qodo (`qodo`)](qodo-5b3767eb23.md) -- backing+pages
+- [QonQrete (`qonqrete`)](qonqrete-e5e7a90765.md) -- published+backing+pages
+- [Quanta AI (`quanta-ai`)](quanta-ai-0bc758a501.md) -- published+backing+pages
+- [QuillCode (`quillcode`)](quillcode-7f2c40cf76.md) -- published+backing+pages
+- [Qwen-Agent (`qwen-agent`)](qwen-agent-d8daab4f7a.md) -- published+backing+pages
+- [qwen_cli_coder (`qwen-cli-coder`)](qwen-cli-coder-575d35e8a8.md) -- published+backing+pages
+- [Qwen Code (`qwen-code`)](qwen-code-b8377054ee.md) -- published+backing+pages
 - [qwengate (`qwengate`)](qwengate-8576b0bd81.md) -- backing-only
 - [R2E-Gym (`r2e-gym`)](r2e-gym-96d6fac591.md) -- backing-only
 - [race-condition (`race-condition`)](race-condition-d2b1552f8e.md) -- backing-only

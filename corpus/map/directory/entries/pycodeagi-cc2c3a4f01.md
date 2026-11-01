@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: chakkaradeep
@@ -22,6 +22,8 @@ Repository map entry: [chakkaradeep/pycodeagi](../../repos/chakkaradeep/pycodeag
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-PyCodeAGI was one of the early 2023 experiments that applied the BabyAGI task-loop pattern to software generation: describe the app you want, and the agent decomposes the goal into tasks, executes the
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Early experimental AGI that generates a Python app from a user description. Uses LangChain and adopts the BabyAGI concept from @yoheinakajima. Very early-stage project with only 11 commits.
+
+(captured site page body (agents/pycodeagi.md), not a verified repo-code finding)
+PyCodeAGI was one of the early 2023 experiments that applied the BabyAGI task-loop pattern to software generation: describe the app you want, and the agent decomposes the goal into tasks, executes them with GPT-4 via LangChain, and iterates toward a working Python application. The implementation is minimal — a main script, a GPT-4 variant, and a config file — reflecting the era when agent projects fit in a few hundred lines. It adopted the task-driven loop Yohei Nakajima published as BabyAGI and pointed it at code generation rather than general research tasks. Development stopped after eleven commits in May 2023, and the README still describes the project as just started. Its main interest now is historical, as an early data point in the line from BabyAGI-style loops to modern coding agents.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/pycodeagi.md)

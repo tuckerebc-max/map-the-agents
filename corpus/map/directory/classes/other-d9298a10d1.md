@@ -421,7 +421,6 @@
 - [promptengineering](../entries/promptengineering-3eec3894d6.md)
 - [promptly](../entries/promptly-abfaf122ce.md)
 - [qodo](../entries/qodo-5b3767eb23.md)
-- [qwen-agent](../entries/qwen-agent-d8daab4f7a.md)
 - [qwengate](../entries/qwengate-8576b0bd81.md)
 - [r2e-gym](../entries/r2e-gym-96d6fac591.md)
 - [race-condition](../entries/race-condition-d2b1552f8e.md)

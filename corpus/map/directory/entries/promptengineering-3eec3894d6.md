@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: DaleStewart
@@ -22,6 +22,8 @@ Repository map entry: [dalestewart/promptengineering](../../repos/dalestewart/pr
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository is a personal collection of generative AI prompts that its author engineered for various tasks, with no harness, framework, or executable code attached. The README describes it simply
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): NOTE: Not a coding agent harness. Personal collection of engineered Generative AI prompts. Minimal activity (2 commits, 1 star).
+
+(captured site page body (agents/promptengineering.md), not a verified repo-code finding)
+This repository is a personal collection of generative AI prompts that its author engineered for various tasks, with no harness, framework, or executable code attached. The README describes it simply as prompts the author engineered, organized in a single folder, and nothing in the repo suggests tooling beyond that. Activity consists of two commits in November 2023, with one star and no community engagement since. It is catalogued here as an example of the prompt-library category that the census explicitly distinguishes from agent harnesses.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/promptengineering.md)

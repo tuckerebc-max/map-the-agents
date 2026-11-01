@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Qoder
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-qoder-cli was catalogued as a terminal coding agent built on Alibaba's Qwen programming models, positioned as a command-line alternative to heavier IDE-based tools. The repository that anchored this e
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Next-generation CLI AI coding agent based on Qwen programming large model
+
+(captured site page body (agents/qoder-cli.md), not a verified repo-code finding)
+qoder-cli was catalogued as a terminal coding agent built on Alibaba's Qwen programming models, positioned as a command-line alternative to heavier IDE-based tools. The repository that anchored this entry now returns 404, meaning the code, README, and install instructions are no longer available and nothing about its current mechanics can be verified. The disappearance may reflect a rename, a merge into another project, or an outright retraction; no successor repo or archived distribution surfaced during research. For census purposes it is treated as a dead entry, with the original description preserved as the only surviving evidence of what it claimed to be.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/qoder-cli.md)

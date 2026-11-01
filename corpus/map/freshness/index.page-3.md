@@ -2,7 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
 - [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
 - [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
 - [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
@@ -133,6 +132,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [dmae97/omk](../repos/dmae97/omk.md) [coverage: partial]
 - [dnouri/pilish](../repos/dnouri/pilish.md) [coverage: complete]
 - [doable-me/doable](../repos/doable-me/doable.md) [coverage: partial]
+- [doucs91/hivelore](../repos/doucs91/hivelore.md) [coverage: partial]
 
 ## refresh-failed (66)
 

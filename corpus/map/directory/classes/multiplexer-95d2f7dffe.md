@@ -181,6 +181,7 @@
 - [project-os-for-codex](../entries/project-os-for-codex-8dc290eec9.md)
 - [proliferate](../entries/proliferate-ec971a9b64.md)
 - [punk](../entries/punk-3d9da0471c.md)
+- [qm](../entries/qm-1dc1a057de.md)
 - [ralph](../entries/ralph-bf65266d0d.md)
 - [ralph-wiggum](../entries/ralph-wiggum-26e64c1b10.md)
 - [ralph-workflow](../entries/ralph-workflow-5aad79f695.md)

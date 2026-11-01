@@ -305,7 +305,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [dongdongunique/llm_rag](../repos/dongdongunique/llm_rag.md) -- status=distilled, freshness=current
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) -- status=distilled, freshness=current
 - [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md) -- status=distilled, freshness=current
-- [doucs91/hivelore](../repos/doucs91/hivelore.md) -- status=distilled, freshness=current
+- [doucs91/hivelore](../repos/doucs91/hivelore.md) -- status=distilled, freshness=stale
 - [dreamide/dream](../repos/dreamide/dream.md) -- status=distilled, freshness=current
 - [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) -- status=distilled, freshness=current
 - [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) -- status=distilled, freshness=current

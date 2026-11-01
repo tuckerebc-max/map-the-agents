@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [mckaywrigley/buildware-ai](../repos/mckaywrigley/buildware-ai.md) [coverage: complete]
 - [md-ashraful-pramanik/mapcoder](../repos/md-ashraful-pramanik/mapcoder.md) [coverage: complete]
 - [meltylabs/melty](../repos/meltylabs/melty.md) [coverage: complete]
 - [memorax-ai/memorax-code](../repos/memorax-ai/memorax-code.md) [coverage: partial]
@@ -446,8 +445,9 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (134)
+## stale (135)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
 - [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
+- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]

@@ -1,9 +1,9 @@
 # doucs91/hivelore
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit f6ddcc78c4fe @ 84c09b59240bf4ba
+Latest snapshot: commit 9dd6291a70ce @ 3e3844beba0eb310
 
 ## Summary (orientation draft, not independently verified)
 
