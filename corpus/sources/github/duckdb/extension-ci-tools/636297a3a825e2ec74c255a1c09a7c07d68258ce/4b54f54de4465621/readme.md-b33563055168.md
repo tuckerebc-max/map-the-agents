@@ -1,0 +1,112 @@
+# Extension CI Tools for DuckDB
+
+This repository contains reusable components for building, testing and deploying DuckDB extensions.
+
+DuckDB's [Extension Template](https://github.com/duckdb/extension-template) and various DuckDB extensions use this repository to share build configuration and CI workflows.
+
+## Usage examples
+
+Add this repository to an extension as the `extension-ci-tools` submodule. After cloning the extension, initialize its submodules:
+
+```shell
+git submodule update --init --recursive
+```
+
+When the extension has a `duckdb` submodule, omit `duckdb_version` from the distribution and deployment workflows. CI uses the commit pinned by the submodule.
+
+The distribution workflow automatically checks DuckDB's staging storage for a
+static-library archive matching the resolved DuckDB commit and native platform.
+When no staged archive is available, it builds DuckDB from source as before.
+
+### C++
+
+[duckdb-httpfs](https://github.com/duckdb/duckdb-httpfs/) includes the standard extension and vcpkg makefiles:
+
+```make
+PROJ_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+
+EXT_NAME=httpfs
+EXT_CONFIG=${PROJ_DIR}extension_config.cmake
+
+include extension-ci-tools/makefiles/duckdb_extension.Makefile
+include extension-ci-tools/makefiles/vcpkg.Makefile
+```
+
+It calls the reusable distribution workflow to build and test the extension on supported platforms:
+
+```yaml
+jobs:
+  duckdb-stable-build:
+    uses: duckdb/extension-ci-tools/.github/workflows/_extension_distribution.yml@main
+    with:
+      extension_name: httpfs
+      ci_tools_version: main
+```
+
+### Rust
+
+[duckdb-delta](https://github.com/duckdb/duckdb-delta/) uses the standard extension makefile and enables the Rust toolchain in CI:
+
+```make
+PROJ_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+
+EXT_NAME=delta
+EXT_CONFIG=${PROJ_DIR}extension_config.cmake
+
+include extension-ci-tools/makefiles/duckdb_extension.Makefile
+```
+
+```yaml
+jobs:
+  duckdb-stable-build:
+    uses: duckdb/extension-ci-tools/.github/workflows/_extension_distribution.yml@main
+    with:
+      extension_name: delta
+      ci_tools_version: main
+      enable_rust: true
+```
+
+### C API
+
+[odbc-scanner](https://github.com/duckdb/odbc-scanner/) does not have a `duckdb` submodule, so it sets the DuckDB version explicitly. It uses the C API makefiles. Set `USE_UNSTABLE_C_API` to `1` only when the extension needs DuckDB's unstable C API.
+
+```make
+PROJ_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+
+EXTENSION_NAME := odbc_scanner
+USE_UNSTABLE_C_API := 0
+TARGET_DUCKDB_VERSION := <duckdb-version>
+
+include extension-ci-tools/makefiles/c_api_extensions/base.Makefile
+include extension-ci-tools/makefiles/c_api_extensions/c_cpp.Makefile
+```
+
+Its CI adds the tools needed by the extension:
+
+```yaml
+jobs:
+  duckdb-build:
+    uses: duckdb/extension-ci-tools/.github/workflows/_extension_distribution.yml@main
+    with:
+      extension_name: odbc_scanner
+      duckdb_version: <duckdb-version>
+      ci_tools_version: main
+      extra_toolchains: python3;unixodbc;
+      build_duckdb_shell: false
+```
+
+The shared makefiles provide common targets such as `make debug`, `make test_debug` and `make release`.
+
+## C API version
+
+C API extension projects can select the v2 Wasm entrypoint by setting `CAPI_VERSION=2` before including the base makefile:
+
+```makefile
+EXTENSION_NAME=my_extension
+CAPI_VERSION=2
+include extension-ci-tools/makefiles/c_api_extensions/base.Makefile
+```
+
+For both debug and release Wasm builds, this adds `_v2` to the linker's entrypoint symbol:
+`_my_extension_init_c_api_v2`. Leaving `CAPI_VERSION` unset or setting it to `1` keeps
+`_my_extension_init_c_api`. Native linking is unchanged. This setting does not change `USE_UNSTABLE_C_API`.

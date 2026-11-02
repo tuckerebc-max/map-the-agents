@@ -424,6 +424,7 @@
 - [qwengate](../entries/qwengate-8576b0bd81.md)
 - [r2e-gym](../entries/r2e-gym-96d6fac591.md)
 - [race-condition](../entries/race-condition-d2b1552f8e.md)
+- [raplify](../entries/raplify-17bf9ec5cf.md)
 - [raven-test-ai](../entries/raven-test-ai-59c0dd2a2b.md)
 - [real-world-rails](../entries/real-world-rails-3c81d78bf3.md)
 - [recode](../entries/recode-d15a7b58ee.md)

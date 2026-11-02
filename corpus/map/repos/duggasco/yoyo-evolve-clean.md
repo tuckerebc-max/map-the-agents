@@ -1,12 +1,13 @@
 # duggasco/yoyo-evolve-clean
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: agent
 Origins: directory-resolve, alltheagents.org-backing - Projects: directory-intake
+Latest snapshot: commit 4622ea6c5604 @ e8469cb93df3c464
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

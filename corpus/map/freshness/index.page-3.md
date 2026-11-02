@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
-- [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
-- [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
-- [akashgit/remote-factory](../repos/akashgit/remote-factory.md) [coverage: partial]
 - [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
 - [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
 - [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
@@ -133,6 +129,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [dnouri/pilish](../repos/dnouri/pilish.md) [coverage: complete]
 - [doable-me/doable](../repos/doable-me/doable.md) [coverage: partial]
 - [doucs91/hivelore](../repos/doucs91/hivelore.md) [coverage: partial]
+- [dreamide/dream](../repos/dreamide/dream.md) [coverage: complete]
+- [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) [coverage: complete]
+- [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) [coverage: partial]
+- [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) [coverage: partial]
 
 ## refresh-failed (66)
 

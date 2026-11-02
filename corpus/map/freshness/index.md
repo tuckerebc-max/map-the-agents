@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (851)
+## current (847)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -148,10 +148,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [dongdongunique/llm_rag](../repos/dongdongunique/llm_rag.md) [coverage: complete]
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) [coverage: complete]
 - [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md) [coverage: complete]
-- [dreamide/dream](../repos/dreamide/dream.md) [coverage: complete]
-- [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) [coverage: complete]
-- [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) [coverage: partial]
-- [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) [coverage: partial]
 - [dyad-sh/dyad](../repos/dyad-sh/dyad.md) [coverage: partial]
 - [earendil-works/pi](../repos/earendil-works/pi.md) [coverage: complete]
 - [echovic/blade-code](../repos/echovic/blade-code.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mayday-wpf/snow-cli](../repos/mayday-wpf/snow-cli.md) [coverage: partial]
 - [mbruhler/claude-orchestration](../repos/mbruhler/claude-orchestration.md) [coverage: partial]
 - [mckaywrigley/buildware-ai](../repos/mckaywrigley/buildware-ai.md) [coverage: complete]
+- [md-ashraful-pramanik/mapcoder](../repos/md-ashraful-pramanik/mapcoder.md) [coverage: complete]
+- [meltylabs/melty](../repos/meltylabs/melty.md) [coverage: complete]
+- [memorax-ai/memorax-code](../repos/memorax-ai/memorax-code.md) [coverage: partial]
+- [mereyabdenbekuly-ctrl/clodex-ide](../repos/mereyabdenbekuly-ctrl/clodex-ide.md) [coverage: partial]

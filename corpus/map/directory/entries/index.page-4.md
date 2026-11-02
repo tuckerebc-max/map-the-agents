@@ -89,31 +89,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Qwen-Agent (`qwen-agent`)](qwen-agent-d8daab4f7a.md) -- published+backing+pages
 - [qwen_cli_coder (`qwen-cli-coder`)](qwen-cli-coder-575d35e8a8.md) -- published+backing+pages
 - [Qwen Code (`qwen-code`)](qwen-code-b8377054ee.md) -- published+backing+pages
-- [qwengate (`qwengate`)](qwengate-8576b0bd81.md) -- backing-only
-- [R2E-Gym (`r2e-gym`)](r2e-gym-96d6fac591.md) -- backing-only
-- [race-condition (`race-condition`)](race-condition-d2b1552f8e.md) -- backing-only
-- [ralph (`ralph`)](ralph-bf65266d0d.md) -- published+backing
-- [ralph-wiggum (`ralph-wiggum`)](ralph-wiggum-26e64c1b10.md) -- published+backing
-- [Ralph Workflow (`ralph-workflow`)](ralph-workflow-5aad79f695.md) -- published+backing
-- [Raplify (`raplify`)](raplify-17bf9ec5cf.md) -- backing-only
-- [Raven-Test-Ai (`raven-test-ai`)](raven-test-ai-59c0dd2a2b.md) -- backing-only
-- [rayu-cli (`rayu-cli`)](rayu-cli-0254ee15a0.md) -- published+backing
-- [real-world-rails (`real-world-rails`)](real-world-rails-3c81d78bf3.md) -- backing-only
-- [ReCode (`recode`)](recode-d15a7b58ee.md) -- backing-only
-- [recursive-coding-agents (`recursive-coding-agents`)](recursive-coding-agents-6de77100a8.md) -- backing-only
-- [reddit announcement (`reddit-announcement`)](reddit-announcement-8fbd64fa4d.md) -- backing-only
-- [ref-tools-mcp (`ref-tools-mcp`)](ref-tools-mcp-f4495758cf.md) -- backing-only
-- [Refact.ai (`refactai`)](refactai-93b5dc75ba.md) -- published+backing
-- [refakts (`refakts`)](refakts-b0beec1faa.md) -- backing-only
-- [Relay (`relay`)](relay-682fbae20f.md) -- published+backing
-- [remote-swe-agents (`remote-swe-agents`)](remote-swe-agents-4848a11a18.md) -- published+backing
-- [Replicas (`replicas`)](replicas-3f82074c61.md) -- published+backing
-- [Repo-To-Text (`repo-to-text`)](repo-to-text-fc5c5b6378.md) -- backing-only
-- [RepoAgent (`repoagent`)](repoagent-59c588aa43.md) -- backing-only
-- [repomon (`repomon`)](repomon-47b67b47e7.md) -- published+backing
-- [research paper (`research-paper`)](research-paper-fcd050aa5e.md) -- backing-only
-- [rgr (`rgr`)](rgr-e0791ad2e1.md) -- backing-only
-- [ricochet (`ricochet`)](ricochet-f025b94145.md) -- published+backing
+- [qwengate (`qwengate`)](qwengate-8576b0bd81.md) -- backing+pages
+- [R2E-Gym (`r2e-gym`)](r2e-gym-96d6fac591.md) -- backing+pages
+- [race-condition (`race-condition`)](race-condition-d2b1552f8e.md) -- backing+pages
+- [ralph (`ralph`)](ralph-bf65266d0d.md) -- published+backing+pages
+- [ralph-wiggum (`ralph-wiggum`)](ralph-wiggum-26e64c1b10.md) -- published+backing+pages
+- [Ralph Workflow (`ralph-workflow`)](ralph-workflow-5aad79f695.md) -- published+backing+pages
+- [Raplify (`raplify`)](raplify-17bf9ec5cf.md) -- backing+pages
+- [Raven-Test-Ai (`raven-test-ai`)](raven-test-ai-59c0dd2a2b.md) -- backing+pages
+- [rayu-cli (`rayu-cli`)](rayu-cli-0254ee15a0.md) -- published+backing+pages
+- [real-world-rails (`real-world-rails`)](real-world-rails-3c81d78bf3.md) -- backing+pages
+- [ReCode (`recode`)](recode-d15a7b58ee.md) -- backing+pages
+- [recursive-coding-agents (`recursive-coding-agents`)](recursive-coding-agents-6de77100a8.md) -- backing+pages
+- [reddit announcement (`reddit-announcement`)](reddit-announcement-8fbd64fa4d.md) -- backing+pages
+- [ref-tools-mcp (`ref-tools-mcp`)](ref-tools-mcp-f4495758cf.md) -- backing+pages
+- [Refact.ai (`refactai`)](refactai-93b5dc75ba.md) -- published+backing+pages
+- [refakts (`refakts`)](refakts-b0beec1faa.md) -- backing+pages
+- [Relay (`relay`)](relay-682fbae20f.md) -- published+backing+pages
+- [remote-swe-agents (`remote-swe-agents`)](remote-swe-agents-4848a11a18.md) -- published+backing+pages
+- [Replicas (`replicas`)](replicas-3f82074c61.md) -- published+backing+pages
+- [Repo-To-Text (`repo-to-text`)](repo-to-text-fc5c5b6378.md) -- backing+pages
+- [RepoAgent (`repoagent`)](repoagent-59c588aa43.md) -- backing+pages
+- [repomon (`repomon`)](repomon-47b67b47e7.md) -- published+backing+pages
+- [research paper (`research-paper`)](research-paper-fcd050aa5e.md) -- backing+pages
+- [rgr (`rgr`)](rgr-e0791ad2e1.md) -- backing+pages
+- [ricochet (`ricochet`)](ricochet-f025b94145.md) -- published+backing+pages
 - [Rikki Coding Agent (`rikki-coding-agent`)](rikki-coding-agent-4b9ebd17d2.md) -- published+backing
 - [Rocket (`rocket`)](rocket-c58dd0a376.md) -- published+backing
 - [Roo Code CLI (`roo-code-cli`)](roo-code-cli-19a722733e.md) -- published+backing

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Replicas
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Replicas addresses the operational mess of running cloud coding agents: bare repos, missing dependencies, and credentials scattered across laptops. When a task arrives from Slack, Linear, a GitHub or
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Cloud orchestration layer for coding agents — delegate tasks from Slack, Linear, GitHub, or GitLab and Replicas spins up an isolated Linux VM preconfigured with your repo, dependencies, tools, and MCP servers. Warm hooks preinstall dependencies and images. Agents can drive a real browser/desktop, verify their own work, and return PRs, commits, or recordings. Every minute is fully attributable for ...
+
+(captured site page body (agents/replicas.md), not a verified repo-code finding)
+Replicas addresses the operational mess of running cloud coding agents: bare repos, missing dependencies, and credentials scattered across laptops. When a task arrives from Slack, Linear, a GitHub or GitLab comment, a schedule, or the REST API, the platform boots an isolated Linux VM with warm hooks that preinstall the repo's dependencies, tools, MCP servers, and secrets. The user picks the harness per task and can watch diffs, steer plans, or pair in the web dashboard while the agent works with a full desktop and browser. Output is whatever the workflow needs — PRs, commits, comments, or finished tasks — with usage billed per minute of workspace runtime. It targets engineering teams that want delegated agent work to show up in their existing trackers rather than in a separate tool.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/replicas.md)

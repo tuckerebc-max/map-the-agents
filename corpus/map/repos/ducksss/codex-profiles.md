@@ -1,9 +1,9 @@
 # ducksss/codex-profiles
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 5a8084bf8a3a @ 07c8aeb13ebe19ba
+Latest snapshot: commit d1f66a0cdb0c @ 25f03267e2858b51
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: R2E-Gym
@@ -22,6 +22,8 @@ Repository map entry: [r2e-gym/r2e-gym](../../repos/r2e-gym/r2e-gym.md) (source:
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-R2E-Gym attacks the data bottleneck in training software-engineering agents: curated benchmarks like SWE-bench depend on human-written PRs and tests, which cap scale. Its SWE-GEN recipe instead synthe
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Largest procedurally curated environment (8.1K+ problems across 13 repos) for training real-world SWE agents. Introduces SWE-GEN (synthetic environment curation from commits, no human PRs/tests needed) and Hybrid Test-time Scaling (execution-based + execution-free verifiers). First open-weight SWE agent to reach 51% on SWE-Bench Verified, competitive with proprietary models like o1.
+
+(captured site page body (agents/r2e-gym.md), not a verified repo-code finding)
+R2E-Gym attacks the data bottleneck in training software-engineering agents: curated benchmarks like SWE-bench depend on human-written PRs and tests, which cap scale. Its SWE-GEN recipe instead synthesizes task environments directly from repository commits — Dockerized environments, executable tests, and natural-language task descriptions — producing over 8,100 problems across 13 real repos without human curation. On top of the environment it provides an agent harness (RepoEnv plus agent APIs), parallelized trajectory collection, and an SFT training pipeline that produced open-weight agents evaluated on SWE-bench Verified with hybrid test-time scaling. The pipeline and recipes were released by UC Berkeley and ANU researchers and published at COLM 2025, and Agentica used them to train the DeepSWE models. Machine-learning researchers use it to generate training environments and reproduce reinforcement-learning and SFT pipelines rather than as a day-to-day coding tool.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/r2e-gym.md)

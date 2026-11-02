@@ -1,9 +1,9 @@
 # dudufcb1/codebase-index-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8056926534bb @ 59d30715023ee86a
+Latest snapshot: commit 8056926534bb @ bad57ae2436df83f
 
 ## Summary (orientation draft, not independently verified)
 

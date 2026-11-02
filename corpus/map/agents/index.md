@@ -306,11 +306,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) -- status=distilled, freshness=current
 - [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md) -- status=distilled, freshness=current
 - [doucs91/hivelore](../repos/doucs91/hivelore.md) -- status=distilled, freshness=stale
-- [dreamide/dream](../repos/dreamide/dream.md) -- status=distilled, freshness=current
-- [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) -- status=distilled, freshness=current
-- [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) -- status=distilled, freshness=current
-- [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) -- status=distilled, freshness=current
-- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md) -- status=discovered, freshness=pending
+- [dreamide/dream](../repos/dreamide/dream.md) -- status=distilled, freshness=stale
+- [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) -- status=distilled, freshness=stale
+- [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) -- status=distilled, freshness=stale
+- [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) -- status=distilled, freshness=stale
+- [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md) -- status=snapshotted, freshness=pending
 - [dyad-sh/dyad](../repos/dyad-sh/dyad.md) -- status=distilled, freshness=current
 - [earendil-works/pi](../repos/earendil-works/pi.md) -- status=distilled, freshness=current
 - [echovic/blade-code](../repos/echovic/blade-code.md) -- status=distilled, freshness=current

@@ -1,9 +1,9 @@
 # dreamide/dream
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a50297d30940 @ a82661ac6d1bd95b
+Latest snapshot: commit 0a6ec2021af9 @ 1c58b3434275a569
 
 ## Summary (orientation draft, not independently verified)
 

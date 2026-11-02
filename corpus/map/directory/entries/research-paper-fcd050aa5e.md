@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The page hosts the paper that defined multi-agent conversation as a programming paradigm: agents are LLM-backed entities with configurable roles, and applications are written as chains of conversation
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Associated link: the Microsoft Research publication page for the AutoGen paper ('AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework'); not a standalone agent harness
+
+(captured site page body (agents/research-paper.md), not a verified repo-code finding)
+The page hosts the paper that defined multi-agent conversation as a programming paradigm: agents are LLM-backed entities with configurable roles, and applications are written as chains of conversations among them rather than as single monolithic prompts. It contributed the framing and evaluation that made agent-to-agent conversation a default architecture for LLM applications, including coding workflows where a code agent and a critic agent iterate. The page collects the PDF, BibTex, related blog posts, and talks — including the v0.4 redesign of AutoGen around an actor-model architecture. Its audience is researchers and practitioners citing or tracing the intellectual origin of multi-agent coding frameworks; the runnable software lives in the linked AutoGen repository, which is cataloged separately.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/research-paper.md)

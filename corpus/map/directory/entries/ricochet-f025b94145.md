@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Grik-ai
@@ -22,6 +22,8 @@ Repository map entry: [grik-ai/ricochet](../../repos/grik-ai/ricochet.md) (sourc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Ricochet exists for developers who want one agent across VS Code-compatible editors and the terminal without giving up control over what gets written to disk. The Go core runs the inspect-plan-edit-ve
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first AI coding agent with a native Go core for VS Code-compatible editors and terminal; review-before-apply edits, checkpoints (workspace snapshots), and an optional Ether/Live Mode for remote control via Telegram/Discord.
+
+(captured site page body (agents/ricochet.md), not a verified repo-code finding)
+Ricochet exists for developers who want one agent across VS Code-compatible editors and the terminal without giving up control over what gets written to disk. The Go core runs the inspect-plan-edit-verify loop, routes to whichever provider the user configures — hosted Grik models or BYOK keys for OpenAI, Anthropic, OpenRouter, Mistral, DeepSeek, and others — while the TypeScript layer supplies the VS Code extension and webview UI. A task timeline records every read, search, command, edit, and approval, and checkpoints allow rolling the workspace back to any prior state. MCP servers and project instruction skills extend the tool surface, and remote steering over Telegram or Discord targets people who kick off long tasks and monitor from elsewhere. The project is young, with a small commit history and no GitHub releases yet.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ricochet.md)

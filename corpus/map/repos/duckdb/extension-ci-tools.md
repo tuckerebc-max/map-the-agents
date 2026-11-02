@@ -1,9 +1,9 @@
 # duckdb/extension-ci-tools
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8fd4bb14edb0 @ b0f51f1531bcbd06
+Latest snapshot: commit 636297a3a825 @ 4b54f54de4465621
 
 ## Summary (orientation draft, not independently verified)
 
