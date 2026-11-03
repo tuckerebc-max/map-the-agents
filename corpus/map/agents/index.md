@@ -311,11 +311,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) -- status=distilled, freshness=stale
 - [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) -- status=distilled, freshness=stale
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md) -- status=snapshotted, freshness=pending
-- [dyad-sh/dyad](../repos/dyad-sh/dyad.md) -- status=distilled, freshness=current
-- [earendil-works/pi](../repos/earendil-works/pi.md) -- status=distilled, freshness=current
-- [echovic/blade-code](../repos/echovic/blade-code.md) -- status=distilled, freshness=current
+- [dyad-sh/dyad](../repos/dyad-sh/dyad.md) -- status=distilled, freshness=stale
+- [earendil-works/pi](../repos/earendil-works/pi.md) -- status=distilled, freshness=stale
+- [echovic/blade-code](../repos/echovic/blade-code.md) -- status=distilled, freshness=stale
 - [edantoledo/stoix](../repos/edantoledo/stoix.md) -- status=distilled, freshness=current
-- [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) -- status=distilled, freshness=current
+- [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) -- status=distilled, freshness=stale
 - [egoist/waku](../repos/egoist/waku.md) -- status=distilled, freshness=current
 - [eigent-ai/eigent](../repos/eigent-ai/eigent.md) -- status=distilled, freshness=current
 - [electric-sql/electric](../repos/electric-sql/electric.md) -- status=distilled, freshness=current

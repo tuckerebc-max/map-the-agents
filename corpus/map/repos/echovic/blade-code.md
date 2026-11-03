@@ -1,9 +1,9 @@
 # echovic/blade-code
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8917e4e0ef61 @ 4784f9b274c8ce01
+Latest snapshot: commit 266fd27a2c9b @ 1c775b69d3701800
 
 ## Summary (orientation draft, not independently verified)
 

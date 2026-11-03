@@ -1,9 +1,9 @@
 # editor-code-assistant/eca
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e30026331ad6 @ 6543b15215023cac
+Latest snapshot: commit fa1c9833f528 @ 9a480754d5c8dd8c
 
 ## Summary (orientation draft, not independently verified)
 

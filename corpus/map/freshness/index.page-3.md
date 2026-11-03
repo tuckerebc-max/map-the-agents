@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
-- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
-- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
-- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]
 - [alibaba/open-code-review](../repos/alibaba/open-code-review.md) [coverage: partial]
 - [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
 - [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
@@ -133,6 +129,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) [coverage: complete]
 - [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) [coverage: partial]
 - [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) [coverage: partial]
+- [dyad-sh/dyad](../repos/dyad-sh/dyad.md) [coverage: partial]
+- [earendil-works/pi](../repos/earendil-works/pi.md) [coverage: complete]
+- [echovic/blade-code](../repos/echovic/blade-code.md) [coverage: partial]
+- [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) [coverage: partial]
 
 ## refresh-failed (66)
 

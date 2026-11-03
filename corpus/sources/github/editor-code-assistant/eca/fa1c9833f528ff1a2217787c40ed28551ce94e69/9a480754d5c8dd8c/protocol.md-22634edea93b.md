@@ -1,0 +1,4026 @@
+---
+description: "ECA protocol specification: the standardized client-server protocol for connecting AI assistants to code editors."
+---
+
+# ECA Protocol
+
+The ECA (Editor Code Assistant) protocol is JSON-RPC 2.0-based protocol heavily inspired by the [LSP (Language Server Protocol)](https://microsoft.github.io/language-server-protocol/), that enables communication between multiple code editors/IDEs and ECA process (server), which will interact with multiple LLMs. It follows similar patterns to the LSP but is specifically designed for AI code assistance features.
+
+Key characteristics:
+- Provides a protocol standard so different editors can use the same language to offer AI features.
+- Supports bidirectional communication (client to server and server to client)
+- Handles both synchronous requests and asynchronous notifications
+- Includes built-in support for streaming responses
+- Provides structured error handling
+
+## Base Protocol
+
+The base protocol consists of a header and a content part (comparable to HTTP). The header and content part are
+separated by a `\r\n`.
+
+### Header Part
+
+The header part consists of header fields. Each header field is comprised of a name and a value, separated by `: ` (a colon and a space). The structure of header fields conforms to the [HTTP semantic](https://tools.ietf.org/html/rfc7230#section-3.2). Each header field is terminated by `\r\n`. Considering the last header field and the overall header itself are each terminated with `\r\n`, and that at least one header is mandatory, this means that two `\r\n` sequences always immediately precede the content part of a message.
+
+Currently the following header fields are supported:
+
+| Header Field Name | Value Type  | Description |
+|:------------------|:------------|:------------|
+| Content-Length    | number      | The length of the content part in bytes. This header is required. |
+| Content-Type      | string      | The mime type of the content part. Defaults to application/vscode-jsonrpc; charset=utf-8 |
+{: .table .table-bordered .table-responsive}
+
+The header part is encoded using the 'ascii' encoding. This includes the `\r\n` separating the header and content part.
+
+### Content Part
+
+Contains the actual content of the message. The content part of a message uses [JSON-RPC 2.0](https://www.jsonrpc.org/specification) to describe requests, responses and notifications. The content part is encoded using the charset provided in the Content-Type field. It defaults to `utf-8`, which is the only encoding supported right now. If a server or client receives a header with a different encoding than `utf-8` it should respond with an error.
+
+### Example:
+
+```
+Content-Length: ...\r\n
+\r\n
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+        ...
+    }
+}
+```
+
+## Lifecycle Messages
+
+The protocol defines a set of lifecycle messages that manage the connection and state between the client (editor) and server (code assistant).
+
+=== "Initialization flow"
+
+    Handshake between client and server, including the actions done by server after initialization.
+
+    ```mermaid
+    sequenceDiagram
+        autonumber
+        participant C as Editor (ECA client)
+        participant S as ECA Server
+        C->>+S: initialize (request)
+        Note right of S: Save workspace-folders/capabilties
+        S->>-C: initialize (response)
+        C--)+S: initialized (notification)
+        Note right of S: Sync models: Request models.dev <br/>for models capabilities
+        Note right of S: Notify which models/agents/variants are <br/>available and their defaults.
+        S--)C: config/updated (notification)
+        Note right of S: Init MCP servers
+        S--)-C: tool/serverUpdated (notification)
+    ```
+
+=== "Shutdown flow"
+
+    Shutdown process between client and server
+
+    ```mermaid
+    sequenceDiagram
+        autonumber
+        participant C as Editor (ECA client)
+        participant S as ECA Server
+        C->>+S: shutdown
+        Note right of S: Finish MCP servers process
+        S->>-C: shutdown
+        C--)S: exit
+        Note right of S: Server stops its process
+    ```
+
+### Basic structures
+
+```typescript
+export type ErrorType = 'error' | 'warning' | 'info';
+
+interface Error {
+    type: ErrorType;
+    message: string;
+}
+
+interface Range {
+   start: {
+       line: number;
+       character: number;
+   };
+   
+   end: {
+       line: number;
+       character: number;
+   };
+}
+```
+
+
+### Initialize (↩)
+
+The first request sent from client to server. This message:
+- Establishes the connection
+- Allows the server to index the project
+- Enables capability negotiation
+- Sets up the workspace context
+
+_Request:_
+
+* method: `initialize`
+* params: `InitializeParams` defined as follows:
+
+```typescript
+interface InitializeParams {
+    /**
+     * The process Id of the parent process that started the server. Is null if
+     * the process has not been started by another process. If the parent
+     * process is not alive then the server should exit (see exit notification)
+     * its process.
+     */
+     processId?: integer | null;
+     
+     /**
+     * Information about the client
+     */
+    clientInfo?: {
+        /**
+         * The name of the client as defined by the client.
+         */
+        name: string;
+
+        /**
+         * The client's version as defined by the client.
+         */
+        version?: string;
+    };
+    
+    /**
+     * User provided initialization options.
+     */
+    initializationOptions?: {
+        /*
+         * The chat agent.
+         */
+         chatAgent?: ChatAgent;
+    };
+    
+    /**
+     * The capabilities provided by the client (editor or tool)
+     */
+    capabilities: ClientCapabilities;
+    
+    /**
+     * The workspace folders configured in the client when the server starts.
+     * If client doesn´t support multiple projects, it should send a single 
+     * workspaceFolder with the project root.
+     */
+    workspaceFolders: WorkspaceFolder[];
+}
+
+interface WorkspaceFolder {
+    /**
+     * The associated URI for this workspace folder.
+     */
+    uri: string;
+
+    /**
+     * The name of the workspace folder. Used to refer to this folder in the user interface.
+     */
+    name: string;
+}
+
+interface ClientCapabilities {
+    codeAssistant?: {
+        /**
+         * Whether client supports chat feature.
+         */
+        chat?: boolean;
+
+        /**
+         * Whether client supports rewrite feature.
+         */
+        rewrite?: boolean;
+        
+        /**
+         * Whether client supports provide editor informations to server like
+         * diagnostics, cursor information and others.
+         */
+        editor?: {
+            /**
+             * Whether client supports provide editor diagnostics 
+             * information to server (Ex: LSP diagnostics) via `editor/getDiagnostics` 
+             * server request.
+             */ 
+            diagnostics?: boolean;
+
+            /**
+             * Whether client supports provide the definition locations of a symbol
+             * (Ex: LSP definition) via `editor/getDefinition` server request.
+             */
+            definition?: boolean;
+
+            /**
+             * Whether client supports provide the references of a symbol
+             * (Ex: LSP references) via `editor/getReferences` server request.
+             */
+            references?: boolean;
+        }
+
+        /**
+         * Chat-related capabilities beyond the basic chat flag.
+         */
+        chatCapabilities?: {
+            /**
+             * Whether client supports `chat/askQuestion` server request,
+             * enabling the server to ask the user a question and receive an answer
+             * during a chat session.
+             */
+            askQuestion?: boolean;
+
+            /**
+             * Present when the client applies chat history changes in place
+             * instead of needing a full `chat/cleared` + replay. Then
+             * `chat/rollback` emits `chat/truncated`, `chat/addFlag` emits a
+             * single flag `chat/contentReceived` carrying `afterContentId`, and
+             * chats the server creates (`/fork`, `/btw`, `chat/fork`) stream
+             * only their newest messages, with `chat/opened` `history`
+             * describing the rest. Remote (SSE) clients keep receiving the
+             * full replays.
+             */
+            incrementalUpdates?: {
+                /**
+                 * Max messages to stream into a chat the server creates.
+                 * Defaults to 50.
+                 */
+                historyPageSize?: number;
+            };
+        }
+    }
+}
+
+/**
+ * Built-in agents: 'code' (default) and 'plan'.
+ * Custom agents can also be defined via config or .md files.
+ *
+ * @deprecated 'build' is a legacy name mapped to 'code'.
+ */
+type ChatAgent = string;
+```
+
+_Response:_
+
+```typescript
+interface InitializeResponse {
+    /**
+     * Optional welcome message configured by the user to show when starting a new chat.
+     */
+    chatWelcomeMessage?: string;
+
+    /**
+     * Absolute path of the global config file the server reads
+     * (`$XDG_CONFIG_HOME/eca/config.json` or `~/.config/eca/config.json`).
+     * Clients should use it instead of computing the path themselves,
+     * since the resolution of the home directory may differ between
+     * the client and the server (e.g. on Windows).
+     */
+    globalConfigPath?: string;
+}
+```
+
+### Initialized (→)
+
+A notification sent from the client to the server after receiving the initialize response. This message:
+- Confirms that the client is ready to receive requests
+- Signals that the server can start sending notifications
+- Indicates that the workspace is fully loaded
+
+_Notification:_
+
+* method: `initialized`
+* params: `InitializedParams` defined as follows:
+
+```typescript
+interface InitializedParams {}
+```
+
+### Shutdown (↩)
+
+A request sent from the client to the server to gracefully shut down the connection. This message:
+- Allows the server to clean up resources
+- Ensures all pending operations are completed
+- Prepares for a clean disconnection
+
+_Request:_
+
+* method: `shutdown`
+* params: none
+
+_Response:_
+
+* result: null
+* error: code and message set in case an exception happens during shutdown request.
+
+### Exit (→)
+
+A notification sent from the client to the server to terminate the connection. This message:
+- Should be sent after a shutdown request
+- Signals the server to exit its process
+- Ensures all resources are released
+
+_Notification:_
+
+* method: `exit`
+* params: none 
+
+## Code Assistant Features
+
+=== "Chat: text"
+
+    Example of a basic chat conversation with only texts:
+
+    ```mermaid
+    sequenceDiagram
+        autonumber
+        participant C as Editor (ECA client)
+        participant S as ECA Server
+        participant L as LLM
+        C->>+S: chat/prompt
+        Note over C,S: User sends: Hello there!
+        S--)C: chat/contentReceived (system: start)
+        S--)C: chat/contentReceived (user: "hello there!")
+        Note right of S: Prepare prompt with all<br/>available contexts and tools.
+        S->>+L: Send prompt
+        S->>-C: chat/prompt
+        Note over C,S: Success: sent to LLM
+        loop LLM streaming
+            Note right of L: Returns first `H`,<br/>then `i!`, etc
+            L--)S: Stream data
+            S--)C: chat/contentReceived (assistant: text)
+            
+        end
+        L->>-S: Finish response
+        S->>C: chat/contentReceived (system: finished)
+    ```
+    
+=== "Chat: tool call"
+
+    Example of a tool call loop LLM interaction:
+
+    ```mermaid
+    sequenceDiagram
+        autonumber
+        participant C as Editor (ECA client)
+        participant S as ECA Server
+        participant L as LLM
+        C->>S: chat/prompt
+        Note over C,S: ...<br/>Same as text flow
+        S->>+L: Send prompt with<br/>available tools
+        loop LLM streaming / calling tools
+            Note right of L: Returns first `will`,<br/>then `check`, etc
+            L--)S: Stream data
+            S--)C: chat/contentReceived (assistant: text)
+            S--)C: chat/contentReceived (toolCallPrepare: name + args)
+            L->>-S: Finish response:<br/>needs tool call<br/>'eca__directory_tree'
+            S->>C: chat/contentReceived (toolCallRun)<br/>Ask user if should call tool
+            C--)S: chat/toolCallApprove
+            S->>C: chat/contentReceived (toolCallRunning)
+            Note right of S: Call tool and get result
+            S->>C: chat/contentReceived (toolCalled)
+            S->>+L: Send previous prompt +<br/>LLM response +<br/>tool call result
+            Note right of L: Stream response
+        end
+        L->>-S: Finish response
+        S->>C: chat/contentReceived (system: finished)
+    ```
+
+### Chat Prompt (↩)
+
+A request sent from client to server, starting or continuing a chat in natural language as an agent.
+Used for broader questions or continuous discussion of project/files.
+
+_Request:_ 
+
+* method: `chat/prompt`
+* params: `ChatPromptParams` defined as follows:
+
+```typescript
+interface ChatPromptParams {
+    /**
+     * The chat session identifier.
+     *
+     * Clients should generate this id (e.g. a UUID) at the moment the user
+     * opens a new chat in the UI and reuse it across all subsequent requests
+     * for that chat. If the server has never seen the id, it materializes a
+     * new empty chat record on demand and emits a `chat/opened` notification
+     * so other observers (additional clients, remote viewers) can sync.
+     *
+     * Backward compatibility: clients that omit this field still work — the
+     * server will mint an id and return it in the response. In that legacy
+     * path no `chat/opened` notification is emitted (the prompting client
+     * already learns the id from the response payload).
+     *
+     * Reserved: ids starting with `subagent-` are reserved for server-managed
+     * subagent chats and will be rejected. Ids must be non-blank and at most
+     * 256 characters.
+     */
+    chatId?: string;
+
+    /**
+     * The message from the user in native language
+     */
+    message: string;
+
+    /**
+     * Specifies the AI model to be used for chat responses.
+     * Different models may have different capabilities, response styles,
+     * and performance characteristics.
+     */
+    model?: Model;
+
+    /**
+     * The chat agent used by server to handle chat communication and actions.
+     */
+    agent?: ChatAgent;
+
+    /**
+     * Optional contexts about the current workspace.
+     * Can include multiple different types of context.
+     */
+    contexts?: ChatContext[];
+
+    /**
+     * Optional variant name to select a predefined parameter set for the model.
+     * Variants are named presets defined per model in the provider config (e.g. "low", "medium", "high").
+     * When provided, the variant payload is merged into the LLM request before extraPayload.
+     * Falls back to the agent's configured variant if not specified.
+     */
+    variant?: string;
+
+    /**
+     * When true, tool calls that would normally require manual approval
+     * are auto-accepted. Does not override deny rules.
+     */
+    trust?: boolean;
+}
+
+/**
+ * The LLM model name.
+ */
+type Model = string;
+
+type ChatContext = FileContext | DirectoryContext | WebContext | RepoMapContext | CursorContext | McpResourceContext | ImageContext | TextContext;
+
+/**
+ * Context related to a file in the workspace
+ */
+interface FileContext {
+    type: 'file';
+    /**
+     * Path to the file
+     */
+    path: string;
+    
+    /**
+     * Range of lines to retrieve from file, if nil consider whole file.
+     */
+    linesRange?: LinesRange;
+}
+
+interface LinesRange {
+   start: number;
+   end: number;
+}
+
+/**
+ * Context related to a directory in the workspace
+ */
+interface DirectoryContext {
+    type: 'directory';
+    /**
+     * Path to the directory
+     */
+    path: string;
+}
+
+/**
+ * Context related to web content
+ */
+interface WebContext {
+    type: 'web';
+    /**
+     * URL of the web content
+     */
+    url: string;
+}
+
+/**
+ * Inline image context supplied by the client.
+ *
+ * Use this when the client cannot supply a filesystem path the server can
+ * read (e.g. web ECA). For filesystem-capable clients (vscode, intellij,
+ * emacs, …) a `FileContext` pointing at a `.png/.jpg/.jpeg/.gif/.webp`
+ * file is equivalent and can keep being used.
+ */
+interface ImageContext {
+    type: 'image';
+
+    /**
+     * MIME type of the image bytes (e.g. 'image/png', 'image/jpeg').
+     */
+    mediaType: string;
+
+    /**
+     * Raw base64-encoded image bytes (no `data:` URL prefix).
+     */
+    base64: string;
+}
+
+/**
+ * Inline text context supplied by the client.
+ *
+ * Use this when the content has no filesystem path the server can read,
+ * e.g. editor buffers (compile/terminal output), untitled documents or
+ * pasted text. The server delivers it with the user message (like images),
+ * not the system prompt, so clients should send fresh content on each
+ * prompt.
+ */
+interface TextContext {
+    type: 'text';
+
+    /**
+     * Display name for this content (e.g. a buffer/terminal name).
+     */
+    label: string;
+
+    /**
+     * The raw text content.
+     */
+    content: string;
+}
+
+/**
+ * Context about the workspaces repo-map, automatically calculated by server.
+ * Clients should include this to chat by default but users may want exclude 
+ * this context to reduce context size if needed.
+ *
+ * @deprecated No longer needed, replaced by eca__directory_tree tool.
+ */
+interface RepoMapContext {
+    type: 'repoMap'; 
+}
+
+/**
+ * Context about the cursor position in editor, sent by client.
+ * Clients should track path and cursor position.
+ * The server delivers this per-turn in the user message (not the system prompt)
+ * and only re-sends it when the position changes, keeping the cached prompt
+ * prefix stable. Clients may send it on every prompt.
+ */
+interface CursorContext {
+    type: 'cursor'; 
+    
+    /**
+     * File path of where the cursor is.
+     */
+    path: string;
+    
+    /**
+     * Cursor position, if not using a selection start should be equal to end.
+     */
+    position: {
+       start: {
+           line: number;
+           character: number;
+       },
+       end: {
+           line: number;
+           character: number;
+       }
+    }
+}
+
+/***
+ * A MCP resource available from a MCP server.
+ */
+interface McpResourceContext {
+    type: 'mcpResource';
+    
+   /** 
+    * The URI of the resource like file://foo/bar.clj
+    */
+    uri: string;
+
+    /** 
+     * The name of the resource.
+     */
+    name: string;
+    
+    /** 
+     * The description of the resource.
+     */
+    description: string;
+    
+    /** 
+     * The mimeType of the resource like `text/markdown`.
+     */
+    mimeType: string;
+    
+    /** 
+     * The server name of this MCP resource.
+     */
+    server: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatPromptResponse {
+    /**
+     * Unique identifier for this chat session
+     */
+    chatId: string;
+    
+    /*
+     * The model used for this chat request.
+     */
+    model: Model;
+    
+    /**
+     * What the server is doing after receiving this prompt
+     */
+    status: 'prompting' | 'login' | 'error';
+}
+```
+
+### Chat Inline Prompt (↩)
+
+A request sent from client to server for prompts whose answer is rendered inline
+in the editor (e.g. an overlay or inlay near the cursor) while being backed by a
+regular chat session. The response streams via the usual `chat/contentReceived`
+notifications for the given `chatId`; tool calls, approvals, stop and follow-ups
+all behave like any other chat.
+
+Differences from `chat/prompt`:
+
+- `chatId` is required and client-minted, so the client always knows the session id.
+- When the id is new and `sourceChatId` is given, the server seeds the new chat with
+  a copy of the source chat's history (a fork). The copied history is **not** replayed
+  to the client - only new turns are streamed. This works even while the source chat
+  is running a prompt.
+- The created chat is marked with `kind: "inline"` (see `chat/list`) and emits a
+  `chat/opened` notification with a title derived from the message.
+- Model and variant defaults for new inline chats resolve as: explicit param >
+  `chatInline` config > source chat > default chat selection, and stick to the
+  chat afterwards. `agent` defaults from `chatInline.agent` on every request
+  when not provided. When `chatId` belongs to an existing regular (non-inline)
+  chat, the `chatInline` defaults do not apply and the request behaves exactly
+  like `chat/prompt`.
+
+_Request:_
+
+* method: `chat/inlinePrompt`
+* params: `ChatInlinePromptParams` defined as follows:
+
+```typescript
+interface ChatInlinePromptParams {
+    /**
+     * The chat session identifier, minted by the client (e.g. a UUID).
+     * Reuse it across requests for follow-ups on the same inline session.
+     */
+    chatId: string;
+
+    /**
+     * Optional chat to fork from when this inline session is created.
+     * Ignored when `chatId` already exists.
+     */
+    sourceChatId?: string;
+
+    /**
+     * The message from the user in native language
+     */
+    message: string;
+
+    /**
+     * Same as in `chat/prompt`.
+     */
+    model?: Model;
+    agent?: ChatAgent;
+    contexts?: ChatContext[];
+    variant?: string;
+    trust?: boolean;
+}
+```
+
+_Response:_ `ChatPromptResponse`
+
+### Chat Content Received (←)
+
+A server notification with a new content returned from the LLM or server.
+
+_Notification:_ 
+
+* method: `chat/contentReceived`
+* params: `ChatContentReceivedParams` defined as follows:
+
+```typescript
+interface ChatContentReceivedParams {
+    /**
+     * The chat session identifier this content belongs to
+     */
+    chatId: string;
+    
+    /**
+     * If this chat is a subagent, the parent chat id.
+     * Useful for clients to associate subagent messages with the parent conversation.
+     */
+    parentChatId?: string;
+
+    /**
+     * The content received from the LLM
+     */
+    content: ChatContent;
+    
+    /**
+     * The owner of this content.
+     */
+    role: 'user' | 'system' | 'assistant';
+}
+
+/**
+ * Different types of content that can be received from the LLM
+ */
+type ChatContent = 
+    ChatTextContent 
+    | ChatURLContent 
+    | ChatImageContent
+    | ChatProgressContent 
+    | ChatUsageContent
+    | ChatReasonStartedContent 
+    | ChatReasonTextContent 
+    | ChatReasonFinishedContent 
+    | ChatHookActionStartedContent 
+    | ChatHookActionFinishedContent 
+    | ChatToolCallPrepareContent
+    | ChatToolCallRunContent
+    | ChatToolCallRunningContent
+    | ChatToolCalledContent
+    | ChatToolCallRejectedContent
+    | ChatMetadataContent
+    | ChatFlagContent;
+    
+/**
+ * Simple text message from the LLM.
+ * The text may contain markdown (e.g. links like `[title](url)` in login flows),
+ * clients are encouraged to render it as markdown.
+ */
+interface ChatTextContent {
+    type: 'text';
+    
+    /**
+     * The unique identifier of this content.
+     * Mostly used to rollback messages.
+     * Current, only user messages contain this.
+     */
+    contentId?: string;
+
+    /**
+     * The text content
+     */
+    text: string;
+}
+
+/**
+ * Progress messages about the chat. 
+ * Usually to mark what eca is doing/waiting or tell it finished processing messages.
+ */
+interface ChatProgressContent {
+    type: 'progress';
+
+    /**
+     * The state of this progress.
+     */
+    state: 'running' | 'finished';
+
+    /**
+     * Extra text to show in chat about current state of this chat.
+     * May be omitted when state is 'finished'.
+     */
+    text?: string;
+
+    /**
+     * Only when state is 'finished': present when the turn ended because
+     * of an error (a provider or network error, a context overflow…),
+     * which was also shown in the chat as text. Absent when it succeeded.
+     */
+    error?: {
+        message: string;
+        /**
+         * The kind of error, e.g. 'network', 'overloaded', 'rate-limited',
+         * 'quota-exhausted', 'auth', 'context-overflow', 'unknown'.
+         */
+        type?: string;
+    };
+}
+
+/**
+ * A reason started from the LLM
+ *
+ * Consecutive reasoning blocks with no other visible content between them
+ * are merged by the server into a single reason: one id, texts joined by a
+ * blank line and a single `reasonFinished` with the summed time, sent right
+ * before the next visible content or when the prompt finishes.
+ */
+interface ChatReasonStartedContent {
+    type: 'reasonStarted';
+    
+    /**
+     * The id of this reason
+     */
+    id: string; 
+}
+
+/**
+ * A reason text from the LLM
+ *
+ */
+interface ChatReasonTextContent {
+    type: 'reasonText';
+    
+    /**
+     * The id of a started reason
+     */
+    id: string;
+    
+    /**
+     * The text content of the reasoning
+     */
+    text: string;
+}
+
+/**
+ * A reason finished from the LLM
+ *
+ */
+interface ChatReasonFinishedContent {
+    type: 'reasonFinished';
+    
+    /**
+     * The id of this reason
+     */
+    id: string; 
+
+    /**
+     * The total time the reason took in milliseconds.
+     */
+    totalTimeMs: number;
+}
+
+/**
+ * A hook action started to run
+ *
+ */
+interface ChatHookActionStartedContent {
+    type: 'hookActionStarted';
+    
+    /**
+     * The id of this hook
+     */
+    id: string; 
+    
+    /**
+     * The name of this hook
+     */
+    name: string;
+    
+    /**
+     * The type of this hook action
+     */
+    actionType: 'shell';
+}
+
+/**
+ * A hook action finished
+ *
+ */
+interface ChatHookActionFinishedContent {
+    type: 'hookActionFinished';
+    
+    /**
+     * The id of this hook
+     */
+    id: string; 
+    
+    /**
+     * The name of this hook
+     */
+    name: string;
+    
+    /**
+     * The type of this hook action
+     */
+    actionType: 'shell';
+    
+    /**
+     * The status code of this hook
+     */
+    status: number;
+    
+    /**
+     * The output of this hook if any
+     */
+    output?: string;
+    
+    /**
+     * The error of this hook if any
+     */
+    error?: string;
+    
+    /**
+     * For tool hooks (preToolCall/postToolCall), the id of the tool call this
+     * hook acted on, so clients can correlate the hook block with its tool call.
+     */
+    toolCallId?: string;
+}
+
+/**
+ * URL content message from the LLM
+ */
+interface ChatURLContent {
+    type: 'url';
+
+    /**
+     * The URL title
+     */
+    title: string;
+
+    /**
+     * The URL link
+     */
+    url: string;
+}
+
+/**
+ * Image content from the assistant. Produced either by a server-side
+ * image generation tool (e.g. OpenAI's `image_generation` Responses-API
+ * tool) or by an MCP tool whose result includes an `image` content block
+ * (e.g. an MCP image-generation/edit server). In both cases, ECA emits
+ * one `ChatImageContent` per image so clients can render without
+ * inspecting tool-call outputs.
+ *
+ * The image bytes are delivered inline as base64 so that web/remote ECA
+ * clients (e.g. web.eca.dev) can render without filesystem access.
+ */
+interface ChatImageContent {
+    type: 'image';
+
+    /**
+     * The MIME type of the image bytes (e.g. 'image/png').
+     */
+    mediaType: string;
+
+    /**
+     * Raw base64-encoded image bytes (no `data:` URL prefix).
+     * Clients should decode and render or wrap in a data URL as needed.
+     */
+    base64: string;
+}
+
+/**
+ * Details about the chat's usage, like used tokens and costs.
+ */
+interface ChatUsageContent {
+    type: 'usage';
+    
+    /**
+     * The total input + output tokens of the whole chat session so far.
+     */
+    sessionTokens: number;
+
+    /**
+     * Output tokens per second of the last model response, rounded to an
+     * integer. Measured from the first generated token to the end of the
+     * response. Includes reasoning tokens when the provider counts them as
+     * output and server-side tool waits such as web search. Excludes client
+     * tool execution and approval waits. Absent for non-streaming requests or
+     * when usage or timing is unknown.
+     */
+    messageOutputTps?: number;
+    
+    /**
+     * The cost of the last sent message summing input + output tokens.
+     * Absent when the model has no pricing or the chat uses a subscription
+     * login (see `quota`).
+     */
+    lastMessageCost?: string; 
+    
+    /**
+     * The cost of the whole chat session so far.
+     * Absent when the model has no pricing or the chat uses a subscription
+     * login (see `quota`).
+     */
+    sessionCost?: string;
+
+    /**
+     * Subscription quota of the provider behind the chat's model, sent instead
+     * of the costs when logged in with a subscription (Claude Pro/Max, ChatGPT,
+     * GitHub Copilot), as the provider has no per-token cost. Absent until the
+     * provider reports it. Same value as the provider's `ProviderStatus.quota`
+     * when this usage was sent.
+     */
+    quota?: ProviderQuota;
+    
+    /**
+     * Information about limits.
+     */
+    limit?: {
+        /**
+         * The context limit for this chat.
+         */
+        context: number;
+        /**
+         * The output limit for this chat.
+         */
+        output: number;
+    }
+
+    /**
+     * The percentage of the model context window at which the server will
+     * automatically compact (summarize) the conversation. Absent when
+     * auto-compaction is disabled. When `autoCompactTokensLeft` is configured
+     * this is its equivalent percentage for the current model. Clients can
+     * render it as a threshold marker on the usage bar.
+     */
+    autoCompactPercentage?: number;
+
+    /**
+     * Provider-agnostic estimate of how the context window is occupied,
+     * broken down by category. Useful to render a context-usage bar.
+     * Per-category values are estimates (~4 chars/token); when the provider
+     * reports authoritative usage they are scaled to sum to `usedTokens`.
+     */
+    contextBreakdown?: {
+        /**
+         * Occupied categories, in display order (e.g. "System prompt",
+         * "Tool definitions", "Tool use & results", "Conversation").
+         */
+        categories: {
+            name: string;
+            tokens: number;
+            /**
+             * Canonical color (hex, e.g. "#61afef") for this category. The
+             * server is the source of truth so all clients render the same
+             * colors; clients should use it to color their usage bar/legend.
+             */
+            color: string;
+            /**
+             * Canonical emoji swatch (e.g. "🟦") for this category, aligned
+             * with `color`. Used in plain-text legends (e.g. the `/context`
+             * command) where colors cannot be rendered.
+             */
+            emoji: string;
+        }[];
+        /**
+         * Total occupied tokens (sum of categories).
+         */
+        usedTokens: number;
+        /**
+         * Remaining tokens in the context window. Absent when unknown.
+         */
+        freeTokens?: number;
+        /**
+         * The model context window size in tokens. Absent when unknown.
+         */
+        contextLimit?: number;
+        /**
+         * Canonical color (hex) for the free/unused portion of the window.
+         */
+        freeColor?: string;
+        /**
+         * Canonical emoji swatch for the free/unused portion of the window.
+         */
+        freeEmoji?: string;
+    }
+}
+
+/**
+ * Tool call that LLM is preparing to execute.
+ * This will be sent multiple times for same tool id for each time LLM outputs 
+ * a part of the arg, so clients should append the arguments to UI.
+ */
+interface ChatToolCallPrepareContent {
+    type: 'toolCallPrepare';
+
+    origin: ToolCallOrigin;
+    
+    /**
+     * id of the tool call
+     */
+    id: string;
+    
+    /**
+     * Name of the tool
+     */
+    name: string;
+    
+    /**
+     * Server name of this tool
+     */
+    server: string;
+    
+    /*
+     * Argument text of this tool call
+     */
+    argumentsText: string; 
+    
+    /**
+     * Summary text to present about this tool call, 
+     * ex: 'Reading file "foo"...'.
+     */
+    summary?: string;
+    
+    /**
+     * Extra details about this call. 
+     * Clients may use this to present different UX for this tool call.
+     */
+    details?: ToolCallDetails;
+}
+
+/**
+ * Tool call that LLM will run, sent once per id.
+ */
+interface ChatToolCallRunContent {
+    type: 'toolCallRun';
+    
+    origin: ToolCallOrigin;
+    
+    /**
+     * id of the tool call
+     */
+    id: string;
+    
+    /**
+     * Name of the tool
+     */
+    name: string;
+    
+    /**
+     * Server name of this tool
+     */
+    server: string;
+    
+    /*
+     * Arguments of this tool call
+     */
+    arguments: {[key: string]: string};
+    
+    /**
+     * Whether this call requires manual approval from the user.
+     */
+    manualApproval: boolean;
+     
+    /**
+     * Summary text to present about this tool call, 
+     * ex: 'Reading file "foo"...'.
+     */
+    summary?: string;
+    
+    /**
+     * Extra details about this call. 
+     * Clients may use this to present different UX for this tool call.
+     */
+    details?: ToolCallDetails;
+}
+
+/**
+ * Tool call that server is running to report to LLM later, sent once per id.
+ */
+interface ChatToolCallRunningContent {
+    type: 'toolCallRunning';
+    
+    origin: ToolCallOrigin;
+    
+    /**
+     * id of the tool call
+     */
+    id: string;
+    
+    /**
+     * Name of the tool
+     */
+    name: string;
+    
+    /**
+     * Server name of this tool
+     */
+    server: string;
+    
+    /*
+     * Arguments of this tool call
+     */
+    arguments: {[key: string]: string};
+    
+    /**
+     * Summary text to present about this tool call, 
+     * ex: 'Reading file "foo"...'.
+     */
+    summary?: string;
+    
+    /**
+     * Extra details about this call. 
+     * Clients may use this to present different UX for this tool call.
+     */
+    details?: ToolCallDetails;
+}
+
+/**
+ * Tool call result that LLM triggered and was executed already, sent once per id.
+ */
+interface ChatToolCalledContent {
+    type: 'toolCalled';
+    
+    origin: ToolCallOrigin;
+    
+    /**
+     * id of the tool call
+     */
+    id: string;
+    
+    /**
+     * Name of the tool
+     */
+    name: string;
+    
+    /**
+     * Server name of this tool
+     */
+    server: string;
+    
+    /*
+     * Arguments of this tool call
+     */
+    arguments: {[key: string]: string};
+    
+    /**
+     * Whether it was a error
+     */
+    error: boolean;
+    
+    /**
+     * the result of the tool call.
+     */
+    outputs: [{
+        /*
+         * The type of this output
+         */
+        type: 'text';
+       
+        /**
+         * The content of this output
+         */
+        text: string; 
+    }];
+    
+    /**
+     * The total time the call took in milliseconds.
+     */
+    totalTimeMs: number;
+    
+    /**
+     * Summary text to present about this tool call, 
+     * ex: 'Reading file "foo"...'.
+     */
+    summary?: string;
+    
+    /**
+     * Extra details about this call. 
+     * Clients may use this to present different UX for this tool call.
+     */
+    details?: ToolCallDetails;
+}
+
+/**
+ * Tool call rejected, sent once per id.
+ */
+interface ChatToolCallRejectedContent {
+    type: 'toolCallRejected';
+    
+    origin: ToolCallOrigin;
+    
+    /**
+     * id of the tool call
+     */
+    id: string;
+    
+    /**
+     * Name of the tool
+     */
+    name: string;
+    
+    /**
+     * Server name of this tool
+     */
+    server: string;
+    
+    /*
+     * Arguments of this tool call
+     */
+    arguments: {[key: string]: string};
+    
+    /**
+     * The reason why this tool call was rejected.
+     * 'interrupted': the LLM response streaming this tool call failed
+     * (e.g. connection dropped), so it will never run.
+     */
+    reason: 'userChoiceDeny' | 'userConfigDeny' | 'hookRejected' | 'userPromptStop' | 'userStop' | 'user' | 'interrupted';
+    
+    /**
+     * Summary text to present about this tool call, 
+     * ex: 'Reading file "foo"...'.
+     */
+    summary?: string;
+    
+    /**
+     * Extra details about this call. 
+     * Clients may use this to present different UX for this tool call.
+     */
+    details?: ToolCallDetails;
+}
+
+type ToolCallOrigin = 'mcp' | 'native' | 'server' | 'unknown';
+
+type ToolCallDetails = FileChangeDetails | JsonOutputsDetails | SubagentDetails | TaskDetails | ShellCommandDetails;
+
+interface FileChangeDetails {
+    type: 'fileChange';
+
+     /**
+      * The file path of this file change
+      */
+     path: string;
+     
+     /**
+      * The content diff of this file change
+      */
+     diff: string;
+     
+     /**
+      * The count of lines added in this change.
+      */
+     linesAdded: number;
+     
+     /**
+      * The count of lines removed in this change.
+      */
+     linesRemoved: number;
+}
+
+interface JsonOutputsDetails {
+    type: 'jsonOutputs';
+    
+    /**
+     * The list of json outputs of this tool call properly formatted.
+     */
+    jsons: string[];
+}
+
+interface SubagentDetails {
+    type: 'subagent';
+
+    /**
+     * The chatId of this running subagent, useful to link other chat/ContentReceived
+     * messages to this tool call.
+     * Available from toolCallRun afterwards.
+     * A subagent continued with spawn_agent's `chat_id` keeps its chatId, so several
+     * tool calls of the same parent chat can share it.
+     */
+    subagentChatId?: string;
+
+    /**
+     * The [start, end) indexes of the subagent chat messages that this tool call ran,
+     * [0, 0] when it did not run. Set on toolCalled. History replay uses it to show
+     * each call's part of a continued subagent.
+     */
+    subagentMessageRange?: [number, number];
+
+    /**
+     *  The model this subagent is using.
+     */
+    model: string;
+
+    /**
+     * The variant this subagent is using, when one is explicitly selected.
+     */
+    variant?: string;
+
+    /**
+     * The name of the agent being spawned.
+     */
+    agentName: string;
+
+    /**
+     * The max number of steps this subagent is limited.
+     * When not set, the subagent runs with no step limit (infinite interaction).
+     */
+    maxSteps?: number;
+
+    /**
+     * The current step.
+     */
+    step: number;
+}
+
+/**
+ * Task management details returned by the task tool.
+ * Clients can use this to render a task list UI showing planning and progress.
+ */
+interface TaskDetails {
+    type: 'task';
+
+    /**
+     * The list of tasks in the current plan.
+     */
+    tasks: TaskItem[];
+
+    /**
+     * IDs of tasks currently in progress.
+     */
+    inProgressTaskIds: number[];
+
+    /**
+     * Aggregate counts of tasks by status.
+     */
+    summary: {
+        done: number;
+        inProgress: number;
+        pending: number;
+        total: number;
+    };
+
+    /**
+     * Summary of what the agent is currently working on.
+     * Set when a task is started, cleared when no tasks are in progress.
+     */
+    activeSummary?: string;
+}
+
+interface TaskItem {
+    /**
+     * The task ID.
+     */
+    id: number;
+
+    /**
+     * Brief, actionable title.
+     */
+    subject: string;
+
+    /**
+     * Detailed description including acceptance criteria.
+     */
+    description: string;
+
+    /**
+     * Current status of the task.
+     */
+    status: 'pending' | 'in-progress' | 'done';
+
+    /**
+     * Task priority.
+     */
+    priority: 'high' | 'medium' | 'low';
+
+    /**
+     * Whether this task is currently blocked by incomplete dependencies.
+     */
+    isBlocked: boolean;
+
+    /**
+     * IDs of tasks that must be completed before this task can start.
+     * Only present when the task has dependencies.
+     */
+    blockedBy?: number[];
+}
+
+/**
+ * Breakdown of a shell command tool call.
+ * Present when the server could safely parse the command; clients can use it
+ * to show what an "approve & remember" would remember.
+ */
+interface ShellCommandDetails {
+    type: 'shellCommand';
+
+    /**
+     * The individual commands extracted from the shell invocation.
+     * Chained commands (&&, ||, ;, |) are split into separate entries.
+     */
+    commands: ShellCommandBreakdown[];
+
+    /**
+     * Whether the command runs in background as a job.
+     */
+    background?: boolean;
+}
+
+interface ShellCommandBreakdown {
+    /**
+     * The command being executed, e.g. "ls", "git".
+     */
+    command: string;
+
+    /**
+     * All arguments to the command, including flags.
+     * e.g. ["-la", "*.clj"] for "ls -la *.clj".
+     */
+    args: string[];
+
+    /**
+     * The key that "approve & remember" would remember for this command,
+     * e.g. "git checkout" or "rg". Absent when this command can never be
+     * auto-approved (wrapper commands like sudo/xargs, file output
+     * redirections, dynamic command words).
+     */
+    approvalKey?: string;
+
+    /**
+     * Whether approvalKey is already remembered for this chat session
+     * (the chat and its subagents).
+     * Only present when approvalKey is present.
+     */
+    remembered?: boolean;
+}
+
+/**
+ * Extra information about a chat
+ */
+interface ChatMetadataContent {
+    type: 'metadata';
+
+    /**
+     * The chat title.
+     */
+    title: string;
+}
+
+/**
+ * A named checkpoint flag in the chat history.
+ * Flags act as bookmarks that survive across sessions
+ * and are discoverable via timeline.
+ */
+interface ChatFlagContent {
+    type: 'flag';
+
+    /**
+     * The flag display text.
+     */
+    text: string;
+
+    /**
+     * Unique identifier for this flag.
+     */
+    contentId: string;
+
+    /**
+     * Id of the message the flag belongs after (message contentId or
+     * content id). Only sent by `chat/addFlag` to clients with the
+     * `incrementalUpdates` capability; when absent, render the flag at the
+     * current position. Clients may skip rendering when that message is not
+     * loaded (e.g. on an unloaded history page).
+     */
+    afterContentId?: string;
+}
+
+```
+
+### Chat approve tool call (→)
+
+A client notification for server to approve a waiting tool call.
+This will execute the tool call and continue the LLM chat loop.
+
+_Notification:_
+
+* method: `chat/toolCallApprove`
+* params: `ChatToolCallApproveParams` defined as follows:
+
+```typescript
+interface ChatToolCallApproveParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+    
+    /**
+     * The approach to save this tool call.
+     * 'session' remembers the approval for the chat session: the chat and its subagents,
+     * in memory only, until the chat is cleared or the server restarts.
+     * For tools with granular approval (eca shell_command and git), 'session' remembers
+     * the specific approved commands (e.g. "git checkout") instead of the whole tool.
+     */
+    save?: 'session';
+
+    /**
+     * The tool call identifier to approve.
+     */
+    toolCallId: string; 
+}
+```
+
+### Chat reject tool call (→)
+
+A client notification for server to reject a waiting tool call.
+This will not execute the tool call and return to the LLM chat loop.
+
+_Notification:_
+
+* method: `chat/toolCallReject`
+* params: `ChatToolCallRejectParams` defined as follows:
+
+```typescript
+interface ChatToolCallRejectParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+    
+    /**
+     * The tool call identifier to reject.
+     */
+    toolCallId: string; 
+}
+```
+
+### Chat Query Context (↩)
+
+A request sent from client to server, querying for all the available contexts for user add to prompt calls.
+
+_Request:_ 
+
+* method: `chat/queryContext`
+* params: `ChatQueryContextParams` defined as follows:
+
+```typescript
+interface ChatQueryContextParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+
+    /**
+     * The query to filter results, blank string returns all available contexts.
+     */
+    query: string;
+    
+    /**
+     * The already considered contexts.
+     */
+    contexts: ChatContext[];
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatQueryContextResponse {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+
+    /**
+     * The returned available contexts.
+     */
+    contexts: ChatContext[];
+}
+```
+
+### Chat Query Files (↩)
+
+A request sent from client to server, querying for available files for the user to add as context to prompt calls.
+Similar to `chat/queryContext` but returns only file-based contexts.
+
+_Request:_ 
+
+* method: `chat/queryFiles`
+* params: `ChatQueryFilesParams` defined as follows:
+
+```typescript
+interface ChatQueryFilesParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+
+    /**
+     * The query to filter results, blank string returns all available files.
+     */
+    query: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatQueryFilesResponse {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+
+    /**
+     * The returned available file contexts.
+     */
+    files: ChatContext[];
+}
+```
+
+### Chat Query Commands (↩)
+
+A request sent from client to server, querying for all the available commands for user to call.
+Commands are multiple possible actions like MCP prompts, doctor, costs. Usually the 
+UX follows `/<command>` to spawn a command.
+
+_Request:_ 
+
+* method: `chat/queryCommands`
+* params: `ChatQueryCommandsParams` defined as follows:
+
+```typescript
+interface ChatQueryCommandsParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+
+    /**
+     * The query to filter results, blank string returns all available commands.
+     */
+    query: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatQueryCommandsResponse {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+
+    /**
+     * The returned available Commands.
+     */
+    commands: ChatCommand[];
+}
+
+interface ChatCommand {
+    /**
+     * The name of the command.
+     */
+    name: string;
+
+    /**
+     * The description of the command.
+     */
+    description: string;
+    
+    /**
+     * The type of this command
+     */
+    type: 'mcpPrompt' | 'native' | 'customPrompt' | 'skill';
+    
+    /**
+     * The arguments of the command.
+     */
+    arguments: [{
+       name: string;
+       description?: string;
+       required?: boolean;
+    }];
+}
+```
+
+### Chat stop prompt (→)
+
+A client notification for server to stop the current chat prompt with LLM if running.
+This will stop LLM loops or ignore subsequent LLM responses so other prompts can be triggered.
+
+_Notification:_
+
+* method: `chat/promptStop`
+* params: `ChatPromptStopParams` defined as follows:
+
+```typescript
+interface ChatPromptStopParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+}
+```
+
+### Chat steer prompt (→)
+
+A client notification to steer the current running prompt by injecting a user message
+at the next LLM loop turn boundary (e.g. after tool calls complete).
+If the prompt finishes before the steer is consumed, the client should send it as a regular prompt.
+
+Messages matching commands that are safe to run while a prompt is in flight (currently `/btw`)
+are not queued: the server executes them immediately as a regular prompt, so e.g. a steered
+`/btw` forks the chat right away without waiting for the running turn.
+
+A steered `/compact [instructions]` is queued like a regular message, but at the turn boundary
+the server compacts the chat with those instructions (as a manual compaction) and then resumes
+the running task, instead of injecting the command text into the conversation.
+
+Other native commands that do not affect the running turn (`/sync-system-prompt`, `/costs`,
+`/context`, `/chats`, `/skills`, `/rules`, `/subagents`, `/plugins`, `/hooks`, `/prompt-show`,
+`/repo-map-show`, `/doctor`, `/config`, `/remote`, `/debug-chat`, `/export`, `/approvals`,
+`/forget-approvals`) are also queued and
+executed at the turn boundary: their output is shown and the task resumes. Native commands that
+would change the chat or start another prompt (`/model`, `/agent`, `/fork`, `/resume`,
+`/delete-chat`, `/login`, `/init`, ...) are refused with a system message and not queued.
+Custom commands, skills, MCP prompts and any other text are injected as plain user text.
+
+_Notification:_
+
+* method: `chat/promptSteer`
+* params: `ChatPromptSteerParams` defined as follows:
+
+```typescript
+interface ChatPromptSteerParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * The user message to inject at the next LLM turn boundary.
+     */
+    message: string;
+}
+```
+
+### Chat steer prompt remove (→)
+
+A client notification to discard any pending steer message that has not yet been consumed by the LLM loop.
+The notification is idempotent: if no steer message is pending (or it was already consumed at the next turn boundary),
+the server silently does nothing.
+
+_Notification:_
+
+* method: `chat/promptSteerRemove`
+* params: `ChatPromptSteerRemoveParams` defined as follows:
+
+```typescript
+interface ChatPromptSteerRemoveParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+}
+```
+
+### Chat rollback (↩)
+
+A client request to rollback chat messages to before a specific user sent message using `contentId`.
+Clients should show an option close to user sent messages in chat to rollback, calling this method.
+Server will then remove the messages from its memory after that contentId and produce `chat/cleared` followed 
+with `chat/contentReceived` with the kept messages. Clients with the `incrementalUpdates` capability receive
+a single `chat/truncated` instead.
+
+_Request:_ 
+
+* method: `chat/rollback`
+* params: `ChatRollbackParams` defined as follows:
+
+```typescript
+interface ChatRollbackParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+    
+    /**
+     * The message content id.
+     */
+    contentId: string;
+    
+    /**
+     * The types of rollbacks to include, allowing to rollback one or more types.
+     */
+    include: ChatRollbackInclude[];
+}
+
+type ChatRollbackInclude = 'messages' | 'tools';
+```
+
+_Response:_
+
+```typescript
+interface ChatRollbackResponse {}
+```
+
+### Chat clear (↩)
+
+A client request to clear specific aspects of an existing chat while keeping the chat entity intact.
+Unlike `chat/delete`, this preserves the chat identity, metadata and any features coupled to it.
+After response, clients should clear only the relevant parts of the chat UI.
+
+_Request:_
+
+* method: `chat/clear`
+* params: `ChatClearParams` defined as follows:
+
+```typescript
+interface ChatClearParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * Whether to clear the messages and tool calls of the chat,
+     * also forgetting its remembered tool call approvals.
+     */
+    messages?: boolean;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatClearResponse {}
+```
+
+### Chat add flag (→)
+
+A client request to add a named flag (checkpoint) to the chat history.
+The flag is inserted after the message identified by the given `contentId`.
+The `contentId` matches against both message-level `contentId` (user messages) and
+content `id` fields (tool calls, reasons, etc), allowing placement between any message types.
+Flags are persisted as messages and propagate automatically with fork and resume.
+Server then emits `chat/cleared` followed by the full history via `chat/contentReceived`, or, for clients with
+the `incrementalUpdates` capability, a single flag `chat/contentReceived` carrying `afterContentId`.
+
+_Request:_
+
+* method: `chat/addFlag`
+* params: `ChatAddFlagParams` defined as follows:
+
+```typescript
+interface ChatAddFlagParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * The id of the message after which the flag is inserted.
+     * Matches against message contentId or content.id fields.
+     */
+    contentId: string;
+
+    /**
+     * The flag display text.
+     */
+    text: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatAddFlagResponse {}
+```
+
+### Chat remove flag (→)
+
+A client request to remove a flag from the chat history.
+The client is responsible for removing the flag from the UI after a successful response.
+
+_Request:_
+
+* method: `chat/removeFlag`
+* params: `ChatRemoveFlagParams` defined as follows:
+
+```typescript
+interface ChatRemoveFlagParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * The content id of the flag to remove.
+     */
+    contentId: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatRemoveFlagResponse {}
+```
+
+### Chat fork (→)
+
+A client request to fork the chat into a new chat with messages up to and including
+the message identified by the given `contentId`. The server creates the new chat,
+sends a `chat/opened` notification with the new chat, then streams the kept messages
+(only the newest page of them for clients with the `incrementalUpdates` capability) via
+`chat/contentReceived`. The fork always keeps the full history. A system message is
+also sent to the original chat.
+
+_Request:_
+
+* method: `chat/fork`
+* params: `ChatForkParams` defined as follows:
+
+```typescript
+interface ChatForkParams {
+    /**
+     * The chat session identifier of the source chat.
+     */
+    chatId: string;
+
+    /**
+     * The content id of the message up to which to fork (inclusive).
+     */
+    contentId: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatForkResponse {
+    /**
+     * The chat session identifier of the newly created chat.
+     * Absent when the given contentId was not found.
+     */
+    chatId?: string;
+
+    /**
+     * Pagination info for the streamed messages, present when the client has
+     * the `incrementalUpdates` capability. Same as `chat/opened` `history`.
+     */
+    meta?: ChatHistoryMeta;
+}
+```
+
+### Chat cleared (←)
+
+A server notification to clear a chat UI, currently supporting removing only messages of the chat.
+
+_Notification:_ 
+
+* method: `chat/cleared`
+* params: `ChatClearedParams` defined as follows:
+
+```typescript
+interface ChatClearedParams {
+
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * Whether to clear the messages of a chat.
+     */
+    messages: boolean;
+}
+```
+
+### Chat truncated (←)
+
+A server notification to remove a message and everything after it from a chat UI, keeping the earlier
+messages as they are. Only sent to clients with the `incrementalUpdates` capability, currently after
+`chat/rollback`. When the message is not loaded in the client (e.g. it is on an unloaded history page),
+clients should re-open the chat via `chat/open`.
+
+_Notification:_ 
+
+* method: `chat/truncated`
+* params: `ChatTruncatedParams` defined as follows:
+
+```typescript
+interface ChatTruncatedParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * The contentId of the first removed message.
+     */
+    contentId: string;
+}
+```
+
+### Chat opened (←)
+
+A server notification indicating that a chat exists or was just materialized
+server-side. Emitted when:
+
+- a chat is forked via `/fork`, `/btw` or the `chat/fork` request,
+- a persisted chat is replayed via `chat/open`,
+- a client-supplied `chatId` is seen for the first time on `chat/prompt`
+  (the legacy null-`chatId` path does not emit this).
+
+Clients should treat this notification as **idempotent**: if the `chatId`
+already exists in the client's UI, no new chat entry should be created — the
+notification should be ignored or used to update the title. Chat messages
+follow as `chat/contentReceived` notifications.
+
+_Notification:_
+
+* method: `chat/opened`
+* params: `ChatOpenedParams` defined as follows:
+
+```typescript
+interface ChatOpenedParams {
+
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * The title of the chat. Absent for client-initiated new chats that do
+     * not yet have a title.
+     */
+    title?: string;
+
+    /**
+     * Pagination info when only the newest page of the chat's messages
+     * follows, for chats the server creates (`/fork`, `/btw`, `chat/fork`)
+     * for clients with the `incrementalUpdates` capability. Older messages
+     * can be paged via `chat/history` using `beforeCursor`.
+     */
+    history?: ChatHistoryMeta;
+}
+```
+
+### Chat status changed (←)
+
+A server notification carrying lifecycle transitions for a chat. Clients
+typically use it to drive a "chat is running/idle/stopping" indicator.
+
+_Notification:_
+
+* method: `chat/statusChanged`
+* params: `ChatStatusChangedParams` defined as follows:
+
+```typescript
+interface ChatStatusChangedParams {
+
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * Lifecycle status of the chat.
+     *
+     * - `running`:  a prompt is actively being processed (LLM streaming, tool calls in flight).
+     * - `idle`:     prompt finished; chat is ready for further input.
+     * - `stopping`: a stop has been requested (via `chat/promptStop`) and the
+     *               chat is winding down its in-flight work.
+     */
+    status: 'running' | 'idle' | 'stopping';
+}
+```
+
+### Chat deleted (←)
+
+A server notification confirming that a chat was deleted (either via the
+`chat/delete` request from this client or via another connected client / a
+server-side cleanup such as `chatRetentionDays`). Clients should remove the
+chat from their UI.
+
+_Notification:_
+
+* method: `chat/deleted`
+* params: `ChatDeletedParams` defined as follows:
+
+```typescript
+interface ChatDeletedParams {
+
+    /**
+     * The chat session identifier that was deleted.
+     */
+    chatId: string;
+}
+```
+
+### Chat delete (↩)
+
+A client request to delete a existing chat, removing all previous messages and used tokens/costs from memory, good for reduce context or start a new clean chat.
+After response, clients should reset chat UI to a clean state.
+
+_Request:_ 
+
+* method: `chat/delete`
+* params: `ChatDeleteParams` defined as follows:
+
+```typescript
+interface ChatDeleteParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId?: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatDeleteResponse {}
+```
+
+### Chat update (↩)
+
+A client request to update chat metadata like title.
+Server will persist the change, broadcast to all connected clients via `chat/contentReceived` with metadata content, and return an empty response.
+
+_Request:_
+
+* method: `chat/update`
+* params: `ChatUpdateParams` defined as follows:
+
+```typescript
+interface ChatUpdateParams {
+    /**
+     * The chat session identifier.
+     */
+    chatId: string;
+
+    /**
+     * New title for the chat.
+     */
+    title?: string;
+
+    /**
+     * When true, enables trust mode for this chat — tool calls that would
+     * normally require manual approval are auto-accepted. Does not override deny rules.
+     * Changes apply immediately to subsequent tool calls in the active prompt.
+     */
+    trust?: boolean;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatUpdateResponse {}
+```
+
+### Chat list (↩)
+
+A client request to list all persisted chats for the current workspace,
+so a freshly-started client can populate its sidebar without waiting for the
+user to resume or re-create each chat.
+
+Subagent chats are excluded. Results are sorted descending by `updatedAt` by
+default, falling back to `createdAt` when `updatedAt` is missing.
+
+_Request:_
+
+* method: `chat/list`
+* params: `ChatListParams` defined as follows:
+
+```typescript
+interface ChatListParams {
+    /**
+     * Optional maximum number of chats to return.
+     * When omitted or non-positive, all chats are returned.
+     */
+    limit?: number;
+
+    /**
+     * Optional sort key. Defaults to "updatedAt".
+     */
+    sortBy?: 'updatedAt' | 'createdAt';
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatListResponse {
+    chats: ChatSummary[];
+}
+
+interface ChatSummary {
+    /** The chat session identifier. */
+    id: string;
+
+    /** Human-readable title, when available. */
+    title?: string;
+
+    /** Current chat status. */
+    status: 'idle' | 'running' | 'stopping' | 'login';
+
+    /** Epoch millis when the chat was created, when available. */
+    createdAt?: number;
+
+    /** Epoch millis of the most recent update, when available. */
+    updatedAt?: number;
+
+    /** The last full model id used for this chat, when available. */
+    model?: string;
+
+    /** Number of persisted messages. */
+    messageCount: number;
+
+    /**
+     * The chat kind, when not a regular chat.
+     * 'inline' marks chats created via `chat/inlinePrompt`.
+     */
+    kind?: 'inline';
+}
+```
+
+### Chat open (↩)
+
+A client request to hydrate a previously-persisted chat so it can be rendered
+in the UI. The server replays the chat by emitting `chat/cleared` (messages),
+`chat/opened`, and a sequence of `chat/contentReceived` notifications matching
+the persisted messages. When the persisted chat has a stored model the server
+additionally emits a `config/updated` notification scoped with the opened
+`chatId` to realign that chat's selected model (and available variants), so the
+next prompt keeps using the chat's original provider/model without changing
+other chats or session defaults. A second scoped update carries `selectTrust`
+reflecting the resumed chat's trust toggle, so the client indicator stays in
+sync with the auto-approval behavior the server will apply. The response also
+returns these values together with the effective agent in one atomic
+`selection` snapshot; clients should prefer it when available and may retain
+the scoped notifications as backward-compatible updates. Typically used after
+`chat/list` when the user selects a chat that has not been opened in the current
+client session.
+
+By default the full history is replayed. A client may instead pass the optional
+`limit`/`before`/`after` window parameters (same cursors as `chat/history`) to
+replay only the newest page and avoid streaming a large history; in that case
+the response carries `meta` so the client can page older via `chat/history`.
+
+_Request:_
+
+* method: `chat/open`
+* params: `ChatOpenParams` defined as follows:
+
+```typescript
+interface ChatOpenParams {
+    /**
+     * The chat session identifier to open.
+     */
+    chatId: string;
+
+    /**
+     * Optional. Max messages to replay. When any of limit/before/after is
+     * present, only that window is replayed and `meta` is returned.
+     */
+    limit?: number;
+
+    /** Optional opaque cursor — replay the page older than the cursor. */
+    before?: string;
+
+    /** Optional opaque cursor — replay the page newer than the cursor. */
+    after?: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatOpenResponse {
+    /**
+     * True when the chat exists and its content has been replayed via
+     * chat/cleared + chat/opened + chat/contentReceived. False when the
+     * chat is unknown or is a subagent chat.
+     */
+    found: boolean;
+
+    /** The chat id that was replayed (echo of the request), present when found. */
+    chatId?: string;
+
+    /** The chat title at the time of replay, when available. */
+    title?: string;
+
+    /**
+     * Atomic effective selection for the opened chat. A missing or unavailable
+     * persisted model is represented as null with no variants selected.
+     */
+    selection?: {
+        model: string | null;
+        agent: string;
+        variant: string | null;
+        variants: string[];
+        trust: boolean;
+    };
+
+    /** Pagination metadata, present only when window params were supplied. */
+    meta?: ChatHistoryMeta;
+
+    /** Present instead of replaying when a supplied cursor is stale. */
+    error?: { code: 'cursor_expired'; message: string };
+}
+```
+
+### Chat history (↩)
+
+A client request to fetch a window of a persisted chat's history as a single
+response (no streaming), so an editor can hydrate a bounded view and page older
+on demand instead of receiving the full replay. The returned `contents` are the
+same `ChatContent` items delivered by `chat/contentReceived`, so the client
+reuses its existing renderer; live updates keep arriving over `chat/contentReceived`.
+
+Pagination uses opaque cursors. The page is anchored to the newest messages in
+the selected window; an opaque `after` cursor pages forward instead. The literal
+sentinel `"lastCompaction"` may be passed as `before`/`after`: `after: "lastCompaction"`
+returns the messages since the last compaction (the active context),
+`before: "lastCompaction"` the summarized-away history. Cursors are ephemeral —
+a cursor whose message no longer exists returns a `cursor_expired` error,
+prompting the client to refetch the latest page. The exception is a cursor whose
+message was cut off by a rollback: everything left is older than it, so a
+`before` page returns the newest remaining messages.
+
+_Request:_
+
+* method: `chat/history`
+* params: `ChatHistoryParams` defined as follows:
+
+```typescript
+interface ChatHistoryParams {
+    /** The chat session identifier to fetch. */
+    chatId: string;
+
+    /** Optional. Max messages to return in the page. */
+    limit?: number;
+
+    /** Optional opaque cursor (or "lastCompaction") — page older. */
+    before?: string;
+
+    /** Optional opaque cursor (or "lastCompaction") — page newer. */
+    after?: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatHistoryResponse {
+    /**
+     * The page of history, as the same content items streamed by
+     * chat/contentReceived. Absent when `error` is present.
+     */
+    contents?: ChatContentReceived[];
+
+    /** Pagination metadata. Absent when `error` is present. */
+    meta?: ChatHistoryMeta;
+
+    /** Present when the chat is unknown or a supplied cursor is stale. */
+    error?: { code: 'chat_not_found' | 'cursor_expired'; message: string };
+}
+
+interface ChatHistoryMeta {
+    /** Total messages in the full history. */
+    total: number;
+
+    /** Number of messages in this page. */
+    returned: number;
+
+    /** Cursor to pass as `before` to load older; null at the start. */
+    beforeCursor: string | null;
+
+    /** Cursor to pass as `after` to load newer; null at the tail. */
+    afterCursor: string | null;
+
+    /** Cursor at the last compaction boundary; null when never compacted. */
+    compactionCursor: string | null;
+}
+```
+
+### Chat selected agent changed (→)
+
+A client notification for server telling the user selected a different agent in chat.
+
+_Notification:_
+
+* method: `chat/selectedAgentChanged`
+* params: `ChatSelectedAgentChanged` defined as follows:
+
+```typescript
+interface ChatSelectedAgentChanged {
+    /**
+     * The chat session identifier the change applies to.
+     *
+     * When provided, the server persists the selection on this specific
+     * chat record and the resulting `config/updated` broadcast carries the
+     * same `chatId` so clients scope the update to one chat. When omitted,
+     * the change is treated as session-wide (legacy behavior).
+     */
+    chatId?: string;
+
+    /**
+     * The selected agent.
+     */
+    agent: ChatAgent;
+}
+```
+
+> **Backward compatibility:** The legacy method `chat/selectedBehaviorChanged` with `{ behavior: string }` is still supported.
+
+### Chat selected model changed (→)
+
+A client notification for server telling the user selected a different model in chat.
+Server will respond with a `config/updated` notification containing the available variants for the selected model
+and the suggested variant to select (if any).
+
+_Notification:_
+
+* method: `chat/selectedModelChanged`
+* params: `ChatSelectedModelChanged` defined as follows:
+
+```typescript
+interface ChatSelectedModelChanged {
+    /**
+     * The chat session identifier the change applies to.
+     *
+     * When provided, the server persists model + variant on this specific
+     * chat record and the resulting `config/updated` broadcast carries the
+     * same `chatId` so clients scope the update to one chat. When omitted,
+     * the change is treated as session-wide (legacy behavior).
+     */
+    chatId?: string;
+
+    /**
+     * The selected model (full model name, e.g. "anthropic/claude-sonnet-4-5").
+     */
+    model: Model;
+
+    /**
+     * The currently selected variant (if any).
+     * When the new model does not support this variant, the server
+     * will emit select-variant null to clear the selection.
+     */
+    variant?: string;
+}
+```
+
+### Editor diagnostics (↪)
+
+A server request to retrieve LSP or any other kind of diagnostics if available from current workspaces.
+Useful for server to provide to LLM information about errors/warnings about current code.
+
+_Request:_ 
+
+* method: `editor/getDiagnostics`
+* params: `EditorGetDiagnosticsParams` defined as follows:
+
+```typescript
+interface EditorGetDiagnosticsParams {
+    /**
+     * Optional uri to get diagnostics, if nil return whole workspaces diagnostics.
+     */
+    uri?: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface EditorGetDiagnosticsResponse {
+    /**
+     * The list of diagnostics.
+     */
+    diagnostics: EditorDiagnostic[];
+}
+
+interface EditorDiagnostic {
+    /**
+     * The diagnostic file uri.
+     */
+    uri: string;
+    
+    /**
+     * The diagnostic severity.
+     */
+    severity: 'error' | 'warning' | 'info' | 'hint';
+    
+    /**
+     * The diagnostic source. Ex: 'clojure-lsp'
+     */
+    source: string;
+    
+    /**
+     * The diagnostic range (0-based, as editors report them natively;
+     * unlike editor definition/references locations, which are 1-based).
+     */
+    range: Range;
+    
+    /**
+     * The diagnostic code. Ex: 'wrong-args'
+     */
+    code?: string;
+
+    /**
+     * The diagnostic message. Ex: 'Wrong number of args for function X'
+     */
+    message: string; 
+}
+```
+
+### Editor definition (↪)
+
+A server request to retrieve from the editor the definition location(s) of the symbol
+at a position in a file, typically backed by the editor's language server (LSP).
+Only sent when client declared the `codeAssistant.editor.definition` capability.
+
+All positions in request and response are 1-based and `character` offsets count
+UTF-16 code units (the LSP default encoding); clients should convert to/from
+their language server positions (LSP ones are 0-based).
+
+Clients should answer with a `status` the server can act on instead of hanging:
+
+- If no language server is attached to the file yet, clients SHOULD attempt to
+start/attach the appropriate one (e.g. opening the file in background) and answer
+`starting` while it initializes; the server retries the request periodically within
+its `lspTimeoutSeconds` budget before giving up.
+- `no-server` should be answered only when the client cannot provide a language
+server for that file at all.
+- `error` (with `message`) should be answered on failures, so the server can give
+actionable feedback to the LLM.
+
+_Request:_ 
+
+* method: `editor/getDefinition`
+* params: `EditorGetDefinitionParams` defined as follows:
+
+```typescript
+interface EditorGetDefinitionParams {
+    /**
+     * The uri of the file containing the symbol.
+     */
+    uri: string;
+
+    /**
+     * The position (1-based) of the symbol in the file.
+     */
+    position: {
+        line: number;
+        character: number;
+    };
+}
+```
+
+_Response:_
+
+```typescript
+interface EditorGetDefinitionResponse {
+    /**
+     * The outcome of the request:
+     * - 'success': locations contain the results (may be empty when symbol has no definition).
+     * - 'starting': a language server is starting/initializing for this file, server may retry.
+     * - 'no-server': no language server available for this file.
+     * - 'error': failed to compute the result, message should explain why.
+     */
+    status: 'success' | 'starting' | 'no-server' | 'error';
+
+    /**
+     * The definition locations when status is 'success'.
+     */
+    locations?: EditorLocation[];
+
+    /**
+     * Optional detail for 'no-server' and 'error' statuses.
+     */
+    message?: string;
+}
+
+interface EditorLocation {
+    /**
+     * The location file uri.
+     */
+    uri: string;
+
+    /**
+     * The location range (1-based).
+     */
+    range: Range;
+}
+```
+
+### Editor references (↪)
+
+A server request to retrieve from the editor the references of the symbol
+at a position in a file, typically backed by the editor's language server (LSP).
+Only sent when client declared the `codeAssistant.editor.references` capability.
+
+Follows the same position conventions and `status` semantics as `editor/getDefinition`.
+
+_Request:_ 
+
+* method: `editor/getReferences`
+* params: `EditorGetReferencesParams` defined as follows:
+
+```typescript
+interface EditorGetReferencesParams {
+    /**
+     * The uri of the file containing the symbol.
+     */
+    uri: string;
+
+    /**
+     * The position (1-based) of the symbol in the file.
+     */
+    position: {
+        line: number;
+        character: number;
+    };
+
+    /**
+     * Whether to include the symbol declaration in the results.
+     * Defaults to true when absent.
+     */
+    includeDeclaration?: boolean;
+}
+```
+
+_Response:_
+
+```typescript
+interface EditorGetReferencesResponse {
+    /**
+     * Same semantics as EditorGetDefinitionResponse status.
+     */
+    status: 'success' | 'starting' | 'no-server' | 'error';
+
+    /**
+     * The reference locations when status is 'success'.
+     */
+    locations?: EditorLocation[];
+
+    /**
+     * Optional detail for 'no-server' and 'error' statuses.
+     */
+    message?: string;
+}
+```
+
+### Chat ask question (↪)
+
+A server request to ask the user a question and receive an answer during a chat session.
+This enables the server to present the user with a question (optionally with predefined options)
+and wait for their response. When `allowFreeform` is true, the user can type a custom answer in addition to selecting a predefined option.
+Besides tool-originated questions (e.g. the `ask_user` tool), the server may also send this request
+during interactive flows like the `/login` command (e.g. to select a provider or login method).
+
+_Request:_
+
+* method: `chat/askQuestion`
+* params: `ChatAskQuestionParams` defined as follows:
+
+```typescript
+interface ChatAskQuestionParams {
+    /**
+     * The chat id where the question is being asked.
+     */
+    chatId: string;
+
+    /**
+     * The question text to present to the user.
+     */
+    question: string;
+
+    /**
+     * Optional predefined options for the user to choose from.
+     * When present, the client should render these as selectable choices.
+     * The user should always be able to type a custom answer regardless.
+     */
+    options?: ChatAskQuestionOption[];
+
+    /**
+     * Optional tool call id that originated this question.
+     * When present, the client may hide the associated tool call block
+     * and show the question inline instead.
+     */
+    toolCallId?: string;
+
+    /**
+     * Whether the user can type a custom freeform answer.
+     * When false, only the predefined options (and cancel) are valid.
+     * Defaults to true.
+     */
+    allowFreeform: boolean;
+}
+
+interface ChatAskQuestionOption {
+    /**
+     * Short label for the option.
+     */
+    label: string;
+
+    /**
+     * Optional description providing more context about the option.
+     */
+    description?: string;
+}
+```
+
+_Response:_
+
+```typescript
+interface ChatAskQuestionResponse {
+    /**
+     * The user's answer. Contains the selected option label or freeform text.
+     * Null when cancelled.
+     */
+    answer: string | null;
+
+    /**
+     * Whether the user cancelled the question without answering.
+     */
+    cancelled: boolean;
+}
+```
+
+### Completion (↩)
+
+A request sent from client to server, asking for a text to be presented to user as a inline completion for the current text code.
+
+_Request:_ 
+
+* method: `completion/inline`
+* params: `CompletionInlineParams` defined as follows:
+
+```typescript
+interface CompletionInlineParams {
+    /**
+     * The current document text.
+     */
+    docText: string;
+
+    /**
+     * The document version.
+     * Clients should increment this on their side each time document is changed.
+     * Server will return this on its completion so clients can 
+     * discard if document was changed/version was increased.
+     */
+    docVersion: number;
+
+    /**
+     * The cursor position.
+     */
+    position: {
+       line: number;
+       character: number;
+    };
+}
+```
+
+_Response:_ `CompletionInlineResponse | Error`
+
+```typescript
+interface CompletionInlineResponse {
+    /**
+     * The items available as completion.
+     */
+    items: CompletionInlineItem[];
+}
+
+interface CompletionInlineItem {
+    /**
+     * The item text
+     */
+    text: string;
+
+    /**
+     * The item doc-version
+     */
+    docVersion: number;
+    
+    /**
+     * The range of this new text in the document
+     */
+    range: Range;
+}
+```
+
+### Rewrite (↩)
+
+A request sent from client to server, asking to rewrite a piece of code in editor with what LLM respond.
+The response is streamed via `rewrite/contentReceived` server notifications.
+
+_Request:_ 
+
+* method: `rewrite/prompt`
+* params: `RewritePromptParams` defined as follows:
+
+```typescript
+interface RewritePromptParams {
+
+    /**
+     * The rewrite ID to be used in response and later notifications.
+     */
+    id: string;
+    
+    /**
+     * The text to be rewritten.
+     * This should be the content selected by user in their editor.
+     */
+    text: string;
+    
+    /**
+     * The user prompt to LLM change the text.
+     */
+    prompt: string;
+
+    /**
+     * Optional path of the file.
+     * Useful for give context to LLM about the file path.
+     */
+    path?: string;
+
+    /**
+     * The range of the selected text.
+     */
+    range: Range;
+}
+```
+
+_Response:_ `RewritePromptResponse | Error`
+
+```typescript
+interface RewritePromptResponse {
+
+    /**
+     * The status of this rewrite.
+     */
+    status: 'prompting';
+    
+    /**
+     * The model used by this rewrite request.
+     */
+    model: Model;
+}
+```
+
+### Rewrite Content Received (←)
+
+A server notification with a new content from the rewrite LLM request.
+
+_Notification:_ 
+
+* method: `rewrite/contentReceived`
+* params: `RewriteContentReceivedParams` defined as follows:
+
+```typescript
+interface RewriteContentReceivedParams {
+    /**
+     * The rewrite identifier this content belongs to
+     */
+    rewriteId: string;
+
+    /**
+     * The content received
+     */
+    content: RewriteContent;
+}
+
+interface RewriteStartedContent {
+    type: 'started';
+}
+
+interface RewriteReasoningContent {
+    type: 'reasoning';
+}
+
+interface RewriteTextContent {
+    type: 'text';
+    
+    text: string;
+}
+
+interface RewriteErrorContent {
+    type: 'error';
+
+    message: string;
+}
+
+interface RewriteReplaceContent {
+    type: 'replace';
+
+    /**
+     * The full normalized text that should replace the accumulated streamed text.
+     * Sent before 'finished' when markdown fences were detected and stripped.
+     */
+    text: string;
+}
+
+interface RewriteFinishedContent {
+    type: 'finished';
+
+    /**
+     * The total time the rewrite took in milliseconds.
+     */
+    totalTimeMs: number;
+}
+
+type RewriteContent = 
+    RewriteStartedContent
+    | RewriteReasoningContent
+    | RewriteTextContent
+    | RewriteReplaceContent
+    | RewriteErrorContent
+    | RewriteFinishedContent;
+             
+```
+
+## Configuration
+
+### Config updated (←)
+
+A server notification with the new config server is considering (models, agents etc), usually related to config or auth changes.
+Clients should update UI accordingly, if a field is missing/null, means it had no change since last config updated, so clients should ignore.
+
+_Notification:_ 
+
+* method: `config/updated`
+* params: `configUpdatedParams` defined as follows:
+
+```typescript
+interface ConfigUpdatedParams {
+    /**
+     * When present, scopes this update to a single chat: clients should
+     * apply the per-chat fields (`selectModel`, `selectAgent`,
+     * `selectVariant`, `selectTrust`) only to the chat with this id and
+     * leave other chats untouched. When absent, the update is session-wide
+     * and clients should apply the per-chat fields to every chat (legacy
+     * behavior, used for the initial config push and other genuinely
+     * session-wide events).
+     */
+    chatId?: string;
+
+    /**
+     * Configs related to chat.
+     */
+    chat?: {
+
+       /**
+        * The models the user can use in chat.
+        */
+        models?: Model[];
+
+        /**
+        * The chat agents the user can select.
+        */
+        agents?: ChatAgent[];
+        
+        /**
+         * The model for client select in chat, if that is present
+         * clients should forcefully update chat selected model.
+         * 
+         * Server returns this when starting and only when makes sense to 
+         * force update a model, like a config change, or scoped via `chatId`
+         * when a chat's model changes server-side (e.g. `/model`, `/resume`).
+         */
+        selectModel?: Model;
+
+        /**
+         * The agent for client select in chat, if that is present
+         * clients should forcefully update chat selected agent.
+         * 
+         * Server returns this when starting and only when makes sense to 
+         * force update an agent, like a config change, or scoped via `chatId`
+         * when a chat's agent changes server-side (e.g. `/agent`, `/resume`,
+         * remote UI). Clients must apply it: the agent sent on the next
+         * `chat/prompt` wins over the one persisted on the chat.
+         */
+        selectAgent?: ChatAgent;
+
+        /**
+         * The available variant names for the currently selected model.
+         * Variants are named presets defined per model in the provider config
+         * (e.g. ["low", "medium", "high"]).
+         * An empty array means the model has no variants and clients should
+         * show a `-` variant in the selector.
+         */
+        variants?: string[];
+
+        /**
+         * The variant for client select in chat, if present clients should
+         * forcefully update the selected variant.
+         * null means no variant should be selected (e.g. model has no variants).
+         */
+        selectVariant?: string | null;
+
+        /**
+         * The trust toggle state for the active chat. When present clients
+         * should forcefully update the chat trust indicator (and any
+         * derived UI like a shield/flame icon) to match this value.
+         *
+         * Server returns this in a chat-scoped update on chat restore
+         * (`chat/open`, `/resume`, `/import`) so the client's indicator matches
+         * the auto-approval behavior for that chat without changing others.
+         */
+        selectTrust?: boolean;
+
+        /**
+        * Message to show when starting a new chat.
+        */
+        welcomeMessage?: string;
+    }
+}
+```
+
+### Tool updated (←)
+
+A server notification about a tool status update like a MCP or native tool.
+This is useful for clients present to user the list of configured tools/MCPs,
+their status and available tools and actions.
+
+_Notification:_ 
+
+* method: `tool/serverUpdated`
+* params: `ToolServerUpdatedParams` defined as follows:
+
+```typescript
+type ToolServerUpdatedParams = EcaServerUpdatedParams | MCPServerUpdatedParams;
+
+interface EcaServerUpdatedParams {
+    type: 'native';
+    
+    name: 'ECA';
+    
+    status: 'running';
+
+    /**
+     * The built-in tools supported by eca.
+     *
+     * Built-in tools include: read_file, view_image, write_file, edit_file, move_file,
+     * directory_tree, shell_command, editor_diagnostics, editor_definition,
+     * editor_references, compact_chat, skill, spawn_agent, and task.
+     *
+     * Note: `spawn_agent` and `task` are excluded from subagent tool sets.
+     * `spawn_agent` is excluded to prevent nesting, and `task` because
+     * task list state is chat-local and should be managed by the parent agent.
+     */
+    tools: ServerTool[];
+}
+
+interface MCPServerUpdatedParams {
+    type: 'mcp';
+    
+    /**
+     * The server name.
+     */
+    name: string;
+    
+    /**
+     * The command used to start this server (stdio transport).
+     */
+    command?: string;
+
+    /**
+     * The arguments passed to the command (stdio transport).
+     */
+    args?: string[];
+
+    /**
+     * The URL of the server (Streamable HTTP transport).
+     */
+    url?: string;
+    
+    /**
+     * The status of the server.
+     */
+    status: 'running' | 'starting' | 'stopped' | 'failed' | 'disabled' | 'requires-auth';
+
+    /**
+     * Whether the server is disabled.
+     */
+    disabled: boolean;
+
+    /**
+     * Whether the server has an OAuth access token.
+     */
+    hasAuth: boolean;
+    
+    /**
+     * The tools provided by this MCP server.
+     */
+    tools?: ServerTool[];
+
+    /**
+     * The prompts provided by this MCP server.
+     */
+    prompts?: ServerPrompt[];
+
+    /**
+     * The resources provided by this MCP server.
+     */
+    resources?: ServerResource[];
+}
+
+interface ServerTool {
+    /**
+     * The tool name.
+     */
+    name: string;
+    
+    /**
+     * The tool description.
+     */
+    description: string;
+    
+    /**
+     * The tool parameters (JSON Schema).
+     */
+    parameters: any; 
+    
+    /**
+     * Whether this tool is disabled by the current agent configuration.
+     */
+    disabled?: boolean;
+}
+
+interface ServerPrompt {
+    /**
+     * The prompt name.
+     */
+    name: string;
+
+    /**
+     * The prompt description.
+     */
+    description: string;
+
+    /**
+     * The prompt arguments.
+     */
+    arguments?: PromptArgument[];
+}
+
+interface PromptArgument {
+    /**
+     * The argument name.
+     */
+    name: string;
+
+    /**
+     * The argument description.
+     */
+    description: string;
+
+    /**
+     * Whether this argument is required.
+     */
+    required: boolean;
+}
+
+interface ServerResource {
+    /**
+     * The resource URI.
+     */
+    uri: string;
+
+    /**
+     * The resource name.
+     */
+    name: string;
+
+    /**
+     * The resource description.
+     */
+    description: string;
+
+    /**
+     * The MIME type of the resource.
+     */
+    mimeType: string;
+}
+```
+
+### Tool server removed (←)
+
+A server notification that an MCP server has been removed (via `mcp/removeServer`).
+Clients should drop the corresponding entry from any cached server list / UI.
+
+_Notification:_
+
+* method: `tool/serverRemoved`
+* params: `ToolServerRemovedParams` defined as follows:
+
+```typescript
+interface ToolServerRemovedParams {
+    /**
+     * The MCP server name that was removed.
+     */
+    name: string;
+}
+```
+
+### Stop MCP server (→)
+
+A client notification for server to stop a MCP server, stopping the process.
+Updates its status via `tool/serverUpdated` notification.
+
+_Notification:_
+
+* method: `mcp/stopServer`
+* params: `MCPStopServerParams` defined as follows:
+
+```typescript
+interface MCPStopServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+}
+```
+
+### Start MCP server (→)
+
+A client notification for server to start a stopped MCP server, starting the process again.
+Updates its status via `tool/serverUpdated` notification.
+
+_Notification:_
+
+* method: `mcp/startServer`
+* params: `MCPStartServerParams` defined as follows:
+
+```typescript
+interface MCPStartServerParams {
+    /**
+     * The server name.
+     */
+    name: string;
+}
+```
+
+### Connect MCP server (→)
+
+A client notification to initiate OAuth authorization for an MCP server that has `requires-auth` status.
+The server starts a local OAuth callback server and opens the authorization URL in the browser.
+On successful authorization, the server completes the OAuth flow and sends `tool/serverUpdated` with status `running`.
+
+_Notification:_
+
+* method: `mcp/connectServer`
+* params: `MCPConnectServerParams` defined as follows:
+
+```typescript
+interface MCPConnectServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+}
+```
+
+### Logout MCP server (→)
+
+A client notification to logout from an MCP server, clearing its stored OAuth credentials
+and restarting the server. The server will re-detect auth requirements and send
+`tool/serverUpdated` with status `requires-auth`.
+
+_Notification:_
+
+* method: `mcp/logoutServer`
+* params: `MCPLogoutServerParams` defined as follows:
+
+```typescript
+interface MCPLogoutServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+}
+```
+
+### Disable MCP server (→)
+
+A client notification to disable an MCP server. Persists `disabled: true` in the config file,
+stops the server if running, and sends `tool/serverUpdated` with status `disabled`.
+
+_Notification:_
+
+* method: `mcp/disableServer`
+* params: `MCPDisableServerParams` defined as follows:
+
+```typescript
+interface MCPDisableServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+}
+```
+
+### Enable MCP server (→)
+
+A client notification to enable a disabled MCP server. Removes the `disabled` flag from the config file,
+starts the server, and sends `tool/serverUpdated` with the new status.
+
+_Notification:_
+
+* method: `mcp/enableServer`
+* params: `MCPEnableServerParams` defined as follows:
+
+```typescript
+interface MCPEnableServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+}
+```
+
+### Update MCP Server (↩)
+
+Updates an MCP server's connection configuration (command/args or url), persists the change to the appropriate config file (local or global), and restarts the server.
+
+_Request:_
+
+* method: `mcp/updateServer`
+* params: `MCPUpdateServerParams` defined as follows:
+
+```typescript
+interface MCPUpdateServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+    /**
+     * The command to run (for stdio servers).
+     */
+    command?: string;
+    /**
+     * The command arguments (for stdio servers).
+     */
+    args?: string[];
+    /**
+     * The URL (for remote/HTTP servers).
+     */
+    url?: string;
+}
+```
+
+_Response:_
+
+* result: `{}`
+
+### Add MCP Server (↩)
+
+Adds a new MCP server definition at runtime, persists it to the chosen config file
+(global or workspace-local), and starts the server asynchronously. On success the server
+also emits a follow-up `tool/serverUpdated` notification as the new server progresses
+through `starting` → `running` / `failed` / `requires-auth`. Clients should not
+optimistically add the row locally — they should rely on that broadcast.
+
+_Request:_
+
+* method: `mcp/addServer`
+* params: `MCPAddServerParams` defined as follows:
+
+```typescript
+interface MCPAddServerParams {
+    /**
+     * The MCP server name. Must be unique among already-configured servers.
+     */
+    name: string;
+
+    /**
+     * The command to run (stdio transport).
+     */
+    command?: string;
+
+    /**
+     * The command arguments (stdio transport).
+     */
+    args?: string[];
+
+    /**
+     * Environment variables for the spawned process (stdio transport).
+     */
+    env?: { [key: string]: string };
+
+    /**
+     * The URL (Streamable HTTP transport).
+     */
+    url?: string;
+
+    /**
+     * HTTP headers to send with each request (Streamable HTTP transport).
+     */
+    headers?: { [key: string]: string };
+
+    /**
+     * Pre-registered OAuth client id (Streamable HTTP transport).
+     */
+    clientId?: string;
+
+    /**
+     * Pre-registered OAuth client secret (Streamable HTTP transport).
+     */
+    clientSecret?: string;
+
+    /**
+     * Local OAuth callback port (Streamable HTTP transport).
+     */
+    oauthPort?: number;
+
+    /**
+     * Controls how the OAuth token is shared across projects (Streamable HTTP
+     * transport). "global" (default) shares one token everywhere; "workspace"
+     * keeps a separate token per workspace folder set; any other value defines
+     * a named bucket shared by every project using the same value.
+     */
+    authScope?: string;
+
+    /**
+     * Whether the new server should be created in a disabled state.
+     */
+    disabled?: boolean;
+
+    /**
+     * Where to persist the new server entry. Defaults to "global"
+     * (`~/.config/eca/config.json`). Use "workspace" to persist to the
+     * workspace's `.eca/config.json` (requires `workspaceUri`).
+     */
+    scope?: 'global' | 'workspace';
+
+    /**
+     * Required when `scope = "workspace"`: identifies which workspace folder's
+     * `.eca/config.json` should receive the new entry.
+     */
+    workspaceUri?: string;
+}
+```
+
+_Response:_
+
+* result: `MCPAddServerResult` defined as follows:
+
+```typescript
+interface MCPAddServerResult {
+    /**
+     * The newly added server (canonical shape, identical to what
+     * `tool/serverUpdated` will subsequently broadcast). Present on success.
+     */
+    server?: MCPServerUpdatedParams;
+
+    /**
+     * Present when the add failed (e.g. duplicate name, invalid config,
+     * missing workspaceUri).
+     */
+    error?: {
+        code: string;
+        message: string;
+        data?: any;
+    };
+}
+```
+
+### Remove MCP Server (↩)
+
+Removes an MCP server definition at runtime: stops the server if running, deletes the
+entry from the owning config file (global or workspace-local), clears any stored OAuth
+credentials, and emits a `tool/serverRemoved` notification so clients can drop the
+row from their UI.
+
+_Request:_
+
+* method: `mcp/removeServer`
+* params: `MCPRemoveServerParams` defined as follows:
+
+```typescript
+interface MCPRemoveServerParams {
+    /**
+     * The MCP server name.
+     */
+    name: string;
+}
+```
+
+_Response:_
+
+* result: `MCPRemoveServerResult` defined as follows:
+
+```typescript
+interface MCPRemoveServerResult {
+    /**
+     * The name of the removed server. Present on success.
+     */
+    name?: string;
+
+    /**
+     * `true` when the entry was removed from the config file. Present on success.
+     */
+    removed?: boolean;
+
+    /**
+     * Present when the remove failed (e.g. unknown name).
+     */
+    error?: {
+        code: string;
+        message: string;
+        data?: any;
+    };
+}
+```
+
+## Provider Management
+
+### List Providers (↩)
+
+Returns all known providers with their current authentication status and available models.
+
+_Request:_
+
+* method: `providers/list`
+* params: `{}`
+
+_Response:_
+
+* result: `ProvidersListResult` defined as follows:
+
+```typescript
+interface ProvidersListResult {
+    providers: ProviderStatus[];
+}
+
+interface ProviderStatus {
+    /** Provider identifier (e.g. "anthropic", "openai"). */
+    id: string;
+    /** Human-readable label (e.g. "GitHub Copilot"). */
+    label?: string;
+    /** Whether this provider exists in the resolved config. */
+    configured: boolean;
+    /** Current authentication state. */
+    auth: ProviderAuth;
+    /** Login methods available for this provider, if any. */
+    login?: { methods: LoginMethod[] };
+    /** Models currently available for this provider. */
+    models: ProviderModel[];
+    /** Provider-level config key-vals (api, url, fetchModels, httpClient, retryRules, etc.). */
+    settings?: Record<string, any>;
+    /**
+     * Latest subscription quota, only for subscription logins (`auth.type`
+     * "oauth") once the provider reported it, either on a request or via its
+     * usage endpoint fetched after login, on startup and by `/quota`.
+     */
+    quota?: ProviderQuota;
+}
+
+/**
+ * Account-level subscription quota reported by the provider (e.g. Claude
+ * Pro/Max, ChatGPT, GitHub Copilot). Unrelated to chat tokens or API billing.
+ */
+interface ProviderQuota {
+    /** When this snapshot was captured, epoch seconds. */
+    updatedAt: number;
+    /**
+     * Quota windows as reported by the provider, shortest first. Ids, labels
+     * and durations come from the provider, clients should not assume fixed
+     * windows. A window whose `resetsAt` already passed is stale until the next
+     * update.
+     */
+    windows: ProviderQuotaWindow[];
+}
+
+interface ProviderQuotaWindow {
+    /** Stable id derived from the provider data (e.g. "5h", "7d", "primary", "premium_interactions"). */
+    id: string;
+    /** Short display label (e.g. "5h", "7d", "Premium"). */
+    label: string;
+    /** Used share of the window, 0-100. May exceed 100 when the provider allows overage. */
+    usedPercent: number;
+    /** When the window resets, epoch seconds. */
+    resetsAt?: number;
+    /** Window duration in minutes, when reported. */
+    windowMinutes?: number;
+}
+
+interface ProviderAuth {
+    /** Authentication status. */
+    status: 'authenticated' | 'expiring' | 'expired' | 'unauthenticated' | 'local' | 'not-running';
+    /** Authentication type. */
+    type?: 'oauth' | 'api-key';
+    /** How the credential was resolved. */
+    source?: 'config' | 'login' | 'env';
+    /** Login mode used (e.g. "max", "console", "manual", "pro"). */
+    mode?: string;
+    /** Token expiry as epoch seconds. */
+    expiresAt?: number;
+    /** Environment variable name when source is "env". */
+    envVar?: string;
+}
+
+interface LoginMethod {
+    /** Method identifier (e.g. "max", "pro", "api-key", "device"). */
+    key: string;
+    /** Human-readable label. */
+    label: string;
+}
+
+interface ProviderModel {
+    /** Model name without provider prefix. */
+    id: string;
+    /** Model capabilities. */
+    capabilities: {
+        reason: boolean;
+        vision: boolean;
+        tools: boolean;
+        webSearch: boolean;
+    };
+    /** Token costs per 1M tokens. */
+    cost?: { input: number; output: number };
+    /** Model-level config key-vals (modelName, extraPayload, extraHeaders, reasoningHistory, variants). */
+    settings?: Record<string, any>;
+}
+```
+
+### Login Provider (↩)
+
+Initiates a login flow for a provider. Two-round-trip design: calling without a method returns
+available methods to choose from; calling with a method starts the authentication flow and
+returns an action descriptor telling the client what to render.
+
+_Request:_
+
+* method: `providers/login`
+* params: `ProvidersLoginParams` defined as follows:
+
+```typescript
+interface ProvidersLoginParams {
+    /** The provider to log in to (e.g. "anthropic"). */
+    provider: string;
+    /** The login method to use. Omit on first call to get available methods. */
+    method?: string;
+}
+```
+
+_Response:_
+
+* result: One of the following action descriptors:
+
+```typescript
+/** Multiple methods available — client should present choice and re-call with method. */
+interface ChooseMethodAction {
+    action: 'choose-method';
+    methods: LoginMethod[];
+}
+
+/** Browser-based OAuth — client opens URL, optionally collects a code. */
+interface AuthorizeAction {
+    action: 'authorize';
+    /** The OAuth authorization URL to open in the browser. */
+    url: string;
+    /** Instructional message for the user. */
+    message: string;
+    /**
+     * Fields to collect after browser auth (e.g. authorization code).
+     * If absent, the server handles the callback automatically and
+     * completion is signaled via providers/updated notification.
+     */
+    fields?: InputField[];
+}
+
+/** GitHub device flow — client shows code for user to enter at URL. */
+interface DeviceCodeAction {
+    action: 'device-code';
+    /** The verification URL. */
+    url: string;
+    /** The user code to enter. */
+    code: string;
+    /** Instructional message for the user. */
+    message: string;
+}
+
+/** Collect input fields (API key, URL, models). */
+interface InputAction {
+    action: 'input';
+    fields: InputField[];
+}
+
+/** Login completed immediately. */
+interface DoneAction {
+    action: 'done';
+}
+
+interface InputField {
+    /** Field identifier. */
+    key: string;
+    /** Human-readable label. */
+    label: string;
+    /** Field type: "secret" for passwords/keys, "text" for regular input. */
+    type: 'secret' | 'text';
+}
+```
+
+### Login Provider Input (↩)
+
+Submits collected input data (API key, authorization code, URL, models) to complete a login flow.
+
+_Request:_
+
+* method: `providers/loginInput`
+* params: `ProvidersLoginInputParams` defined as follows:
+
+```typescript
+interface ProvidersLoginInputParams {
+    /** The provider being logged in to. */
+    provider: string;
+    /** The collected input data. Keys match the field keys from the action descriptor. */
+    data: Record<string, string>;
+}
+```
+
+_Response:_
+
+* result: `{ action: 'done' }`
+
+### Logout Provider (↩)
+
+Clears authentication for a provider and re-syncs available models.
+
+_Request:_
+
+* method: `providers/logout`
+* params: `ProvidersLogoutParams` defined as follows:
+
+```typescript
+interface ProvidersLogoutParams {
+    /** The provider to log out of. */
+    provider: string;
+}
+```
+
+_Response:_
+
+* result: `{}`
+
+### Provider Updated (←)
+
+A server notification sent when a provider's authentication state, available models or subscription quota change.
+Sent after login completion, logout, token renewal, model sync, or when the quota clients display changes. Contains the full provider
+status (same shape as items in `providers/list` response).
+
+_Notification:_
+
+* method: `providers/updated`
+* params: `ProviderStatus` (see `providers/list` response above)
+
+## Background Jobs
+
+### List Jobs (↩)
+
+Returns all active (non-evicted) background jobs across all chats.
+
+_Request:_
+
+* method: `jobs/list`
+* params: `{}` (none)
+
+_Response:_
+
+* result: `JobsListResult` defined as follows:
+
+```typescript
+interface JobsListResult {
+    jobs: JobSummary[];
+}
+
+interface JobSummary {
+    /** Unique job identifier (e.g. "job-1"). */
+    id: string;
+    /** Job type (currently always "shell"). */
+    type: string;
+    /** Current status. */
+    status: "running" | "completed" | "failed" | "killed";
+    /** Human-readable label (the command string). */
+    label: string;
+    /** Brief description of the job purpose (e.g. "dev-server"), or null if not provided. */
+    summary: string | null;
+    /** ISO 8601 timestamp of when the job started. */
+    startedAt: string;
+    /** Human-readable elapsed time (e.g. "5m23s"). */
+    elapsed: string;
+    /** Process exit code, or null if still running. */
+    exitCode: number | null;
+    /** The chat that spawned this job. */
+    chatId: string;
+    /** Display label for the chat (title or chat-id fallback). */
+    chatLabel: string;
+}
+```
+
+### Kill Job (↩)
+
+Terminates a running background job.
+
+_Request:_
+
+* method: `jobs/kill`
+* params: `JobsKillParams` defined as follows:
+
+```typescript
+interface JobsKillParams {
+    /** The job ID to kill. */
+    jobId: string;
+}
+```
+
+_Response:_
+
+* result: `{ killed: boolean }`
+
+### Read Job Output (↩)
+
+Returns the currently buffered output lines for a background job. This is a snapshot read
+that does not affect the LLM's incremental read cursor.
+
+_Request:_
+
+* method: `jobs/readOutput`
+* params: `JobsReadOutputParams` defined as follows:
+
+```typescript
+interface JobsReadOutputParams {
+    /** The job ID to read output from. */
+    jobId: string;
+}
+```
+
+_Response:_
+
+* result: `JobsReadOutputResult` defined as follows:
+
+```typescript
+interface JobsReadOutputResult {
+    /** Buffered output lines (up to 2000 most recent), tagged with stream source. */
+    lines: OutputLine[];
+    /** Current job status. */
+    status: "running" | "completed" | "failed" | "killed";
+    /** Process exit code, or null if still running. */
+    exitCode: number | null;
+}
+
+interface OutputLine {
+    /** The text content of the line. */
+    text: string;
+    /** Which stream produced this line. */
+    stream: "stdout" | "stderr";
+}
+```
+
+### Jobs Updated (←)
+
+A server notification sent when the background jobs list changes. Sent after a job is
+created, completes, fails, is killed, or is evicted. Contains the full list of active jobs.
+
+_Notification:_
+
+* method: `jobs/updated`
+* params: `JobsListResult` (see `jobs/list` response above)
+
+## General features
+
+### progress (←)
+
+A notification from the server reporting the progress of an initialization task. Each task
+sends a `start` notification when it begins and a `finish` notification when it completes (or fails).
+Clients can track all tasks to derive aggregate initialization progress.
+
+_Notification:_
+
+* method: `$/progress`
+* params: `ProgressParams` defined as follows:
+
+```typescript
+interface ProgressParams {
+  /** Whether this task is starting or finishing. */
+  type: "start" | "finish";
+  /** Stable identifier for the task (e.g. "models", "plugins", "mcp-servers"). */
+  taskId: string;
+  /** Human-readable label for the task. */
+  title: string;
+}
+```
+
+### showMessage (←)
+
+A notification from server telling client to present a message to user.
+
+_Notification:_ 
+
+* method: `$/showMessage`
+* params: `ShowMessageParams` defined as follows:
+
+```typescript
+type ShowMessageParams = Error;
+```

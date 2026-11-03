@@ -1,9 +1,9 @@
 # earendil-works/pi
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 71dca871bc80 @ 03b32de110df5c1d
+Latest snapshot: commit 7dc38ff0e949 @ 467b340da4367093
 
 ## Summary (orientation draft, not independently verified)
 

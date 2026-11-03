@@ -1,9 +1,9 @@
 # dyad-sh/dyad
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0c8403662504 @ 73f45ce23df314b3
+Latest snapshot: commit 643efc30b58d @ 9866e093f0919434
 
 ## Summary (orientation draft, not independently verified)
 

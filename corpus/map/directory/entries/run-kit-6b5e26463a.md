@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: sahil87
@@ -22,6 +22,8 @@ Repository map entry: [sahil87/run-kit](../../repos/sahil87/run-kit.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The tool exists for the failure mode where an agent is running on a desk machine and the developer is elsewhere — it exposes every tmux session and pane as a live terminal in a phone-first PWA or a ma
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Agent-agnostic remote tmux console with no database, state derived from tmux + filesystem; phone-first, keyboard-first; spawns parallel agent worktrees via git worktrees; outlives agent tooling churn.
+
+(captured site page body (agents/run-kit.md), not a verified repo-code finding)
+The tool exists for the failure mode where an agent is running on a desk machine and the developer is elsewhere — it exposes every tmux session and pane as a live terminal in a phone-first PWA or a macOS desktop app, over Tailscale HTTPS if desired. It deliberately understands nothing about agents: a pane is a pane, and Claude Code, Codex, builds, and htop are equal citizens, which insulates it from changes in agent tooling. Optional Claude Code hooks feed lifecycle states into status dots (busy, waiting, idle), and riff provisions worktree-plus-tmux workspaces in bulk for parallel runs. It is part of the shll toolkit alongside wt for worktrees, installs in one curl line requiring tmux 3.4+, and targets developers supervising long-running agent sessions from a phone or a second screen.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/run-kit.md)

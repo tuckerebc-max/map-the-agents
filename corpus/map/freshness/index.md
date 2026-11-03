@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (847)
+## current (843)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -148,11 +148,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [dongdongunique/llm_rag](../repos/dongdongunique/llm_rag.md) [coverage: complete]
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) [coverage: complete]
 - [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md) [coverage: complete]
-- [dyad-sh/dyad](../repos/dyad-sh/dyad.md) [coverage: partial]
-- [earendil-works/pi](../repos/earendil-works/pi.md) [coverage: complete]
-- [echovic/blade-code](../repos/echovic/blade-code.md) [coverage: partial]
 - [edantoledo/stoix](../repos/edantoledo/stoix.md) [coverage: complete]
-- [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) [coverage: partial]
 - [egoist/waku](../repos/egoist/waku.md) [coverage: partial]
 - [eigent-ai/eigent](../repos/eigent-ai/eigent.md) [coverage: partial]
 - [electric-sql/electric](../repos/electric-sql/electric.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [meltylabs/melty](../repos/meltylabs/melty.md) [coverage: complete]
 - [memorax-ai/memorax-code](../repos/memorax-ai/memorax-code.md) [coverage: partial]
 - [mereyabdenbekuly-ctrl/clodex-ide](../repos/mereyabdenbekuly-ctrl/clodex-ide.md) [coverage: partial]
+- [mervinpraison/praisonai](../repos/mervinpraison/praisonai.md) [coverage: partial]
+- [meysamhadeli/codai](../repos/meysamhadeli/codai.md) [coverage: complete]
+- [microsoft/amplifier](../repos/microsoft/amplifier.md) [coverage: partial]
+- [microsoft/autogen](../repos/microsoft/autogen.md) [coverage: partial]

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: SAP
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-SAP positions Joule as the copilot across its portfolio, and the developer-facing portion addresses the reality that most SAP enterprise code is ABAP or CAP, which general coding assistants handle poo
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Joule developer agents for ABAP/SAP Build Code
+
+(captured site page body (agents/sap-joule-for-developers.md), not a verified repo-code finding)
+SAP positions Joule as the copilot across its portfolio, and the developer-facing portion addresses the reality that most SAP enterprise code is ABAP or CAP, which general coding assistants handle poorly. The capabilities are embedded where SAP developers already work — ABAP Development Tools in Eclipse and SAP Business Application Studio — covering code generation and explanation, unit test generation, and application logic, data modeling, and UI generation in SAP Build Code. Access runs through SAP BTP under consumption-based AI units rather than per-seat licensing, and the features are bundled with the SAP AI add-ons enterprises already procure. Note on sourcing: SAP properties returned 403 to automated fetching during this census, so this entry is grounded in the product's public documentation structure and positioning rather than a fetched page. The audience is enterprise ABAP and CAP development teams inside SAP customers.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/sap-joule-for-developers.md)

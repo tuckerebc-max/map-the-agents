@@ -1,0 +1,220 @@
+---
+description: "Explore ECA's AI coding features: chat, inline completion, rewrite, agents, subagents, MCP tools, context injection, and more."
+---
+
+# Features
+
+<img src="https://raw.githubusercontent.com/editor-code-assistant/eca-emacs/master/demo.gif" width="720"/>
+
+## Chat
+
+Chat is the main feature of ECA, allowing user to talk with LLM to behave like an agent, making changes using tools or just planning changes and next steps with options to rollback messages and changes done by tool call.
+
+### Agents
+
+![agents](./images/features/chat-agents.png){ align=right }
+
+Agents affect the prompt passed to LLM and the tools to include, ECA allows you to override or __create your own agents__, the built-in agents are:
+
+- `code`: Make changes to code via file changing tools. (Default) [Prompt here](https://github.com/editor-code-assistant/eca/blob/master/resources/prompts/code_agent.md)
+- `plan`: Useful to plan changes and define better LLM plan before changing code via code agent mode, has ability to preview changes (Check below). [Prompt here](https://github.com/editor-code-assistant/eca/blob/master/resources/prompts/plan_agent.md)
+
+![](./images/features/plan_preview_change.png)
+
+!!! info "Custom agents"
+
+    To create and customize your own agents, check the [config](./config/agents.md).
+    
+#### Subagents
+
+![](./images/features/subagents.png)
+
+Subagents are quite powerful to delegate tasks to specialized agents, for more details check [subagents docs](./config/agents.md#subagents)
+
+### Variants
+
+![](./images/features/variants.png){ align=right }
+
+ECA supports the variants concept, where it allows to quickly switch via UI to a variant which usually means a different level of reasoning effort or anything user can customize.
+
+### Tools
+
+![](./images/features/tools.png){ align=right }
+
+ECA leverage tools to give more power to the LLM, this is the best way to make LLMs have more context about your codebase and behave like an agent.
+It supports both MCP server tools + ECA native tools.
+
+When passing tools to LLM, ECA will always prefix the tool with the server name, like `eca__directory_tree` or `my-mcp__foo_bar`.
+
+!!! info "Approval / permissions"
+
+    By default, ECA ask to approve all non-read only tools or mcp tools, you can easily configure that, check `toolCall approval` [config](./config/tools.md#approval-permissions) or try the `plan` agent.
+
+#### Native tools
+
+ECA support built-in tools to avoid user extra installation and configuration, these tools are always included on models requests that support tools and can be [disabled via config](./config/introduction.md) `disabledTools`.
+
+=== "Filesystem"
+
+    Provides access to the filesystem for listing, reading, writing, editing and moving files. Operates primarily on workspace files; paths outside the workspace require approval.
+
+    - `directory_tree`: list a directory as a tree (can be recursive).
+    - `read_file`: read a file content.
+    - `view_image`: load a png/jpg/gif/webp file into the chat as an image the model can see (only available to models with image input).
+    - `write_file`: write content to a new file.
+    - `edit_file`: replace lines of a file with a new content.
+    - `preview_edit_file`: Only used in plan mode, showing what changes will happen after user decides to execute the plan.
+    - `move_file`: move/rename a file.
+    - `grep`: ripgrep/grep for paths with specified content.
+
+=== "Shell"
+
+    Provides access to run shell commands, useful to run build tools, tests, and other common commands, supports exclude/include commands. 
+
+    - `shell_command`: run shell command. Command exclusion can be configured using toolCall approval configuration with regex patterns. Spawned commands run with `ECA_AGENT=1` and `ECA_CHAT_ID` env vars set, see [spawned command environment](./config/tools.md#spawned-command-environment).
+
+=== "Editor"
+
+    Provides access to get information from editor workspaces.
+
+    - `editor_diagnostics`: Ask client about the diagnostics (like LSP diagnostics).
+    - `editor_definition`: Ask client for the definition locations of a symbol (like LSP definition). Requires client capability, can be disabled via `toolCall.editorNav.enabled` config.
+    - `editor_references`: Ask client for the references of a symbol (like LSP references). Requires client capability, can be disabled via `toolCall.editorNav.enabled` config.
+
+!!! info "Custom Tools"
+
+    Besides the built-in native tools, ECA allows you to define your own tools by wrapping any command-line executable. This feature enables you to extend ECA's capabilities to match your specific workflows, such as running custom scripts, interacting with internal services, or using your favorite CLI tools.
+
+    Custom tools are configured in your `config.json` file. For a detailed guide on how to set them up, check the [Custom Tools configuration documentation](./config/tools.md#custom-tools).
+
+### Contexts
+
+![](./images/features/contexts.png){ align=right }
+
+ECA supports contexts(`@`) including files, dirs, images, MCP resources, which can help LLM generate output with better quality/precision.
+
+Here are the current supported contexts types:
+
+- `file`: a file in the workspace, server will pass its content to LLM (Supports optional line range) and images.
+- `directory`: a directory in the workspace, server will read all file contexts and pass to LLM.
+- `cursor`: Current file path + cursor position or selection.
+- `mcpResource`: resources provided by running MCPs servers.
+
+Besides thoses, ECA supports filepaths(`#`) which are just file paths mentions in the user prompt.
+
+So user can include those contexts in 3 different ways for different purposes:
+
+- `#` in user prompt: ECA will just mention the absolute file path in the user message, LLM may use tools to read the file. __Useful for file path only mention in chat history__.
+- `@` in user prompt: ECA will append a user-message with the context full content. __Useful for chat history context__.
+- `@` in system prompt (above user prompt): ECA will use it in the instructions/system prompt of LLM request. __Useful for one-time only context__.
+
+<img src="../images/features/contexts-files.gif" width="600">
+
+#### AGENTS.md automatic context
+
+ECA will always include if found the `AGENTS.md` file as context, searching for both `/project-root/AGENTS.md` and `~/.config/eca/AGENTS.md`, it will recursively check for any `@some-file.md` mention as well.
+
+Set the config flag `includeParentAgentsFiles` to `true` to also include `AGENTS.md` files from each workspace's parent directories (up to the filesystem root). Files are emitted outermost parent first, then descending toward the workspace's own `AGENTS.md`, and duplicates across overlapping workspaces are skipped. The flag is disabled by default.
+
+You can ask ECA to create/update this file via `/init` command.
+you can check/debug what goes to final prompt with `/prompt-show` as well.
+
+### Commands
+
+![](./images/features/commands.png)
+
+Eca supports commands that usually are triggered via shash (`/`) in the chat, completing in the chat will show the known commands which include ECA commands, MCP prompts and resources.
+
+The built-in commands are:
+
+- `/init`: Create/update the AGENTS.md file with details about the workspace for best LLM output quality.
+- `/login`: Log into a provider. Ex: `github-copilot`, `anthropic`.
+- `/model`: Select model for current chat directly from chat. Ex: `anthropic/claude-sonnet-4-6`.
+- `/agent`: Select a primary agent for the current chat. Ex: `plan`.
+- `/skills`: List known skills that ECA can load.
+- `/hooks`: List active hooks grouped by type, showing name, description, and matcher.
+- `/compact`: Compact/summarize conversation helping reduce context window.
+- `/fork`: Fork the current chat into a new chat with the same history and settings.
+- `/btw`: Ask a side question in a forked chat, keeping the current chat history clean. Ex: `/btw how does X work?`.
+- `/resume`: Resume a chat from previous session of this workspace folder.
+- `/chats`: List chats from all workspaces grouped by workspace path, useful to find in which workspace a chat lives. Ex: `/chats`, `/chats my feature`.
+- `/delete-chat`: Permanently delete the current chat or a chat-id from the `/resume` list, asking confirmation. Ex: `/delete-chat`, `/delete-chat 2`.
+- `/costs`: Show costs about current session.
+- `/quota`: Show the subscription quota usage and reset times of providers logged in with a subscription (Claude Pro/Max, ChatGPT, GitHub Copilot). Clients also show it instead of costs in the chat usage.
+- `/approvals`: List the tool call approvals remembered in the current chat via "approve and remember".
+- `/forget-approvals`: Forget the tool call approvals remembered in the current chat, so those tool calls ask for approval again.
+- `/config`: Show ECA config for troubleshooting.
+- `/doctor`: Show information about ECA, useful for troubleshooting.
+- `/repo-map-show`: Show the current repoMap context of the session.
+- `/debug-chat`: Dump the current chat (obfuscated) to a file for debugging a corrupted/stuck chat.
+- `/prompt-show`: Show the final prompt sent to LLM with all contexts and ECA details.
+- `/sync-system-prompt`: Re-sync the current chat's system prompt (AGENTS.md, rules, skills) on the next message, invalidating its prompt cache. Useful with `chat.autoSyncSystemPrompt` disabled (default), where changes apply only to new chats. Skill catalog changes never auto-sync regardless of the flag (skill contents are always read fresh when loaded).
+
+!!! info "Custom commands"
+
+    It's possible to configure custom command prompts, for more details check [its configuration](./config/commands.md)
+
+#### Login
+
+It's possible to login to some providers using `/login` command, ECA will ask and give instructions on how to authenticate in the chosen provider and save the login info globally in its cache `~/.cache/eca/db.transit.json`.
+
+Current supported providers with login:
+
+- `anthropic`: with options to login to Claude Max/Pro or create API keys.
+- `github-copilot`: via Github oauth.
+
+### Skills
+
+Following the [skills spec](https://agentskills.io/), ECA supports skills that can teach LLM how to learn about a context or handle a specific task.
+
+![](./images/features/skills.png)
+
+For more details, check [skills configuration](./config/skills.md).
+
+### Hooks
+
+Hooks are actions that can run before or after an specific event, useful to notify after prompt finished or to block a tool call doing some check in a script.
+
+![](./images/features/hooks.png)
+
+For more details, check [hooks configuration](./config/hooks.md).
+
+### Flags on messages
+
+![](./images/features/chat-flag.png)
+
+You can add flags in between messages so you can fork from there in the future, flags are saved by chat.
+
+## Inline chat
+
+Inline chat allows editors to ask ECA from any buffer and render the answer inline (e.g. an overlay near the cursor), backed by a regular chat: tool calls, approvals and follow-ups work as usual, and the session can be opened as a full chat at any time. Optionally it can fork an existing chat, keeping its history as context without polluting it.
+
+For inline chat configuration, check [configuration](./config/chat-inline.md).
+
+![](./images/features/inline-chat.gif)
+
+## Rewrite
+
+Rewrite allows user to select part of the text and ask ECA to rewrite it.
+
+This is useful for quick LLM instructions to apply to code where you don't need to over control context or prompt too much, 
+
+_Tip: weak models work great like `github-copilot/gpt-4.1`, if you prefer faster responses than accurate._
+
+![](./images/features/rewrite.gif)
+
+For rewrite configuration, check [configuration](./config/rewrite.md).
+
+##  Completion (alpha)
+
+Inline code completion
+
+![](./images/features/inline_completion.png)
+
+For mode details check [configuration](./config/completion.md).
+
+## OpenTelemetry integration
+
+ECA has support for [OpenTelemetry](https://opentelemetry.io/)(otlp), if configured, server tasks, tool calls, and more will be metrified via otlp API.
+
+For more details check [its configuration](./config/metrics.md).

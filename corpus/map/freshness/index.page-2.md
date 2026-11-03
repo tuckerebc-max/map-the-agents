@@ -2,10 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [mervinpraison/praisonai](../repos/mervinpraison/praisonai.md) [coverage: partial]
-- [meysamhadeli/codai](../repos/meysamhadeli/codai.md) [coverage: complete]
-- [microsoft/amplifier](../repos/microsoft/amplifier.md) [coverage: partial]
-- [microsoft/autogen](../repos/microsoft/autogen.md) [coverage: partial]
 - [microsoft/taskweaver](../repos/microsoft/taskweaver.md) [coverage: partial]
 - [microsoft/typechat](../repos/microsoft/typechat.md) [coverage: complete]
 - [microsoft/vision-ai-developer-kit](../repos/microsoft/vision-ai-developer-kit.md) [coverage: complete]
@@ -441,7 +437,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (139)
+## stale (143)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +447,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
 - [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
 - [akashgit/remote-factory](../repos/akashgit/remote-factory.md) [coverage: partial]
+- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
+- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
+- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
+- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: griddynamics
@@ -22,6 +22,8 @@ Repository map entry: [griddynamics/rosetta](../../repos/griddynamics/rosetta.md
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Grid Dynamics built Rosetta to solve the consistency problem when dozens of engineers use different agents: each session starts from whatever context the individual remembered to paste. A workspace in
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Agent-agnostic engineering governance and context layer that loads shared, versioned, layered (core/organization/project) instructions into every AI coding session. Discipline-encoded workflows (Prepare-\>Research-\>Plan-\>Act-\>Validate) with HITL approval gates, fresh-context review subagents, execution-backed validation, and Git-controlled instruction delivery by tag (not semantic search). No source code leaves your perimeter.
+
+(captured site page body (agents/rosetta.md), not a verified repo-code finding)
+Grid Dynamics built Rosetta to solve the consistency problem when dozens of engineers use different agents: each session starts from whatever context the individual remembered to paste. A workspace initialized with rosetta loads the layered instruction stack into every session, classifies the request into one of thirteen SDLC workflow types (coding, security, test generation, requirements authoring, and others), and executes each through a Prepare, Research, Plan, Act, Validate pattern with approval gates. Skills cover planning, orchestration of subagent teams, reverse engineering, and security review, while a MEMORY.md file lets sessions accumulate project-specific learning. Enforcement is structural — dangerous-action detection, PII and secrets handling rules, deviation control with fresh-context reviewers — rather than advisory. Enterprise platform teams adopt it to make agent behavior auditable and uniform across tools.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/rosetta.md)

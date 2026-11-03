@@ -114,31 +114,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [research paper (`research-paper`)](research-paper-fcd050aa5e.md) -- backing+pages
 - [rgr (`rgr`)](rgr-e0791ad2e1.md) -- backing+pages
 - [ricochet (`ricochet`)](ricochet-f025b94145.md) -- published+backing+pages
-- [Rikki Coding Agent (`rikki-coding-agent`)](rikki-coding-agent-4b9ebd17d2.md) -- published+backing
-- [Rocket (`rocket`)](rocket-c58dd0a376.md) -- published+backing
-- [Roo Code CLI (`roo-code-cli`)](roo-code-cli-19a722733e.md) -- published+backing
-- [Roo-Code-Docs (`roo-code-docs`)](roo-code-docs-acb62f7c0b.md) -- backing-only
-- [Rork (`rork`)](rork-e1fb370942.md) -- published+backing
-- [rosetta (`rosetta`)](rosetta-27c3d3b047.md) -- backing-only
-- [routa (`routa`)](routa-bf602bf027.md) -- published+backing
-- [Rover (`rover`)](rover-b0c5f417a5.md) -- backing-only
-- [Rovo Dev (`rovo-dev`)](rovo-dev-340fb64e34.md) -- published+backing
-- [Rowboat (`rowboat`)](rowboat-ce45a3d36f.md) -- published+backing
-- [Rpm-Ai-Agent (`rpm-ai-agent`)](rpm-ai-agent-a1897c5096.md) -- backing-only
-- [rules (`rules`)](rules-6c621d1a05.md) -- backing-only
-- [run-kit (`run-kit`)](run-kit-6b5e26463a.md) -- published+backing
-- [RunVSAgent (`runvsagent`)](runvsagent-dcacab9327.md) -- published+backing
-- [sage (`sage`)](sage-7e5d4325a4.md) -- published+backing
-- [Same (`same`)](same-0967115f28.md) -- published+backing
-- [Same.dev (`samedev`)](samedev-d236ce3b63.md) -- published+backing
-- [sample-multi-agent-orchestration-chat-on-agentcore (`sample-multi-agent-orchestration-chat-on-agentcore`)](sample-multi-agent-orchestration-chat-on-agentcore-e1e69976a0.md) -- published+backing
-- [sandbox-agent (`sandbox-agent`)](sandbox-agent-c676232c22.md) -- published+backing
-- [sandboxd (`sandboxd`)](sandboxd-2eeb351382.md) -- published+backing
-- [SAP Joule for Developers (`sap-joule-for-developers`)](sap-joule-for-developers-c2699db510.md) -- published+backing
-- [SASVA - Generative and Deterministic AI Platform (`sasva-generative-and-deterministic-ai-platform`)](sasva-generative-and-deterministic-ai-platform-dc7a19d7e2.md) -- published+backing
-- [Sc-Helm-App (`sc-helm-app`)](sc-helm-app-4937d8526c.md) -- backing-only
-- [Scape (`scape`)](scape-76a9b07966.md) -- published+backing
-- [scenario (`scenario`)](scenario-ee26f4137f.md) -- backing-only
+- [Rikki Coding Agent (`rikki-coding-agent`)](rikki-coding-agent-4b9ebd17d2.md) -- published+backing+pages
+- [Rocket (`rocket`)](rocket-c58dd0a376.md) -- published+backing+pages
+- [Roo Code CLI (`roo-code-cli`)](roo-code-cli-19a722733e.md) -- published+backing+pages
+- [Roo-Code-Docs (`roo-code-docs`)](roo-code-docs-acb62f7c0b.md) -- backing+pages
+- [Rork (`rork`)](rork-e1fb370942.md) -- published+backing+pages
+- [rosetta (`rosetta`)](rosetta-27c3d3b047.md) -- backing+pages
+- [routa (`routa`)](routa-bf602bf027.md) -- published+backing+pages
+- [Rover (`rover`)](rover-b0c5f417a5.md) -- backing+pages
+- [Rovo Dev (`rovo-dev`)](rovo-dev-340fb64e34.md) -- published+backing+pages
+- [Rowboat (`rowboat`)](rowboat-ce45a3d36f.md) -- published+backing+pages
+- [Rpm-Ai-Agent (`rpm-ai-agent`)](rpm-ai-agent-a1897c5096.md) -- backing+pages
+- [rules (`rules`)](rules-6c621d1a05.md) -- backing+pages
+- [run-kit (`run-kit`)](run-kit-6b5e26463a.md) -- published+backing+pages
+- [RunVSAgent (`runvsagent`)](runvsagent-dcacab9327.md) -- published+backing+pages
+- [sage (`sage`)](sage-7e5d4325a4.md) -- published+backing+pages
+- [Same (`same`)](same-0967115f28.md) -- published+backing+pages
+- [Same.dev (`samedev`)](samedev-d236ce3b63.md) -- published+backing+pages
+- [sample-multi-agent-orchestration-chat-on-agentcore (`sample-multi-agent-orchestration-chat-on-agentcore`)](sample-multi-agent-orchestration-chat-on-agentcore-e1e69976a0.md) -- published+backing+pages
+- [sandbox-agent (`sandbox-agent`)](sandbox-agent-c676232c22.md) -- published+backing+pages
+- [sandboxd (`sandboxd`)](sandboxd-2eeb351382.md) -- published+backing+pages
+- [SAP Joule for Developers (`sap-joule-for-developers`)](sap-joule-for-developers-c2699db510.md) -- published+backing+pages
+- [SASVA - Generative and Deterministic AI Platform (`sasva-generative-and-deterministic-ai-platform`)](sasva-generative-and-deterministic-ai-platform-dc7a19d7e2.md) -- published+backing+pages
+- [Sc-Helm-App (`sc-helm-app`)](sc-helm-app-4937d8526c.md) -- backing+pages
+- [Scape (`scape`)](scape-76a9b07966.md) -- published+backing+pages
+- [scenario (`scenario`)](scenario-ee26f4137f.md) -- backing+pages
 - [SceneGenAgent (`scenegenagent`)](scenegenagent-238e6bba60.md) -- published+backing
 - [sealos (`sealos`)](sealos-8c14b85d26.md) -- backing-only
 - [seance (`seance`)](seance-8c9771035e.md) -- published+backing

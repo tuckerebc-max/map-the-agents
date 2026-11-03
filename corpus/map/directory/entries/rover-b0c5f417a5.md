@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Rover
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Documatic built Rover around the observation that most AI review tools reason over a patch and miss the blast radius: a change that is locally correct can still break a caller two repositories away. T
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Code reliability platform that scans PRs for bugs/security/performance issues in the context of the entire system (not just the diff). Builds a live interactive code graph across repositories; 'Curio' AI agent lets you chat with your codebase to understand and diagnose issues.
+
+(captured site page body (agents/rover.md), not a verified repo-code finding)
+Documatic built Rover around the observation that most AI review tools reason over a patch and miss the blast radius: a change that is locally correct can still break a caller two repositories away. The platform constructs a live graph of the organization's services, APIs, and data stores from the repositories it is connected to, then scans each pull request in that context for bugs, security exposure, performance regressions, and reliability risks such as leaks. Findings land as actionable PR comments, and the Curio agent answers system-level questions like why an API is timing out by walking the graph. Onboarding is a two-click GitHub app install, a free tier covers whole teams, and self-hosting is available for regulated environments.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/rover.md)
