@@ -1,9 +1,9 @@
 # elirantutia/vibeyard
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 19bc19f0fac0 @ 4f13da1bc0dfb5da
+Latest snapshot: commit d8689347a957 @ 69bd9d57e7ff3f19
 
 ## Summary (orientation draft, not independently verified)
 

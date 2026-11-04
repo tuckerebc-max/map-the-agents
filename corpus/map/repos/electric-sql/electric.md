@@ -1,9 +1,9 @@
 # electric-sql/electric
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit bb397424db0e @ 9b3c832516e6f8b7
+Latest snapshot: commit 3f9809fb0bd8 @ 020c99714553a8bc
 
 ## Summary (orientation draft, not independently verified)
 

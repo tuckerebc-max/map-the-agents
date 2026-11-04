@@ -1,9 +1,9 @@
 # egoist/waku
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 968d42dd38b7 @ 623975403b923962
+Latest snapshot: commit 10bcd728c9b2 @ 771612112bd054be
 
 ## Summary (orientation draft, not independently verified)
 

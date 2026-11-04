@@ -1,9 +1,9 @@
 # eigent-ai/eigent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 6bb55842f737 @ dc36965489dec4b6
+Latest snapshot: commit 4958c94bd91f @ d66b449eab73bdd4
 
 ## Summary (orientation draft, not independently verified)
 

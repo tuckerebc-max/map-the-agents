@@ -1,0 +1,229 @@
+<p align="center">
+  <a href="https://electric-sql.com" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/electric-sql/meta/main/identity/ElectricSQL-logo-next.svg"
+      />
+      <source media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/electric-sql/meta/main/identity/ElectricSQL-logo-black.svg"
+      />
+      <img alt="ElectricSQL logo"
+          src="https://raw.githubusercontent.com/electric-sql/meta/main/identity/ElectricSQL-logo-black.svg"
+      />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/electric-sql/electric/actions"><img src="https://github.com/electric-sql/electric/actions/workflows/elixir_tests.yml/badge.svg"></a>
+  <a href="https://github.com/electric-sql/electric/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0-green" alt="License - Apache 2.0"></a>
+  <a href="https://electric-sql.com/blog/2025/03/17/electricsql-1.0-released"><img src="https://img.shields.io/badge/status-1.0-green" alt="Status - Beta"></a>
+  <a href="https://discord.electric-sql.com"><img src="https://img.shields.io/discord/933657521581858818?color=5969EA&label=discord" alt="Chat - Discord"></a>
+  <a href="https://x.com/ElectricSQL" target="_blank"><img src="https://img.shields.io/twitter/follow/ElectricSQL.svg?style=social&label=Follow @ElectricSQL"></a>
+</p>
+
+# Electric <!-- omit in toc -->
+
+Real-time sync for Postgres.
+
+**Table of Contents:**
+
+- [Quick links](#quick-links)
+- [What is Electric?](#what-is-electric)
+- [Getting Started](#getting-started)
+- [HTTP API Docs](#http-api-docs)
+- [Phoenix LiveDashboard](#phoenix-livedashboard)
+- [Developing Electric](#developing-electric)
+  - [Mac setup](#mac-setup)
+- [Contributing](#contributing)
+- [Support](#support)
+
+## Quick links
+
+- [Quickstart](https://electric-sql.com/docs/quickstart)
+- [Website](https://electric-sql.com)
+- [About](https://electric-sql.com/about)
+- [Docs](https://electric-sql.com/docs)
+- [Demos](https://electric-sql.com/demos) (also see the [`./examples` folder](./examples))
+
+## What is Electric?
+
+Sync is the magic ingredient behind fast, modern software. From apps like Figma and Linear to AI agents running on live local data.
+
+Electric is a Postgres sync engine. It solves the hard problems of sync for you, including partial replication, fan-out, and data delivery. So you can build awesome software, without rolling your own sync.
+
+Specifically, Electric is a read-path sync engine for Postgres. It syncs data out of Postgres into ... anything you like. The core sync protocol is based on a low-level [HTTP API](https://electric-sql.com/docs/api/http). This integrates with CDNs for highly-scalable data delivery.
+
+Partial replication is managed using [Shapes](https://electric-sql.com/docs/guides/shapes). Sync can be consumed directly or via [client libraries](https://electric-sql.com/docs/api/clients/typescript) and [framework integrations](https://electric-sql.com/docs/api/integrations/react).
+
+## Getting Started
+
+See the [Quickstart guide](https://electric-sql.com/docs/quickstart) to get up and running. In short, you need to:
+
+1. have a Postgres database with logical replication enabled; and then to
+2. run Electric in front of it, connected via `DATABASE_URL`
+
+For example, using [Docker Compose](https://docs.docker.com/compose/) from the root of this repo:
+
+```sh
+docker compose -f .support/docker-compose.yml up
+```
+
+You can then use the [HTTP API](https://electric-sql.com/docs/api/http) to sync data from your Postgres. For example, to start syncing the whole `foo` table:
+
+```sh
+curl -i 'http://localhost:3000/v1/shape?table=foo&offset=-1'
+```
+
+Or use one of the clients or integrations, such as the [`useShape`](https://electric-sql.com/docs/api/integrations/react) React hook:
+
+```jsx
+import { useShape } from '@electric-sql/react'
+
+function Component() {
+  const { data } = useShape({
+    url: `http://localhost:3000/v1/shape`,
+    params: {
+      table: `foo`,
+      where: `title LIKE 'foo%'`,
+    },
+  })
+
+  return JSON.stringify(data)
+}
+```
+
+Again, see the [Quickstart](https://electric-sql.com/docs/quickstart) and the [Docs](https://electric-sql.com) for more details.
+
+## HTTP API Docs
+
+The HTTP API is defined in an [OpenAPI spec](https://swagger.io/specification/) in [website/electric-api.yaml](./website/electric-api.yaml).
+
+## Phoenix LiveDashboard
+
+Electric includes an optional [Phoenix LiveDashboard](https://github.com/phoenixframework/phoenix_live_dashboard) for real-time monitoring of the running system (VM metrics, process info, ETS tables, etc.).
+
+To enable it, set the `ELECTRIC_LIVE_DASHBOARD_PORT` environment variable:
+
+```sh
+ELECTRIC_LIVE_DASHBOARD_PORT=4000
+```
+
+The dashboard will be available at `http://localhost:4000` (or whichever port you choose). When the variable is not set, the dashboard is not started.
+
+> **WARNING: The LiveDashboard endpoint is completely unauthenticated.** Anyone with network access to the port can view internal system state. In production, you **must** restrict access to this port using firewall rules, network policies, or similar controls. Do not expose it to the public internet.
+
+## Developing Electric
+
+We use [asdf](https://asdf-vm.com/) to install Elixir, Erlang, and Node.js. Versions are defined in [.tool-versions](.tool-versions).
+
+### Mac setup
+
+```sh
+brew install asdf
+asdf plugin add nodejs
+asdf plugin add pnpm
+asdf plugin add elixir
+asdf plugin add erlang
+asdf install
+```
+
+You'll probably need to fiddle with your bash/zsh/etc rc file to load the right tool into your environment.
+
+### Running Tests
+
+Electric has comprehensive test suites for both Elixir and TypeScript components.
+
+#### Prerequisites
+
+Install dependencies (if not already done):
+
+```sh
+asdf install
+pnpm install
+```
+
+Then start the test Postgres database:
+
+```sh
+cd packages/sync-service
+mix start_dev
+```
+
+This starts a Docker Compose setup with Postgres configured for logical replication on port 54321.
+
+To stop the database:
+
+```sh
+mix stop_dev
+```
+
+#### Elixir Tests
+
+**Sync Service:**
+
+```sh
+cd packages/sync-service
+mix test
+```
+
+For coverage reports:
+
+```sh
+mix coveralls.html
+```
+
+**Elixir Client:**
+
+```sh
+cd packages/elixir-client
+mix test
+```
+
+#### TypeScript Tests
+
+TypeScript tests require both the database and a running sync service.
+
+In a separate terminal, start the sync service:
+
+```sh
+cd packages/sync-service
+iex -S mix
+```
+
+Then run the tests:
+
+**Individual Package:**
+
+```sh
+cd packages/typescript-client  # or any other TS package
+pnpm test
+```
+
+**All TypeScript Packages:**
+
+From the root directory:
+
+```sh
+pnpm -r test
+```
+
+For coverage:
+
+```sh
+pnpm coverage
+```
+
+## Contributing
+
+See the:
+
+- [Guide to Contributing](https://github.com/electric-sql/electric/blob/main/CONTRIBUTING.md)
+- [Contributor License Agreement](https://github.com/electric-sql/electric/blob/main/CLA.md)
+- [Community Guidelines](https://github.com/electric-sql/electric/blob/main/CODE_OF_CONDUCT.md)
+
+## Support
+
+We have an [open community Discord](https://discord.electric-sql.com). Come and say hello and let us know if you have any questions or need any help getting things running.
+
+It's also super helpful if you leave the project a star here at the [top of the page☝️](#start-of-content)

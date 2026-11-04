@@ -1,9 +1,9 @@
 # elpsykongloo/paperbanana-pro
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3d9d1f11647e @ b699785fdaa1e74d
+Latest snapshot: commit a89731fc1b6a @ 0c7ef2c33e8b95a5
 
 ## Summary (orientation draft, not independently verified)
 

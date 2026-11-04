@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [alibaba/open-code-review](../repos/alibaba/open-code-review.md) [coverage: partial]
-- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
-- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
-- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
-- [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]
 - [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
 - [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
 - [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
@@ -133,6 +128,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [earendil-works/pi](../repos/earendil-works/pi.md) [coverage: complete]
 - [echovic/blade-code](../repos/echovic/blade-code.md) [coverage: partial]
 - [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) [coverage: partial]
+- [egoist/waku](../repos/egoist/waku.md) [coverage: partial]
+- [eigent-ai/eigent](../repos/eigent-ai/eigent.md) [coverage: partial]
+- [electric-sql/electric](../repos/electric-sql/electric.md) [coverage: partial]
+- [elirantutia/vibeyard](../repos/elirantutia/vibeyard.md) [coverage: partial]
+- [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) [coverage: complete]
 
 ## refresh-failed (66)
 

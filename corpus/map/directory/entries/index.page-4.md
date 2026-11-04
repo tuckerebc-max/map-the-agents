@@ -139,29 +139,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Sc-Helm-App (`sc-helm-app`)](sc-helm-app-4937d8526c.md) -- backing+pages
 - [Scape (`scape`)](scape-76a9b07966.md) -- published+backing+pages
 - [scenario (`scenario`)](scenario-ee26f4137f.md) -- backing+pages
-- [SceneGenAgent (`scenegenagent`)](scenegenagent-238e6bba60.md) -- published+backing
-- [sealos (`sealos`)](sealos-8c14b85d26.md) -- backing-only
-- [seance (`seance`)](seance-8c9771035e.md) -- published+backing
-- [secure-ai-agent-boundary (`secure-ai-agent-boundary`)](secure-ai-agent-boundary-578aeadbcc.md) -- backing-only
-- [Seed (`seed`)](seed-19b25856e1.md) -- published+backing
-- [self-improving-agents (`self-improving-agents`)](self-improving-agents-250fae44a6.md) -- published+backing
-- [self_improving_coding_agent (`self-improving-coding-agent`)](self-improving-coding-agent-9983bb23fb.md) -- published+backing
-- [Sema Code (`sema-code`)](sema-code-2cc07c94c1.md) -- published+backing
-- [semaphore (`semaphore`)](semaphore-2bbd2a7aba.md) -- backing-only
-- [Sentry Seer (`sentry-seer`)](sentry-seer-e865dc3be2.md) -- published+backing
-- [Setup-Amazon-Bedrock-Agent-For-Text2Sql-Using-Amazon-Redshift-Serverless-With-Streamlit (`setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit`)](setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit-243d229cc3.md) -- backing-only
-- [shai (`shai`)](shai-fdf1a31882.md) -- published+backing
-- [SharpClawCode (`sharpclawcode`)](sharpclawcode-8f70377b0c.md) -- published+backing
-- [shotgun (`shotgun`)](shotgun-330a3129c3.md) -- backing-only
-- [Sigil - Coding Assistant (`sigil-coding-assistant`)](sigil-coding-assistant-0c1b982810.md) -- backing-only
-- [sinew (`sinew`)](sinew-d234e19392.md) -- published+backing
-- [Singular (`singular-lite`)](singular-lite-3da9bc414f.md) -- published+backing
-- [singulary (`singulary`)](singulary-fa54b12a2b.md) -- published+backing
-- [Sixth AI (`sixth-ai`)](sixth-ai-f5ed72f85d.md) -- published+backing
-- [SKI (`ski`)](ski-cf659bd3fb.md) -- backing-only
-- [Slate (`slate`)](slate-b62f3b3b1b.md) -- backing-only
-- [small-opencode-orchestrator (`small-opencode-orchestrator`)](small-opencode-orchestrator-bf23606bba.md) -- backing-only
-- [Smallest Agent (`smallest-agent`)](smallest-agent-50ec8055f9.md) -- published+backing
+- [SceneGenAgent (`scenegenagent`)](scenegenagent-238e6bba60.md) -- published+backing+pages
+- [sealos (`sealos`)](sealos-8c14b85d26.md) -- backing+pages
+- [seance (`seance`)](seance-8c9771035e.md) -- published+backing+pages
+- [secure-ai-agent-boundary (`secure-ai-agent-boundary`)](secure-ai-agent-boundary-578aeadbcc.md) -- backing+pages
+- [Seed (`seed`)](seed-19b25856e1.md) -- published+backing+pages
+- [self-improving-agents (`self-improving-agents`)](self-improving-agents-250fae44a6.md) -- published+backing+pages
+- [self_improving_coding_agent (`self-improving-coding-agent`)](self-improving-coding-agent-9983bb23fb.md) -- published+backing+pages
+- [Sema Code (`sema-code`)](sema-code-2cc07c94c1.md) -- published+backing+pages
+- [semaphore (`semaphore`)](semaphore-2bbd2a7aba.md) -- backing+pages
+- [Sentry Seer (`sentry-seer`)](sentry-seer-e865dc3be2.md) -- published+backing+pages
+- [Setup-Amazon-Bedrock-Agent-For-Text2Sql-Using-Amazon-Redshift-Serverless-With-Streamlit (`setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit`)](setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit-243d229cc3.md) -- backing+pages
+- [shai (`shai`)](shai-fdf1a31882.md) -- published+backing+pages
+- [SharpClawCode (`sharpclawcode`)](sharpclawcode-8f70377b0c.md) -- published+backing+pages
+- [shotgun (`shotgun`)](shotgun-330a3129c3.md) -- backing+pages
+- [SIFT (`sift`)](sift-cda9593e0f.md) -- pages-only
+- [Sigil - Coding Assistant (`sigil-coding-assistant`)](sigil-coding-assistant-0c1b982810.md) -- backing+pages
+- [Simmer (`simmer`)](simmer-365fcc9a87.md) -- pages-only
+- [sinew (`sinew`)](sinew-d234e19392.md) -- published+backing+pages
+- [Singular (`singular-lite`)](singular-lite-3da9bc414f.md) -- published+backing+pages
+- [singulary (`singulary`)](singulary-fa54b12a2b.md) -- published+backing+pages
+- [Sixth AI (`sixth-ai`)](sixth-ai-f5ed72f85d.md) -- published+backing+pages
+- [SKI (`ski`)](ski-cf659bd3fb.md) -- backing+pages
+- [Slate (`slate`)](slate-b62f3b3b1b.md) -- backing+pages
+- [small-opencode-orchestrator (`small-opencode-orchestrator`)](small-opencode-orchestrator-bf23606bba.md) -- backing+pages
+- [Smallest Agent (`smallest-agent`)](smallest-agent-50ec8055f9.md) -- published+backing+pages
 - [Smelt (`smelt`)](smelt-16e3d5166c.md) -- published+backing
 - [Smol Developer (`smol-developer`)](smol-developer-7c3ae5ff8a.md) -- published+backing
 - [Snow CLI (`snow-cli`)](snow-cli-2e12455895.md) -- published+backing
@@ -332,5 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [watsonx Code Assistant for Enterprise Java Applications (`watsonx-code-assistant-for-enterprise-java-applications`)](watsonx-code-assistant-for-enterprise-java-applications-30a41b01ac.md) -- published+backing
 - [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing
 - [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing
-- [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing-only
-- [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing

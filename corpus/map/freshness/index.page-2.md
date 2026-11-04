@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [microsoft/taskweaver](../repos/microsoft/taskweaver.md) [coverage: partial]
-- [microsoft/typechat](../repos/microsoft/typechat.md) [coverage: complete]
-- [microsoft/vision-ai-developer-kit](../repos/microsoft/vision-ai-developer-kit.md) [coverage: complete]
-- [microsoft/webwright](../repos/microsoft/webwright.md) [coverage: complete]
-- [mikotokawaii25/local-ai-code-assistant](../repos/mikotokawaii25/local-ai-code-assistant.md) [coverage: complete]
 - [minghinmatthewlam/pi-gui](../repos/minghinmatthewlam/pi-gui.md) [coverage: partial]
 - [mininglamp-oss/octo-web](../repos/mininglamp-oss/octo-web.md) [coverage: partial]
 - [minmaxflow/mini-kode](../repos/minmaxflow/mini-kode.md) [coverage: partial]
@@ -437,7 +432,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (143)
+## stale (148)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +446,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
 - [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
 - [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]
+- [alibaba/open-code-review](../repos/alibaba/open-code-review.md) [coverage: partial]
+- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
+- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
+- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
+- [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]

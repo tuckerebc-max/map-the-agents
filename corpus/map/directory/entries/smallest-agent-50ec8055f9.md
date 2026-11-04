@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: obra
@@ -22,6 +22,8 @@ Repository map entry: [obra/smallest-agent](../../repos/obra/smallest-agent.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The project is a demonstration built to answer how little code a functional agent needs. Jesse Vincent wrote a first draft comparable in behavior to Claude Code, then used the agent itself to golf its
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Minimalism challenge coding agent golfed down to just 493 bytes (src/smallest-agent.js); functional coding agent with unrestricted bash access; commented readable version at src/smallest-agent.commented.js; created as a demonstration of how small a Claude Code-like agent can be
+
+(captured site page body (agents/smallest-agent.md), not a verified repo-code finding)
+The project is a demonstration built to answer how little code a functional agent needs. Jesse Vincent wrote a first draft comparable in behavior to Claude Code, then used the agent itself to golf its own source down to a few hundred bytes, documenting the process in HACKING-TRANSCRIPT.md. The minified loop calls a hosted LLM API and gives the model unrestricted bash, which the README flags in capital letters as capable of destructive actions; a commented companion file and an npm smoke test make the mechanics studyable. There is no MCP, plugin, hook, or subagent machinery by design. Its audience is developers studying the minimal anatomy of an agent loop, not teams shipping software.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/smallest-agent.md)

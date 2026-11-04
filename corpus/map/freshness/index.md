@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (843)
+## current (838)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -149,11 +149,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) [coverage: complete]
 - [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md) [coverage: complete]
 - [edantoledo/stoix](../repos/edantoledo/stoix.md) [coverage: complete]
-- [egoist/waku](../repos/egoist/waku.md) [coverage: partial]
-- [eigent-ai/eigent](../repos/eigent-ai/eigent.md) [coverage: partial]
-- [electric-sql/electric](../repos/electric-sql/electric.md) [coverage: partial]
-- [elirantutia/vibeyard](../repos/elirantutia/vibeyard.md) [coverage: partial]
-- [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) [coverage: complete]
 - [embabel/coding-agent](../repos/embabel/coding-agent.md) [coverage: complete]
 - [emilianomusso/entwinellm](../repos/emilianomusso/entwinellm.md) [coverage: complete]
 - [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) [coverage: partial]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [meysamhadeli/codai](../repos/meysamhadeli/codai.md) [coverage: complete]
 - [microsoft/amplifier](../repos/microsoft/amplifier.md) [coverage: partial]
 - [microsoft/autogen](../repos/microsoft/autogen.md) [coverage: partial]
+- [microsoft/taskweaver](../repos/microsoft/taskweaver.md) [coverage: partial]
+- [microsoft/typechat](../repos/microsoft/typechat.md) [coverage: complete]
+- [microsoft/vision-ai-developer-kit](../repos/microsoft/vision-ai-developer-kit.md) [coverage: complete]
+- [microsoft/webwright](../repos/microsoft/webwright.md) [coverage: complete]
+- [mikotokawaii25/local-ai-code-assistant](../repos/mikotokawaii25/local-ai-code-assistant.md) [coverage: complete]

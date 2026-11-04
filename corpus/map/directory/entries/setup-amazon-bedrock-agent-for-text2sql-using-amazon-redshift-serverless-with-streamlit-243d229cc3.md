@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: aws-samples
@@ -22,6 +22,8 @@ Repository map entry: [aws-samples/setup-amazon-bedrock-agent-for-text2sql-using
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repo demonstrates the full path from a natural-language question to governed SQL execution on Amazon Redshift Serverless: a Bedrock agent backed by Claude 3 Sonnet translates the question, a Lambd
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): End-to-end natural language interface for querying databases by integrating Amazon Bedrock for AI-powered text-to-SQL conversion, AWS Lambda for database operations, and Streamlit for UI, all deployed via AWS CloudFormation. Sample/reference project with only 4 commits.
+
+(captured site page body (agents/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md), not a verified repo-code finding)
+The repo demonstrates the full path from a natural-language question to governed SQL execution on Amazon Redshift Serverless: a Bedrock agent backed by Claude 3 Sonnet translates the question, a Lambda action group executes the SQL, and a Streamlit UI hosted on EC2 presents results, all provisioned by a CloudFormation template. The nine-step README covers Redshift setup, sample data, S3 staging, deployment, and an unusually thorough troubleshooting section spanning IAM, CloudWatch, and connectivity. It is a small AWS Samples artifact — four commits, a handful of stars — published as a learning pattern under MIT-0 rather than maintained software. Its audience is AWS architects evaluating Bedrock agents for analytics access, and the security posture (row-level control illustration, EC2-hosted frontend) marks it as a starting point requiring hardening.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md)

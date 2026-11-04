@@ -158,6 +158,8 @@
 - [refactai](../entries/refactai-93b5dc75ba.md)
 - [runvsagent](../entries/runvsagent-dcacab9327.md)
 - [sandbox-agent](../entries/sandbox-agent-c676232c22.md)
+- [sift](../entries/sift-cda9593e0f.md)
+- [simmer](../entries/simmer-365fcc9a87.md)
 - [srd-codefree](../entries/srd-codefree-a2542cc69d.md)
 - [sre](../entries/sre-69b4bcbc6e.md)
 - [strands-agents-sdk](../entries/strands-agents-sdk-2be3ceb5d1.md)

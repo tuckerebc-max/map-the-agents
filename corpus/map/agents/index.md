@@ -316,11 +316,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [echovic/blade-code](../repos/echovic/blade-code.md) -- status=distilled, freshness=stale
 - [edantoledo/stoix](../repos/edantoledo/stoix.md) -- status=distilled, freshness=current
 - [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) -- status=distilled, freshness=stale
-- [egoist/waku](../repos/egoist/waku.md) -- status=distilled, freshness=current
-- [eigent-ai/eigent](../repos/eigent-ai/eigent.md) -- status=distilled, freshness=current
-- [electric-sql/electric](../repos/electric-sql/electric.md) -- status=distilled, freshness=current
-- [elirantutia/vibeyard](../repos/elirantutia/vibeyard.md) -- status=distilled, freshness=current
-- [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) -- status=distilled, freshness=current
+- [egoist/waku](../repos/egoist/waku.md) -- status=distilled, freshness=stale
+- [eigent-ai/eigent](../repos/eigent-ai/eigent.md) -- status=distilled, freshness=stale
+- [electric-sql/electric](../repos/electric-sql/electric.md) -- status=distilled, freshness=stale
+- [elirantutia/vibeyard](../repos/elirantutia/vibeyard.md) -- status=distilled, freshness=stale
+- [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) -- status=distilled, freshness=stale
 - [embabel/coding-agent](../repos/embabel/coding-agent.md) -- status=distilled, freshness=current
 - [emilianomusso/entwinellm](../repos/emilianomusso/entwinellm.md) -- status=distilled, freshness=current
 - [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) -- status=distilled, freshness=current

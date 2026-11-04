@@ -146,6 +146,7 @@
 - [roo-code-cli](../entries/roo-code-cli-19a722733e.md)
 - [routa](../entries/routa-bf602bf027.md)
 - [shotgun](../entries/shotgun-330a3129c3.md)
+- [simmer](../entries/simmer-365fcc9a87.md)
 - [singular-lite](../entries/singular-lite-3da9bc414f.md)
 - [strands-agents-sdk](../entries/strands-agents-sdk-2be3ceb5d1.md)
 - [superset](../entries/superset-92c5ebe322.md)

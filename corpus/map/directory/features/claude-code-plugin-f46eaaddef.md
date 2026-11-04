@@ -46,6 +46,8 @@
 - [pentestgpt](../entries/pentestgpt-e09f6687e7.md)
 - [pi-mem](../entries/pi-mem-d546503b06.md)
 - [ralph](../entries/ralph-bf65266d0d.md)
+- [sift](../entries/sift-cda9593e0f.md)
+- [simmer](../entries/simmer-365fcc9a87.md)
 - [superset](../entries/superset-92c5ebe322.md)
 - [swapper-toolkit](../entries/swapper-toolkit-4ad4ec321c.md)
 - [video-use](../entries/video-use-0664ff0e28.md)

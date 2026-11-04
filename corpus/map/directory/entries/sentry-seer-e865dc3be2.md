@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Sentry
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Seer exists because Sentry already holds the strongest debugging signal available — production telemetry correlated with deploys — and an agent grounded in that data can explain why code failed rather
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI debugging agent: RCA from telemetry + fix PRs + PR review
+
+(captured site page body (agents/sentry-seer.md), not a verified repo-code finding)
+Seer exists because Sentry already holds the strongest debugging signal available — production telemetry correlated with deploys — and an agent grounded in that data can explain why code failed rather than where. The product ships as four surfaces: automatic root-cause analysis on every issue, Autofix patches proposed as merge-ready diffs, AI code review on pull requests informed by the project's error history, and a conversational Seer Agent inside Sentry. Because it consumes first-party telemetry, adoption is natural for existing Sentry customers, with fixes reviewed through the normal PR flow. Sentry operates it as a commercial SaaS product with its own pricing page, alongside the MCP server that lets Claude Code and similar tools pull Sentry context. It targets production engineering teams debugging at scale.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/sentry-seer.md)
