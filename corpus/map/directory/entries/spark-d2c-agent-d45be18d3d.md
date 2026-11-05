@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: iFlytek
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The entry is drawn from iFlytek's Spark (讯飞星火) ecosystem, which markets design-to-code generation among its developer-facing AI products. Repeated fetches of the vendor's homepage timed out, and no de
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): iFlytek's design-to-code agent for converting designs to code. Homepage (iflytek.com) did not respond to fetches; could not verify further details.
+
+(captured site page body (agents/spark-d2c-agent.md), not a verified repo-code finding)
+The entry is drawn from iFlytek's Spark (讯飞星火) ecosystem, which markets design-to-code generation among its developer-facing AI products. Repeated fetches of the vendor's homepage timed out, and no dedicated product page could be located through the URL recorded in the census, so the mechanism — which design formats are accepted, what frameworks are emitted, whether it runs as a web service or IDE plugin — could not be verified from primary sources. iFlytek is one of China's largest AI vendors, and its Spark line targets Chinese enterprise and consumer markets. The entry should be treated as sparsely verified pending an accessible product page.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/spark-d2c-agent.md)

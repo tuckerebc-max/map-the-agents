@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: China Telecom Research Institute
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-SRD CodeFree is the developer assistant for China Telecom's internal R&D cloud platform, distributed as the srdcloud.srd-copilot-vscode extension with roughly 25,000 installs. Beyond the usual complet
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): China Telecom AI programming assistant
+
+(captured site page body (agents/srd-codefree.md), not a verified repo-code finding)
+SRD CodeFree is the developer assistant for China Telecom's internal R&D cloud platform, distributed as the srdcloud.srd-copilot-vscode extension with roughly 25,000 installs. Beyond the usual completion, chat, explanation, and unit-test generation, it integrates enterprise workflow directly: commit messages link to platform work items, diff comments sync to SRDCloud code review, and work items can be viewed and updated from the IDE. Its agent mode supports user-configured MCP tools and an MCP marketplace, plus importable skills and project rule files. UX2Code generates frontend code from design mockups for React, Vue, and uniapp stacks against custom component libraries. The product is free and updated through the SRDCloud help center rather than public docs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/srd-codefree.md)

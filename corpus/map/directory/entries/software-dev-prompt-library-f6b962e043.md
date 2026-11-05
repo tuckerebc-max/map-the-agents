@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: codingthefuturewithai
@@ -22,6 +22,8 @@ Repository map entry: [codingthefuturewithai/software-dev-prompt-library](../../
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository addresses a recurring failure in AI-assisted development: sessions lose structure across the phases of real projects, from requirements through architecture to testing. Its prompts are
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Collection of AI-powered prompts for software development workflows featuring AI Workflow Chains - structured sequences of connected prompts with input/output dependencies, verification points for chain integrity, and progress tracking. Language/framework-agnostic single-purpose prompts that chain together for complex tasks.
+
+(captured site page body (agents/software-dev-prompt-library.md), not a verified repo-code finding)
+The repository addresses a recurring failure in AI-assisted development: sessions lose structure across the phases of real projects, from requirements through architecture to testing. Its prompts are stored as pairs — an instruction file and a usage-metadata file — and grouped into workflow chains with defined inputs, outputs, dependencies, and verification points so work can move across separate assistant sessions without losing state. Coverage spans requirements generation, tech stack selection, architecture, scaffolding, code health analysis, unit test generation, and documentation. Nothing is installed: users share raw prompt URLs with whatever assistant they use. The most validated chain targets the aider workflow, and the library is explicitly a work in progress.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/software-dev-prompt-library.md)

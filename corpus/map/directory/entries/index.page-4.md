@@ -164,31 +164,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Slate (`slate`)](slate-b62f3b3b1b.md) -- backing+pages
 - [small-opencode-orchestrator (`small-opencode-orchestrator`)](small-opencode-orchestrator-bf23606bba.md) -- backing+pages
 - [Smallest Agent (`smallest-agent`)](smallest-agent-50ec8055f9.md) -- published+backing+pages
-- [Smelt (`smelt`)](smelt-16e3d5166c.md) -- published+backing
-- [Smol Developer (`smol-developer`)](smol-developer-7c3ae5ff8a.md) -- published+backing
-- [Snow CLI (`snow-cli`)](snow-cli-2e12455895.md) -- published+backing
-- [Softgen (`softgen`)](softgen-50dd23d649.md) -- published+backing
-- [Software-Dev-Prompt-Library (`software-dev-prompt-library`)](software-dev-prompt-library-f6b962e043.md) -- backing-only
-- [solo (`solo`)](solo-5364f2f2fc.md) -- published+backing
-- [Solver (`solver`)](solver-b8789db0c2.md) -- published+backing
-- [SonAgent (`sonagent`)](sonagent-deaf390a82.md) -- published+backing
-- [Sonarly (`sonarly`)](sonarly-f3c0a790e4.md) -- published+backing
-- [sondera-coding-agent-hooks (`sondera-coding-agent-hooks`)](sondera-coding-agent-hooks-0976e8d840.md) -- backing-only
-- [Sora 2 (`sora-2`)](sora-2-434e9cdac7.md) -- backing-only
-- [sourcebot (`sourcebot`)](sourcebot-80324f9383.md) -- backing-only
-- [Sourcery (`sourcery`)](sourcery-1d772ffb5e.md) -- backing-only
-- [Spacecreateai (`spacecreateai`)](spacecreateai-50b06fb792.md) -- backing-only
-- [Spark D2C Agent (`spark-d2c-agent`)](spark-d2c-agent-d45be18d3d.md) -- published+backing
-- [SpecBuddy (`specbuddy`)](specbuddy-35a461b93d.md) -- published+backing
-- [Speech-To-Code (`speech-to-code`)](speech-to-code-ffd8981c41.md) -- backing-only
-- [Sprocket (`sprocket`)](sprocket-c570e0e3fb.md) -- published+backing
-- [Sprout (`sprout`)](sprout-7957bdf8ea.md) -- published-only
-- [squarebox (`squarebox`)](squarebox-ba6cd60023.md) -- backing-only
-- [SRD CodeFree (`srd-codefree`)](srd-codefree-a2542cc69d.md) -- published+backing
-- [sre (`sre`)](sre-69b4bcbc6e.md) -- published+backing
-- [Stack AI (`stack-ai`)](stack-ai-8083918d04.md) -- backing-only
-- [stacklit (`stacklit`)](stacklit-5fa2143bae.md) -- backing-only
-- [Stagewise (`stagewise`)](stagewise-f575a66ecd.md) -- published+backing
+- [Smelt (`smelt`)](smelt-16e3d5166c.md) -- published+backing+pages
+- [Smol Developer (`smol-developer`)](smol-developer-7c3ae5ff8a.md) -- published+backing+pages
+- [Snow CLI (`snow-cli`)](snow-cli-2e12455895.md) -- published+backing+pages
+- [Softgen (`softgen`)](softgen-50dd23d649.md) -- published+backing+pages
+- [Software-Dev-Prompt-Library (`software-dev-prompt-library`)](software-dev-prompt-library-f6b962e043.md) -- backing+pages
+- [solo (`solo`)](solo-5364f2f2fc.md) -- published+backing+pages
+- [Solver (`solver`)](solver-b8789db0c2.md) -- published+backing+pages
+- [SonAgent (`sonagent`)](sonagent-deaf390a82.md) -- published+backing+pages
+- [Sonarly (`sonarly`)](sonarly-f3c0a790e4.md) -- published+backing+pages
+- [sondera-coding-agent-hooks (`sondera-coding-agent-hooks`)](sondera-coding-agent-hooks-0976e8d840.md) -- backing+pages
+- [Sora 2 (`sora-2`)](sora-2-434e9cdac7.md) -- backing+pages
+- [sourcebot (`sourcebot`)](sourcebot-80324f9383.md) -- backing+pages
+- [Sourcery (`sourcery`)](sourcery-1d772ffb5e.md) -- backing+pages
+- [Spacecreateai (`spacecreateai`)](spacecreateai-50b06fb792.md) -- backing+pages
+- [Spark D2C Agent (`spark-d2c-agent`)](spark-d2c-agent-d45be18d3d.md) -- published+backing+pages
+- [SpecBuddy (`specbuddy`)](specbuddy-35a461b93d.md) -- published+backing+pages
+- [Speech-To-Code (`speech-to-code`)](speech-to-code-ffd8981c41.md) -- backing+pages
+- [Sprocket (`sprocket`)](sprocket-c570e0e3fb.md) -- published+backing+pages
+- [Sprout (`sprout`)](sprout-7957bdf8ea.md) -- published+pages
+- [squarebox (`squarebox`)](squarebox-ba6cd60023.md) -- backing+pages
+- [SRD CodeFree (`srd-codefree`)](srd-codefree-a2542cc69d.md) -- published+backing+pages
+- [sre (`sre`)](sre-69b4bcbc6e.md) -- published+backing+pages
+- [Stack AI (`stack-ai`)](stack-ai-8083918d04.md) -- backing+pages
+- [stacklit (`stacklit`)](stacklit-5fa2143bae.md) -- backing+pages
+- [Stagewise (`stagewise`)](stagewise-f575a66ecd.md) -- published+backing+pages
 - [Stakpak (`stakpak`)](stakpak-b6ba32f74d.md) -- published+backing
 - [Stan (`stan`)](stan-1a5e497a2b.md) -- backing-only
 - [StarCoder (`starcoder`)](starcoder-b46573f328.md) -- backing-only

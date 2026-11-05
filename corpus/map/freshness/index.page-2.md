@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [minghinmatthewlam/pi-gui](../repos/minghinmatthewlam/pi-gui.md) [coverage: partial]
-- [mininglamp-oss/octo-web](../repos/mininglamp-oss/octo-web.md) [coverage: partial]
-- [minmaxflow/mini-kode](../repos/minmaxflow/mini-kode.md) [coverage: partial]
 - [missuo/herdrm](../repos/missuo/herdrm.md) [coverage: partial]
 - [mistralai/mistral-vibe](../repos/mistralai/mistral-vibe.md) [coverage: partial]
 - [mlsysops/code-agent-survey](../repos/mlsysops/code-agent-survey.md) [coverage: complete]
@@ -414,7 +411,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (15)
+## pending (16)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
@@ -424,6 +421,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
 - [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
+- [prime-radiant-inc/sprout](../repos/prime-radiant-inc/sprout.md)
 - [scgopi/graphcode](../repos/scgopi/graphcode.md)
 - [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
@@ -432,7 +430,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (148)
+## stale (151)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +449,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
 - [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
 - [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]
+- [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
+- [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
+- [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]

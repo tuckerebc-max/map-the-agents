@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Sora 2 was OpenAI's video generation model and companion app; it appears in this census only as a miscategorized sweep result. OpenAI announced its discontinuation: app experiences ended in April 2026
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): OpenAI video generation model with narrative coherence and physics realism. Web/app experience discontinued Apr 26, 2026; API discontinuing Sept 24, 2026.
+
+(captured site page body (agents/sora-2.md), not a verified repo-code finding)
+Sora 2 was OpenAI's video generation model and companion app; it appears in this census only as a miscategorized sweep result. OpenAI announced its discontinuation: app experiences ended in April 2026, the API follows on September 24, 2026, and usage data will be deleted after a final export window at sora.chatgpt.com/sunset. Remaining purchased credits can still be applied to Codex, OpenAI's coding agent. There is no tool loop, repository integration, or code-modification capability to evaluate, so the entry functions only as a record that the name surfaced in agent-harness sweeps.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/sora-2.md)

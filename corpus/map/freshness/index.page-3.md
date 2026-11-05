@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
-- [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
-- [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
 - [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]
 - [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
@@ -133,6 +130,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [electric-sql/electric](../repos/electric-sql/electric.md) [coverage: partial]
 - [elirantutia/vibeyard](../repos/elirantutia/vibeyard.md) [coverage: partial]
 - [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) [coverage: complete]
+- [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) [coverage: partial]
+- [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) [coverage: partial]
+- [enola-labs/enola](../repos/enola-labs/enola.md) [coverage: partial]
 
 ## refresh-failed (66)
 

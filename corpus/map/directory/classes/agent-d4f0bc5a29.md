@@ -480,7 +480,6 @@
 - [sprocket](../entries/sprocket-c570e0e3fb.md)
 - [sprout](../entries/sprout-7957bdf8ea.md)
 - [srd-codefree](../entries/srd-codefree-a2542cc69d.md)
-- [sre](../entries/sre-69b4bcbc6e.md)
 - [stagewise](../entries/stagewise-f575a66ecd.md)
 - [stakpak](../entries/stakpak-b6ba32f74d.md)
 - [stemcode](../entries/stemcode-3b1dd654de.md)

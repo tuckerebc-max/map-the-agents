@@ -58,6 +58,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [praveen-palanisamy/macad-gym](../repos/praveen-palanisamy/macad-gym.md) -- status=distilled, freshness=current
 - [presstab/jrdev](../repos/presstab/jrdev.md) -- status=distilled, freshness=current
 - [prime-radiant-inc/evener](../repos/prime-radiant-inc/evener.md) -- status=distilled, freshness=current
+- [prime-radiant-inc/sprout](../repos/prime-radiant-inc/sprout.md) -- status=discovered, freshness=pending
 - [primeintellect-ai/prime-agent](../repos/primeintellect-ai/prime-agent.md) -- status=distilled, freshness=current
 - [project-codeguard/rules](../repos/project-codeguard/rules.md) -- status=distilled, freshness=current
 - [proliferate-ai/proliferate](../repos/proliferate-ai/proliferate.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) -- status=distilled, freshness=current
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) -- status=distilled, freshness=current
 - [zachblume/autospec](../repos/zachblume/autospec.md) -- status=distilled, freshness=current
-- [zachnoel/multiagentworkflow](../repos/zachnoel/multiagentworkflow.md) -- status=blocked, freshness=refresh-failed

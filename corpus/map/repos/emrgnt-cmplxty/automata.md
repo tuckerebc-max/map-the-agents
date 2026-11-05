@@ -1,9 +1,9 @@
 # emrgnt-cmplxty/automata
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 316386a2ea5b @ 6d638d97876f6283
+Latest snapshot: commit 316386a2ea5b @ 706014e86f8d94f9
 
 ## Summary (orientation draft, not independently verified)
 

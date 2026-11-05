@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (838)
+## current (835)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -151,9 +151,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [edantoledo/stoix](../repos/edantoledo/stoix.md) [coverage: complete]
 - [embabel/coding-agent](../repos/embabel/coding-agent.md) [coverage: complete]
 - [emilianomusso/entwinellm](../repos/emilianomusso/entwinellm.md) [coverage: complete]
-- [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) [coverage: partial]
-- [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) [coverage: partial]
-- [enola-labs/enola](../repos/enola-labs/enola.md) [coverage: partial]
 - [entropy-research/devon](../repos/entropy-research/devon.md) [coverage: complete]
 - [entropy-research/slate-plan-mode](../repos/entropy-research/slate-plan-mode.md) [coverage: complete]
 - [erikbjare/are-copilots-local-yet](../repos/erikbjare/are-copilots-local-yet.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [microsoft/vision-ai-developer-kit](../repos/microsoft/vision-ai-developer-kit.md) [coverage: complete]
 - [microsoft/webwright](../repos/microsoft/webwright.md) [coverage: complete]
 - [mikotokawaii25/local-ai-code-assistant](../repos/mikotokawaii25/local-ai-code-assistant.md) [coverage: complete]
+- [minghinmatthewlam/pi-gui](../repos/minghinmatthewlam/pi-gui.md) [coverage: partial]
+- [mininglamp-oss/octo-web](../repos/mininglamp-oss/octo-web.md) [coverage: partial]
+- [minmaxflow/mini-kode](../repos/minmaxflow/mini-kode.md) [coverage: partial]

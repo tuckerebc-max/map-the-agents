@@ -1,9 +1,9 @@
 # enola-labs/enola
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit f34e1998d5c4 @ 832a935ff1466519
+Latest snapshot: commit 82b8c1f2c56b @ a4655e3cdd00b0e9
 
 ## Summary (orientation draft, not independently verified)
 

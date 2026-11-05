@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: spikonado
@@ -22,6 +22,8 @@ Repository map entry: [spikonado/sprocket](../../repos/spikonado/sprocket.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Sprocket is Spikonado's agent for building complete technology systems — apps, robots, devices, and the glue between them — rather than just code. It retrieves web context for everything it does and c
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Markets itself as the only AI agent for developing both hardware and software: it retrieves best-in-class context from the web, buys parts and subscriptions from any site on request, creates detailed schematics, generates a BOM, and writes assembly instructions.
+
+(captured site page body (agents/sprocket.md), not a verified repo-code finding)
+Sprocket is Spikonado's agent for building complete technology systems — apps, robots, devices, and the glue between them — rather than just code. It retrieves web context for everything it does and can purchase hardware parts or SaaS subscriptions from any website when asked, then produce the concrete artifacts of hardware development: detailed schematics, a bill of materials, and assembly instructions. It runs as a browser-based UI by default (the local app launches a Rust-based server on port 17731), as Electron desktop installers for Linux, macOS, and Windows, or via npx, with state stored locally in $HOME/.sprocket. The repo is public under the Functional Source License, and self-hosted development needs a Convex deployment plus model-provider API keys, so users bear their own model costs.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/sprocket.md)

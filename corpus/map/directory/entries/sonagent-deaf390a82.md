@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: sonnhfit
@@ -22,6 +22,8 @@ Repository map entry: [sonnhfit/sonagent](../../repos/sonnhfit/sonagent.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-SonAgent started as an experiment in 'digital consciousness backup' — an autonomous process that monitors and archives a person's digital presence — and evolved into a self-referential system that can
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Self-repairing autonomous agent for digital-consciousness backup that can debug, edit, and compile its own source code under human approval; uses a unique belief-based thinking system for autonomous decision-making and continuous learning from human feedback.
+
+(captured site page body (agents/sonagent.md), not a verified repo-code finding)
+SonAgent started as an experiment in 'digital consciousness backup' — an autonomous process that monitors and archives a person's digital presence — and evolved into a self-referential system that can debug, patch, and recompile its own source code, with each modification gated by human approval. Its decision layer is built around a belief store the agent updates over time, rather than a static system prompt, with human feedback shaping future decisions. Skills such as network training, web search, and file writing load into user_data/skills on first run, and the stack installs via pip or docker-compose with a Read the Docs site for reference. It remains a solo-maintained experiment of interest to people studying self-modifying agent architectures, not a production coding tool.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/sonagent.md)

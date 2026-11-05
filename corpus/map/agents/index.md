@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1067 repositories.
+1068 repositories.
 
 [Back to map index](../index.md)
 
@@ -323,9 +323,9 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) -- status=distilled, freshness=stale
 - [embabel/coding-agent](../repos/embabel/coding-agent.md) -- status=distilled, freshness=current
 - [emilianomusso/entwinellm](../repos/emilianomusso/entwinellm.md) -- status=distilled, freshness=current
-- [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) -- status=distilled, freshness=current
-- [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) -- status=distilled, freshness=current
-- [enola-labs/enola](../repos/enola-labs/enola.md) -- status=distilled, freshness=current
+- [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) -- status=distilled, freshness=stale
+- [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) -- status=distilled, freshness=stale
+- [enola-labs/enola](../repos/enola-labs/enola.md) -- status=distilled, freshness=stale
 - [entropy-research/devon](../repos/entropy-research/devon.md) -- status=distilled, freshness=current
 - [entropy-research/slate-plan-mode](../repos/entropy-research/slate-plan-mode.md) -- status=distilled, freshness=current
 - [erans/lunaroute](../repos/erans/lunaroute.md) -- status=blocked, freshness=refresh-failed

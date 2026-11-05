@@ -1,9 +1,9 @@
 # eneskirca/nodeterm
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8fd38d2c229e @ f57e03c407f29b9f
+Latest snapshot: commit a03473354ed4 @ 723f7da537749226
 
 ## Summary (orientation draft, not independently verified)
 

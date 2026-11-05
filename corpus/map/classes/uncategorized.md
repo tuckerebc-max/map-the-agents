@@ -306,6 +306,7 @@
 - [polymathwizard/bhil-ai-first-development-toolkit](../repos/polymathwizard/bhil-ai-first-development-toolkit.md)
 - [ppipada/agent-repoguardian](../repos/ppipada/agent-repoguardian.md)
 - [praveen-palanisamy/macad-gym](../repos/praveen-palanisamy/macad-gym.md)
+- [prime-radiant-inc/sprout](../repos/prime-radiant-inc/sprout.md)
 - [project-codeguard/rules](../repos/project-codeguard/rules.md)
 - [qcri/codebadger](../repos/qcri/codebadger.md)
 - [qodo-ai/open-aware](../repos/qodo-ai/open-aware.md)
