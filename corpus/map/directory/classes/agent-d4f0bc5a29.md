@@ -483,7 +483,6 @@
 - [stagewise](../entries/stagewise-f575a66ecd.md)
 - [stakpak](../entries/stakpak-b6ba32f74d.md)
 - [stemcode](../entries/stemcode-3b1dd654de.md)
-- [streamship](../entries/streamship-d8f2a3f13f.md)
 - [sudocode](../entries/sudocode-8fdc57a129.md)
 - [supercli](../entries/supercli-d724415df1.md)
 - [superflex-vscode](../entries/superflex-vscode-464b408e3f.md)

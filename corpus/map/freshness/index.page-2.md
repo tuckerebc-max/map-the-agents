@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [missuo/herdrm](../repos/missuo/herdrm.md) [coverage: partial]
 - [mistralai/mistral-vibe](../repos/mistralai/mistral-vibe.md) [coverage: partial]
 - [mlsysops/code-agent-survey](../repos/mlsysops/code-agent-survey.md) [coverage: complete]
 - [mng-dev-ai/agentrove](../repos/mng-dev-ai/agentrove.md) [coverage: complete]
@@ -430,7 +429,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (151)
+## stale (152)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -452,3 +451,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
 - [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
 - [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
+- [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]

@@ -1,9 +1,9 @@
 # esengine/deepseek-reasonix
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8679e1f0b614 @ 1fb4383a9229e205
+Latest snapshot: commit 1fbc0f52dd94 @ cae26dd9af5ad319
 
 ## Summary (orientation draft, not independently verified)
 

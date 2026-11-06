@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: rizwan3d
@@ -22,6 +22,8 @@ Repository map entry: [rizwan3d/stemcode](../../repos/rizwan3d/stemcode.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-StemCode is built around operating inside a real local repository rather than a detached chat sandbox: repository-aware search, LSP symbol intelligence, and graph-aware indexing feed surgical tracked
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-first AI coding agent for desktop, terminal, editor (VS Code, Visual Studio, JetBrains), and CI workflows. Works inside a real local repository (not a detached chat sandbox), keeps the human in control with approval prompts/permissions/profiles, stores reusable commands and team memory in versionable .stemcode/ files, reuses the same agent across desktop/CLI/IDE/CI. Profiles include planning, implementation, review, exploration, and delegated work ...
+
+(captured site page body (agents/stemcode.md), not a verified repo-code finding)
+StemCode is built around operating inside a real local repository rather than a detached chat sandbox: repository-aware search, LSP symbol intelligence, and graph-aware indexing feed surgical tracked edits (patches, insertions, search/replace) with undo/redo, while permission rules and approval prompts gate sensitive actions. The same engine ships as a desktop app, a CLI, editor extensions, and CI jobs, so the agent that plans locally can also run in GitHub Actions or GitLab CI. Profiles switch behavior between implementation, planning, review, and exploration postures, subagents take delegated tasks in independent contexts, and slash commands plus project memory persist in .stemcode. Model access is deliberately broad, from subscription sign-ins (ChatGPT, Claude, Copilot) to OpenRouter, Ollama, LM Studio, and any OpenAI-compatible endpoint. It is Apache-2.0 and free, positioned for developers who want agent assistance without their code leaving the machine.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/stemcode.md)

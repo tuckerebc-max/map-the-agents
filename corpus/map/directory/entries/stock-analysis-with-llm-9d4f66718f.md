@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: bauer-jan
@@ -22,6 +22,8 @@ Repository map entry: [bauer-jan/stock-analysis-with-llm](../../repos/bauer-jan/
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository wires Amazon Bedrock Agents into a financial workflow: a Stock Analyst module ranks equities across major indices using balance-sheet data, technical indicators, and news, while a Portf
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Automated stock analysis and portfolio management system using AWS Bedrock Agents with Anthropic Claude 3. Analyzes stocks across S&P 500, Nasdaq 100, and EURO STOXX 50 using balance sheets, technical indicators, news, and market sentiment, then provides BUY/SELL recommendations and portfolio updates. Two modules: Stock Analyst and Portfolio Manager. Only 1 commit (one-time upload).
+
+(captured site page body (agents/stock-analysis-with-llm.md), not a verified repo-code finding)
+The repository wires Amazon Bedrock Agents into a financial workflow: a Stock Analyst module ranks equities across major indices using balance-sheet data, technical indicators, and news, while a Portfolio Manager module applies those recommendations to a simulated portfolio, with user prompts able to steer selection and weighting. Action groups run through Lambda, market data comes from Yahoo Finance, results persist in DynamoDB, and EventBridge schedules ECS tasks on a weekly cadence; no real trades are executed. Infrastructure is defined in AWS CDK with a Python script registering the agents in the Bedrock console. It is a single-commit demonstration with no follow-up development, and it appears in this census only as a misfiled entry — nothing in it creates or modifies code.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/stock-analysis-with-llm.md)

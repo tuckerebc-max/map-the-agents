@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: superloglabs
@@ -22,6 +22,8 @@ Repository map entry: [superloglabs/superlog](../../repos/superloglabs/superlog.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Superlog collapses the path from production signal to code change. Telemetry flows in via OpenTelemetry or imports from Datadog, Sentry, AWS, GCP, Cloudflare, Vercel, Render, and Railway, where errors
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source agentic telemetry system that ingests traces, logs, and metrics, groups noisy signals into incidents, and uses AI agents to self-heal software. Local-first observability workspace for OpenTelemetry data with OTLP ingest proxy, ClickHouse-backed queries, and pluggable investigation runtimes. Y Combinator P26 company. MCP server listed (sh.superlog/superlog).
+
+(captured site page body (agents/superlog.md), not a verified repo-code finding)
+Superlog collapses the path from production signal to code change. Telemetry flows in via OpenTelemetry or imports from Datadog, Sentry, AWS, GCP, Cloudflare, Vercel, Render, and Railway, where errors are fingerprinted into incidents with severity scoring and impact assessment instead of raw alert noise. For each incident, the Responder agent investigates using codebase context (including AGENTS.md/CLAUDE.md and connected Notion or Linear docs), prepares a resolution PR when its confidence gate passes, and otherwise posts findings to the responsible engineers; a memory system feeds PR comments and review outcomes back into future fixes. All telemetry — logs, traces, metrics, dashboards — is exposed over MCP so external agents can query it. The core is Apache-2.0 and local-first with a hosted cloud tier, and the company (Pulsent Labs) is Y Combinator-backed.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/superlog.md)

@@ -330,7 +330,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [entropy-research/slate-plan-mode](../repos/entropy-research/slate-plan-mode.md) -- status=distilled, freshness=current
 - [erans/lunaroute](../repos/erans/lunaroute.md) -- status=blocked, freshness=refresh-failed
 - [erikbjare/are-copilots-local-yet](../repos/erikbjare/are-copilots-local-yet.md) -- status=distilled, freshness=current
-- [esengine/deepseek-reasonix](../repos/esengine/deepseek-reasonix.md) -- status=distilled, freshness=current
+- [esengine/deepseek-reasonix](../repos/esengine/deepseek-reasonix.md) -- status=distilled, freshness=stale
 - [euniai/prometheus](../repos/euniai/prometheus.md) -- status=distilled, freshness=current
 - [eventstubsol/ai-dev-agent-test](../repos/eventstubsol/ai-dev-agent-test.md) -- status=distilled, freshness=current
 - [exafunction/codeium-react-code-editor](../repos/exafunction/codeium-react-code-editor.md) -- status=distilled, freshness=current

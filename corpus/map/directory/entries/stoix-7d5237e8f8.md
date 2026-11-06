@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: EdanToledo
@@ -22,6 +22,8 @@ Repository map entry: [edantoledo/stoix](../../repos/edantoledo/stoix.md) (sourc
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Stoix provides research-grade baselines for distributed single-agent reinforcement learning, compiled end-to-end in JAX so experiments run with jit/pmap across devices rather than through Python loops
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): NOTE: This is a distributed single-agent reinforcement learning library in JAX (not an AI coding agent harness). Fully end-to-end JAX compilation (jit + pmap for multi-device distribution); two system paradigms (Anakin for pure JAX, Sebulba for non-JAX environments); Hydra config system; statistically robust evaluation with RLiable plots
+
+(captured site page body (agents/stoix.md), not a verified repo-code finding)
+Stoix provides research-grade baselines for distributed single-agent reinforcement learning, compiled end-to-end in JAX so experiments run with jit/pmap across devices rather than through Python loops. It ships two architectures — Anakin for fully compiled JAX environments and Sebulba for separate acting and learning devices with non-JAX environments such as Envpool and Gymnasium — plus Hydra configuration, Optuna sweeps, logging to TensorBoard/WandB/Neptune in RLiable-compatible form, and a SLURM launcher. Algorithm implementations (DQN variants, PPO, SAC, TD3, IMPALA, AlphaZero, MuZero-style) are deliberately hackable single files descended from CleanRL, PureJaxRL, and InstaDeep's Mava. It appears in this census only as a name collision from the sweep; nothing in it builds or modifies software.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/stoix.md)

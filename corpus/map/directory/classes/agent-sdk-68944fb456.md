@@ -43,6 +43,7 @@
 - [qwen-agent](../entries/qwen-agent-d8daab4f7a.md)
 - [sre](../entries/sre-69b4bcbc6e.md)
 - [strands-agents-sdk](../entries/strands-agents-sdk-2be3ceb5d1.md)
+- [streamship](../entries/streamship-d8f2a3f13f.md)
 - [swarms](../entries/swarms-7996910b4b.md)
 - [tiny-agent](../entries/tiny-agent-706b885d0f.md)
 - [trueforge](../entries/trueforge-abc6c4c218.md)

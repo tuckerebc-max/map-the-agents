@@ -189,31 +189,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Stack AI (`stack-ai`)](stack-ai-8083918d04.md) -- backing+pages
 - [stacklit (`stacklit`)](stacklit-5fa2143bae.md) -- backing+pages
 - [Stagewise (`stagewise`)](stagewise-f575a66ecd.md) -- published+backing+pages
-- [Stakpak (`stakpak`)](stakpak-b6ba32f74d.md) -- published+backing
-- [Stan (`stan`)](stan-1a5e497a2b.md) -- backing-only
-- [StarCoder (`starcoder`)](starcoder-b46573f328.md) -- backing-only
-- [StemCode (`stemcode`)](stemcode-3b1dd654de.md) -- published+backing
-- [Stitch (Google) (`stitch-google`)](stitch-google-e9bd191e1c.md) -- backing-only
-- [Stock-Analysis-With-Llm (`stock-analysis-with-llm`)](stock-analysis-with-llm-9d4f66718f.md) -- backing-only
-- [Stoix (`stoix`)](stoix-7d5237e8f8.md) -- backing-only
-- [stoneforge (`stoneforge`)](stoneforge-61c4742a00.md) -- published+backing
-- [Strands Agents SDK (`strands-agents-sdk`)](strands-agents-sdk-2be3ceb5d1.md) -- published+backing
-- [strategic-advisor-orchestrator (`strategic-advisor-orchestrator`)](strategic-advisor-orchestrator-23927687ba.md) -- backing-only
-- [Streamship (`streamship`)](streamship-d8f2a3f13f.md) -- published+backing
-- [sudocode (`sudocode`)](sudocode-8fdc57a129.md) -- published+backing
-- [Summer-2024-SWE-Internships (`summer-2024-swe-internships`)](summer-2024-swe-internships-06cf97c58d.md) -- backing-only
-- [supacode (`supacode`)](supacode-74cd04038b.md) -- published+backing
-- [supaterm (`supaterm`)](supaterm-9e545287d9.md) -- published+backing
-- [super-dev (`super-dev`)](super-dev-0c9faadb0e.md) -- backing-only
-- [supercli (`supercli`)](supercli-d724415df1.md) -- published+backing
-- [superflex-vscode (`superflex-vscode`)](superflex-vscode-464b408e3f.md) -- published+backing
-- [Superlog (`superlog`)](superlog-38fdbc4609.md) -- published+backing
-- [Supermaven (`supermaven`)](supermaven-f2d0019df4.md) -- backing-only
-- [Superset (`superset`)](superset-92c5ebe322.md) -- published+backing
-- [Swades Agent (`swades-agent`)](swades-agent-6dcb0429ea.md) -- published+backing
-- [swapper-toolkit (`swapper-toolkit`)](swapper-toolkit-4ad4ec321c.md) -- backing-only
-- [Swarms (`swarms`)](swarms-7996910b4b.md) -- published+backing
-- [SWE-AF (`swe-af`)](swe-af-052430386d.md) -- published+backing
+- [Stakpak (`stakpak`)](stakpak-b6ba32f74d.md) -- published+backing+pages
+- [Stan (`stan`)](stan-1a5e497a2b.md) -- backing+pages
+- [StarCoder (`starcoder`)](starcoder-b46573f328.md) -- backing+pages
+- [StemCode (`stemcode`)](stemcode-3b1dd654de.md) -- published+backing+pages
+- [Stitch (Google) (`stitch-google`)](stitch-google-e9bd191e1c.md) -- backing+pages
+- [Stock-Analysis-With-Llm (`stock-analysis-with-llm`)](stock-analysis-with-llm-9d4f66718f.md) -- backing+pages
+- [Stoix (`stoix`)](stoix-7d5237e8f8.md) -- backing+pages
+- [stoneforge (`stoneforge`)](stoneforge-61c4742a00.md) -- published+backing+pages
+- [Strands Agents SDK (`strands-agents-sdk`)](strands-agents-sdk-2be3ceb5d1.md) -- published+backing+pages
+- [strategic-advisor-orchestrator (`strategic-advisor-orchestrator`)](strategic-advisor-orchestrator-23927687ba.md) -- backing+pages
+- [Streamship (`streamship`)](streamship-d8f2a3f13f.md) -- published+backing+pages
+- [sudocode (`sudocode`)](sudocode-8fdc57a129.md) -- published+backing+pages
+- [Summer-2024-SWE-Internships (`summer-2024-swe-internships`)](summer-2024-swe-internships-06cf97c58d.md) -- backing+pages
+- [supacode (`supacode`)](supacode-74cd04038b.md) -- published+backing+pages
+- [supaterm (`supaterm`)](supaterm-9e545287d9.md) -- published+backing+pages
+- [super-dev (`super-dev`)](super-dev-0c9faadb0e.md) -- backing+pages
+- [supercli (`supercli`)](supercli-d724415df1.md) -- published+backing+pages
+- [superflex-vscode (`superflex-vscode`)](superflex-vscode-464b408e3f.md) -- published+backing+pages
+- [Superlog (`superlog`)](superlog-38fdbc4609.md) -- published+backing+pages
+- [Supermaven (`supermaven`)](supermaven-f2d0019df4.md) -- backing+pages
+- [Superset (`superset`)](superset-92c5ebe322.md) -- published+backing+pages
+- [Swades Agent (`swades-agent`)](swades-agent-6dcb0429ea.md) -- published+backing+pages
+- [swapper-toolkit (`swapper-toolkit`)](swapper-toolkit-4ad4ec321c.md) -- backing+pages
+- [Swarms (`swarms`)](swarms-7996910b4b.md) -- published+backing+pages
+- [SWE-AF (`swe-af`)](swe-af-052430386d.md) -- published+backing+pages
 - [SWE-agent (`swe-agent`)](swe-agent-c6e4d26471.md) -- published+backing
 - [SWE-agent Paper (`swe-agent-paper`)](swe-agent-paper-e14e8ed4cb.md) -- backing-only
 - [SWE-chat (`swe-chat`)](swe-chat-a5f1699196.md) -- backing-only

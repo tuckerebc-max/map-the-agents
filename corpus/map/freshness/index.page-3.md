@@ -2,7 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]
 - [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
 - [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
@@ -133,6 +132,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) [coverage: partial]
 - [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) [coverage: partial]
 - [enola-labs/enola](../repos/enola-labs/enola.md) [coverage: partial]
+- [esengine/deepseek-reasonix](../repos/esengine/deepseek-reasonix.md) [coverage: partial]
 
 ## refresh-failed (66)
 
