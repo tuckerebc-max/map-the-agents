@@ -17783,19 +17783,19 @@
       "agent"
     ],
     "dossier": "wiki/dossiers/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0.json",
-    "freshness": "current",
+    "freshness": "stale",
     "indexed_commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
     "indexed_operation_id": "op_eb7679b0425847648add0411ddf6185d",
     "indexed_snapshot_id": "7e7049df465467e0",
     "latest_commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
     "latest_snapshot": {
       "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
-      "dir": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0",
-      "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/manifest.json",
-      "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/snapshot.json",
-      "snapshot_id": "7e7049df465467e0"
+      "dir": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb",
+      "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/manifest.json",
+      "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/snapshot.json",
+      "snapshot_id": "3ea6e2ee789f98cb"
     },
-    "latest_snapshot_id": "7e7049df465467e0",
+    "latest_snapshot_id": "3ea6e2ee789f98cb",
     "origins": [
       "alltheagents.org-backing"
     ],
@@ -17831,6 +17831,14 @@
         "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/manifest.json",
         "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/snapshot.json",
         "snapshot_id": "7e7049df465467e0"
+      },
+      {
+        "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+        "dir": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb",
+        "kind": "snapshot",
+        "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/manifest.json",
+        "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/snapshot.json",
+        "snapshot_id": "3ea6e2ee789f98cb"
       }
     ],
     "status": "distilled",
@@ -17838,8 +17846,13 @@
   },
   "facebookresearch/codellama": {
     "classes": [],
-    "freshness": "pending",
+    "freshness": "refresh-failed",
     "indexed_commit": null,
+    "last_error": {
+      "code": "FetchFailed",
+      "locator": "https://github.com/facebookresearch/codellama",
+      "message": "redirect-refused http-301: https://api.github.com/repos/facebookresearch/codellama"
+    },
     "latest_commit": null,
     "origins": [
       "directory-resolve",
@@ -17864,7 +17877,7 @@
         "slug": "codellama"
       }
     ],
-    "status": "discovered",
+    "status": "blocked",
     "url": "https://github.com/facebookresearch/codellama"
   },
   "factory-ai/factory": {

@@ -490,6 +490,7 @@
 - [swades-agent](../entries/swades-agent-6dcb0429ea.md)
 - [swe-af](../entries/swe-af-052430386d.md)
 - [swe-agent](../entries/swe-agent-c6e4d26471.md)
+- [swe-debate](../entries/swe-debate-f36e98067c.md)
 - [sweep](../entries/sweep-dfd3379697.md)
 - [swift-coding-agent](../entries/swift-coding-agent-2724083ee7.md)
 - [swival](../entries/swival-ae05d73624.md)

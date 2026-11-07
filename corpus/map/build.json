@@ -1,7 +1,7 @@
 {
   "aliases_digest": "45e794f274843c5f03caf97be1960e30b6020bae012b4f1e02ea7024db0d96f2",
-  "catalog_digest": "a30246181329fe74b4aee326dae78d1bb9099d4cad74552fb76fd481f64bd990",
-  "directory_digest": "5df359c01e624545da41031a92b2fb0ae42f8165805edd3e79cf867968010ff9",
+  "catalog_digest": "fe739f11efb53ac980a9bc8a69f0962ca350de81adddb5ed64d235fe2405eddc",
+  "directory_digest": "348ff2e7bf41c26c28db9b40d6605695261c6bd6ce775fd7311a679daf022b5b",
   "file_repos": {
     "map/repos/0xpayne/gpt-migrate.detail.md": "0xpayne/gpt-migrate",
     "map/repos/0xpayne/gpt-migrate.md": "0xpayne/gpt-migrate",
@@ -25073,19 +25073,19 @@
         "agent"
       ],
       "dossier": "wiki/dossiers/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
       "indexed_operation_id": "op_eb7679b0425847648add0411ddf6185d",
       "indexed_snapshot_id": "7e7049df465467e0",
       "latest_commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
       "latest_snapshot": {
         "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
-        "dir": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0",
-        "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/manifest.json",
-        "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/snapshot.json",
-        "snapshot_id": "7e7049df465467e0"
+        "dir": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb",
+        "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/manifest.json",
+        "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/snapshot.json",
+        "snapshot_id": "3ea6e2ee789f98cb"
       },
-      "latest_snapshot_id": "7e7049df465467e0",
+      "latest_snapshot_id": "3ea6e2ee789f98cb",
       "origins": [
         "alltheagents.org-backing"
       ],
@@ -25121,6 +25121,14 @@
           "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/manifest.json",
           "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/snapshot.json",
           "snapshot_id": "7e7049df465467e0"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "dir": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb",
+          "kind": "snapshot",
+          "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/manifest.json",
+          "snapshot": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/3ea6e2ee789f98cb/snapshot.json",
+          "snapshot_id": "3ea6e2ee789f98cb"
         }
       ],
       "status": "distilled",
@@ -25128,8 +25136,13 @@
     },
     "facebookresearch/codellama": {
       "classes": [],
-      "freshness": "pending",
+      "freshness": "refresh-failed",
       "indexed_commit": null,
+      "last_error": {
+        "code": "FetchFailed",
+        "locator": "https://github.com/facebookresearch/codellama",
+        "message": "redirect-refused http-301: https://api.github.com/repos/facebookresearch/codellama"
+      },
       "latest_commit": null,
       "origins": [
         "directory-resolve",
@@ -25154,7 +25167,7 @@
           "slug": "codellama"
         }
       ],
-      "status": "discovered",
+      "status": "blocked",
       "url": "https://github.com/facebookresearch/codellama"
     },
     "factory-ai/factory": {

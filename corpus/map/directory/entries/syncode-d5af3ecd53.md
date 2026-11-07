@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: structuredllm
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [uiuc-focal-lab/syncode](https://g
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-SynCode is a constrained-decoding library from UIUC that forces LLM output to conform to a Context-Free Grammar, with soundness and completeness guarantees — every produced token sequence satisfies th
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Grammar-guided generation framework for LLMs ensuring outputs are syntactically valid per Context-Free Grammars (CFG) and Regex. Pre-computes masks for speed (~10% overhead), handles general-purpose languages including non-context-free fragments (Python indentation, Go end-of-scope), and reports 99% JSON accuracy with Gemma-2b.
+
+(captured site page body (agents/syncode.md), not a verified repo-code finding)
+SynCode is a constrained-decoding library from UIUC that forces LLM output to conform to a Context-Free Grammar, with soundness and completeness guarantees — every produced token sequence satisfies the grammar. It works as a logit processor over HuggingFace models: an incremental LR(1)/LALR(1) parser tracks grammar state, and a pre-computed DFA mask store hides invalid tokens at each step, adding roughly 10% generation overhead while reporting 99% JSON validity with small models. Built-in grammars cover Python, Go, Java, SQL, and JSON, and the framework handles constructs beyond plain CFGs, such as Python's indentation-sensitivity and Go's brace-scoping. It ships as a pip package aimed at researchers generating structured or syntactically valid code, with the design published in an arXiv paper (2403.01632). It is not an agent: there is no tool loop, only constrained decoding.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/syncode.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: OrangecatAI
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Syntx embeds an autonomous coding agent into VS Code, positioned as combining Cursor-style convenience with Cline/Roo-style openness inside the standard editor. The agent reads and writes workspace fi
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Cursor-for-VSCode plus Cline/Roo features combined: AI peer programmer
+
+(captured site page body (agents/syntx-agentic-workforce.md), not a verified repo-code finding)
+Syntx embeds an autonomous coding agent into VS Code, positioned as combining Cursor-style convenience with Cline/Roo-style openness inside the standard editor. The agent reads and writes workspace files, runs terminal commands, and automates browser actions; it works in Code, Planner, Chat, and Debug modes, and users can define unlimited custom modes such as QA engineer or security auditor personas. Model access is bring-your-own through any OpenAI-compatible endpoint, and an MCP client layer adds external tools, APIs, and database connections, so the extension itself carries no subscription. It distributes through the VS Code Marketplace with roughly 7,000 installs and is free; the operator pays only their model provider. The audience is developers who want a Cline-style agentic workflow without adopting Cursor or a specific vendor's backend.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/syntx-agentic-workforce.md)

@@ -2,7 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [mistralai/mistral-vibe](../repos/mistralai/mistral-vibe.md) [coverage: partial]
 - [mlsysops/code-agent-survey](../repos/mlsysops/code-agent-survey.md) [coverage: complete]
 - [mng-dev-ai/agentrove](../repos/mng-dev-ai/agentrove.md) [coverage: complete]
 - [mnr/codeclinicr](../repos/mnr/codeclinicr.md) [coverage: complete]
@@ -410,12 +409,11 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (16)
+## pending (15)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
-- [facebookresearch/codellama](../repos/facebookresearch/codellama.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
@@ -429,7 +427,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (152)
+## stale (153)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -452,3 +450,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
 - [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
 - [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]
+- [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]

@@ -2,7 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
 - [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
 - [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
@@ -133,8 +132,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) [coverage: partial]
 - [enola-labs/enola](../repos/enola-labs/enola.md) [coverage: partial]
 - [esengine/deepseek-reasonix](../repos/esengine/deepseek-reasonix.md) [coverage: partial]
+- [exqqstar/exagent](../repos/exqqstar/exagent.md) [coverage: partial]
 
-## refresh-failed (66)
+## refresh-failed (67)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -160,6 +160,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [dmae97/open-multi-agent-kit](../repos/dmae97/open-multi-agent-kit.md) -- FetchFailed
 - [dnouri/pi-coding-agent](../repos/dnouri/pi-coding-agent.md) -- FetchFailed
 - [erans/lunaroute](../repos/erans/lunaroute.md) -- FetchFailed
+- [facebookresearch/codellama](../repos/facebookresearch/codellama.md) -- FetchFailed
 - [flexigpt/agent-repoguardian](../repos/flexigpt/agent-repoguardian.md) -- FetchFailed
 - [gcwing/bitfun](../repos/gcwing/bitfun.md) -- FetchFailed
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- FetchFailed

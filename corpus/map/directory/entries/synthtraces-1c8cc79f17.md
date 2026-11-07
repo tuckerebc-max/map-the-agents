@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: julien-c
@@ -22,6 +22,8 @@ Repository map entry: [julien-c/synthtraces](../../repos/julien-c/synthtraces.md
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Synthtraces exists to supply realistic multi-turn interaction data for coding-agent research without proprietary logs. Each generated session boots the Pi coding agent with read, write, edit, and bash
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Generates synthetic coding agent session traces by pairing two models: a remote open model as the coding agent and a local llama.cpp model as the user, across 20 codebases x 20 starting questions = 24,000 total sessions.
+
+(captured site page body (agents/synthtraces.md), not a verified repo-code finding)
+Synthtraces exists to supply realistic multi-turn interaction data for coding-agent research without proprietary logs. Each generated session boots the Pi coding agent with read, write, edit, and bash tools inside one of twenty real codebases (transformers, diffusers, lerobot, candle, and others), pairs it with a remotely hosted open model, and has a local llama.cpp model play the user starting from one of twenty seed questions such as 'How is CI set up in this repo?'. The released dataset is the cross product of 20 agent models, 3 local user models, 20 codebases, and 20 questions — 24,000 sessions — published on Hugging Face alongside this small TypeScript generator. Because both sides are models, the traces capture authentic tool-use dynamics (edits, shell runs, follow-up questions) without any human transcription effort. Researchers studying agent behavior across model families or training interaction models are the intended consumers.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/synthtraces.md)

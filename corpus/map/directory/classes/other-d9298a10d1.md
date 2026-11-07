@@ -476,7 +476,6 @@
 - [swapper-toolkit](../entries/swapper-toolkit-4ad4ec321c.md)
 - [swe-agent-paper](../entries/swe-agent-paper-e14e8ed4cb.md)
 - [swe-chat](../entries/swe-chat-a5f1699196.md)
-- [swe-debate](../entries/swe-debate-f36e98067c.md)
 - [swe-dev](../entries/swe-dev-fac774501c.md)
 - [swe-gym](../entries/swe-gym-2259cc2b27.md)
 - [swe-interact](../entries/swe-interact-cdc08c069f.md)

@@ -334,8 +334,8 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [euniai/prometheus](../repos/euniai/prometheus.md) -- status=distilled, freshness=current
 - [eventstubsol/ai-dev-agent-test](../repos/eventstubsol/ai-dev-agent-test.md) -- status=distilled, freshness=current
 - [exafunction/codeium-react-code-editor](../repos/exafunction/codeium-react-code-editor.md) -- status=distilled, freshness=current
-- [exqqstar/exagent](../repos/exqqstar/exagent.md) -- status=distilled, freshness=current
-- [facebookresearch/codellama](../repos/facebookresearch/codellama.md) -- status=discovered, freshness=pending
+- [exqqstar/exagent](../repos/exqqstar/exagent.md) -- status=distilled, freshness=stale
+- [facebookresearch/codellama](../repos/facebookresearch/codellama.md) -- status=blocked, freshness=refresh-failed
 - [factory-ai/factory](../repos/factory-ai/factory.md) -- status=distilled, freshness=current
 - [failproofai/failproofai](../repos/failproofai/failproofai.md) -- status=distilled, freshness=current
 - [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) -- status=distilled, freshness=current

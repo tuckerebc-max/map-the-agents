@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: THUDM
@@ -22,6 +22,8 @@ Repository map entry: [thudm/swe-dev](../../repos/thudm/swe-dev.md) (source: bac
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-SWE-Dev, from Tsinghua's THUDM lab, tackles the data bottleneck for open software-engineering agents. Its pipeline crawls top PyPI repositories, mines issues and PRs into tasks, generates Gherkin-styl
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): SWE agent focused on training and inference scaling; pipeline to synthesize test cases and scale up agent trajectories for training data; ACL'25 Findings paper
+
+(captured site page body (agents/swe-dev.md), not a verified repo-code finding)
+SWE-Dev, from Tsinghua's THUDM lab, tackles the data bottleneck for open software-engineering agents. Its pipeline crawls top PyPI repositories, mines issues and PRs into tasks, generates Gherkin-style behavior descriptions, and synthesizes test cases with an optional revision pass driven by traceback errors, validating each case in Docker so that fail-to-pass tests prove the task is real. The same machinery scales inference: giving a single run a larger interaction budget lifted SWE-Dev-32B from 34.0% to 36.6% on SWE-bench Verified, with SWE-Dev-7B at 23.4%. Configuration is centralized in a YAML schema, and both trained models and trajectory datasets are published on Hugging Face. Agent-training researchers use it as a recipe for building test-verified training data without human annotation.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/swe-dev.md)

@@ -214,31 +214,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [swapper-toolkit (`swapper-toolkit`)](swapper-toolkit-4ad4ec321c.md) -- backing+pages
 - [Swarms (`swarms`)](swarms-7996910b4b.md) -- published+backing+pages
 - [SWE-AF (`swe-af`)](swe-af-052430386d.md) -- published+backing+pages
-- [SWE-agent (`swe-agent`)](swe-agent-c6e4d26471.md) -- published+backing
-- [SWE-agent Paper (`swe-agent-paper`)](swe-agent-paper-e14e8ed4cb.md) -- backing-only
-- [SWE-chat (`swe-chat`)](swe-chat-a5f1699196.md) -- backing-only
-- [SWE-Debate (`swe-debate`)](swe-debate-f36e98067c.md) -- published+backing
-- [SWE-Dev (`swe-dev`)](swe-dev-fac774501c.md) -- backing-only
-- [SWE-Gym (`swe-gym`)](swe-gym-2259cc2b27.md) -- backing-only
-- [SWE-Interact (`swe-interact`)](swe-interact-cdc08c069f.md) -- backing-only
-- [SWE-ReX (`swe-rex`)](swe-rex-fb7e8c89f6.md) -- backing-only
-- [SWE-smith (`swe-smith`)](swe-smith-37225260f7.md) -- backing-only
-- [Sweep (`sweep`)](sweep-dfd3379697.md) -- published+backing
-- [swift-coding-agent (`swift-coding-agent`)](swift-coding-agent-2724083ee7.md) -- published+backing
-- [swival (`swival`)](swival-ae05d73624.md) -- published+backing
-- [SymDex (`symdex`)](symdex-2cb7cd5019.md) -- backing-only
-- [Syncode (`syncode`)](syncode-d5af3ecd53.md) -- backing-only
-- [Synnex_Symphony (`synnex-symphony`)](synnex-symphony-e0ee1ff497.md) -- published+backing
-- [Synthetic-AI-Developer-Productivity-Dataset (`synthetic-ai-developer-productivity-dataset`)](synthetic-ai-developer-productivity-dataset-574a784b69.md) -- backing-only
-- [synthtraces (`synthtraces`)](synthtraces-1c8cc79f17.md) -- backing-only
-- [Syntx Agentic Workforce (`syntx-agentic-workforce`)](syntx-agentic-workforce-1f2d9a8ae4.md) -- published+backing
-- [T3 Code (`t3-code`)](t3-code-91324c4537.md) -- published+backing
-- [Tabnine (`tabnine`)](tabnine-97f128115e.md) -- published+backing
-- [talkcody (`talkcody`)](talkcody-35944adb29.md) -- published+backing
-- [TalktoData (`talktodata`)](talktodata-2bbc4d493e.md) -- backing-only
-- [tartarusai-cli (`tartarusai-cli`)](tartarusai-cli-2172657570.md) -- published+backing
-- [Taskade (`taskade`)](taskade-598ef4c2f2.md) -- backing-only
-- [TaskWeaver (`taskweaver`)](taskweaver-5dcb09e5cb.md) -- backing-only
+- [SWE-agent (`swe-agent`)](swe-agent-c6e4d26471.md) -- published+backing+pages
+- [SWE-agent Paper (`swe-agent-paper`)](swe-agent-paper-e14e8ed4cb.md) -- backing+pages
+- [SWE-chat (`swe-chat`)](swe-chat-a5f1699196.md) -- backing+pages
+- [SWE-Debate (`swe-debate`)](swe-debate-f36e98067c.md) -- published+backing+pages
+- [SWE-Dev (`swe-dev`)](swe-dev-fac774501c.md) -- backing+pages
+- [SWE-Gym (`swe-gym`)](swe-gym-2259cc2b27.md) -- backing+pages
+- [SWE-Interact (`swe-interact`)](swe-interact-cdc08c069f.md) -- backing+pages
+- [SWE-ReX (`swe-rex`)](swe-rex-fb7e8c89f6.md) -- backing+pages
+- [SWE-smith (`swe-smith`)](swe-smith-37225260f7.md) -- backing+pages
+- [Sweep (`sweep`)](sweep-dfd3379697.md) -- published+backing+pages
+- [swift-coding-agent (`swift-coding-agent`)](swift-coding-agent-2724083ee7.md) -- published+backing+pages
+- [swival (`swival`)](swival-ae05d73624.md) -- published+backing+pages
+- [SymDex (`symdex`)](symdex-2cb7cd5019.md) -- backing+pages
+- [Syncode (`syncode`)](syncode-d5af3ecd53.md) -- backing+pages
+- [Synnex_Symphony (`synnex-symphony`)](synnex-symphony-e0ee1ff497.md) -- published+backing+pages
+- [Synthetic-AI-Developer-Productivity-Dataset (`synthetic-ai-developer-productivity-dataset`)](synthetic-ai-developer-productivity-dataset-574a784b69.md) -- backing+pages
+- [synthtraces (`synthtraces`)](synthtraces-1c8cc79f17.md) -- backing+pages
+- [Syntx Agentic Workforce (`syntx-agentic-workforce`)](syntx-agentic-workforce-1f2d9a8ae4.md) -- published+backing+pages
+- [T3 Code (`t3-code`)](t3-code-91324c4537.md) -- published+backing+pages
+- [Tabnine (`tabnine`)](tabnine-97f128115e.md) -- published+backing+pages
+- [talkcody (`talkcody`)](talkcody-35944adb29.md) -- published+backing+pages
+- [TalktoData (`talktodata`)](talktodata-2bbc4d493e.md) -- backing+pages
+- [tartarusai-cli (`tartarusai-cli`)](tartarusai-cli-2172657570.md) -- published+backing+pages
+- [Taskade (`taskade`)](taskade-598ef4c2f2.md) -- backing+pages
+- [TaskWeaver (`taskweaver`)](taskweaver-5dcb09e5cb.md) -- backing+pages
 - [Tau (`tau`)](tau-2bfcf64c38.md) -- published+backing
 - [tbench-agentic-data-pipeline (`tbench-agentic-data-pipeline`)](tbench-agentic-data-pipeline-a32d651b03.md) -- backing-only
 - [TeamHero (`teamhero`)](teamhero-22214c48ee.md) -- published+backing

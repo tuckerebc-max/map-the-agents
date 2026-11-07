@@ -1,9 +1,9 @@
 # exqqstar/exagent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d9adbbd6f18a @ 7e7049df465467e0
+Latest snapshot: commit d9adbbd6f18a @ 3ea6e2ee789f98cb
 
 ## Summary (orientation draft, not independently verified)
 

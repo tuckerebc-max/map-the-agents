@@ -1,12 +1,13 @@
 # facebookresearch/codellama
 
-Status: discovered - Freshness: pending
+Status: blocked - Freshness: refresh-failed
 Catalog classes: none recorded
 Origins: directory-resolve, alltheagents.org-backing - Projects: directory-intake
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/facebookresearch/codellama
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Collection is blocked; no distilled evidence exists yet.
 
 ## Facets
 
