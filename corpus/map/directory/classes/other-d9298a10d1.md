@@ -490,6 +490,7 @@
 - [taskweaver](../entries/taskweaver-5dcb09e5cb.md)
 - [tbench-agentic-data-pipeline](../entries/tbench-agentic-data-pipeline-a32d651b03.md)
 - [tencent-yuanqi](../entries/tencent-yuanqi-12262523c3.md)
+- [thrifty](../entries/thrifty-c6583acb9a.md)
 - [tmux](../entries/tmux-adb519257a.md)
 - [tokenjuice](../entries/tokenjuice-e6468b0c4d.md)
 - [tokentelemetry](../entries/tokentelemetry-24f11ae41f.md)

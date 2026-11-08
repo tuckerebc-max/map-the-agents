@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ondateta
@@ -22,6 +22,8 @@ Repository map entry: [ondateta/teta](../../repos/ondateta/teta.md) (source: bac
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Teta is an open-source, AI-powered app builder for Flutter, pitched as 'build a mobile app by describing it' and developed by the team behind teta.so. The OSS release is explicitly a technical preview
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source local AI-powered Flutter mobile app builder. Users build mobile apps by describing them. OSS version is a local editor for a single project declared via .env. Technical preview.
+
+(captured site page body (agents/teta.md), not a verified repo-code finding)
+Teta is an open-source, AI-powered app builder for Flutter, pitched as 'build a mobile app by describing it' and developed by the team behind teta.so. The OSS release is explicitly a technical preview: it consists of a local server (pkgs/server) plus a Flutter desktop editor (apps/desktop) working on a single project declared through a .env file, with the AI generation mechanism itself not documented in the repository. The hosted product builds cross-platform mobile apps from natural-language descriptions, positioning the tool in the prompt-to-app category but with an unusual focus on Flutter rather than web stacks. The AGPL-3.0 license keeps the editor's source open while the broader generation service remains the company's. Developers experimenting with AI-driven Flutter app generation are the current audience, and the platform remains under active development.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/teta.md)

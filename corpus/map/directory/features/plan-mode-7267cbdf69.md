@@ -93,6 +93,7 @@
 - [taskweaver](../entries/taskweaver-5dcb09e5cb.md)
 - [tempo](../entries/tempo-8d6546721a.md)
 - [termux-devx](../entries/termux-devx-e9bd2d44fb.md)
+- [thrifty](../entries/thrifty-c6583acb9a.md)
 - [v0-vercel](../entries/v0-vercel-5f00d1d03f.md)
 - [verdent](../entries/verdent-4186a3c222.md)
 - [vibe-local](../entries/vibe-local-83dd784138.md)

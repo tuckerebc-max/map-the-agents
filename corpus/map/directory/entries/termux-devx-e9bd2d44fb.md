@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: apvcode
@@ -22,6 +22,8 @@ Repository map entry: [apvcode/termux-dev](../../repos/apvcode/termux-dev.md) (s
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Devx (npm package termux-dev) is a terminal AI coding agent whose primary target is Android via Termux, though it also runs on Windows, macOS, and Linux. Its dual-mode architecture separates an intera
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A coding agent built Android-first for Termux: PLAN mode asks requirements questions before any edits, AGENT mode runs autonomously, and a built-in live web server previews web apps on the phone via termux-open-url. Self-healing diagnostics auto-detect and fix TypeScript, JavaScript, Python, and Rust errors before finishing a turn.
+
+(captured site page body (agents/termux-devx.md), not a verified repo-code finding)
+Devx (npm package termux-dev) is a terminal AI coding agent whose primary target is Android via Termux, though it also runs on Windows, macOS, and Linux. Its dual-mode architecture separates an interactive PLAN-mode architect that asks requirements questions without touching code from an AGENT mode that performs autonomous file edits, terminal commands, and package installs, with Tab toggling between them and one-click plan approval. It supports multimodal vision via pasted screenshots, snapshot rollback, git commits with AI-generated semantic messages, a per-project memory bank, MCP server support, and a headless one-shot mode for CI/CD and Termux:Widget. The live web server on port 3000 auto-opens in the Android browser, making it practical to build and preview web apps entirely on a phone.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/termux-devx.md)

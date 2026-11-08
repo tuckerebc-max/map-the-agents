@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: bbarit
@@ -22,6 +22,8 @@ Repository map entry: [bbarit/terminal](../../repos/bbarit/terminal.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-BBARIT Terminal (formerly Octo Terminal, built by Tenmiles Inc.) collapses the terminal, the code editor, and the coding agent into one desktop application written entirely in Rust on Tauri. Its built
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Unified AI vibe-coding IDE: native terminal, code editor, and coding agent in one desktop app built 100% in Rust (Tauri). Broker Agent is a one-click autonomous AI dev\<-\>review pair with a mechanical (zero-LLM-cost) broker mediating the full design-\>build-\>test-\>review-\>merge loop on isolated git worktrees. Keeps all projects and terminals on a single screen, runs multiple AI coding CLIs side by side ...
+
+(captured site page body (agents/terminal.md), not a verified repo-code finding)
+BBARIT Terminal (formerly Octo Terminal, built by Tenmiles Inc.) collapses the terminal, the code editor, and the coding agent into one desktop application written entirely in Rust on Tauri. Its built-in agent works with an enforced verification loop — tests or builds must pass before a task can complete — alongside line-anchored safe edits, automatic rollback snapshots, and blocking of catastrophic commands, and a Broker Agent stages autonomous developer/reviewer pairs (for example Claude writing while Codex reviews) mediated by a deterministic, non-LLM broker that costs no tokens. The same screen hosts multiple real PTY terminals running other AI CLIs side by side (Claude Code, Codex, Gemini, Kimi, Qwen, OpenCode), a Monaco editor, git worktree panels with Kanban/Gantt views, an embedded Chromium browser, and remote access through a web terminal. MCP integration adds external tools, and 37 model providers (plus local Ollama) cover inference; GitHub sign-in suffices for the free app. Solo developers who want an all-in-one agentic workspace, particularly on Apple Silicon, are the audience.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/terminal.md)

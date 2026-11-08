@@ -1,9 +1,9 @@
 # factory-ai/factory
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit eb4c4e381fd7 @ b15ed6fa8ebff7dd
+Latest snapshot: commit 892925c655a9 @ a1d022731e3f77ee
 
 ## Summary (orientation draft, not independently verified)
 

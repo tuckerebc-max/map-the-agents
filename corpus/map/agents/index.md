@@ -336,8 +336,8 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [exafunction/codeium-react-code-editor](../repos/exafunction/codeium-react-code-editor.md) -- status=distilled, freshness=current
 - [exqqstar/exagent](../repos/exqqstar/exagent.md) -- status=distilled, freshness=stale
 - [facebookresearch/codellama](../repos/facebookresearch/codellama.md) -- status=blocked, freshness=refresh-failed
-- [factory-ai/factory](../repos/factory-ai/factory.md) -- status=distilled, freshness=current
-- [failproofai/failproofai](../repos/failproofai/failproofai.md) -- status=distilled, freshness=current
+- [factory-ai/factory](../repos/factory-ai/factory.md) -- status=distilled, freshness=stale
+- [failproofai/failproofai](../repos/failproofai/failproofai.md) -- status=distilled, freshness=stale
 - [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) -- status=distilled, freshness=current
 - [fareedkhan-dev/multi-agent-training-grpo](../repos/fareedkhan-dev/multi-agent-training-grpo.md) -- status=distilled, freshness=current
 - [farelart/ai-code-gen](../repos/farelart/ai-code-gen.md) -- status=distilled, freshness=current

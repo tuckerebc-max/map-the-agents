@@ -1,9 +1,9 @@
 # failproofai/failproofai
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 86f80fc59ee1 @ cca0cfe74a52d5e3
+Latest snapshot: commit fa9307f7afe7 @ 7c9826d44142eb4d
 
 ## Summary (orientation draft, not independently verified)
 

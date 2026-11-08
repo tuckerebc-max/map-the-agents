@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (833)
+## current (831)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -157,8 +157,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [euniai/prometheus](../repos/euniai/prometheus.md) [coverage: complete]
 - [eventstubsol/ai-dev-agent-test](../repos/eventstubsol/ai-dev-agent-test.md) [coverage: complete]
 - [exafunction/codeium-react-code-editor](../repos/exafunction/codeium-react-code-editor.md) [coverage: complete]
-- [factory-ai/factory](../repos/factory-ai/factory.md) [coverage: complete]
-- [failproofai/failproofai](../repos/failproofai/failproofai.md) [coverage: partial]
 - [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) [coverage: complete]
 - [fareedkhan-dev/multi-agent-training-grpo](../repos/fareedkhan-dev/multi-agent-training-grpo.md) [coverage: complete]
 - [farelart/ai-code-gen](../repos/farelart/ai-code-gen.md) [coverage: complete]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [minmaxflow/mini-kode](../repos/minmaxflow/mini-kode.md) [coverage: partial]
 - [missuo/herdrm](../repos/missuo/herdrm.md) [coverage: partial]
 - [mistralai/mistral-vibe](../repos/mistralai/mistral-vibe.md) [coverage: partial]
+- [mlsysops/code-agent-survey](../repos/mlsysops/code-agent-survey.md) [coverage: complete]
+- [mng-dev-ai/agentrove](../repos/mng-dev-ai/agentrove.md) [coverage: complete]

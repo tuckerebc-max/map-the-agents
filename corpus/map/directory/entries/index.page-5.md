@@ -2,6 +2,7 @@
 
 Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 
+- [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing
 - [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing-only
 - [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing
 - [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing

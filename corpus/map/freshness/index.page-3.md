@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
-- [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
 - [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
 - [anomalyco/opencode](../repos/anomalyco/opencode.md) [coverage: partial]
 - [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
@@ -133,6 +131,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [enola-labs/enola](../repos/enola-labs/enola.md) [coverage: partial]
 - [esengine/deepseek-reasonix](../repos/esengine/deepseek-reasonix.md) [coverage: partial]
 - [exqqstar/exagent](../repos/exqqstar/exagent.md) [coverage: partial]
+- [factory-ai/factory](../repos/factory-ai/factory.md) [coverage: complete]
+- [failproofai/failproofai](../repos/failproofai/failproofai.md) [coverage: partial]
 
 ## refresh-failed (67)
 

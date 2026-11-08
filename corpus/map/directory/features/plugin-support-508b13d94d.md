@@ -171,6 +171,7 @@
 - [taskade](../entries/taskade-598ef4c2f2.md)
 - [taskweaver](../entries/taskweaver-5dcb09e5cb.md)
 - [tencent-yuanqi](../entries/tencent-yuanqi-12262523c3.md)
+- [thrifty](../entries/thrifty-c6583acb9a.md)
 - [tmux-assistant-resurrect](../entries/tmux-assistant-resurrect-355a965ff4.md)
 - [tutti](../entries/tutti-69f0e78fe6.md)
 - [unodeai](../entries/unodeai-072815024a.md)

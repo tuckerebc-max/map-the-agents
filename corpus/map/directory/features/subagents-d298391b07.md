@@ -156,6 +156,7 @@
 - [taskade](../entries/taskade-598ef4c2f2.md)
 - [taskweaver](../entries/taskweaver-5dcb09e5cb.md)
 - [teamhero](../entries/teamhero-22214c48ee.md)
+- [thrifty](../entries/thrifty-c6583acb9a.md)
 - [trueforge](../entries/trueforge-abc6c4c218.md)
 - [unodeai](../entries/unodeai-072815024a.md)
 - [valuecell](../entries/valuecell-5d2ddded3a.md)

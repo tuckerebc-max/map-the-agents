@@ -50,6 +50,7 @@
 - [simmer](../entries/simmer-365fcc9a87.md)
 - [superset](../entries/superset-92c5ebe322.md)
 - [swapper-toolkit](../entries/swapper-toolkit-4ad4ec321c.md)
+- [thrifty](../entries/thrifty-c6583acb9a.md)
 - [video-use](../entries/video-use-0664ff0e28.md)
 - [webwright](../entries/webwright-0cce8abc49.md)
 - [wienerdog](../entries/wienerdog-304d1f6da7.md)

@@ -239,30 +239,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [tartarusai-cli (`tartarusai-cli`)](tartarusai-cli-2172657570.md) -- published+backing+pages
 - [Taskade (`taskade`)](taskade-598ef4c2f2.md) -- backing+pages
 - [TaskWeaver (`taskweaver`)](taskweaver-5dcb09e5cb.md) -- backing+pages
-- [Tau (`tau`)](tau-2bfcf64c38.md) -- published+backing
-- [tbench-agentic-data-pipeline (`tbench-agentic-data-pipeline`)](tbench-agentic-data-pipeline-a32d651b03.md) -- backing-only
-- [TeamHero (`teamhero`)](teamhero-22214c48ee.md) -- published+backing
-- [Tembo (`tembo`)](tembo-c6f4e8330a.md) -- published+backing
-- [Tempo (`tempo`)](tempo-8d6546721a.md) -- published+backing
-- [Tencent Yuanqi (`tencent-yuanqi`)](tencent-yuanqi-12262523c3.md) -- backing-only
-- [terminal (`terminal`)](terminal-4e686af7bd.md) -- published+backing
-- [Devx (`termux-devx`)](termux-devx-e9bd2d44fb.md) -- published+backing
-- [terragon-oss (`terragon-oss`)](terragon-oss-15a7666f7b.md) -- published+backing
-- [Testai-Agent (`testai-agent`)](testai-agent-e91571d886.md) -- published+backing
-- [teta (`teta`)](teta-4b6b2c327b.md) -- published+backing
-- [The-Creator-AI (`the-creator-ai`)](the-creator-ai-fc2786a188.md) -- published+backing
-- [The Factory (`the-factory`)](the-factory-6385306c7a.md) -- published+backing
-- [the-pair (`the-pair`)](the-pair-ffc4173464.md) -- published+backing
-- [thrush-swe-agent (`thrush-swe-agent`)](thrush-swe-agent-53b451258c.md) -- published+backing
-- [tig (`tig`)](tig-61daa82e47.md) -- published+backing
-- [Tiny-Agent (`tiny-agent`)](tiny-agent-706b885d0f.md) -- published+backing
-- [tlbx (`tlbx`)](tlbx-51ef5fe2df.md) -- published+backing
-- [tmux (`tmux`)](tmux-adb519257a.md) -- backing-only
-- [tmux-assistant-resurrect (`tmux-assistant-resurrect`)](tmux-assistant-resurrect-355a965ff4.md) -- published+backing
-- [tokenjuice (`tokenjuice`)](tokenjuice-e6468b0c4d.md) -- backing-only
-- [tokentelemetry (`tokentelemetry`)](tokentelemetry-24f11ae41f.md) -- backing-only
-- [ToM-SWE (`tom-swe`)](tom-swe-718b5672a0.md) -- backing-only
-- [Tongyi Lingma (`tongyi-lingma`)](tongyi-lingma-07ce5af175.md) -- published+backing
+- [Tau (`tau`)](tau-2bfcf64c38.md) -- published+backing+pages
+- [tbench-agentic-data-pipeline (`tbench-agentic-data-pipeline`)](tbench-agentic-data-pipeline-a32d651b03.md) -- backing+pages
+- [TeamHero (`teamhero`)](teamhero-22214c48ee.md) -- published+backing+pages
+- [Tembo (`tembo`)](tembo-c6f4e8330a.md) -- published+backing+pages
+- [Tempo (`tempo`)](tempo-8d6546721a.md) -- published+backing+pages
+- [Tencent Yuanqi (`tencent-yuanqi`)](tencent-yuanqi-12262523c3.md) -- backing+pages
+- [terminal (`terminal`)](terminal-4e686af7bd.md) -- published+backing+pages
+- [Devx (`termux-devx`)](termux-devx-e9bd2d44fb.md) -- published+backing+pages
+- [terragon-oss (`terragon-oss`)](terragon-oss-15a7666f7b.md) -- published+backing+pages
+- [Testai-Agent (`testai-agent`)](testai-agent-e91571d886.md) -- published+backing+pages
+- [teta (`teta`)](teta-4b6b2c327b.md) -- published+backing+pages
+- [The-Creator-AI (`the-creator-ai`)](the-creator-ai-fc2786a188.md) -- published+backing+pages
+- [The Factory (`the-factory`)](the-factory-6385306c7a.md) -- published+backing+pages
+- [the-pair (`the-pair`)](the-pair-ffc4173464.md) -- published+backing+pages
+- [Thrifty (`thrifty`)](thrifty-c6583acb9a.md) -- pages-only
+- [thrush-swe-agent (`thrush-swe-agent`)](thrush-swe-agent-53b451258c.md) -- published+backing+pages
+- [tig (`tig`)](tig-61daa82e47.md) -- published+backing+pages
+- [Tiny-Agent (`tiny-agent`)](tiny-agent-706b885d0f.md) -- published+backing+pages
+- [tlbx (`tlbx`)](tlbx-51ef5fe2df.md) -- published+backing+pages
+- [tmux (`tmux`)](tmux-adb519257a.md) -- backing+pages
+- [tmux-assistant-resurrect (`tmux-assistant-resurrect`)](tmux-assistant-resurrect-355a965ff4.md) -- published+backing+pages
+- [tokenjuice (`tokenjuice`)](tokenjuice-e6468b0c4d.md) -- backing+pages
+- [tokentelemetry (`tokentelemetry`)](tokentelemetry-24f11ae41f.md) -- backing+pages
+- [ToM-SWE (`tom-swe`)](tom-swe-718b5672a0.md) -- backing+pages
+- [Tongyi Lingma (`tongyi-lingma`)](tongyi-lingma-07ce5af175.md) -- published+backing+pages
 - [Tonkotsu (`tonkotsu`)](tonkotsu-814cc787af.md) -- published+backing
 - [tool use announcement (`tool-use-announcement`)](tool-use-announcement-90cc4ec36c.md) -- backing-only
 - [tool use docs (`tool-use-docs`)](tool-use-docs-db0a0b8dce.md) -- backing-only
@@ -333,4 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Warp Agent CLI (`warp-agent-cli`)](warp-agent-cli-dc27643c9c.md) -- published+backing
 - [watsonx Code Assistant for Enterprise Java Applications (`watsonx-code-assistant-for-enterprise-java-applications`)](watsonx-code-assistant-for-enterprise-java-applications-30a41b01ac.md) -- published+backing
 - [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing
-- [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: sagiyaacoby
@@ -22,6 +22,8 @@ Repository map entry: [sagiyaacoby/teamhero](../../repos/sagiyaacoby/teamhero.md
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-TeamHero is the self-hosted, MIT-licensed core of the Kapow managed-agent platform, built on the premise that parallel coding agents fail without management structure. It runs Claude Code as the execu
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Self-hosted structured AI agent orchestration platform that manages agents like a real team with project-management discipline: every task goes through plan -\> review -\> execute -\> deliver; persistent short/long-term agent memory across sessions; file-scope declarations prevent agents from overwriting each other's work; knowledge base promotes deliverables into a searchable library; dashboard web UI plus integrated Command Center terminal; optional Skills ...
+
+(captured site page body (agents/teamhero.md), not a verified repo-code finding)
+TeamHero is the self-hosted, MIT-licensed core of the Kapow managed-agent platform, built on the premise that parallel coding agents fail without management structure. It runs Claude Code as the execution engine and adds an orchestration layer: an orchestrator agent directs the team via a Command Center terminal, every task must produce a plan that is reviewed before any code executes, and finished deliverables are versioned and promoted into a knowledge base for retrieval by later tasks. Coordination hazards are addressed structurally — agents declare file scopes so two workers cannot overwrite the same file, and per-agent short- and long-term memory persists across sessions — while optional skills add browser automation and GitHub integration. A web dashboard at localhost:3777 exposes the whole operation. Solo developers and small teams already paying for Claude Code who want supervised, structured multi-agent execution rather than ad-hoc parallel sessions are the target users.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/teamhero.md)
