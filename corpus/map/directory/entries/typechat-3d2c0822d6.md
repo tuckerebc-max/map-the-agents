@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: microsoft
@@ -22,6 +22,8 @@ Repository map entry: [microsoft/typechat](../../repos/microsoft/typechat.md) (s
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-TypeChat exists because wiring natural-language input to application actions through prompt engineering grows fragile as intents multiply. The library inverts the approach: the developer declares inte
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Library (not a coding agent) that replaces prompt engineering with schema engineering. Developers define TypeScript types representing application intents; TypeChat constructs prompts using these types, validates LLM responses against the schema, repairs non-conforming outputs, and summarizes results. Eliminates complex decision trees and fragility of traditional prompt engineering. Available in TypeScript, Python, and C#/.NET.
+
+(captured site page body (agents/typechat.md), not a verified repo-code finding)
+TypeChat exists because wiring natural-language input to application actions through prompt engineering grows fragile as intents multiply. The library inverts the approach: the developer declares intents as TypeScript types (discriminated unions, meta-schemas), and TypeChat constructs prompts from those types, validates each model response against the schema, and drives repair loops with the model when validation fails before returning a typed instance the application can dispatch on. A final programmatic summarization step confirms the parsed intent matches what the user asked, without another model call. Teams building chat interfaces over existing APIs use it for intent routing and command parsing rather than autonomous agent loops; it is MIT-licensed, installable via npm, and maintained at a reduced pace by Microsoft.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/typechat.md)

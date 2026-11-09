@@ -219,6 +219,7 @@
 - [traycer-ai](../entries/traycer-ai-257a7a3448.md)
 - [tutti](../entries/tutti-69f0e78fe6.md)
 - [twill](../entries/twill-7b6edbb7cb.md)
+- [umadev](../entries/umadev-19c32adb29.md)
 - [unpeel](../entries/unpeel-c24f44ff8e.md)
 - [untether](../entries/untether-b5eb0a3784.md)
 - [vibe-kanban](../entries/vibe-kanban-a6f574d719.md)

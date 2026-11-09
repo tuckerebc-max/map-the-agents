@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Tonkotsu
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Tonkotsu addresses the monitoring burden of running many Claude Code agents at once: unattended terminals stall, merge into each other, and require constant babysitting. Its workflow moves planning in
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A GUI that manages parallel Claude Code agents through a structured plan-code-verify document: Tonkotsu drafts a plan for human sign-off, delegates dozens of coding tasks at once across multiple repos with task dependencies, and runs test plans and code review in one place — with no commits until the human approves. Codes in isolated repo clones on the developer's own ...
+
+(captured site page body (agents/tonkotsu.md), not a verified repo-code finding)
+Tonkotsu addresses the monitoring burden of running many Claude Code agents at once: unattended terminals stall, merge into each other, and require constant babysitting. Its workflow moves planning into a shareable document — the human approves or edits the plan, then Tonkotsu delegates the resulting tasks to parallel Claude Code sessions across multiple repositories, respecting declared dependencies and running test plans before review. Nothing is committed until the developer approves, and all execution happens in isolated clones on the local machine rather than a hosted environment. Developers managing concurrent features use it to run agent work with intermediate-level-team turnaround; the site is currently returning 503, with the last archived captures in April 2026.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/tonkotsu.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This entry is the Twitter/X account of Nurgo Software, the French developer of BrainSoup, rather than a product page. BrainSoup itself is a separate census entry; the account mostly posts Windows util
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Associated link: the Twitter/X account for Nurgo Software (twitter.com/Nurgo), a French company making Windows utilities including BrainSoup, an AI/LLM agent application; not a standalone agent harness
+
+(captured site page body (agents/twitter.md), not a verified repo-code finding)
+This entry is the Twitter/X account of Nurgo Software, the French developer of BrainSoup, rather than a product page. BrainSoup itself is a separate census entry; the account mostly posts Windows utility and AI tooling updates. The census retained the link for completeness, and it is categorized as other because an account page is neither an agent nor a multiplexer.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/twitter.md)

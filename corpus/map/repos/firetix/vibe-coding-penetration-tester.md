@@ -1,9 +1,9 @@
 # firetix/vibe-coding-penetration-tester
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 2625ff0bc570 @ 6c023b9835b4eea6
+Latest snapshot: commit 2625ff0bc570 @ d5f541e4f59b95c3
 
 ## Summary (orientation draft, not independently verified)
 

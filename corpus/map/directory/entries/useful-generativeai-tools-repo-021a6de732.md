@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: anishsingh20
@@ -22,6 +22,8 @@ Repository map entry: [anishsingh20/useful-generativeai-tools-repo](../../repos/
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The entry is a curated GitHub collection of generative-AI prompts and reference material, including ChatGPT cheat sheets and tool overviews. Collections of this kind surfaced many of the entries in th
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Curated collection of GenAI prompts and resources (ChatGPT prompt cheat sheets, HR prompts, GenAI platform overviews, economic impact PDFs, and AI tool lists). Not a code project — contains PDFs, images, and README only.
+
+(captured site page body (agents/useful-generativeai-tools-repo.md), not a verified repo-code finding)
+The entry is a curated GitHub collection of generative-AI prompts and reference material, including ChatGPT cheat sheets and tool overviews. Collections of this kind surfaced many of the entries in this census, but the collection itself runs no models and executes no tool loop, so it is categorized as other. It remains useful as a discovery source rather than as a harness.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/useful-generativeai-tools-repo.md)

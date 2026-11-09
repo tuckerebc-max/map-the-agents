@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (831)
+## current (829)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -160,11 +160,9 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) [coverage: complete]
 - [fareedkhan-dev/multi-agent-training-grpo](../repos/fareedkhan-dev/multi-agent-training-grpo.md) [coverage: complete]
 - [farelart/ai-code-gen](../repos/farelart/ai-code-gen.md) [coverage: complete]
-- [feiskyer/koder](../repos/feiskyer/koder.md) [coverage: partial]
 - [ferroxlabs/agents-md](../repos/ferroxlabs/agents-md.md) [coverage: complete]
 - [fetchai/fetchcoder-releases](../repos/fetchai/fetchcoder-releases.md) [coverage: complete]
 - [fireproof-storage/fireproof](../repos/fireproof-storage/fireproof.md) [coverage: complete]
-- [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) [coverage: partial]
 - [fission-ai/openspec](../repos/fission-ai/openspec.md) [coverage: partial]
 - [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) [coverage: partial]
 - [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) [coverage: complete]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mistralai/mistral-vibe](../repos/mistralai/mistral-vibe.md) [coverage: partial]
 - [mlsysops/code-agent-survey](../repos/mlsysops/code-agent-survey.md) [coverage: complete]
 - [mng-dev-ai/agentrove](../repos/mng-dev-ai/agentrove.md) [coverage: complete]
+- [mnr/codeclinicr](../repos/mnr/codeclinicr.md) [coverage: complete]
+- [moazbuilds/codemachine-cli](../repos/moazbuilds/codemachine-cli.md) [coverage: partial]

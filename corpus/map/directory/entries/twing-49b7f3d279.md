@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: twing
@@ -22,6 +22,8 @@ Repository map entry: [twing-dev/twing-cli](../../repos/twing-dev/twing-cli.md) 
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Twing is aimed at engineering leaders running fleets of AI coding agents, on the observation that agents write whole features in parallel on the same codebase and duplicate work, contradict each other
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A coordination layer for fleets of coding agents: twing align advisory-checks critical files, active work, and design overlap, while the one blocking gate requires a registered design before an agent's first Edit or Write, with conflicts bucketed into constraint violations, file overlap, Tree-sitter symbol conflicts, and LLM-judged semantic divergence. Fails closed if the coordinator is unreachable.
+
+(captured site page body (agents/twing.md), not a verified repo-code finding)
+Twing is aimed at engineering leaders running fleets of AI coding agents, on the observation that agents write whole features in parallel on the same codebase and duplicate work, contradict each other, and land conflict-prone PRs faster than humans can review. The live piece is a CLI plus a hook installed into your coding agent (Claude Code today, others planned) plus a small coordination server — hosted free at coordination-server.twing.dev or self-hosted — where a background daemon syncs the hook's stateless observations. twing align is advisory only, flagging critical files, concurrent work, and overlap with registered designs, while the design-conflict gate is the one blocking mechanism: before an agent's first edit in a session it must have a registered design, and conflicts sort into admin-gated constraint violations, advisory file overlaps, self-justifiable Tree-sitter symbol conflicts, and LLM-judged semantic divergence. It does not write code itself — it is the coordination tooling around agents — and the roadmap adds a review artifact beyond line diffs and compounding organizational context.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/twing.md)

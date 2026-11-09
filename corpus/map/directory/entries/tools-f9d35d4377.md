@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: buildownai
@@ -22,6 +22,8 @@ Repository map entry: [buildownai/tools](../../repos/buildownai/tools.md) (sourc
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository supports the BuildOwn.AI book by making its examples runnable: the book teaches building with LLMs, and this repo holds the corresponding simple tool implementations, organized by chapt
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): NOTE: Not a coding agent harness. Monorepository of simple LLM-based AI tools serving as companion code/examples for the BuildOwn.AI book. Includes a chapter_summarizer tool. Very early stage (3 commits, 1 star).
+
+(captured site page body (agents/tools.md), not a verified repo-code finding)
+The repository supports the BuildOwn.AI book by making its examples runnable: the book teaches building with LLMs, and this repo holds the corresponding simple tool implementations, organized by chapter for readers to follow along. Its only substantive tool, chapter_summarizer, sits alongside a shared utilities directory in a small TypeScript project managed with Bun and linted with Biome, with a purchase link back to the book itself. Readers of the book are the intended users; nobody installs it as software. With three commits, one star, and no releases, it is effectively a static companion artifact.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/tools.md)

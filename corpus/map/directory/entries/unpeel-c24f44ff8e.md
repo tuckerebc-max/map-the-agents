@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Unpeel exists because long agent runs are fragile: close the terminal or laptop lid and the session dies, and there is no way to check on or approve an agent's work from away from the desk. It hosts a
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Terminal-first workspace that runs AI agent sessions as persistent hosted processes on your own machine; iPhone remote control via QR pairing; multi-agent orchestration via local Unpeel Sessions MCP; browser automation via your existing Chrome; session forking and markdown export
+
+(captured site page body (agents/unpeel.md), not a verified repo-code finding)
+Unpeel exists because long agent runs are fragile: close the terminal or laptop lid and the session dies, and there is no way to check on or approve an agent's work from away from the desk. It hosts agent sessions (Claude Code, Codex, Gemini CLI, Cursor Agent, Kimi, Cline, Kiro) as processes independent of the UI, so quitting the app leaves them running, while a sidebar dashboard shows busy/done/needs-you status and a menu-bar item pulses on activity. A paired iPhone provides live terminals, input, approvals, and push notifications, with screenshots annotatable and returned into the agent's context; workspaces can also run on any SSH-reachable machine. Developers who step away from their desk — or manage several agents across machines — use it to supervise runs remotely; the app and TUI are free, with the Unpeel Link encrypted relay sold separately, and all state lives in plain files under ~/.unpeel.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/unpeel.md)

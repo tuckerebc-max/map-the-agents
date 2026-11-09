@@ -264,30 +264,31 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [tokentelemetry (`tokentelemetry`)](tokentelemetry-24f11ae41f.md) -- backing+pages
 - [ToM-SWE (`tom-swe`)](tom-swe-718b5672a0.md) -- backing+pages
 - [Tongyi Lingma (`tongyi-lingma`)](tongyi-lingma-07ce5af175.md) -- published+backing+pages
-- [Tonkotsu (`tonkotsu`)](tonkotsu-814cc787af.md) -- published+backing
-- [tool use announcement (`tool-use-announcement`)](tool-use-announcement-90cc4ec36c.md) -- backing-only
-- [tool use docs (`tool-use-docs`)](tool-use-docs-db0a0b8dce.md) -- backing-only
-- [Tools (`tools`)](tools-f9d35d4377.md) -- backing-only
-- [Townie (`townie`)](townie-63e30fece3.md) -- published+backing
-- [Tracker (`tracker`)](tracker-7ae4495c83.md) -- published-only
-- [Trae Agent (`trae-agent`)](trae-agent-fd0ec3e942.md) -- published+backing
-- [Traycer (`traycer`)](traycer-2ca1eeaa26.md) -- published+backing
-- [Traycer AI (`traycer-ai`)](traycer-ai-257a7a3448.md) -- published+backing
-- [Trickle (`trickle`)](trickle-2303176090.md) -- published+backing
-- [TrueForge (`trueforge`)](trueforge-abc6c4c218.md) -- published+backing
-- [TryCase (`trycase`)](trycase-e10d300f5b.md) -- backing-only
-- [tutti (`tutti`)](tutti-69f0e78fe6.md) -- published+backing
-- [Twill (`twill`)](twill-7b6edbb7cb.md) -- published+backing
-- [Twing (`twing`)](twing-49b7f3d279.md) -- backing-only
-- [twitter (`twitter`)](twitter-7352f353c4.md) -- backing-only
-- [TypeChat (`typechat`)](typechat-3d2c0822d6.md) -- backing-only
-- [UltraGameStudio (`ultragamestudio`)](ultragamestudio-4b8b016e0e.md) -- published+backing
-- [umadev (`umadev`)](umadev-19c32adb29.md) -- published+backing
-- [UnodeAi (`unodeai`)](unodeai-072815024a.md) -- published+backing
-- [Unpeel (`unpeel`)](unpeel-c24f44ff8e.md) -- published+backing
-- [Untether (`untether`)](untether-b5eb0a3784.md) -- published+backing
-- [Useful-Generativeai-Tools-Repo (`useful-generativeai-tools-repo`)](useful-generativeai-tools-repo-021a6de732.md) -- backing-only
-- [v0 (Vercel) (`v0-vercel`)](v0-vercel-5f00d1d03f.md) -- published+backing
+- [Tonkotsu (`tonkotsu`)](tonkotsu-814cc787af.md) -- published+backing+pages
+- [tool use announcement (`tool-use-announcement`)](tool-use-announcement-90cc4ec36c.md) -- backing+pages
+- [tool use docs (`tool-use-docs`)](tool-use-docs-db0a0b8dce.md) -- backing+pages
+- [Tools (`tools`)](tools-f9d35d4377.md) -- backing+pages
+- [Townie (`townie`)](townie-63e30fece3.md) -- published+backing+pages
+- [Tracker (`tracker`)](tracker-7ae4495c83.md) -- published+pages
+- [Trae Agent (`trae-agent`)](trae-agent-fd0ec3e942.md) -- published+backing+pages
+- [Translator (`translator`)](translator-8935b10f05.md) -- pages-only
+- [Traycer (`traycer`)](traycer-2ca1eeaa26.md) -- published+backing+pages
+- [Traycer AI (`traycer-ai`)](traycer-ai-257a7a3448.md) -- published+backing+pages
+- [Trickle (`trickle`)](trickle-2303176090.md) -- published+backing+pages
+- [TrueForge (`trueforge`)](trueforge-abc6c4c218.md) -- published+backing+pages
+- [TryCase (`trycase`)](trycase-e10d300f5b.md) -- backing+pages
+- [tutti (`tutti`)](tutti-69f0e78fe6.md) -- published+backing+pages
+- [Twill (`twill`)](twill-7b6edbb7cb.md) -- published+backing+pages
+- [Twing (`twing`)](twing-49b7f3d279.md) -- backing+pages
+- [twitter (`twitter`)](twitter-7352f353c4.md) -- backing+pages
+- [TypeChat (`typechat`)](typechat-3d2c0822d6.md) -- backing+pages
+- [UltraGameStudio (`ultragamestudio`)](ultragamestudio-4b8b016e0e.md) -- published+backing+pages
+- [umadev (`umadev`)](umadev-19c32adb29.md) -- published+backing+pages
+- [UnodeAi (`unodeai`)](unodeai-072815024a.md) -- published+backing+pages
+- [Unpeel (`unpeel`)](unpeel-c24f44ff8e.md) -- published+backing+pages
+- [Untether (`untether`)](untether-b5eb0a3784.md) -- published+backing+pages
+- [Useful-Generativeai-Tools-Repo (`useful-generativeai-tools-repo`)](useful-generativeai-tools-repo-021a6de732.md) -- backing+pages
+- [v0 (Vercel) (`v0-vercel`)](v0-vercel-5f00d1d03f.md) -- published+backing+pages
 - [valuecell (`valuecell`)](valuecell-5d2ddded3a.md) -- backing-only
 - [Vanna.AI (`vannaai`)](vannaai-119cd00843.md) -- backing-only
 - [Vendo (`vendo`)](vendo-4afc0da2f9.md) -- published+backing
@@ -333,4 +334,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [Warp (`warp`)](warp-da9e96b401.md) -- published+backing
 - [Warp Agent CLI (`warp-agent-cli`)](warp-agent-cli-dc27643c9c.md) -- published+backing
 - [watsonx Code Assistant for Enterprise Java Applications (`watsonx-code-assistant-for-enterprise-java-applications`)](watsonx-code-assistant-for-enterprise-java-applications-30a41b01ac.md) -- published+backing
-- [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing

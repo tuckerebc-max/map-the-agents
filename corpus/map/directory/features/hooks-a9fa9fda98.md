@@ -90,6 +90,7 @@
 - [superset](../entries/superset-92c5ebe322.md)
 - [swe-af](../entries/swe-af-052430386d.md)
 - [thrifty](../entries/thrifty-c6583acb9a.md)
+- [tracker](../entries/tracker-7ae4495c83.md)
 - [twing](../entries/twing-49b7f3d279.md)
 - [vibeyard](../entries/vibeyard-dfd276ad63.md)
 - [vt-code](../entries/vt-code-8f6655026c.md)

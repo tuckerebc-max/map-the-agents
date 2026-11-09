@@ -1,9 +1,9 @@
 # feiskyer/koder
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 55f553326039 @ 46fb8c41ea09079f
+Latest snapshot: commit 7abc6cf1cc4e @ 03ca48577faae0cf
 
 ## Summary (orientation draft, not independently verified)
 

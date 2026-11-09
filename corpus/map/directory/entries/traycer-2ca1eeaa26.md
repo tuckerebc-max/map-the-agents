@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: traycerai
@@ -22,6 +22,8 @@ Repository map entry: [traycerai/traycer](../../repos/traycerai/traycer.md) (sou
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-The open-source Traycer app exists so developers can orchestrate the agents they already pay for instead of duplicating spend on a new inference subscription. It connects existing agent CLIs under one
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source AI orchestration app for advanced agent orchestration. Bring Your Own Agent (BYOA) to use existing subscriptions without paying twice. Unified context to instantly switch models within the same agent with seamlessly shared memory. Agent-to-agent communication for tasks like debates or code reviews. Integrated team collaboration features.
+
+(captured site page body (agents/traycer.md), not a verified repo-code finding)
+The open-source Traycer app exists so developers can orchestrate the agents they already pay for instead of duplicating spend on a new inference subscription. It connects existing agent CLIs under one desktop workspace where the context window is shared across providers, enabling mid-task model switches, and automates agent-to-agent loops such as architecture debates and peer code review. Team collaboration features add shared boards, real-time editing, and ticket assignment, while Privacy Mode (default on for Team plans) keeps code in memory only. Developers and small teams running several agent subscriptions install the free desktop app on macOS, Linux, or Windows; the codebase is an active TypeScript/Bun monorepo with nearly a thousand commits, and optional Traycer-side inference exists for users who prefer not to BYO.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/traycer.md)

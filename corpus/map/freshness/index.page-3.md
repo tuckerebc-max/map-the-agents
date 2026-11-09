@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
-- [anomalyco/opencode](../repos/anomalyco/opencode.md) [coverage: partial]
 - [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
 - [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
 - [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
@@ -133,6 +131,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [exqqstar/exagent](../repos/exqqstar/exagent.md) [coverage: partial]
 - [factory-ai/factory](../repos/factory-ai/factory.md) [coverage: complete]
 - [failproofai/failproofai](../repos/failproofai/failproofai.md) [coverage: partial]
+- [feiskyer/koder](../repos/feiskyer/koder.md) [coverage: partial]
+- [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) [coverage: partial]
 
 ## refresh-failed (67)
 

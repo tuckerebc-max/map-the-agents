@@ -341,11 +341,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) -- status=distilled, freshness=current
 - [fareedkhan-dev/multi-agent-training-grpo](../repos/fareedkhan-dev/multi-agent-training-grpo.md) -- status=distilled, freshness=current
 - [farelart/ai-code-gen](../repos/farelart/ai-code-gen.md) -- status=distilled, freshness=current
-- [feiskyer/koder](../repos/feiskyer/koder.md) -- status=distilled, freshness=current
+- [feiskyer/koder](../repos/feiskyer/koder.md) -- status=distilled, freshness=stale
 - [ferroxlabs/agents-md](../repos/ferroxlabs/agents-md.md) -- status=distilled, freshness=current
 - [fetchai/fetchcoder-releases](../repos/fetchai/fetchcoder-releases.md) -- status=distilled, freshness=current
 - [fireproof-storage/fireproof](../repos/fireproof-storage/fireproof.md) -- status=distilled, freshness=current
-- [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) -- status=distilled, freshness=current
+- [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) -- status=distilled, freshness=stale
 - [fission-ai/openspec](../repos/fission-ai/openspec.md) -- status=distilled, freshness=current
 - [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) -- status=distilled, freshness=current
 - [flexigpt/agent-repoguardian](../repos/flexigpt/agent-repoguardian.md) -- status=blocked, freshness=refresh-failed

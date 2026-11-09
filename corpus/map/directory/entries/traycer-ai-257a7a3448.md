@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: Traycer
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Traycer addresses the fragmentation of running multiple coding agents: each lives in its own chat, plans live in scrollback, and handing work between agents means re-explaining everything. It sits abo
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Orchestration and planning layer ('Nerve Center') for coding agents — connects agents like Claude Code, Codex, Cursor, and Opencode in a shared workspace with shared context, memory, and handoff. Built-in workflow skills for planning, debugging, and reviewing. Available as VS Code / Open VSX extension. BYOA (Bring Your Own Agent) tier is free.
+
+(captured site page body (agents/traycer-ai.md), not a verified repo-code finding)
+Traycer addresses the fragmentation of running multiple coding agents: each lives in its own chat, plans live in scrollback, and handing work between agents means re-explaining everything. It sits above the agents as a shared workspace — each task carries its own filesystem, artifacts, and decision memory so models can be switched mid-task without losing context, while agents ask each other questions, request reviews, and hand off work through a defined protocol over worktrees. The built-in skills cover planning, debugging, reviewing, debating, documenting, and ticket-breaking, with Epic Mode decomposing high-level intent into specs before any code exists. Teams use it to supervise several agents from one workspace, with teammates inspecting tasks and steering work in multiplayer mode; pricing starts at $0 for BYOA, with paid tiers for cloud sync and Traycer-hosted inference.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/traycer-ai.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: wellingfeng
@@ -22,6 +22,8 @@ Repository map entry: [wellingfeng/ultragamestudio](../../repos/wellingfeng/ultr
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-UltraGameStudio exists because general-purpose coding agents do not speak game engines: they cannot reason about materials, blueprints, or skeletal animation, and they cannot produce the assets games
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI coding agent built specifically for game development. Speaks game-engine language (materials, blueprints, terrain, UMG, skeletal animation, packaging), generates all game asset types (images, 3D models, 2D sprites, atlases, audio, rigging, video) from the same chat surface, ships 40+ game-dev expert roles across Unity/Unreal/Godot/Web, and routes routine work through 20+ free/low-cost channels to save premium quota.
+
+(captured site page body (agents/ultragamestudio.md), not a verified repo-code finding)
+UltraGameStudio exists because general-purpose coding agents do not speak game engines: they cannot reason about materials, blueprints, or skeletal animation, and they cannot produce the assets games require, forcing developers back to bespoke pipelines for every asset type. The app wraps the coding-agent pattern in a game-first surface: chat requests route to engine-specialist expert roles spanning Unity, Unreal, Godot, and web projects, while slash commands generate sprites, meshes, atlases, music, and video inline. A /studio command assembles a per-task execution harness with parallel subagents, adversarial verification, and acceptance gates, and a local Rust proxy translates between provider protocols so free channels — NVIDIA NIM, OpenRouter, keyless gateways, local runtimes — absorb routine work and fail over automatically. Game developers working in Unity, Unreal, Godot, or web engines use it; it is MIT-licensed, free, and stores sessions and keys locally.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ultragamestudio.md)

@@ -498,6 +498,8 @@
 - [tool-use-announcement](../entries/tool-use-announcement-90cc4ec36c.md)
 - [tool-use-docs](../entries/tool-use-docs-db0a0b8dce.md)
 - [tools](../entries/tools-f9d35d4377.md)
+- [translator](../entries/translator-8935b10f05.md)
+- [trycase](../entries/trycase-e10d300f5b.md)
 - [twing](../entries/twing-49b7f3d279.md)
 - [twitter](../entries/twitter-7352f353c4.md)
 - [typechat](../entries/typechat-3d2c0822d6.md)

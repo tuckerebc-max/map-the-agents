@@ -157,6 +157,7 @@
 - [taskweaver](../entries/taskweaver-5dcb09e5cb.md)
 - [teamhero](../entries/teamhero-22214c48ee.md)
 - [thrifty](../entries/thrifty-c6583acb9a.md)
+- [tracker](../entries/tracker-7ae4495c83.md)
 - [trueforge](../entries/trueforge-abc6c4c218.md)
 - [unodeai](../entries/unodeai-072815024a.md)
 - [valuecell](../entries/valuecell-5d2ddded3a.md)
