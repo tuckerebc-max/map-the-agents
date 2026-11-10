@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (829)
+## current (826)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -163,10 +163,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ferroxlabs/agents-md](../repos/ferroxlabs/agents-md.md) [coverage: complete]
 - [fetchai/fetchcoder-releases](../repos/fetchai/fetchcoder-releases.md) [coverage: complete]
 - [fireproof-storage/fireproof](../repos/fireproof-storage/fireproof.md) [coverage: complete]
-- [fission-ai/openspec](../repos/fission-ai/openspec.md) [coverage: partial]
-- [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) [coverage: partial]
 - [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) [coverage: complete]
-- [foundationagents/metagpt](../repos/foundationagents/metagpt.md) [coverage: partial]
 - [foundationagents/recode](../repos/foundationagents/recode.md) [coverage: complete]
 - [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) [coverage: partial]
 - [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mng-dev-ai/agentrove](../repos/mng-dev-ai/agentrove.md) [coverage: complete]
 - [mnr/codeclinicr](../repos/mnr/codeclinicr.md) [coverage: complete]
 - [moazbuilds/codemachine-cli](../repos/moazbuilds/codemachine-cli.md) [coverage: partial]
+- [momozi1996/momo-code](../repos/momozi1996/momo-code.md) [coverage: partial]
+- [monkilabs/opencastle](../repos/monkilabs/opencastle.md) [coverage: partial]
+- [moonshotai/kimi-cli](../repos/moonshotai/kimi-cli.md) [coverage: partial]

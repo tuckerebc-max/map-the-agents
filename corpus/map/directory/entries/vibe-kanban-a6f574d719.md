@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: bloop
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Vibe Kanban orchestrates coding agents from a browser interface, and this extension exists for developers who would rather not leave their editor to check on that work. Once a local Vibe Kanban instan
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Control your Vibe Kanban coding agents from within VS Code
+
+(captured site page body (agents/vibe-kanban.md), not a verified repo-code finding)
+Vibe Kanban orchestrates coding agents from a browser interface, and this extension exists for developers who would rather not leave their editor to check on that work. Once a local Vibe Kanban instance is running, the extension adds an Activity Bar icon that opens the agent control panel in a sidebar webview, connected to the local server — auto-detecting its port from the port file the server writes, with a settings override available — and provides two-way messaging and live status for the agents it manages. Developers running parallel agent tasks through Vibe Kanban use it to supervise and redirect work without switching to a browser tab; the extension is free, early at version 0.1.0, and requires the separately installed Vibe Kanban server.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/vibe-kanban.md)

@@ -346,11 +346,11 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [fetchai/fetchcoder-releases](../repos/fetchai/fetchcoder-releases.md) -- status=distilled, freshness=current
 - [fireproof-storage/fireproof](../repos/fireproof-storage/fireproof.md) -- status=distilled, freshness=current
 - [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) -- status=distilled, freshness=stale
-- [fission-ai/openspec](../repos/fission-ai/openspec.md) -- status=distilled, freshness=current
-- [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) -- status=distilled, freshness=current
+- [fission-ai/openspec](../repos/fission-ai/openspec.md) -- status=distilled, freshness=stale
+- [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) -- status=distilled, freshness=stale
 - [flexigpt/agent-repoguardian](../repos/flexigpt/agent-repoguardian.md) -- status=blocked, freshness=refresh-failed
 - [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) -- status=distilled, freshness=current
-- [foundationagents/metagpt](../repos/foundationagents/metagpt.md) -- status=distilled, freshness=current
+- [foundationagents/metagpt](../repos/foundationagents/metagpt.md) -- status=distilled, freshness=stale
 - [foundationagents/recode](../repos/foundationagents/recode.md) -- status=distilled, freshness=current
 - [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) -- status=distilled, freshness=current
 - [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- status=distilled, freshness=current

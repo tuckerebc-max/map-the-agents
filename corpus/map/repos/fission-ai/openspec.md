@@ -1,9 +1,9 @@
 # fission-ai/openspec
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9d4e5974e5c0 @ 01249e4603bb0f5e
+Latest snapshot: commit 579fcac57ae0 @ e64f44c2a28012ab
 
 ## Summary (orientation draft, not independently verified)
 

@@ -516,7 +516,6 @@
 - [v0-vercel](../entries/v0-vercel-5f00d1d03f.md)
 - [verbalcodeai](../entries/verbalcodeai-43036f239b.md)
 - [verdent](../entries/verdent-4186a3c222.md)
-- [vibe-coding-penetration-tester](../entries/vibe-coding-penetration-tester-56311b1ecd.md)
 - [vibe-local](../entries/vibe-local-83dd784138.md)
 - [vibecode-playground](../entries/vibecode-playground-af495c33d0.md)
 - [vibesdk](../entries/vibesdk-0effe48c48.md)

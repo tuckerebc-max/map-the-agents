@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: ohad6k
@@ -22,6 +22,8 @@ Repository map entry: [ohad6k/viberaven](../../repos/ohad6k/viberaven.md) (sourc
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-VibeRaven exists for the gap between 'the agent says it's done' and 'this is safe to deploy': AI-built apps routinely miss production essentials like auth wiring, service-role key exposure, webhook co
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source local cockpit for AI-built apps. Local-first philosophy: runs entirely on your machine — no login, no API key, no telemetry. 'Can I ship?' verdict: offline checks produce a gated score with blockers/warnings before deploy. Multi-agent cockpit drives Codex, Claude Code, and Gemini CLI from one local UI. Markdown on disk: all context lives in .viberaven/ as plain files readable ...
+
+(captured site page body (agents/viberaven.md), not a verified repo-code finding)
+VibeRaven exists for the gap between 'the agent says it's done' and 'this is safe to deploy': AI-built apps routinely miss production essentials like auth wiring, service-role key exposure, webhook configuration, and monitoring. Running entirely locally with no login or telemetry, it connects the coding agent to the app's real context — stack and provider detection, release timeline, architecture map — and produces a gated ship-readiness verdict from offline checks covering auth/RLS, secret exposure, webhooks, and deploy readiness; a CI mode exits nonzero on blockers. Its agent cockpit drives Codex, Claude Code, or Gemini CLI from one UI with ask/approve/full access modes, and every artifact lives as plain markdown under .viberaven/, versioned by git and readable by any agent. Indie developers and small teams shipping AI-built apps use it as a pre-deploy gate; note the core product code is developed in a private repository, with the public repo carrying the CLI and agent integration surface.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/viberaven.md)

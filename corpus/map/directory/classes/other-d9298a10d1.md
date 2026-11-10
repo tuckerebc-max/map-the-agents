@@ -511,6 +511,7 @@
 - [vibe-coding](../entries/vibe-coding-e41423821c.md)
 - [vibe-coding-guide](../entries/vibe-coding-guide-fbf1bad6c5.md)
 - [vibe-coding-kit](../entries/vibe-coding-kit-54ead54a14.md)
+- [vibe-coding-penetration-tester](../entries/vibe-coding-penetration-tester-56311b1ecd.md)
 - [vibe-coding-template](../entries/vibe-coding-template-3997360131.md)
 - [vibe-replay](../entries/vibe-replay-6bf7d6e5f9.md)
 - [vibeproxy](../entries/vibeproxy-dc75e4981e.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: runvendo
@@ -22,6 +22,8 @@ Repository map entry: [runvendo/vendo](../../repos/runvendo/vendo.md) (source: b
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Vendo is a YC-backed open-source layer for B2B SaaS teams that want to give their customers in-product customization without shipping a plugin platform of their own. The embedded agent executes throug
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): An embedded agent SDK for B2B SaaS that lets your end customers build their own features and micro-apps on top of your product: agents execute through the host product's own API as the signed-in user, build live views from the host's components, remix the UI in place, and create standing automations — all without touching the host's source code.
+
+(captured site page body (agents/vendo.md), not a verified repo-code finding)
+Vendo is a YC-backed open-source layer for B2B SaaS teams that want to give their customers in-product customization without shipping a plugin platform of their own. The embedded agent executes through the host product's own API as the signed-in user, so permissions and data boundaries come from the product itself: users ask questions and get live views composed from the host's components, hover a UI element and describe a change to remix it in place, and turn plain-language instructions into standing automations with per-tool approvals. Safety controls include policy enforcement, grants, circuit breakers, and audit logging, with generated UI running in a sandboxed iframe. For developers it is a TypeScript SDK compatible with any AI SDK LanguageModel, integrating with Claude Code, Cursor, Copilot, and MCP clients during development, self-hostable with PGlite or Postgres and optional Vendo Cloud features via API key.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/vendo.md)

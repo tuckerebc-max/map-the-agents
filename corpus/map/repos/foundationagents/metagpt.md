@@ -1,10 +1,10 @@
 # foundationagents/metagpt
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: geekan/metagpt (github id 660551251).
-Latest snapshot: commit 11cdf466d042 @ 32a1dc0084829e9e
+Latest snapshot: commit 11cdf466d042 @ 0ecb628f48a02787
 
 ## Summary (orientation draft, not independently verified)
 

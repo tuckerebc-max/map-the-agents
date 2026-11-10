@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
-- [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
-- [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
 - [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
 - [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
 - [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
@@ -133,6 +130,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [failproofai/failproofai](../repos/failproofai/failproofai.md) [coverage: partial]
 - [feiskyer/koder](../repos/feiskyer/koder.md) [coverage: partial]
 - [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) [coverage: partial]
+- [fission-ai/openspec](../repos/fission-ai/openspec.md) [coverage: partial]
+- [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) [coverage: partial]
+- [foundationagents/metagpt](../repos/foundationagents/metagpt.md) [coverage: partial]
 
 ## refresh-failed (67)
 

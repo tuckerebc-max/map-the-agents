@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: vibheksoni
@@ -22,6 +22,8 @@ Repository map entry: [vibheksoni/verbalcodeai](../../repos/vibheksoni/verbalcod
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-VerbalCodeAI exists for developers who would rather ask an unfamiliar codebase questions than grep through it, and who do not want that code leaving their machine. It indexes the project locally with
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI-powered codebase navigation directly in terminal; local-first (Ollama) with privacy focus; intelligent code search via embeddings; agent mode with tool suite; MCP integration for Claude Desktop; git history analysis; memory system.
+
+(captured site page body (agents/verbalcodeai.md), not a verified repo-code finding)
+VerbalCodeAI exists for developers who would rather ask an unfamiliar codebase questions than grep through it, and who do not want that code leaving their machine. It indexes the project locally with embeddings, then answers natural-language questions through semantic search backed by grep and regex fallback; its agent mode adds a broad tool suite — file reading, directory trees, symbol lookup, cross-references, git history, a memory system, web search, and command execution — with an ask_buddy tool that solicits a second model's opinion. An MCP server wraps the HTTP API so Claude Desktop and Cursor can call ask_agent or trigger indexing as external tools, and chat mode streams answers with markdown rendering. Privacy-conscious developers and students running local Ollama models are the primary users; the project is a small hobby-scale effort (36 commits, no releases) with a website at verbalcode.xyz.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/verbalcodeai.md)

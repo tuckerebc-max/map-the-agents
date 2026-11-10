@@ -1,9 +1,9 @@
 # fivetaku/kkirikkiri
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 99df0f40feb6 @ 93071784013c9844
+Latest snapshot: commit b497bb700734 @ 0f05a3d023712c21
 
 ## Summary (orientation draft, not independently verified)
 
