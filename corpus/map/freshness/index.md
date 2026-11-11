@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (826)
+## current (823)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -165,10 +165,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [fireproof-storage/fireproof](../repos/fireproof-storage/fireproof.md) [coverage: complete]
 - [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) [coverage: complete]
 - [foundationagents/recode](../repos/foundationagents/recode.md) [coverage: complete]
-- [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) [coverage: partial]
-- [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) [coverage: partial]
 - [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) [coverage: complete]
-- [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) [coverage: partial]
 - [fullive-ai/anima](../repos/fullive-ai/anima.md) [coverage: partial]
 - [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) [coverage: complete]
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [momozi1996/momo-code](../repos/momozi1996/momo-code.md) [coverage: partial]
 - [monkilabs/opencastle](../repos/monkilabs/opencastle.md) [coverage: partial]
 - [moonshotai/kimi-cli](../repos/moonshotai/kimi-cli.md) [coverage: partial]
+- [morganlinton/albatross](../repos/morganlinton/albatross.md) [coverage: partial]
+- [mufeedvh/code2prompt](../repos/mufeedvh/code2prompt.md) [coverage: complete]
+- [muhammadnasif/llm-research-backend-django](../repos/muhammadnasif/llm-research-backend-django.md) [coverage: complete]

@@ -1,9 +1,9 @@
 # fredericvan/pku_mdagent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 83fc74947c72 @ ba6c3f9e62616f21
+Latest snapshot: commit 1a7fcafb2d6c @ d742911641d1413f
 
 ## Summary (orientation draft, not independently verified)
 

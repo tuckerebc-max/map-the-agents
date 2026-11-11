@@ -2,11 +2,11 @@
 
 Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 
-- [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing
-- [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing
-- [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing-only
-- [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing
-- [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing
+- [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing+pages
+- [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing+pages
+- [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing+pages
+- [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing+pages
+- [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing+pages
 - [website (`website`)](website-747a8f3983.md) -- backing-only
 - [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing
 - [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing-only

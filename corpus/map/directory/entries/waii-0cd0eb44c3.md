@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Waii addresses the reliability gap in text-to-SQL: generic LLM prompting breaks down on large schemas and complex analytical queries. It pairs LLMs with a purpose-built SQL compiler, optimizer, and au
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A swift and straightforward AI agent for converting natural language to SQL queries, seamlessly integrable with your application
+
+(captured site page body (agents/waii.md), not a verified repo-code finding)
+Waii addresses the reliability gap in text-to-SQL: generic LLM prompting breaks down on large schemas and complex analytical queries. It pairs LLMs with a purpose-built SQL compiler, optimizer, and automatically generated semantic layer/knowledge graph that captures business context, and it exposes this as an API-first product intended to be embedded in other applications rather than used as a chat UI. It handles multi-way joins across 10-20 tables, window functions, UDFs, semi-structured and geo queries, and dialect translation across Snowflake, PostgreSQL, Databricks, BigQuery, and more, with governance features like RBAC, PII detection, and column masking. In 2025 Waii agreed to be acquired by Salesforce. Its customers are data teams and SaaS builders embedding natural-language querying.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/waii.md)

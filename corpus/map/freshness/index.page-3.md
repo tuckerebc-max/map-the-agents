@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
-- [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
-- [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
 - [apvcode/termux-dev](../repos/apvcode/termux-dev.md) [coverage: complete]
 - [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
 - [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]
@@ -133,8 +130,10 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [fission-ai/openspec](../repos/fission-ai/openspec.md) [coverage: partial]
 - [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) [coverage: partial]
 - [foundationagents/metagpt](../repos/foundationagents/metagpt.md) [coverage: partial]
+- [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) [coverage: partial]
+- [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) [coverage: partial]
 
-## refresh-failed (67)
+## refresh-failed (68)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -162,6 +161,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [erans/lunaroute](../repos/erans/lunaroute.md) -- FetchFailed
 - [facebookresearch/codellama](../repos/facebookresearch/codellama.md) -- FetchFailed
 - [flexigpt/agent-repoguardian](../repos/flexigpt/agent-repoguardian.md) -- FetchFailed
+- [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- FetchFailed [coverage: partial]
 - [gcwing/bitfun](../repos/gcwing/bitfun.md) -- FetchFailed
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- FetchFailed
 - [hams-ollo/project-s.o.c.r.a.t.e.s.](../repos/hams-ollo/project-s.o.c.r.a.t.e.s..md) -- FetchFailed

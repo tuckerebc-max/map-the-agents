@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
-- Category: multiplexer
+- Category: other
 - Provider/maker: VolarTools
 - License: unknown
 - Language: unknown
@@ -20,8 +20,14 @@ Directory membership: backing-only.
 
 No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
+Discrepancy between directory sources (not overwritten):
+
+- category: published=, backing=multiplexer, page=other
+
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Volar exists to give AI coding sessions an explicit planning and review layer before any code is written. The extension does not run AI itself; it manages a task list in a sidebar and communicates wit
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Plan, Review & Build with AI
+
+(captured site page body (agents/volar.md), not a verified repo-code finding)
+Volar exists to give AI coding sessions an explicit planning and review layer before any code is written. The extension does not run AI itself; it manages a task list in a sidebar and communicates with the developer's coding tool through an MCP server (VolarTaskServer), so agents can read and update tasks from inside chat. Its Plan action prompts the connected AI to analyze the codebase and draft an implementation plan, Breakdown recursively splits complex tasks into sub-tasks, and Execute instructs the AI to implement only the approved plan. It auto-configures MCP for Cursor, Windsurf, and Claude Code, and supports any MCP-compatible tool such as Cline via a localhost URL. It targets VS Code users working with Cursor, Windsurf, or Claude Code who want approved-plan discipline.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/volar.md)

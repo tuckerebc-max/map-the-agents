@@ -1,9 +1,10 @@
 # friuns2/codex-mobile
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit fac2291b0e60 @ 5767fa3cbc572be0
+Last collection error: FetchFailed: http-404: https://api.github.com/repos/friuns2/codex-mobile
 
 ## Summary (orientation draft, not independently verified)
 
@@ -34,7 +35,6 @@ Source coverage (partial): 3 of 7 candidate file(s) selected (selection incomple
 - orchestration: unknown (no source-linked claim submitted for this facet)
 - tools-permissions (1 claim(s)):
   - [observation/documented] The UI surfaces server-initiated approval requests (command approvals, file changes, tool calls) that the user can approve or reject; production password auth uses an HttpOnly cookie and constant-time comparison, with auto-generated passwords written to $CODEX_HOME/codexui-password with 0600 permissions. -- evidence: [PROJECT_SPEC.md#L332-L335](https://github.com/friuns2/codex-mobile/blob/fac2291b0e606c869d4760f56c0f49172214cb79/PROJECT_SPEC.md#L332-L335), [PROJECT_SPEC.md#L328-L328](https://github.com/friuns2/codex-mobile/blob/fac2291b0e606c869d4760f56c0f49172214cb79/PROJECT_SPEC.md#L328-L328), [PROJECT_SPEC.md#L115-L133](https://github.com/friuns2/codex-mobile/blob/fac2291b0e606c869d4760f56c0f49172214cb79/PROJECT_SPEC.md#L115-L133)
-- evaluation: unknown (no source-linked claim submitted for this facet)
 More evidence: [full detail](codex-mobile.detail.md)
 
 Metadata and full claim list: [full detail](codex-mobile.detail.md)

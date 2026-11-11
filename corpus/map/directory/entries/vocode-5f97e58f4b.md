@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: vocodedev
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [vocodedev/vocode-python](https://
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Vocode exists to remove the plumbing from real-time voice LLM applications: managing interruptible streaming audio, transcription, and synthesis across many vendors. It provides a modular Python pipel
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Open-source library for building voice-based LLM apps (phone calls, Zoom meetings) with real-time streaming conversations, transcription, and synthesis integrations.
+
+(captured site page body (agents/vocode.md), not a verified repo-code finding)
+Vocode exists to remove the plumbing from real-time voice LLM applications: managing interruptible streaming audio, transcription, and synthesis across many vendors. It provides a modular Python pipeline where pluggable transcription backends (Deepgram, AssemblyAI, Whisper, Google, Azure) feed an LLM from OpenAI or Anthropic, whose output goes to pluggable speech synthesis from ElevenLabs, Azure, Polly, Cartesia, and others, deployable to phone calls, Zoom meetings, and system audio. A companion React SDK covers browser-side voice interfaces. The repo has been seeking community maintainers, indicating the core team has moved on. It serves developers embedding outbound-call or voice-assistant flows into their own applications.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/vocode.md)

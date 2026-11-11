@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: sean35mm
@@ -22,6 +22,8 @@ Repository map entry: [sean35mm/weaver](../../repos/sean35mm/weaver.md) (source:
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Weaver solves the problem of multiple AI coding agents (Claude Code, Codex, OpenCode, Pi, or plain terminals) colliding in the same repository without any cloud service. It provides a coordination-lit
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Local-only, serverless coordination layer for multiple AI coding agents in the same repo. Provides cross-agent presence, advisory file claims, durable notes that survive context compaction, recent activity tracking, and live views — all via a small CLI over local SQLite files (~/.weaver/). No telemetry, no account, no network calls. Git remains source of truth; claims are advisory, never blocking. Explicitly ...
+
+(captured site page body (agents/weaver.md), not a verified repo-code finding)
+Weaver solves the problem of multiple AI coding agents (Claude Code, Codex, OpenCode, Pi, or plain terminals) colliding in the same repository without any cloud service. It provides a coordination-lite loop — status, task, claim, done — where advisory, TTL-bound file claims detect overlap (exit 1 signals overlap) and git remains authoritative for code. State lives in a per-repo SQLite database under ~/.weaver/, supplemented by durable Repository Facts that survive context compaction, optional Markdown scratchpads, a loopback-only web dashboard, and a preflight command that verifies claims before commit or push. The CLI installs protocol blocks into CLAUDE.md/AGENTS.md and optional Claude Code hooks or OpenCode plugins. It targets developers running several agents in parallel on one repo, fully locally.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/weaver.md)

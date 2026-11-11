@@ -314,23 +314,23 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [vibesdk (`vibesdk`)](vibesdk-0effe48c48.md) -- published+backing+pages
 - [VibeWorkspace (`vibeworkspace`)](vibeworkspace-3d89ea5634.md) -- published+backing+pages
 - [vibeyard (`vibeyard`)](vibeyard-dfd276ad63.md) -- published+backing+pages
-- [vibra-code (`vibra-code`)](vibra-code-dd54f72190.md) -- published+backing
-- [video (`video`)](video-0cab1c9617.md) -- backing-only
-- [video-use (`video-use`)](video-use-0664ff0e28.md) -- backing-only
-- [vim_codex (`vim-codex`)](vim-codex-156fcf6e32.md) -- backing-only
-- [vision-ai-developer-kit (`vision-ai-developer-kit`)](vision-ai-developer-kit-e0c387e05a.md) -- backing-only
-- [Visual Copilot (`visual-copilot`)](visual-copilot-47dd76825d.md) -- published+backing
-- [vix (`vix`)](vix-4a47c870d7.md) -- published+backing
-- [Vocode (`vocode`)](vocode-5f97e58f4b.md) -- backing-only
-- [vogte (`vogte`)](vogte-f6bf7fb2ff.md) -- published+backing
-- [Volar (`volar`)](volar-ff4153b053.md) -- backing-only
-- [vs-code-agents (`vs-code-agents`)](vs-code-agents-2c4cc6fe2f.md) -- backing-only
-- [VSCode Agent (`vscode-agent`)](vscode-agent-88e3d629a5.md) -- published+backing
-- [vscode-extension (`vscode-extension`)](vscode-extension-e1846fbb86.md) -- published+backing
-- [VT Code (`vt-code`)](vt-code-8f6655026c.md) -- published+backing
-- [Waii (`waii`)](waii-0cd0eb44c3.md) -- backing-only
-- [Waku (`waku`)](waku-008a9748f0.md) -- published+backing
-- [wallfacer (`wallfacer`)](wallfacer-788515a0a0.md) -- published+backing
-- [Warp (`warp`)](warp-da9e96b401.md) -- published+backing
-- [Warp Agent CLI (`warp-agent-cli`)](warp-agent-cli-dc27643c9c.md) -- published+backing
-- [watsonx Code Assistant for Enterprise Java Applications (`watsonx-code-assistant-for-enterprise-java-applications`)](watsonx-code-assistant-for-enterprise-java-applications-30a41b01ac.md) -- published+backing
+- [vibra-code (`vibra-code`)](vibra-code-dd54f72190.md) -- published+backing+pages
+- [video (`video`)](video-0cab1c9617.md) -- backing+pages
+- [video-use (`video-use`)](video-use-0664ff0e28.md) -- backing+pages
+- [vim_codex (`vim-codex`)](vim-codex-156fcf6e32.md) -- backing+pages
+- [vision-ai-developer-kit (`vision-ai-developer-kit`)](vision-ai-developer-kit-e0c387e05a.md) -- backing+pages
+- [Visual Copilot (`visual-copilot`)](visual-copilot-47dd76825d.md) -- published+backing+pages
+- [vix (`vix`)](vix-4a47c870d7.md) -- published+backing+pages
+- [Vocode (`vocode`)](vocode-5f97e58f4b.md) -- backing+pages
+- [vogte (`vogte`)](vogte-f6bf7fb2ff.md) -- published+backing+pages
+- [Volar (`volar`)](volar-ff4153b053.md) -- backing+pages
+- [vs-code-agents (`vs-code-agents`)](vs-code-agents-2c4cc6fe2f.md) -- backing+pages
+- [VSCode Agent (`vscode-agent`)](vscode-agent-88e3d629a5.md) -- published+backing+pages
+- [vscode-extension (`vscode-extension`)](vscode-extension-e1846fbb86.md) -- published+backing+pages
+- [VT Code (`vt-code`)](vt-code-8f6655026c.md) -- published+backing+pages
+- [Waii (`waii`)](waii-0cd0eb44c3.md) -- backing+pages
+- [Waku (`waku`)](waku-008a9748f0.md) -- published+backing+pages
+- [wallfacer (`wallfacer`)](wallfacer-788515a0a0.md) -- published+backing+pages
+- [Warp (`warp`)](warp-da9e96b401.md) -- published+backing+pages
+- [Warp Agent CLI (`warp-agent-cli`)](warp-agent-cli-dc27643c9c.md) -- published+backing+pages
+- [watsonx Code Assistant for Enterprise Java Applications (`watsonx-code-assistant-for-enterprise-java-applications`)](watsonx-code-assistant-for-enterprise-java-applications-30a41b01ac.md) -- published+backing+pages

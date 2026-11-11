@@ -352,6 +352,6 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) -- status=distilled, freshness=current
 - [foundationagents/metagpt](../repos/foundationagents/metagpt.md) -- status=distilled, freshness=stale
 - [foundationagents/recode](../repos/foundationagents/recode.md) -- status=distilled, freshness=current
-- [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) -- status=distilled, freshness=current
-- [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- status=distilled, freshness=current
+- [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) -- status=distilled, freshness=stale
+- [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- status=distilled, freshness=refresh-failed
 - [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) -- status=distilled, freshness=current

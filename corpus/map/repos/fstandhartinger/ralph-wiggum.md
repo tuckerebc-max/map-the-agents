@@ -1,9 +1,9 @@
 # fstandhartinger/ralph-wiggum
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3f15f0fb83b8 @ e715ed74bb1d3916
+Latest snapshot: commit 3f15f0fb83b8 @ 6cc587067d73e5a7
 
 ## Summary (orientation draft, not independently verified)
 

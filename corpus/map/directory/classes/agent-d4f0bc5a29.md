@@ -523,7 +523,6 @@
 - [visual-copilot](../entries/visual-copilot-47dd76825d.md)
 - [vix](../entries/vix-4a47c870d7.md)
 - [vogte](../entries/vogte-f6bf7fb2ff.md)
-- [vs-code-agents](../entries/vs-code-agents-2c4cc6fe2f.md)
 - [vscode-agent](../entries/vscode-agent-88e3d629a5.md)
 - [vscode-extension](../entries/vscode-extension-e1846fbb86.md)
 - [vt-code](../entries/vt-code-8f6655026c.md)

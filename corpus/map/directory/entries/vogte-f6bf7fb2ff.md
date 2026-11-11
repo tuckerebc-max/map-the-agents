@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: piqoni
@@ -22,6 +22,8 @@ Repository map entry: [piqoni/vogte](../../repos/piqoni/vogte.md) (source: backi
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-vix-like tools send whole repositories to the model; vogte exists to keep context small and Go-specific. It parses a codebase into abstract syntax trees, extracts structs, interfaces, methods, and sig
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Agentic TUI for existing Go codebases that uses AST parsing to extract compressed, relevant context for the LLM. Two-step context approach: first extracts structs/interfaces/methods/signatures, asks LLM which files it needs in full, then provides full content. Runs go vet as a sanity check after patching. Stateless design (each message is a new chat) for cost-effectiveness. Features local PR review and ...
+
+(captured site page body (agents/vogte.md), not a verified repo-code finding)
+vix-like tools send whole repositories to the model; vogte exists to keep context small and Go-specific. It parses a codebase into abstract syntax trees, extracts structs, interfaces, methods, and signatures, and in a first step asks the LLM which files it needs in full before providing their complete contents, treating each request as a fresh one-shot chat rather than a retry-on-failure agentic loop. With the -agent flag it applies line-based patches directly to files and then runs go vet as a sanity check. It works with any OpenAI-compatible API and Anthropic models including via AWS Bedrock. The audience is Go developers maintaining existing codebases who want low-cost, one-shot context delivery rather than long interactive sessions.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/vogte.md)

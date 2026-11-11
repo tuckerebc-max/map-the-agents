@@ -230,7 +230,6 @@
 - [viberaven](../entries/viberaven-9b77c14c6d.md)
 - [vibeworkspace](../entries/vibeworkspace-3d89ea5634.md)
 - [vibeyard](../entries/vibeyard-dfd276ad63.md)
-- [volar](../entries/volar-ff4153b053.md)
 - [waku](../entries/waku-008a9748f0.md)
 - [wallfacer](../entries/wallfacer-788515a0a0.md)
 - [weaver](../entries/weaver-6b8af1b607.md)

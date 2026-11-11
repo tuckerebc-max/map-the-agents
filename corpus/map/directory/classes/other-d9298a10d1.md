@@ -520,6 +520,8 @@
 - [vim-codex](../entries/vim-codex-156fcf6e32.md)
 - [vision-ai-developer-kit](../entries/vision-ai-developer-kit-e0c387e05a.md)
 - [vocode](../entries/vocode-5f97e58f4b.md)
+- [volar](../entries/volar-ff4153b053.md)
+- [vs-code-agents](../entries/vs-code-agents-2c4cc6fe2f.md)
 - [waii](../entries/waii-0cd0eb44c3.md)
 - [web-code-agent](../entries/web-code-agent-a8b703f77d.md)
 - [website](../entries/website-747a8f3983.md)

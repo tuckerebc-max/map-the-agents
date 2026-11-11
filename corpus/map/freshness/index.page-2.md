@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [morganlinton/albatross](../repos/morganlinton/albatross.md) [coverage: partial]
-- [mufeedvh/code2prompt](../repos/mufeedvh/code2prompt.md) [coverage: complete]
-- [muhammadnasif/llm-research-backend-django](../repos/muhammadnasif/llm-research-backend-django.md) [coverage: complete]
 - [mulkymalikuldhrs/opencode-android](../repos/mulkymalikuldhrs/opencode-android.md) [coverage: partial]
 - [multiplayer-app/multiplayer](../repos/multiplayer-app/multiplayer.md) [coverage: complete]
 - [mvanhorn/agentcookie](../repos/mvanhorn/agentcookie.md) [coverage: partial]
@@ -420,7 +417,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (160)
+## stale (162)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +448,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
 - [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
 - [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
+- [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
+- [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
+- [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
