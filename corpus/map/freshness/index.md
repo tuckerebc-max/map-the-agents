@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (823)
+## current (820)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -166,11 +166,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) [coverage: complete]
 - [foundationagents/recode](../repos/foundationagents/recode.md) [coverage: complete]
 - [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) [coverage: complete]
-- [fullive-ai/anima](../repos/fullive-ai/anima.md) [coverage: partial]
 - [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) [coverage: complete]
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) [coverage: complete]
-- [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) [coverage: partial]
-- [fw-ai/fireconnect](../repos/fw-ai/fireconnect.md) [coverage: complete]
 - [fy0/codekanban](../repos/fy0/codekanban.md) [coverage: partial]
 - [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) [coverage: complete]
 - [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [morganlinton/albatross](../repos/morganlinton/albatross.md) [coverage: partial]
 - [mufeedvh/code2prompt](../repos/mufeedvh/code2prompt.md) [coverage: complete]
 - [muhammadnasif/llm-research-backend-django](../repos/muhammadnasif/llm-research-backend-django.md) [coverage: complete]
+- [mulkymalikuldhrs/opencode-android](../repos/mulkymalikuldhrs/opencode-android.md) [coverage: partial]
+- [multiplayer-app/multiplayer](../repos/multiplayer-app/multiplayer.md) [coverage: complete]
+- [mvanhorn/agentcookie](../repos/mvanhorn/agentcookie.md) [coverage: partial]

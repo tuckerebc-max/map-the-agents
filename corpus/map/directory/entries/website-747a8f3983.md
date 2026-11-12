@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The Open Interpreter 01 was a announced hardware device — a pendant-style voice interface intended to let a language model operate a computer through natural speech. The product page (openinterpreter.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Associated link: the Open Interpreter 01 device product page (openinterpreter.com/01, now 404); not a standalone agent harness
+
+(captured site page body (agents/website.md), not a verified repo-code finding)
+The Open Interpreter 01 was a announced hardware device — a pendant-style voice interface intended to let a language model operate a computer through natural speech. The product page (openinterpreter.com/01) now returns 404, and the device never reached general availability as a shipping consumer product. It is recorded here only as an associated link for the Open Interpreter project, not as a standalone agent harness. Anyone evaluating it today should treat the page as defunct and consult the Open Interpreter repository instead.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/website.md)

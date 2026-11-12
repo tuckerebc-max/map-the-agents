@@ -7,31 +7,31 @@ Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 - [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing+pages
 - [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing+pages
 - [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing+pages
-- [website (`website`)](website-747a8f3983.md) -- backing-only
-- [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing
-- [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing-only
-- [Whailion AI (`whailion-ai`)](whailion-ai-8ba50c01c2.md) -- published+backing
-- [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing-only
-- [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing-only
-- [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing
-- [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing
-- [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing
-- [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing-only
-- [WiseGPT (`wisegpt`)](wisegpt-923a19d36f.md) -- published+backing
-- [Wolfpack (`wolfpack`)](wolfpack-2751b66fd5.md) -- published+backing
-- [Wordpressify (`wordpressify`)](wordpressify-c98ba5f280.md) -- backing-only
-- [WorkBuddy (`workbuddy`)](workbuddy-141de36072.md) -- published+backing
-- [Workflow-Dispatch (`workflow-dispatch`)](workflow-dispatch-beffec7845.md) -- backing-only
-- [Workflows-Samples (`workflows-samples`)](workflows-samples-61a1e262cd.md) -- backing-only
-- [WorkGPT (`workgpt`)](workgpt-8bbf61394d.md) -- published+backing
-- [workstation (`workstation`)](workstation-d195d36bd7.md) -- published+backing
-- [workstreams (`workstreams`)](workstreams-7968458f5f.md) -- published+backing
-- [WrongStack (`wrongstack`)](wrongstack-84c1360faf.md) -- published+backing
-- [Xcode Coding Intelligence (`xcode-coding-intelligence`)](xcode-coding-intelligence-9cdc21d6b1.md) -- published+backing
-- [XCoding (`xcoding`)](xcoding-4fb7749c42.md) -- published+backing
-- [xpreiIDE (`xpreiide`)](xpreiide-de5a8ded9f.md) -- published+backing
-- [xuanji-landing (`xuanji-landing`)](xuanji-landing-929300b357.md) -- backing-only
-- [yAgents (`yagents`)](yagents-0eb9dfab0a.md) -- published+backing
+- [website (`website`)](website-747a8f3983.md) -- backing+pages
+- [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing+pages
+- [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing+pages
+- [Whailion AI (`whailion-ai`)](whailion-ai-8ba50c01c2.md) -- published+backing+pages
+- [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing+pages
+- [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing+pages
+- [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing+pages
+- [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing+pages
+- [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing+pages
+- [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing+pages
+- [WiseGPT (`wisegpt`)](wisegpt-923a19d36f.md) -- published+backing+pages
+- [Wolfpack (`wolfpack`)](wolfpack-2751b66fd5.md) -- published+backing+pages
+- [Wordpressify (`wordpressify`)](wordpressify-c98ba5f280.md) -- backing+pages
+- [WorkBuddy (`workbuddy`)](workbuddy-141de36072.md) -- published+backing+pages
+- [Workflow-Dispatch (`workflow-dispatch`)](workflow-dispatch-beffec7845.md) -- backing+pages
+- [Workflows-Samples (`workflows-samples`)](workflows-samples-61a1e262cd.md) -- backing+pages
+- [WorkGPT (`workgpt`)](workgpt-8bbf61394d.md) -- published+backing+pages
+- [workstation (`workstation`)](workstation-d195d36bd7.md) -- published+backing+pages
+- [workstreams (`workstreams`)](workstreams-7968458f5f.md) -- published+backing+pages
+- [WrongStack (`wrongstack`)](wrongstack-84c1360faf.md) -- published+backing+pages
+- [Xcode Coding Intelligence (`xcode-coding-intelligence`)](xcode-coding-intelligence-9cdc21d6b1.md) -- published+backing+pages
+- [XCoding (`xcoding`)](xcoding-4fb7749c42.md) -- published+backing+pages
+- [xpreiIDE (`xpreiide`)](xpreiide-de5a8ded9f.md) -- published+backing+pages
+- [xuanji-landing (`xuanji-landing`)](xuanji-landing-929300b357.md) -- backing+pages
+- [yAgents (`yagents`)](yagents-0eb9dfab0a.md) -- published+backing+pages
 - [yao (`yao`)](yao-e2813bdf6e.md) -- published+backing
 - [Yeoman (`yeoman`)](yeoman-1cc2cd01da.md) -- backing-only
 - [Youtrack-Workflows (`youtrack-workflows`)](youtrack-workflows-016eba47b5.md) -- backing-only

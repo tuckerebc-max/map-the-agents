@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: WrongStack
@@ -22,6 +22,8 @@ Repository map entry: [wrongstack/wrongstack](../../repos/wrongstack/wrongstack.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-WrongStack exists to demonstrate a complete coding agent built from scratch rather than wrapping third-party agent CLIs. Its compact kernel (~1,670 lines) rests on four primitives (Container, Pipeline
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A complete, from-scratch agent (not a wrapper or orchestration kit) with its own compact kernel (~1,670 lines), 61 built-in tools, 77-role multi-agent fleet, SAGE persistent memory (SQLite/FTS5), inter-agent mailbox, Chimera auto-review, 6 surfaces (REPL, TUI, WebUI, SimpleUI, Desktop, HQ), all working standalone with no third-party CLI dependency. --no-features runs fully offline.
+
+(captured site page body (agents/wrongstack.md), not a verified repo-code finding)
+WrongStack exists to demonstrate a complete coding agent built from scratch rather than wrapping third-party agent CLIs. Its compact kernel (~1,670 lines) rests on four primitives (Container, Pipeline, EventBus, RunController) and can boot fully offline with --no-features. Around it run 61 first-party built-in tools, a 77-role multi-agent fleet dispatched under a Director with per-subagent budgets and JSONL transcripts, SAGE persistent memory (SQLite/FTS5) that stores typed facts, decisions, conventions, and bug root causes anchored to files, symbols, and commits, and a SQLite-backed inter-agent mailbox. Support extends to roughly 140 model providers, OAuth sign-in via ChatGPT or Claude subscriptions, per-role model routing with fallback chains, and six surfaces from REPL and TUI to an Electron desktop app. It is MIT-licensed, npm-installable, and heavily tested with tens of thousands of tests.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/wrongstack.md)

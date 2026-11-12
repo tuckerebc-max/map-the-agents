@@ -1,9 +1,9 @@
 # fullive-ai/anima
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ea1542ff8420 @ 5a37690defbc92d2
+Latest snapshot: commit ea1542ff8420 @ 120682280f899621
 
 ## Summary (orientation draft, not independently verified)
 

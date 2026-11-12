@@ -538,7 +538,6 @@
 - [wingman-ai](../entries/wingman-ai-d9fb593ba0.md)
 - [wisegpt](../entries/wisegpt-923a19d36f.md)
 - [workbuddy](../entries/workbuddy-141de36072.md)
-- [workgpt](../entries/workgpt-8bbf61394d.md)
 - [wrongstack](../entries/wrongstack-84c1360faf.md)
 - [xcode-coding-intelligence](../entries/xcode-coding-intelligence-9cdc21d6b1.md)
 - [xpreiide](../entries/xpreiide-de5a8ded9f.md)

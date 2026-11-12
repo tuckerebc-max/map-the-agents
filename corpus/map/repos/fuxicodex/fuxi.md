@@ -1,9 +1,9 @@
 # fuxicodex/fuxi
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ab2785904754 @ 2d08cae774751f9b
+Latest snapshot: commit f70cb3a1cec6 @ ac350336e456c2d3
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: almogdepaz
@@ -22,6 +22,8 @@ Repository map entry: [almogdepaz/wolfpack](../../repos/almogdepaz/wolfpack.md) 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Wolfpack gives developers a self-hosted control room for AI coding agents running on their own machines, reachable from a desktop browser or phone PWA over a private Tailscale network with no hosted r
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Self-hosted browser terminal manager for AI coding agents; persistent PTY-backed sessions live in a Rust broker (not the web server) so server restarts/upgrades don't kill running agents; fully self-hosted with direct private Tailnet access and no Wolfpack-hosted relay or account; multi-machine control room with handshake-verified peers; phone PWA, desktop terminal grid, and direct wolfpack attach; Agent Skills (wolfpack-tailnet-control) and Pi ...
+
+(captured site page body (agents/wolfpack.md), not a verified repo-code finding)
+Wolfpack gives developers a self-hosted control room for AI coding agents running on their own machines, reachable from a desktop browser or phone PWA over a private Tailscale network with no hosted relay or account. Its two-part design separates the web server from a Rust PTY broker that owns sessions, so restarting the web server or closing the browser does not kill running agents. The dashboard shows live session previews, needs-input states, and handshake-verified Wolfpack peers on the Tailnet, with harness choices including Claude Code, Codex, Gemini CLI, Cursor, and Pi. Parent and child agent spawning with a task gateway supports orchestration, and Agent Skills (wolfpack-tailnet-control, wolfpack-pi-task-delegation) extend external harnesses. It installs via a curl setup wizard with Tailscale-based private access and JWT/ACL options.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/wolfpack.md)

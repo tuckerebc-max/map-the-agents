@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-westworld adapts the Unity ML-Agents style of multi-agent simulation to Python for people modeling interacting-agent systems in logistics, retail, or epidemiology, including optimization via heuristic
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Multi-agent simulation library inspired by Unity ML Agents for simulating and optimizing systems with interacting agents (logistics, retail, epidemiology); includes grid/non-grid environments, automatic maze generation, image-to-obstacle layer, simulation visualization with replay and GIF/video export.
+
+(captured site page body (agents/westworld-simulation.md), not a verified repo-code finding)
+westworld adapts the Unity ML-Agents style of multi-agent simulation to Python for people modeling interacting-agent systems in logistics, retail, or epidemiology, including optimization via heuristics and reinforcement learning. It provides grid and non-grid environments, subclassable agents, obstacles, collectibles, and triggers, behaviors such as pathfinding, wandering, and fleeing, plus automatic maze generation and image-to-obstacle conversion. Visualizations support replay and GIF/video export through PyGame. The project is an alpha release by a single contributor, with docs that may lag the code, and it is explicitly not a coding agent. It is used for teaching and prototyping multi-agent simulations, with RL integration on the roadmap.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/westworld-simulation.md)

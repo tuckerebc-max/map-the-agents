@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [mulkymalikuldhrs/opencode-android](../repos/mulkymalikuldhrs/opencode-android.md) [coverage: partial]
-- [multiplayer-app/multiplayer](../repos/multiplayer-app/multiplayer.md) [coverage: complete]
-- [mvanhorn/agentcookie](../repos/mvanhorn/agentcookie.md) [coverage: partial]
 - [mybono/ai-orchestrator](../repos/mybono/ai-orchestrator.md) [coverage: complete]
 - [nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads](../repos/nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads.md) [coverage: complete]
 - [nahimnasser/pu](../repos/nahimnasser/pu.md) [coverage: complete]
@@ -417,7 +414,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (162)
+## stale (164)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +448,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
 - [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
 - [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
+- [apvcode/termux-dev](../repos/apvcode/termux-dev.md) [coverage: complete]
+- [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
+- [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]

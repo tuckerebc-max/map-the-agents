@@ -48,4 +48,5 @@
 - [tiny-agent](../entries/tiny-agent-706b885d0f.md)
 - [trueforge](../entries/trueforge-abc6c4c218.md)
 - [vendo](../entries/vendo-4afc0da2f9.md)
+- [workgpt](../entries/workgpt-8bbf61394d.md)
 - [yagents](../entries/yagents-0eb9dfab0a.md)

@@ -1,9 +1,10 @@
 # fw-ai/fireconnect
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit cc1d84179115 @ fd64e0c6a586cbaf
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/fw-ai/fireconnect
 
 ## Summary (orientation draft, not independently verified)
 

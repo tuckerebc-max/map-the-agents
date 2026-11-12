@@ -3,11 +3,11 @@
 Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
 - [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) -- status=distilled, freshness=stale
-- [fullive-ai/anima](../repos/fullive-ai/anima.md) -- status=distilled, freshness=current
+- [fullive-ai/anima](../repos/fullive-ai/anima.md) -- status=distilled, freshness=stale
 - [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) -- status=distilled, freshness=current
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) -- status=distilled, freshness=current
-- [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) -- status=distilled, freshness=current
-- [fw-ai/fireconnect](../repos/fw-ai/fireconnect.md) -- status=distilled, freshness=current
+- [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) -- status=distilled, freshness=stale
+- [fw-ai/fireconnect](../repos/fw-ai/fireconnect.md) -- status=distilled, freshness=refresh-failed
 - [fy0/codekanban](../repos/fy0/codekanban.md) -- status=distilled, freshness=current
 - [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) -- status=distilled, freshness=current
 - [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) -- status=distilled, freshness=current

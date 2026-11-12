@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent-sdk
 - Provider/maker: genlayerlabs
@@ -22,6 +22,8 @@ Repository map entry (renamed): original lead [yeagerai/yeagerai-agent](https://
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-yAgents provided an interactive CLI for building, prototyping, and deploying Langchain-based agents, letting users create agents and tools on the fly within a session with persistent memory across ses
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): First Langchain Agent creator designed to build, prototype, and deploy AI-powered agents with on-the-fly agent/tool creation, interactive CLI, session persistent memory, and full Langchain ecosystem integration. Project discontinued and re-emerged as 'subzeroclaw'.
+
+(captured site page body (agents/yagents.md), not a verified repo-code finding)
+yAgents provided an interactive CLI for building, prototyping, and deploying Langchain-based agents, letting users create agents and tools on the fly within a session with persistent memory across sessions. It integrated with the broader Langchain ecosystem for tools, chains, and agents, and it targeted developers prototyping AI agents rather than writing application code. The project was discontinued and later re-emerged under the subzeroclaw name. Its original audience was developers wanting a quick CLI-based LangChain agent workbench.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/yagents.md)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: GoogleCloudPlatform
@@ -22,6 +22,8 @@ Repository map entry: [googlecloudplatform/workflows-samples](../../repos/google
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-This repository collects official sample workflow definitions (*.workflows.yaml and generated JSON) for Google Cloud Workflows, Google Cloud's serverless orchestration service. The samples demonstrate
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Official Google Cloud Platform samples repository for Google Cloud Workflows; contains workflow definitions as *.workflows.yaml/json files with JSON generated from YAML equivalents; JSON schema syntax autocompletion support; quick deploy-and-run workflow via gcloud CLI. Not a coding agent harness.
+
+(captured site page body (agents/workflows-samples.md), not a verified repo-code finding)
+This repository collects official sample workflow definitions (*.workflows.yaml and generated JSON) for Google Cloud Workflows, Google Cloud's serverless orchestration service. The samples demonstrate YAML/JSON workflow syntax, JSON-schema-based autocompletion support, and quick deploy-and-run through the gcloud CLI. It contains no AI or agent components; it is documentation material for a cloud orchestration service and is included in the census only as a boundary case. GCP developers use it to learn Workflows syntax by example.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/workflows-samples.md)
