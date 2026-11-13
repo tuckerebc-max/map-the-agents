@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
-- [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
-- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]
 - [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) [coverage: partial]
 - [athasdev/athas](../repos/athasdev/athas.md) [coverage: complete]
 - [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
@@ -131,6 +128,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) [coverage: partial]
 - [fullive-ai/anima](../repos/fullive-ai/anima.md) [coverage: partial]
 - [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) [coverage: partial]
+- [fy0/codekanban](../repos/fy0/codekanban.md) [coverage: partial]
+- [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) [coverage: partial]
+- [gastownhall/gastown](../repos/gastownhall/gastown.md) [coverage: partial]
 
 ## refresh-failed (69)
 

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: multiplexer
 - Provider/maker: YaoApp
@@ -22,6 +22,8 @@ Repository map entry: [yaoapp/yao](../../repos/yaoapp/yao.md) (source: backing, 
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Yao began as a Go application engine and has been repositioned as a self-hosted, local-first AI agent platform where agents run on the owner's own devices and data stays local. Each workspace is isola
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Self-hosted, local-first, own-your-data agent platform where agents run on your own devices across desktop/mobile/browser/API. Workspaces are isolated, conversations become tasks on a board, and expert/task agents integrate into apps via Open API (SSE and WebSocket).
+
+(captured site page body (agents/yao.md), not a verified repo-code finding)
+Yao began as a Go application engine and has been repositioned as a self-hosted, local-first AI agent platform where agents run on the owner's own devices and data stays local. Each workspace is isolated, and work accumulated across a user's computers accumulates into documents that form a knowledge base readable by agents on any node. Conversations become tasks on a board, and tasks repeated over time grow into purpose-built agents that can connect to apps or be shared, with expert and task agents integrated through an Open API supporting SSE and WebSocket. MCP registry integration and an integrated DeepSeek harness are built in, and access spans desktop, mobile, browser, and API, with Yao Desktop on yaoagents.com. The project is open source (Go), actively developed, with a 7.8k-star community and Discord support.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/yao.md)

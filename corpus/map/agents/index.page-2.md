@@ -8,11 +8,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) -- status=distilled, freshness=current
 - [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) -- status=distilled, freshness=stale
 - [fw-ai/fireconnect](../repos/fw-ai/fireconnect.md) -- status=distilled, freshness=refresh-failed
-- [fy0/codekanban](../repos/fy0/codekanban.md) -- status=distilled, freshness=current
+- [fy0/codekanban](../repos/fy0/codekanban.md) -- status=distilled, freshness=stale
 - [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) -- status=distilled, freshness=current
-- [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) -- status=distilled, freshness=current
+- [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) -- status=distilled, freshness=stale
 - [gary95271/xuanji-landing](../repos/gary95271/xuanji-landing.md) -- status=distilled, freshness=current
-- [gastownhall/gastown](../repos/gastownhall/gastown.md) -- status=distilled, freshness=current
+- [gastownhall/gastown](../repos/gastownhall/gastown.md) -- status=distilled, freshness=stale
 - [gcwing/bitfun](../repos/gcwing/bitfun.md) -- status=blocked, freshness=refresh-failed
 - [gcwing/openbitfun](../repos/gcwing/openbitfun.md) -- status=distilled, freshness=current
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- status=blocked, freshness=refresh-failed

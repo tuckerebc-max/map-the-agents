@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ZeroPath
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-ZeroPath targets the failure mode of traditional SAST: a finding is reported, but producing an actual fix remains a human project. The platform scans repository fleets without requiring build configur
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI-native scanning + verified security patches; RSAC 2026 Innovation Sandbox
+
+(captured site page body (agents/zeropath.md), not a verified repo-code finding)
+ZeroPath targets the failure mode of traditional SAST: a finding is reported, but producing an actual fix remains a human project. The platform scans repository fleets without requiring build configuration, using AI-driven analysis to catch business-logic flaws and auth bypasses that rule-based scanners miss. Its distinguishing step is agentic patching — for confirmed vulnerabilities an agent drafts a change that must compile, pass tests, and merge cleanly before it is proposed, turning scanner output into mergeable pull requests. Around that core sit complementary scanners: dependency analysis weighted by reachability, secrets detection across 40+ file types with validation, infrastructure-as-code scanning for Terraform and Kubernetes, container scanning, DAST with exploit proof, and continuous security review of pull requests. A versioned policy engine lets teams codify security requirements as testable rules, findings sync to Jira, Linear, or ServiceNow, and an AI inventory discovers models, agents, and MCP servers in customer codebases for AI-BOM compliance. A separate assistant agent, Zero, runs AppSec program tasks such as bug-bounty triage. Sold demo-first with cloud, hybrid, or on-prem deployment, it targets security engineering teams; the company was an RSAC 2026 Innovation Sandbox finalist and reports 300,000+ monthly scans.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/zeropath.md)

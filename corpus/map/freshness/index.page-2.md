@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [mybono/ai-orchestrator](../repos/mybono/ai-orchestrator.md) [coverage: complete]
-- [nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads](../repos/nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads.md) [coverage: complete]
-- [nahimnasser/pu](../repos/nahimnasser/pu.md) [coverage: complete]
 - [nam271212/strategic-advisor-orchestrator](../repos/nam271212/strategic-advisor-orchestrator.md) [coverage: complete]
 - [nano-collective/nanocoder](../repos/nano-collective/nanocoder.md) [coverage: partial]
 - [nanocoai/nanoclaw](../repos/nanocoai/nanoclaw.md) [coverage: partial]
@@ -414,7 +411,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (164)
+## stale (167)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +448,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [apvcode/termux-dev](../repos/apvcode/termux-dev.md) [coverage: complete]
 - [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
 - [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]
+- [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
+- [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
+- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]

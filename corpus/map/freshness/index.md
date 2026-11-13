@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (820)
+## current (817)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -168,11 +168,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) [coverage: complete]
 - [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) [coverage: complete]
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) [coverage: complete]
-- [fy0/codekanban](../repos/fy0/codekanban.md) [coverage: partial]
 - [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) [coverage: complete]
-- [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) [coverage: partial]
 - [gary95271/xuanji-landing](../repos/gary95271/xuanji-landing.md) [coverage: complete]
-- [gastownhall/gastown](../repos/gastownhall/gastown.md) [coverage: partial]
 - [gcwing/openbitfun](../repos/gcwing/openbitfun.md) [coverage: partial]
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) [coverage: complete]
 - [generalaction/emdash](../repos/generalaction/emdash.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mulkymalikuldhrs/opencode-android](../repos/mulkymalikuldhrs/opencode-android.md) [coverage: partial]
 - [multiplayer-app/multiplayer](../repos/multiplayer-app/multiplayer.md) [coverage: complete]
 - [mvanhorn/agentcookie](../repos/mvanhorn/agentcookie.md) [coverage: partial]
+- [mybono/ai-orchestrator](../repos/mybono/ai-orchestrator.md) [coverage: complete]
+- [nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads](../repos/nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads.md) [coverage: complete]
+- [nahimnasser/pu](../repos/nahimnasser/pu.md) [coverage: complete]

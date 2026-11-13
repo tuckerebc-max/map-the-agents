@@ -1,10 +1,10 @@
 # gastownhall/gastown
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: steveyegge/gastown (github id 1117184424).
-Latest snapshot: commit 649b832b7672 @ 46e632c92880ab13
+Latest snapshot: commit 94cc82289d2e @ 2590ff5a192bf549
 
 ## Summary (orientation draft, not independently verified)
 

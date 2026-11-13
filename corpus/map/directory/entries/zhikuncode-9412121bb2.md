@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: zhikunqingtao
@@ -22,6 +22,8 @@ Repository map entry: [zhikunqingtao/zhikuncode](../../repos/zhikunqingtao/zhiku
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-zhikuncode inverts the usual client-side architecture: instead of a desktop app or terminal TUI, the agent runs as a self-hosted Docker stack and every interaction — conversation, permission approvals
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Browser-based full-process control of an AI coding agent (no client install, works on phone/iPad); 8-layer Bash security sandbox; 6-layer context compression cascade; SWE-bench Lite 56.0%; native Chinese LLM support
+
+(captured site page body (agents/zhikuncode.md), not a verified repo-code finding)
+zhikuncode inverts the usual client-side architecture: instead of a desktop app or terminal TUI, the agent runs as a self-hosted Docker stack and every interaction — conversation, permission approvals, plan negotiation, file browsing, terminal — happens in a browser tab, which means an instance deployed once is controllable from a laptop, tablet, or phone. Internally it is three services in one container: a Java/Spring Boot orchestration engine running the agent loop with SQLite-backed sessions, a React front end with Monaco editor and xterm.js terminal, and a Python FastAPI sidecar for AST analysis and MCP bridging. Security gets the deepest treatment: shell commands pass eight layers from parsing and blacklist filtering through Docker sandboxing with read-only filesystems and network isolation to output sanitization and audit logging, all funneled through a single authorization gateway with scoped, time-bounded approvals. Context management uses a six-layer compression cascade rather than naive truncation, and a self-correction loop retries failed fixes. Model support centers on Chinese providers — DashScope/Qwen, DeepSeek, Kimi, Zhipu GLM, MiniMax — plus OpenAI-compatible endpoints and offline Ollama, which matters for users behind the Great Firewall. Multi-agent operation ships in three modes (Team, Swarm, SubAgent) with isolation levels, and the project publishes a reproducible SWE-bench Lite score of 56.0% using a single qwen3.7-max model with a six-tool closed set. It is used by developers who want a phone-accessible, self-hosted agent with native Chinese LLM support.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/zhikuncode.md)

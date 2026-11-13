@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: yeoman
@@ -22,6 +22,8 @@ Repository map entry: [yeoman/yeoman](../../repos/yeoman/yeoman.md) (source: bac
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-Yeoman is a long-established (pre-LLM) scaffolding ecosystem: a generator runner plus a workflow that bootstraps web applications from npm-published generator packages, with support for composing cust
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Traditional development workflow and scaffolding tool (not an AI agent). Robust, opinionated workflow with a wide ecosystem of generators to quickly bootstrap and automate web application scaffolding. Supports custom generators across the organization's repositories.
+
+(captured site page body (agents/yeoman.md), not a verified repo-code finding)
+Yeoman is a long-established (pre-LLM) scaffolding ecosystem: a generator runner plus a workflow that bootstraps web applications from npm-published generator packages, with support for composing custom generators across an organization's repositories. It contains no AI or agent components; it is included in the census only as a boundary case marking what scaffolding looked like before agents. Its audience is web developers bootstrapping projects, and it remains mature but low-churn under the Google/BSD-licensed umbrella repo.
+Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/yeoman.md)

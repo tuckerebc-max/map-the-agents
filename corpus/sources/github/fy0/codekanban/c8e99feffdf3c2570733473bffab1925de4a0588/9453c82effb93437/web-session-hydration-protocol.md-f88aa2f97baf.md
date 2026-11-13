@@ -1,0 +1,286 @@
+# WebSession Hydration Protocol
+
+WebSession uses one authoritative full-state transport, one cursor-based
+catch-up transport, and two WebSocket channels. A logical mutation must never
+return the same full history through more than one channel.
+
+## Transport ownership
+
+| Transport                      | Responsibility                                 | Full history allowed |
+| ------------------------------ | ---------------------------------------------- | -------------------- |
+| `GET .../snapshot`             | Conditional full hydration                     | Yes                  |
+| `GET .../catch-up`             | Event-cursor delta for one focused session     | No                   |
+| `POST /web-sessions/reconcile` | Conditional summary recovery                   | No                   |
+| Other HTTP endpoints           | Mutation result and hydration target           | No                   |
+| Command WebSocket              | Command ack or command-specific compact result | No                   |
+| Event WebSocket                | Session summary and focused incremental state  | No                   |
+
+The conditional snapshot response is either:
+
+- a complete snapshot at `revision`; or
+- `{ revision, historyEpoch, eventCursor, pendingEpoch, pendingVersion,
+pendingInputs, unchanged: true }` when `knownRevision` is current.
+
+Snapshot is a pure database read. It does not clear unread state, repair
+counters, or contact the App Server. Source reconciliation remains an explicit
+`sync` operation. This ensures that switching to a cached session cannot turn a
+read into an expensive source reload.
+
+Pending state is always included because it has an independent in-memory clock
+and can change without advancing `revision`.
+
+Token generation speed is also ephemeral. Every conditional snapshot includes
+`tokenSpeed`, including unchanged responses; summaries carry the same value
+(`tsp` on the wire). Focus heartbeats deliver the latest sample after pending
+state. Focused event clients receive `op: "token_speed"` with the semantic
+`TokenSpeed` object in `p`, independently of history revisions and cursors.
+Clients order samples by `epoch` and `version`, retire old process epochs, and
+must not let a stale summary overwrite a newer sample. Telemetry never changes
+activity, unread state, or the durable revision and is not recovered by replay.
+The latest sample remains in memory until a new run or context reset; after a
+server restart the rate is unavailable until generation produces a new sample.
+
+Mutation HTTP responses that require hydration return a target containing
+`session` and `revision`. The client normally catches up from its hydrated event
+cursor. An explicit `resync_required` notice always forces a full snapshot.
+
+Codex Fast mode is a durable session setting (`codexFastMode` in HTTP summaries
+and create requests, `cfm` in wire summaries and create payloads). The
+`set_cfm` command requires `{ "cfm": true | false }`, returns a revision ack,
+and publishes the updated summary through the event channel. It defaults to
+false and resets when switching agents. The next Codex run explicitly selects
+the `priority` service tier when enabled or `default` when disabled, including
+when resuming a native thread. Existing databases gain the `codex_fast_mode`
+column through the normal GORM auto-migration.
+
+## Event cursor and history epoch
+
+A full snapshot establishes `(historyEpoch, eventCursor)`. The cursor has the
+form `eventSequence:orderIndex`; a snapshot baseline ends at
+`eventSequence:9223372036854775807`.
+
+`GET .../catch-up` receives the last hydrated cursor and epoch. Its first page
+also fixes a target cursor, which subsequent pages reuse. This gives one stable
+catch-up window while new events continue to arrive. History items carry their
+last event sequence so an older HTTP response cannot overwrite a newer
+WebSocket update for the same item.
+
+Operations that replace, delete, compact, or reorder cached history increment
+`historyEpoch`. A mismatched epoch returns `resetRequired: true`; the browser
+keeps the cached timeline visible while replacing it from snapshot. Ordinary
+append and in-place event projections retain the epoch and are recoverable by
+cursor.
+
+## Resume reconciliation
+
+When a page becomes visible, receives window focus, is restored from page cache,
+or reconnects its event stream, the browser conditionally reconciles session
+summaries before hydrating the focused conversation. While the page remains
+visible and has a locally non-terminal session, a singleton fallback loop also
+reconciles every 25 to 30 seconds. The loop stops when the page is hidden or no
+session needs reconciliation, and resumes immediately when visibility returns.
+
+The request contains at most 256 `{ id, revision }` targets: every locally
+non-terminal session, every session with a waiting scheduled input, the focused
+session, and up to 48 other sessions active
+within the last six hours.
+
+The server reads only those IDs and returns:
+
+- complete summaries whose revision changed; and
+- `missingIds` tombstones for sessions deleted while the client was away.
+
+Unchanged targets produce no response item. This keeps resume traffic bounded
+when a user has hundreds of sessions and avoids loading any conversation history
+until the focused session actually requires hydration. Background sessions
+receive summaries only. Detailed history, scheduled-input, and sub-agent frames
+are sent only for the session named by the connection's focus heartbeat.
+Session summaries include `hasScheduledInput` (`hsi` on the wire), including an
+explicit `false` when no input is waiting. Every scheduled-input change also
+publishes a summary, so background waiting markers update without loading the
+scheduled-input details. Session completion does not itself clear this flag:
+a completed session can still have a future scheduled input.
+When fallback reconciliation advances that focused session's revision, the
+client starts its ordinary cursor-based catch-up so the visible timeline and
+summary converge together.
+
+## WebSocket envelope
+
+All frames use protocol version `1` and the compact envelope:
+
+```json
+{
+  "v": 1,
+  "k": "ack | evt | err | hb",
+  "sid": "session-id",
+  "rev": "42",
+  "pe": "process-epoch",
+  "pv": 7,
+  "pi": [],
+  "ts": 1787664000000,
+  "op": "operation",
+  "p": {}
+}
+```
+
+`snap` is not a valid frame kind. The server rejects unsupported protocol
+versions, and the browser rejects unknown versions and frame kinds.
+
+Acknowledgement fields depend on the operation:
+
+- durable mutations and a `send` that starts a new turn contain the committed
+  `rev`;
+- `pending_del`, `pending_update`, `pending_reorder`, `pending_clear`, and a
+  queued `send` contain `pe`, `pv`, and the complete `pi` snapshot, with no
+  durable `rev` read or write;
+- read commands return their compact result in `p`. For example, `goal_get`
+  returns `p.goal`, including `null` when no goal exists.
+- `mark_read` carries the last observed attention revision in `p.ar`. Its ack
+  returns the authoritative unread state and attention revision without changing
+  the content revision.
+
+An empty pending queue is encoded as `"pi": []`, not by omitting `pi`.
+
+Codex async questions arrive as assistant history items with
+`dt.type = "async_user_input_request"` and normalized `dt.questions`. They do
+not create a blocking user-input request or change the session to waiting input.
+The `async_user_input` command accepts `{ "iid": "history-row-id", "ans":
+{ "0": ["answer"] } }`, with one answer per question. It sends an ordinary
+user message through the redirect path (or starts a turn when idle), then updates
+the original item's `dt.action` to `"submitted"` and `dt.answers`. Its ACK
+contains the committed `rev`. Duplicate submissions for a submitted item are
+acknowledged without sending another message. Fast and deep history sync retain
+the questions and locally submitted answers.
+
+The event channel may send:
+
+- `session`: compact session summary;
+- `hist_item` and `hist_page`: incremental history data;
+- `pending` and `scheduled`: transient input state;
+- `sub_agent`: one sub-agent registry update;
+- `resync_required`: a lightweight hydration notice.
+
+After opening an event stream for one session, a client sends a
+`{ "k": "hb", "op": "focus", "sid": "..." }` heartbeat. The server immediately
+returns an authoritative `pending` event for that session, including an empty
+queue. The browser repeats this heartbeat when focus changes.
+
+A resync notice contains only the envelope and an optional reason:
+
+```json
+{
+  "v": 1,
+  "k": "evt",
+  "sid": "session-id",
+  "rev": "42",
+  "ts": 1787664000000,
+  "op": "resync_required",
+  "p": { "reason": "history_reconciled" }
+}
+```
+
+## Revision rules
+
+`snapshot_revision` identifies recoverable session state.
+
+1. A durable business mutation advances the revision in its existing database
+   write or transaction.
+2. Broadcasting a summary or resync notice reuses that committed revision and
+   never performs another SQLite update.
+3. Scheduled state remains recoverable through the durable revision. Pending
+   state does not update or read `snapshot_revision`; it uses the independent
+   pending clock described below.
+4. Snapshot never repairs stale history counters. Repair belongs to an explicit
+   maintenance or synchronization path.
+5. Read-only refreshes, including `goal_get`, do not write or advance the
+   revision when the fetched state is unchanged.
+
+## Client revision clocks
+
+The browser tracks three revisions per session:
+
+- `observed`: highest revision seen on any server response;
+- `applied`: highest revision incorporated through a snapshot or incremental event;
+- `hydrated`: highest revision loaded from the full HTTP snapshot endpoint.
+
+Only `hydrated` may be sent as `knownRevision`. Incremental events can advance
+`observed` and `applied`, but they do not prove that the complete baseline is
+current. Separately, the client stores the hydrated history epoch and event
+cursor. Focused history frames advance that cursor only to the individual item
+that was applied; a catch-up response advances it to the response page boundary.
+
+## Attention clock
+
+Unread state is independent from content hydration. Each background attention
+event sets `hasUnread` and increments `attentionRevision`. After catch-up has
+settled and the updated timeline has rendered, the browser sends `mark_read`
+asynchronously with the revision it actually observed.
+
+The database clears unread state only when both `hasUnread` and
+`attentionRevision` still match. A newer background event therefore wins over a
+stale mark-read request. Clearing unread advances the attention revision but not
+`snapshot_revision`, so viewing a session never creates another content
+hydration cycle. Clients merge unread state independently by
+`attentionRevision`, so an older session summary cannot overwrite a newer
+mark-read acknowledgement.
+
+## Pending clock
+
+Pending state uses `(pendingEpoch, pendingVersion)` (`pe`, `pv`) independently
+of the durable revision:
+
+1. `pendingEpoch` is generated once per server process.
+2. `pendingVersion` increases monotonically per session whenever its in-memory
+   pending snapshot changes.
+3. A different epoch replaces the client's pending baseline. Within one epoch,
+   only a higher version is applied; duplicate or lower versions are ignored.
+4. Every pending event and pending-only acknowledgement carries the complete
+   `pi` snapshot. Conditional HTTP snapshots carry the same fields, including
+   when the durable snapshot is unchanged.
+
+This lets pending broadcast, focus recovery, and command acknowledgement avoid
+SQLite revision contention while remaining deterministic for clients.
+
+## Redirect undo window
+
+The five-second redirect undo window belongs to the browser, not the server or
+database. A new redirect is staged in per-tab `sessionStorage`; during the
+window the browser does not open the command WebSocket or send the command.
+Queue input is sent immediately.
+
+Editing, resuming, or promoting an existing server item first leaves the
+authoritative item paused, then starts the same local window. Switching sessions
+does not stop its timer. Restoring a tab gives active staged items a fresh five
+seconds. When dispatch fails, the item remains paused with `failed` state and is
+not retried automatically. Stable pending IDs make a resend after a lost ACK
+idempotent within the server process.
+
+## Resync scheduling
+
+For each session, the client hydration queue:
+
+1. skips a notice already covered by `hydrated`;
+2. coalesces duplicate notices into one in-flight hydration request;
+3. retains only the highest requested revision;
+4. runs one trailing request when a higher revision arrives during hydration;
+5. accepts detailed resync notices only for the event stream's currently
+   focused session and cancels queued or in-flight hydration when focus leaves;
+6. retries an unresolved sequence only after exponential backoff, with a
+   bounded attempt budget shared across revisions in a short time window;
+   useful progress does not reset that budget until the observed revision is
+   covered, and the circuit stops scheduling work when the budget is exhausted.
+
+Ordinary revision recovery uses event-cursor catch-up. A changed history epoch
+or explicit resync reason uses snapshot. This keeps recovery idempotent while
+preventing command ack, HTTP fallback, and event reconciliation from starting
+parallel full hydrations. Catch-up also aborts to one snapshot when a page limit
+is reached or the server returns a non-advancing cursor, so malformed responses
+cannot create an unbounded request loop.
+
+Route-driven activation is coordinated separately because an unknown deep-link
+session has no revision clock yet. The client locks the route target before
+loading the project session list, coalesces URL writes and duplicate activations,
+and applies the same exponential backoff and bounded attempt window to snapshots
+needed to resolve an unknown target. A newer route, an inactive panel, or leaving
+the web-session workspace cancels the previous activation without restarting
+project initialization.

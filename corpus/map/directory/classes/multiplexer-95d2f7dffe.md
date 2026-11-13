@@ -239,4 +239,3 @@
 - [workstreams](../entries/workstreams-7968458f5f.md)
 - [xcoding](../entries/xcoding-4fb7749c42.md)
 - [yao](../entries/yao-e2813bdf6e.md)
-- [zellij](../entries/zellij-2aba4e52c8.md)

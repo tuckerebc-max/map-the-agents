@@ -1,0 +1,552 @@
+# Implantação de Streamable HTTP
+
+<p align="right">
+  <a href="streamable-http.md">English</a> • <b>Português</b> • <a href="streamable-http.zh.md">中文</a>
+</p>
+
+> [!NOTE]
+> Tradução do [guia em inglês](streamable-http.md), que é a referência canônica e pode estar mais atualizado.
+
+O Winx expõe um conjunto configurável de ferramentas MCP através de um endpoint autenticado **Streamable HTTP** para ChatGPT, agentes hospedados na nuvem, automação remota e clientes que não podem iniciar um processo stdio local. O endpoint é `/mcp`; o listener padrão é `127.0.0.1:8000` e o perfil de ferramentas padrão continua sendo `full`.
+
+Como esse endpoint concede recursos reais de shell e acesso ao sistema de arquivos, o Winx adota a postura de segurança **fail-closed**: exige credenciais fortes, recusa conexões fora do loopback a menos que explicitamente autorizado, impõe limites de custo de requisição e isola rigorosamente cada principal autenticado.
+
+## Visão Geral
+
+| Propriedade | Padrão |
+| :--- | :--- |
+| Endpoint MCP | `/mcp` |
+| Protocolo MCP | `2026-07-28` |
+| Listener | `127.0.0.1:8000` |
+| Autenticação | `Authorization: Bearer <token>` |
+| Comprimento mínimo do token | 32 bytes |
+| Afinidade de sessão remota | `workspace` |
+| Limite de corpo da requisição | 16 MiB |
+| Timeout de requisição | 120 segundos |
+| Concorrência global | 32 requisições simultâneas |
+| Limite por IP de origem | 120 falhas de autenticação por minuto |
+| Rate limit por principal | 120 requisições por minuto |
+| Atraso em falha de autenticação | 100 ms |
+| TTL de guardian nunca utilizado | 1.800 segundos (30 minutos) |
+| TTL de guardian utilizado | 86.400 segundos (24 horas) |
+| Quota de guardians ativos | 32 |
+
+O Winx suporta chamadas MCP stateless modernas e o fluxo legado de inicialização/sessão HTTP. As mesmas ferramentas, prompts, recursos, conteúdo estruturado e MCP Tasks estão disponíveis via HTTP e stdio.
+
+## Arquitetura
+
+```text
+Cliente MCP Remoto
+       │ HTTPS + bearer token
+       ▼
+Túnel privado / VPN / Proxy reverso HTTPS autenticado
+       │ loopback HTTP
+       ▼
+127.0.0.1:8000/mcp
+       │
+       ├─ Validação de Host e corpo da requisição
+       ├─ Limites de timeout, taxa e concorrência
+       ├─ Autenticação de principal
+       ├─ Resolução de afinidade de sessão
+       └─ Isolamento de thread_id / MCP Task
+              │
+              ▼
+        WinxService compartilhado
+              │
+              ▼
+            winxd (daemon de controle)
+              │
+              └─ winx-guardian por sessão lógica
+                         │
+                         └─ PTY real / bash ou zsh / tarefas em primeiro e segundo plano
+```
+
+No Linux, macOS, WSL2 e Windows nativo, o `winx-code-agent` atua apenas como o adaptador MCP. O `winxd` gerencia o plano de controle, enquanto cada `winx-guardian` controla um PTY independente. Encerrar a conexão HTTP ou reiniciar o adaptador não encerra o PTY. No Unix o transporte são sockets Unix no diretório de runtime do usuário; no Windows são named pipes derivados de arquivos-marcadores em `%LOCALAPPDATA%\winx\run`, e cada shell roda dentro de um job object para que toda a árvore de processos termine com a sessão. Use `WINX_RUNTIME=embedded` para manter tudo dentro do processo do servidor.
+
+## Início Rápido
+
+Instale os três binários para Unix:
+
+```bash
+cargo install winx-code-agent
+```
+
+Gere um token forte em um arquivo protegido (apenas leitura do usuário):
+
+```bash
+mkdir -p ~/.config
+install -m 600 /dev/null ~/.config/winx-http-token
+openssl rand -hex 32 > ~/.config/winx-http-token
+```
+
+Inicie o Winx no loopback:
+
+```bash
+winx-code-agent serve --http \
+  --bind 127.0.0.1:8000 \
+  --token-file ~/.config/winx-http-token
+```
+
+Configure o cliente com:
+
+```text
+URL: http://127.0.0.1:8000/mcp
+Authorization: Bearer <conteúdo de ~/.config/winx-http-token>
+```
+
+Clientes na nuvem necessitam de uma URL HTTPS pública. Mantenha o Winx em loopback e coloque um túnel privado, VPN ou proxy reverso HTTPS autenticado à frente. O Winx não realiza terminação TLS diretamente.
+
+O uso de `--token-file` é preferível a `--token`, pois segredos passados por linha de comando podem ser expostos na lista de processos do sistema (`ps`), histórico do shell e logs de automação. A variável de ambiente `WINX_HTTP_TOKEN` permanece disponível como fallback para modo single-principal.
+
+## Coerência da Sessão com o Workspace
+
+O `Initialize` remoto retorna dois valores que formam um único vínculo de sessão:
+
+```text
+thread_id + workspace_root
+```
+
+Copie os dois valores sem alterações em todas as chamadas stateful seguintes. Antes de selecionar um PTY ou executar
+qualquer operação, o Winx valida se a afinidade da thread, a raiz canônica informada e a sessão inicializada combinam.
+Vínculos ausentes ou misturados retornam um resultado estruturado `needs_initialize`/`conflict` e não chegam ao shell nem
+ao filesystem.
+
+Se o par estiver ausente ou misturado, primeiro reutilize o par exato já retornado para o workspace pretendido.
+Esses erros informam `operation_executed=false`, `binding_changed=false` e
+`recovery_strategy="reuse_valid_pair_or_initialize"`. Se o par correto não estiver disponível, siga o fallback de
+`Initialize` uma vez e use os valores retornados; não leve a thread rejeitada para essa chamada nem reinicie seu shell.
+Um conflito do próprio `Initialize` continua terminal e não oferece outra inicialização automática.
+
+Essa validação **não** restringe os alvos das ferramentas ao `workspace_root`. A raiz identifica o contexto de projeto
+que possui terminal, cwd, histórico de leitura e estado de edição. A autoridade de caminhos continua sendo uma política
+separada: por exemplo, `WINX_ALLOW_PATHS=/` ainda permite que uma sessão coerente opere em arquivos de apoio fora do
+projeto quando o modo ativo autoriza. Assim, trabalhos reais entre diretórios continuam possíveis sem um chat herdar
+silenciosamente o terminal de outro projeto.
+
+Para outro projeto, chame `Initialize` com `type="first_call"` e o novo caminho, e passe a usar o novo par retornado.
+Chamadas remotas `user_asked_change_workspace` falham de forma segura para que uma chave durável nunca seja redirecionada
+para outro projeto no mesmo lugar.
+Se um reinício do adapter remover o estado ativo do mesmo projeto, uma chamada posterior de `reset_shell` ou
+`user_asked_mode_change` será recuperada com segurança como `first_call`, preservando o par de thread/workspace informado.
+A resposta indica `initialize_recovered_missing_session=true`; trocas de workspace continuam falhando de forma segura.
+Com estado ativo, solicite `reset_shell` somente depois que `BashCommand` retornar uma falha tipada do runtime de shell.
+Um segundo reset dentro de cinco minutos, sem nova evidência de falha, retorna `reset_skipped_healthy` e preserva PTY,
+cwd, modo e contexto.
+
+## Afinidade de Sessão
+
+### Afinidade por Workspace (Padrão)
+
+A opção padrão é:
+
+```bash
+--session-affinity workspace
+```
+
+Para cada chamada remota `Initialize(first_call)`, o Winx deriva a sessão lógica a partir de:
+
+```text
+(principal autenticado, workspace canônico)
+```
+
+O `thread_id` enviado pelo cliente na primeira chamada não é considerado chave única durável. Variações estéticas geradas por modelos como:
+
+```text
+release_02333
+release_0_2_333
+```
+
+são mapeadas para o mesmo guardian interno quando pertencem ao mesmo principal e workspace. O Winx retorna um identificador externo estável (ex: `ws_project_<hash>`) e espera que as chamadas subsequentes utilizem esse ID retornado.
+
+Consequências:
+- Reconexões stateless reanexam à sessão existente em vez de criar um novo guardian;
+- Primeiras chamadas repetidas preservam o PTY, cwd, journal de saída e comandos em execução;
+- Principals diferentes mantêm namespaces totalmente isolados;
+- Conversas paralelas do **mesmo principal no mesmo workspace compartilham o mesmo shell** e seu lock de comandos em
+  foreground; uma segunda tentativa em foreground falha rapidamente com `command_already_running`, sem entrar em uma fila
+  oculta nem executar mais tarde, enquanto reanexos e sessões de outros projetos continuam responsivos;
+- Chamadas sem workspace compartilham uma sessão scratch por principal;
+- Retomadas de tarefas são indexadas pelo ID de tarefa salvo.
+
+### Afinidade por Conversa (`conversation`)
+
+Utilize:
+
+```bash
+--session-affinity conversation
+```
+
+quando conversas paralelas de um mesmo principal precisarem operar no mesmo repositório sem compartilhar o mesmo shell. O Winx deriva a chave a partir de:
+
+```text
+(principal autenticado, identidade da conversa, workspace canônico)
+```
+
+A ordem de preferência de identidade é:
+1. `Mcp-Session-Id`, quando o transporte mantém uma sessão MCP estável;
+2. `X-Winx-Conversation-Id`, quando um gateway autenticado injeta um valor estável;
+3. O `thread_id` fornecido na primeira chamada;
+4. Afinidade por workspace caso nenhuma identidade de conversa seja encontrada.
+
+Entre os headers de transporte, o primeiro presente tem prioridade antes da validação do texto e de valores vazios.
+Um `Mcp-Session-Id` vazio ou inválido não permite usar o header do gateway. O fallback existente para thread/workspace
+na primeira chamada continua valendo quando não existe uma identidade de transporte utilizável.
+
+### Afinidade por Thread (`thread`)
+
+Utilize:
+
+```bash
+--session-affinity thread
+```
+
+quando o cliente for responsável por gerenciar e manter identificadores de thread estáveis e únicos, controlando a criação e o encerramento explícito de cada sessão.
+
+## Conexão ou Criação (Attach-or-create)
+
+Os guardians com protocolo `1.3+` implementam attach-or-create para `FirstCall`:
+1. Se a sessão lógica não existir, cria-se um novo PTY;
+2. Se a sessão lógica já existir, retorna-se o snapshot autoritativo atual;
+3. O adaptador sincroniza seu estado local a partir do snapshot;
+4. O guardian preserva o processo PTY, cwd, modo de segurança, histórico de saída e comandos em execução.
+
+## Múltiplos Principals Autenticados
+
+Gere credenciais independentes para cada cliente ou automação:
+
+```bash
+mkdir -p ~/.config
+install -m 600 /dev/null ~/.config/winx-chatgpt-token
+install -m 600 /dev/null ~/.config/winx-automation-token
+openssl rand -hex 32 > ~/.config/winx-chatgpt-token
+openssl rand -hex 32 > ~/.config/winx-automation-token
+```
+
+Crie o arquivo TOML de configuração:
+
+```toml
+# ~/.config/winx-principals.toml
+[[principals]]
+name = "chatgpt"
+token_file = "/home/alice/.config/winx-chatgpt-token"
+tool_profile = "coding"
+
+[[principals]]
+name = "automacao"
+token_file = "/home/alice/.config/winx-automation-token"
+tool_profile = "terminal"
+
+[[principals]]
+name = "ci"
+token_env = "WINX_CI_MCP_TOKEN"
+allowed_tools = ["Initialize", "BashCommand", "ReadFiles"]
+```
+
+Inicie o servidor:
+
+```bash
+chmod 600 ~/.config/winx-principals.toml
+winx-code-agent serve --http \
+  --principal-config ~/.config/winx-principals.toml
+```
+
+Regras dos principals:
+- Nomes podem conter letras ASCII, dígitos, `_` e `-`;
+- Cada entrada deve definir exatamente `token_file` ou `token_env`;
+- Nomes, IDs derivados e tokens devem ser exclusivos;
+- Arquivos de token devem ser arquivos regulares (sem links simbólicos) com permissão restrita (`0600`);
+- Tokens devem ter no mínimo 32 bytes de comprimento;
+- `tool_profile` usa `full` por padrão; `allowed_tools`, quando presente, substitui o perfil e não pode ser vazio;
+- Os nomes na allowlist diferenciam maiúsculas de minúsculas, e uma ferramenta desconhecida impede a inicialização.
+
+### Perfis do catálogo de ferramentas
+
+Os perfis reduzem o payload de schemas de `tools/list` para clientes que não precisam de todas as capacidades. A mesma
+política é validada antes do dispatch. Aliases antigos de edição permanecem chamáveis apenas com a autoridade de mutação
+equivalente já concedida, preservando conversas em cache sem ampliar permissões.
+
+| Perfil | Ferramentas anunciadas |
+| :--- | :--- |
+| `full` | Sete ferramentas: catálogo compacto de código mais `ContextSave` e `ReadImage` (padrão) |
+| `coding` | `Initialize`, `BashCommand`, `ReadFiles`, `CodeMap` e `EditFiles` |
+| `read-only` | `Initialize`, `ReadFiles`, `ReadImage` e `CodeMap` |
+| `terminal` | `Initialize` e `BashCommand` |
+
+Para um servidor de principal único, selecione o perfil na linha de comando:
+
+```bash
+winx-code-agent serve --http --token-file ~/.config/winx-http-token \
+  --tool-profile coding
+```
+
+Ou monte um catálogo exato repetindo `--allow-tool`; os nomes explícitos substituem `--tool-profile`:
+
+```bash
+winx-code-agent serve --http --token-file ~/.config/winx-http-token \
+  --allow-tool Initialize --allow-tool BashCommand --allow-tool ReadFiles
+```
+
+A política do catálogo não é um sandbox de shell. Qualquer perfil com `BashCommand` mantém os poderes de comando do
+modo Winx inicializado e do usuário do sistema operacional.
+
+## Contrato de Orquestração com LLM
+
+O handshake inicial do MCP estabelece um contrato de orquestração sequencial determinístico: inicializar uma vez, manter o `thread_id` retornado, utilizar `CodeMap` antes de leituras extensas, agrupar leituras com `ReadFiles`, ler arquivos antes de editá-los, compor verificações relacionadas e fail-fast com `&&` e nunca repetir chamadas rejeitadas sem alterações. `Initialize` também retorna um diretório limitado `<workspace_root>/.winx/tmp/session-…/` para helpers derivados que sejam realmente úteis. Eles permanecem não canônicos, preservam a proveniência de caminho/linha e reutilizam nomes estáveis, sem materializar código-fonte ou saída de comandos apenas para chamar `CodeMap`. Mapas de helpers aceitam um único arquivo existente, limitam o payload de navegação a 12 KiB e permitem 24 arquivos únicos / 64 chamadas por sessão ativa; mapas de fontes canônicas não compartilham essa cota agregada. O armazenamento temporário é limitado a 64 MiB / 128 arquivos por sessão e 256 MiB por workspace, com sessões inativas removidas após 24 horas. Ao atingir 96 arquivos ou 48 MiB, uma sessão ativa também remove, do mais antigo para o mais novo, apenas helpers inativos durante todo o TTL de 24 horas, buscando retornar a 64 arquivos / 32 MiB; symlinks nunca são seguidos e helpers recentes nunca são excluídos automaticamente. Helpers nunca codificam payload nos nomes nem poluem a raiz do projeto com artefatos `.winx-*`/`.winx_tmp`. Todo PTY foreground ou background exporta esse diretório exato como `WINX_TEMP_DIR`; escritas shell com destino estático que tentem contorná-lo são rejeitadas com `temporary_artifact_policy`. O Winx também audita o uso real após cada ação Bash, incluindo escritas dinâmicas: o resultado informa bytes, arquivos e contadores da limpeza de itens antigos. Se a sessão continuar acima da cota, comandos comuns ficam bloqueados até o agente inspecionar e remover explicitamente os helpers obsoletos restantes. Se `Initialize` retornar `initialize_workspace_already_bound` ou `workspace_change_requires_new_session`, a chamada é terminal para aquela conversa: mantenha o par já vinculado ao acessar caminhos absolutos permitidos ou abra outra conversa para um projeto realmente diferente. Uma verificação finita pós-edição pode ser enviada como `verify_command` em `EditFiles`, economizando uma ida e volta entre rede e modelo.
+
+Os arquivos de um lote `ReadFiles` são processados em um pool paralelo limitado (`WINX_READ_PARALLELISM`, padrão `4`, máximo `32`). A resposta e a cobertura do guard rail continuam seguindo exatamente a ordem solicitada.
+
+Cada ferramenta define um `outputSchema` e retorna um envelope `structuredContent`. Tanto `content` quanto `structuredContent` podem chegar ao modelo; por compatibilidade, `output` também carrega o texto entregue: os blocos de texto unidos em ordem, já após limites de saída e redaction. Resultados somente de imagem o omitem, assim como um resultado de `CodeMap` cujos `files`/`hits` já trazem símbolos (o texto é apenas a renderização deles); diagnósticos de `CodeMap` sem símbolos o mantêm, de modo que um cliente que consome `structuredContent` lê símbolos em `files`/`hits` e todo o resto em `output`:
+
+```json
+{
+  "status": "needs_read",
+  "tool": "EditFiles",
+  "message": "EditFiles failed: ...",
+  "output": "EditFiles failed: ...",
+  "errorCode": "read_required",
+  "retryable": true,
+  "retrySameCall": false,
+  "nextAction": {
+    "tool": "ReadFiles",
+    "instruction": "Perform every required read before retrying the edit.",
+    "arguments": {
+      "file_paths": ["/workspace/README.md:231-301"],
+      "thread_id": "ws_project_hash"
+    }
+  },
+  "requiredReads": [
+    { "path": "/workspace/README.md", "ranges": ["231-301"] }
+  ]
+}
+```
+
+Para clientes cujo `clientInfo.name` identifica o ChatGPT (`openai-mcp`, exceto Codex), o Winx usa uma otimização específica e os blocos de texto espelhados viram uma única linha de ponteiro (`Result is in structuredContent.output (status: …).`; em erros, precedida pela `message`), sem garantia sobre a visibilidade em toda a plataforma. `structuredContent`, imagens e `isError` ficam intactos; os demais clientes mantêm as duas cópias. `WINX_RESULT_TEXT_MIRROR=full` mantém as duas cópias para todos os clientes (padrão: `auto`).
+
+Falhas recuperáveis retornam resposta com sucesso HTTP/JSON-RPC e `isError: true` no protocolo MCP, incluindo a próxima ação corretiva (`nextAction`).
+
+`BashCommand.wait_policy=until_complete` só é válido para um comando finito em foreground. Seu uso com ações de
+background, status, entrada, tela ou espera retorna um resultado recuperável com
+`errorCode: wait_policy_incompatible_with_action`; `nextAction.arguments` já corrige a política para `return_early`.
+
+O cancelamento de Tasks também é vinculado à geração. Se ele disputar com o lançamento, o Winx aguarda o token exato da
+execução ou a confirmação de que nenhum processo iniciou. Um fallback limitado encerra o shell afetado antes de confirmar
+o cancelamento, impedindo que um interrupt obsoleto atinja o próximo comando.
+
+`ReadImage` valida o conteúdo como JPEG, PNG, GIF ou WebP em vez de confiar na extensão. A origem tem limite de 50 MiB,
+com limites independentes de dimensões e alocação decodificada; a entrega fica limitada a 2 MiB e 2560 px no maior lado,
+redimensionando e recomprimindo entradas maiores. Um cache limitado de fingerprints por sessão troca repetições sem
+alterações por uma referência estruturada compacta; `force=true` solicita explicitamente o reenvio dos bytes.
+
+`EditFiles` é a única superfície pública sobre o motor tipado de mutações. Seus modos explícitos por arquivo são
+`replace`, `search_replace`, `line_patch` e `undo`; uma chamada de edição aceita de um a 100 alvos únicos e valida o lote antes de
+gravar. Os nomes antigos permanecem como aliases ocultos e não ampliam a autoridade dos modos equivalentes de `EditFiles`.
+
+Para um arquivo existente, o fluxo determinístico padrão é `ReadFiles` seguido por `line_patch` vinculado à revisão.
+`search_replace` continua disponível para ancoragem textual exata e intencional. Após um conflito SEARCH, a recuperação
+estruturada exige a ação `ReadFiles` exata e direciona a tentativa corrigida para `line_patch`; uma mutação comum de
+código-fonte não deve cair para shell, `sed` ou Python.
+
+`EditFiles` aceita `verify_command` e `verify_wait_for_seconds` opcionais (padrão `15`, máximo
+`60`). A verificação só roda depois de um commit bem-sucedido, em foreground e sob a mesma allowlist de modo do
+`BashCommand`. Exit code zero conclui o resultado combinado. Um exit code diferente de zero mantém o resultado da edição
+em `isError: false`, com `status: completed_with_issues`, `errorCode: verification_failed` e `data.edit_applied: true`.
+A ação vinculada ao recibo em `BashCommand` repete somente a verificação depois das correções, nunca a edição. Se a
+verificação continuar executando ao final da espera limitada, o resultado fornece a ação `status_check` normal do
+`BashCommand`. A verificação exige autoridade para `EditFiles` e `BashCommand`.
+
+Edições confirmadas recebem por 30 minutos um recibo compacto persistido. Chamadas idênticas ficam single-flight e são
+reproduzidas sem nova escrita ou verificação enquanto os hashes finais coincidirem. Mudança posterior no alvo retorna
+`mutation_postcondition_changed` em vez de sobrescrever estado novo. Três conflitos SEARCH na mesma sessão/alvo escalam
+para `recovery_exhausted`, removendo a repetição automática e exigindo mudança de estratégia.
+
+## Ciclo de Vida do Guardian
+
+O `winxd` gerencia o ciclo de vida de todos os guardians conectados ao mesmo socket de controle:
+
+- **Relógio de Atividade Autoritativo:** Os guardians com protocolo 1.3+ registram a hora de criação, a última atividade real do terminal, o timestamp do último comando e se algum comando já foi executado.
+- **TTL em Camadas:**
+  - `WINX_UNUSED_SESSION_IDLE_TTL_SECS=1800` (30 minutos para sessões que nunca executaram comandos);
+  - `WINX_SESSION_IDLE_TTL_SECS=86400` (24 horas para sessões utilizadas).
+  - Comandos ativos em primeiro ou segundo plano nunca são finalizados por expiração de tempo.
+- **Pressão de Quota:** Sob limite de capacidade, o `winxd` limpa sockets órfãos e descarta o guardian inativo mais antigo que nunca executou comandos antes de recusar uma nova sessão.
+
+## Comandos Operacionais
+
+```bash
+# Inspecionar sessões ativas
+winx-code-agent list
+
+# Acompanhar a saída de uma sessão em tempo real
+winx-code-agent attach <thread_id> --follow
+
+# Aplicar a limpeza com as regras de TTL padrão
+winx-code-agent prune
+
+# Limpar todas as sessões inativas preservando processos ativos
+winx-code-agent prune --idle-seconds 0
+
+# Encerrar uma sessão específica ou todas
+winx-code-agent kill <thread_id>
+winx-code-agent kill --all
+
+# Reiniciar o daemon de controle mantendo os guardians e PTYs vivos
+winx-code-agent restart-daemon
+
+# Gerar relatório de diagnóstico sanitizado
+winx-code-agent doctor
+
+# Atualização verificada a partir do GitHub Releases (curl e tar do sistema); --check apenas informa
+winx-code-agent update
+```
+
+Depois do `update`, rode `restart-daemon` para o plano de controle usar o binário novo; os guardians trocam quando suas sessões terminam, e o `doctor` aponta a mistura em `mixed_guardian_builds`. Toda saída planejada de um daemon grava `<socket>.exit.json` (motivo, pid, epoch), exposto pelo `doctor` em `daemon_topology.last_exit`.
+
+## Telemetria de Uso Persistente
+
+Para registrar eventos estruturados `winx::usage` em formato JSONL de maneira não-bloqueante:
+
+```bash
+WINX_USAGE_LOG="$HOME/.local/state/winx/usage.jsonl" \
+WINX_USAGE_LOG_ROTATION=daily \
+WINX_USAGE_LOG_KEEP_DAYS=7 \
+winx-code-agent serve --http --token-file ~/.config/winx-http-token
+```
+
+Nenhum comando, conteúdo de arquivo, saída de ferramenta ou credencial é gravado nesse log. O `request_id` correlaciona
+os eventos `tool_call` e `http_request`; a diferença entre suas durações aproxima o overhead do adapter até a resposta
+ficar pronta. Ela não inclui streaming do corpo nem o tempo fora dessa janela do servidor.
+
+Com `WINX_USAGE_LOG` definido, os eventos `winx::usage` vão apenas para esse arquivo e não são duplicados no stderr; uma
+diretiva explícita `winx::usage` no `RUST_LOG` volta a espelhá-los. Sem arquivo de uso, o stderr continua sendo o destino
+desses eventos. As variáveis de log de uso e `WINX_HTTP_TOKEN` são removidas de todo shell de agente, então um
+`cargo test` executado pelo Winx não grava tráfego sintético no log de produção.
+
+### Estado das edições e identidade
+
+`edit_applied` preserva três estados: `true` explícito, `false` explícito ou ausente/desconhecido. Resultados tipados
+bem-sucedidos de Apply/Undo informam `true`, inclusive quando a verificação posterior falha. Um replay mantém o resultado
+da edição identificada sem nova escrita; um lote parcialmente confirmado também pode informar `true`. Leia esse campo
+junto do status, recibo, indicação de replay e resultado da verificação. Liberar um artefato temporário não implica editar
+código. Valores antigos ausentes, nulos ou inválidos não viram `false` inventado, e os logs históricos não são reescritos.
+
+`conversation_identity_available` indica a presença de um header de conversa utilizável no transporte.
+`correlation_scope` vale `conversation` quando existe esse fingerprint, `workspace` quando existe apenas o fingerprint
+do workspace solicitado, ou `request` quando ambos faltam. São metadados disponíveis para agrupamento; eles não validam
+o vínculo nem identificam um chat que o cliente não informou. `workspace_coherence` continua registrando a validação
+separadamente, inclusive em chamadas rejeitadas. Os valores de conversa permanecem representados por fingerprints.
+
+### Limites das medições HTTP
+
+O mesmo `request_id`, gerado pelo servidor, liga os eventos de ferramenta e HTTP às novas observações:
+
+| Evento | Observação |
+| --- | --- |
+| `http_request_received` | Entrada no middleware de segurança MCP, antes da admissão e autenticação |
+| `http_request` com `phase="response_ready"` | Resposta pronta; `duration_ms` mantém o limite anterior de medição |
+| `http_response_body` | No máximo um término do corpo: `complete`, `error` ou `dropped` |
+| `http_rejected` | Recusa de admissão existente, agora ligada ao evento de entrada |
+
+O término registra `request_elapsed_ms` desde a entrada no middleware e `body_duration_ms` desde a resposta pronta.
+`complete` significa EOF observado ou sinal de fim do corpo, inclusive para corpos vazios. `error` registra a ocorrência
+de erro do corpo sem gravar seu texto. `dropped` indica descarte sem conclusão ou erro observado; isso pode ser normal
+para um stream SSE aberto. A vaga de concorrência continua ocupada até o descarte do wrapper.
+
+Essas medições terminam na interface do servidor: entrada não é aceite TCP nem envio pelo cliente, resposta pronta não
+é entrega completa, e conclusão do corpo não comprova flush do socket ou recebimento pelo cliente. Encerramento do
+processo e descarte de registros podem deixar rastros incompletos. Os eventos ajudam a localizar a demora, mas não
+atribuem sua causa a rede, túnel, conector ou cliente. Nenhum corpo, query string, credencial, header bruto de sessão
+ou texto de erro é acrescentado.
+
+`winx-code-agent report --last N` ignora `http_request_received` e `http_response_body` antes de selecionar a janela,
+com ou sem filtro de build. Eles continuam disponíveis no JSONL para diagnóstico sem deslocar chamadas reais do relatório.
+
+Uma visão rápida de latência por ferramenta pode ser gerada com:
+
+```bash
+jq -s '
+  def pct($p): sort | .[((length - 1) * $p | floor)];
+  [.[] | select(.fields.event == "tool_call") | .fields]
+  | group_by(.tool)
+  | map(. as $calls | {
+      tool: $calls[0].tool,
+      calls: ($calls | length),
+      p50_ms: ([$calls[].duration_ms] | pct(0.50)),
+      p95_ms: ([$calls[].duration_ms] | pct(0.95))
+    })
+' ~/.local/state/winx/usage.jsonl*
+```
+
+## Exposição de Rede
+
+### Recomendado
+Mantenha o listener em loopback (`127.0.0.1:8000`) e utilize:
+- VPN privada (WireGuard, Tailscale);
+- Túnel MCP outbound-only (como o Secure MCP Tunnel da OpenAI);
+- Proxy reverso HTTPS autenticado.
+
+Se o proxy encaminhar um cabeçalho `Host` específico, informe-o via `--allowed-host`:
+
+```bash
+winx-code-agent serve --http \
+  --token-file ~/.config/winx-http-token \
+  --allowed-host mcp.exemplo.com
+```
+
+### Ligação Direta Externa
+Caso deseje expor o socket de rede diretamente (não recomendado para produção sem proxy/TLS):
+
+```bash
+winx-code-agent serve --http \
+  --bind 192.168.1.20:8000 \
+  --allow-non-loopback \
+  --token-file ~/.config/winx-http-token
+```
+
+## Limites de Recursos e Respostas
+
+| Condição | Resposta | Detalhes |
+| :--- | :--- | :--- |
+| Token ausente ou inválido | `401 Unauthorized` | Resposta atrasada em 100 ms |
+| IP excedeu o limite de falhas de autenticação | `429 Too Many Requests` | Atrasada; inclui `Retry-After: 1` |
+| Principal excedeu seu limite | `429 Too Many Requests` | Inclui cabeçalho `Retry-After: 1` |
+| Concorrência global esgotada | `503 Service Unavailable` | Inclui cabeçalho `Retry-After: 1` |
+| Requisição exceder 120 segundos | `408 Request Timeout` | A requisição é encerrada |
+| Corpo maior que 16 MiB (declarado ou em streaming) | `413 Payload Too Large` | Rejeitado antes do dispatch |
+
+A admissão autentica primeiro (comparação de digest em tempo constante, sem ler o corpo). Só tentativas com falha
+consomem a janela por IP de origem, e toda falha é atrasada em 100 ms sem ocupar permissão de concorrência. Requisições
+autenticadas passam depois pelo limite por principal, pela verificação de dono da sessão e só então pela concorrência
+global. Atrás de um túnel, tráfego inválido não consegue fazer um principal válido receber `429` ou `503`. Um único
+limite de 16 MiB vale tanto para `Content-Length` declarado quanto para corpo em streaming.
+
+## Referência da CLI
+
+| Opção | Finalidade |
+| :--- | :--- |
+| `serve --http` | Inicia o transporte Streamable HTTP |
+| `--bind <IP:PORT>` | Endereço de escuta (padrão: `127.0.0.1:8000`) |
+| `--token-file <PATH>` | Caminho para o arquivo contendo o Bearer Token |
+| `--principal-config <PATH>` | Caminho para o arquivo TOML com múltiplos principals |
+| `--token <VAL>` | Token direto via CLI (visível em `ps`) |
+| `--tool-profile <PROFILE>` | Catálogo do principal único: `full`, `coding`, `read-only` ou `terminal` |
+| `--allow-tool <NAME>` | Monta um catálogo exato do principal único; opção repetível |
+| `--session-affinity <MODE>` | Modo de afinidade: `workspace`, `conversation` ou `thread` |
+| `--allow-weak-token` | Permite tokens com menos de 32 bytes (apenas testes) |
+| `--allow-non-loopback` | Permite bind em interfaces não-loopback |
+| `--allowed-host <HOST>` | Autoriza cabeçalhos `Host` adicionais |
+| `--allow-query-token` | Permite passar o token via `?token=...` na URL |
+| `--max-concurrency <N>` | Limite global de requisições concorrentes (padrão: 32) |
+| `--requests-per-minute <N>` | Falhas de autenticação por IP de origem (padrão: 120) |
+| `--principal-requests-per-minute <N>` | Limite de requisições por principal autenticado (padrão: 120); mantém justiça quando todos chegam pelo mesmo túnel |
+
+## Limite de Segurança
+
+Um principal autenticado executa comandos e acessa arquivos com os privilégios do usuário do sistema operacional que iniciou o servidor.
+
+- O modo `wcgw` concede acesso total ao shell e sistema de arquivos;
+- O modo `architect` limita a sessão a operações de leitura;
+- O modo `code_writer` restringe a comandos e caminhos autorizados;
+- A redação de segredos está sempre ativa por padrão;
+- O sandbox Landlock (`WINX_SANDBOX=1`) adiciona proteção de kernel no Linux.
+
+Consulte [SECURITY.md](../SECURITY.md) para detalhes adicionais de segurança.

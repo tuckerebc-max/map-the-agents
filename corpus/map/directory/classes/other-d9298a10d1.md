@@ -538,5 +538,6 @@
 - [yt-channels-ds-ai-ml-cs](../entries/yt-channels-ds-ai-ml-cs-1baa250a17.md)
 - [zai-code](../entries/zai-code-a04c8ecc95.md)
 - [zapier-ai](../entries/zapier-ai-e89de066c0.md)
+- [zellij](../entries/zellij-2aba4e52c8.md)
 - [zhin](../entries/zhin-a9f3a2eb5c.md)
 - [zorow](../entries/zorow-eeef5c76dd.md)

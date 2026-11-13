@@ -32,27 +32,27 @@ Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 - [xpreiIDE (`xpreiide`)](xpreiide-de5a8ded9f.md) -- published+backing+pages
 - [xuanji-landing (`xuanji-landing`)](xuanji-landing-929300b357.md) -- backing+pages
 - [yAgents (`yagents`)](yagents-0eb9dfab0a.md) -- published+backing+pages
-- [yao (`yao`)](yao-e2813bdf6e.md) -- published+backing
-- [Yeoman (`yeoman`)](yeoman-1cc2cd01da.md) -- backing-only
-- [Youtrack-Workflows (`youtrack-workflows`)](youtrack-workflows-016eba47b5.md) -- backing-only
-- [Youware (`youware`)](youware-db5fac1ee0.md) -- published+backing
-- [yoyo (`yoyo`)](yoyo-da30e45705.md) -- published+backing
-- [yt-channels-DS-AI-ML-CS (`yt-channels-ds-ai-ml-cs`)](yt-channels-ds-ai-ml-cs-1baa250a17.md) -- backing-only
-- [Z.ai Code (`zai-code`)](zai-code-a04c8ecc95.md) -- backing-only
-- [Zap (`zap`)](zap-b4c5ae2ae9.md) -- published+backing
-- [Zapier AI (`zapier-ai`)](zapier-ai-e89de066c0.md) -- backing-only
-- [Zellij (`zellij`)](zellij-2aba4e52c8.md) -- backing-only
-- [Zencoder (`zencoder`)](zencoder-75605d80f1.md) -- published+backing
-- [Zentara-Code (`zentara-code`)](zentara-code-bb12b055e8.md) -- published+backing
-- [zero (`zero`)](zero-f9194e73f9.md) -- published+backing
-- [ZeroPath (`zeropath`)](zeropath-b82306c3fd.md) -- published+backing
-- [zeroshot (`zeroshot`)](zeroshot-4d87daba5d.md) -- published+backing
-- [zerostack (`zerostack`)](zerostack-5171c82a09.md) -- published+backing
-- [Zhanlu (`zhanlu`)](zhanlu-64e4179e40.md) -- published+backing
-- [zhikuncode (`zhikuncode`)](zhikuncode-9412121bb2.md) -- published+backing
-- [zhin (`zhin`)](zhin-a9f3a2eb5c.md) -- backing-only
-- [Zoo-Code (`zoo-code`)](zoo-code-38a9f1d497.md) -- published+backing
-- [Zoo Code (`zoo-code-extension`)](zoo-code-extension-0dfddac61b.md) -- published+backing
-- [Zorow (`zorow`)](zorow-eeef5c76dd.md) -- backing-only
-- [Zot (`zot`)](zot-d52b78b0b0.md) -- published+backing
-- [Zugabot (`zugabot`)](zugabot-55065a963c.md) -- published+backing
+- [yao (`yao`)](yao-e2813bdf6e.md) -- published+backing+pages
+- [Yeoman (`yeoman`)](yeoman-1cc2cd01da.md) -- backing+pages
+- [Youtrack-Workflows (`youtrack-workflows`)](youtrack-workflows-016eba47b5.md) -- backing+pages
+- [Youware (`youware`)](youware-db5fac1ee0.md) -- published+backing+pages
+- [yoyo (`yoyo`)](yoyo-da30e45705.md) -- published+backing+pages
+- [yt-channels-DS-AI-ML-CS (`yt-channels-ds-ai-ml-cs`)](yt-channels-ds-ai-ml-cs-1baa250a17.md) -- backing+pages
+- [Z.ai Code (`zai-code`)](zai-code-a04c8ecc95.md) -- backing+pages
+- [Zap (`zap`)](zap-b4c5ae2ae9.md) -- published+backing+pages
+- [Zapier AI (`zapier-ai`)](zapier-ai-e89de066c0.md) -- backing+pages
+- [Zellij (`zellij`)](zellij-2aba4e52c8.md) -- backing+pages
+- [Zencoder (`zencoder`)](zencoder-75605d80f1.md) -- published+backing+pages
+- [Zentara-Code (`zentara-code`)](zentara-code-bb12b055e8.md) -- published+backing+pages
+- [zero (`zero`)](zero-f9194e73f9.md) -- published+backing+pages
+- [ZeroPath (`zeropath`)](zeropath-b82306c3fd.md) -- published+backing+pages
+- [zeroshot (`zeroshot`)](zeroshot-4d87daba5d.md) -- published+backing+pages
+- [zerostack (`zerostack`)](zerostack-5171c82a09.md) -- published+backing+pages
+- [Zhanlu (`zhanlu`)](zhanlu-64e4179e40.md) -- published+backing+pages
+- [zhikuncode (`zhikuncode`)](zhikuncode-9412121bb2.md) -- published+backing+pages
+- [zhin (`zhin`)](zhin-a9f3a2eb5c.md) -- backing+pages
+- [Zoo-Code (`zoo-code`)](zoo-code-38a9f1d497.md) -- published+backing+pages
+- [Zoo Code (`zoo-code-extension`)](zoo-code-extension-0dfddac61b.md) -- published+backing+pages
+- [Zorow (`zorow`)](zorow-eeef5c76dd.md) -- backing+pages
+- [Zot (`zot`)](zot-d52b78b0b0.md) -- published+backing+pages
+- [Zugabot (`zugabot`)](zugabot-55065a963c.md) -- published+backing+pages

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: ZooCodeOrganization
@@ -22,6 +22,8 @@ Repository map entry: [zoo-code-org/zoo-code](../../repos/zoo-code-org/zoo-code.
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-This entry is the Open VSX registry listing for Zoo Code, the community-maintained continuation of Roo Code. Open VSX is the vendor-neutral extension registry used by editors that cannot or do not pul
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A whole dev team of AI agents in your editor (Roo fork)
+
+(captured site page body (agents/zoo-code-extension.md), not a verified repo-code finding)
+This entry is the Open VSX registry listing for Zoo Code, the community-maintained continuation of Roo Code. Open VSX is the vendor-neutral extension registry used by editors that cannot or do not pull from Microsoft's marketplace — VSCodium, Gitpod, Eclipse-based IDEs — so this listing is the installation path for Zoo Code on those platforms. The extension itself is the work of former Roo Code contributors who forked the project when the original team wound down active development, and it carries the same architecture: a team of AI agents working in the editor, multiple modes including Architect for planning, MCP server integration, and approval-gated file edits. The listing tracks the upstream project's release cadence, with versions in the 3.8x range published through August 2026 and cumulative downloads exceeding 100,000. Users on standard Microsoft VS Code would typically install from the Visual Studio Marketplace instead; this channel serves the open-source editor ecosystem. Distinguishing the marketplace listing from the upstream project matters for census purposes — the code, features, and history are documented under the Zoo-Code GitHub entry, while this entry exists to record the Open VSX distribution point and its metadata.
+Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/zoo-code-extension.md)

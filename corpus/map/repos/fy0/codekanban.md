@@ -1,9 +1,9 @@
 # fy0/codekanban
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 921b2512aeb0 @ 6bf09518330b3b17
+Latest snapshot: commit c8e99feffdf3 @ 9453c82effb93437
 
 ## Summary (orientation draft, not independently verified)
 
