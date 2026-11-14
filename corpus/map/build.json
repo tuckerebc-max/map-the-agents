@@ -1,6 +1,6 @@
 {
   "aliases_digest": "45e794f274843c5f03caf97be1960e30b6020bae012b4f1e02ea7024db0d96f2",
-  "catalog_digest": "fd4cfdc955715dccc4bce4bda25392b66c6ca56e086d0615b20e42dfb915d644",
+  "catalog_digest": "103df082a37c1738b02b069cbc7724ab9f58b6c663ef7caae4ca925481bf1716",
   "directory_digest": "38d92bf30ddc942ad9496a1a3360e428b9bd85f17077b253be2e5fb679bba468",
   "file_repos": {
     "map/repos/0xpayne/gpt-migrate.detail.md": "0xpayne/gpt-migrate",
@@ -26875,10 +26875,15 @@
         "agent"
       ],
       "dossier": "wiki/dossiers/gcwing/openbitfun/32b20c5b291d0e281b3920c84606e646e0e3524a/8a36a510244d7500.json",
-      "freshness": "current",
+      "freshness": "refresh-failed",
       "indexed_commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
       "indexed_operation_id": "op_0d71a754a1f74968b54bf71dad72be86",
       "indexed_snapshot_id": "8a36a510244d7500",
+      "last_error": {
+        "code": "FetchFailed",
+        "locator": "https://github.com/gcwing/openbitfun",
+        "message": "redirect-refused http-301: https://api.github.com/repos/gcwing/openbitfun"
+      },
       "latest_commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
       "latest_snapshot": {
         "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
@@ -27019,25 +27024,26 @@
         "multiplexer"
       ],
       "dossier": "wiki/dossiers/generalaction/emdash/fccf350847097c8f9d9de3e7e5c98b0d292a4554/a2795a7f46ba37a1.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "fccf350847097c8f9d9de3e7e5c98b0d292a4554",
       "indexed_operation_id": "op_3fd4492ae6e6436ea7834c872c47bd7d",
       "indexed_snapshot_id": "a2795a7f46ba37a1",
-      "latest_commit": "fccf350847097c8f9d9de3e7e5c98b0d292a4554",
+      "latest_commit": "ccc6cce4a41627deb6888db6763f3de5ff0e4e08",
       "latest_snapshot": {
-        "commit": "fccf350847097c8f9d9de3e7e5c98b0d292a4554",
-        "dir": "sources/github/generalaction/emdash/fccf350847097c8f9d9de3e7e5c98b0d292a4554/a2795a7f46ba37a1",
-        "package": "sources/github/generalaction/emdash/fccf350847097c8f9d9de3e7e5c98b0d292a4554/a2795a7f46ba37a1/manifest.json",
-        "snapshot": "sources/github/generalaction/emdash/fccf350847097c8f9d9de3e7e5c98b0d292a4554/a2795a7f46ba37a1/snapshot.json",
-        "snapshot_id": "a2795a7f46ba37a1"
+        "commit": "ccc6cce4a41627deb6888db6763f3de5ff0e4e08",
+        "dir": "sources/github/generalaction/emdash/ccc6cce4a41627deb6888db6763f3de5ff0e4e08/5d733013451eaf95",
+        "package": "sources/github/generalaction/emdash/ccc6cce4a41627deb6888db6763f3de5ff0e4e08/5d733013451eaf95/manifest.json",
+        "snapshot": "sources/github/generalaction/emdash/ccc6cce4a41627deb6888db6763f3de5ff0e4e08/5d733013451eaf95/snapshot.json",
+        "snapshot_id": "5d733013451eaf95"
       },
-      "latest_snapshot_id": "a2795a7f46ba37a1",
+      "latest_snapshot_id": "5d733013451eaf95",
       "origins": [
         "alltheagents.org-backing"
       ],
       "owner": "generalaction",
       "projects": [],
       "repo": "emdash",
+      "repository_id": 1046096502,
       "sources": [
         {
           "catalog": "alltheagents.org-backing",
@@ -27058,6 +27064,14 @@
           "package": "sources/github/generalaction/emdash/fccf350847097c8f9d9de3e7e5c98b0d292a4554/a2795a7f46ba37a1/manifest.json",
           "snapshot": "sources/github/generalaction/emdash/fccf350847097c8f9d9de3e7e5c98b0d292a4554/a2795a7f46ba37a1/snapshot.json",
           "snapshot_id": "a2795a7f46ba37a1"
+        },
+        {
+          "commit": "ccc6cce4a41627deb6888db6763f3de5ff0e4e08",
+          "dir": "sources/github/generalaction/emdash/ccc6cce4a41627deb6888db6763f3de5ff0e4e08/5d733013451eaf95",
+          "kind": "snapshot",
+          "package": "sources/github/generalaction/emdash/ccc6cce4a41627deb6888db6763f3de5ff0e4e08/5d733013451eaf95/manifest.json",
+          "snapshot": "sources/github/generalaction/emdash/ccc6cce4a41627deb6888db6763f3de5ff0e4e08/5d733013451eaf95/snapshot.json",
+          "snapshot_id": "5d733013451eaf95"
         }
       ],
       "status": "distilled",

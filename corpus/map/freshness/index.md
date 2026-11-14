@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (817)
+## current (815)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -170,9 +170,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) [coverage: complete]
 - [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) [coverage: complete]
 - [gary95271/xuanji-landing](../repos/gary95271/xuanji-landing.md) [coverage: complete]
-- [gcwing/openbitfun](../repos/gcwing/openbitfun.md) [coverage: partial]
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) [coverage: complete]
-- [generalaction/emdash](../repos/generalaction/emdash.md) [coverage: partial]
 - [genia-dev/genia](../repos/genia-dev/genia.md) [coverage: partial]
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) [coverage: complete]
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) [coverage: complete]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [mybono/ai-orchestrator](../repos/mybono/ai-orchestrator.md) [coverage: complete]
 - [nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads](../repos/nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads.md) [coverage: complete]
 - [nahimnasser/pu](../repos/nahimnasser/pu.md) [coverage: complete]
+- [nam271212/strategic-advisor-orchestrator](../repos/nam271212/strategic-advisor-orchestrator.md) [coverage: complete]
+- [nano-collective/nanocoder](../repos/nano-collective/nanocoder.md) [coverage: partial]

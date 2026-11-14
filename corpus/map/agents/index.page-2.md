@@ -14,10 +14,10 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [gary95271/xuanji-landing](../repos/gary95271/xuanji-landing.md) -- status=distilled, freshness=current
 - [gastownhall/gastown](../repos/gastownhall/gastown.md) -- status=distilled, freshness=stale
 - [gcwing/bitfun](../repos/gcwing/bitfun.md) -- status=blocked, freshness=refresh-failed
-- [gcwing/openbitfun](../repos/gcwing/openbitfun.md) -- status=distilled, freshness=current
+- [gcwing/openbitfun](../repos/gcwing/openbitfun.md) -- status=distilled, freshness=refresh-failed
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- status=blocked, freshness=refresh-failed
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) -- status=distilled, freshness=current
-- [generalaction/emdash](../repos/generalaction/emdash.md) -- status=distilled, freshness=current
+- [generalaction/emdash](../repos/generalaction/emdash.md) -- status=distilled, freshness=stale
 - [genia-dev/genia](../repos/genia-dev/genia.md) -- status=distilled, freshness=current
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) -- status=distilled, freshness=current
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) -- status=distilled, freshness=current

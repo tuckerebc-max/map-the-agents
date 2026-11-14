@@ -1,9 +1,9 @@
 # generalaction/emdash
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit fccf35084709 @ a2795a7f46ba37a1
+Latest snapshot: commit ccc6cce4a416 @ 5d733013451eaf95
 
 ## Summary (orientation draft, not independently verified)
 

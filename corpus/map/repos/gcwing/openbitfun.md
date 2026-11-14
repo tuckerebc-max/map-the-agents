@@ -1,10 +1,11 @@
 # gcwing/openbitfun
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: agent
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: gcwing/bitfun (github id 1147866277).
 Latest snapshot: commit 32b20c5b291d @ 8a36a510244d7500
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/gcwing/openbitfun
 
 ## Summary (orientation draft, not independently verified)
 

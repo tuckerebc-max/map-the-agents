@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [nam271212/strategic-advisor-orchestrator](../repos/nam271212/strategic-advisor-orchestrator.md) [coverage: complete]
-- [nano-collective/nanocoder](../repos/nano-collective/nanocoder.md) [coverage: partial]
 - [nanocoai/nanoclaw](../repos/nanocoai/nanoclaw.md) [coverage: partial]
 - [narcooo/inkos](../repos/narcooo/inkos.md) [coverage: partial]
 - [narenmanoharan/gpt-code-assistant](../repos/narenmanoharan/gpt-code-assistant.md) [coverage: complete]
@@ -411,7 +409,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (167)
+## stale (168)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +449,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
 - [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
 - [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]
+- [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) [coverage: partial]
+- [athasdev/athas](../repos/athasdev/athas.md) [coverage: complete]
