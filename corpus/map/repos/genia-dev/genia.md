@@ -1,9 +1,9 @@
 # genia-dev/genia
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 39a206b85d84 @ b0f34378113763be
+Latest snapshot: commit 39a206b85d84 @ 086f7cbb0653ce0e
 
 ## Summary (orientation draft, not independently verified)
 

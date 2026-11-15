@@ -18,11 +18,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- status=blocked, freshness=refresh-failed
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) -- status=distilled, freshness=current
 - [generalaction/emdash](../repos/generalaction/emdash.md) -- status=distilled, freshness=stale
-- [genia-dev/genia](../repos/genia-dev/genia.md) -- status=distilled, freshness=current
+- [genia-dev/genia](../repos/genia-dev/genia.md) -- status=distilled, freshness=stale
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) -- status=distilled, freshness=current
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) -- status=distilled, freshness=current
-- [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) -- status=distilled, freshness=current
-- [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) -- status=distilled, freshness=current
+- [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) -- status=distilled, freshness=stale
+- [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) -- status=distilled, freshness=stale
 - [get-bb/bb](../repos/get-bb/bb.md) -- status=distilled, freshness=current
 - [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) -- status=distilled, freshness=current
 - [get-convex/chef](../repos/get-convex/chef.md) -- status=distilled, freshness=current

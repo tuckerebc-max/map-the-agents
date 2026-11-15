@@ -1,9 +1,9 @@
 # gerome-elassaad/codingit
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b21eff408c44 @ 0a9071aac76f43b8
+Latest snapshot: commit b21eff408c44 @ 413d4b8ff5a8148c
 
 ## Summary (orientation draft, not independently verified)
 

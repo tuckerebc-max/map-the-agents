@@ -1,9 +1,9 @@
 # gensyn-ai/codeassist
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3bf99c623173 @ 0a81e310c0a13d4f
+Latest snapshot: commit fedc70d2167c @ 0bf8f4b8bd59a3cd
 
 ## Summary (orientation draft, not independently verified)
 

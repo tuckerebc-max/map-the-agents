@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (815)
+## current (812)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -171,11 +171,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) [coverage: complete]
 - [gary95271/xuanji-landing](../repos/gary95271/xuanji-landing.md) [coverage: complete]
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) [coverage: complete]
-- [genia-dev/genia](../repos/genia-dev/genia.md) [coverage: partial]
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) [coverage: complete]
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) [coverage: complete]
-- [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) [coverage: complete]
-- [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) [coverage: partial]
 - [get-bb/bb](../repos/get-bb/bb.md) [coverage: partial]
 - [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) [coverage: partial]
 - [get-convex/chef](../repos/get-convex/chef.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [nahimnasser/pu](../repos/nahimnasser/pu.md) [coverage: complete]
 - [nam271212/strategic-advisor-orchestrator](../repos/nam271212/strategic-advisor-orchestrator.md) [coverage: complete]
 - [nano-collective/nanocoder](../repos/nano-collective/nanocoder.md) [coverage: partial]
+- [nanocoai/nanoclaw](../repos/nanocoai/nanoclaw.md) [coverage: partial]
+- [narcooo/inkos](../repos/narcooo/inkos.md) [coverage: partial]
+- [narenmanoharan/gpt-code-assistant](../repos/narenmanoharan/gpt-code-assistant.md) [coverage: complete]

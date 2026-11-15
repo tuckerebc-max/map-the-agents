@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
-- [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
-- [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) [coverage: complete]
 - [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
 - [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
 - [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
@@ -130,6 +127,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) [coverage: partial]
 - [gastownhall/gastown](../repos/gastownhall/gastown.md) [coverage: partial]
 - [generalaction/emdash](../repos/generalaction/emdash.md) [coverage: partial]
+- [genia-dev/genia](../repos/genia-dev/genia.md) [coverage: partial]
+- [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) [coverage: complete]
+- [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) [coverage: partial]
 
 ## refresh-failed (70)
 

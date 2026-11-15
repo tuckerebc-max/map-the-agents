@@ -5,7 +5,7 @@ Known-dossier source depth (distinct from freshness -- a current commit is not c
 
 Status counts: discovered=12, snapshotted=3, distilled=990, blocked=63
 
-Freshness counts: current=815, pending=15, stale=168, refresh-failed=70
+Freshness counts: current=812, pending=15, stale=171, refresh-failed=70
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -135,7 +135,7 @@ Full index: [freshness/index.md](freshness/index.md).
 - [almanaccode/codealmanac](repos/almanaccode/codealmanac.md): stale (stale)
 - [almogdepaz/wolfpack](repos/almogdepaz/wolfpack.md): stale (stale)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
-- ... 218 more; see freshness/index.md
+- ... 221 more; see freshness/index.md
 
 ## Directory
 
