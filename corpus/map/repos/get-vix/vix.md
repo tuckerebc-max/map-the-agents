@@ -1,9 +1,9 @@
 # get-vix/vix
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8e4262d6d1a8 @ 5bb529b55446d470
+Latest snapshot: commit e68a25c7df68 @ 3ae1919e26cee48b
 
 ## Summary (orientation draft, not independently verified)
 

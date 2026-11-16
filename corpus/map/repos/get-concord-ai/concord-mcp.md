@@ -1,9 +1,9 @@
 # get-concord-ai/concord-mcp
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d2408b0cbce5 @ 53cc4a249ea2b42d
+Latest snapshot: commit 20efe62228e0 @ c87e510508771a87
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
-- [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
-- [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
-- [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
-- [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) [coverage: complete]
 - [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
 - [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
 - [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
@@ -130,8 +125,12 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [genia-dev/genia](../repos/genia-dev/genia.md) [coverage: partial]
 - [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) [coverage: complete]
 - [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) [coverage: partial]
+- [get-bb/bb](../repos/get-bb/bb.md) [coverage: partial]
+- [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) [coverage: partial]
+- [get-vix/vix](../repos/get-vix/vix.md) [coverage: complete]
+- [getkimchi/kimchi](../repos/getkimchi/kimchi.md) [coverage: partial]
 
-## refresh-failed (70)
+## refresh-failed (71)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -164,6 +163,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [gcwing/bitfun](../repos/gcwing/bitfun.md) -- FetchFailed
 - [gcwing/openbitfun](../repos/gcwing/openbitfun.md) -- FetchFailed [coverage: partial]
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- FetchFailed
+- [get-convex/chef](../repos/get-convex/chef.md) -- FetchFailed [coverage: complete]
 - [hams-ollo/project-s.o.c.r.a.t.e.s.](../repos/hams-ollo/project-s.o.c.r.a.t.e.s..md) -- FetchFailed
 - [haseeb-heaven/code-interpreter](../repos/haseeb-heaven/code-interpreter.md) -- FetchFailed
 - [hexmammamia74/cursor-ai-pro-download-2026](../repos/hexmammamia74/cursor-ai-pro-download-2026.md) -- CollectError

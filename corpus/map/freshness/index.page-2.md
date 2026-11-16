@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [nasiko-labs/nasiko](../repos/nasiko-labs/nasiko.md) [coverage: partial]
-- [neovateai/neovate-code](../repos/neovateai/neovate-code.md) [coverage: partial]
-- [neuralinverse/neuralinverse](../repos/neuralinverse/neuralinverse.md) [coverage: partial]
-- [nexu-io/looper](../repos/nexu-io/looper.md) [coverage: partial]
-- [nicepkg/auto-company](../repos/nicepkg/auto-company.md) [coverage: complete]
 - [nickshengy/chamberlain_multimodal_multiagent_chatbot](../repos/nickshengy/chamberlain_multimodal_multiagent_chatbot.md) [coverage: complete]
 - [nicobailon/pi-boomerang](../repos/nicobailon/pi-boomerang.md) [coverage: complete]
 - [nicobailon/pi-interactive-shell](../repos/nicobailon/pi-interactive-shell.md) [coverage: complete]
@@ -406,7 +401,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (171)
+## stale (175)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +446,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
 - [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
 - [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) [coverage: complete]
+- [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
+- [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
+- [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
+- [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
+- [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) [coverage: complete]

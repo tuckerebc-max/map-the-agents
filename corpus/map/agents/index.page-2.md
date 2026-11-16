@@ -23,11 +23,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) -- status=distilled, freshness=current
 - [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) -- status=distilled, freshness=stale
 - [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) -- status=distilled, freshness=stale
-- [get-bb/bb](../repos/get-bb/bb.md) -- status=distilled, freshness=current
-- [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) -- status=distilled, freshness=current
-- [get-convex/chef](../repos/get-convex/chef.md) -- status=distilled, freshness=current
-- [get-vix/vix](../repos/get-vix/vix.md) -- status=distilled, freshness=current
-- [getkimchi/kimchi](../repos/getkimchi/kimchi.md) -- status=distilled, freshness=current
+- [get-bb/bb](../repos/get-bb/bb.md) -- status=distilled, freshness=stale
+- [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) -- status=distilled, freshness=stale
+- [get-convex/chef](../repos/get-convex/chef.md) -- status=distilled, freshness=refresh-failed
+- [get-vix/vix](../repos/get-vix/vix.md) -- status=distilled, freshness=stale
+- [getkimchi/kimchi](../repos/getkimchi/kimchi.md) -- status=distilled, freshness=stale
 - [getpaseo/paseo](../repos/getpaseo/paseo.md) -- status=distilled, freshness=current
 - [getworkloop/gambit](../repos/getworkloop/gambit.md) -- status=distilled, freshness=current
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) -- status=distilled, freshness=current

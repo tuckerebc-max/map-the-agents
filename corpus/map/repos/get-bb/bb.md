@@ -1,9 +1,9 @@
 # get-bb/bb
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d89160eb8c69 @ 3b3429692f6052ea
+Latest snapshot: commit da3e60b81d56 @ adc1cc0eb8eb8512
 
 ## Summary (orientation draft, not independently verified)
 

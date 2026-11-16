@@ -1,9 +1,10 @@
 # get-convex/chef
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit d8a6cb6a6f22 @ 3abf79f07186783f
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/get-convex/chef
 
 ## Summary (orientation draft, not independently verified)
 

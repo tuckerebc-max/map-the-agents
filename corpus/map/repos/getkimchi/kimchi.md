@@ -1,9 +1,9 @@
 # getkimchi/kimchi
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 15cdadae0c44 @ 2a86d2323cfc7801
+Latest snapshot: commit c701cef0af8c @ ecb70b1b00ea5892
 
 ## Summary (orientation draft, not independently verified)
 

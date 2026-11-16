@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (812)
+## current (807)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -173,11 +173,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) [coverage: complete]
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) [coverage: complete]
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) [coverage: complete]
-- [get-bb/bb](../repos/get-bb/bb.md) [coverage: partial]
-- [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) [coverage: partial]
-- [get-convex/chef](../repos/get-convex/chef.md) [coverage: complete]
-- [get-vix/vix](../repos/get-vix/vix.md) [coverage: complete]
-- [getkimchi/kimchi](../repos/getkimchi/kimchi.md) [coverage: partial]
 - [getpaseo/paseo](../repos/getpaseo/paseo.md) [coverage: partial]
 - [getworkloop/gambit](../repos/getworkloop/gambit.md) [coverage: partial]
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) [coverage: complete]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [nanocoai/nanoclaw](../repos/nanocoai/nanoclaw.md) [coverage: partial]
 - [narcooo/inkos](../repos/narcooo/inkos.md) [coverage: partial]
 - [narenmanoharan/gpt-code-assistant](../repos/narenmanoharan/gpt-code-assistant.md) [coverage: complete]
+- [nasiko-labs/nasiko](../repos/nasiko-labs/nasiko.md) [coverage: partial]
+- [neovateai/neovate-code](../repos/neovateai/neovate-code.md) [coverage: partial]
+- [neuralinverse/neuralinverse](../repos/neuralinverse/neuralinverse.md) [coverage: partial]
+- [nexu-io/looper](../repos/nexu-io/looper.md) [coverage: partial]
+- [nicepkg/auto-company](../repos/nicepkg/auto-company.md) [coverage: complete]
