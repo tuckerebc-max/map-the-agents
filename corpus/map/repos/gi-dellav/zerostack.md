@@ -1,9 +1,9 @@
 # gi-dellav/zerostack
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit efd142b3ac46 @ a1aca222966d5bd8
+Latest snapshot: commit b0089d98c032 @ e3879564fc300832
 
 ## Summary (orientation draft, not independently verified)
 

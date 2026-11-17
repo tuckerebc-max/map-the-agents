@@ -1,12 +1,13 @@
 # gi-dellav/multistack
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: none recorded
 Origins: directory-resolve - Projects: directory-intake
+Latest snapshot: commit 9bab5210edfb @ 6e560070966b36a7
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

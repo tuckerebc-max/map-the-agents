@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
-- [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
-- [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
 - [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
 - [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
 - [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
@@ -129,6 +126,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) [coverage: partial]
 - [get-vix/vix](../repos/get-vix/vix.md) [coverage: complete]
 - [getkimchi/kimchi](../repos/getkimchi/kimchi.md) [coverage: partial]
+- [getpaseo/paseo](../repos/getpaseo/paseo.md) [coverage: partial]
+- [getworkloop/gambit](../repos/getworkloop/gambit.md) [coverage: partial]
+- [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) [coverage: partial]
 
 ## refresh-failed (71)
 

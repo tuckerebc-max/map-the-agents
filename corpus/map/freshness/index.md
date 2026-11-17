@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (807)
+## current (804)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -173,10 +173,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) [coverage: complete]
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) [coverage: complete]
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) [coverage: complete]
-- [getpaseo/paseo](../repos/getpaseo/paseo.md) [coverage: partial]
-- [getworkloop/gambit](../repos/getworkloop/gambit.md) [coverage: partial]
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) [coverage: complete]
-- [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) [coverage: partial]
 - [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) [coverage: complete]
 - [giselles-ai/giselle](../repos/giselles-ai/giselle.md) [coverage: partial]
 - [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [neuralinverse/neuralinverse](../repos/neuralinverse/neuralinverse.md) [coverage: partial]
 - [nexu-io/looper](../repos/nexu-io/looper.md) [coverage: partial]
 - [nicepkg/auto-company](../repos/nicepkg/auto-company.md) [coverage: complete]
+- [nickshengy/chamberlain_multimodal_multiagent_chatbot](../repos/nickshengy/chamberlain_multimodal_multiagent_chatbot.md) [coverage: complete]
+- [nicobailon/pi-boomerang](../repos/nicobailon/pi-boomerang.md) [coverage: complete]
+- [nicobailon/pi-interactive-shell](../repos/nicobailon/pi-interactive-shell.md) [coverage: complete]

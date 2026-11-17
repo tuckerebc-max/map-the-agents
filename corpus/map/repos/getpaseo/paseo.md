@@ -1,9 +1,9 @@
 # getpaseo/paseo
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d1b705a0cd91 @ 412941229c6b93c1
+Latest snapshot: commit 02124454bc6b @ 69de7a78777dac64
 
 ## Summary (orientation draft, not independently verified)
 

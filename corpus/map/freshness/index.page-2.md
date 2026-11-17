@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [nickshengy/chamberlain_multimodal_multiagent_chatbot](../repos/nickshengy/chamberlain_multimodal_multiagent_chatbot.md) [coverage: complete]
-- [nicobailon/pi-boomerang](../repos/nicobailon/pi-boomerang.md) [coverage: complete]
-- [nicobailon/pi-interactive-shell](../repos/nicobailon/pi-interactive-shell.md) [coverage: complete]
 - [nikitadmitrieff/auto-co-meta](../repos/nikitadmitrieff/auto-co-meta.md) [coverage: complete]
 - [nimbalyst/nimbalyst](../repos/nimbalyst/nimbalyst.md) [coverage: partial]
 - [nisarg38/claude-northstar](../repos/nisarg38/claude-northstar.md) [coverage: complete]
@@ -401,7 +398,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (175)
+## stale (178)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +448,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
 - [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
 - [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) [coverage: complete]
+- [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
+- [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
+- [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]

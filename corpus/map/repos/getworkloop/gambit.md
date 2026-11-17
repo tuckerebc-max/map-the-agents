@@ -1,10 +1,10 @@
 # getworkloop/gambit
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: github-verified-rename, alltheagents.org-backing - Projects: Observatory
 Formerly: bolt-foundry/gambit (github id 1101529500).
-Latest snapshot: commit d413df73f726 @ 8445de880a1b3f7a
+Latest snapshot: commit d413df73f726 @ 81f2a13f1402061d
 
 ## Summary (orientation draft, not independently verified)
 

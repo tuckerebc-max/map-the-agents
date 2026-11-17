@@ -28,11 +28,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [get-convex/chef](../repos/get-convex/chef.md) -- status=distilled, freshness=refresh-failed
 - [get-vix/vix](../repos/get-vix/vix.md) -- status=distilled, freshness=stale
 - [getkimchi/kimchi](../repos/getkimchi/kimchi.md) -- status=distilled, freshness=stale
-- [getpaseo/paseo](../repos/getpaseo/paseo.md) -- status=distilled, freshness=current
-- [getworkloop/gambit](../repos/getworkloop/gambit.md) -- status=distilled, freshness=current
+- [getpaseo/paseo](../repos/getpaseo/paseo.md) -- status=distilled, freshness=stale
+- [getworkloop/gambit](../repos/getworkloop/gambit.md) -- status=distilled, freshness=stale
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) -- status=distilled, freshness=current
-- [gi-dellav/multistack](../repos/gi-dellav/multistack.md) -- status=discovered, freshness=pending
-- [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) -- status=distilled, freshness=current
+- [gi-dellav/multistack](../repos/gi-dellav/multistack.md) -- status=snapshotted, freshness=pending
+- [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) -- status=distilled, freshness=stale
 - [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) -- status=distilled, freshness=current
 - [giselles-ai/giselle](../repos/giselles-ai/giselle.md) -- status=distilled, freshness=current
 - [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) -- status=distilled, freshness=current
