@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
-- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
-- [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
 - [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) [coverage: partial]
 - [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) [coverage: partial]
 - [bahdotsh/indxr](../repos/bahdotsh/indxr.md) [coverage: partial]
@@ -129,6 +126,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [getpaseo/paseo](../repos/getpaseo/paseo.md) [coverage: partial]
 - [getworkloop/gambit](../repos/getworkloop/gambit.md) [coverage: partial]
 - [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) [coverage: partial]
+- [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) [coverage: complete]
+- [giselles-ai/giselle](../repos/giselles-ai/giselle.md) [coverage: partial]
+- [github/copilot-cli](../repos/github/copilot-cli.md) [coverage: partial]
 
 ## refresh-failed (71)
 

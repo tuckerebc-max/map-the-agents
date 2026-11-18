@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (804)
+## current (801)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -174,11 +174,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) [coverage: complete]
 - [gensi-thuair/flex](../repos/gensi-thuair/flex.md) [coverage: complete]
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) [coverage: complete]
-- [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) [coverage: complete]
-- [giselles-ai/giselle](../repos/giselles-ai/giselle.md) [coverage: partial]
 - [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) [coverage: complete]
 - [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md) [coverage: complete]
-- [github/copilot-cli](../repos/github/copilot-cli.md) [coverage: partial]
 - [gitlawb/zero](../repos/gitlawb/zero.md) [coverage: partial]
 - [gkorepanov/llm-tools](../repos/gkorepanov/llm-tools.md) [coverage: complete]
 - [glincker/stacklit](../repos/glincker/stacklit.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [nickshengy/chamberlain_multimodal_multiagent_chatbot](../repos/nickshengy/chamberlain_multimodal_multiagent_chatbot.md) [coverage: complete]
 - [nicobailon/pi-boomerang](../repos/nicobailon/pi-boomerang.md) [coverage: complete]
 - [nicobailon/pi-interactive-shell](../repos/nicobailon/pi-interactive-shell.md) [coverage: complete]
+- [nikitadmitrieff/auto-co-meta](../repos/nikitadmitrieff/auto-co-meta.md) [coverage: complete]
+- [nimbalyst/nimbalyst](../repos/nimbalyst/nimbalyst.md) [coverage: partial]
+- [nisarg38/claude-northstar](../repos/nisarg38/claude-northstar.md) [coverage: complete]

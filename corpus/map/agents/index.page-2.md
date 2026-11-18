@@ -33,11 +33,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) -- status=distilled, freshness=current
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md) -- status=snapshotted, freshness=pending
 - [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) -- status=distilled, freshness=stale
-- [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) -- status=distilled, freshness=current
-- [giselles-ai/giselle](../repos/giselles-ai/giselle.md) -- status=distilled, freshness=current
+- [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) -- status=distilled, freshness=stale
+- [giselles-ai/giselle](../repos/giselles-ai/giselle.md) -- status=distilled, freshness=stale
 - [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) -- status=distilled, freshness=current
 - [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md) -- status=distilled, freshness=current
-- [github/copilot-cli](../repos/github/copilot-cli.md) -- status=distilled, freshness=current
+- [github/copilot-cli](../repos/github/copilot-cli.md) -- status=distilled, freshness=stale
 - [gitlawb/zero](../repos/gitlawb/zero.md) -- status=distilled, freshness=current
 - [gkorepanov/llm-tools](../repos/gkorepanov/llm-tools.md) -- status=distilled, freshness=current
 - [glincker/stacklit](../repos/glincker/stacklit.md) -- status=distilled, freshness=current

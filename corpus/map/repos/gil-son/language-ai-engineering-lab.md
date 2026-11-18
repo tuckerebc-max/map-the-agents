@@ -1,9 +1,9 @@
 # gil-son/language-ai-engineering-lab
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 83ae9630cd11 @ 3510f077f901d961
+Latest snapshot: commit b0d1dca75057 @ ea9d381385d3a0df
 
 ## Summary (orientation draft, not independently verified)
 

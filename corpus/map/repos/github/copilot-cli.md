@@ -1,9 +1,9 @@
 # github/copilot-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b49df25cafe8 @ bb11b5b4363508e2
+Latest snapshot: commit 020bbc0a39e9 @ c0441e9daa159cc6
 
 ## Summary (orientation draft, not independently verified)
 

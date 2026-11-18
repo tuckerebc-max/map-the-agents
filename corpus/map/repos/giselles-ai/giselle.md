@@ -1,9 +1,9 @@
 # giselles-ai/giselle
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 7dca22434e3d @ 7d22789bbb7ad9c3
+Latest snapshot: commit 44d0d2fc03e6 @ 391a885ff1b50f7f
 
 ## Summary (orientation draft, not independently verified)
 

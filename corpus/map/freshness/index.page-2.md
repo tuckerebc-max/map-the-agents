@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [nikitadmitrieff/auto-co-meta](../repos/nikitadmitrieff/auto-co-meta.md) [coverage: complete]
-- [nimbalyst/nimbalyst](../repos/nimbalyst/nimbalyst.md) [coverage: partial]
-- [nisarg38/claude-northstar](../repos/nisarg38/claude-northstar.md) [coverage: complete]
 - [no1msd/seance](../repos/no1msd/seance.md) [coverage: complete]
 - [norvialabs/forge](../repos/norvialabs/forge.md) [coverage: partial]
 - [notasithlord/peerd](../repos/notasithlord/peerd.md) [coverage: partial]
@@ -398,7 +395,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (178)
+## stale (181)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -451,3 +448,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
 - [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
 - [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
+- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
+- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
+- [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
