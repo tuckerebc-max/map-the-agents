@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: agentsmd
@@ -22,8 +22,6 @@ Repository map entry: [agentsmd/agents.md](../../repos/agentsmd/agents.md.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Acts as a 'README for agents' -- a dedicated, predictable file format designed to provide context, environment tips, testing instructions, and PR rules to help guide AI coding agents working within a project.
-
-(captured site page body (agents/agentsmd.md), not a verified repo-code finding)
-As coding agents spread, every tool proposed its own instruction file, leaving repositories with fragmented per-tool configuration. AGENTS.md defines a predictable, plain-Markdown convention: a single file where a project documents environment setup, testing commands, and pull-request rules, with no schema or tooling required. The repository hosts both the specification and the agents.md website, and dogfoods the format with its own AGENTS.md. Adoption spread across major tools and thousands of repositories, making it the reference point against which alternatives like AGENT.md position themselves. Its audience is any team whose repositories are worked on by AI coding agents.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agentsmd.md)
+(backing feed `description`, not a verified repo-code finding)
+As coding agents spread, every tool proposed its own instruction file, leaving repositories with fragmented per-tool configuration. AGENTS.md defines a predictable, plain-Markdown convention: a single
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

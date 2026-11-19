@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: invariantlabs-ai
@@ -22,8 +22,6 @@ Repository map entry: [invariantlabs-ai/explorer](../../repos/invariantlabs-ai/e
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): A tool for visualizing, exploring, testing, inspecting, and analyzing AI Agent traces.
-
-(captured site page body (agents/explorer.md), not a verified repo-code finding)
-Explorer grew out of Invariant Labs' agent-safety research as the local companion to their analysis stack: a Python API (pip install invariant-ai) plus a web UI that ingests agent traces, exposes tool calls and state for inspection, and supports structured comparison across runs. Teams used it to debug agents — locating the exact tool call where a run went wrong, comparing trajectories across model versions, and turning failures into regression test cases. Deployment ran locally via Docker Compose or the pip package with data stored in ./data, keeping traces on the developer's machine. Invariant Labs was absorbed into Snyk's AI security efforts, the hosted version was shut down in January 2026, and development on the repository has ceased.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/explorer.md)
+(backing feed `description`, not a verified repo-code finding)
+Explorer grew out of Invariant Labs' agent-safety research as the local companion to their analysis stack: a Python API (pip install invariant-ai) plus a web UI that ingests agent traces, exposes tool
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

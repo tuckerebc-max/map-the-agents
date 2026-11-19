@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Latta AI
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI bug-fixing agent from runtime error snapshots (Czechia)
-
-(captured site page body (agents/latta.md), not a verified repo-code finding)
-Latta attacks the gap between an error occurring in production and a developer reproducing it locally: the service captures runtime error snapshots and feeds them to an agent that locates the responsible code and proposes fixes. The product is operated from Czechia and markets itself as an automatic bug-fixing agent for web applications. Its site was only reachable through an antibot challenge during census research, which limited verification of current feature details, pricing, and maintenance state; the domain remains live, so the entry is treated as active but under-documented.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/latta.md)
+(published index `description`, not a verified repo-code finding)
+Latta attacks the gap between an error occurring in production and a developer reproducing it locally: the service captures runtime error snapshots and feeds them to an agent that locates the responsi
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

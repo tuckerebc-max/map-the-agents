@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: meysamhadeli
@@ -22,8 +22,6 @@ Repository map entry: [meysamhadeli/codai](../../repos/meysamhadeli/codai.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal AI coding agent with context-aware code completions; summarizes full project context using Tree-sitter; maintains conversational/code context per session; supports multi-file modifications simultaneously; tracks token consumption per request.
-
-(captured site page body (agents/codai.md), not a verified repo-code finding)
-Codai targets developers who want a terminal-native assistant that understands whole-project structure rather than single files: Tree-sitter parsing produces a summarized context of the codebase in six languages, which the assistant uses for multi-file edits, refactoring, test generation, and review, with per-session conversational and code context and per-request token accounting. Configuration is a single YAML file plus environment variables, with provider, model, and temperature switchable per invocation. It is a solo Go project, self-described work in progress, whose development has been intermittent, with the most recent commits in August 2025.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codai.md)
+(published index `description`, not a verified repo-code finding)
+Codai targets developers who want a terminal-native assistant that understands whole-project structure rather than single files: Tree-sitter parsing produces a summarized context of the codebase in si
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

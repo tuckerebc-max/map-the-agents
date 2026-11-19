@@ -54,6 +54,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [polymathwizard/bhil-ai-first-development-toolkit](../repos/polymathwizard/bhil-ai-first-development-toolkit.md) -- status=distilled, freshness=current
 - [potproject/code-agent](../repos/potproject/code-agent.md) -- status=distilled, freshness=current
 - [ppipada/agent-repoguardian](../repos/ppipada/agent-repoguardian.md) -- status=distilled, freshness=current
+- [prapaa-ai/agav](../repos/prapaa-ai/agav.md) -- status=discovered, freshness=pending
 - [prasenjeet-symon/ogcode](../repos/prasenjeet-symon/ogcode.md) -- status=distilled, freshness=current
 - [praveen-palanisamy/macad-gym](../repos/praveen-palanisamy/macad-gym.md) -- status=distilled, freshness=current
 - [presstab/jrdev](../repos/presstab/jrdev.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [yusifeng/formax](../repos/yusifeng/formax.md) -- status=distilled, freshness=current
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) -- status=distilled, freshness=current
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) -- status=distilled, freshness=current
-- [zachblume/autospec](../repos/zachblume/autospec.md) -- status=distilled, freshness=current

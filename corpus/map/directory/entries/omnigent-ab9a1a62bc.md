@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: omnigent-ai
@@ -22,8 +22,6 @@ Repository map entry: [omnigent-ai/omnigent](../../repos/omnigent-ai/omnigent.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source meta-harness providing harness-agnostic orchestration over multiple AI coding agents (Claude Code, Codex, Cursor, OpenCode, Hermes, Pi, custom agents). Mix agents from different vendors in the same session -- ask one to review another's work. Any-device real-time sync across terminal, browser, phone, desktop app. Multi-user collaboration with shareable live sessions. Cloud sandbox execution (Modal, E2B, Daytona, Kubernetes, Databricks). Stackable policy/governance ...
-
-(captured site page body (agents/omnigent.md), not a verified repo-code finding)
-Omnigent provides a uniform orchestration layer over existing coding agents, letting one session supervise a Claude Code instance while an OpenCode agent reviews its output. Harnesses swap without rewriting work, and custom agents are declared in YAML with tools of type mcp, type agent, or plain Python functions. Policies stack at server, agent, or session level for approve-before-shell, tool-call caps, and spend budgets, with OS-level sandboxing via bwrap or seatbelt. Sessions sync across terminal, browser, and phone, with cloud sandboxes on Modal, E2B, Kubernetes, and others. Credentials can be API keys, coding-plan subscriptions, or gateway base URLs, switchable mid-session. The project is in alpha with a large contributor base and permissive Apache-2.0 licensing.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/omnigent.md)
+(published index `description`, not a verified repo-code finding)
+Omnigent provides a uniform orchestration layer over existing coding agents, letting one session supervise a Claude Code instance while an OpenCode agent reviews its output. Harnesses swap without rew
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

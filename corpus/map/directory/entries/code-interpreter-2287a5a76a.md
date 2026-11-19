@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: haseeb-heaven
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [haseeb-heaven/code-interpreter](h
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source AI agent for the terminal. Describe a task in plain English and it plans, uses tools, and delivers. Free (OpenRouter free models), local (Ollama/LM Studio), and BYOK cloud models — no account required, no vendor lock-in. Cross-platform. Fork of Google's Gemini CLI.
-
-(captured site page body (agents/code-interpreter.md), not a verified repo-code finding)
-The project packages an established agent loop as a zero-account terminal agent: --free mode runs on OpenRouter's free models, local Ollama or LM Studio setups need no key at all, and cloud providers connect through environment variables. On top of the Gemini CLI core it adds an extension marketplace, MCP server support, and a pluggable web-search layer spanning Exa, DuckDuckGo, Brave, Tavily, Serper, and Gemini grounding. A --yolo flag enables unattended execution in trusted workspaces. It suits cost-conscious users and people experimenting with local models who want a terminal agent without committing to a single vendor's account.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/code-interpreter.md)
+(published index `description`, not a verified repo-code finding)
+The project packages an established agent loop as a zero-account terminal agent: --free mode runs on OpenRouter's free models, local Ollama or LM Studio setups need no key at all, and cloud providers
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

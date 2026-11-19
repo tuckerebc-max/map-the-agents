@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: graphql
@@ -22,8 +22,6 @@ Repository map entry: [graphql/graphql-playground](../../repos/graphql/graphql-p
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): GraphQL IDE (not a coding agent). Context-aware autocompletion, error highlighting, real-time GraphQL Subscriptions, interactive multi-column schema documentation, query history, HTTP header configuration, tabs, and Apollo Tracing support. Built upon GraphiQL with additional features for local development. Archived read-only as of May 2026; future development moved to GraphiQL.
-
-(captured site page body (agents/graphql-playground.md), not a verified repo-code finding)
-GraphQL Playground is a graphical IDE for writing and testing GraphQL queries, built by the Prisma and GraphQL community on top of GraphiQL components. It adds context-aware autocompletion, error highlighting, real-time subscription support, an interactive multi-column schema explorer, query history, tabbed sessions, and configurable HTTP headers, and it ships as a desktop app, an embeddable React component, and middleware for Express, Hapi, Koa, and Lambda servers. Throughout the late 2010s it served as the default query IDE for many GraphQL toolchains. The project was archived on May 4, 2026, with the repository read-only and development consolidated into GraphiQL.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/graphql-playground.md)
+(backing feed `description`, not a verified repo-code finding)
+GraphQL Playground is a graphical IDE for writing and testing GraphQL queries, built by the Prisma and GraphQL community on top of GraphiQL components. It adds context-aware autocompletion, error high
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI-first IDE (now rebranded as Devin Desktop by Cognition AI) with built-in agent harness (Devin Local/Cascade) that can chat, write code, run code, generate projects, and deploy apps. Deep context awareness, MCP extensibility, one-click app deploys, workflow automation, and custom memories/rules.
-
-(captured site page body (agents/windsurf-codeium.md), not a verified repo-code finding)
-Windsurf, an AI-first IDE from Codeium and now Devin Desktop under Cognition, embeds a full agent harness in a VS Code-style editor: the Cascade agent panel hosts the Devin Local agent, which chats, writes and runs code, generates new projects, and deploys apps with one click. Deep context awareness gives the agent codebase understanding, supported by memories and rules, workflows for automating repeated trajectories, and MCP servers plus ACP for external tools and editors. Model choice spans Cognition's in-house SWE-1.x family (including a Cerebras-served Lightning variant and swe-grep retrieval), Claude, and GPT, with an Adaptive router default. Free, Pro, Max, Teams, and Enterprise plans exist, with usage-based plans introduced in March 2026. It targets developers who want an IDE-native autonomous agent rather than a CLI.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/windsurf-codeium.md)
+(published index `description`, not a verified repo-code finding)
+Windsurf, an AI-first IDE from Codeium and now Devin Desktop under Cognition, embeds a full agent harness in a VS Code-style editor: the Cascade agent panel hosts the Devin Local agent, which chats, w
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

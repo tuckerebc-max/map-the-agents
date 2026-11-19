@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: cubiq
@@ -22,8 +22,6 @@ Repository map entry: [cubiq/comfyui_workflows](../../repos/cubiq/comfyui_workfl
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Repository of well-documented, readability-first ComfyUI workflow examples for learning Stable Diffusion techniques (basic, upscale, text2img, image conditioning, in/out painting, guided composition); almost all workflows run on vanilla ComfyUI without plugins.
-
-(captured site page body (agents/comfyui-workflows.md), not a verified repo-code finding)
-This repository collects documented ComfyUI workflow examples for Stable Diffusion, ordered as a learning path from basic text-to-image through upscaling, word weighting and embeddings, image conditioning, inpainting and outpainting, and ControlNet-guided composition. Each workflow is a JSON file arranged for readability - flowing left to right, mostly working without plugins - so a reader can trace how data moves through the graph. An experiments directory covers advanced techniques beyond the core path. The cubiq repository became a standard reference for people learning node-based image generation, and it has no connection to coding agents; its census slot reflects a data-entry mismatch rather than a judgment call about category boundaries.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/comfyui-workflows.md)
+(backing feed `description`, not a verified repo-code finding)
+This repository collects documented ComfyUI workflow examples for Stable Diffusion, ordered as a learning path from basic text-to-image through upscaling, word weighting and embeddings, image conditio
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

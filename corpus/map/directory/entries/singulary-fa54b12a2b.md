@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: sammwyy
@@ -22,8 +22,6 @@ Repository map entry: [sammwyy/singulary](../../repos/sammwyy/singulary.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source self-hosted FOSS alternative to v0/Lovable/Bolt/Replit Agent; agent reads/writes/patches files, runs shell commands, and provisions services inside isolated Docker workspaces with built-in Monaco editor, interactive terminals, live preview, multi-user support, and encrypted secrets at rest.
-
-(captured site page body (agents/singulary.md), not a verified repo-code finding)
-Singulary replicates the v0/Lovable/Bolt workflow — prompt, get a running web app, iterate — but on the operator's own hardware with their own API keys and no SaaS backend or telemetry. Each project runs in an isolated Docker container and network where the agent edits files, installs dependencies, restarts dev servers, and asks approval before dangerous calls, with a Monaco editor, interactive terminals, and live preview with automatic port detection in the browser. The whole stack is a single Node process with SQLite, deployable with one docker compose up, and secrets are AES-GCM encrypted at rest. Being very early (a handful of commits), it lacks snapshots and quota enforcement at call time, both on the roadmap. It targets teams and self-hosters who want an app-builder platform they control, and the Docker socket mount warrants rootless-Docker hardening before exposure.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/singulary.md)
+(published index `description`, not a verified repo-code finding)
+Singulary replicates the v0/Lovable/Bolt workflow — prompt, get a running web app, iterate — but on the operator's own hardware with their own API keys and no SaaS backend or telemetry. Each project r
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

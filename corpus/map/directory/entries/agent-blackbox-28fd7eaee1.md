@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: TaewoooPark
@@ -22,8 +22,6 @@ Repository map entry: [taewooopark/agent-blackbox](../../repos/taewooopark/agent
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local-first flight recorder and context-efficiency profiler for coding agents that turns every agent run into a live, replayable operational graph reconstructed from observed events (not agent self-summary). Scores runs on 11 context-efficiency metrics with task-tailored scoring, can write fixes back to CLAUDE.md/AGENTS.md, and offers an in-run optimizer cutting ~94-96% of re-read tokens. Host-agnostic (Claude Code, Codex, OpenCode).
-
-(captured site page body (agents/agent-blackbox.md), not a verified repo-code finding)
-When a coding agent wastes half its context re-reading files or repeating failed approaches, nothing in the transcript explains the pattern, so Agent-Blackbox records runs externally and reconstructs what actually happened from observed events — files read, edits, commands, subagent delegations. Each run gets scored on eleven context-efficiency metrics plus outcome, and the tool can write a reversible memory block into CLAUDE.md or AGENTS.md so future runs avoid the same waste; an in-run optimizer trims redundant reads by roughly 94–96%. It runs via npx against Claude Code, Codex, or OpenCode sessions, needs no API key, and keeps everything local. Developers tuning agent cost and reliability use it as a profiler rather than a harness.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/agent-blackbox.md)
+(backing feed `description`, not a verified repo-code finding)
+When a coding agent wastes half its context re-reading files or repeating failed approaches, nothing in the transcript explains the pattern, so Agent-Blackbox records runs externally and reconstructs
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

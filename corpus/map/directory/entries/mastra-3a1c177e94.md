@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent-sdk
 - Provider/maker: mastra-ai
@@ -22,8 +22,6 @@ Repository map entry: [mastra-ai/mastra](../../repos/mastra-ai/mastra.md) (sourc
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): It is a TypeScript-native agent framework from the Gatsby creators: graph-based workflows with durable human-in-the-loop suspend/resume, Observational Memory, a Harness subsystem (workspace, shell tools, task tracking) for building coding agents, and MCP support in both directions - exposing Mastra agents as MCP servers and consuming external MCP servers.
-
-(captured site page body (agents/mastra.md), not a verified repo-code finding)
-Mastra gives TypeScript teams the primitives usually associated with Python agent frameworks: agents with tool calling and stopping conditions, workflows composed with .then()/.branch()/.parallel() that can suspend for human approval and resume with durable state, and memory that spans conversation history and retrieval. Model routing abstracts 40+ providers behind one interface, Mastra Studio provides a local UI for inspecting and testing agents, and evals integrate with deployment. A dedicated Harness subsystem packages workspace, shell tools, memory, and task tracking for building coding agents, and Mastracode skills integrate with Claude Code and Cursor. YC-backed and very actively maintained (27k+ stars), it targets product engineers embedding agents in applications.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/mastra.md)
+(published index `description`, not a verified repo-code finding)
+Mastra gives TypeScript teams the primitives usually associated with Python agent frameworks: agents with tool calling and stopping conditions, workflows composed with .then()/.branch()/.parallel() th
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

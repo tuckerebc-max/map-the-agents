@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: IncredibleDevHQ
@@ -22,8 +22,6 @@ Repository map entry: [incredibledevhq/incredible.dev](../../repos/incredibledev
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI coding co-worker for APIs (code, fix, document, deploy, test); multi-agent architecture with components (coordinator, code-navigator, code-search, code-understanding, ingestion, ai-gateway); the stated goal is to train smaller, task-specific models that outperform large general-purpose models on individual tasks - each agent can use its own model for a heterogeneous, per-task-optimized system. Early preview stage (561 commits, 34 stars).
-
-(captured site page body (agents/incredibledev.md), not a verified repo-code finding)
-Incredible.dev was pitched as an AI co-worker specialized for API codebases: one coordinator orchestrates ingestion, code-understanding, code-navigator, and code-search services plus an AI gateway, with each component free to run a different model. The distinguishing bet is training smaller task-specific models that beat large general-purpose ones on narrow tasks rather than routing everything through one frontier model. The Rust implementation ships Docker Compose files, but the README never published promised run instructions, and the last visible commit landed in May 2024. It remains an early research preview rather than an installable product.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/incredibledev.md)
+(published index `description`, not a verified repo-code finding)
+Incredible.dev was pitched as an AI co-worker specialized for API codebases: one coordinator orchestrates ingestion, code-understanding, code-navigator, and code-search services plus an AI gateway, wi
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

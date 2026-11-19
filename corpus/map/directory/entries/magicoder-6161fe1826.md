@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: ISE-UIUC
@@ -22,8 +22,6 @@ Repository map entry: [ise-uiuc/magicoder](../../repos/ise-uiuc/magicoder.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): A code-generation model family empowered by OSS-Instruct, which uses open-source code snippets to generate low-bias, high-quality instruction data, mitigating inherent biases in LLM-synthesized data. Magicoder-S-DS-6.7B outperforms GPT-3.5-turbo and Gemini Ultra on HumanEval. A model, not an agent harness.
-
-(captured site page body (agents/magicoder.md), not a verified repo-code finding)
-Magicoder attacked a data-quality problem in code-model training: instruction data synthesized purely by LLMs inherits their biases and blind spots, so the UIUC team instead seeded generation with randomly sampled snippets from real open-source code, producing 75K diverse instruction-response pairs that became the OSS-Instruct dataset. Models fine-tuned from DeepSeek and Llama-2 bases with this data (plus an Evol-Instruct set) reached state-of-the-art 6.7B-class HumanEval scores at release. ML researchers and practitioners training or serving local code models use the released checkpoints, datasets, and method; the ICML 2024 paper documents the approach. It is model and dataset work, with no agentic loop of any kind.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/magicoder.md)
+(backing feed `description`, not a verified repo-code finding)
+Magicoder attacked a data-quality problem in code-model training: instruction data synthesized purely by LLMs inherits their biases and blind spots, so the UIUC team instead seeded generation with ran
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

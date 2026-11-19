@@ -1,9 +1,9 @@
 # glincker/stacklit
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 6aa017643d19 @ b685fa5ba411ed97
+Latest snapshot: commit f6b5c06308f1 @ 2d6fda91794a79a7
 
 ## Summary (orientation draft, not independently verified)
 

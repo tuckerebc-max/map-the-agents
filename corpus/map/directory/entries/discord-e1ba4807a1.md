@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Associated link: a Discord invite (discord.gg/VmEEUrc7dg); server could not be resolved from the invite page; not a standalone agent harness
-
-(captured site page body (agents/discord.md), not a verified repo-code finding)
-This census entry records a Discord invite URL rather than a tool. The invite page exposed no server name, bot, or product; nothing about an agent harness can be verified from it. It is retained as an association link only.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/discord.md)
+(backing feed `description`, not a verified repo-code finding)
+This census entry records a Discord invite URL rather than a tool. The invite page exposed no server name, bot, or product; nothing about an agent harness can be verified from it. It is retained as an
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

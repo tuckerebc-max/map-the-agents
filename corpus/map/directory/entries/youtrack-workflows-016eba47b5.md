@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: JetBrains
@@ -22,8 +22,6 @@ Repository map entry: [jetbrains/youtrack-workflows](../../repos/jetbrains/youtr
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Repository of custom workflows for YouTrack (JetBrains issue tracker) written using the JavaScript-based API. Official JetBrains project.
-
-(captured site page body (agents/youtrack-workflows.md), not a verified repo-code finding)
-youtrack-workflows is JetBrains' official repository of sample custom workflow scripts for YouTrack, its issue tracker, written against YouTrack's JavaScript workflow API. The samples demonstrate workflow automation patterns — state changes, scheduled actions, notifications, and custom fields — and can be installed directly into a YouTrack instance. It is Apache-2.0 licensed and officially maintained by JetBrains, though activity is modest: 128 commits, no releases, and modest community traction. YouTrack administrators use it as a reference for writing custom workflow automation in JavaScript.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/youtrack-workflows.md)
+(backing feed `description`, not a verified repo-code finding)
+youtrack-workflows is JetBrains' official repository of sample custom workflow scripts for YouTrack, its issue tracker, written against YouTrack's JavaScript workflow API. The samples demonstrate work
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

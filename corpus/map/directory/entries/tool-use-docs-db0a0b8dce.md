@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Documentation page for GroqCloud API tool use functionality
-
-(captured site page body (agents/tool-use-docs.md), not a verified repo-code finding)
-This entry points at the GroqCloud API documentation for tool use rather than at a product. The census keeps it because that documentation describes the interface through which many listed harnesses call Groq-hosted models. No software ships with the entry, so it is categorized as other. Readers looking for a coding harness should treat it as reference material for one of the model backends.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/tool-use-docs.md)
+(backing feed `description`, not a verified repo-code finding)
+This entry points at the GroqCloud API documentation for tool use rather than at a product. The census keeps it because that documentation describes the interface through which many listed harnesses c
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

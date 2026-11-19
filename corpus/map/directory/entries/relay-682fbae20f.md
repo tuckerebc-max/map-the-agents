@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: jcast90
@@ -22,8 +22,6 @@ Repository map entry: [jcast90/relay](../../repos/jcast90/relay.md) (source: bac
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Cross-repo agent-to-agent delegation via a single orchestrator that reaches into multiple repos and coordinates a delegation tree — unlike single-repo agent harnesses. Local-first, all state in ~/.relay/, no cloud/telemetry. Three dashboards (CLI, TUI, GUI) sharing one source of truth. MCP server exposes 19 tools. Classifier → planner → decomposer pipeline with user approval for complex tiers.
-
-(captured site page body (agents/relay.md), not a verified repo-code finding)
-Relay addresses the problem that coding agents operate inside one checkout at a time, while real work spans several repositories — a schema change in one repo breaks consumers in three others. A user hands the orchestrator a sentence, GitHub issue, or Linear ticket; it classifies complexity, produces a plan, decomposes it into a dependency DAG of tickets, and dispatches agents that verify their work and open PRs. State lives entirely in ~/.relay as atomic file writes, so there is no server and no telemetry, and sessions approaching context limits emit handoff briefs for their successors. It suits maintainers who already live in Claude Code or Codex CLI and want delegation across repos without adopting a hosted coordination service.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/relay.md)
+(published index `description`, not a verified repo-code finding)
+Relay addresses the problem that coding agents operate inside one checkout at a time, while real work spans several repositories — a schema change in one repo breaks consumers in three others. A user
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

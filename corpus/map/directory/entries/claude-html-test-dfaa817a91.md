@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: SivaramAdi
@@ -22,8 +22,6 @@ Repository map entry: [sivaramadi/claude-html-test](../../repos/sivaramadi/claud
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): A basic test repository showcasing information about AI Agents, containing a single HTML file.
-
-(captured site page body (agents/claude-html-test.md), not a verified repo-code finding)
-The repository consists of a single index.html file whose text discusses AI agents, committed in a handful of November 2024 changes with no README, license, releases, or documentation. Its name and single-file shape indicate a test artifact, plausibly output from an AI coding session, rather than a maintained project. There is no agent, loop, tooling, or interface to assess, and the repo has seen no activity since creation, so it functions in this census only as an example of AI-generated test content rather than a harness.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/claude-html-test.md)
+(backing feed `description`, not a verified repo-code finding)
+The repository consists of a single index.html file whose text discusses AI agents, committed in a handful of November 2024 changes with no README, license, releases, or documentation. Its name and si
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

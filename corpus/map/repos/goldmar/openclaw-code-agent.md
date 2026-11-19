@@ -1,9 +1,9 @@
 # goldmar/openclaw-code-agent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit fbb2e275ddd8 @ 1d896bcda1b0e71c
+Latest snapshot: commit 7f3dd0ffd438 @ 0ad492fb1fa7b555
 
 ## Summary (orientation draft, not independently verified)
 

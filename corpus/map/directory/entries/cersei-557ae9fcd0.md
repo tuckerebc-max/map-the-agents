@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
-- Category: agent-sdk
+- Category: agent
 - Provider/maker: pacifio
 - License: MIT
 - Language: Rust
@@ -22,12 +22,10 @@ Repository map entry: [pacifio/cersei](../../repos/pacifio/cersei.md) (source: b
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=agent-sdk, backing=agent, page=agent-sdk
+- category: published=agent-sdk, backing=agent, page=
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): "Reverse-engineered Rust port of Claude Code architecture as an embeddable SDK; graph memory (Grafeo) with 98us recall vs Claude Code's 7.5s LM call; 6MB binary, 4.9MB RSS; 30+ built-in tools;
-
-(captured site page body (agents/cersei.md), not a verified repo-code finding)
-cersei came from reverse-engineering Claude Code's architecture and rebuilding it in Rust as a library: tool execution, LLM streaming, subagent orchestration, persistent memory, skills, and MCP integration all exposed as composable crates for embedding agents in applications. Its pitch is efficiency at the systems level — the companion Abstract CLI binary measures roughly 6MB with 4.9MB RSS and 32ms startup — alongside a three-tier memory design that combines flat files, CLAUDE.md-style context, and an optional graph memory backed by Grafeo, which answers recall queries in microseconds without an LLM call. Developers use it to build custom agents with Claude Code-like capability without Node.js, or to embed agent behavior in products where binary size and memory matter. It is MIT-licensed, Rust-based, installable via Cargo, and actively maintained with published docs and benchmark suites against Claude Code and competing agent frameworks.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/cersei.md)
+(published index `description`, not a verified repo-code finding)
+cersei came from reverse-engineering Claude Code's architecture and rebuilding it in Rust as a library: tool execution, LLM streaming, subagent orchestration, persistent memory, skills, and MCP integr
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: moazbuilds
@@ -22,8 +22,6 @@ Repository map entry: [moazbuilds/codemachine-cli](../../repos/moazbuilds/codema
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Orchestration layer that runs AI coding CLIs (Claude Code, Codex, Cursor) through structured, long-running, repeatable workflows with parallel execution, context engineering, and multi-agent coordination.
-
-(captured site page body (agents/codemachine-cli.md), not a verified repo-code finding)
-CodeMachine-CLI starts from the observation that a coding workflow — the sequence of steps an operator runs an agent through to fix a bug or build a feature — normally exists only in the operator's head and gets rebuilt each session. The tool captures such workflows as definitions and re-executes them, spawning headless coding-agent CLIs (Claude Code, Codex, Cursor, and others), passing context between agents, running steps in parallel, and persisting state across runs that can span hours or days. It positions itself as an orchestration layer rather than an agent: the underlying coding engines do the work while CodeMachine handles coordination, agent-to-agent communication, and reproducibility. It is installed via npm, documented at docs.codemachine.co, and developed openly on GitHub with an active community.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/codemachine-cli.md)
+(published index `description`, not a verified repo-code finding)
+CodeMachine-CLI starts from the observation that a coding workflow — the sequence of steps an operator runs an agent through to fix a bug or build a feature — normally exists only in the operator's he
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

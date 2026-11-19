@@ -3,6 +3,7 @@
 [Back to index](index.md)
 [Back to directory index](../index.md)
 
+- [agensh](../entries/agensh-4421c91a6f.md)
 - [amplifier](../entries/amplifier-9c476d20ba.md)
 - [autogen](../entries/autogen-378d204807.md)
 - [taskweaver](../entries/taskweaver-5dcb09e5cb.md)

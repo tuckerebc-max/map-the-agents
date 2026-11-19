@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: MoonshotAI
@@ -22,8 +22,6 @@ Repository map entry: [moonshotai/kimi-cli](../../repos/moonshotai/kimi-cli.md) 
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Dual-mode shell/agent (toggle with Ctrl-X without leaving CLI), ACP (Agent Client Protocol) support for IDE integration (Zed, JetBrains), VS Code extension, Zsh integration, comprehensive MCP support with OAuth, autonomous planning and adjustment during execution. Being wound down in favor of Kimi Code CLI.
-
-(captured site page body (agents/kimi-code-cli.md), not a verified repo-code finding)
-Kimi Code CLI is the continuation of Moonshot AI's terminal agent line, replacing the original Kimi CLI whose README points users here. It reads and edits code, executes shell commands, and searches the web while planning and revising its actions during execution; a Ctrl-X toggle switches between raw shell use and agentic operation without leaving the process. ACP support connects it to Zed and JetBrains IDEs, a VS Code extension covers that editor, and MCP servers can be attached over stdio or HTTP with OAuth. Installation via pip handles the migration from the older kimi-cli package automatically.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/kimi-code-cli.md)
+(published index `description`, not a verified repo-code finding)
+Kimi Code CLI is the continuation of Moonshot AI's terminal agent line, replacing the original Kimi CLI whose README points users here. It reads and edits code, executes shell commands, and searches t
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

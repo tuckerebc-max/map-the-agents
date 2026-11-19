@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: KunAgent
@@ -22,8 +22,6 @@ Repository map entry: [kunagent/kun](../../repos/kunagent/kun.md) (source: backi
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local-first AI agent workspace with a dual interface — desktop GUI and terminal TUI share a single local 'kun serve' runtime (not two separate sessions). Evidence-based delivery: plans, todos, tool calls, file changes, browser/terminal results, and approvals are all linked to tasks. Two-mode workflow: Code (software delivery with Design canvas) and Work (writing/docs/presentations). Plans persist into version control. Supports Scheduled ...
-
-(captured site page body (agents/kun.md), not a verified repo-code finding)
-Kun treats agent work as evidence-based delivery rather than chat: tasks move through goal clarification, planning, execution, and inspection of diffs, tests, and reviews, with plans and todos saved into the project for version control. The Code mode covers file editing, terminals, git worktrees, and review, while the Work mode handles markdown, PDF/Office analysis, spreadsheets, and outline-to-presentation output. Automation comes from scheduled tasks, loops, hooks, MCP, skills, and installable extensions, with provider presets from Claude and Codex through Ollama, DeepSeek, and Kimi. It is licensed PolyForm Noncommercial 1.0.0, so individuals and researchers use it free while commercial deployment requires a separate agreement.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/kun.md)
+(published index `description`, not a verified repo-code finding)
+Kun treats agent work as evidence-based delivery rather than chat: tasks move through goal clarification, planning, execution, and inspection of diffs, tests, and reviews, with plans and todos saved i
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

@@ -305,6 +305,7 @@
 - [pirua-game/ai_game_base_analysis_cli_mcp_tool](../repos/pirua-game/ai_game_base_analysis_cli_mcp_tool.md)
 - [polymathwizard/bhil-ai-first-development-toolkit](../repos/polymathwizard/bhil-ai-first-development-toolkit.md)
 - [ppipada/agent-repoguardian](../repos/ppipada/agent-repoguardian.md)
+- [prapaa-ai/agav](../repos/prapaa-ai/agav.md)
 - [praveen-palanisamy/macad-gym](../repos/praveen-palanisamy/macad-gym.md)
 - [prime-radiant-inc/sprout](../repos/prime-radiant-inc/sprout.md)
 - [project-codeguard/rules](../repos/project-codeguard/rules.md)

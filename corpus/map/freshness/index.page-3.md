@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) [coverage: partial]
-- [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) [coverage: partial]
-- [bahdotsh/indxr](../repos/bahdotsh/indxr.md) [coverage: partial]
-- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) [coverage: partial]
 - [bastani-inc/atomic](../repos/bastani-inc/atomic.md) [coverage: partial]
 - [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) [coverage: partial]
 - [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
@@ -129,8 +125,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) [coverage: complete]
 - [giselles-ai/giselle](../repos/giselles-ai/giselle.md) [coverage: partial]
 - [github/copilot-cli](../repos/github/copilot-cli.md) [coverage: partial]
+- [glincker/stacklit](../repos/glincker/stacklit.md) [coverage: partial]
+- [goldmar/openclaw-code-agent](../repos/goldmar/openclaw-code-agent.md) [coverage: partial]
+- [golutra/golutra](../repos/golutra/golutra.md) [coverage: partial]
 
-## refresh-failed (71)
+## refresh-failed (72)
 
 - [0xpayne/gpt-migrate](../repos/0xpayne/gpt-migrate.md) -- FetchFailed
 - [airtai/fastagency](../repos/airtai/fastagency.md) -- FetchFailed
@@ -164,6 +163,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [gcwing/openbitfun](../repos/gcwing/openbitfun.md) -- FetchFailed [coverage: partial]
 - [geekan/metagpt](../repos/geekan/metagpt.md) -- FetchFailed
 - [get-convex/chef](../repos/get-convex/chef.md) -- FetchFailed [coverage: complete]
+- [gitlawb/zero](../repos/gitlawb/zero.md) -- FetchFailed [coverage: partial]
 - [hams-ollo/project-s.o.c.r.a.t.e.s.](../repos/hams-ollo/project-s.o.c.r.a.t.e.s..md) -- FetchFailed
 - [haseeb-heaven/code-interpreter](../repos/haseeb-heaven/code-interpreter.md) -- FetchFailed
 - [hexmammamia74/cursor-ai-pro-download-2026](../repos/hexmammamia74/cursor-ai-pro-download-2026.md) -- CollectError

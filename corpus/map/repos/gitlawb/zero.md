@@ -1,9 +1,10 @@
 # gitlawb/zero
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: refresh-failed
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
 Latest snapshot: commit c1937dfac72e @ 20ad3944dceb5124
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/gitlawb/zero
 
 ## Summary (orientation draft, not independently verified)
 

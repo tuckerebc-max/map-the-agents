@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Sumanth077
@@ -22,8 +22,6 @@ Repository map entry: [sumanth077/ai-engineering-toolkit](../../repos/sumanth077
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Curated list of 100+ libraries and frameworks for AI engineers building LLM-powered systems, organized by category (vector DBs, orchestration, RAG, evaluation, agent frameworks, etc.).
-
-(captured site page body (agents/ai-engineering-toolkit.md), not a verified repo-code finding)
-The repo solves a discovery problem: AI engineers face hundreds of overlapping libraries for embedding, orchestration, and evaluation, and no single index of what exists. It organizes entries by category with descriptions, primary language, and license noted per item. There is nothing to install or run; the artifact is the list itself, updated through community pull requests. Development is minimal (32 commits, no releases), so the audience treats it as a reference page rather than a maintained tool.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/ai-engineering-toolkit.md)
+(backing feed `description`, not a verified repo-code finding)
+The repo solves a discovery problem: AI engineers face hundreds of overlapping libraries for embedding, orchestration, and evaluation, and no single index of what exists. It organizes entries by categ
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

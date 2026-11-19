@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: terragon-labs
@@ -22,8 +22,6 @@ Repository map entry: [terragon-labs/terragon-oss](../../repos/terragon-labs/ter
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Remote background agent orchestrator for coding CLIs in the cloud. Multi-agent support with sandbox isolation per agent. Seamless automatic git workflow (branches, commits, PRs). Local handoff via terry CLI. MCP server for task management. BYO subscriptions/API keys. Integrates with Slack/GitHub via @-mentions. Real-time task status streaming to browser. NOTE: This is a snapshot at time of shutdown (January 16, 2026), ...
-
-(captured site page body (agents/terragon-oss.md), not a verified repo-code finding)
-Terragon Labs operated a hosted service that ran coding CLIs such as Claude Code, Codex, Amp, and Gemini in cloud sandboxes, letting developers fire tasks at multiple agents in parallel and receive branches, commits, and pull requests automatically. After shutting the product down, the company published this repository — a single-snapshot Apache-2.0 monorepo (two commits) containing the web app, WebSocket broadcast service, docs site, sandbox provisioning, and the terry CLI for handing tasks back to a local environment. Features included per-agent sandbox isolation, automated git workflows, an MCP server for task management, Slack and GitHub integrations, and BYO subscriptions or API keys. Because the snapshot is explicitly provided as-is with no maintenance or completeness guarantees, it functions as a reference implementation of a background-agent orchestration platform rather than a live tool. Developers studying how such orchestrators are assembled, or forking the architecture, are its remaining audience.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/terragon-oss.md)
+(published index `description`, not a verified repo-code finding)
+Terragon Labs operated a hosted service that ran coding CLIs such as Claude Code, Codex, Amp, and Gemini in cloud sandboxes, letting developers fire tasks at multiple agents in parallel and receive br
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

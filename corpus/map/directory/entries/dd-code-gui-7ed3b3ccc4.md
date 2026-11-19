@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: ddcode
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI coding assistant supporting Claude Agent SDK, Codex SDK, DeepSeek
-
-(captured site page body (agents/dd-code-gui.md), not a verified repo-code finding)
-DD Code GUI embeds a unified AI assistant panel in JetBrains IDEs and routes work to whichever backend is configured: Anthropic's Claude Agent SDK, OpenAI's Codex SDK, or DeepSeek and other Anthropic-compatible APIs. Around that core it adds dual-engine streaming chat with slash commands, a multi-agent mode, smart code completion, AI-generated commit messages, a built-in terminal, and MCP server integration via 22 prebuilt templates, plus a skill system and bilingual theming. The source lives on GitCode under the project name deepseek-film-plugin, and the plugin is free. With about 250 downloads and an unapproved pending status on the Marketplace as of August 2026, it is a very early-stage tool for JetBrains users who want multiple agent engines behind one UI.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/dd-code-gui.md)
+(published index `description`, not a verified repo-code finding)
+DD Code GUI embeds a unified AI assistant panel in JetBrains IDEs and routes work to whichever backend is configured: Anthropic's Claude Agent SDK, OpenAI's Codex SDK, or DeepSeek and other Anthropic-
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

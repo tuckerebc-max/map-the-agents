@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: benc-uk
@@ -22,8 +22,6 @@ Repository map entry: [benc-uk/workflow-dispatch](../../repos/benc-uk/workflow-d
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): GitHub Action for triggering other GitHub Actions workflows via the workflow_dispatch event; can wait for triggered workflow completion, poll run status, sync status, trigger workflows in other repos, and pass JSON inputs between workflows. (Not a coding agent harness — it's a CI/CD workflow chaining tool.)
-
-(captured site page body (agents/workflow-dispatch.md), not a verified repo-code finding)
-workflow-dispatch addresses the lack of native workflow-to-workflow chaining in GitHub Actions: it triggers other workflows through the workflow_dispatch event, optionally waits for their completion, polls run status, triggers workflows in other repositories, and passes JSON inputs between chained workflows. It is a conventional CI/CD action with no AI or agent behavior, included in the census only as a boundary case. CI authors use it to chain pipelines across repositories with status polling and JSON input passing.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/workflow-dispatch.md)
+(backing feed `description`, not a verified repo-code finding)
+workflow-dispatch addresses the lack of native workflow-to-workflow chaining in GitHub Actions: it triggers other workflows through the workflow_dispatch event, optionally waits for their completion,
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

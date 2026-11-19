@@ -38,11 +38,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) -- status=distilled, freshness=current
 - [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md) -- status=distilled, freshness=current
 - [github/copilot-cli](../repos/github/copilot-cli.md) -- status=distilled, freshness=stale
-- [gitlawb/zero](../repos/gitlawb/zero.md) -- status=distilled, freshness=current
+- [gitlawb/zero](../repos/gitlawb/zero.md) -- status=distilled, freshness=refresh-failed
 - [gkorepanov/llm-tools](../repos/gkorepanov/llm-tools.md) -- status=distilled, freshness=current
-- [glincker/stacklit](../repos/glincker/stacklit.md) -- status=distilled, freshness=current
-- [goldmar/openclaw-code-agent](../repos/goldmar/openclaw-code-agent.md) -- status=distilled, freshness=current
-- [golutra/golutra](../repos/golutra/golutra.md) -- status=distilled, freshness=current
+- [glincker/stacklit](../repos/glincker/stacklit.md) -- status=distilled, freshness=stale
+- [goldmar/openclaw-code-agent](../repos/goldmar/openclaw-code-agent.md) -- status=distilled, freshness=stale
+- [golutra/golutra](../repos/golutra/golutra.md) -- status=distilled, freshness=stale
 - [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) -- status=distilled, freshness=current
 - [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) -- status=distilled, freshness=current
 - [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) -- status=distilled, freshness=current

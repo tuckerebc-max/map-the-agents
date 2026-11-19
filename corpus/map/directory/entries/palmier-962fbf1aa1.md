@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: Palmier
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Turns your phone into a remote control for AI agent CLIs (Claude Code, Codex, Gemini CLI, GitHub Copilot, etc.) running on your computer. Uses your existing AI subscriptions — no API keys or per-token costs. Exposes an MCP server with 14 tools and 2 resources. Built-in AES-256-GCM password manager that agents can autofill into browsers without seeing credentials. Phone capability ...
-
-(captured site page body (agents/palmier.md), not a verified repo-code finding)
-Long agent runs outlive attention spans, and walking back to the laptop to check a Claude Code or Codex session interrupts everything else. Palmier runs a background daemon — systemd on Linux, launchd on macOS 13+, Task Scheduler on Windows — that installs and manages agent CLIs and exposes their control to a phone PWA or Android app, with all execution staying on the user's machine and no data stored remotely. It reuses existing subscriptions like Claude Pro or ChatGPT Plus instead of requiring API keys, and new agent CLIs are added through configuration rather than code. An MCP server on localhost:7256 hands agents tools that reach back into the phone — calendar, contacts, notifications, geolocation, SMS, email — plus an encrypted password manager for agent logins, so a session can schedule a meeting or send a message on the user's behalf. Install is a curl script or npm global under Node 24+, Apache-2.0 licensed. Developers who start agent runs and leave the desk are the audience.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/palmier.md)
+(published index `description`, not a verified repo-code finding)
+Long agent runs outlive attention spans, and walking back to the laptop to check a Claude Code or Codex session interrupts everything else. Palmier runs a background daemon — systemd on Linux, launchd
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

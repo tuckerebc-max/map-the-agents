@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Fission-AI
@@ -22,8 +22,6 @@ Repository map entry: [fission-ai/openspec](../../repos/fission-ai/openspec.md) 
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Adds a lightweight spec layer for AI coding assistants to agree on what to build before code is written, using an artifact-guided workflow with plain Markdown; supports 30+ tools and enables cross-repo planning via 'Stores.'
-
-(captured site page body (agents/openspec.md), not a verified repo-code finding)
-AI coding assistants routinely build the wrong thing because intent lives in a chat transcript rather than a reviewable artifact. OpenSpec inserts a lightweight spec process: openspec init scaffolds a convention directory, and each change becomes a proposal, spec deltas, design notes, and a task list in plain Markdown that the assistant must follow before writing code. Slash commands (/opsx:explore, /opsx:propose, /opsx:apply, /opsx:archive) adapt to whichever tool is in use — Claude Code, Cursor, GitHub Copilot, Amazon Q, Codex, and 30-plus others — and archived changes remain in the repo as a decision record. Beta 'Stores' let teams share specs across repositories, and anonymous telemetry (command names only) is opt-out. The npm CLI installs globally under MIT and requires Node 20.19+, and the project dogfoods itself with 66k stars. Teams that want lightweight, tool-agnostic specification discipline ahead of agent-driven implementation are the audience.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/openspec.md)
+(backing feed `description`, not a verified repo-code finding)
+AI coding assistants routinely build the wrong thing because intent lives in a chat transcript rather than a reviewable artifact. OpenSpec inserts a lightweight spec process: openspec init scaffolds a
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

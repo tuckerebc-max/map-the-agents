@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: itayinbarr
@@ -22,8 +22,6 @@ Repository map entry: [itayinbarr/little-coder](../../repos/itayinbarr/little-co
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Coding agent tuned for small local models, built on pi, with plan mode, dispatch sub-coders, per-phase model selection, read-before-edit enforcement, and a lifecycle-hook extension system.
-
-(captured site page body (agents/little-coder.md), not a verified repo-code finding)
-Small local models fail at agentic coding mostly because harnesses assume frontier-model context discipline, so little-coder wraps the pi agent with extensions that enforce read-before-edit, gate permissions, inject skills per turn, watch for compaction, and monitor output quality — all as lifecycle hooks rather than core patches. Plan mode dispatches isolated read-only sub-coders for research and hands a written plan to a fresh session on the action model, with separate /plan-model and /action-model commands for big-plan/small-implement economics. Everything ships as extensions and skills around pi, keeping cold-start context near 7k tokens. Hobbyists running Qwen-class models on consumer laptops are the target audience, with published Terminal-Bench and GAIA results.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/little-coder.md)
+(published index `description`, not a verified repo-code finding)
+Small local models fail at agentic coding mostly because harnesses assume frontier-model context discipline, so little-coder wraps the pi agent with extensions that enforce read-before-edit, gate perm
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

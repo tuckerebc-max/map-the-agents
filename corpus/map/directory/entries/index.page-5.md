@@ -2,57 +2,104 @@
 
 Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 
-- [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing+pages
-- [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing+pages
-- [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing+pages
-- [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing+pages
-- [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing+pages
-- [website (`website`)](website-747a8f3983.md) -- backing+pages
-- [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing+pages
-- [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing+pages
-- [Whailion AI (`whailion-ai`)](whailion-ai-8ba50c01c2.md) -- published+backing+pages
-- [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing+pages
-- [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing+pages
-- [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing+pages
-- [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing+pages
-- [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing+pages
-- [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing+pages
-- [WiseGPT (`wisegpt`)](wisegpt-923a19d36f.md) -- published+backing+pages
-- [Wolfpack (`wolfpack`)](wolfpack-2751b66fd5.md) -- published+backing+pages
-- [Wordpressify (`wordpressify`)](wordpressify-c98ba5f280.md) -- backing+pages
-- [WorkBuddy (`workbuddy`)](workbuddy-141de36072.md) -- published+backing+pages
-- [Workflow-Dispatch (`workflow-dispatch`)](workflow-dispatch-beffec7845.md) -- backing+pages
-- [Workflows-Samples (`workflows-samples`)](workflows-samples-61a1e262cd.md) -- backing+pages
-- [WorkGPT (`workgpt`)](workgpt-8bbf61394d.md) -- published+backing+pages
-- [workstation (`workstation`)](workstation-d195d36bd7.md) -- published+backing+pages
-- [workstreams (`workstreams`)](workstreams-7968458f5f.md) -- published+backing+pages
-- [WrongStack (`wrongstack`)](wrongstack-84c1360faf.md) -- published+backing+pages
-- [Xcode Coding Intelligence (`xcode-coding-intelligence`)](xcode-coding-intelligence-9cdc21d6b1.md) -- published+backing+pages
-- [XCoding (`xcoding`)](xcoding-4fb7749c42.md) -- published+backing+pages
-- [xpreiIDE (`xpreiide`)](xpreiide-de5a8ded9f.md) -- published+backing+pages
-- [xuanji-landing (`xuanji-landing`)](xuanji-landing-929300b357.md) -- backing+pages
-- [yAgents (`yagents`)](yagents-0eb9dfab0a.md) -- published+backing+pages
-- [yao (`yao`)](yao-e2813bdf6e.md) -- published+backing+pages
-- [Yeoman (`yeoman`)](yeoman-1cc2cd01da.md) -- backing+pages
-- [Youtrack-Workflows (`youtrack-workflows`)](youtrack-workflows-016eba47b5.md) -- backing+pages
-- [Youware (`youware`)](youware-db5fac1ee0.md) -- published+backing+pages
-- [yoyo (`yoyo`)](yoyo-da30e45705.md) -- published+backing+pages
-- [yt-channels-DS-AI-ML-CS (`yt-channels-ds-ai-ml-cs`)](yt-channels-ds-ai-ml-cs-1baa250a17.md) -- backing+pages
-- [Z.ai Code (`zai-code`)](zai-code-a04c8ecc95.md) -- backing+pages
-- [Zap (`zap`)](zap-b4c5ae2ae9.md) -- published+backing+pages
-- [Zapier AI (`zapier-ai`)](zapier-ai-e89de066c0.md) -- backing+pages
-- [Zellij (`zellij`)](zellij-2aba4e52c8.md) -- backing+pages
-- [Zencoder (`zencoder`)](zencoder-75605d80f1.md) -- published+backing+pages
-- [Zentara-Code (`zentara-code`)](zentara-code-bb12b055e8.md) -- published+backing+pages
-- [zero (`zero`)](zero-f9194e73f9.md) -- published+backing+pages
-- [ZeroPath (`zeropath`)](zeropath-b82306c3fd.md) -- published+backing+pages
-- [zeroshot (`zeroshot`)](zeroshot-4d87daba5d.md) -- published+backing+pages
-- [zerostack (`zerostack`)](zerostack-5171c82a09.md) -- published+backing+pages
-- [Zhanlu (`zhanlu`)](zhanlu-64e4179e40.md) -- published+backing+pages
-- [zhikuncode (`zhikuncode`)](zhikuncode-9412121bb2.md) -- published+backing+pages
-- [zhin (`zhin`)](zhin-a9f3a2eb5c.md) -- backing+pages
-- [Zoo-Code (`zoo-code`)](zoo-code-38a9f1d497.md) -- published+backing+pages
-- [Zoo Code (`zoo-code-extension`)](zoo-code-extension-0dfddac61b.md) -- published+backing+pages
-- [Zorow (`zorow`)](zorow-eeef5c76dd.md) -- backing+pages
-- [Zot (`zot`)](zot-d52b78b0b0.md) -- published+backing+pages
-- [Zugabot (`zugabot`)](zugabot-55065a963c.md) -- published+backing+pages
+- [v0 (Vercel) (`v0-vercel`)](v0-vercel-5f00d1d03f.md) -- published+backing
+- [valuecell (`valuecell`)](valuecell-5d2ddded3a.md) -- backing-only
+- [Vanna.AI (`vannaai`)](vannaai-119cd00843.md) -- backing-only
+- [Vendo (`vendo`)](vendo-4afc0da2f9.md) -- published+backing
+- [VerbalCodeAi (`verbalcodeai`)](verbalcodeai-43036f239b.md) -- published+backing
+- [vercel-doctor (`vercel-doctor`)](vercel-doctor-5cfc57a577.md) -- backing-only
+- [Verdent (`verdent`)](verdent-4186a3c222.md) -- published+backing
+- [vibe-annotations (`vibe-annotations`)](vibe-annotations-aa7e061413.md) -- backing-only
+- [vibe-coding (`vibe-coding`)](vibe-coding-e41423821c.md) -- backing-only
+- [vibe-coding-guide (`vibe-coding-guide`)](vibe-coding-guide-fbf1bad6c5.md) -- backing-only
+- [vibe-coding-kit (`vibe-coding-kit`)](vibe-coding-kit-54ead54a14.md) -- backing-only
+- [vibe-coding-penetration-tester (`vibe-coding-penetration-tester`)](vibe-coding-penetration-tester-56311b1ecd.md) -- backing-only
+- [vibe-coding-template (`vibe-coding-template`)](vibe-coding-template-3997360131.md) -- backing-only
+- [Vibe Kanban (`vibe-kanban`)](vibe-kanban-a6f574d719.md) -- published+backing
+- [vibe-local (`vibe-local`)](vibe-local-83dd784138.md) -- published+backing
+- [vibe-replay (`vibe-replay`)](vibe-replay-6bf7d6e5f9.md) -- backing-only
+- [vibe-tree (`vibe-tree`)](vibe-tree-90bb9af931.md) -- published+backing
+- [VibeAround (`vibearound`)](vibearound-066280717b.md) -- published+backing
+- [vibecode-playground (`vibecode-playground`)](vibecode-playground-af495c33d0.md) -- published+backing
+- [VibeKit (`vibekit`)](vibekit-23568f2097.md) -- published+backing
+- [VibePod (`vibepod`)](vibepod-e2c2983e81.md) -- published+backing
+- [vibeproxy (`vibeproxy`)](vibeproxy-dc75e4981e.md) -- backing-only
+- [VibeRaven (`viberaven`)](viberaven-9b77c14c6d.md) -- published+backing
+- [vibesdk (`vibesdk`)](vibesdk-0effe48c48.md) -- published+backing
+- [VibeWorkspace (`vibeworkspace`)](vibeworkspace-3d89ea5634.md) -- published+backing
+- [vibeyard (`vibeyard`)](vibeyard-dfd276ad63.md) -- published+backing
+- [vibra-code (`vibra-code`)](vibra-code-dd54f72190.md) -- published+backing
+- [video (`video`)](video-0cab1c9617.md) -- backing-only
+- [video-use (`video-use`)](video-use-0664ff0e28.md) -- backing-only
+- [vim_codex (`vim-codex`)](vim-codex-156fcf6e32.md) -- backing-only
+- [vision-ai-developer-kit (`vision-ai-developer-kit`)](vision-ai-developer-kit-e0c387e05a.md) -- backing-only
+- [Visual Copilot (`visual-copilot`)](visual-copilot-47dd76825d.md) -- published+backing
+- [vix (`vix`)](vix-4a47c870d7.md) -- published+backing
+- [Vocode (`vocode`)](vocode-5f97e58f4b.md) -- backing-only
+- [vogte (`vogte`)](vogte-f6bf7fb2ff.md) -- published+backing
+- [Volar (`volar`)](volar-ff4153b053.md) -- backing-only
+- [vs-code-agents (`vs-code-agents`)](vs-code-agents-2c4cc6fe2f.md) -- backing-only
+- [VSCode Agent (`vscode-agent`)](vscode-agent-88e3d629a5.md) -- published+backing
+- [vscode-extension (`vscode-extension`)](vscode-extension-e1846fbb86.md) -- published+backing
+- [VT Code (`vt-code`)](vt-code-8f6655026c.md) -- published+backing
+- [Waii (`waii`)](waii-0cd0eb44c3.md) -- backing-only
+- [Waku (`waku`)](waku-008a9748f0.md) -- published+backing
+- [wallfacer (`wallfacer`)](wallfacer-788515a0a0.md) -- published+backing
+- [Warp (`warp`)](warp-da9e96b401.md) -- published+backing
+- [Warp Agent CLI (`warp-agent-cli`)](warp-agent-cli-dc27643c9c.md) -- published+backing
+- [watsonx Code Assistant for Enterprise Java Applications (`watsonx-code-assistant-for-enterprise-java-applications`)](watsonx-code-assistant-for-enterprise-java-applications-30a41b01ac.md) -- published+backing
+- [we0 (`we0`)](we0-fb9907a90f.md) -- published+backing
+- [Weaver (`weaver`)](weaver-6b8af1b607.md) -- published+backing
+- [web-code-agent (`web-code-agent`)](web-code-agent-a8b703f77d.md) -- backing-only
+- [WebCode (`webcode`)](webcode-45803f435d.md) -- published+backing
+- [Websim (`websim`)](websim-b4df39f4cf.md) -- published+backing
+- [website (`website`)](website-747a8f3983.md) -- backing-only
+- [Webwright (`webwright`)](webwright-0cce8abc49.md) -- published+backing
+- [“Westworld” simulation (`westworld-simulation`)](westworld-simulation-01db809e2e.md) -- backing-only
+- [Whailion AI (`whailion-ai`)](whailion-ai-8ba50c01c2.md) -- published+backing
+- [Whitebox-Code-Gpt (`whitebox-code-gpt`)](whitebox-code-gpt-87812439f5.md) -- backing-only
+- [Wienerdog (`wienerdog`)](wienerdog-304d1f6da7.md) -- backing-only
+- [Windsurf (`windsurf`)](windsurf-5d0c0ab127.md) -- published+backing
+- [Windsurf (Codeium) (`windsurf-codeium`)](windsurf-codeium-c91dbd1ee3.md) -- published+backing
+- [Wingman-AI (`wingman-ai`)](wingman-ai-d9fb593ba0.md) -- published+backing
+- [winx-code-agent (`winx-code-agent`)](winx-code-agent-59c9e8a26c.md) -- backing-only
+- [WiseGPT (`wisegpt`)](wisegpt-923a19d36f.md) -- published+backing
+- [Wolfpack (`wolfpack`)](wolfpack-2751b66fd5.md) -- published+backing
+- [Wordpressify (`wordpressify`)](wordpressify-c98ba5f280.md) -- backing-only
+- [WorkBuddy (`workbuddy`)](workbuddy-141de36072.md) -- published+backing
+- [Workflow-Dispatch (`workflow-dispatch`)](workflow-dispatch-beffec7845.md) -- backing-only
+- [Workflows-Samples (`workflows-samples`)](workflows-samples-61a1e262cd.md) -- backing-only
+- [WorkGPT (`workgpt`)](workgpt-8bbf61394d.md) -- published+backing
+- [workstation (`workstation`)](workstation-d195d36bd7.md) -- published+backing
+- [workstreams (`workstreams`)](workstreams-7968458f5f.md) -- published+backing
+- [WrongStack (`wrongstack`)](wrongstack-84c1360faf.md) -- published+backing
+- [Xcode Coding Intelligence (`xcode-coding-intelligence`)](xcode-coding-intelligence-9cdc21d6b1.md) -- published+backing
+- [XCoding (`xcoding`)](xcoding-4fb7749c42.md) -- published+backing
+- [xpreiIDE (`xpreiide`)](xpreiide-de5a8ded9f.md) -- published+backing
+- [xuanji-landing (`xuanji-landing`)](xuanji-landing-929300b357.md) -- backing-only
+- [yAgents (`yagents`)](yagents-0eb9dfab0a.md) -- published+backing
+- [yao (`yao`)](yao-e2813bdf6e.md) -- published+backing
+- [Yeoman (`yeoman`)](yeoman-1cc2cd01da.md) -- backing-only
+- [Youtrack-Workflows (`youtrack-workflows`)](youtrack-workflows-016eba47b5.md) -- backing-only
+- [Youware (`youware`)](youware-db5fac1ee0.md) -- published+backing
+- [yoyo (`yoyo`)](yoyo-da30e45705.md) -- published+backing
+- [yt-channels-DS-AI-ML-CS (`yt-channels-ds-ai-ml-cs`)](yt-channels-ds-ai-ml-cs-1baa250a17.md) -- backing-only
+- [YYLO (`yylo`)](yylo-89a22c90ed.md) -- published-only
+- [Z.ai Code (`zai-code`)](zai-code-a04c8ecc95.md) -- backing-only
+- [Zap (`zap`)](zap-b4c5ae2ae9.md) -- published+backing
+- [Zapier AI (`zapier-ai`)](zapier-ai-e89de066c0.md) -- backing-only
+- [Zellij (`zellij`)](zellij-2aba4e52c8.md) -- backing-only
+- [Zencoder (`zencoder`)](zencoder-75605d80f1.md) -- published+backing
+- [Zentara-Code (`zentara-code`)](zentara-code-bb12b055e8.md) -- published+backing
+- [zero (`zero`)](zero-f9194e73f9.md) -- published+backing
+- [ZeroPath (`zeropath`)](zeropath-b82306c3fd.md) -- published+backing
+- [zeroshot (`zeroshot`)](zeroshot-4d87daba5d.md) -- published+backing
+- [zerostack (`zerostack`)](zerostack-5171c82a09.md) -- published+backing
+- [Zhanlu (`zhanlu`)](zhanlu-64e4179e40.md) -- published+backing
+- [zhikuncode (`zhikuncode`)](zhikuncode-9412121bb2.md) -- published+backing
+- [zhin (`zhin`)](zhin-a9f3a2eb5c.md) -- backing-only
+- [Zoo-Code (`zoo-code`)](zoo-code-38a9f1d497.md) -- published+backing
+- [Zoo Code (`zoo-code-extension`)](zoo-code-extension-0dfddac61b.md) -- published+backing
+- [Zorow (`zorow`)](zorow-eeef5c76dd.md) -- backing-only
+- [Zot (`zot`)](zot-d52b78b0b0.md) -- published+backing
+- [Zugabot (`zugabot`)](zugabot-55065a963c.md) -- published+backing

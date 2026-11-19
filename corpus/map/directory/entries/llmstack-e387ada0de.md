@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: trypromptly
@@ -22,8 +22,6 @@ Repository map entry: [trypromptly/llmstack](../../repos/trypromptly/llmstack.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): No-code platform for building generative AI agents, workflows, and chatbots by chaining multiple LLMs. Features multi-tenant support, data import/vectorization out-of-the-box, Slack/Discord triggers, and on-premise or cloud deployment — all without coding.
-
-(captured site page body (agents/llmstack.md), not a verified repo-code finding)
-LLMStack targets organizations that want production AI workflows without an engineering team maintaining inference plumbing: operators connect data sources (CSV, PDF, Google Drive, Notion, websites), chain multiple LLM providers into processing pipelines, and expose the result as APIs, chatbots, or Slack/Discord-triggered automations. Multi-tenant organization and user management make it viable for internal tooling across teams, and multimedia generation (text, images, video, audio) extends it beyond text chains. Deployment is self-hosted via pip or the vendor's Promptly cloud. Its PolyForm-style noncommercial license keeps the source visible while restricting commercial self-hosting.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/llmstack.md)
+(backing feed `description`, not a verified repo-code finding)
+LLMStack targets organizations that want production AI workflows without an engineering team maintaining inference plumbing: operators connect data sources (CSV, PDF, Google Drive, Notion, websites),
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: tutti-os
@@ -22,8 +22,6 @@ Repository map entry: [tutti-os/tutti](../../repos/tutti-os/tutti.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Real-time shared workspace where multiple AI coding agents (Claude Code, Codex, Hermes) collaborate and share context, files, and tasks seamlessly via 'Big @' cross-agent references and a control center.
-
-(captured site page body (agents/tutti.md), not a verified repo-code finding)
-Tutti targets the messenger role humans play between coding agents: without a shared surface, Codex cannot pick up Claude's output without losing context, and coordinating several agents means manual copy-paste. It provides a GUI-first, real-time workspace — no terminal required — where context, files, running tasks, and app outputs are shared across agents; 'Big @' references pull in past conversations or other agents' work, tasks coordinate agents across providers in parallel or sequence, and a control center centralizes conversations, approvals, and status. Both humans and agents can invoke workspace apps (image generation, UI/UX design, documentation, presentations), keeping outputs in the shared space. Teams and power users running Claude Code, Codex, or Hermes subscriptions use it; the open-source app runs locally for a single user, while Tutti · VM adds multi-user Rooms with cross-device access and localhost-preview sharing.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/tutti.md)
+(published index `description`, not a verified repo-code finding)
+Tutti targets the messenger role humans play between coding agents: without a shared surface, Codex cannot pick up Claude's output without losing context, and coordinating several agents means manual
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

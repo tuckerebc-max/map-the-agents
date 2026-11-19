@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: IsRengel
@@ -22,8 +22,6 @@ Repository map entry: [isrengel/installcursoreditorlinux](../../repos/isrengel/i
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Shell script installer that sets up Cursor AI Code Editor as a desktop application on any Linux distribution (creates .desktop file, configures automatic updates via systemd). Deprecated: Cursor now ships an official .deb package; the repo is kept for historical/educational purposes.
-
-(captured site page body (agents/installcursoreditorlinux.md), not a verified repo-code finding)
-InstallCursorEditorLinux existed because Cursor initially shipped only as an AppImage with no Linux packaging. The script downloaded the AppImage, installed it under /opt/cursor, generated a .desktop entry, and wired a systemd unit for automatic updates across Debian, Arch, Fedora, OpenSUSE, Gentoo, and Solus. Once Cursor shipped an official .deb, the README added a deprecation notice directing users to cursor.com. The 160-star repo survives as an educational example of packaging AppImage software for multiple distributions.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/installcursoreditorlinux.md)
+(backing feed `description`, not a verified repo-code finding)
+InstallCursorEditorLinux existed because Cursor initially shipped only as an AppImage with no Linux packaging. The script downloaded the AppImage, installed it under /opt/cursor, generated a .desktop
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

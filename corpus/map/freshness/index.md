@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (801)
+## current (797)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -176,11 +176,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ghuntley/groundhog](../repos/ghuntley/groundhog.md) [coverage: complete]
 - [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) [coverage: complete]
 - [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md) [coverage: complete]
-- [gitlawb/zero](../repos/gitlawb/zero.md) [coverage: partial]
 - [gkorepanov/llm-tools](../repos/gkorepanov/llm-tools.md) [coverage: complete]
-- [glincker/stacklit](../repos/glincker/stacklit.md) [coverage: partial]
-- [goldmar/openclaw-code-agent](../repos/goldmar/openclaw-code-agent.md) [coverage: partial]
-- [golutra/golutra](../repos/golutra/golutra.md) [coverage: partial]
 - [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) [coverage: complete]
 - [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) [coverage: partial]
 - [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) [coverage: partial]
@@ -437,3 +433,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [nikitadmitrieff/auto-co-meta](../repos/nikitadmitrieff/auto-co-meta.md) [coverage: complete]
 - [nimbalyst/nimbalyst](../repos/nimbalyst/nimbalyst.md) [coverage: partial]
 - [nisarg38/claude-northstar](../repos/nisarg38/claude-northstar.md) [coverage: complete]
+- [no1msd/seance](../repos/no1msd/seance.md) [coverage: complete]
+- [norvialabs/forge](../repos/norvialabs/forge.md) [coverage: partial]
+- [notasithlord/peerd](../repos/notasithlord/peerd.md) [coverage: partial]
+- [ntegrals/10x](../repos/ntegrals/10x.md) [coverage: complete]

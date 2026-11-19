@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: eneskirca
@@ -22,8 +22,6 @@ Repository map entry: [eneskirca/nodeterm](../../repos/eneskirca/nodeterm.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Spatial infinite canvas for terminals and AI coding agents as draggable nodes; dual canvas/kanban view where cards are live running sessions; three surfaces (desktop, browser Server Edition, iOS companion) sharing the same live tmux sessions.
-
-(captured site page body (agents/nodeterm.md), not a verified repo-code finding)
-nodeterm rethinks agent management as spatial layout rather than stacked terminal tabs, placing terminals, agent sessions, editors, and diff views as nodes on a shared canvas. Every project is tmux-backed, so sessions survive app restarts and machine reboots, and group nodes bind to git worktrees to give each agent its own branch. A hook-driven status system surfaces which sessions need attention through badges, notifications, and permission prompts answered in-node, and agents can drive the canvas itself through a built-in control CLI. The same renderer runs as a desktop app, a self-hosted browser server, and an iOS companion over an encrypted relay. Licensing is BUSL-1.1, converting to MIT four years after each release.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/nodeterm.md)
+(published index `description`, not a verified repo-code finding)
+nodeterm rethinks agent management as spatial layout rather than stacked terminal tabs, placing terminals, agent sessions, editors, and diff views as nodes on a shared canvas. Every project is tmux-ba
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

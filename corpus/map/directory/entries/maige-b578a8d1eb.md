@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source infrastructure by Rubric Labs for running natural language workflows on your codebase; auto-labels, assigns, comments on, and reviews issues/PRs via a GitHub App. Currently in alpha.
-
-(captured site page body (agents/maige.md), not a verified repo-code finding)
-Maige automates the triage and review labor that consumes maintainer time on active repositories: plain-language rules replace webhooks-plus-scripts, so instructions like 'review any PR touching auth for security issues' or 'label new issues by component' become standing agent behavior. Runs execute in a sandbox against codebase embeddings, letting the agent label, assign, comment, review, and propose code changes through the GitHub API. The hosted service costs $30/month after 30 free issues, and the AGPL-licensed source supports self-hosting for teams that want their own deployment. Repositories such as Documenso, Nuxt, Highlight.io, and Cal.com have used it; the product remains in alpha under Rubric Labs.
-Sources: [published index (sha256:5b67dbf818cd)](https://alltheagents.org/agents.json); [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/maige.md)
+(published index `description`, not a verified repo-code finding)
+Maige automates the triage and review labor that consumes maintainer time on active repositories: plain-language rules replace webhooks-plus-scripts, so instructions like 'review any PR touching auth
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Associated link: a YouTube video about AutoGen (youtube.com/watch?v=DXhqhpHWRuM); not a standalone agent harness
-
-(captured site page body (agents/video.md), not a verified repo-code finding)
-This entry is a YouTube video about AutoGen rather than a piece of software. The census picked it up from aggregation lists that mixed tutorial links with projects. Since a video neither runs an agentic loop nor manages agents, it is categorized as other; the AutoGen framework itself has its own census entry.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/video.md)
+(backing feed `description`, not a verified repo-code finding)
+This entry is a YouTube video about AutoGen rather than a piece of software. The census picked it up from aggregation lists that mixed tutorial links with projects. Since a video neither runs an agent
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)

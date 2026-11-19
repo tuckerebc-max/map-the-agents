@@ -1,9 +1,9 @@
 # golutra/golutra
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8b68a14183af @ fd003868b702a204
+Latest snapshot: commit 8b68a14183af @ 00d94b9dc57d928e
 
 ## Summary (orientation draft, not independently verified)
 

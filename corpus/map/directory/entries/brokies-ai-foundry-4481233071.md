@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Caplet1989
@@ -22,8 +22,6 @@ Repository map entry: [caplet1989/brokies-ai-foundry](../../repos/caplet1989/bro
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source collection of modular AI utilities and boilerplate templates (Ingest -\> Reason -\> Generate -\> Orchestrate) for solo developers/students without enterprise subscriptions; local-first architecture with no external API keys; multilingual prompt templates (6 languages); community contribution framework.
-
-(captured site page body (agents/brokies-ai-foundry.md), not a verified repo-code finding)
-Brokies-AI-Foundry presents itself as a free, local-first toolkit of modular AI utilities and prompt templates for students and solo developers priced out of enterprise subscriptions. The README brands the project 'DataForge Studio' — inconsistent with the repository name — and advertises utility scripts, multilingual prompt templates, and a community contribution framework, linking downloads to a GitHub Pages site. The repository itself undercuts the story: only a handful of files exist in the tree, no LICENSE file accompanies the claimed MIT license, and there are no contributors, issues, or pull requests. The advertised utility modules and workflow templates are not visible in the repository. In its current state the project functions as a README with aspirations rather than a usable harness, and it is treated here as a non-harness 'other' entry with likely-motivated (SEO-oriented) framing.
-Sources: [backing feed @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/_data/agents.json); [site page @ 61d64ce1ee2e](https://github.com/prime-radiant-inc/alltheagents.org/blob/61d64ce1ee2eae6b23dcef8ea9f31bc2c8b75fd0/agents/brokies-ai-foundry.md)
+(backing feed `description`, not a verified repo-code finding)
+Brokies-AI-Foundry presents itself as a free, local-first toolkit of modular AI utilities and prompt templates for students and solo developers priced out of enterprise subscriptions. The README brand
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)
