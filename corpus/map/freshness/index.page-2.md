@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [nvidia-nemo/speech](../repos/nvidia-nemo/speech.md) [coverage: partial]
-- [obbylabs/obby-dev](../repos/obbylabs/obby-dev.md) [coverage: complete]
-- [obra/coderabbit-review-helper](../repos/obra/coderabbit-review-helper.md) [coverage: complete]
 - [obra/smallest-agent](../repos/obra/smallest-agent.md) [coverage: complete]
 - [ocean-luna/hmrag](../repos/ocean-luna/hmrag.md) [coverage: complete]
 - [ochyai/vibe-local](../repos/ochyai/vibe-local.md) [coverage: partial]
@@ -373,17 +370,19 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (16)
+## pending (18)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
+- [microsoft/agensh](../repos/microsoft/agensh.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
 - [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
 - [prapaa-ai/agav](../repos/prapaa-ai/agav.md)
 - [prime-radiant-inc/sprout](../repos/prime-radiant-inc/sprout.md)
+- [saranyan/agent-relay](../repos/saranyan/agent-relay.md)
 - [scgopi/graphcode](../repos/scgopi/graphcode.md)
 - [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
@@ -392,7 +391,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (184)
+## stale (187)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -452,3 +451,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) [coverage: partial]
 - [bahdotsh/indxr](../repos/bahdotsh/indxr.md) [coverage: partial]
 - [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) [coverage: partial]
+- [bastani-inc/atomic](../repos/bastani-inc/atomic.md) [coverage: partial]
+- [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) [coverage: partial]

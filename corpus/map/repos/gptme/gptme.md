@@ -1,9 +1,9 @@
 # gptme/gptme
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 7c8570587edc @ 5a6e65dab4305226
+Latest snapshot: commit 1de7c7c0378f @ 24897d942b60b3bb
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,6 +2,7 @@
 
 Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [openbmb/chatdev](../repos/openbmb/chatdev.md) -- status=distilled, freshness=current
 - [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) -- status=distilled, freshness=current
 - [openbmb/repoagent](../repos/openbmb/repoagent.md) -- status=distilled, freshness=current
 - [openchamber/openchamber](../repos/openchamber/openchamber.md) -- status=distilled, freshness=current
@@ -121,6 +122,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [samholt/l2mac](../repos/samholt/l2mac.md) -- status=distilled, freshness=current
 - [sammwyy/singulary](../repos/sammwyy/singulary.md) -- status=distilled, freshness=current
 - [sanbuphy/learn-coding-agent](../repos/sanbuphy/learn-coding-agent.md) -- status=distilled, freshness=current
+- [saranyan/agent-relay](../repos/saranyan/agent-relay.md) -- status=discovered, freshness=pending
 - [satomic/gitlab-copilot-coding-agent](../repos/satomic/gitlab-copilot-coding-agent.md) -- status=distilled, freshness=current
 - [scaleapi/swe-interact](../repos/scaleapi/swe-interact.md) -- status=distilled, freshness=current
 - [scarmonit/antigravity-jules-orchestration](../repos/scarmonit/antigravity-jules-orchestration.md) -- status=distilled, freshness=current
@@ -350,5 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [yuki-20/cornmcp](../repos/yuki-20/cornmcp.md) -- status=distilled, freshness=current
 - [yushui2022/easy-coding-agents](../repos/yushui2022/easy-coding-agents.md) -- status=distilled, freshness=current
 - [yusifeng/formax](../repos/yusifeng/formax.md) -- status=distilled, freshness=current
-- [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) -- status=distilled, freshness=current
-- [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) -- status=distilled, freshness=current

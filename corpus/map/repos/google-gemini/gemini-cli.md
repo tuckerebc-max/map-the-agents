@@ -1,9 +1,9 @@
 # google-gemini/gemini-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 9c1b0a610534 @ 65fb3d86d9eafaa4
+Latest snapshot: commit d4cb1713fd7f @ f62421e8d4eee1b9
 
 ## Summary (orientation draft, not independently verified)
 

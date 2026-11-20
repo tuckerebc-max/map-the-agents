@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (797)
+## current (794)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -178,10 +178,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md) [coverage: complete]
 - [gkorepanov/llm-tools](../repos/gkorepanov/llm-tools.md) [coverage: complete]
 - [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) [coverage: complete]
-- [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) [coverage: partial]
-- [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) [coverage: partial]
 - [googlecloudplatform/workflows-samples](../repos/googlecloudplatform/workflows-samples.md) [coverage: complete]
-- [gptme/gptme](../repos/gptme/gptme.md) [coverage: partial]
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) [coverage: complete]
 - [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) [coverage: partial]
 - [griddynamics/rosetta](../repos/griddynamics/rosetta.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [norvialabs/forge](../repos/norvialabs/forge.md) [coverage: partial]
 - [notasithlord/peerd](../repos/notasithlord/peerd.md) [coverage: partial]
 - [ntegrals/10x](../repos/ntegrals/10x.md) [coverage: complete]
+- [nvidia-nemo/speech](../repos/nvidia-nemo/speech.md) [coverage: partial]
+- [obbylabs/obby-dev](../repos/obbylabs/obby-dev.md) [coverage: complete]
+- [obra/coderabbit-review-helper](../repos/obra/coderabbit-review-helper.md) [coverage: complete]

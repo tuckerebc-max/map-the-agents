@@ -2,6 +2,8 @@
 
 Page 4 of 4. [First page](index.md) | [Previous](index.page-3.md)
 
+- [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) -- status=distilled, freshness=current
+- [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) -- status=distilled, freshness=current
 - [zachblume/autospec](../repos/zachblume/autospec.md) -- status=distilled, freshness=current
 - [zachnoel/multiagentworkflow](../repos/zachnoel/multiagentworkflow.md) -- status=blocked, freshness=refresh-failed
 - [zai-org/glm-5](../repos/zai-org/glm-5.md) -- status=distilled, freshness=current

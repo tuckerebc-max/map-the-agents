@@ -44,10 +44,10 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [goldmar/openclaw-code-agent](../repos/goldmar/openclaw-code-agent.md) -- status=distilled, freshness=stale
 - [golutra/golutra](../repos/golutra/golutra.md) -- status=distilled, freshness=stale
 - [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) -- status=distilled, freshness=current
-- [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) -- status=distilled, freshness=current
-- [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) -- status=distilled, freshness=current
+- [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) -- status=distilled, freshness=stale
+- [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) -- status=distilled, freshness=stale
 - [googlecloudplatform/workflows-samples](../repos/googlecloudplatform/workflows-samples.md) -- status=distilled, freshness=current
-- [gptme/gptme](../repos/gptme/gptme.md) -- status=distilled, freshness=current
+- [gptme/gptme](../repos/gptme/gptme.md) -- status=distilled, freshness=stale
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) -- status=distilled, freshness=current
 - [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) -- status=distilled, freshness=current
 - [griddynamics/rosetta](../repos/griddynamics/rosetta.md) -- status=distilled, freshness=current
@@ -266,6 +266,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [meta-ai/muse-code](../repos/meta-ai/muse-code.md) -- status=blocked, freshness=refresh-failed
 - [meysamhadeli/codai](../repos/meysamhadeli/codai.md) -- status=distilled, freshness=current
 - [micro-agent/micro-agent](../repos/micro-agent/micro-agent.md) -- status=blocked, freshness=refresh-failed
+- [microsoft/agensh](../repos/microsoft/agensh.md) -- status=discovered, freshness=pending
 - [microsoft/amplifier](../repos/microsoft/amplifier.md) -- status=distilled, freshness=current
 - [microsoft/autogen](../repos/microsoft/autogen.md) -- status=distilled, freshness=current
 - [microsoft/taskweaver](../repos/microsoft/taskweaver.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) -- status=distilled, freshness=current
 - [openautocoder/agentless](../repos/openautocoder/agentless.md) -- status=distilled, freshness=current
 - [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) -- status=distilled, freshness=current
-- [openbmb/chatdev](../repos/openbmb/chatdev.md) -- status=distilled, freshness=current

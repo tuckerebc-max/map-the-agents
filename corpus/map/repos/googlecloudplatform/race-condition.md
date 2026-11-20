@@ -1,9 +1,9 @@
 # googlecloudplatform/race-condition
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 26efc1b46743 @ b66130ac402fcbca
+Latest snapshot: commit 26efc1b46743 @ 7713c11f6e058c8b
 
 ## Summary (orientation draft, not independently verified)
 
