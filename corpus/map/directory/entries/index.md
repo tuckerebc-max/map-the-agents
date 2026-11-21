@@ -55,31 +55,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [AgentellIJ (`agentellij`)](agentellij-d9ffac3fde.md) -- published+backing+pages
 - [AgentFlow (`agentflow`)](agentflow-a7f7eb9294.md) -- published+backing+pages
 - [Agentforce for Developers (`agentforce-for-developers`)](agentforce-for-developers-32c794c032.md) -- published+backing+pages
-- [Agentforce Vibes (`agentforce-vibes`)](agentforce-vibes-3e2983300d.md) -- published+backing
-- [AgentHub (`agenthub`)](agenthub-ac7f7a58b8.md) -- published+backing
-- [Agentic-Ai- (`agentic-ai`)](agentic-ai-e424a7d45c.md) -- backing-only
-- [agentic-code (`agentic-code`)](agentic-code-aa8c74b4ea.md) -- backing-only
-- [agentic-coding-basic (`agentic-coding-basic`)](agentic-coding-basic-f6bc4d044c.md) -- backing-only
-- [agentic-coding-intro (`agentic-coding-intro`)](agentic-coding-intro-15e7442a5f.md) -- backing-only
-- [agentic-coding-quickstart (`agentic-coding-quickstart`)](agentic-coding-quickstart-5e9704a227.md) -- backing-only
-- [agentic-coding-tool-eval (`agentic-coding-tool-eval`)](agentic-coding-tool-eval-ad57dc0139.md) -- backing-only
-- [Agentic-Coding-with-Claude-Code (`agentic-coding-with-claude-code`)](agentic-coding-with-claude-code-079ad7d17c.md) -- backing-only
-- [Agentic Engineering Framework (`agentic-engineering-framework`)](agentic-engineering-framework-1599bb2c80.md) -- published+backing
-- [Agentic-Platform (`agentic-platform`)](agentic-platform-4f47376f3e.md) -- published+backing
-- [Agenticai (`agenticai`)](agenticai-aae652876a.md) -- published+backing
-- [Agentlas OS (`agentlas-os`)](agentlas-os-fcd34507fe.md) -- backing-only
-- [Agentless (`agentless`)](agentless-d4da054017.md) -- backing-only
-- [agent.md (`agentmd`)](agentmd-9e61d90c1f.md) -- backing-only
-- [agentnotch (`agentnotch`)](agentnotch-511ffb6a05.md) -- backing-only
-- [AgentPack (`agentpack`)](agentpack-26909bd129.md) -- backing-only
-- [AgentPlane (`agentplane`)](agentplane-c0f8f77669.md) -- published+backing
-- [AgentPort (`agentport`)](agentport-3c3d8829cc.md) -- published+backing
-- [agentrove (`agentrove`)](agentrove-c8844d6efb.md) -- published+backing
-- [Agents (`agents`)](agents-8c70b25cbb.md) -- published+backing
-- [Agents by Hugging Face (`agents-by-hugging-face`)](agents-by-hugging-face-b4473c9622.md) -- published+backing
-- [agents-cli (`agents-cli`)](agents-cli-ee70228a5d.md) -- published+backing
-- [agents-md (`agents-md`)](agents-md-96957fcd94.md) -- backing-only
-- [AgentScope (`agentscope`)](agentscope-2651b51fbf.md) -- published+backing
+- [Agentforce Vibes (`agentforce-vibes`)](agentforce-vibes-3e2983300d.md) -- published+backing+pages
+- [AgentHub (`agenthub`)](agenthub-ac7f7a58b8.md) -- published+backing+pages
+- [Agentic-Ai- (`agentic-ai`)](agentic-ai-e424a7d45c.md) -- backing+pages
+- [agentic-code (`agentic-code`)](agentic-code-aa8c74b4ea.md) -- backing+pages
+- [agentic-coding-basic (`agentic-coding-basic`)](agentic-coding-basic-f6bc4d044c.md) -- backing+pages
+- [agentic-coding-intro (`agentic-coding-intro`)](agentic-coding-intro-15e7442a5f.md) -- backing+pages
+- [agentic-coding-quickstart (`agentic-coding-quickstart`)](agentic-coding-quickstart-5e9704a227.md) -- backing+pages
+- [agentic-coding-tool-eval (`agentic-coding-tool-eval`)](agentic-coding-tool-eval-ad57dc0139.md) -- backing+pages
+- [Agentic-Coding-with-Claude-Code (`agentic-coding-with-claude-code`)](agentic-coding-with-claude-code-079ad7d17c.md) -- backing+pages
+- [Agentic Engineering Framework (`agentic-engineering-framework`)](agentic-engineering-framework-1599bb2c80.md) -- published+backing+pages
+- [Agentic-Platform (`agentic-platform`)](agentic-platform-4f47376f3e.md) -- published+backing+pages
+- [Agenticai (`agenticai`)](agenticai-aae652876a.md) -- published+backing+pages
+- [Agentlas OS (`agentlas-os`)](agentlas-os-fcd34507fe.md) -- backing+pages
+- [Agentless (`agentless`)](agentless-d4da054017.md) -- backing+pages
+- [agent.md (`agentmd`)](agentmd-9e61d90c1f.md) -- backing+pages
+- [agentnotch (`agentnotch`)](agentnotch-511ffb6a05.md) -- backing+pages
+- [AgentPack (`agentpack`)](agentpack-26909bd129.md) -- backing+pages
+- [AgentPlane (`agentplane`)](agentplane-c0f8f77669.md) -- published+backing+pages
+- [AgentPort (`agentport`)](agentport-3c3d8829cc.md) -- published+backing+pages
+- [agentrove (`agentrove`)](agentrove-c8844d6efb.md) -- published+backing+pages
+- [Agents (`agents`)](agents-8c70b25cbb.md) -- published+backing+pages
+- [Agents by Hugging Face (`agents-by-hugging-face`)](agents-by-hugging-face-b4473c9622.md) -- published+backing+pages
+- [agents-cli (`agents-cli`)](agents-cli-ee70228a5d.md) -- published+backing+pages
+- [agents-md (`agents-md`)](agents-md-96957fcd94.md) -- backing+pages
+- [AgentScope (`agentscope`)](agentscope-2651b51fbf.md) -- published+backing+pages
 - [agents.md (`agentsmd`)](agentsmd-74f093134e.md) -- backing-only
 - [AgentsMesh (`agentsmesh`)](agentsmesh-65db377c11.md) -- published+backing
 - [AgentsView (`agentsview`)](agentsview-b36679a310.md) -- backing-only

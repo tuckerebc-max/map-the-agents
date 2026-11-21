@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (794)
+## current (792)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -180,8 +180,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) [coverage: complete]
 - [googlecloudplatform/workflows-samples](../repos/googlecloudplatform/workflows-samples.md) [coverage: complete]
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) [coverage: complete]
-- [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) [coverage: partial]
-- [griddynamics/rosetta](../repos/griddynamics/rosetta.md) [coverage: partial]
 - [grik-ai/ricochet](../repos/grik-ai/ricochet.md) [coverage: complete]
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
 - [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) [coverage: partial]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [nvidia-nemo/speech](../repos/nvidia-nemo/speech.md) [coverage: partial]
 - [obbylabs/obby-dev](../repos/obbylabs/obby-dev.md) [coverage: complete]
 - [obra/coderabbit-review-helper](../repos/obra/coderabbit-review-helper.md) [coverage: complete]
+- [obra/smallest-agent](../repos/obra/smallest-agent.md) [coverage: complete]
+- [ocean-luna/hmrag](../repos/ocean-luna/hmrag.md) [coverage: complete]

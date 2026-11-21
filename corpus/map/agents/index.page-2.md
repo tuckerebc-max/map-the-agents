@@ -49,8 +49,8 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [googlecloudplatform/workflows-samples](../repos/googlecloudplatform/workflows-samples.md) -- status=distilled, freshness=current
 - [gptme/gptme](../repos/gptme/gptme.md) -- status=distilled, freshness=stale
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) -- status=distilled, freshness=current
-- [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) -- status=distilled, freshness=current
-- [griddynamics/rosetta](../repos/griddynamics/rosetta.md) -- status=distilled, freshness=current
+- [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) -- status=distilled, freshness=stale
+- [griddynamics/rosetta](../repos/griddynamics/rosetta.md) -- status=distilled, freshness=stale
 - [grik-ai/ricochet](../repos/grik-ai/ricochet.md) -- status=distilled, freshness=current
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) -- status=distilled, freshness=current
 - [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) -- status=distilled, freshness=current

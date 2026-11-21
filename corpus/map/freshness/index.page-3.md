@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
-- [bhouston/mycoder](../repos/bhouston/mycoder.md) [coverage: partial]
 - [big-pony/pocketshell](../repos/big-pony/pocketshell.md) [coverage: partial]
 - [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
 - [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) [coverage: partial]
@@ -129,6 +127,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) [coverage: partial]
 - [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) [coverage: partial]
 - [gptme/gptme](../repos/gptme/gptme.md) [coverage: partial]
+- [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) [coverage: partial]
+- [griddynamics/rosetta](../repos/griddynamics/rosetta.md) [coverage: partial]
 
 ## refresh-failed (72)
 

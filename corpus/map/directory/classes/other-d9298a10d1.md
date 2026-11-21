@@ -25,6 +25,8 @@
 - [agentic-coding-quickstart](../entries/agentic-coding-quickstart-5e9704a227.md)
 - [agentic-coding-tool-eval](../entries/agentic-coding-tool-eval-ad57dc0139.md)
 - [agentic-coding-with-claude-code](../entries/agentic-coding-with-claude-code-079ad7d17c.md)
+- [agentlas-os](../entries/agentlas-os-fcd34507fe.md)
+- [agentless](../entries/agentless-d4da054017.md)
 - [agentmd](../entries/agentmd-9e61d90c1f.md)
 - [agentnotch](../entries/agentnotch-511ffb6a05.md)
 - [agentpack](../entries/agentpack-26909bd129.md)

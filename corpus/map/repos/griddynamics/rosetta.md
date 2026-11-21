@@ -1,9 +1,9 @@
 # griddynamics/rosetta
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 785054e925aa @ 785672389caeb1f9
+Latest snapshot: commit fe829c75a6ce @ b35473b65639baba
 
 ## Summary (orientation draft, not independently verified)
 
