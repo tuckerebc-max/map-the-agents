@@ -1,9 +1,9 @@
 # h0x91b/dev-3.0
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e781c4265b7d @ 8a06927f2fafd0f5
+Latest snapshot: commit 1bc4a397f35d @ f350a58ba27ac602
 
 ## Summary (orientation draft, not independently verified)
 

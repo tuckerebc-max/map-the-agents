@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: Wei1024
@@ -22,6 +22,8 @@ Repository map entry: [wei1024/ai-agent-playground](../../repos/wei1024/ai-agent
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The repository serves as its author's test bed for building AI agents aimed at office workers. The implemented stack is deliberately small: an AutoGen agent that follows a ReAct thought process, a Tav
-Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)
+Highlight (site page `what_makes_it_special`): A test repository for developing AI agents aimed at office workers, featuring an Autogen agent with ReAct thought process, Tavily API search tool, and conversation memory.
+
+(captured site page body (agents/ai-agent-playground.md), not a verified repo-code finding)
+The repository serves as its author's test bed for building AI agents aimed at office workers. The implemented stack is deliberately small: an AutoGen agent that follows a ReAct thought process, a Tavily API search tool, and a memory function that carries earlier conversation into later turns. With four commits, no stars, and no releases, it is a personal playground rather than a maintained project. Its value to the census is as a representative example of small AutoGen-based experiments rather than as a tool others adopt.
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json); [site page @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/agents/ai-agent-playground.md)

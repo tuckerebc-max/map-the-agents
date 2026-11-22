@@ -1,0 +1,725 @@
+# Changelog
+
+All notable changes to this project are documented here.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project aims to follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+Releases before this file are recorded in the git tags and GitHub releases.
+
+## [Unreleased]
+
+## [0.17.0] - 2026-11-05
+
+### Added
+
+- `agent-sh/runtime`: explicitly composed headless hosts with callable runs,
+  steering, cancellation, snapshots, owned child runs and awaitable disposal
+  (#284). Main agents and subagents share the full ash engine; extensions keep
+  the same agent surface, with per-host settings and tracked cleanup. Tool
+  delegation keeps the parent's policy checks, and tools can run in a separate
+  process. See `docs/programmable-agent-sketch.md` and
+  `examples/programmatic-agent.ts`.
+- Provider setting `requestBody`: extra fields merged into every request, e.g.
+  OpenRouter routing options. It cannot override `messages`, `tools`, `model`
+  or `max_tokens` (#291).
+- Models and providers can declare the thinking levels they accept
+  (`reasoningLevels`, from a provider extension or `settings.json`). `/thinking`,
+  its completions and shift+tab offer only those, the one global preference maps
+  to the nearest declared level, and declared levels are sent as is. Codex reads
+  each model's levels from `~/.codex/models_cache.json`; native DeepSeek is
+  `off, high, max`, so `xhigh` now sends `max`; Ollama, opencode and
+  `OPENAI_BASE_URL` servers declare `off`–`high` instead of silently clamping
+  `xhigh`. `/thinking` also accepts `minimal` and `max`. Subagents apply the same
+  levels through their provider's reasoning hook. Idea from asHub (thanks
+  @firslov).
+- Steering messages take an optional `id`. Re-sending `agent:steer` with a
+  pending `id` edits that message in place, `agent:steer-cancel { id }` removes
+  that message rather than the last one, and queued, consumed and dropped
+  events carry the ids. Ported from asHub's kernel patches (thanks @firslov).
+- subagents, for long workflows (#291, #295):
+  - Long single-turn runs compact when the model's context window is known:
+    the oldest tool results are cleared first, then the middle is cut as ashi
+    does, with no model call.
+  - Per-agent write roots (`write: [...]`, `[]` for read-only), per-call
+    `max_steps`, and a run-level `budgetUncached` cap on billed tokens.
+  - `provider=` per run, `Agent` or turn, so one workflow can mix providers;
+    keys stay with the agent backend.
+  - Child runs send the provider's cache-routing header (Codex
+    `prompt_cache_key`), keyed on the conversation's opening.
+  - `live=`: a file re-read before every model call as dynamic context.
+  - `Agent.context()` reports the latest prompt size and cache hits
+    (`chat_size`).
+  - Workflow transcripts log one `request` line per model response.
+- subagents: `spawn_agent { resume: "s3", task }` continues a finished
+  subagent's conversation, and `{ resume: "s3" }` re-reads its full answer.
+  Parallel results get a count line and mark subagents that stopped early,
+  large fan-outs are clipped to a share each, and repeated parallel tasks are
+  refused. Ideas from asHub's `subagent_resume` and `agentswarm`.
+- bash tool: optional `AGENT_SH_BASH_MAX_TIMEOUT` cap, and a message when a
+  command was killed by its timeout (#295).
+
+### Changed
+
+- `spawn_agent` answers end with their subagent id (`[subagent s3]`), and
+  parallel sections are headed `## [1] reviewer · s3`.
+- Subagent runs ride out endpoint outages: transient model-call failures retry
+  within a 45-minute window (backoff capped at 60 s) instead of failing after
+  4 attempts and losing the run's in-memory steps (#295).
+- `agent-sh run`: SIGTERM cancels gracefully (finally blocks run, state is
+  saved); a second SIGTERM exits (#291).
+- `onUsage` reports every response, with `finish_reason`, `duration_ms` and
+  `first_token_ms` (#291).
+
+### Fixed
+
+- A model stream cut mid-response (undici `terminated`, LiteLLM
+  `APIConnectionError … Connection closed`) is retried instead of ending the
+  run; nothing from a cut stream has been recorded, so earlier steps are kept.
+  A reply with neither text nor tool calls is re-sent (up to twice), and a reply
+  whose reasoning used all of `max_tokens` now fails with a clear message (#291).
+- API keys changed in `keys.json` or `agent-sh auth` apply on the next
+  `agent:providers:changed` without a restart: built-in providers read their
+  key when providers are refreshed, an active session switches to the new key,
+  and a removed key disables the client with a clear error instead of reusing
+  the old one.
+- `--model X` without `--provider` starts on a provider that offers `X`
+  instead of sending `X` to the default provider. Startup fallback also skips
+  providers that have a key and endpoint but no model.
+- A `settings.json` that cannot be parsed is no longer overwritten by `/model`
+  or `/backend`. The selection applies to the session and the message says it
+  was not saved. JSON parse warnings for `settings.json` and `keys.json` no
+  longer quote file contents, which could include API keys.
+- `/codex-login` on Windows opens the full OAuth URL; `cmd /c start` cut it at
+  the first `&` (#285, #286, thanks @firslov).
+- subagents: a run whose model id is listed by several providers uses its own
+  provider's reasoning levels and context window (#296).
+- sandbox: with bubblewrap, a run file or write dir under `/tmp` is refused,
+  since `/tmp` is private inside the sandbox (#283).
+
+## [0.16.1] - 2026-10-25
+
+### Fixed
+
+- Codex requests no longer time out during slow uploads or silent reasoning,
+  and a completed answer is no longer discarded when the upstream connection
+  closes untidily (#281, thanks @firslov). The proxy acknowledges the SSE
+  stream right after local authentication and keeps the client connected with
+  heartbeats while upstream work continues; credential, upload and stream-idle
+  deadlines are separate and configurable (`credentialsTimeoutMs`,
+  `headersTimeoutMs`, `idleTimeoutMs`). Transient connection failures are
+  retried once, but only before any text, reasoning or tool output has been
+  sent, so a recovery never replays partial output; cancellation, certificate
+  failures and spent local deadlines are never retried. Cancellation now
+  also reaches in-progress retry waits, and a shared token refresh survives
+  one of its waiters going away.
+- Retry waits for a failed request now release their abort listener instead
+  of accumulating one per attempt.
+
+## [0.16.0] - 2026-10-21
+
+### Added
+
+- Workflow files in Python: `agent-sh run campaign.py`, and `.py` files in the
+  workflows folders. The file is an ordinary `asyncio` program (`from agentsh
+  import run, Agent, race, budget`) in its own process, with agent-sh running
+  the agents for it, so the journal, resume, budget, dry run and sandbox work
+  as for JavaScript files. Concurrency is plain `asyncio.gather`, cancelling a
+  task stops its agent, and `returns` takes a dataclass. Needs Python 3.9+.
+  The file can use Ray, Dask or submitit for its own compute while the agents
+  stay in the agent-sh process. A guide to writing them (`PYTHON.md`) ships
+  with the subagents extension and is registered as a skill.
+- Workflow scripts: `checkpoint(name, fn)` (Python: the `@checkpoint`
+  decorator) saves the result of the script's own work, such as a test suite
+  or a build, so a resumed run gets the saved result instead of doing it again.
+- Workflow and `spawn_agent` subagents use your thinking level when the agent
+  or call doesn't set one, and a per-call `thinking` now reaches models whose
+  provider is defined in settings (it was dropped unless the provider declared
+  `supportsReasoningEffort`).
+- Workflow runs record how many of their tokens the provider served from its
+  prompt cache: `run.json`, `--status` and the progress line show
+  `N tokens (M cached)`, and scripts can read `budget.cached`.
+- `agent-sh run file --resume` without an id continues that file's latest run,
+  and a resume given no arguments repeats the earlier run's.
+- Built-in `codex` provider: use a ChatGPT (Codex) subscription with `ash`.
+  A loopback proxy translates Chat Completions to the Codex Responses API and
+  signs requests with ChatGPT OAuth (`/codex-login`, `/codex-status`,
+  `/codex-logout`). The proxy starts only once you're signed in; disable it
+  with `"disabledBuiltins": ["codex-provider"]`. If you installed the earlier
+  `codex-provider` example extension, remove it from `~/.agent-sh/extensions/`;
+  the existing sign-in in `~/.agent-sh/codex-provider/` carries over.
+- `agent-sh run <file> [args]` runs a workflow file directly: no shell, no TUI,
+  no main-agent turn. The file can `export const config` to declare its setup
+  (extra agent dirs, concurrency, run caps, a token budget, and `hours` for a
+  deadline), so a whole campaign lives in one file.
+  `--resume <id>` continues a failed run. Extensions read their section through
+  a `run:config` handler and enforce it via the `run:checks` and `run:wrap`
+  pipes; the run fails closed when a config key isn't handled by anything (a
+  typo, or an extension that isn't loaded) or a requirement can't be met.
+- `sandbox` example extension: a run file's `config.sandbox` limits what every
+  agent may write and read, adds rules from your own policy files, and restarts
+  the whole run inside an OS sandbox where one actually works (probed, not just
+  found): bubblewrap on Linux, falling back to Landlock where user namespaces
+  are blocked, and Seatbelt (`sandbox-exec`) on macOS. Without one it runs with
+  the guard only, unless `os: "required"`. `SBX_GUARD=1` arms the guard for
+  callers that start agent-sh themselves.
+- Easier workflow scripts: `run(agent, task, { returns })` with shape shorthand
+  (`{ verdict: "clean | issues", findings: "string[]", line: "integer?" }`,
+  `[{ ... }]` for lists of objects), `run(null, task)` for ad-hoc subagents,
+  `map(items, fn)` for fan-out (in order, `null` for failures), dedented task
+  text, and declared arguments (`export const args`) parsed from `--flags`.
+  `agent-sh run <file> --help` lists them; `--dry-run` walks the script with
+  placeholder answers and no model calls. Older scripts keep working.
+- `examples/workflows/campaign.ts`: a run-file template.
+- Subagents for more than code: `explore` (read-only exploration of files,
+  documents or data), `plan` and `research` (answers from the web and local
+  files, with sources), plus a bundled `research` workflow (split the question,
+  research the parts in parallel, check the claims, combine with sources).
+  `review-loop` takes `--focus` angles.
+- Other extensions can add agents and workflows by advising the
+  `subagents:agents` and `subagents:workflows` handlers, whichever loads first
+  (types `AgentRegistration` and `WorkflowRegistration`).
+- Watching a workflow run: `agent-sh run` prints when each subagent starts, and
+  a "2 working, 5 queued" line when it has been quiet for a minute.
+  `agent-sh run --status [id]` (and `/workflow status [id]`) shows each
+  subagent of a run as queued, working, done or failed, with how long. A
+  running run touches its `run.json` every 30 s, so other processes (or
+  machines sharing the disk) can tell running from interrupted.
+- Agent files accept `tools: none`.
+- Workflow scripts: `pipeline(items, ...stages)` moves each item through the
+  stages without waiting for the others, and `run()` takes `model`, `thinking`,
+  `label`, and (for ad-hoc runs) `system`, so agents can be defined inline.
+  Resume now identifies calls by where they sit in the script, so `map` items
+  with several steps, and `pipeline`, resume correctly whatever order items
+  finish in. Older journals still resume by call order.
+- Workflow scripts: `race(items, fn, accept?)` keeps the first result that
+  passes and cancels the other items' subagents, and `agent(name)` returns a
+  handle whose `ask()` turns continue one conversation. Both resume: a race
+  reruns only its recorded winner, and a conversation is restored from the
+  journal. `runSubagent` takes `history` and returns `outMeta.messages`.
+
+### Changed
+
+- Node.js 22 is now the minimum (`engines: >=22`, for agent-sh and ashi).
+  Node 18 and 20 have reached end of life. CI tests 22 and 24; publishing uses 22.
+- The `scout` agent is now `explore` (the old name still works); `reviewer`
+  and `worker` are no longer code-only. `verified-review` moved from the bundled
+  workflows to `examples/workflows/`.
+
+### Fixed
+
+- A workflow subagent stopped by Ctrl-C or a deadline no longer counts as a
+  finished run with its partial text.
+- Token estimates count each image as a flat 1600 tokens instead of reading its
+  base64 data as text. Two screenshots used to add ~94k phantom tokens and
+  trigger auto-compaction far too early. The estimate after compaction now
+  keeps the system-prompt and tools overhead, so before/after numbers compare.
+- `grep` no longer splits an emoji or other surrogate pair when it truncates a
+  long line; the lone half could make strict providers reject the next request
+  (#276, thanks @firslov).
+- Diffs of tab-indented files no longer overflow the terminal and leave
+  colored bands under changed lines; tabs expand to 4-column stops (#273).
+- A query failure's stack trace no longer prints over the TUI; it shows only
+  under `DEBUG`. Codex mid-stream errors now carry the backend's message.
+
+## [0.15.17] - 2026-09-26
+
+### Fixed
+
+- On Node 20.19+, single-file `.ts` extensions (e.g. `web-access`, and `ads`,
+  which has no `package.json`) failed to load with "Cannot require() ES Module
+  ... in a cycle", and `.ts` workflows using TypeScript syntax (including the
+  bundled `review-loop` and `verified-review`) failed with "Unexpected token".
+  Outside a `"type": "module"` package, tsx loads these files as CommonJS. The
+  extensions dir now gets a `{ "type": "module" }` `package.json` if it has none,
+  and workflows load from an `.mts`/`.mjs` copy.
+
+## [0.15.16] - 2026-09-26
+
+### Added
+
+- Durable workflow runs: every run gets a folder under
+  `~/.agent-sh/workflow-runs/` with a journal of completed subagent runs and a
+  transcript per agent. `/workflow resume <id>` (or `run_workflow { resume }`)
+  reruns the script and reuses journaled results while their inputs are
+  unchanged. `/workflow runs` lists recent runs.
+- Workflow `budget` (`budgetTokens` / `subagents.workflowTokenBudget`): a hard
+  cap on subagent tokens, readable from the script.
+- The `subagents` extension registers a `using-subagents` skill alongside
+  `writing-workflows`: when to use each delegation tool, and how to run,
+  resume and debug workflow runs.
+- `writing-workflows` gains a Patterns section (adversarial and multi-angle
+  verification, several-way search, dedupe in code, per-item pipelining,
+  loop until nothing new, judge panel, completeness check, no silent caps), and
+  a second bundled example, `verified-review`: three finders, dedupe, then three
+  skeptics per finding.
+- `runSubagent` takes `onMessage` (each message as it joins the conversation)
+  and `shouldStop` (end after the current round of tool calls).
+- `agent-sh -p [prompt]` runs one prompt without the shell or TUI, prints the
+  reply and exits (1 on an agent error, 130/143 on SIGINT/SIGTERM). Piped stdin
+  is appended to the prompt (`--no-stdin` skips it) and tool calls are listed
+  on stderr. `--print=<text>` takes a prompt that starts with `-`. `--output json`
+  prints one event per line (`text`, `tool_start`, `tool_output`, `tool_end`,
+  `usage`, `error`, a final `done`) for scripts and tests.
+- The bundled `subagents` extension (now a directory, `agent-sh install
+  subagents`) runs named agents defined in markdown (bundled `scout`,
+  `reviewer`, `oracle`, `worker`, `delegate`, overridable from
+  `~/.agent-sh/agents/` and `<project>/.agent-sh/agents/`), fans out parallel
+  `tasks`, and streams per-step progress. `/agents` lists them.
+- Subagent workflows: a single `.ts`/`.js` file in `~/.agent-sh/workflows/` or
+  `<project>/.agent-sh/workflows/` coordinates subagents with ordinary code
+  (`run`, `all`, loops, branches). `run({ ..., schema })` resolves to validated
+  data, which the agent submits through a `submit_result` tool, so loops can
+  exit on real values. `all()` resolves a failed run to `null`. Run with `/workflow
+  <name> <args>` (handed to the main agent), the `run_workflow` tool, or `-p`.
+  Project workflows run only after `/workflow trust <name>`, and editing one
+  revokes trust. Bundled example: `review-loop`.
+- Background subagents: `background: true` on `spawn_agent` or `run_workflow`
+  returns at once. Status is shown in dynamic context each request, results
+  come back through the `subagent_jobs` tool, and an idle agent is woken with a
+  short note when a run finishes unread (`backgroundWake`). `/jobs` lists and
+  cancels runs.
+- `agent:pending-work` / `agent:pending-work-changed` let extensions report
+  work still in flight between turns; `agent-sh -p` now exits only when no turn
+  is running and none is pending.
+
+### Fixed
+
+- The `subagents` example never registered its tool (it read a nonexistent
+  `ctx.llmClient`), and its parent-history handoff used a pipe nothing handles.
+  Subagent tool calls now also go through `adviseTool` wrappers such as
+  secret-guard, which `runSubagent` previously bypassed.
+
+## [0.15.15] - 2026-09-25
+
+### Added
+
+- `context:snapshot` takes `skipTokens`, for callers that only want the message
+  list and would otherwise pay for a full-conversation token estimate and throw
+  the number away. `activeTokens` comes back 0. Callers that omit it are
+  unaffected.
+- `runSubagent` accepts `reasoningParams`, forwarded verbatim into every stream
+  call the same way the main loop threads them, so delegated work can run at the
+  reasoning effort resolved for the session instead of the provider default.
+- `runSubagent` accepts an `outMeta` out-object reporting `tokensUsed`,
+  `mutatingToolExecuted` and `degraded`. The return value stays a plain string.
+  `mutatingToolExecuted` is set before the tool runs, so a tool that throws
+  mid-write is still reported, and `tokensUsed` is kept current as the run goes
+  rather than only on a clean return — both matter to a caller deciding whether
+  a failed run is safe to retry. `reasoningParams` is merged under the core
+  request fields, so it cannot displace `messages`, `model` or `signal`.
+
+### Fixed
+
+- `zai-coding-plan` is registered in `KNOWN_PROVIDERS`, so `ZAI_API_KEY` in the
+  environment satisfies the provider gate. The provider was implemented and
+  activated but absent from the only list `resolveApiKey()` consults, so the CLI
+  refused to start with "no LLM provider configured". The startup hint now
+  derives its env-var list from that same source instead of a hardcoded copy
+  that had gone stale.
+- A subagent that runs out of iterations says so, appending the same kind of
+  note the budget path already did. It previously ended the loop silently and
+  returned partial progress that read like a clean finish.
+
+## [0.15.14] - 2026-09-22
+
+### Added
+
+- Mid-turn steering. `agent:steer` adds a message to the turn already running:
+  ash injects it at the next loop boundary — after the running tool batch has
+  landed in full (parallel calls included) and before the model is asked for the
+  next set of tool calls — instead of holding it until the turn ends. A message
+  steered in while the final answer streams keeps the loop going for one more
+  round rather than sitting unanswered in history, and one left over when a turn
+  is cancelled is handed back instead of replayed. With no turn in flight it
+  behaves like `agent:submit`.
+- `agent:steer-cancel` unqueues the most recent steering message.
+  `agent:steer-queued`, `agent:steer-consumed` and `agent:steer-dropped` report
+  the queue so a frontend can render it; a consumed message is also announced
+  with the usual `agent:query` and `conversation:message-appended`, so it
+  displays and persists like any other user message.
+
+### Changed
+
+- ashi: a message typed during a turn now steers that turn instead of waiting
+  for `agent:processing-done`. The `↳ queued:` line and Up-to-unqueue behave as
+  before. Cancelling a turn puts the first queued message (with its images) back
+  in the input and discards any others with a notice. Backends that do not
+  handle `agent:steer` — the claude-code, opencode and pi bridges — keep the
+  previous drain-on-turn-end behavior.
+
+## [0.15.13] - 2026-09-18
+
+### Fixed
+
+- A query submitted while another one was still finishing is cancellable again.
+  The finishing query cleared the shared abort controller unconditionally, wiping
+  the one the follow-up had just installed, so `agent:cancel-request` became a
+  no-op for that whole turn — Esc did nothing at all while a tool kept running.
+  Frontends that drain a queued message on `agent:processing-done` (ashi) hit
+  this whenever a follow-up was typed during a turn.
+
+## [0.15.12] - 2026-09-17
+
+### Fixed
+
+- Custom providers declared under `providers` in `settings.json` now pick up keys
+  stored with `agent-sh auth login <id>`. Previously only an `apiKey` in
+  `settings.json` was read, so the provider stayed hidden even though
+  `auth list` reported it as configured.
+- Settings-declared model `modalities` for hand-configured (openai-compatible)
+  providers are no longer dropped when merged with the provider's built-in
+  catalog capabilities. Purely hand-configured providers previously never
+  exposed their modalities through `agent:get-models`.
+
+## [0.15.11] - 2026-08-30
+
+### Added
+
+- DeepSeek: `deepseek-v4-flash-vision-exp`, a multimodal V4 variant that accepts
+  images alongside text (1M context, reasoning with echoed thinking). The two
+  existing V4 models are untouched and stay text-only.
+- Z.AI Coding Plan: `glm-5.3` and `glm-5.3-flash`, both with a 1,048,576-token
+  context window. `glm-5.3-flash` is natively multimodal and accepts images.
+
+### Changed
+
+- Z.AI Coding Plan's model list now matches the GLM Coding Plan documentation.
+  `glm-5.1` and `glm-4.5-air` are gone, and `glm-5-turbo`'s context window is
+  corrected from 200,000 to 204,800. The default model moves from `glm-5.1` to
+  `glm-5.3`. A persisted `/model` selection pointing at a removed id will need
+  reselecting.
+
+### Fixed
+
+- The OSC 7 cwd sequence no longer shells out to `hostname`, which isn't
+  installed everywhere — on Arch it ships in the optional inetutils package, and
+  without it every prompt printed
+  `__agent_sh_precmd:1: command not found: hostname`. Each shell's own host
+  variable is used instead: `$HOST` (zsh), `$HOSTNAME` (bash), `$hostname`
+  (fish). That also drops one subprocess per prompt. The host portion of OSC 7
+  is advisory — the output parser matches `file://[^/]*` and consumes only the
+  path — so a shell that leaves the variable empty is still handled correctly.
+- Z.AI Coding Plan: reasoning level `off` on `glm-5.3-flash` no longer sends
+  `{ thinking: { type: "disabled" } }`, a shape that model rejects because its
+  `thinking.type` accepts only `"enabled"`. On that model `off` now maps to an
+  enabled block at low effort; every other GLM model still disables thinking
+  outright.
+
+## [0.15.10] - 2026-07-12
+
+### Fixed
+
+- Subagents no longer destabilize the parent agent's prompt cache. The
+  subagent runner returned its entire multi-iteration transcript, which the
+  parent appended as a single tool_result; on long runs this bloated the
+  parent's context enough to trip auto-compaction, rewriting the cached
+  prompt prefix and cold-starting the provider's prompt cache. Subagents now
+  return only their final assistant message. Live tool events are unchanged,
+  so intermediate steps still render.
+
+## [0.15.9] - 2026-06-14
+
+### Fixed
+
+- Floating panel (overlay agent): tool output with CRLF line endings (e.g.
+  ssh's stderr warnings) no longer renders as staircased, left-truncated
+  lines inside the panel. The trailing `\r` survived into panel content
+  rows and repainted each composited row from column 0; panel rows now
+  strip cursor-moving control bytes (keeping colors), and the TUI's
+  command-output splitter treats `\r\n` as a line break.
+- Shell frontend: pasting multibyte text (e.g. Chinese) no longer corrupts
+  characters into `�` when the paste spans multiple stdin chunks. The stdin
+  reader decoded each chunk independently, tearing UTF-8 sequences at chunk
+  boundaries; it now decodes statefully across chunks.
+- Shell frontend: a pasted multi-line query starting with `/` (e.g. a file
+  path) is now sent to the agent instead of being misparsed as a slash
+  command. Only single-line queries dispatch as commands.
+- Shell frontend: multi-line queries no longer corrupt the input history
+  file. Entries are stored with newlines escaped, so a multi-line paste
+  recalls as one history entry instead of splitting into several bogus ones.
+- Shell frontend: multi-line bracketed pastes keep their line breaks on
+  terminals that send pasted newlines as `\r` (xterm convention — iTerm2,
+  Terminal.app). The paste accumulator deleted `\r` instead of normalizing
+  it to `\n`, silently joining the paste into one line. Ghostty/kitty
+  (verbatim `\n`) were unaffected.
+
+## [0.15.8] - 2026-06-10
+
+### Added
+
+- OpenRouter requests now send an `x-session-id` header keyed on the frontend's
+  resume-stable session id, pinning sticky provider routing so prompt caches stay
+  warm across turns — including after compaction rewrites the opening messages,
+  the case OpenRouter's default message-hash routing misses. Wired through a new
+  per-provider `requestHeaders` endpoint hook (scoped to OpenRouter only) and a
+  `session:current-id` handler the frontend supplies; absent that handler no
+  header is sent.
+- `latex-images` extension now renders inline `$…$` math as inline images under
+  the ashi frontend on kitty/Ghostty terminals, flowing within wrapped markdown
+  text (bold/italic and text selection preserved). Display `$$…$$` math is
+  unchanged. Inline detection follows pandoc's `$…$` delimiter rules so prose,
+  currency (`$5 and $10`), and inline code spans don't false-match. Inline
+  rendering is gated on the terminal's kitty Unicode-placeholder support; other
+  terminals leave inline `$…$` as text.
+- ashi pi-tui renderer: markdown can host inline images via the kitty Unicode
+  placeholder protocol. Producers register a PNG (`ashi:inline-image:register`)
+  and embed the returned id as a sentinel; the renderer transmits the image
+  out-of-band and flows it inline as width-correct placeholder cells.
+
+### Fixed
+
+- ashi user shell: the command label shown above each `!` command's output could
+  be the *previous* command (e.g. an `ls` rendered as the preceding `cd`). ashi
+  composes and sends the command itself, but the label was reconstructed from
+  the shell's echoed text instead. It now displays the exact line ashi wrote to
+  the pty (threaded through the pending-intent queue), which is also what's
+  recorded for the agent's context. Shell markers are still used to capture
+  output and detect command boundaries — only the command text no longer
+  round-trips through the shell.
+- Bash preexec hook (non-ashi shell frontend): the command text recovered for
+  the agent's context derived from `history 1`, which goes stale when the user's
+  `PROMPT_COMMAND` reloads history (`history -c`/`-r` for cross-session sharing).
+  It now falls back to `$BASH_COMMAND` whenever the history entry doesn't match
+  the command bash is about to run, keeping the full typed line (pipelines,
+  history-recalled commands) in the common case. zsh and fish were unaffected
+  (they read the exact command from preexec `$1`/`$argv`).
+
+## [0.15.7] - 2026-06-07
+
+### Added
+
+- `LICENSE` file (MIT) — matches the license declared in `package.json` and the
+  README badge, which previously linked to a missing file.
+- `AGENT_SH_DEFAULT_CONTEXT_WINDOW` environment variable overrides the 60k
+  fallback context window used when neither the model nor settings declares one
+  (a positive integer; ignored otherwise).
+
+### Changed
+
+- Event bus now isolates listener faults. A throwing subscriber or transform no
+  longer propagates out of `emit` (which could abort an in-flight turn) or stop
+  sibling listeners — each callback site (fire-and-forget listeners, the `onAny`
+  tap, and the sync/async transform pipes) is wrapped individually. Faults route
+  through a host-installable reporter; the kernel surfaces them on the universal
+  `ui:error` channel (and to stderr under `DEBUG`) instead of throwing or
+  silently swallowing.
+
+- Shell-mode markdown now uses a truecolor theme matching the ashi frontend
+  (gold headings, teal inline code and list bullets, blue underlined links, gray
+  blockquote bars and horizontal rules) instead of the terminal's 16-color
+  palette, so it reads consistently across terminal profiles. Adds dedicated
+  `md*` slots to the color palette.
+- Floating panel (overlay extensions): Up/Down arrows and the scroll wheel now
+  scroll the transcript in the input/idle phase, matching their behavior while
+  the agent is working. Previously they navigated input history, so after a
+  reply there was no way to scroll back through it (the panel owns its alt
+  screen, where terminals route the wheel through arrow keys). Input history
+  moved to Ctrl+P / Ctrl+N; PageUp/PageDown still page-scroll.
+- `conversation_recall` search now treats the query as a real regex (e.g.
+  `foo|bar`), falling back to literal matching only when the pattern is invalid;
+  it was previously always escaped to a literal. `browse` and `search` also
+  accept `offset`/`limit`, so results past the first page are now reachable.
+- Auto-compaction now reports on success (`(auto-compacted: ~X → ~Y tokens,
+  evicted N)`) and stays silent on a no-op, inverting the previous behavior
+  where only the "nothing to evict" failure was surfaced — so a compaction that
+  silently shrinks context is now visible.
+
+### Fixed
+
+- Bash/tool output no longer corrupts multibyte UTF-8 (e.g. CJK text, emoji).
+  The executor decoded each stdout/stderr chunk independently with
+  `Buffer.toString("utf-8")`, so any character whose bytes straddled a chunk
+  boundary became replacement characters (`�`). Each stream now decodes through a
+  `StringDecoder` that holds an incomplete trailing sequence until the next
+  chunk. This corrupted the agent-visible tool result too, not just the display.
+
+- ashi: a single pathologically wide line in bash/tool output (minified HTML,
+  one-line JSON) no longer wraps across the whole viewport. The preview clamped
+  the number of lines but not their width, so one 2000-column line counted as a
+  single line yet soft-wrapped over dozens of rows. Each previewed line is now
+  truncated to the body width with an `…`; expanding still shows full lines and
+  the agent always receives the untruncated output.
+
+- ashi: the footer's compaction counter (`⊟ N`) now resets when you start a new
+  session, resume, or fork a branch. The count is a frontend-local tally
+  incremented on each `conversation:after-compact`; `rebuildChat()` — the reload
+  path for every session/branch switch — cleared the other per-conversation view
+  state but left this one, so a fresh session kept showing the previous session's
+  count.
+
+- ashi: a successful compaction no longer desyncs the capture index→id map and
+  aborts the next auto-compaction with "kept-message has no on-disk entry". The
+  kept messages and their on-disk entry ids are now taken from a single
+  `buildBranchWithIds()` rebuild, instead of replacing the conversation from
+  `buildMessages()` and re-deriving the ids by index — the two could drift,
+  leaving a kept slot with a null id that failed the next compaction's lookup.
+
+- ashi: an assistant message whose text ends with a blank line no longer renders
+  a stray empty row before the following tool call. Some models emit trailing
+  newlines after their reply text, and the markdown renderer turned a trailing
+  blank line into a visible row — doubling the gap before tool calls. Trailing
+  whitespace is now stripped from the assistant buffer for display; blank lines
+  between sections are preserved.
+
+- Shell-mode tool output no longer interleaves when a batch runs read-only
+  tools in parallel. Their start/complete events arrive interleaved (e.g. two
+  reads and a search all start, then complete in any order), and the renderer
+  streamed each line as its event arrived — so results landed under the wrong
+  header, a dimmed `read (cont.)` block relisted files, and a search result
+  could appear under a `read` header. Read-only tools in a multi-tool batch are
+  now buffered and rendered as one contiguous block per group, in dispatch
+  order, the moment the group's members return — each file carrying its own
+  inline `✓`/`✗` result. Single-tool turns and sequential mutating/streaming
+  tools (bash, edit) still render live.
+
+- The `openai-compatible` provider now reads each model's context window from the
+  `/v1/models` catalog — llama.cpp's `meta.n_ctx` and vLLM's `max_model_len` —
+  instead of keeping only the id. Local llama.cpp/vLLM models previously fell back
+  to the 60k default, which also drove auto-compaction to trigger far earlier than
+  the server's real window. Servers that expose neither field are unaffected.
+
+- Rolling-history prefetch now runs after the agent backend activates, fixing a
+  race where prior-session context was silently dropped on new sessions.
+- `conversation_recall` tool description now accurately describes the store as a
+  persistent cross-session memory rather than "evicted conversation turns".
+- The `command-suggest` tool is no longer presented to the model when no shell
+  frontend is attached, so the agent won't suggest shell commands that can't be
+  staged at the prompt.
+
+### Documentation
+
+- Audited the README and `docs/` against the source and corrected stale content:
+  the built-in provider list, the ash system-prompt structure, the tool-output
+  truncation threshold, a deleted shared utility, three nonexistent agent-loop
+  handlers, the `modeInstruction` input-mode field, the `RenderSurface`
+  interface, and the shell redraw lifecycle hook.
+- Expanded the model-configuration guide to document every per-model capability
+  (`contextWindow`, `maxTokens`, `modalities`, `reasoning`, `echoReasoning`) and
+  the provider-level fields; refreshed all example model names to current
+  open-weight models (deepseek-v4-flash, gemma4, mimo).
+
+## [0.15.6] - 2026-06-04
+
+### Added
+
+- `agent-sh/skills` entry point exposing `discoverGlobalSkills()` and
+  `invalidateGlobalSkillsCache()`, so downstream tools can discover and
+  invalidate installed skills without reimplementing the filesystem scan.
+- `command-suggest` example extension: stages an agent-suggested shell command
+  at the user's prompt after the response finishes, ready to edit or run with
+  Enter instead of being copy-pasted.
+
+### Changed
+
+- `ToolDisplayInfo.kind` is now optional. A tool that sets a self-describing
+  `icon` can omit it, and the TUI then renders icon + detail with no verb —
+  previously every tool was forced to show one of read/write/execute/search.
+
+### Removed
+
+- Stale `agent-sh/agent/history-file` subpath export. Its source was deleted, so
+  a clean build never produced the target and the export resolved to a missing
+  module in published tarballs.
+
+### Fixed
+
+- Diff rendering (edit/write previews) now wraps long lines across rows instead
+  of truncating them with an ellipsis, so the full changed line is always
+  visible. `wrapLine` also hard-breaks an over-long token (long identifier, URL)
+  that first appears mid-line, which previously overflowed the wrap width.
+- Inline word-level emphasis in diffs now applies to long (paragraph-length)
+  lines too. The token-LCS that highlights changed words was skipped past a
+  ~220-token-per-side cost guard, leaving the whole line a flat tint; it now
+  anchors the shared prefix/suffix and diffs only the changed middle, so long
+  edits still show what actually changed.
+- Diff line numbers in shell-mode previews are now colored by line type (red
+  for removed, green for added, dim for context) instead of a uniform dim. A
+  single gutter mixes old-file numbers (deletions) with new-file numbers
+  (additions/context), so the uncolored column read as a confusing
+  non-monotonic sequence; the color now signals which file each number refers
+  to, matching how the ashi frontend already renders them.
+
+## [0.15.5] - 2026-06-04
+
+### Changed
+
+- Shell environment capture is cached on disk, keyed on the shell and the
+  mtimes of its rc files. Launch previously sourced the user's interactive
+  config twice — once to snapshot env vars, again in the interactive shell —
+  paying the full rc cost (oh-my-zsh, nvm, conda, …) on each. Repeat launches
+  now reuse the snapshot and skip the redundant sourcing (~1s+ on heavy
+  configs); editing an rc file invalidates the cache. Set
+  `AGENT_SH_SHELL_ENV_NOCACHE=1` to force a fresh capture.
+
+## [0.15.4] - 2026-06-03
+
+### Added
+
+- `diffText` palette slot — the foreground color for diff row text, overridable
+  via `setPalette()`.
+
+### Changed
+
+- Diff rows render the `+`/`-` sigil in color but the line text in a readable
+  foreground (the new `diffText` slot), fixing the low-contrast red-on-maroon /
+  green-on-green text.
+- Diffs group git-style — the whole removed run, then the whole added run —
+  instead of interleaving removed and added lines one by one.
+- Changed tokens are no longer bold; the row tints and changed-token emphasis
+  backgrounds are softened.
+- The `openai-compatible` provider now emits the `reasoning_effort` shape
+  (`"none"` when thinking is off), so `thinkingLevel: "off"` actually disables
+  reasoning on local servers that honor it instead of sending no parameter.
+  Override with `reasoningShape` or a user extension for servers wanting a
+  different disable token.
+
+## [0.15.3] - 2026-06-03
+
+### Fixed
+
+- The settings provider overlay is now rebuilt on every `agent:providers:changed`
+  event, so a host `reloadSettings()` picks up `apiKey` / `baseURL` edits (and
+  added or removed providers) without a process restart. Previously it was read
+  once at load and went stale, so a changed key took effect only after a restart.
+- `agent:tool-output-chunk` now carries `toolCallId`, so streamed tool output
+  routes to the producing tool's display. Read-only tools run as a parallel
+  batch, so with positional routing each tool's streamed output landed in the
+  most-recently-started tool's body — concurrent calls cross-rendered. Frontends
+  that ignore the field still work (they fall back to most-recent).
+
+## [0.15.2] - 2026-06-02
+
+### Added
+
+- `agent:tools:visible` — a filter point on the assembled tool list as the model
+  sees it, applied after `getTools()`, so a frontend or extension can restrict
+  the model's tools without affecting tool lookup, execution, or tool bridges
+  (which need the full list). Inert by default.
+- `system-prompt:identity` — a handler for the system prompt's identity section
+  (defaulting to the kernel identity), so a frontend or app can replace the
+  identity without overriding the whole `system-prompt:build`. Inert by default.
+
+## [0.15.1] - 2026-06-01
+
+### Fixed
+
+- The published package now ships `docs/` and `src/`, so the system prompt's
+  `STATIC_GUIDE` pointers (agent-sh docs + source) resolve in npm installs
+  instead of dead-ending and sending the agent hunting.
+
+## [0.15.0] - 2026-06-01
+
+### Changed
+
+- **Breaking — model-selection surface renamed.** `AgentMode` is now `Model`: a
+  serializable identity + capabilities, with `provider` required and the `model`
+  field renamed to `id`. The credentials (`apiKey`/`baseURL`) and the
+  reasoning/cache closures moved out of the model into a new internal
+  `ModelEndpoint`, resolved by `(provider, id)` via `agent:resolve-endpoint`.
+  - Handlers: `agent:get-modes` → `agent:get-models`, `agent:get-mode` → `agent:get-model`.
+  - Events: `agent:modes-changed` → `agent:models-changed`; `config:switch-model`
+    payload `{ model }` → `{ id, provider }`; `config:get-models` entries are now
+    full `Model[]` (`.model` → `.id`, plus capability fields).
+  - Silent-breaking at runtime for unmigrated extensions (string-keyed handlers /
+    loose bus payloads); no end-user behavior change. Warrants a minor bump.
+    Migration guide: [#234](https://github.com/guanyilun/agent-sh/pull/234).

@@ -1,9 +1,9 @@
 # gszhangwei/open-spdd
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 59669ac18c1c @ 6eae32fd657aa164
+Latest snapshot: commit 3991ffa2cd66 @ 713151bc47103280
 
 ## Summary (orientation draft, not independently verified)
 

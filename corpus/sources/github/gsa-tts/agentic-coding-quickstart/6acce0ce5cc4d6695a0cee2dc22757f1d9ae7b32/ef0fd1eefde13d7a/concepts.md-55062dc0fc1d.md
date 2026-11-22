@@ -1,0 +1,443 @@
+---
+title: "acq Concepts"
+description: "Backend-neutral concepts for working with acq sandboxes (workspaces, mounts, published ports)"
+status: canonical
+tier: 2
+last_updated: "2026-10-22"
+audience: "developers"
+keywords: ["acq", "concepts", "workspace", "mount", "ports", "publish", "backend-neutral", "sbx", "msb"]
+related_files: ["docs/howto/acq.md", "docs/BACKEND_GUIDE.md", "docs/adr/0010-acq-pluggable-backends.md", "docs/adr/0011-msb-backend-and-neutral-kits.md", "docs/adr/0034-host-port-selection-and-publish-override.md"]
+load_priority: "on-demand"
+review_cycle: "quarterly"
+---
+
+# acq Concepts
+
+Cross-cutting concepts for working with `acq` sandboxes. These apply to **both**
+backends (sbx and msb) because `acq` presents one neutral interface over both.
+For per-backend strengths, tradeoffs, and caveats, see the
+[Backend Guide](BACKEND_GUIDE.md).
+
+## Provider Validator Runtime
+
+Provider-input validation uses an isolated runtime in user data
+(`$XDG_DATA_HOME/acq/provider-input-validator`, or `~/.local/share` by default).
+Normal official, npm, and Homebrew installations acquire a release-built,
+checksummed wheelhouse at installation time. On first provider-backed create,
+acq atomically creates the runtime from that local wheelhouse with
+`pip --no-index --require-hashes`.
+It never installs packages globally or downloads packages during creation.
+The macOS wheelhouse supports the pinned closure on Python 3.12-3.14, including
+Homebrew Python 3.14 on Apple Silicon. A failed refresh leaves the previous
+published runtime intact; a missing or invalid wheelhouse fails validation closed.
+Windows x64 releases additionally include CPython 3.12.10's embedded
+distribution, downloaded and SHA-256 verified by release CI from python.org,
+then packaged with the existing exact locked wheelhouse. The installer verifies
+the nested archive and atomically publishes it under `%LOCALAPPDATA%\acq`; it
+does not install Python globally or use WinGet. The embedded distribution is
+covered by the [Python Software Foundation License Version 2](https://docs.python.org/3/license.html);
+the release includes its notice as `PYTHON-NOTICE.txt`.
+
+---
+
+## Multiple Workspaces
+
+You can mount additional directories alongside the primary workspace when
+creating a sandbox. This is useful when you need to reference multiple repos or
+folders from one sandbox session — for example, editing an app while reading a
+reference library or the playbook.
+
+`acq` supports the multi-workspace positional list on **both** backends with
+identical syntax, so this is the canonical, backend-neutral way to mount extra
+directories.
+
+### Syntax
+
+```bash
+acq run <agent> <primary-workspace> [extra-workspace][:ro] ...
+# e.g.
+acq run opencode ~/projects/app ~/projects/lib:ro
+```
+
+- **Primary workspace** — the first path. The agent starts here, and it is
+  mounted read/write.
+- **Extra workspaces** — additional paths the agent can access. Each mounts at
+  its **absolute host path** inside the sandbox (e.g. `~/projects/lib` appears at
+  `/Users/you/projects/lib`), matching across backends.
+- **`:ro` suffix** — mounts that extra workspace read-only. Recommended for
+  reference repos so the agent cannot modify them.
+- **Mounts are fixed at creation** — you cannot add or remove workspaces from an
+  existing sandbox. To change mounts, remove the sandbox (`acq rm <name>`) and
+  recreate it with the new paths.
+
+The same positional list works with `acq create` when you want to name a sandbox
+without attaching immediately:
+
+```bash
+acq create <agent> <primary-workspace> [extra-workspace][:ro] ...
+```
+
+### Example: app repo + read-only reference
+
+```bash
+# Primary: your app (read/write)
+# Secondary: the playbook, read-only reference
+acq run opencode ~/projects/my-app ~/projects/agentic-coding-playbook:ro
+```
+
+The agent can edit `~/projects/my-app` and read from
+`~/projects/agentic-coding-playbook` without risk of modifying the reference
+content.
+
+### Disposable primary: `--clone`
+
+By default the primary workspace is the **real host checkout**, mounted
+read/write. Pass `--clone` (or set `ACQ_CLONE=1`) at create to run the agent on
+a **disposable clone** of the primary instead: the agent branches, commits, and
+experiments without touching your checkout, and you pull finished work back
+explicitly on the host:
+
+```bash
+acq run opencode --clone ~/projects/my-app
+# ... agent works on a private clone ...
+git fetch sandbox-<name>     # run in ~/projects/my-app: pulls agent branches
+```
+
+The primary must be the **root of a git repository**. Secondary workspaces are
+unaffected. Like the mounts themselves, `--clone` applies **at creation only**.
+A clone carries **committed state only** — no gitignored/untracked files and no
+uncommitted edits; commit first, or copy specific files in with `acq cp` (e.g.
+a needed `.env`). Removing the sandbox (`acq rm`) discards the clone, with a
+warning if it still holds commits you have not fetched. Inside the sandbox,
+`ACQ_CLONE=1` and `ACQ_WORKSPACE` tell kits and scripts that the primary is a
+disposable clone and where it is (see the `environment` section of
+[BACKEND_GUIDE](BACKEND_GUIDE.md)). See
+[ADR-0027](adr/0027-neutral-clone-option.md) for the design and the per-backend
+mechanics.
+
+### Security recommendation
+
+Prefer read-only (`:ro`) mounts for secondary workspaces unless the agent
+genuinely needs write access. This limits accidental modification and reduces
+the blast radius of agent errors.
+
+> [!WARNING]
+> Mounted directories expose **all content** to the agent, including `.env`
+> files, `.git/config` (which may contain tokens), and any secrets in the
+> mounted path. Mount only what the agent needs. Prefer selective, targeted
+> mounts over mounting parent or home directories.
+
+### Backend caveats
+
+The syntax and semantics above are identical across backends, but each backend
+has a few mechanics worth knowing. Rather than duplicate them here, see the
+[Backend Guide](BACKEND_GUIDE.md) for:
+
+- **msb** — each host workspace path must already exist (msb does not create the
+  host mount path), and symlinked host paths (notably macOS `$TMPDIR`) are
+  canonicalized to their real path before mounting.
+- **sbx** — `--clone` uses the backend's native in-container clone, whose
+  lifecycle interacts with multi-workspace mounts; see the
+  [sbx how-to guide](howto/sbx.md) for the sbx-specific clone story.
+- **msb** — `--clone` is emulated with a managed host-side scratch clone
+  mounted in place of the primary; see the
+  [Backend Guide](BACKEND_GUIDE.md#disposable-primary-clone) for mechanics and
+  the divergences from sbx (a git clone carries committed state only).
+
+---
+
+## Published Ports
+
+A kit that runs a server declares the **guest** port it listens on (its
+`publishedPorts` entry); acq maps that to a port on **your host** at create time,
+so `http://127.0.0.1:<host port>` reaches it. Read the mapping acq chose with:
+
+```bash
+acq ports <name>
+```
+
+acq picks a **free host port per sandbox**, so several sandboxes from the same
+kit can run at once and each gets its own host address.
+
+### Choosing the host port: `--publish`
+
+When you want a **predictable** address rather than whatever was free — "this
+sandbox's UI is on 6868, that one's on 6869" — choose it at launch:
+
+```bash
+acq run opencode --publish 6868:6767 ~/projects/my-app
+```
+
+`--publish HOST:GUEST` is repeatable, and both sides are required (the guest port
+is the kit's, not yours to invent). It overrides whatever the kit declared for
+that guest port. If the host port is already in use, the create **fails** — acq
+never quietly moves your mapping somewhere else.
+
+Two limits worth knowing:
+
+- It applies **at create only**, like the mounts and `--clone`: the mapping lives
+  in the sandbox's create arguments, so a re-attach cannot move it (acq says so
+  rather than ignoring the flag). To add a mapping to a sandbox that is already
+  running, use `acq ports <name> --publish HOST:GUEST` — that opens a tunnel to
+  the guest's *loopback* interface, a different path than the create-time
+  publish.
+- It is **msb only**. sbx assigns the host port itself and offers no way to
+  request one, so acq refuses the flag there rather than appear to honor it; read
+  what sbx chose with `acq ports`.
+- Like the other run/create flags, it goes **after** the subcommand
+  (`acq run … --publish …`). Only `--backend` and `--image` may precede it.
+
+See [ADR-0034](adr/0034-host-port-selection-and-publish-override.md) for the
+design, and [ADR-0015](adr/0015-msb-post-hoc-port-publish-via-ssh.md) for the
+post-hoc tunnel this deliberately does not fall back to.
+
+---
+
+## How It Works
+
+This explains the mechanics behind the [README](../README.md) quickstart — read
+it when you want to customize or troubleshoot.
+
+### What happened when you ran the `acq` command?
+
+`acq run` created the sandbox for that path (if it didn't exist yet) and mounted
+your project into it. Then it configured the coding agent (`opencode`) to pick up
+configuration for using the USAi provider and made sure the agent was provisioned
+with custom guidance and relevant skills for working in the federal context — all
+delivered by kits fetched from the pinned patterns release, not from the
+quickstart clone.
+
+### What `acq` applies
+
+`acq` applies its **built-in mixin kits** (by pinned remote reference from the
+community [agentic-coding-patterns](https://github.com/GSA-TTS/agentic-coding-patterns)
+repo) when it creates a sandbox:
+
+- **`usai-provider`** — stages the USAi config at `~/usai-config/opencode.jsonc`
+  and, at startup, merges it into OpenCode's global config at
+  `~/.config/opencode/opencode.jsonc` (allow-listing USAi egress). It composes
+  with, rather than clobbers, any existing global config.
+- **`agentic-coding-playbook`** — installs the playbook at startup into
+  `~/.agentic-coding-playbook` (a pinned REST tarball on patterns v1.8.0+; older
+  bundles cloned it) and symlinks its `AGENTS.md` into each agent's
+  rules path and its skills into `~/.agents/skills` (+ per-agent roots).
+- **`zscaler-ca-certificate`** — installs the public Zscaler Root CA into the
+  sandbox trust store (harmless if Zscaler isn't in use).
+- **`git-ssh-sign`** — signs git commits and tags with the SSH key forwarded
+  from your host's SSH agent; the private key never enters the sandbox. Load a
+  key on the host first (`ssh-add ~/.ssh/id_ed25519`) — without one, commits fail
+  with a clear error, and `acq` warns you before attaching. Signing alone does
+  not make a commit GitHub-**Verified**; see
+  [Commits show "Unverified" on GitHub](KNOWN_FAILURE_MODES.md#22-signed-commits-show-unverified-on-github).
+
+### How the USAi key is injected
+
+`acq` stores the USAi API key in its own secret store
+(`./acq secret set -g usai`) with an explicit associated endpoint
+(`api.gsa.usai.gov`) and injects it into requests at runtime — the real value
+stays out of the guest.
+
+### Key pre-validation
+
+Before attaching, `acq` checks that the sandbox's USAi key works. If none is set
+yet, or it has expired, `acq` prompts you to paste a key (or rotate it — see
+[Rotate your USAi key](howto/acq.md#rotate-your-usai-key)) and re-validates
+before launching the agent.
+
+### How default USAi models are chosen
+
+The `usai-provider` kit ships an `opencode.jsonc` with a generated USAi model
+catalog, kept in sync with the USAi `/models` API so new projects start from a
+current baseline. See the kit definition in the agentic-coding-patterns
+repository for details.
+
+### Provider input projection
+
+Provider input validation uses exact Python dependency versions. Normal installs
+bootstrap the user-data runtime automatically and offline on first use. To
+prepare it explicitly, run:
+
+```bash
+scripts/setup-provider-input-validator --apply
+```
+
+The command creates `$XDG_DATA_HOME/acq/provider-input-validator` and installs
+only the versions pinned in the selected lock file from the shipped checksum-
+verified wheelhouse. `acq` prefers this isolated runtime when
+`ACQ_PROVIDER_INPUT_PYTHON` is not set. It never modifies the global Python
+environment or downloads packages during sandbox creation.
+
+Provider-role kits may publish versioned provider facts, a normalizer, and a
+model snapshot. Before a sandbox is created, acq discovers every selected
+provider-role kit, validates the full set with the pinned Patterns validator,
+and projects only approved regular files into a backend-owned read-only mount.
+
+Consumers receive `ACQ_PROVIDER_INPUT_ROOT`; compose each provider directory as
+`$ACQ_PROVIDER_INPUT_ROOT/models/providers/<providerId>`. A missing root is not
+ready, while a present `models/providers` directory with no entries is an
+authoritative empty provider set. This is the durable neutral interface for
+Patterns provider consumers; it does not assume a provider allowlist, USAi, or
+an OpenCode configuration.
+
+---
+
+## Customizing your setup
+
+`acq` applies a fixed set of built-in kits, pinned to a commit of the patterns
+repo. To customize:
+
+- **Pick opt-in kits interactively:** run `acq configure` (see
+  [Interactive setup: `acq configure`](#interactive-setup-acq-configure)).
+- **Add your own kits on every run:** see [Advanced: extra kits](#advanced-extra-kits).
+- **Change USAi models / provider config, rules, or skills:** contribute to the
+  kits in the
+  [agentic-coding-patterns](https://github.com/GSA-TTS/agentic-coding-patterns)
+  repo (`integrations/isolation/acq-kits/`), where each kit and its design notes
+  live.
+- **Adopt newer kit versions:** bump `PATTERNS_KIT_REF` near the top of
+  `acq.backends/common.sh`.
+
+### Interactive setup: `acq configure`
+
+`acq configure` opens a small, colorful interactive picker (no extra tools to
+install) that lets you choose which **opt-in** kits to enable and set the default
+answer for the per-sandbox GitHub-token-scoping prompt. Choices persist to
+`~/.config/acq/config.yaml`, so you set them once instead of repeating `--kit`
+flags on every run.
+
+```text
+? Select kits (dimmed rows are always applied · ↑/↓ move · SPACE toggle · ENTER confirm · q cancel)
+  [x] zscaler-ca-certificate   Zscaler/corporate CA trust … (always applied)
+  [x] usai-provider            USAi provider + model config … (always applied)
+  [x] agentic-coding-playbook  Federal agent rules and skills … (always applied)
+  [x] git-ssh-sign             SSH-based git commit signing … (always applied)
+❯ [x] openchamber              Browser UI for OpenCode alongside the terminal TUI
+  [ ] paseo                    Self-hosted Paseo browser web UI for coding agents
+  [ ] oci-engine               Rootless podman for docker run / docker compose
+```
+
+- The **four built-in kits** (`zscaler-ca-certificate`, `usai-provider`,
+  `agentic-coding-playbook`, `git-ssh-sign`) appear as **frozen rows** at the top
+  — always checked, dimmed, and tagged `(always applied)`. The cursor skips them
+  and they can't be toggled; the picker manages only the opt-in extras below.
+- On your **first run**, `acq` offers to run this for you. Run it again anytime
+  with `acq configure`.
+- At `acq create`, the picker is shown again **pre-populated with your saved
+  defaults**, so a single sandbox can enable or disable a kit without changing
+  the global default (the deviation is remembered for that sandbox).
+- Select **`oci-engine`** when the sandbox needs `docker run` or
+  `docker compose`. It installs rootless podman inside the sandbox and is not
+  enabled by default.
+- The **GitHub-token** preference only pre-answers the scoping prompt; the
+  fine-grained token is still minted per-sandbox (see
+  [`acq github-scope`](howto/acq.md)).
+- Non-interactive/CI runs make no changes and simply print the current
+  configuration. Set `ACQ_NO_PROMPT=1` to force that behavior.
+
+### Advanced: extra kits
+
+`acq` always applies its built-in kits. To apply **additional** kits on
+every invocation without repeating `--kit` flags, set `ACQ_EXTRA_KITS` to a
+whitespace-separated list of kit references (local paths or remote refs):
+
+```bash
+export ACQ_EXTRA_KITS="./my-local-kit git+https://github.com/acme/kits.git#ref=<sha>&dir=some-kit"
+```
+
+An explicitly-exported `ACQ_EXTRA_KITS` takes precedence over the kits saved by
+`acq configure` (env wins): the interactive picker is skipped and your env value
+is used verbatim.
+
+Extras are applied **after** the built-in kits (so they win on any overlapping
+config). They also work when re-running against an existing sandbox: adding a new
+entry and re-running `acq run <existing-sandbox>` injects just the new kit.
+
+### Provider input projection
+
+Provider-role kits may declare model facts, a normalizer, and a catalog snapshot.
+Before sandbox creation, `acq` validates the complete set with the validator and
+schemas from the pinned Patterns release, then mounts only the approved artifacts
+read-only at `ACQ_PROVIDER_INPUT_ROOT`. These projected facts and catalogs are
+guest-readable metadata, not secrets. Credentials remain in backend secret
+bindings and must never be included in a provider-input bundle.
+
+If an extra kit is hosted somewhere other than `github.com/GSA-TTS/`, add its
+scheme-less prefix so `acq` allowlists it:
+
+```bash
+export ACQ_EXTRA_KIT_SOURCES="github.com/acme/"
+```
+
+### Advanced: the `~/.rc.d` shell hook
+
+`acq` gives kits a neutral shell hook: any file a kit drops at
+`~/.rc.d/*.sh` is sourced at login. Both backends apply it identically
+(ADR-0030) — the delivery is a normal kit `files[]` drop, and `acq` writes the
+matching login-profile bridge that sources the snippets (`sbx` writes it at
+create time; `msb` writes it as part of its login-shell setup).
+
+What it is and how it behaves:
+
+- **Kit-owned, not user-editable.** The snippets come from a kit's `files[]`
+  tree, and the sourcing bridge is written by `acq`. Treat `~/.rc.d/*.sh` as
+  build output, not a place to hand-edit inside a sandbox.
+- **POSIX-sh, bash bridge.** The built-in `~/.profile` bridge sources the
+  snippets for bash login shells. Zsh-capable base images must wire the same
+  directory from native zsh startup files. The files are POSIX-sh.
+- **Deterministic lexical order.** Snippets are sourced in byte (C-collation)
+  order regardless of the guest's locale, so a `10-`, `20-`, `90-` numeric
+  prefix convention gives a stable, predictable order. A bare shell glob would
+  sort in the guest's locale collation; the bridge forces `LC_ALL=C` for the
+  listing to avoid that.
+
+Guardrails:
+
+- **Never put secrets in a snippet.** `~/.rc.d/*.sh` is kit content that lands
+  on disk and is sourced into every login shell; secrets belong in the backend
+  secret store (injected at runtime), never in a shipped file.
+- **Do not duplicate what devenv provides** inside a devenv shell. If a tool's
+  environment is already established by the project's `devenv`/`.envrc`, do not
+  re-export it here — the hook is for shell integration that must exist
+  *outside* a devenv shell.
+- **Kit-owned.** Ship shell behavior as a kit, not as ad-hoc edits.
+
+Use-cases (ADR-0030):
+
+- the hook itself, delivered by a neutral kit;
+- agent shell integration that must exist outside a devenv shell;
+- team tool environment variables and shell completions;
+- personal aliases and functions (via a personal kit through `ACQ_EXTRA_KITS`);
+- a direnv/devenv activation hook.
+
+**fish and nushell.** The `~/.rc.d/*.sh` snippets are POSIX-sh and are **not**
+sourced by fish or nushell, because their shell languages are incompatible with
+POSIX-sh syntax — sourcing a `.sh` file into fish/nushell would error, not work.
+`acq` therefore does not wire fish/nushell to `~/.rc.d`. This is a documented
+constraint, chosen over speculative wiring: fish has its own native autoload
+directory (`~/.config/fish/conf.d/*.fish`), and nushell loads from its
+configured config/autoload path (`$nu.config-path`). The intended future path is
+for a kit to deliver shell-native snippets there when fish/nushell support is
+actually needed. Until a concrete need exists, `acq` neither wires those
+directories nor installs fish or nushell.
+
+**Migration path.** If a team kit currently establishes shell behavior by other
+means (for example, appending to `~/.bashrc` from a kit `startup` command), move
+that behavior into a POSIX-sh snippet under `files/home/agent/.rc.d/NN-name.sh`
+in a personal or team kit, applied via `ACQ_EXTRA_KITS`. Pick a numeric prefix
+to order it against other snippets (lower runs first). Drop the old
+`~/.bashrc`-append step once the snippet is in place; the built-in bridge
+sources the snippet for bash login shells.
+
+---
+
+## Optional Integrations
+
+- **Web UI** — The OpenCode text UI is functional but constraining. By running
+  the Paseo kit, you can interact with sandboxed agents via a feature-rich web UI
+  that includes clipboard support and richer markdown rendering. Use the
+  [`paseo` acq kit](https://github.com/GSA-TTS/agentic-coding-patterns/tree/main/integrations/isolation/acq-kits/paseo),
+  then open <http://localhost:6767> in your browser.
+- **Editor integrations** — Editor task configs and setup guides live in the
+  community [agentic-coding-patterns](https://github.com/GSA-TTS/agentic-coding-patterns/tree/main/integrations)
+  repo under `integrations/`. (For example, the Zed editor integration is at
+  `integrations/editors/zed/`.)

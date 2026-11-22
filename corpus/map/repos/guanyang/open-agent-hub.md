@@ -1,9 +1,9 @@
 # guanyang/open-agent-hub
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c90c4f2b25ba @ 18ff33ab1ed1652b
+Latest snapshot: commit b4a7103a676a @ ce97d8d91e5f100d
 
 ## Summary (orientation draft, not independently verified)
 

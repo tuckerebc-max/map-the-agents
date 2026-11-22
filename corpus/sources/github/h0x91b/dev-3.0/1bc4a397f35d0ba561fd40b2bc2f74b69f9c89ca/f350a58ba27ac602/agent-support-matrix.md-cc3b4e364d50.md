@@ -1,0 +1,375 @@
+# Agent Support Matrix
+
+Feature compatibility across supported AI coding agents.
+
+Last updated: 2026-11-03
+
+> **This matrix is now an interface, not prose.** The per-agent launch/trust/
+> hooks/skill differences live behind one `AgentAdapter` per agent
+> ([decision 124](decisions/2026/07/11/agent-adapter-interface.md)), in
+> `src/shared/agent-adapters/` (pure descriptors + registry, keyed by base
+> command with an explicit `GenericAdapter` fallback), applied by thin executors
+> in `src/bun`. Column → interface member: *System prompt injection / Session
+> resume / Targeted recovery / Permission mode / Effort / Max budget / Model
+> selection / Agent selection* → `launchArgs()` (plus `supportsResume` /
+> `supportsPreAssignedSessionId` / `buildResumeCommand`); *Auto-trust worktree* →
+> `trustKinds`; *Status hooks* → `hooksSpec()`; *Skill injection* → `skillBody`.
+> Adding an agent is one new adapter file registered in `registry.ts`, and the
+> type-checker enumerates every member to fill in. The Claude-only rows (*LLM
+> provider*, *Rate-limit tracking*, MCP pre-approval) stay outside the seam, keyed
+> by `isClaudeCommand`; *Managed accounts* also stays outside it, keyed by
+> `agentKey` in `src/bun/agents.ts` (`apply*AccountEnv`).
+
+## Agents
+
+| Agent | CLI binary | Skill directories |
+|-------|-----------|-------------------|
+| Claude Code | `claude` | `~/.claude/skills/dev3/`, `~/.claude/skills/dev3-project-config/`, `~/.claude/skills/dev3-tmux/`, `~/.claude/skills/dev3-extensions/`, `~/.claude/skills/dev3-bug-hunter/`, `~/.claude/skills/ask-dev3/`, `~/.claude/skills/dev3-artifact/`, `~/.claude/skills/dev3-share-artifact/`, `~/.claude/skills/dev3-coordinator/` |
+| Cursor Agent | `agent` | `~/.cursor/skills/dev3/`, `~/.cursor/skills/dev3-project-config/`, `~/.cursor/skills/dev3-tmux/`, `~/.cursor/skills/dev3-extensions/`, `~/.cursor/skills/dev3-bug-hunter/`, `~/.cursor/skills/ask-dev3/`, `~/.cursor/skills/dev3-artifact/`, `~/.cursor/skills/dev3-share-artifact/`, `~/.cursor/skills/dev3-coordinator/` |
+| Codex | `codex` | `~/.codex/skills/dev3/`, `~/.codex/skills/dev3-project-config/`, `~/.codex/skills/dev3-tmux/`, `~/.codex/skills/dev3-extensions/`, `~/.codex/skills/dev3-bug-hunter/`, `~/.codex/skills/ask-dev3/`, `~/.codex/skills/dev3-artifact/`, `~/.codex/skills/dev3-share-artifact/`, `~/.codex/skills/dev3-coordinator/` |
+| Gemini CLI | `gemini` | `~/.agents/skills/dev3/`, `~/.agents/skills/dev3-project-config/`, `~/.agents/skills/dev3-tmux/`, `~/.agents/skills/dev3-extensions/`, `~/.agents/skills/dev3-bug-hunter/`, `~/.agents/skills/ask-dev3/`, `~/.agents/skills/dev3-artifact/`, `~/.agents/skills/dev3-share-artifact/`, `~/.agents/skills/dev3-coordinator/` |
+| GitHub Copilot CLI | `copilot` | `~/.agents/skills/dev3/`, `~/.agents/skills/dev3-project-config/`, `~/.agents/skills/dev3-tmux/`, `~/.agents/skills/dev3-extensions/`, `~/.agents/skills/dev3-bug-hunter/`, `~/.agents/skills/ask-dev3/`, `~/.agents/skills/dev3-artifact/`, `~/.agents/skills/dev3-share-artifact/`, `~/.agents/skills/dev3-coordinator/` |
+| OpenCode | — | `~/.opencode/skills/dev3/`, `~/.config/opencode/skills/dev3/`, `~/.opencode/skills/dev3-project-config/`, `~/.config/opencode/skills/dev3-project-config/`, `~/.opencode/skills/dev3-tmux/`, `~/.opencode/skills/dev3-extensions/`, `~/.config/opencode/skills/dev3-tmux/`, `~/.config/opencode/skills/dev3-extensions/`, `~/.opencode/skills/dev3-bug-hunter/`, `~/.config/opencode/skills/dev3-bug-hunter/`, `~/.opencode/skills/ask-dev3/`, `~/.config/opencode/skills/ask-dev3/`, `~/.opencode/skills/dev3-artifact/`, `~/.opencode/skills/dev3-share-artifact/`, `~/.config/opencode/skills/dev3-artifact/`, `~/.config/opencode/skills/dev3-share-artifact/`, `~/.opencode/skills/dev3-coordinator/`, `~/.config/opencode/skills/dev3-coordinator/` |
+| Pi | `pi` | `~/.agents/skills/dev3/` and the other dev3 skills under the shared `~/.agents/skills/` alias, which pi reads natively — no pi-specific directory is written |
+| Oh My Pi | `omp` | `~/.omp/agent/skills/dev3/`, `~/.omp/agent/skills/dev3-project-config/`, `~/.omp/agent/skills/dev3-tmux/`, `~/.omp/agent/skills/dev3-extensions/`, `~/.omp/agent/skills/dev3-bug-hunter/`, `~/.omp/agent/skills/ask-dev3/`, `~/.omp/agent/skills/dev3-artifact/`, `~/.omp/agent/skills/dev3-share-artifact/`, `~/.omp/agent/skills/dev3-coordinator/` |
+| Antigravity CLI | `agy` | `<worktree>/.agents/skills/dev3/` (written per task into a dev3-owned worktree; nothing is installed under `~/.gemini`, because a launcher may override HOME) |
+
+## Managed restart and hibernation
+
+Codex and Claude Code support task hibernation and resume through their saved conversation IDs; Codex's ID comes from its lifecycle hooks and is resolved in the original account store. Right-click a task → **Restart agent session…** reuses that recovery path while the terminal is still present, preserving managed accounts and future hibernation. It replaces the task terminal, closes its auxiliary panes and discards scrollback; commands and dev servers in those panes stop, while files remain intact. Restart refuses if a saved conversation would be replaced or started fresh. A resume can move Claude panes to another managed account (wake/recovery screen, the resume approval dialog, or `--account`); Codex panes keep the account their conversation lives in. See [`resume-on-another-claude-account`](decisions/2026/11/08/resume-on-another-claude-account.md). Native terminals currently restore only the main agent, so restart refuses a native task with extra panes before stopping anything. See [`restart-agents-through-managed-resume`](decisions/2026/11/03/restart-agents-through-managed-resume.md).
+
+The **"No agent" mark** for an agent that exited to a shell is tmux-only: the native terminal backend (and so every Windows task) never gets it, because its main agent is recorded without a pane id and the exit probe reads that as `unknown`. A task whose terminal is gone is marked on every backend. See [`no-agent-mark-agent-exited-probe`](decisions/2026/11/13/no-agent-mark-agent-exited-probe.md).
+
+## Feature Matrix
+
+| Feature | Claude Code | Cursor Agent | Codex | Gemini CLI | OpenCode | GitHub Copilot CLI | Oh My Pi | Pi | Antigravity CLI |
+|---------|:-----------:|:------------:|:-----:|:----------:|:--------:|:------------------:|:--------:|:--:|:-------------:|
+| **Skill injection** | Yes (`!` command syntax) | Yes (generic) | Yes (generic) | Yes (generic) | Yes (generic) | Yes (generic, via the shared `~/.agents/skills/` alias) | Yes (generic, `/skill:` prefix) | Yes (generic, via `~/.agents/skills/`, `/skill:` prefix) | Yes — `<worktree>/.agents/skills/dev3/SKILL.md`, written per launch (agy walks up from its cwd; `~/.gemini/config` is not used because a launcher may override HOME) |
+| **System prompt injection** | `--append-system-prompt` | via prompt arg | `-c developer_instructions=...` (developer-role message; covers scratch + resume — see decision 115) | — | via `--prompt` | `sessionStart` hook `additionalContext` (covers scratch + resume; never on the command line) | `--append-system-prompt <file>` (fresh and resumed: the session keeps no appended prompt) | `--append-system-prompt <file>` (pi reads a file when the value names one; fresh and resumed) | `SessionStart` hook answers `injectSteps` → `systemMessage` with the full protocol (persists in the conversation; agy has no system-prompt flag and caps rule files at 24 KB, so a rule file cannot carry it). A resumed conversation gets it again |
+| **Session resume** | `--resume <id>` / `--continue` | `--resume <id>` / `--continue` | `resume <id>` / `resume --last` | `--resume <id>` / `--resume latest` | `--continue` | `--resume=<id>` / `--continue` | `--resume <id>` / `-c` | `--session-id <id>` / `-c` | `--conversation <id>` / `--continue` |
+| **Targeted recovery** (resume the *exact* session, incl. multi-session worktrees) | Yes — pre-assign `--session-id` | Yes — pre-assign `--resume <uuid>` | Yes — session id captured per-pane from the lifecycle hook (`session_id` + `$TMUX_PANE`); no launch flag exists (see decision 125) | Yes — pre-assign `--session-id` (gemini-cli #26060; **not** version-guarded) | No — resume-last only (`--session` is resume-only) | Yes — pre-assign `--session-id <uuid>` (a non-UUID string is refused), and the hooks also report the id per pane | Yes — session id captured per-pane from the status extension (`getSessionId()` + `$TMUX_PANE`); no launch flag exists | Yes — pre-assign `--session-id <uuid>` (opens that project session, creating it when missing); the extension also reports the id per pane | Yes — the hook's `conversationId` is recorded on the pane (agy cannot pre-assign an id); without one recovery falls back to `--continue` |
+| **Permission mode** | `--permission-mode` | `--mode plan` / `--force` | `--permission-mode` | `--approval-mode` | — | `--mode plan` / `--allow-tool write` / `--allow-all-tools` (`--no-ask-user`) / `--allow-all` | `--approval-mode always-ask\|write\|yolo`, always explicit — `default`, `plan` and `auto` say `always-ask`, since no flag means omp's own tier (`yolo` out of the box) | — (plain pi has no approval tiers: every tool runs without asking, by upstream design; the one preset is labelled Bypass to say so) | `--mode accept-edits\|plan\|auto` / `--dangerously-skip-permissions` (`bypassPermissions` and `dontAsk`) |
+| **Effort level** | `--effort` | — | `--effort` | — | — | `--effort`, on a named reasoning model only — `--model auto` refuses it and the launch never starts, so the adapter drops it there | `--thinking` | `--thinking` | `--effort` (low, medium, high, xhigh; agy also takes max) |
+| **Max budget** | `--max-budget-usd` | — | `--max-budget-usd` | — | — | — (Copilot budgets in AI credits, not dollars) | — | — | — |
+| **Model selection** | `--model` (omitted on a third-party provider — see below) | `--model` | `--model` | `--model` | `--model` | `--model` (the account's plan decides which names it will accept; `auto` always does). Copilot also persists its own default in `~/.copilot/settings.json` via `/config model`; dev3's flag overrides it per launch | `--model` | `--model` (`provider/id`; no preset pins one — pi picks from what the user signed in to) | `--model <alias>` (`gemini-4-neon`, without effort; `--effort` completes it, so `--model gemini-4-neon --effort low` resolves to `gemini-4-neon-low`; a display name with spaces is quoted). Presets follow Claude's scheme `Mode (Model, Effort)` for Neon, Carbon, Argon, Hydrogen: Auto and Bypass carry every effort the model has, Default, Plan and Accept Edits appear once at High; the default is Auto (Neon, High) |
+| **Account model filter** (flag presets the signed-in account can't select) | — | Yes — `--list-models`, matched on the base model family (Cursor bakes effort into the slug) | Yes — `debug models`, `visibility=list` + `supported_in_api`, exact slug | — (open FR gemini-cli#27847) | — (`opencode models` lists configured providers, not the account's license) | — (no list command; a blocked model only fails at launch) | — | — | Yes — `agy models` (one `<slug>  <display name>` per line), matched on the model family with the trailing effort tier stripped (the account's `gemini-4-neon-high` matches the preset model `gemini-4-neon`) |
+| **LLM provider (backend)** | Anthropic / Amazon Bedrock (per-agent toggle) | — | — | — | — | — | — | — | — |
+| **Managed accounts** (Settings → Accounts, per-launch pick) | Yes — `CLAUDE_CONFIG_DIR` per account, plus API profiles; only Claude can add an account without signing in (an identity-less dir Auto skips until a login appears) | — | Yes — `CODEX_HOME` per account | — | — | — | Yes — `PI_CODING_AGENT_DIR` per account (own `agent.db` + sessions, the rest of `~/.omp/agent` symlinked); Add account runs `omp login` in the embedded sign-in terminal, the user picks any provider, dev3 verifies with `omp usage accounts --json`; the launch picker lists that account's signed-in providers' models (`omp models --json`), newest first | Yes — `PI_CODING_AGENT_DIR` per account (own `auth.json`, sessions and model cache, a copied `settings.json`, the rest of `~/.pi/agent` symlinked); Add account runs `pi --no-session` with a dev3 extension that types `/login`, the user adds any OAuth or API-key provider, dev3 reads the provider ids and types in that `auth.json` (never the values); the launch picker lists those providers' models (`pi --list-models`), pi's own default first | — |
+| **Auto account routing** (usage-balanced `"auto"` pick) | Yes — subscription logins only, by 5h then weekly pace | — | Yes — subscription logins only, windows classified by `window_minutes` | — | — | — | — | — | — |
+| **Model roles (model catalog)** | Yes — Fable / Opus / Sonnet / Haiku slots, delivered as `ANTHROPIC_DEFAULT_<SLOT>_MODEL` + a rewritten `--model` | — | Yes — main / default-subagent / review, delivered as `-c` overrides (never written to `~/.codex`) | — | — | — | — (omp's 9 roles unbound) | — | — |
+| **Agent selection** | — | — | — | — | `--agent` | — | — | — | — |
+| **Auto-trust worktree** | Yes (`ensureClaudeTrust`) | — | Yes (`ensureCodexTrust`) | Yes (`ensureGeminiTrust`) | — | Yes (`ensureCopilotTrust` → `config.json` `trustedFolders`) | — | — (pi's project-trust prompt is left to the user; the dev3 extension is passed explicitly and is not gated by it) | Per-session `--settings` with `trustedWorkspaces: [<realpath of the worktree>]` on fresh and resumed launches; nothing is written to disk. Only the REALPATH works (`/private/tmp`, not `/tmp`) — verified on agy 1.5.12, so the backend resolves it (`realWorktreePath` in `src/bun/agents.ts`) |
+| **Status hooks (automatic)** | Yes (6 hooks) | — | Yes (6 worktree-local hooks, automatically trusted) | — | — | Yes (5 hooks inline in `~/.copilot/settings.json`, guarded on `DEV3_TASK_ID`) | Yes (one generated extension loaded with `--hook`) | Yes (one generated extension loaded with `--extension`) | Yes (3 hooks under the `dev3` key of `<worktree>/.agents/hooks.json`, guarded on `DEV3_TASK_ID`; user hooks in that file are kept; nothing is written in a folder dev3 does not own) |
+| **Productivity usage accounting** | Local response records | Global `afterAgentResponse` / `stop` usage hooks; no status changes | Local native / legacy rollout records, including archives | Local session message records | Local SQLite `step-finish` parts (one per model call; a message's own `tokens` holds only its last step) | Local accounting checkpoints / shutdown records | Local session `message` (assistant) and `model_usage` entries, subagent sessions included | Local session assistant, `usage`, tool-result and summary entries (unattributed ones stay unpriced) | — |
+| **Status management** | Automatic via hooks | Manual (SKILL.md) | Automatic via hooks with `user-questions`/legacy-session fallback | Manual (SKILL.md) | Manual (SKILL.md) | Automatic via hooks, `user-questions` included (read off the `ask_user` tool, not an event) | Automatic via the status extension, `user-questions` included (`tool_approval_requested`) | Automatic via the status extension; `user-questions` only for a blocking prompt raised by one of the user's own extensions (`ui_prompt_start`) | Automatic via hooks; a turn that stops on `ERROR` goes to `user-questions` with an attention badge |
+| **Terminal BEL → Has Questions** (`hooksReportPermissionWaits`) | Ignored — `PermissionRequest` hook reports the wait | Honoured — hooks only account usage | Ignored — `PermissionRequest` hook (rust-v0.122+); older Codex gets no signal for an approval wait | Honoured | Honoured | Honoured — hooks never report a permission wait | Ignored — `tool_approval_requested` | Ignored — `ui_prompt_start` reports a blocking extension prompt; pi itself never asks | Ignored — `tool_confirmation_pending` in the statusLine payload reports the wait (`PermissionRequest` → `user-questions`, then back). agy's own bell is not asked for (no `notifications` setting): it rings at every turn end, and acting on it moved the card to Has Questions against the Stop hook |
+| **Rate-limit tracking** | Yes (statusLine wrapper injected via `--settings`, `dev3 statusline`) | — | Yes (rollout files + cached live monthly credits via `codex app-server`) | — | — | — | — (`omp usage` unread) | — | Yes — statusLine passed through the per-session `--settings` (`stack_with_default`, so agy's own line stays); `dev3 statusline agy` prints nothing and dumps `quota` per account to `~/.dev3.0/data/rate-limits/agy/<hash of the email>.json`. A `remaining_fraction` bucket is a window. Buckets on a Google AI Ultra plan, in display order: `gemini-5h` (5-hour), `gemini-weekly` (weekly), `3p-5h` and `3p-weekly` (other models, i.e. third-party ones inside agy; the header pill leaves these two to the panel). Unknown bucket ids are shown as they are; `disabled` and amount-only buckets are skipped. `quota` and `plan_tier` are absent until a conversation starts, and such a payload never overwrites the last good dump |
+| **Graceful exit before teardown** (`exitProgram`) — runs only where launch readiness can be PROVED, see below | Ctrl-C, `/exit`, Enter — command verified against 2.1.273; SessionEnd hooks run | Ctrl-C, `/exit`, Enter — command not validated | Ctrl-C, `/quit`, Enter — command not validated | Ctrl-C, `/quit`, Enter — command verified against gemini-cli 0.46.0 | Ctrl-C, `/exit`, Enter — command not validated | Ctrl-C, `/exit`, Enter — command not validated | — (no quit command observed) | Ctrl-C, `/quit`, Enter — command verified against pi 0.99.2 | Ctrl-C, `/quit`, Enter — command read from agy 1.5.12's built-in help text (`/exit` or `/quit`), not run against the live CLI; agy has no session-end hook |
+| **Agent exit report** (launch wrapper → `dev3 hook agent-exited`) | Yes — keyed by the pre-assigned session id: exit before `SessionStart` (any code) or a non-zero exit moves an in-progress card to Has Questions with an attention badge | Yes — exit-only, keyed by a per-launch id: a non-zero exit moves the card | Yes — exit-only (same) | Yes — exit-only (same) | Yes — exit-only (same) | Yes — exit-only (same) | Yes — exit-only (same) | Yes — exit-only (same) | Yes — exit-only (same) |
+| **Recent task notes at session start** (5 newest, ≤6000 chars, `dev3 note recent`) | Automatic — `SessionStart` hook on `startup`/`clear`/`compact` + `!` injection on every `/dev3` load | — | Automatic on `startup` only (existing `SessionStart` hook answers `additionalContext`); after `/clear` or resume the skill only *instructs* `dev3 note recent` | — | — | — (follow-up: its `sessionStart` already returns `additionalContext`) | — | — | — |
+| **Held `dev3 message` at the next tool call** (hook mailbox) | Yes, tmux backend: `PostToolUse` drains it as `additionalContext` | No hook (its `additional_context` rides the tool output and is ignored). A second Enter steers the queued message into the running turn — see [steer queued follow-ups](decisions/2026/11/19/cursor-steer-queued-follow-ups.md) | No (follow-up if its `PostToolUse` accepts `additionalContext`) | No | No | No | No (follow-up through the status extension) | No (follow-up through the extension) | No |
+| **dev3 artifact starter** | Yes (`DEV3_ARTIFACT_TEMPLATE_DIR`, restored by `dev3 artifact-template`) | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+
+### Graceful exit — two separate conditions, and the row above answers only one
+
+The quit command in that row is what dev3 WOULD type. Whether it types anything is a second
+question: the step refuses to send keystrokes to a CLI it cannot prove is at its prompt, because a
+trust dialog or first-run wizard would read the Enter as an answer. So a harness is covered only
+when **both** hold, and they fail independently:
+
+| Condition | How it is satisfied |
+|---|---|
+| The quit command is right | Observed against the real CLI. Today only Claude (2.1.273, by the change's author) and Gemini (gemini-cli 0.46.0, whose bundle registers `quit` with `exit` as an alias). The others are taken from documentation, and a wrong one costs the 30 s bound per teardown |
+| Readiness can be proved for the current launch | A launch-scoped readiness receipt for that harness. Without one the answer is `unknown` forever and the step never runs, whatever the quit command says |
+
+Claiming an agent is supported here means naming both. See
+`decisions/2026/09/15/graceful-agent-exit-before-teardown.md`.
+
+## Status Hooks
+
+Injected per-worktree at task launch.
+
+Cursor imports Claude's project hooks by default. On Cursor launch, dev3 refreshes inherited pre-tool status commands to the JSON adapter; Cursor receives its native response while Claude retains normal permission checks. Existing user hooks and settings are preserved. See [imported Claude pre-tool JSON](decisions/2026/11/19/cursor-imported-claude-pre-tool-json.md).
+
+Cursor's separate accounting hooks are user-level and intentionally include local sessions outside dev3, matching Claude/Codex's global usage scope. They install only when `~/.cursor` exists or a configured Cursor agent launches, and run only while the dev3 executable exists. Remove only dev3's accounting hooks with `dev3 install-hooks --remove-cursor` before uninstalling; custom hooks/settings remain untouched. See [usage collectors for major agents](decisions/2026/10/26/usage-collectors-for-major-agents.md).
+
+### Claude Code
+
+Injected into `.claude/settings.local.json`, together with dev3's Bash allowlist for its metadata subcommands (`DEV3_AUTO_APPROVED_SUBCOMMANDS` — never `pane run`, `dev-server start` or anything else that executes a command, see `decisions/2026/10/26/narrow-dev3-agent-permissions.md`) and the launch's `permissions.defaultMode`. A committed `.claude/settings.json` is never written. When `.claude/` or `settings.local.json` is a symlink that leads outside the worktree (or nowhere), dev3 writes nothing there and logs a warning: the task then gets no status hooks. Links that stay inside the worktree are fine. The same rule covers `.codex/hooks.json` and the MCP pre-approval. See `decisions/2026/10/01/worktree-agent-config-local-only-no-symlinks.md`.
+
+In a folder dev3 does not own (a project with its git workflow off), nothing is written into the folder: the hooks, Bash rules and mode are merged with dev3's managed settings into one file under `<dev3 home>/data/agent-hooks/` and passed with `--settings`, which Claude also forwards to teammates. Codex gets no `.codex/hooks.json` there either. See `decisions/2026/10/04/gitless-claude-hooks-via-settings-flag.md`.
+
+| Hook event | Status transition | Purpose |
+|------------|------------------|---------|
+| `SessionStart` (`startup\|clear\|compact`) | none | `dev3 hook claude-session-start` answers with the task's 5 newest notes as `hookSpecificOutput.additionalContext` (bounded, see `src/shared/recent-notes-context.ts`). `resume`/`fork` are skipped: that transcript already holds a block. It also sends `agent.sessionStarted` (session id + pane): Claude does not fire this event while its trust or onboarding dialog is up, so a peer-launch handoff waits for that receipt before typing (`src/bun/agent-session-receipts.ts`). Quiet and exit 0 when offline or there are no notes |
+| `UserPromptSubmit` | → `in-progress` | User sent a message, agent starts working. A **second** entry on the same event, `dev3 hook claude-prompt`, reads the payload's `prompt` and `prompt_id` and reports the submission for Agent traffic; the status-move entry above is untouched, so recording can never cost a task its board position |
+| `PreToolUse` | → `in-progress` | Agent is about to call a tool (also catches post-permission resume) |
+| `PreToolUse` (`Edit\|Write\|MultiEdit\|NotebookEdit`, shared folders only) | none | `dev3 hook claude-claim` claims the file for this task. When another live task in the same folder holds it, the edit is denied with the holder's seq, title and a ready `dev3 message` command. Allows the edit when the app is offline. See `decisions/2026/10/04/advisory-file-leases-in-shared-folders.md`. Claude only: Codex, Copilot and omp do not claim files yet |
+| `PostToolUse` | → `in-progress` | A tool finished, including answers submitted to `AskUserQuestion`. Routed through `dev3 hook claude-post-tool`: the same request also drains the pane's held `dev3 message`s (agent-to-agent only, tmux backend only) and answers them as `hookSpecificOutput.additionalContext`, plus a one-line `systemMessage` per message so the user still sees mail arrive in the pane, so a busy agent reads its mail at its next tool call instead of after the 15 s hold. A subagent's call (payload carries `agent_id`) only moves the status. Always exits 0, so the `||` fallback to the plain move runs only when the installed CLI predates the subcommand. Windows keeps the plain move. See `decisions/2026/11/05/hook-mailbox-for-busy-claude-agents.md` |
+| `PermissionRequest` | → `user-questions` | Agent needs user approval for a tool call |
+| `Stop` | → `review-by-user` | Agent finished its turn |
+| `StopFailure` | → `user-questions` | An API error (usage limit, auth, billing, server) ended the turn. Fires **instead of** `Stop`, so without it the task would keep claiming the agent is working. Routed through `dev3 hook claude-stop-failure`, which also raises the attention badge and a desktop notification naming the reset time |
+
+Codex has no equivalent event, so dev3 tails the turn's rollout instead — see the Codex section below.
+
+### Codex
+
+Every dev3 Codex launch, including scratch tasks and resume/recovery, carries `-c check_for_update_on_startup=false` after preset arguments. This prevents the startup update menu from consuming dev3's automatic Enter and exiting into the worktree shell after an update. dev3 does not update Codex automatically; run `codex update` manually between sessions. The override is per-process and does not change the user's Codex config or launches outside dev3. See [`codex-startup-update-menu`](decisions/2026/10/20/codex-startup-update-menu.md).
+
+Generated in each task's `.codex/hooks.json` and **declared in `~/.codex/config.toml`**, enabled there by `[features] hooks = true` (`codex_hooks = true` before Codex 0.129). Current Codex deliberately reads project hooks from the root checkout instead of a linked worktree, so the user-level config is the only source that reaches a dev3 worktree at all. That source is loaded in *every* Codex session on the machine, so each declared command is guarded on `DEV3_TASK_ID` — the env var dev3 injects into every task pane — and a session the user started themselves spawns no dev3 process (h0x91b/dev-3.0#1527). The guard is POSIX-only: on Windows Codex may run hook commands through `cmd.exe` or PowerShell depending on the session shell, so the command stays bare there and the hooks still wake up in unrelated Windows sessions. dev3 never persists hook trust and never trusts unrelated user/project/plugin hooks; its own launches pass `--dangerously-bypass-hook-trust`, and an untrusted declaration is simply skipped by Codex everywhere else. The Codex skill forbids duplicate manual normal-lifecycle moves; semantic questions, custom columns, and explicit completion remain manual. `PermissionRequest` runs on Codex 0.122+; older hook parsers ignore that unknown event while retaining the others.
+
+dev3 also writes `<CODEX_HOME>/rules/dev3.rules` (into `~/.codex` and every managed account's CODEX_HOME): `prompt` rules for every dev3 subcommand outside `DEV3_AUTO_APPROVED_SUBCOMMANDS`, so `dev3 pane run`, `dev-server start`, `agent spawn` and the rest ask the user first. The user's own `default.rules` is never touched. See `decisions/2026/11/15/codex-dev3-execpolicy-rules.md`.
+
+| Hook event | Status transition | Purpose |
+|------------|------------------|---------|
+| `SessionStart` | → `in-progress` | Marks startup/resume turns as active. On `source: startup` the same handler also answers `hookSpecificOutput.additionalContext` with the task's 5 newest notes; every other source and event still gets `{}` |
+| `UserPromptSubmit` | → `in-progress` | User sent a message, agent starts working |
+| `PreToolUse` | → `in-progress` | Agent is about to use Bash, apply a patch, or call an MCP tool |
+| `PermissionRequest` | → `user-questions` | Codex is waiting for a tool or network approval |
+| `PostToolUse` | → `in-progress` | Clears the waiting state after an approved tool finishes |
+| `Stop` | → `review-by-ai` / `review-by-user` | One atomic server-side transition selects the correct review target and returns valid JSON to Codex |
+
+Codex fires **no hook at all** when an API error (403, usage limit, auth) ends a turn, so `SessionStart`/`UserPromptSubmit` also forward the payload's `transcript_path` and the app tails that rollout (`src/bun/codex-turn-watch.ts`) until the turn's `task_complete` lands. One carrying an `error` parks the task in `user-questions` with an attention badge and desktop notification, exactly like Claude's `StopFailure`; `Stop`, `Interrupt` and `SessionEnd` end the watch. A `Stop` whose `last_assistant_message` asks the user to type `Approved <12-hex ref>` — a security policy hook denying a tool until the user replies in chat, which Codex cannot raise as a `PermissionRequest` — also lands in `user-questions`, with a badge naming the reply. See [`codex-turn-errors-from-rollout`](decisions/2026/11/05/codex-turn-errors-from-rollout.md).
+
+The `UserPromptSubmit` payload also carries the submitted `prompt` and a `turn_id`, both forwarded on the existing `task.agentHook` request so a human's terminal prompt reaches Agent traffic without a second dev3 process per prompt. Whether a submission was the human is decided app-side against the receipts dev3 leaves for everything it types itself (`decisions/2026/09/10/prove-a-terminal-prompt-is-the-user.md`).
+
+Beyond status, the `SessionStart`/`UserPromptSubmit` hook payloads carry the Codex `session_id` (the resumable rollout id), and the hook process inherits `$TMUX_PANE`. dev3 records that id onto the matching `sessionState` pane so recovery can `codex resume <id>` the exact per-pane session — Codex has no launch-time session-id flag, so this is the only way to target a specific session (see decision 125).
+
+### GitHub Copilot CLI
+
+Merged into the `hooks` field of `~/.copilot/settings.json` (or
+`$COPILOT_HOME/settings.json`), replacing dev3's previous entries and leaving
+everyone else's alone.
+
+**Not** a private `~/.copilot/hooks/dev3.json`, which is the tidier-looking option
+and the one this shipped with first: that directory can belong to **root**. A
+managed machine's MDM creates it to drop its own policy hook in, and every later
+write by the user's own processes dies with `EACCES` — so the hooks were silently
+never installed and the board simply stopped following Copilot tasks. `settings.json`
+lives in the Copilot home itself, which Copilot maintains as the user, so it is
+writable wherever Copilot runs at all. The documented repository-level
+`.github/hooks/` source was **not** consulted in a fresh checkout on 1.0.83 either.
+
+Like Codex's, this source loads in *every* Copilot session on the machine, so each
+command is guarded on `DEV3_TASK_ID` and a session the user started themselves
+spawns no dev3 process. Copilot picks the `bash` or the `powershell` entry by
+platform itself, so only this machine's dialect is ever written.
+
+Folder trust lives in the *other* file. `ensureCopilotTrust` registers each
+worktree's resolved path in `trustedFolders` in `~/.copilot/config.json`, so the
+agent does not open on **Confirm folder trust** in a pane nobody is watching.
+Measured on 1.0.83 with one variable changed at a time: the same folder listed in
+`settings.json` still shows the dialog, and listed in `config.json` does not.
+That file also carries the signed-in account, so dev3 merges into it and leaves
+one it cannot parse untouched.
+
+| Hook event | Status transition | Purpose |
+|------------|------------------|---------|
+| `sessionStart` | → `in-progress` | Marks startup/resume turns as active — **and answers with the dev3 protocol as `additionalContext`**, which is Copilot's only out-of-band instruction channel |
+| `userPromptSubmitted` | → `in-progress` | User sent a message. The payload carries the `prompt`; Copilot has no per-submission id, so its millisecond `timestamp` stands in as the de-duplication key |
+| `preToolUse` | → `in-progress`, or → `user-questions` when `toolName` is `ask_user` | Agent is about to call a tool. Copilot has no "blocked on the human" *event* — asking is a **tool** (`ask_user`, the one `--no-ask-user` disables) and it does not return until the human answers, so its `preToolUse` is that signal |
+| `postToolUse` | → `in-progress` | A tool finished — including `ask_user`, which is what releases the task from Has Questions once the answer is in |
+| `agentStop` | → `review-by-ai` / `review-by-user` | Agent finished its turn |
+
+`permissionRequest` is deliberately **not** subscribed to. Verified on 1.0.83: it
+fires on every permission evaluation, including the ones `--allow-all-tools`
+approves without ever showing the user anything, so treating it as "waiting for a
+human" would park a working task in Has Questions on its first tool call. Copilot
+exposes no event that means the agent is blocked on the user, so a Copilot task
+never moves itself into `user-questions`; the skill's manual instruction is the
+only route there.
+
+`dev3 hook copilot` always exits 0 with JSON on stdout. That is not politeness:
+Copilot treats a non-zero `preToolUse` hook as **fail-closed** and blocks the tool
+call outright, so a dev3 that is merely closed must never be able to wedge the
+agent. (A hook *timeout* is fail-open for every event, including `preToolUse`.)
+
+`COPILOT_CUSTOM_INSTRUCTIONS_DIRS` was measured and rejected as the protocol
+channel: it only lists an `AGENTS.md` for the model to open later — the file's text
+never reaches the prompt — so an agent that never opens it never sees the protocol.
+
+### Oh My Pi (omp)
+
+omp has no JSON hooks; it loads TypeScript extension modules in-process. dev3 generates one, `~/.dev3.0/data/agent-hooks/omp-status.ts` (`src/shared/omp-status-extension.ts`), rewrites it before every launch, and passes it with `--hook <path>` on fresh launches and resumes alike. The module is inert unless the pane carries `DEV3_TASK_ID`, and translates omp's events into the same status vocabulary Codex reports, delivered as `dev3 hook omp` processes — one at a time, in event order, so a tool's "done" can never land after the agent's "stopped". While the agent is already known to be working, tool events are re-sent only every 10 s, so a long turn costs a handful of processes rather than one per tool call.
+
+| omp event | Reported as | Status transition |
+|-----------|-------------|-------------------|
+| `session_start` | `SessionStart` | → `in-progress` (a parked scratch task stays put) |
+| `input` (human text) | `UserPromptSubmit` + prompt | → `in-progress`; the text and a random submission id reach Agent traffic |
+| `agent_start` | `UserPromptSubmit` | → `in-progress` |
+| `tool_execution_start` / `tool_execution_end` | `PreToolUse` / `PostToolUse` | → `in-progress` |
+| `tool_approval_requested` | `PermissionRequest` | → `user-questions` |
+| `tool_approval_resolved` | `PostToolUse` | → back to the remembered lane |
+| `agent_end` (not `willContinue`) | `Stop` | → `review-by-ai` or `review-by-user` |
+
+Every report carries `ctx.sessionManager.getSessionId()`, so the pane's resumable id is captured exactly as Codex's is and recovery runs `omp --resume <id>`. An explicitly passed `--hook` path faces no trust prompt in omp, so unlike Codex nothing needs bypassing. Every omp launch also carries `PI_NOTIFICATIONS=off`: omp's completion bell would otherwise ring the pane on every finished turn; dev3 ignores BEL for agents with status hooks, so it cannot park the turn in Has Questions either way. See [`omp-status-extension`](decisions/2026/09/20/omp-status-extension.md).
+
+### Pi (plain `pi`)
+
+Plain pi loads TypeScript extensions in-process exactly as omp does, so it shares omp's generated runtime (`src/shared/status-extension-core.ts`) with its own event wiring: `~/.dev3.0/data/agent-hooks/pi-status.ts` (`src/shared/pi-status-extension.ts`), passed with `--extension <path>` and reported through `dev3 hook pi`. pi has no `--hook` flag (an unknown flag is fatal at startup), and an explicit `--extension` path loads before, and regardless of, pi's project-trust decision.
+
+| pi event | Reported as | Status transition |
+|----------|-------------|-------------------|
+| `session_start` | `SessionStart` | → `in-progress` |
+| `input` (human text) | `UserPromptSubmit` + prompt | → `in-progress`; the text and a random submission id reach Agent traffic |
+| `agent_start` | `UserPromptSubmit` | → `in-progress` |
+| `tool_execution_start` / `_end` | `PreToolUse` / `PostToolUse` | → `in-progress` (re-sent at most every 10 s) |
+| `ui_prompt_start` | `PermissionRequest` | → `user-questions` (only a blocking prompt from one of the user's own extensions — pi itself never asks before a tool) |
+| `ui_prompt_end` | `PostToolUse` mid-run, `Stop` when idle | → back to work, or settled again |
+| `agent_settled` | `Stop` | → `review-by-ai` or `review-by-user` |
+
+`agent_settled`, not `agent_end`, is the stop: upstream documents that retries, compaction or queued input can follow `agent_end`. Fresh launches pin `--session-id <uuid>`, so recovery resumes with `pi --session-id <id>`; without a stored id it falls back to `pi -c`. No completion bell was observed (pi 0.99.2), so no notification env is set. Managed accounts are agent dirs like omp's (see the matrix row and [`pi-managed-accounts-share-the-agent-dir-engine`](decisions/2026/10/17/pi-managed-accounts-share-the-agent-dir-engine.md)). Not integrated, because upstream gives dev3 nothing to read reliably: a sign-in probe for the system login (`~/.pi/agent/auth.json` is one of several credential sources), rate limits and model roles. On macOS and Linux the missing-binary notice also offers `brew install pi-coding-agent` (homebrew-core, prebuilt bottle) beside upstream's installer, whose npm step fails behind a registry mirror that lags the latest release (`agentAlternativeInstallCommand` in `src/shared/agent-install.ts`). See [`plain-pi-first-class-agent`](decisions/2026/10/16/plain-pi-first-class-agent.md).
+
+### Antigravity CLI (agy)
+
+dev3 writes everything agy needs into the **worktree**, never into `~/.gemini/config`: a launcher (`ant launch PROFILE agy --`, say) may override HOME, and agy walks `.agents/` from its cwd up to the repo root regardless. A launcher declares family `agy` and runs through the same adapter. `.agents/hooks.json` gets dev3's entry under the key `dev3` (every other key stays; a file that is not valid JSON is left alone) and `.agents/skills/dev3/SKILL.md` is written; both are excluded through `.git/info/exclude` when the repo does not track them. In a folder dev3 does not own, behind a symlink, or when git tracks the file, nothing is written, a warning is logged, and the launch carries no hooks: a tracked `.agents/hooks.json` is the team's own and is neither merged into nor added to `info/exclude`, and the same holds for a tracked `.agents/skills/dev3/SKILL.md` (each file is judged on its own). An untracked existing `hooks.json` is still merged.
+
+| agy event | Reported as | Status transition |
+|-----------|-------------|-------------------|
+| `SessionStart` | `SessionStart` | → `in-progress`; records `conversationId` on the pane and answers with the protocol as an `injectSteps` `systemMessage` |
+| `PreInvocation` | `UserPromptSubmit` | → `in-progress` (also back from `user-questions` once the user answered) |
+| `Stop` | `Stop` | → `review-by-ai` or `review-by-user` |
+| `Stop` with `terminationReason` `ERROR` | `task.claudeStopFailure` | → `user-questions` with an attention badge |
+| statusLine `tool_confirmation_pending: true` | `PermissionRequest` | → `user-questions`; sent once per change, not on every refresh |
+| statusLine `tool_confirmation_pending` back to `false` | `PostToolUse` | → the remembered lane (`in-progress` or `review-by-ai`); sent only after a `true`, only while `agent_state` is not `idle`, and applied only to a card that wait parked, once no other pane of the task waits; state is kept per pane |
+| statusLine `conversation_id` the board does not know | `SessionStart` with `captureOnly` | records the id on the pane and moves nothing (a fallback for a launch without the session hook) |
+
+agy has no hook for a session end, and a permission wait reaches the board only through the statusLine above (verified live: `tool_confirmation_pending` is `true` together with `agent_state: "tool_use"` while the "Run this command?" prompt shows). `hooksReportPermissionWaits` is true, so dev3 ignores the terminal bell for agy: agy rings it at every turn end, which would otherwise undo `Stop`. agy's default `agentMode` is Auto, so most dev3 commands run without a prompt anyway.
+
+Each launch, fresh or resumed, passes one per-session `--settings` JSON, which agy never saves:
+
+- No `notifications`: with it agy rings the bell at every turn end.
+- `trustedWorkspaces: [<realpath of the worktree>]` suppresses the folder trust dialog (omitted for a foreign-code task, so the dialog stays). agy matches only the resolved path (`/private/tmp`, not `/tmp`), so the backend resolves it before the pure adapter builds the JSON. Verified on agy 1.5.12.
+- `permissions.allow` carries one `command(<cli> <words>)` rule per entry of `DEV3_AUTO_APPROVED_SUBCOMMANDS` (the list Claude's allowlist uses) and per spelling of the CLI: bare `dev3` and the absolute account-home path (the `~` form only while the account home is unknown; the absolute `dev3.exe` on Windows). agy denies a compound command (`;`, `&&`, `|`) even when its first segment matches. agy matches word by word, so `command(dev3 note add)` also covers `dev3 note add "text"`. `pane run`, `dev-server start`, `agent spawn` and the rest of the process-starting commands are not in it. Only the bare `dev3` spelling is covered, not the absolute path.
+- `statusLine` is `dev3 statusline agy` with `stack_with_default: true`. It prints nothing, never fails, and is inert outside a dev3 task. While rate-limit tracking is off it runs with `--no-limits` and dumps no quota, but still reports permission waits.
+
+The hook commands in `hooks.json` and the statusLine command spell the CLI as the absolute `<account home>/.dev3.0/bin/dev3` (`agyHookDialect`, fed by the backend with `os.userInfo().homedir`), never `~/.dev3.0/bin/dev3`: agy and `sh` expand `~` against the HOME a launcher overrides, which would point into the launcher's private home and never run dev3. It is the account home, not `$HOME` and not a redirected `DEV3_HOME`: the machine-wide CLI lives only there. The agent itself keeps calling bare `dev3`, since the launcher keeps PATH; Windows keeps its absolute exe path, and every other agent keeps the frozen `POSIX_DEV3_CLI`.
+
+The quota is dumped per account to `~/.dev3.0/data/rate-limits/agy/<hash of the email>.json`; the email is stored in the file for the local panel and never leaves the machine (no telemetry channel reads it). Staleness follows the other agents: a reading older than a week drops out, and a window past its reset reads as 0%. A bucket that reports only `remaining_amount` is skipped, because a window carries a percentage and an amount has no total to take one from. `buildResumeCommand` has no worktree path, so a recovery command carries no `--settings`.
+
+## Windows: how generated commands are spelled
+
+Hook commands, the `!`-injected skill lines, and the Claude permission rule are
+built from one platform dialect (`hookCliDialect` in `src/shared/dev3-cli-path.ts`).
+POSIX output is frozen; Windows differs in three ways:
+
+| Aspect | POSIX (macOS / Linux) | Windows |
+|--------|----------------------|---------|
+| CLI invocation | `~/.dev3.0/bin/dev3` | absolute path to the bundled `dev3.exe` (`<exec dir>\cli\`, then `Resources\app\cli\`, then `%USERPROFILE%\.dev3.0\bin\`), double-quoted only if it contains spaces |
+| App-offline tolerance in Claude hooks | `<cmd> \|\| [ $? -eq 2 ]` | `<cmd> --tolerate-app-offline` (no shell operators; the CLI exits 0 for that one condition) |
+| Claude skill `!` injection | `… --if-status-not review-by-ai 2>&1` | same command without `2>&1` |
+
+Codex hooks are identical in shape on both platforms — `dev3 hook codex` always
+exits 0, so they never needed a shell fallback. See
+[decision 172](decisions/2026/07/26/windows-hook-command-dialect.md).
+
+## Skill Differences
+
+### dev3 (task lifecycle)
+
+The dev3 skill (`SKILL.md`) is installed into each agent's skill directory. Several variants exist:
+
+- **Claude variant** — deliberately short: the full protocol body is already injected into the system prompt via `--append-system-prompt`, so `SKILL.md` only auto-sets the status and shows `dev3 current --brief` (via `!` command injection, zero tool calls). The full body is written to `PROTOCOL.md` next to it as a fallback for sessions started outside the dev3 launcher. See decision 114.
+- **Codex variant** — full body; hook-aware status section with manual fallback for older sessions, keeps the `/bin/bash` shell note. The same body is also injected out-of-band as a developer message via `-c developer_instructions=...` on every dev3 launch, including scratch tasks and resume (decision 115); the skill file remains the fallback for sessions started outside the dev3 launcher
+- **omp variant** — full body with the same hook-aware status section as Codex's, without the Codex shell note. The same body reaches omp as a file through `--append-system-prompt`; the skill file is the fallback for sessions started outside the dev3 launcher
+- **pi variant** — the omp body with pi named in the hook-aware status section. It reaches pi only as a file through `--append-system-prompt`; dev3 writes no pi skill directory, so a pi session started outside the dev3 launcher finds the generic (manual-status) `SKILL.md` under `~/.agents/skills/`
+- **agy variant** — the omp body with agy named in the hook-aware status section, minus the approval-wait claim (agy raises no such event). It reaches agy as the `SessionStart` hook `systemMessage`, and the same body is the worktree `.agents/skills/dev3/SKILL.md`. The Settings lean toggle does not apply: the hook always renders the full body
+- **Generic variant** — full body (for Gemini it is the only protocol channel); full manual status management instructions ("CRITICAL — NON-NEGOTIABLE"), requires agents to run `dev3 task move` at start/end of every turn. It alone asks for a 900000 ms shell timeout on commands that wait for the user's approval, because opencode kills a shell command at 120 s; see `decisions/2026/11/09/approval-waits-vs-agent-shell-timeouts.md`
+
+With `DEV3_LEAN_PROTOCOL=1` on the server or the global Settings toggle (Agents, "Lean agent protocol"), the injected copy for Claude, Codex, omp, pi, Cursor and OpenCode is a lean body: the session-start, status, completion, overview and attention sections plus the path of the full body on disk. Copilot's hook-delivered copy stays full. See `decisions/2026/10/02/lean-protocol-opt-in.md`.
+
+All variants teach the same two-step dev3 bug-feedback flow: send the private anonymous vent first, then offer to create a public `h0x91b/dev-3.0` GitHub issue with the `Reported by AI` label after explicit user approval. They also treat an unqualified interactive artifact/report/dashboard request as a likely dev3 HTML artifact while preserving explicit Claude Artifact and build/package meanings. Each receives the same fixed six-file starter map, exact copy command, two-file edit boundary, and `dev3 show-artifact --assets` publish command.
+
+### dev3-project-config (project configuration)
+
+A supplementary skill that teaches agents about `.dev3/config.json` and `.dev3/config.local.json`. Covers the schema, merge priority, when to create/modify config files, and CLI commands (`dev3 config show`, `dev3 config export`). Same content for all agents (no variant differences).
+
+### dev3-extensions (displayed as "dev3 Extensions")
+
+A user-invocable skill that teaches writing a board-view extension end to end: the manifest and a working `index.js` template, the `ctx.board` / `ctx.boardViews` contract and its Cordis traps, install and trust (a desktop click the user makes; never forged on the real `~/.dev3.0`), seeing it render in a scoped QA instance with a streamer-mode screenshot, and a symptom → cause table for load failures. It carries the contract itself, so it works for agents without a dev3 clone. Today's workarounds sit in one section meant to be replaced by the planned `dev3 extension` CLI. Same content for all agents.
+
+### dev3-bug-hunter (displayed as "dev3 Bug Hunter")
+
+A user-invocable skill that turns the agent into a seeded bug hunter. It generates a random seed, derives an identity letter, chooses a starting area plus analysis style, and then forces the hunt to begin from that assigned area before branching out. The skill is read-only, uses a terminal-friendly findings format with a compact ASCII summary table plus detail sections, asks whether `critical` and `medium` findings should become separate dev3 tasks, and requires those follow-up tasks to validate and reproduce the bug before any fix is attempted. When launched inside an existing task, it skips the main agent's session-start/lifecycle duties and may write only confirmed findings through `dev3 note add`. Same content for all agents.
+
+### dev3-artifact (displayed as "dev3 Artifact")
+
+A user-invocable skill that packages the existing in-app report workflow: when a report becomes a dev3 HTML artifact, copying the task's starter (`$DEV3_ARTIFACT_TEMPLATE_DIR` or `dev3 artifact-template`), the copied `AUTHORING.md` as the authoring card, editing `index.html` + `report.js`, and publishing or versioning with `dev3 show-artifact`. Its format rules and steps are the protocol's own `ARTIFACT_FORMAT_RULES` / `ARTIFACT_AUTHORING_STEPS` fragments (`src/shared/agent-skill-content.ts`), so the two cannot drift; the protocol keeps the full section plus a one-line pointer. It adds only what the protocol leaves implicit — the edited-copy overwrite trap of re-running `dev3 artifact-template`, revising by version, and the boundary with `/dev3-share-artifact`. Same content for all agents.
+
+### dev3-share-artifact (displayed as "dev3 Share Artifact")
+
+A user-invocable skill that publishes a local HTML report — typically a dev3 artifact — as a GitHub gist and hands back a preview URL it has actually opened. It folds the multi-file report into one self-contained file with `dev3 inline-html` (gists are flat and text-only), reuses a recorded `.gist-id` so a re-share updates the same URL instead of duplicating it, defaults to a secret gist, and refuses to publish a page carrying a credential-shaped string (CLI exit `14`) or a missing local asset (exit `13`). Same content for all agents; it carries no machine-specific account mapping and asks the user which `gh` account to publish under when several are authenticated.
+
+### dev3-coordinator (displayed as "dev3 Coordinator")
+
+A user-invocable skill that turns the task the agent is **already running in** into a coordinator, mid-conversation, without touching its history, branch, worktree, title, labels or priority. It carries the complete built-in brief, interpolated from `COORDINATOR_PROMPT` each time the file is written, so the skill is a whole instruction on its own and still has one source. It runs `dev3 task update --type coordinator --print-role`, which sets the board type, rewrites the description's role preamble as the ordinary type-update path already does, and prints the *effective* brief (project override → Settings override → built-in `COORDINATOR_PROMPT`) under a `Brief source:` line; a project or Settings override wins over the embedded copy and is never rewritten. Printing rather than delivering is the point — the caller is the agent being promoted, so a pane delivery would arrive as a second copy in a second turn. Re-running it is idempotent and re-prints the brief; `--print-role` is refused against any task but the caller's own. The body also names the stale-CLI case — a machine whose `dev3` predates the flag answers `error: Unknown option: --print-role` before writing anything, and the fallback is the plain `dev3 task update --type coordinator`, which promotes identically but delivers the brief into the pane instead of printing it. Nothing promotes a task on install or discovery: the body has no `!`-injected command. Same content for all agents.
+
+**Mid-conversation discovery limit:** a harness lists its skills when the session starts. A session that was already running when dev-3.0 first wrote this file will not offer `/dev3-coordinator` until it restarts; the underlying command works regardless.
+
+For Gemini CLI specifically, dev-3.0 installs these managed skills only via the shared `~/.agents/skills/` alias. Gemini also discovers `~/.gemini/skills/`, but duplicating the same skill name in both user-scope directories triggers same-tier conflict warnings and the alias already has precedence.
+
+omp does not read that shared `~/.agents/skills/` alias; it reads `~/.omp/agent/skills/` plus the
+other tools' directories (`~/.claude`, `~/.codex`, `~/.gemini`) at lower precedence, so it gets an
+explicit native copy of its own hook-aware body rather than inheriting Claude's short variant.
+
+## LLM provider (per-agent backend)
+
+Each agent can run against its **native API** (default) or a registered
+third-party backend (today: **Amazon Bedrock** for Claude and for Codex), chosen via a
+**per-agent** toggle inside that agent's row in **Settings → Coding Agents**
+(`CodingAgent.llmProvider` / `CodingAgent.providerConfig`). dev3's built-in
+configs select a model with `--model` using native aliases (e.g.
+`claude-opus-4-8[1m]`); third-party providers reject those, so when one is
+selected dev3 **omits `--model`** for that agent and injects the provider env
+instead (Claude), or rewrites `--model` to the mapped id and appends the routing
+args (Codex). Agents on their native provider — and agents with no registered
+backend at all (Gemini, …, which show no toggle) — are unaffected.
+
+Providers are data, not code: each one is a `ProviderDefinition` in the
+`PROVIDER_REGISTRY` (`src/shared/llm-provider.ts`), keyed by an `LLM_PROVIDER` id
+(`src/shared/types.ts`) and bound to an agent via its `agentCommand`. Adding a
+backend = one id + one registry entry + i18n labels; the toggle, env injection,
+and model table all read the registry. The toggle only appears on agents that
+have ≥1 registered backend.
+
+dev3 injects only the provider's enable flag + the pinned model (merged into the
+launch env; a config's own `envVars` still win). **Credentials are NOT set by
+dev3**. The customer configures those in their own global agent setup (shell env /
+`~/.claude/settings.json`). One exception: a Bedrock agent may list named **AWS
+profiles** (Settings → Coding Agents → the Bedrock section, or `dev3 agent
+aws-profiles set`). The launch dialog then shows an AWS profile dropdown, and the
+picked entry sets `AWS_PROFILE`/`AWS_REGION` over the preset `envVars` and the
+project env. See `decisions/2026/11/05/bedrock-per-launch-aws-profile.md`. A Claude
+launch with a picked profile also gets `awsAuthRefresh: "aws sso login"` in its dev3
+`--settings` file, so an expired SSO session opens the browser login
+(`decisions/2026/11/08/bedrock-sso-refresh-managed-settings.md`).
+
+| Provider | Injected env | Model id source |
+|----------|--------------|-----------------|
+| Anthropic | _(none)_ | `--model <alias>` as usual |
+| Bedrock (Claude) | `CLAUDE_CODE_USE_BEDROCK=1`, `ANTHROPIC_MODEL`, `ANTHROPIC_DEFAULT_{FABLE,OPUS,SONNET,HAIKU}_MODEL` | alias→`<geo>.anthropic.*` map (geo = `global`/`us`/`eu`/`jp` toggle), or the per-model override. Each alias slot gets the launching model for its own slot and the newest built-in model the geo serves for the rest, so `/model haiku` and subagent `model:` aliases never fall back to Claude Code's built-in `us.*` ids; a preset `envVars` value still wins |
+| Bedrock (Codex) | _(none — `--model <geo>.openai.<family>` + `-c model_provider="amazon-bedrock-runtime"`)_ | same geo toggle; per-model override |
+
+Known model aliases map to provider-native ids automatically
+(`src/shared/llm-provider.ts`); unknown/new models are derived from the alias so
+dev3 **always pins the model** (the agent never falls back to a different default
+than dev3 expects). The settings model-mapping table is pre-populated and
+inline-editable per model (Manual badge + Revert); a geo-aware provider's geo
+toggle re-prefixes all non-overridden rows. See [decision 089](decisions/2026/07/06/llm-provider-toggle.md).
+
+## Additional Integrations
+
+| Integration | Agents | Details |
+|-------------|--------|---------|
+| `~/.agents/AGENTS.md` | All (fallback) | Appended rule block for agents that read `AGENTS.md` |
+| `~/.agents/skills/*/agents/openai.yaml` | Shared skill UI | Managed display metadata for `dev3`, `dev3-project-config`, `dev3 tmux`, `dev3 Bug Hunter`, `Ask dev3`, and `dev3 Share Artifact` |
+| `~/.claude/settings.json` | Claude Code | Auto-adds a `Bash(<dev3 cli> *)` permission — `Bash(~/.dev3.0/bin/dev3 *)` on POSIX, `Bash(<abs path>\dev3.exe *)` on Windows |
+| `~/.codex/config.toml` | Codex | Configures trust, creates a fallback `permissions.workspace` default when missing, patches dev3 sandbox access, and enables the Codex hook feature with version-compatible key names. Also holds dev3's status-hook declarations between marker comments; the block is rewritten in place on every launch, dev3 hook entries left outside it (a lost marker) are collected so copies cannot pile up, and hooks the user wrote themselves are never touched. Paths are written as escaped TOML basic strings with native separators, and a config an earlier dev3 made unparsable on Windows is repaired in place on next launch (original copied to `config.toml.dev3-backup`) |
+| `<worktree>/.codex/hooks.json` | Codex | Generated, gitignored lifecycle definitions mirrored into each dev3-launched Codex pane as session flags |
+| `~/.cursor/hooks.json` | Cursor Agent | Merges guarded `afterAgentResponse` and `stop` accounting hooks for all local sessions. Existing user hooks/settings are preserved; `dev3 install-hooks --remove-cursor` removes only dev3 usage entries, without requiring a task or running app |
+| `~/.copilot/settings.json` | GitHub Copilot CLI | dev3 merges its lifecycle hooks into the user's own settings file, replacing only what dev3 wrote before. Nothing is written under `~/.copilot/hooks/`, which can be root-owned on a managed machine |
+| `~/.copilot/permissions-config.json` | GitHub Copilot CLI | dev3 pre-approves its own CLI for the project, so an agent is not stopped by "Do you want to run this command?" on the status move its protocol just told it to make. Keyed by the repository's main working tree — which is what Copilot itself writes when the user approves from inside a worktree, so one entry covers every task of that project. Approvals the user granted themselves, and every other repository, are left untouched |
+| `~/.copilot/config.json` | GitHub Copilot CLI | dev3 appends the worktree's resolved path to `trustedFolders`, the only place Copilot reads folder trust from. Every other key — including `loggedInUsers` — is copied through untouched, the `//` header is preserved, and a file dev3 cannot parse is left exactly as found rather than risking the login. dev3 honours `COPILOT_HOME` rather than setting it |
+| `<project>/.claude/settings*.json` (read-only) | Claude Code | `permissions.additionalDirectories` from the project's own checkout, and from the user-scope config dir its agents read (the `CLAUDE_CONFIG_DIR` of the project's launch env, global agent env defaults included, else the server's, else `~/.claude`), are listed as the project's extra folders. Other agents get the `extraFolders` project setting and VS Code workspace folders |
+| `~/.dev3.0/data/agent-hooks/omp-status.ts` | Oh My Pi | Generated status extension, rewritten before every launch and loaded with `--hook`; reports the session's lifecycle through `dev3 hook omp` |
+| `~/.dev3.0/data/agent-hooks/pi-status.ts` | Pi | Generated status extension, rewritten before every launch and loaded with `--extension`; reports the session's lifecycle through `dev3 hook pi` |

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (792)
+## current (787)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -182,11 +182,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) [coverage: complete]
 - [grik-ai/ricochet](../repos/grik-ai/ricochet.md) [coverage: complete]
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
-- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) [coverage: partial]
-- [gszhangwei/open-spdd](../repos/gszhangwei/open-spdd.md) [coverage: complete]
-- [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) [coverage: partial]
-- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) [coverage: partial]
-- [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) [coverage: partial]
 - [h5i-dev/h5i](../repos/h5i-dev/h5i.md) [coverage: partial]
 - [haasonsaas/ocode](../repos/haasonsaas/ocode.md) [coverage: partial]
 - [haervwe/open-webui-tools](../repos/haervwe/open-webui-tools.md) [coverage: complete]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [obra/coderabbit-review-helper](../repos/obra/coderabbit-review-helper.md) [coverage: complete]
 - [obra/smallest-agent](../repos/obra/smallest-agent.md) [coverage: complete]
 - [ocean-luna/hmrag](../repos/ocean-luna/hmrag.md) [coverage: complete]
+- [ochyai/vibe-local](../repos/ochyai/vibe-local.md) [coverage: partial]
+- [ogulcancelik/pi-extensions](../repos/ogulcancelik/pi-extensions.md) [coverage: complete]
+- [ohad6k/viberaven](../repos/ohad6k/viberaven.md) [coverage: partial]
+- [oi-overide/oi](../repos/oi-overide/oi.md) [coverage: complete]
+- [oinone/oinone-pamirs](../repos/oinone/oinone-pamirs.md) [coverage: complete]

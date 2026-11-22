@@ -1,9 +1,9 @@
 # gsa-tts/agentic-coding-quickstart
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e0b9a3b60d87 @ 1c3580d2ef2330cc
+Latest snapshot: commit 6acce0ce5cc4 @ ef0fd1eefde13d7a
 
 ## Summary (orientation draft, not independently verified)
 

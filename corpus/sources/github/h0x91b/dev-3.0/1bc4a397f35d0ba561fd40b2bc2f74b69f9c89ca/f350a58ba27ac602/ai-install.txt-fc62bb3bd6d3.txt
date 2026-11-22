@@ -1,0 +1,86 @@
+# Install dev-3.0 — instructions for an AI coding agent
+
+You are installing **dev-3.0** for your user — a desktop/headless app that runs a fleet of AI coding agents on a Kanban board, with an isolated git worktree + tmux session per task. Website: https://dev3.h0x91b.com — full docs: https://github.com/h0x91b/dev-3.0#readme
+
+Follow the steps for the user's OS. Ask before installing anything beyond dev-3.0 itself.
+
+**Installation ends at the install step — do not start the long-running server yourself.** On a headless box the user runs `dev3 remote` (a foreground server they own) in *their own* terminal, not inside your agent session. When install finishes, print the exact run command and hand off: tell the user they can exit you first, then run it themselves. (Launching the macOS desktop app with `open -a "dev-3.0"` is fine to do for them — it's fire-and-forget, not a server tied to your session.)
+
+## 1. Detect the platform
+
+```sh
+uname -s   # Darwin = macOS, Linux = Linux
+```
+
+On Windows there is no `uname` — if you are in PowerShell / `cmd`, follow section 2c.
+
+## 2a. macOS (Darwin)
+
+Requires Homebrew (https://brew.sh). If `brew` is missing, ask the user to install it first — do not pipe the Homebrew installer yourself without their explicit OK.
+
+```sh
+brew tap h0x91b/dev3
+brew trust h0x91b/dev3   # required on Homebrew 6.0+ (see note below)
+brew install --cask dev3
+```
+
+`brew trust` is **required** on Homebrew 6.0+ — it refuses to load a non-official tap's formulae/casks until the tap is trusted, and trusting the tap covers everything in it (the `dev3` cask and its `tmux@3.6` formula dependency). Homebrew < 6.0 has no such command: run it anyway, and skip this line only if it errors as an unknown command.
+
+This installs the app plus its dependencies (`git`, `tmux`, `cloudflared`) automatically. Then launch it:
+
+```sh
+open -a "dev-3.0"
+```
+
+## 2b. Linux
+
+Works on any box, including headless cloud VMs. Never run Homebrew as root — on a fresh VM create a regular user first (`useradd -m -s /bin/bash dev3 && su - dev3`). Glibc >= 2.28 required (Ubuntu 18.04+, Debian 10+, RHEL 8+).
+
+With Homebrew (https://docs.brew.sh/Homebrew-on-Linux):
+
+```sh
+brew tap h0x91b/dev3 && brew trust h0x91b/dev3 && brew install h0x91b/dev3/dev3
+```
+
+`brew trust` is **required** on Homebrew 6.0+ — it gates non-official taps and won't load the `dev3` formula / its `tmux@3.6` dependency until the tap is trusted. Homebrew < 6.0 has no such command: if `brew trust` errors as unknown, drop `brew trust h0x91b/dev3 &&` from the chain and re-run.
+
+Install is done — now hand off. Tell the user to run `dev3 remote` themselves (in their own terminal; they can exit you first). It starts the headless server, waits for a Cloudflare quick tunnel to come up, then prints a public access URL + QR code they open in any browser (even a phone) for the full UI — no SSH forwarding needed (they can pass `--no-tunnel` for local-only). Do not run `dev3 remote` from your own session.
+
+Without Homebrew (minimal container etc.) — pre-built CLI tarball:
+
+```sh
+case "$(uname -m)" in aarch64|arm64) A=arm64;; *) A=x64;; esac
+curl -fsSL -o /tmp/dev3.tar.gz \
+  "https://github.com/h0x91b/dev-3.0/releases/latest/download/dev3-cli-linux-$A.tar.gz"
+mkdir -p ~/.dev3 && tar -C ~/.dev3 -xzf /tmp/dev3.tar.gz
+```
+
+Then hand off the same way — the user runs `~/.dev3/dev3 remote` themselves. For the tarball path, make sure `git` and `tmux` are installed via the system package manager (`cloudflared` is optional — without it `dev3 remote` falls back to LAN/SSH-forward URLs).
+
+For a desktop GUI on Linux instead of the browser UI: `dev3 gui` (lazily downloads the bundle on first run and prints the exact `apt`/`dnf`/`pacman` command if GTK/WebKit libs are missing).
+
+## 2c. Windows (x64)
+
+Tell the user this up front: **Windows support is brand new and may still be rough.** There is no installer and no package manager — one zip, attached to every tagged release, that the user extracts and runs. It is unsigned at this time (that may change in the future), so the first launch goes through a Microsoft Defender SmartScreen warning that the user has to click past (expand the details, then choose to run it anyway). Do not tell the user the app will keep itself up to date — automatic updating is not proven on Windows, and the first observed attempt hung. Ask before downloading.
+
+```powershell
+$zip = "$env:TEMP\dev-3.0.zip"
+Invoke-WebRequest -Uri "https://github.com/h0x91b/dev-3.0/releases/latest/download/stable-win-x64-dev-3.0.zip" -OutFile $zip
+Expand-Archive -Path $zip -DestinationPath "$env:LOCALAPPDATA\dev-3.0" -Force
+```
+
+~121 MB to download, ~400 MB extracted. Then the user launches `bin\launcher.exe` from the extracted folder themselves. `git` must be on `PATH`; there is no tmux and no WSL involved — task terminals use the native backend over PowerShell. The `dev3` CLI ships inside the bundle at `Resources\app\cli\dev3.exe`; there is no standalone Windows CLI tarball, so `dev3 --version` will not work from a bare shell unless the user points at that path.
+
+## 3. Verify
+
+```sh
+dev3 --version
+```
+
+On macOS also confirm the app launches. If `git`/`tmux` hang inside dev-3.0 task terminals on macOS, the fix is System Settings → Privacy & Security → **Full Disk Access** → add dev-3.0, then relaunch (details: https://github.com/h0x91b/dev-3.0#troubleshooting).
+
+## 4. First run (tell the user)
+
+1. Add a project — point dev-3.0 at any existing git repo.
+2. Create a task and describe the work — the first agent starts automatically in an isolated worktree.
+3. Press ⌘/ (Ctrl+/ on Linux) inside the app for all keyboard shortcuts.

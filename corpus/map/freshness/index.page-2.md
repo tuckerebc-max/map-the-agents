@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [ochyai/vibe-local](../repos/ochyai/vibe-local.md) [coverage: partial]
-- [ogulcancelik/pi-extensions](../repos/ogulcancelik/pi-extensions.md) [coverage: complete]
-- [ohad6k/viberaven](../repos/ohad6k/viberaven.md) [coverage: partial]
-- [oi-overide/oi](../repos/oi-overide/oi.md) [coverage: complete]
-- [oinone/oinone-pamirs](../repos/oinone/oinone-pamirs.md) [coverage: complete]
 - [olasunkanmi-se/codebuddy](../repos/olasunkanmi-se/codebuddy.md) [coverage: partial]
 - [oldjs/web-code-agent](../repos/oldjs/web-code-agent.md) [coverage: complete]
 - [oleksandrchekhovskyi/hax](../repos/oleksandrchekhovskyi/hax.md) [coverage: partial]
@@ -389,7 +384,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (189)
+## stale (194)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -453,3 +448,8 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) [coverage: partial]
 - [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
 - [bhouston/mycoder](../repos/bhouston/mycoder.md) [coverage: partial]
+- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) [coverage: partial]
+- [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
+- [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) [coverage: partial]
+- [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) [coverage: partial]
+- [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]

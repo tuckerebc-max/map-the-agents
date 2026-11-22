@@ -1,9 +1,9 @@
 # guanyilun/agent-sh
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8038ae7730eb @ a723232a0e326851
+Latest snapshot: commit efda9c7aaeae @ 6858bb60a069dc99
 
 ## Summary (orientation draft, not independently verified)
 

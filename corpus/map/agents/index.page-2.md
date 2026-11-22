@@ -53,11 +53,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [griddynamics/rosetta](../repos/griddynamics/rosetta.md) -- status=distilled, freshness=stale
 - [grik-ai/ricochet](../repos/grik-ai/ricochet.md) -- status=distilled, freshness=current
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) -- status=distilled, freshness=current
-- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) -- status=distilled, freshness=current
-- [gszhangwei/open-spdd](../repos/gszhangwei/open-spdd.md) -- status=distilled, freshness=current
-- [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) -- status=distilled, freshness=current
-- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) -- status=distilled, freshness=current
-- [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) -- status=distilled, freshness=current
+- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) -- status=distilled, freshness=stale
+- [gszhangwei/open-spdd](../repos/gszhangwei/open-spdd.md) -- status=distilled, freshness=stale
+- [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) -- status=distilled, freshness=stale
+- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) -- status=distilled, freshness=stale
+- [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) -- status=distilled, freshness=stale
 - [h5i-dev/h5i](../repos/h5i-dev/h5i.md) -- status=distilled, freshness=current
 - [haasonsaas/ocode](../repos/haasonsaas/ocode.md) -- status=distilled, freshness=current
 - [haervwe/open-webui-tools](../repos/haervwe/open-webui-tools.md) -- status=distilled, freshness=current

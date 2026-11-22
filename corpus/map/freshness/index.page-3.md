@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) [coverage: partial]
-- [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
-- [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) [coverage: partial]
-- [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) [coverage: partial]
-- [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]
 - [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [coverage: partial]
 - [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
 - [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
@@ -129,6 +124,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [gptme/gptme](../repos/gptme/gptme.md) [coverage: partial]
 - [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) [coverage: partial]
 - [griddynamics/rosetta](../repos/griddynamics/rosetta.md) [coverage: partial]
+- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) [coverage: partial]
+- [gszhangwei/open-spdd](../repos/gszhangwei/open-spdd.md) [coverage: complete]
+- [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) [coverage: partial]
+- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) [coverage: partial]
+- [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) [coverage: partial]
 
 ## refresh-failed (72)
 

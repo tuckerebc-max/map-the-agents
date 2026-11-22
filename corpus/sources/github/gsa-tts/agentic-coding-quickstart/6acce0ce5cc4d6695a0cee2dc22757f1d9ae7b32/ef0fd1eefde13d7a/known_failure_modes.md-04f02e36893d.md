@@ -1,0 +1,3361 @@
+---
+title: "Known Failure Modes"
+description: "Real-world failure patterns when using Docker SBX + USAi + agent frameworks"
+status: canonical
+tier: 2
+last_updated: "2026-11-05"
+audience: "developers"
+keywords: ["debugging", "troubleshooting", "sbx", "usai", "failures"]
+---
+
+# Known Failure Modes
+
+This document captures real-world failure patterns when using Docker SBX + USAi + agent frameworks. If you're hitting something weird, it's probably in here.
+
+---
+
+## Read-only host-config probe misclassifies a denied write
+
+### Symptoms and cause
+
+Readonly kit staging reports that the host-config mount looks writable even
+though host `msb inspect` records a read-only bind and direct writes fail with
+`Read-only file system`. A POSIX shell can exit with status 2 when redirection
+on the special builtin `:` fails. The original probe used that same status to
+signal a successful write, confusing denial with writability.
+
+`acq.backends/msb.sh::_acq_msb_host_config_mount_probe` now isolates the write
+attempt in a subshell. Only an actual successful write selects status 2;
+denial returns 0, while missing/inaccessible mounts and transport errors remain
+refusals. Host mount-record, version and platform checks still apply. The
+real-shell regression is in `test/bats/84-msb-ro-mount-qualification.bats`.
+
+Measured with MSB 0.7.11 on macOS ARM64: the root guest write to a readonly
+canary was denied, a writable control succeeded, and the host sentinel remained
+unchanged. With the fixed probe, the existing OCI kit installed Podman and
+passed its rootless startup self-test. This does not qualify all inner-container
+isolation controls or prove general read-only enforcement across platforms.
+
+## Rootless nested Podman lacks cgroup delegation
+
+The OCI kit may install successfully and pass its storage self-test while an
+inner container with explicit memory/CPU/PID limits still cannot start. In the
+measured MSB 0.7.11 guest, Podman 5.7.0 reported cgroup v2, cgroupfs and an empty
+delegated controller list. The bounded network-off test was refused:
+
+```text
+unable to apply cgroup configuration: rootless needs no limits + no cgrouppath
+when no permission is granted for cgroups
+```
+
+Do not remove mandatory limits to label this a successful isolated runner.
+The outer sandbox owner must provide a reviewed cgroup-delegation path, or use
+another qualified backend, before rootless inner containers can satisfy that
+resource contract. Reopen qualification when delegation is available; verify
+effective memory, CPU and PID enforcement alongside network/source/credential
+separation and cleanup. Kit installation and rootless storage readiness alone
+are insufficient evidence. No host engine socket or privileged-host workaround
+is required or authorized by this guidance.
+
+## Provider-input validator dependencies are missing
+
+### Symptoms
+
+- `acq create` stops before backend creation.
+- The error requires exact `PyYAML` and `jsonschema` versions.
+
+### Fix: release install (Homebrew, npm, `install.sh --release`)
+
+`--apply` alone uses the offline wheelhouse bundled with the release:
+
+```bash
+scripts/setup-provider-input-validator --apply
+```
+
+The runtime is stored under `$XDG_DATA_HOME/acq/provider-input-validator` (or
+`~/.local/share/acq/provider-input-validator`) and does not modify global Python
+packages. The default invocation is a dry run; `--apply` builds a fresh,
+hash-verified environment and only replaces a working runtime after validation
+succeeds. Re-run the command after changing Quickstart versions if the pinned
+requirements change.
+
+### Fix: git checkout / development install (no wheelhouse)
+
+A working-tree clone (`install.sh --clone`, or running `./acq` directly from a
+`git checkout`) has no release wheelhouse. Use the `--online` flag, which
+downloads the same hash-locked packages from PyPI instead:
+
+```bash
+scripts/setup-provider-input-validator --apply --online
+```
+
+Network access is restricted to this explicit setup call; `acq create` itself
+remains fully offline after the runtime is installed.
+
+If the error message already names this command, that means `acq` detected a git
+checkout with no wheelhouse and surfaced the hint automatically.
+
+### Alternative: `ACQ_PROVIDER_INPUT_PYTHON`
+
+If you already have a Python interpreter with the exact required versions
+(`PyYAML 6.0.3` and `jsonschema 4.26.0`), point `acq` at it directly:
+
+```bash
+export ACQ_PROVIDER_INPUT_PYTHON=/path/to/python3
+acq create opencode .
+```
+
+`acq` validates the dependency versions at startup and exits with a clear error
+if they do not match. This is useful when a system-managed environment already
+carries the right packages, or when the setup script cannot run (restricted
+network, air-gapped lab). It is not a substitute for the pinned runtime in
+production; the venv created by `setup-provider-input-validator` is preferred
+because it is isolated from system upgrades.
+
+The lock supports Linux x86_64/aarch64 with Python 3.12, macOS x86_64/arm64 with
+Python 3.12-3.14, and Windows x86_64/arm64 with
+Python 3.12. An unsupported OS, architecture, or Python version fails before
+installation; use one of the supported runtimes rather than bypassing hashes.
+
+---
+
+## 1. "Unknown Agent" Error on sbx create
+
+### Symptoms
+
+- `sbx create my-sandbox` fails
+- Error: `unknown agent "my-sandbox"`
+
+### Root Cause
+
+SBX `create` command requires an agent type (e.g., `opencode`, `claude`, `shell`) and a workspace path.
+
+### Fix
+
+Use the correct syntax:
+```bash
+# Correct: specify agent type and path
+sbx create opencode .
+
+# With custom name
+sbx create --name my-sandbox opencode .
+```
+
+Available agents: `claude`, `codex`, `copilot`, `docker-agent`, `gemini`, `kiro`, `opencode`, `shell`
+
+---
+
+## 2. API Key Works in UI but Fails in Agent
+
+### Symptoms
+
+- Works in Swagger / web UI
+- Fails in agent or CLI
+- Error: `authentication failed` or `401 Unauthorized`
+
+### Likely Causes
+
+- Incorrect header format
+- Missing `Bearer` prefix
+- Wrong environment variable injection
+
+### Fix
+
+Ensure header format is correct:
+```
+Authorization: Bearer <API_KEY>
+```
+
+Confirm the injected env var is present inside the sandbox:
+```bash
+acq exec <sandbox> -- sh -c 'echo $USAI_API_KEY'
+```
+
+---
+
+## 3. Agent Cannot See API Key / USAi Authentication Fails
+
+### Symptoms
+
+- Agent fails silently or errors on auth
+- OpenCode shows generic providers instead of USAi
+- `{"detail":"Authentication failed"}` from USAi API
+
+### Root Cause
+
+SBX's secret proxy only works with **standard provider endpoints**. USAi uses a custom `baseURL` (`https://api.gsa.usai.gov/api/v1`), which the proxy doesn't recognize.
+
+When you use `sbx secret set -g openai`, SBX:
+1. Stores your key
+2. Sets `OPENAI_API_KEY=proxy-managed` in the container
+3. Intercepts requests to `api.openai.com` and injects the real key
+
+But requests to `api.gsa.usai.gov` bypass this proxy entirely.
+
+### Fix
+
+Store the key as a custom secret so sbx injects it for you:
+
+```bash
+sbx secret set-custom -g --host api.gsa.usai.gov --env USAI_API_KEY
+```
+
+Recreate the sandbox so the secret takes effect. `opencode.jsonc` reads the
+injected value via `{env:USAI_API_KEY}`.
+
+---
+
+## 4. Secrets Accidentally Printed
+
+### Symptoms
+
+- API key appears in logs/output
+- Key visible in terminal history
+
+### Root Cause
+
+- Debugging via `printenv` or `env`
+- Logging config objects that contain credentials
+- Shell history capturing secret values
+
+### Fix
+
+- Never print full environment
+- Mask values if debugging required
+- Use `set +o history` before working with secrets
+- Review agent logs before sharing
+
+---
+
+## 5. Incorrect baseURL
+
+### Symptoms
+
+- Model list fails
+- 404 or unexpected API errors
+- Connection refused
+
+### Root Cause
+
+Wrong endpoint format in configuration.
+
+### Fix
+
+Use the correct format:
+```
+https://api.gsa.usai.gov/api/v1
+```
+
+NOT:
+- Missing `/api/v1` suffix
+- Swagger UI URL
+- Documentation endpoint
+- Trailing slash issues
+
+---
+
+## 6. SBX CLI Behavior Changes
+
+### Symptoms
+
+- Commands stop working between runs
+- Flags behave differently than expected
+- Documentation doesn't match actual behavior
+
+### Root Cause
+
+SBX tooling is rapidly evolving with frequent breaking changes.
+
+### Fix
+
+- Check `sbx --help` for current syntax
+- Check `sbx <command> --help` for subcommand options
+- Revalidate commands before assuming code failure
+- Avoid scripting around unstable flags
+- Pin to specific SBX versions if possible
+
+---
+
+## 7. Agent Tries to Escape Sandbox
+
+### Symptoms
+
+- Attempts to access host filesystem paths
+- Unexpected file path errors
+- Permission denied on paths that "should" exist
+
+### Root Cause
+
+Agent assumes host filesystem layout, not container layout.
+
+### Fix
+
+- Enforce working directory constraints in AGENTS.md
+- Avoid granting unnecessary volume mounts
+- Configure agent with container-relative paths
+- Review agent file access patterns
+
+---
+
+## 8. Model Appears Available but Fails at Runtime
+
+### Symptoms
+
+- `/models` endpoint lists the model
+- Inference requests fail with errors
+- "Model not found" despite being listed
+
+### Root Cause
+
+- Model not actually enabled for your API key
+- Backend routing mismatch
+- Model requires specific parameters not provided
+
+### Fix
+
+- Test with minimal request first
+- Confirm model entitlement with USAi provider
+- Check if model requires specific `max_tokens` or other params
+- Try a different model to isolate the issue
+
+---
+
+## 9. Long Timeouts / Hanging Requests
+
+### Symptoms
+
+- Requests never return
+- Agent appears stuck
+- Eventually fails with timeout
+- OpenCode shows a retry notice for a streamed-response read timeout: `Timed out
+  waiting for response data` on OpenCode 2.0.30 (the version the kit installs),
+  `SSE read timed out` on 1.18.x
+
+### Root Cause
+
+- Missing timeout configuration
+- Network routing issues inside container
+- DNS resolution failures
+- Proxy misconfiguration
+- Streamed-response read timeout: the response sent no data for longer than the
+  provider's `chunkTimeout`. OpenCode before 1.18.27 has no default for this option
+  (unset means no idle timeout; 1.18.27 through 2.0.29 default to 5 minutes, 2.0.30
+  to 15), so on those versions the 2-minute value the `usai-provider` kit sets is
+  what makes it fire.
+  Common during long reasoning or while the model generates a large tool call (such
+  as writing a long file), or when a hop on the path (sandbox proxy, Zscaler, USAi,
+  the upstream model) stalls. OpenCode retries automatically, so an occasional one
+  is harmless.
+
+### Fix
+
+The OpenCode agent kit renders provider options from validated provider inputs
+into the global OpenCode configuration. See its
+[`TROUBLESHOOTING.md`](https://github.com/GSA-TTS/agentic-coding-patterns/blob/main/integrations/isolation/acq-kits/opencode/TROUBLESHOOTING.md)
+for current ownership and inspection steps. The generated USAi options include
+`timeout` (whole request, 10 minutes) and `chunkTimeout` (gap between streamed
+chunks, 2 minutes). If the read timeout
+recurs, raise `chunkTimeout` in the project's `opencode.json`. The example below
+uses 5 minutes, the default from OpenCode 1.18.27 through 2.0.29; `false` disables the
+idle timeout entirely. A higher value makes a truly hung stream take longer to fail
+over to the retry. Do not set it to a few seconds: normal model pauses would then
+abort nearly every long response.
+
+```json
+{
+  "provider": {
+    "usai": {
+      "options": {
+        "chunkTimeout": 300000
+      }
+    }
+  }
+}
+```
+
+If the retries run out (OpenCode 2.0.30 gives up after three retries of a timed-out
+request, while other retryable errors follow a separate policy; 1.18.17 through the
+1.18.x line stop after five; earlier releases keep retrying until you abort), note
+the model, the time, and what the agent was doing, so a slow model can be told
+apart from a network stall.
+
+Check network connectivity from inside container:
+```bash
+acq exec <sandbox> -- curl -I https://api.gsa.usai.gov/api/v1/models
+```
+
+---
+
+## 10. Overcomplicated Setup
+
+### Symptoms
+
+- Too many scripts to run
+- Hard to reproduce environment
+- Works on one machine, fails on another
+- Debugging requires tribal knowledge
+
+### Root Cause
+
+Over-engineering instead of testing. Adding layers when simplicity would work.
+
+### Fix
+
+- Delete unnecessary wrapper scripts
+- Prefer 1 config file + 1 command
+- Document the minimal reproduction steps
+- If setup takes more than 3 commands, simplify
+
+---
+
+## 11. False Sense of Security
+
+### Symptoms
+
+- Assuming "it's in a container so it's safe"
+- Relaxing secret handling because of SBX
+- Not reviewing agent outputs
+
+### Reality
+
+Containers are NOT perfect isolation:
+- Container escapes exist
+- Mounted volumes expose host data
+- Network access can leak information
+- Logs may be captured outside container
+
+### Fix
+
+- Treat SBX as a strong boundary, not absolute
+- Continue to avoid exposing secrets at all costs
+- Review agent outputs before sharing
+- Don't mount sensitive host directories
+- Apply defense in depth
+
+---
+
+## 12. Environment Variable Naming Conflicts
+
+### Symptoms
+
+- Agent uses wrong API key
+- Configuration seems ignored
+- Unexpected behavior with correct config
+
+### Root Cause
+
+Multiple tools expecting different env var names:
+- `OPENAI_API_KEY`
+- `USAI_API_KEY`
+- `API_KEY`
+- Tool-specific variations
+
+### Fix
+
+- Check tool documentation for expected variable names
+- Set all expected variations if needed
+- Use explicit config file settings over env vars when possible
+
+---
+
+## 13. Config File Not Found in Container
+
+### Symptoms
+
+- Agent starts with defaults
+- Custom configuration ignored
+- "Config file not found" warnings
+
+### Root Cause
+
+Config file exists on host but not mounted into container.
+
+### Fix
+
+Ensure config is in the mounted working directory. When using `acq run` (or
+`acq create`), the current directory is automatically mounted:
+
+```bash
+# Run from the directory containing your config
+cd /path/to/project-with-config
+acq run opencode .
+```
+
+Or copy config into an existing container:
+
+```bash
+acq cp ./opencode.jsonc my-sandbox:/workspace/
+```
+
+---
+
+## 14. SBX Built-in Proxy Doesn't Auto-Cover USAi's Custom baseURL (Use `set-custom`)
+
+### Symptoms
+
+- `sbx secret set -g openai` succeeds
+- But USAi authentication still fails
+- `OPENAI_API_KEY=proxy-managed` in container
+- Must inject the key via a custom secret instead
+
+### Root Cause
+
+SBX's **default** provider proxy intercepts requests to a fixed set of **known
+provider endpoints** (like `api.openai.com`) and injects credentials there. A
+custom `baseURL` endpoint like USAi (`api.gsa.usai.gov`) is not one of those
+built-in services, so `sbx secret set -g openai` never applies to it — you must
+register USAi as a **custom secret** (`sbx secret set-custom`) instead. `acq`
+does exactly this for you (`acq secret set usai`, routed through the
+`secret set-custom` branch of `acq.backends/sbx.sh`).
+
+### Security Implication
+
+**Under the sanctioned `acq` setup, the agent does NOT hold the raw USAi key.**
+`set-custom` is proxied the same way the built-in services are — it just has to
+be configured explicitly because USAi is not a built-in endpoint.
+
+Concretely, `sbx secret set-custom` bakes a **placeholder token** into the
+sandbox's `USAI_API_KEY` at creation time, and the sbx proxy resolves that
+placeholder to the real secret value **at request time**, on the wire to
+`api.gsa.usai.gov`. So:
+
+- Agent sees: `USAI_API_KEY=<placeholder>` (not the real key value)
+- The real credential lives in the sbx secret store on the host, never in the
+  container environment
+- The agent process cannot read the raw key from its own environment
+
+This matches the built-in proxy posture (and the MSB `--secret ENV@HOST`
+swap-on-the-wire model), and it is what `AGENTS.md` states: secrets are
+**injected placeholders or proxied — the agent never holds the real USAi key
+material**. (The placeholder mechanism is described in more detail in
+[Section 23](#23-usai-401-in-an-existing-sandbox-after-deletingrecreating-the-global-secret).)
+
+### Narrow caveat: non-default paths that DO expose the value
+
+The raw value only reaches the container if you deliberately bypass the
+sanctioned flow:
+
+- Passing `sbx secret set-custom … --value <the-secret>` on the command line
+  puts the value in argv (and shell history). `acq` never does this — it prompts
+  interactively or stores the value in the acq store and prints the manual
+  command as a last resort; it does not echo the value on argv.
+- A hand-rolled setup that exports the raw key into the container env (e.g.
+  `export USAI_API_KEY=<real-key>` in a profile, or `--value` in a script)
+  defeats the placeholder mechanism.
+
+These are non-default, unsupported configurations. Under `acq run` the agent
+sees a placeholder, not the key.
+
+### Mitigations
+
+1. **Placeholder injection** - the agent's env holds a placeholder, not the key
+2. **AGENTS.md rules** prohibit printing/logging secrets
+3. **Container isolation** limits exposure scope
+4. **No persistence** - key never written to disk in the sandbox
+
+### Fix
+
+Register USAi as a custom secret so sbx injects the placeholder (prefer `acq`,
+which does this for you):
+
+```bash
+# Preferred: acq configures the custom secret for both backends
+acq secret set usai
+
+# Equivalent raw sbx command (interactive prompt for the value — no --value):
+sbx secret set-custom --host api.gsa.usai.gov --env USAI_API_KEY
+```
+
+Your `opencode.jsonc` should use variable substitution:
+```json
+{
+  "provider": {
+    "usai": {
+      "options": {
+        "apiKey": "{env:USAI_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+### Upstream Tracking
+
+A convenience request to let the proxy inject credentials for custom endpoints
+without an explicit `set-custom` step is tracked in
+**[docker/sbx-releases#35](https://github.com/docker/sbx-releases/issues/35)** -
+"Feature Request: Configurable Secret Injection for Custom Services". Note this
+is an ergonomics improvement (auto-mapping custom services), **not** a security
+gap: `set-custom` already proxies the credential today, so the agent does not see
+the raw key under the current setup.
+
+---
+
+## 15. Direct Credential Injection for Git Providers (Security Consideration)
+
+### Context
+
+GitHub is a built-in SBX service (`sbx secret set -g github`), but GitLab is not. This means:
+- **GitHub**: Uses the proxy (recommended)
+- **GitLab**: Must use a custom secret (`sbx secret set-custom -g --host <host> --env GITLAB_TOKEN`)
+
+### Security Assessment for MVP
+
+| Concern | Severity | Mitigation |
+|---------|----------|------------|
+| Token visible in container env | Low | Container is isolated, short-lived |
+| Token in shell history | Low | sbx prompts for the value; never typed on the command line |
+| Token in process list | Low | Stored secret injected by sbx, not passed via process args |
+| Agent could exfiltrate token | Medium | Agent already has network access; proxy doesn't prevent this |
+| Token logged by agent | Medium | AGENTS.md prohibits; pre-commit hooks catch committed secrets |
+
+### Key Insight
+
+**The SBX proxy doesn't prevent a malicious agent from exfiltrating credentials** - it prevents the agent from *seeing* them directly. A compromised agent could still make authenticated API calls and exfiltrate data through those APIs.
+
+The real security boundary is:
+1. **Sandbox isolation** - container can't escape to host
+2. **Trusted agent software** - OpenCode, Claude Code, etc. are vetted
+3. **Scoped tokens** - use minimal scopes (e.g., `repo`, not admin)
+4. **Short-lived sessions** - tokens only in memory during execution
+
+### Acceptable for MVP Because
+
+1. **Local development environment** with low-impact data (no PII, no CUI)
+2. **Tokens are scoped** - not admin/owner tokens
+3. **Sandbox provides isolation** from host system
+4. **Direct injection is a documented SBX pattern** - shown in their own docs
+5. **Upstream tracking exists** - this is a known gap, not a workaround hack
+
+### Recommendations
+
+1. **Use SBX proxy when available** - GitHub supports it, use `sbx secret set -g github`
+2. **Scope tokens minimally** - only grant permissions the agent actually needs
+3. **Rotate tokens periodically** - treat injected tokens as potentially exposed
+4. **Review agent outputs** - before sharing logs, ensure no tokens leaked
+5. **Monitor API usage** - watch for unexpected patterns
+
+If GitHub auth in an existing sandbox starts failing after token rotation,
+force-refresh the stored global GitHub secret from the host:
+
+```bash
+gh auth token | sbx secret set -g github --force
+```
+
+### Upstream Tracking
+
+- **SBX custom service support**: [docker/sbx-releases#35](https://github.com/docker/sbx-releases/issues/35)
+- **Helper script exploration**: [GSA-TTS/agentic-coding-quickstart#15](https://github.com/GSA-TTS/agentic-coding-quickstart/issues/15)
+
+### Related
+
+See also: [Section 14 - SBX Built-in Proxy Doesn't Auto-Cover USAi's Custom baseURL](#14-sbx-built-in-proxy-doesnt-auto-cover-usais-custom-baseurl-use-set-custom)
+
+---
+
+## 16. SSL/TLS Certificate Error: "unable to get local issuer certificate"
+
+### Symptoms
+
+- OpenCode crashes or fails to connect to USAi
+- Error: `unable to get local issuer certificate`
+- Occurs on GFE (Government Furnished Equipment) networks
+
+### Root Cause
+
+On federal/GFE networks, secure internet traffic is often intercepted and decrypted using a custom Root Certificate Authority (CA) for security inspection.
+
+Because the sandboxed container runs a vanilla Linux environment, it does not automatically trust your host's GFE custom root certificate. When Node.js tries to establish a TLS connection to `https://api.gsa.usai.gov/api/v1`, it rejects the connection because it cannot verify the custom certificate chain.
+
+### Fix
+
+To resolve this during local development, you can tell Node.js to ignore TLS validation errors inside the sandbox using `NODE_TLS_REJECT_UNAUTHORIZED=0`.
+
+> **⚠️ SECURITY WARNING:** Disabling TLS validation bypasses certificate verification, which is a significant security risk. This workaround should **only** be used:
+> - For debugging TLS issues in isolated local development environments
+> - **Never** with real credentials or production endpoints
+> - **Never** in CI/CD pipelines or shared environments
+
+#### Workaround: Pass Environment Variable via SBX
+
+The `sbx run` command does **not** support the `-e` flag for environment variables. Use the two-step `create` + `exec` pattern instead:
+
+```bash
+# For debugging TLS issues only - never use with real credentials
+
+# Step 1: Create the sandbox (or skip if it already exists)
+sbx create --name debug-sandbox opencode .
+
+# Step 2: Run with environment variable
+sbx exec -e NODE_TLS_REJECT_UNAUTHORIZED=0 debug-sandbox opencode
+```
+
+Alternatively, combine into a single line:
+
+```bash
+sbx create --name debug-sandbox opencode . 2>/dev/null || true && \
+sbx exec -e NODE_TLS_REJECT_UNAUTHORIZED=0 debug-sandbox opencode
+```
+
+**Important:** Only `sbx exec` supports the `-e` flag, not `sbx run`.
+
+---
+
+## 17. Chose "Open" Network Policy by Mistake
+
+### Symptoms
+
+- Selected "Open" network policy during first sbx run
+- Security concern: Open policy allows access to internal GSA resources
+
+### Root Cause
+
+"Open" policy allows all network traffic without restrictions, which is a security risk on GFE (Government Furnished Equipment) machines.
+
+### Fix
+
+Reset and reconfigure:
+```bash
+# Reset policy (will prompt for new choice)
+sbx policy reset
+
+# Choose "Balanced" when prompted, then add USAi
+sbx policy allow network "api.gsa.usai.gov"
+
+# Verify
+sbx policy ls
+```
+
+### Prevention
+
+Always choose "Balanced" (Option 2) when prompted. The Balanced policy allows typical dev traffic while blocking internal network access.
+
+---
+
+## 18. Migrating from `docker sandbox`
+
+### Symptoms
+
+- You're using deprecated `docker sandbox ...` commands
+- Want to know the `sbx` CLI equivalents
+
+### Root Cause
+
+The Docker Desktop-integrated `docker sandbox` command is deprecated. The standalone `sbx` CLI replaces it and does not require Docker Desktop.
+
+### Fix
+
+Migrate to the equivalent `sbx` commands:
+
+| Deprecated Command | New Command |
+|-------------------|-------------|
+| `docker sandbox create --name NAME opencode .` | `sbx create --name NAME opencode .` |
+| `docker sandbox run NAME` | `sbx run --name NAME` |
+| `docker sandbox exec NAME cmd` | `sbx exec NAME cmd` |
+| `docker sandbox ls` | `sbx ls` |
+| `docker sandbox rm NAME` | `sbx rm NAME` |
+
+Your existing sandboxes and secrets will continue to work with the `sbx` CLI.
+
+---
+
+## 19. OpenCode Shows Wrong Providers
+
+### Symptoms
+
+- OpenCode lists generic providers instead of USAi
+- Custom USAi model catalog missing
+
+### Root Cause
+
+The USAi provider config is not loaded in the sandbox. With `acq`, it is
+delivered by the `usai-provider` **kit** (applied by pinned remote reference
+from the agentic-coding-patterns repo), which stages an `opencode.jsonc` at
+`~/usai-config/` and, at startup, merges it into OpenCode's global config at
+`~/.config/opencode/opencode.jsonc` (the kit no longer sets `OPENCODE_CONFIG`).
+`acq` applies it alongside the `agentic-coding-playbook` and
+`zscaler-ca-certificate` kits. This symptom appears when the sandbox was created
+without `acq` (so the kits were not applied), or with a plain backend `run`
+(e.g. `sbx run` / `msb run`) without the kit refs.
+
+**Upgrading an existing sandbox (pre-kit).** A sandbox created before the kit
+migration has no USAi provider config and no playbook clone. `acq` attempts to
+**heal it in place**: the next time you `acq run` against such a sandbox, it
+detects the missing kit(s) and injects them (on sbx via `sbx kit add`). This
+worked on sbx 0.35.0–0.37.x, where `sbx kit add` recreated the container with the
+augmented kit set while preserving state.
+
+> **sbx 0.38 caveat.** On sbx >= 0.38, `sbx kit add` no longer applies
+> startup-bearing kits mid-life (see [Section 36](#36-re-attach-heal-loop-warns-every-time-on-sbx-038--sbx-kit-add-refuses-startup-bearing-kits)),
+> and every built-in acq kit declares startup commands. In-place healing of the
+> built-in bundle therefore does **not** work on 0.38+: to add or refresh the
+> bundle you must recreate the sandbox (`acq rm && acq run`). acq detects the
+> refusal and prints that guidance.
+>
+> **Historical note.** Earlier releases could *not* auto-heal in place: on
+> `sbx` ≤ 0.34.x, `sbx kit add` failed (`failed to read tar header: unexpected
+> EOF`) on any kit shipping a static file — including the `usai-provider` kit
+> ([docker/sbx-releases#133][sbx133]). `sbx` 0.35.0 fixed this, so `acq` requires
+> `sbx` >= 0.35.0 on the sbx backend and heals unconditionally.
+
+`acq` waits for the sandbox to be ready for exec before probing (right after a
+create or a cold start, exec fails with `inspect exec: context deadline
+exceeded` for a few seconds; `acq` polls until a trivial exec succeeds) so a
+cold-start delay is not misread as "kit absent".
+
+> **Detecting a pre-kit sandbox.** `acq` decides a built-in kit is missing from
+> the **host** `builtin-kits` record (kit name plus the pinned ref applied),
+> written at create and after a successful heal. A guest-side footprint probe
+> (e.g. the USAi config file) can be forged by the sandbox's passwordless-sudo
+> agent, so it is not authoritative: it runs only under `ACQ_DEBUG` as a
+> diagnostic and never changes the heal decision. Where the diagnostic runs it
+> classifies on the probe's **stdout** (`present`/`absent`), never its exit
+> status — `test -f` exits non-zero when the file is absent, which is
+> indistinguishable from a genuine exec failure.
+
+[sbx133]: https://github.com/docker/sbx-releases/issues/133
+
+### Fix
+
+Usually there is nothing to do — re-running `acq run opencode <path>` against
+the sandbox heals it in place (state preserved). If a kit injection fails, `acq`
+prints the exact manual recovery command. You can also run it yourself; remote
+kit sources must be allowlisted first (`acq` does this automatically, but by hand
+on the sbx backend it is):
+
+```bash
+sbx settings set kit.allowedSources '["docker.io/","github.com/GSA-TTS/"]'
+REPO="git+https://github.com/GSA-TTS/agentic-coding-patterns.git"
+DIR="integrations/isolation/acq-kits"
+sbx kit add SANDBOX "${REPO}#ref=<sha>&dir=${DIR}/usai-provider"
+sbx kit add SANDBOX "${REPO}#ref=<sha>&dir=${DIR}/agentic-coding-playbook"
+sbx kit add SANDBOX "${REPO}#ref=<sha>&dir=${DIR}/zscaler-ca-certificate"
+```
+
+As a last resort, recreate the sandbox from scratch (this discards the sandbox's
+session/context):
+
+```bash
+sbx rm --force SANDBOX          # discard the sandbox (irreversible)
+./acq run opencode /path/to/your/project
+```
+
+---
+
+## 20. Authentication Failed After Copying a New Key
+
+### Symptoms
+
+- USAi authentication fails immediately after creating/copying a key
+- Key looks correct but is rejected
+
+### Root Cause
+
+The displayed key value in the console may be truncated when selected by hand, so the stored secret is incomplete.
+
+### Fix
+
+Regenerate the key and use the console **copy button** immediately instead of selecting the displayed text. Then confirm the secret is stored:
+
+```bash
+sbx secret ls -g | grep USAI_API_KEY
+```
+
+If problems persist, see [Section 2](#2-api-key-works-in-ui-but-fails-in-agent) and [Section 3](#3-agent-cannot-see-api-key--usai-authentication-fails). As a last resort, recreate the sandbox (this destroys all sandbox state, including uncommitted work):
+
+```bash
+acq rm <sandbox-name>
+```
+
+---
+
+## 21. SBX Fails to Start with Host Path `chdir` Error
+
+### Symptoms
+
+- `acq run opencode ...` exits after printing an OCI runtime error
+- Error includes: `OCI runtime exec failed: chdir to '/Users/.../your-project': no such file or directory`
+- The agent process may exit before opening an interactive session
+
+### Root Cause
+
+SBX cached sandbox metadata can point at a workspace path that no longer exists or is not mounted inside the container. This is most likely after moving, renaming, or reprovisioning a project, or after reusing an old sandbox with a stale workspace path.
+
+### Fix
+
+Find the stale sandbox and recreate it from the current workspace:
+
+```bash
+sbx ls
+sbx rm <sandbox-name>
+./acq run opencode /path/to/your/project
+```
+
+For this quickstart clone itself, the default sandbox name is derived as
+`<agent>-<clone-folder>` — for `./acq run opencode .` in a clone named
+`agentic-coding-quickstart` that is `opencode-agentic-coding-quickstart`:
+
+```bash
+sbx rm opencode-agentic-coding-quickstart
+./acq run opencode .
+```
+
+If you used an explicit sandbox name, remove that same name and rerun with the same `--name` value:
+
+```bash
+sbx rm my-project
+./acq run --name my-project opencode /path/to/your/project
+```
+
+---
+
+## 22. Signed Commits Show "Unverified" on GitHub
+
+### Symptoms
+
+- Commits made inside a sandbox are signed (`git log --show-signature` looks
+  fine locally) but GitHub shows an **Unverified** badge, or no badge.
+- `acq` printed a note before attaching: *"no repo-local git user.email is set
+  for this project."*
+
+### Root Cause
+
+The `git-ssh-sign` kit signs commits, but GitHub only marks an SSH-signed commit
+**Verified** when **both** are true:
+
+1. the commit's `user.email` is an email **verified on your GitHub account**, and
+2. your **public** signing key is registered on that account **as a Signing
+   Key** (Settings → SSH and GPG keys → New SSH key → Key type: **Signing
+   Key**) — an authentication-only key does not verify commits.
+
+No kit sets `user.email` / `user.name` (identity is user-owned, not something a
+signing mixin should inject). Crucially, the sandbox has its **own home
+directory**, so your host's **global** `~/.gitconfig` identity is **not visible
+inside it** — only the project's **repo-local** identity (stored in the mounted
+workspace) reaches the sandbox. A host global `user.email` alone therefore yields
+signed-but-Unverified commits.
+
+### Fix
+
+Set the identity **repo-local** (inside the project, so the mount carries it into
+the sandbox — a host `--global` value will not):
+
+```bash
+git config user.email you@verified-on-github.example
+git config user.name  "Your Name"
+```
+
+Then register the **public** half of your signing key on GitHub as a **Signing
+Key**, and make a **new** commit — verification applies going forward. `acq`
+checks the project's **repo-local** `user.email` before attaching (the only tier
+the sandbox can see) and warns if it is unset. For signing mechanics and more
+failure modes, see the kit's
+[`TROUBLESHOOTING.md`](https://github.com/GSA-TTS/agentic-coding-patterns/blob/main/integrations/isolation/acq-kits/git-ssh-sign/TROUBLESHOOTING.md).
+
+> The end-to-end verification/identity gap in the kits themselves is tracked
+> upstream in
+> [agentic-coding-patterns#211](https://github.com/GSA-TTS/agentic-coding-patterns/issues/211);
+> the quickstart-side decision (docs + advisory) is recorded in
+> [ADR-0007](adr/0007-commit-verification-identity-guidance.md).
+>
+> **Backend note (`msb`):** the `git-ssh-sign` kit works on **both** the `sbx`
+> and `msb` backends. `sbx` forwards the host ssh-agent into the sandbox
+> implicitly whenever `SSH_AUTH_SOCK` is set. `msb` 0.6.9 shipped `--vsock`
+> (superradcompany/microsandbox#1297), and `acq` now forwards the host ssh-agent
+> into the msb guest **automatically when `SSH_AUTH_SOCK` is set** (via `--vsock`
+> plus an in-guest `socat` bridge, see
+> [ADR-0021](adr/0021-msb-host-ssh-agent-forwarding-via-vsock.md)), so
+> `git-ssh-sign` works on msb at parity with sbx. Verified end-to-end on a
+> macOS/HVF host (2026-08-17) via `scripts/verify-backends` (the guest's forwarded
+> agent exposes a hermetic throwaway key over the `--vsock` + socat path); re-run
+> on the ADR-0011 periodic-validation cadence. The upstream watch-list and
+> follow-on `acq`/kit checklist are tracked in
+> [`GSA-TTS/agentic-coding-quickstart#303`](https://github.com/GSA-TTS/agentic-coding-quickstart/issues/303).
+
+---
+
+## 23. USAi 401 in an Existing Sandbox After Deleting/Recreating the Global Secret
+
+### Symptoms
+
+- A **fresh** sandbox authenticates to USAi fine, but an **existing** sandbox
+  keeps failing with **HTTP 401** from the models API.
+- You recently **deleted the global USAi secret and re-added it** (rather than
+  using `acq usai-rotate-api-key`), and/or you had a stray `USAI_API_KEY`
+  exported in your shell (`.zshrc`/`.bashrc`) that you commented out.
+- `acq run` printed something like:
+
+  ```text
+  The global USAi key works in a fresh sandbox, but 'opencode-workspace' still
+  fails with HTTP 401. This usually means the existing sandbox has a stale
+  USAI_API_KEY placeholder from before rotation.
+
+  Could not read the sandbox's USAI_API_KEY placeholder. Aborting attach.
+  ```
+
+- The `usai-provider` config (`opencode.jsonc`) **is** loaded — OpenCode shows
+  the USAi provider and correct `baseURL` — so this is **not** the pre-kit
+  migration case in [Section 19](#19-opencode-shows-wrong-providers). The config
+  is fine; only the injected credential fails to resolve.
+
+### Root Cause
+
+USAi is injected as a **custom secret** (`sbx secret set-custom`), which is
+**not** covered by sbx's built-in provider proxy automatically — but it is still
+proxied via the placeholder mechanism. sbx bakes a **placeholder token** into
+each sandbox's `USAI_API_KEY` at creation time, and the sbx proxy resolves that
+placeholder to the real global secret value at request time (so the agent's env
+holds the placeholder, not the raw key — see
+[Section 14](#14-sbx-built-in-proxy-doesnt-auto-cover-usais-custom-baseurl-use-set-custom)).
+
+When you **delete and re-add** the global secret (as opposed to rotating it in
+place), sbx mints a **new placeholder**. A newly created sandbox picks up the new
+placeholder, but an **existing** sandbox still carries the **old** placeholder —
+which the proxy can no longer resolve. The proxy then injects an **empty**
+`USAI_API_KEY`, so USAi returns 401. Reading the sandbox's baked-in value can
+even come back **empty**, which is why older versions hit a hard
+`Could not read the sandbox's USAI_API_KEY placeholder. Aborting attach.`
+dead-end here.
+
+> Contrast with `acq usai-rotate-api-key` (`scripts/rotate-apikey`), which
+> **preserves the existing placeholder** across rotation on purpose — so running
+> sandboxes keep resolving. Deleting + re-adding the secret defeats that.
+
+### Fix (automatic)
+
+On attach, `acq run` validates the sandbox's USAi key (`check_key`) and, when it
+is not `200`, prints the rotate steps and offers to **rotate the key in place**
+(`acq usai-rotate-api-key`), then re-validates before attaching. Rotation
+preserves the placeholder, so this resolves the common expired-key case:
+
+```bash
+./acq run opencode /path/to/your/project
+```
+
+> **Note (stale-placeholder recovery).** The deeper two-route recovery for this
+> exact 401-after-delete-and-re-add case — session-preserving recreate, or a
+> non-destructive sandbox-scoped rebind to the current global placeholder — is
+> **not implemented in `acq`** (see [ADR-0008](adr/0008-usai-placeholder-recovery.md)
+> for the design). If an in-place rotate does not clear the 401 (because the
+> stored *placeholder* — not the key value — is stale), use the manual rebind
+> below or recreate the sandbox.
+
+### Fix (manual)
+
+Either recreate the sandbox:
+
+```bash
+sbx rm --force <sandbox-name>
+./acq run opencode /path/to/your/project
+```
+
+…or rebind the existing sandbox to the current global placeholder. First read
+the current placeholder from the global secret list, then bind a sandbox-scoped
+secret to it (sbx prompts for the key value):
+
+```bash
+# The value in the USAI_API_KEY column is the current placeholder:
+sbx secret ls -g | grep USAI_API_KEY
+
+sbx secret set-custom <sandbox-name> --host api.gsa.usai.gov \
+  --env USAI_API_KEY --placeholder <current-placeholder>
+```
+
+> **Do not** bind to the sandbox's *old* placeholder — that is the value that
+> stopped resolving. Always bind to the **current global** one.
+
+### Prevention
+
+- Rotate with `acq usai-rotate-api-key`, which preserves the placeholder so
+  existing sandboxes keep working. Avoid deleting + re-adding the global secret.
+- Remove any `export USAI_API_KEY=...` from your shell profile — the sandbox gets
+  its value from sbx injection, and a host env var only causes confusion.
+
+### Related
+
+- [Section 3 — Agent Cannot See API Key / USAi Authentication Fails](#3-agent-cannot-see-api-key--usai-authentication-fails)
+- [Section 14 — SBX Built-in Proxy Doesn't Auto-Cover USAi's Custom baseURL](#14-sbx-built-in-proxy-doesnt-auto-cover-usais-custom-baseurl-use-set-custom)
+- [Section 20 — Authentication Failed After Copying a New Key](#20-authentication-failed-after-copying-a-new-key)
+- Decision record: [ADR-0008](adr/0008-usai-placeholder-recovery.md)
+
+---
+
+## 24. Pulled/Switched a Branch but acq Still Shows Old Behavior
+
+### Symptoms
+
+- You `git pull` or `git checkout` a branch with a fix, but `acq` still
+  prints wording or behaves in a way that only exists in an **older** version.
+- `git pull origin <branch>` prints **`Already up to date.`** yet nothing changes.
+- You are `cd`'d into a quickstart clone, but the behavior does not match the
+  code you see in that clone's `acq`.
+
+### Root Cause
+
+Two independent traps, often combined:
+
+1. **`git pull origin <branch>` does not switch you to that branch.** `pull` =
+   `fetch` + `merge FETCH_HEAD` into the branch you are **currently on**.
+   `Already up to date` means the *merge* was a no-op — **not** that your working
+   tree now contains the branch. If you never ran `git switch <branch>` /
+   `git checkout <branch>`, your working tree still has the old `acq`.
+
+2. **An `acq` on your `PATH` points at a *different* clone.** If `acq` is
+   invoked by bare name (not `./acq`), the shell resolves it via
+   `PATH`. A symlink in `~/bin` or `/usr/local/bin` may point at a **different
+   clone** than the one you edited/pulled. `acq` follows that symlink to find
+   its own directory, so it runs the *other* clone's code — you update clone A
+   and execute clone B.
+
+A related variant: exporting `QUICKSTART_CLONE` overrides where sibling helper
+scripts are located, which can also make "which clone is in effect" confusing.
+
+### Fix
+
+First, ask acq which file and clone are actually running:
+
+```bash
+acq version
+```
+
+It prints the resolved script path, the clone directory, and that clone's git
+branch@commit (and flags if the tree is dirty or `QUICKSTART_CLONE` is set).
+Compare the branch/commit against what you expect.
+
+Then, depending on which trap you hit:
+
+- **Wrong branch checked out:** switch (don't just pull):
+
+  ```bash
+  git switch fix/your-branch      # or: git checkout fix/your-branch
+  git rev-parse --abbrev-ref HEAD # confirm
+  ```
+
+- **Running a different clone via a PATH symlink:** either run the clone you
+  updated directly, or re-point the symlink:
+
+  ```bash
+  # Run the clone you actually updated:
+  ./acq run opencode <your-project>
+
+  # …or see where the installed one lives and re-point it:
+  readlink -f "$(command -v acq)"
+  ```
+
+When you run `acq run` from inside one quickstart clone while the executing
+`acq` lives in another, acq now prints a startup note pointing this out.
+
+### Prevention
+
+- Use `git switch <branch>` to change branches; treat `Already up to date` as a
+  signal to check `git rev-parse --abbrev-ref HEAD`, not confirmation.
+- Keep a single canonical clone, and make any `acq` on `PATH` a symlink to
+  that clone's `acq`. Run `acq version` when in doubt.
+
+---
+
+## 25. `acq run` Prompts for a GitHub Username/Password During Kit Fetch
+
+### Symptoms
+
+Running `acq run …` prints an interactive prompt and then fails:
+
+```
+Username for 'https://github.com': you@agency.gov
+Password for 'https://you%40agency.gov@github.com':
+kit-translate: failed to fetch git+https://github.com/GSA-TTS/agentic-coding-patterns.git#ref=…&dir=…
+kit-translate:   remote: Invalid username or token. Password authentication is not supported for Git operations.
+```
+
+You may already be authenticated with the `gh` CLI (`gh auth status` is green).
+
+### Root Cause
+
+`gh auth login` authenticates the **`gh` CLI**, not plain **git**. The acq kit
+fetch uses `git` directly. If your machine has a global git credential helper or
+a `url.<x>.insteadOf` rewrite (common in enterprise/egress setups), git tries to
+*authenticate* to the kit source and — failing — drops into an interactive
+prompt (and GitHub disabled git password auth in 2021, so it can't succeed).
+
+### Fix
+
+Wire git to use your `gh` token, once:
+
+```
+gh auth setup-git
+```
+
+If it still prompts, you likely have a rewrite forcing auth on the clone —
+inspect it with:
+
+```
+git config --global --get-regexp 'url\..*insteadOf'
+```
+
+### Prevention
+
+As of #207, acq's kit fetch is **non-interactive**: it sets `GIT_TERMINAL_PROMPT=0`
+and first attempts an anonymous fetch with any inherited credential helper /
+`github.com` `insteadOf` rewrite neutralized (so an unauthenticated fetch
+proceeds without prompting), then retries once with your system git config
+(still prompt-disabled) for sources that require auth (enterprise mirror, etc.).
+It can no longer hang on a
+prompt; a genuine failure now prints this remedy.
+
+### Related
+
+- Issue #207 (non-interactive fetch), #208 (docs + loud fallback).
+
+---
+
+## 27. `500 failed to create network` After a Host Restart (sbx)
+
+> Numbered 27 to avoid colliding with entry 26 (macOS Gatekeeper / `mkfs.erofs`),
+> which is landing in a separate change.
+
+### Symptoms
+
+A sandbox that worked before is refused after a **host reboot/restart**. The
+image pull succeeds ("Already exists" / "Image is up to date"), then sandbox
+creation fails:
+
+```
+Status: Image is up to date for docker/sandbox-templates:opencode-docker
+ERROR: request failed: 500 Internal Server Error: failed to create network
+```
+
+(Sometimes with the daemon detail `Error response from daemon: already exists`.)
+`./acq run …` and a direct `sbx run …` fail identically — `acq` only passes the
+command through to `sbx`.
+
+### Root Cause
+
+This is an **`sbx` daemon-lifecycle bug**, not a Quickstart / `acq` / `msb` issue
+and not a network-policy problem. On an unclean shutdown/reboot, `sbx`'s daemon
+(`sandboxd`) does not tear down a sandbox's network, so a **stale network record
+survives the restart**. On the next `sbx run`, sandboxd tries to (re)create that
+network, hits the leftover entry, and returns `500 … already exists`. The
+successful image pull just before the error is unrelated — the failure is the
+network-create step that follows it.
+
+Tracked upstream (already open — no new report needed):
+
+- [docker/sbx-releases#181](https://github.com/docker/sbx-releases/issues/181) —
+  `500 failed to create network: … already exists`.
+- [docker/sbx-releases#353](https://github.com/docker/sbx-releases/issues/353) —
+  sandboxd crash during dead-VM cleanup orphans a sandbox; the only documented
+  recovery is a full `sbx reset`.
+
+### Fix
+
+Recover least-destructive first:
+
+1. **List and clear the stale sandbox.** See what `sbx` still thinks exists, then
+   remove the orphaned one and retry:
+
+   ```bash
+   sbx ls
+   sbx rm <name> --force      # <name> from the list; stop it first if running
+   ./acq run opencode <path>
+   ```
+
+   (If `sbx rm --force` reports "not found" but the name is still claimed, that is
+   [docker/sbx-releases#129](https://github.com/docker/sbx-releases/issues/129) —
+   go to step 2.)
+
+2. **Full reset, preserving secrets** — the recovery the upstream issues cite.
+   This clears stale daemon/network state but keeps your USAi/GitHub secrets so
+   you do not redo secret setup:
+
+   ```bash
+   sbx reset --preserve-secrets
+   ```
+
+   After a reset you may need to re-apply the network policy before running:
+
+   ```bash
+   sbx policy init balanced
+   sbx policy allow network "api.gsa.usai.gov"
+   ./acq run opencode <path>
+   ```
+
+### Prevention / Status
+
+- This is an upstream `sbx` daemon-shutdown bug; we cannot fix it in this repo.
+  Follow [docker/sbx-releases#181](https://github.com/docker/sbx-releases/issues/181)
+  / [#353](https://github.com/docker/sbx-releases/issues/353) for the daemon-side
+  fix.
+- Until then, `sbx reset --preserve-secrets` is the reliable recovery after a
+  restart leaves a sandbox unusable. (`--preserve-secrets` avoids re-running the
+  Step 3 secret setup.)
+
+---
+
+## 28. msb May Auto-Run a `--script-path`-Registered Script at Boot (Re-Verify on Version Bump)
+
+### Symptoms
+
+Not a bug you hit today — a **latent** failure to watch for after a microsandbox
+(`msb`) version bump. If a future msb release starts auto-executing a registered
+`--script-path` script at guest boot, kit `startup` commands could run **twice**
+on a resume: once from microsandbox's own boot replay, and again from acq's
+`start`/`restart` heal (which re-runs the startup phase via `msb exec`).
+
+### Root Cause
+
+The acq msb adapter stages kit `startup` commands as a create-time script
+registered with `--script-path acq-startup:<hostfile>` (ADR-0017). This is only
+safe/runtime-neutral because, on the pinned msb version, a bare `--script-path`
+registration merely places the script on the guest PATH
+(`/.msb/scripts/acq-startup`) — microsandbox does **not** auto-run it at boot.
+Boot replay is driven only by a persisted `LaunchConfig.startup`
+(`runtime.entrypoint`/`runtime.cmd`), which acq never populates. This was
+confirmed against microsandbox source (`crates/cli/lib/commands/start.rs`,
+`restart.rs`, `Sandbox::start_detached()`).
+
+This is a **load-bearing, unverifiable-from-this-repo assumption**: it depends on
+microsandbox internals that could change in a future release.
+
+### Prevention / Re-Verification
+
+On each msb version bump (part of the quarterly re-verification cadence), confirm
+`--script-path` boot-inertness still holds:
+
+```bash
+# Create a sandbox with a sentinel startup command staged via --script-path,
+# then stop + start it WITHOUT going through acq, and check the sentinel ran
+# 0 times (inert) rather than 1 (auto-run at boot):
+msb create --name inert-probe --script-path acq-startup:/path/to/sentinel.sh <image>
+msb stop inert-probe && msb start inert-probe
+# inspect: the sentinel's side effect must NOT have fired on the bare start
+msb rm inert-probe
+```
+
+If a future msb **does** auto-run the registered script at boot, the adapter must
+stop double-running startup — e.g. drop the acq `start`/`restart` heal's
+startup re-run for msb, or stop staging the script. See the "VERIFIED NEUTRALITY
+ASSUMPTION" note in `_acq_msb_stage_startup_script` (`acq.backends/msb.sh`).
+
+### Related
+
+- ADR-0017 (msb create-time startup-script staging).
+
+---
+
+## 29. `opencode-ai's postinstall script was not run` on a Fresh sbx Sandbox
+
+### Symptoms
+
+A newly created **sbx** `opencode` sandbox fails at launch (the image pull
+succeeds, then the agent exits 1):
+
+```
+Error: opencode-ai's postinstall script was not run.
+
+This occurs when using --ignore-scripts during installation, or when using a
+package manager like pnpm that does not run postinstall scripts by default.
+
+To fix this, run the postinstall script manually:
+  cd node_modules/opencode-ai && node postinstall.mjs
+```
+
+Often appears right after a fresh image pull. Seen with `opencode-ai@1.18.12` on
+macOS/Apple Silicon, sbx v0.37.1.
+
+### Root Cause
+
+This is in the **Docker `sandbox-templates:opencode-docker` image**, not in
+`acq`, the quickstart, or your local setup. On the **sbx** backend opencode is
+baked into that image (acq does not install it — that only happens on the msb
+backend). Since opencode v1.15.1, the `opencode-ai` npm package needs its
+**postinstall** step to fetch the actual platform binary. The image appears to
+install `opencode-ai` at **build time** with lifecycle scripts skipped (e.g.
+`npm ci --ignore-scripts`, or pnpm/bun which skip postinstall by default), so the
+binary is missing in the shipped image and opencode's guard fires on first run.
+
+Evidence it is a build-time script-skip, not your environment (run inside the
+sandbox): `npm config get ignore-scripts` returns `false` (so nothing is
+disabling scripts at runtime), yet `npm ls -g opencode-ai` shows the package
+present without a working binary — the postinstall simply never ran when the
+image was built.
+
+Not a supply-chain compromise and not related to the recent quickstart changes;
+a fresh image pull just fetched a newer opencode build with this gap.
+
+### Fix
+
+**As of the current `acq`, `acq run opencode <path>` remediates this
+automatically:** before attaching an opencode agent, acq probes
+`opencode --version` in the sandbox and, if the binary is not functional, runs
+the package's `postinstall.mjs` (on either backend), then attaches. So the
+normal flow should now just work; if it still fails, apply the manual fix below.
+
+Apply the manual fix with **`sbx exec`**, not `sbx run`. `sbx run` (the raw
+backend command, without acq's remediation) **launches opencode**, which
+re-hits the missing-binary guard and exits before you can do anything. `sbx
+exec` runs a command in the sandbox **without launching the agent**, so it works
+even when a raw `run` fails.
+
+```bash
+# 1. Find the sandbox that was created (its name, e.g. opencode-<project>):
+sbx ls
+
+# 2. Run opencode's postinstall inside it via sbx exec (no agent launch):
+sbx exec <sandbox-name> -- sh -c 'cd "$(npm root -g)/opencode-ai" && node postinstall.mjs'
+sbx exec <sandbox-name> -- opencode --version   # confirm the binary now runs
+
+# 3. Now attach normally:
+./acq run opencode <path>          # or: sbx run <sandbox-name>
+```
+
+If `sbx exec` reports the sandbox is not running, start it first
+(`sbx start <sandbox-name>`) then re-run the exec.
+
+> Note: a raw `sbx run <sandbox-name>` (bypassing acq) just re-triggers the
+> error. Prefer `acq run`, which remediates automatically; the `sbx exec` path
+> above is the manual fallback if remediation ever fails.
+
+### Prevention / Status
+
+- `acq run opencode` now runs the postinstall automatically before attach (both
+  backends), so the common case is handled without user action.
+- The underlying image gap is built and shipped by Docker; we cannot fix it in
+  this repo. An upstream report has been filed:
+  [docker/sbx-releases#395](https://github.com/docker/sbx-releases/issues/395).
+  Related upstream: [anomalyco/opencode#27906](https://github.com/anomalyco/opencode/issues/27906)
+  (opencode requires postinstall to fetch its binary since v1.15.1).
+- If acq's automatic remediation ever fails, the manual `node postinstall.mjs`
+  above is the reliable per-sandbox workaround.
+- The **msb** backend now gets opencode from the selected agent kit or base image,
+  not from an adapter-owned `npm install -g` fallback.
+
+---
+
+---
+
+## 30. Sandbox can't reach USAi / GitHub / npm — three signatures, three fixes
+
+### Symptoms
+
+Early in `acq run`, an outbound request from inside the sandbox fails and (before
+this was disambiguated) acq could mis-report it as an expired key and prompt to
+rotate:
+
+```
+agentic-coding-playbook: fetch of GSA-TTS/agentic-coding-playbook@… tarball failed
+  curl: (56) OpenSSL SSL_read: … unexpected eof while reading, errno 0
+
+Your USAi API key looks invalid or expired (HTTP …000 from the models API).
+```
+
+Rotating the key never helps here — the failure is in the network path, not the
+key. But "the sandbox can't reach the network" is not one problem: three distinct
+failures share overlapping symptoms and need **different** remedies. Identify
+which one you have before acting.
+
+### Triage — which signature is it?
+
+| Signature (from inside the guest) | Cause | Fix |
+|---|---|---|
+| **Broad** `curl (56) unexpected eof` / HTTP `000` on **multiple** hosts at once (USAi *and* GitHub *and* npm) | Corrupted / stale **msb state** (not a clean-install behavior) | **Wipe msb data + reinstall, then `msb doctor`** (below) |
+| **USAi only** fails with `NXDOMAIN` / `curl rc=6` (or a WAF-gated API such as GitLab's `/api/v4/*` returns `403` from `awselb/2.0`), while GitHub + npm work fine | **Split-horizon DNS** — the host resolves the name to a private tunnel address (`100.64.x` on ZPA); a public resolver returns the public endpoint, which the WAF rejects, and msb's rebind protection drops the private answer | Let the guest follow the host's resolvers with rebind protection off, which acq does automatically on a host whose resolvers are in `100.64/10`: unset `ACQ_MSB_DNS_NAMESERVER` and `ACQ_MSB_DNS_REBIND_PROTECTION`, or set the latter to `0` if the sandbox was created while the tunnel was down (below) |
+| A **genuinely intercepted** endpoint fails its TLS handshake behind a corporate proxy that terminates it | The proxy's **root CA** isn't trusted on msb's upstream (proxy→server) leg | acq passes it via `--tls-upstream-ca-cert` (defense-in-depth; below) |
+
+Probe from inside the sandbox to read the signature — the curl exit code is the
+discriminator (`6` = didn't resolve; `35`/`56` or `000` = resolved but the
+connection was cut):
+
+```bash
+# msb
+msb exec <sandbox> -- curl -sS -o /dev/null -w '%{http_code}\n' -v https://api.gsa.usai.gov/api/v1/models
+msb exec <sandbox> -- curl -sS -o /dev/null -w '%{http_code}\n' -v https://api.github.com
+# sbx
+sbx exec <sandbox> -- curl -sS -o /dev/null -w '%{http_code}\n' -v https://api.gsa.usai.gov/api/v1/models
+```
+
+For a deeper host-side characterization (interception vs egress path, DNS,
+host-vs-host comparison), run the bundled read-only probes:
+
+```bash
+./scripts/diagnose-tls-intercept        # classify interception / cert-trust / egress path
+./scripts/diagnose-host-egress-diff      # compare a failing host to a working one
+```
+
+### Signature 1 — broad `unexpected eof` on multiple hosts (stale msb state)
+
+Observed in the field on a Zscaler-enrolled macOS host: **every** outbound HTTPS
+call from the guest failed at once with `curl (56) unexpected eof`. It did **not**
+reproduce on a clean install — a machine with the same Zscaler configuration
+worked fine — and it was cleared by a **full msb data wipe + reinstall**. The
+matching upstream report ([superradcompany/microsandbox#1344](https://github.com/superradcompany/microsandbox/issues/1344))
+was **closed as non-reproducible**: something in the local msb state was corrupt,
+not a defect in a clean msb.
+
+**Fix:** wipe msb's data/state and reinstall, then confirm host readiness:
+
+```bash
+# Reinstall msb (removes and re-lays its runtime state).
+# Do NOT use `curl -fsSL https://install.microsandbox.dev | sh` here: it always
+# resolves to the newest release, which may be a version acq refuses (§43).
+brew install GSA-TTS/tap/microsandbox-acq   # Homebrew hosts
+./scripts/verify-msb-pin --install          # verified pinned release bundle
+
+# Verify host virtualization + runtime prerequisites; --fix applies supported setup
+msb doctor
+msb doctor --fix
+```
+
+If a broad `unexpected eof` **recurs on a clean install**, that would be new
+evidence of an msb bug — capture the `diagnose-*` output and reopen
+[superradcompany/microsandbox#1344](https://github.com/superradcompany/microsandbox/issues/1344).
+
+### Signature 2 — split-horizon DNS (USAi NXDOMAIN, GitLab API 403)
+
+On a GFE/Zscaler host, GitHub and npm resolve and return `200` from the guest,
+but `api.gsa.usai.gov` fails to **resolve** (`curl rc=6`), or a WAF-gated API
+behind the same tunnel (GitLab's `/api/v4/*`) answers `403` from `awselb/2.0`
+while its git endpoints work. Both are the same mechanism. The host's Zscaler
+resolvers answer these names with **private ZPA addresses** (`100.64.x`) that
+ride the tunnel's allow-listed path; a public resolver answers the public load
+balancer, which the WAF rejects. And even with the host resolver, msb's DNS
+rebind protection drops private-range answers, so the name resolves to nothing.
+
+acq's defaults handle this: the guest follows the host's resolvers (no
+`--dns-nameserver`), and when a host resolver is in `100.64/10` (the ZPA
+signature) msb is created with `--no-dns-rebind-protection`, with a one-line
+notice on stderr. If you see this signature, check that neither knob is
+overriding the defaults, and that the sandbox was not created while the tunnel
+was down (detection then sees no `100.64/10` resolver and keeps the protection):
+
+```bash
+unset ACQ_MSB_DNS_NAMESERVER            # a forced public resolver reintroduces the 403/NXDOMAIN
+unset ACQ_MSB_DNS_REBIND_PROTECTION     # =1 drops the private tunnel answers
+ACQ_MSB_DNS_REBIND_PROTECTION=0 acq …   # recreate: force it off if detection missed
+```
+
+The setting is applied at create time; recreate the sandbox after changing it.
+Keeping rebind protection on is a deliberate trade: it stops a kit-allowed
+domain from being resolved into private space by an attacker-influenced DNS
+answer, and it also stops every tunnel-only host from resolving at all. See the
+DNS section of `docs/BACKEND_GUIDE.md` for the detection rule and the
+mitigations that remain with it off.
+
+Verified on msb 0.6.16: from the guest, `gitlab.login.gov` resolves to its ZPA
+address, `/api/v4/user` with the bound token returns `200`, and the USAi models
+endpoint returns `401` (reachable) instead of failing to resolve. The guest's
+public egress IP is unchanged (still the Zscaler cloud). Earlier text here
+reported the internal resolver as unreachable from the guest; that predates
+msb's host-side network stack and no longer applies.
+
+`acq` reports this distinctly ("did not RESOLVE … likely a split-horizon name")
+rather than as a generic network cut or a bad key.
+
+### Signature 3 — genuine TLS interception (upstream CA trust, defense-in-depth)
+
+When a corporate proxy (Zscaler, Netskope, …) **genuinely terminates** an
+endpoint, acq's `--tls-intercept` (which msb needs to substitute injected secrets
+on the wire) makes msb's host-side proxy re-originate an *upstream* TLS connection
+to that proxy — which presents a corporate-signed leaf. That upstream leg must
+trust the **corporate root**. `--trust-host-cas` does not help (it only ships CAs
+into the guest, not into the proxy's upstream verifier), and msb's native-cert
+loader surfaces enterprise roots unevenly on macOS. When the root isn't surfaced,
+the upstream handshake fails *after* the guest-facing TLS completed and the guest
+sees `unexpected eof`.
+
+acq passes the host's root CAs to that upstream verifier via
+`--tls-upstream-ca-cert` whenever interception is on, so a genuinely-terminated
+endpoint verifies even when native-cert loading would miss the root. Controls:
+
+- `ACQ_MSB_UPSTREAM_CA_CERT=/path/to/root.pem` — trust an explicit PEM
+  (colon- or space-separated for several). Highest precedence; use it on
+  non-macOS hosts or when you already have the root on disk.
+- `ACQ_MSB_UPSTREAM_CA_AUTODETECT=0` — disable the macOS auto-export of the host
+  search-list roots (on by default).
+- `ACQ_MSB_NO_UPSTREAM_CA=1` — reproduction/testing only: withhold the upstream CA
+  even when available.
+
+This is **defense-in-depth for the interception case only** — it does not address
+Signature 1 (stale state) or Signature 2 (split-horizon DNS).
+
+### Prevention / Status
+
+- `acq` classifies an in-guest curl result and reports the matching diagnosis:
+  `unresolved` (DNS/split-horizon) vs `unreachable` (connection cut) vs a real
+  HTTP status — never "invalid or expired" for a network failure, and it does not
+  prompt to rotate a good key. It fails closed (aborts the run) rather than attach
+  a session that cannot reach USAi.
+- The in-guest `npm install` failure message is likewise disambiguated: it
+  distinguishes a genuinely-missing npm from an unreachable / unresolvable
+  registry, so a network cut is not misread as "node isn't installed."
+- The built-in kits are ordered so `zscaler-ca-certificate` is applied first, so
+  guest-side CA trust is established before the other kits make network requests
+  (this matters on the sbx backend, whose kits apply sequentially).
+- Making the sandbox's outbound TLS traverse a corporate proxy, and giving the
+  guest a resolver that can see internal zones, are host/network-configuration
+  matters — resolve them with your network/endpoint administrators where acq's
+  tunables don't cover your environment.
+
+---
+
+## 26. macOS Gatekeeper Blocks `mkfs.erofs` at `sbx policy init` (PATH shadowing)
+
+### Symptoms
+
+On macOS (seen on **Tahoe / macOS 26**, Apple Silicon), `sbx policy init balanced`
+— the first command that builds a sandbox filesystem — fails when macOS blocks a
+helper binary:
+
+```
+"mkfs.erofs" cannot be opened because the developer cannot be verified.
+macOS cannot verify that this app is free from malware.
+```
+
+`xattr -d com.apple.quarantine /opt/homebrew/bin/mkfs.erofs` does **not** clear
+it — even run with `sudo`. It only happens on machines that also have Homebrew
+`erofs-utils` installed; users without it never see the block.
+
+### Root Cause
+
+This is an **`sbx` PATH-resolution bug**, **not** a Quickstart / `acq` / `msb`
+issue, and **not** a supply-chain compromise. sbx ships its own **notarized**
+`mkfs.erofs`, but invokes it via `$PATH`, so a Homebrew `erofs-utils` shadows the
+bundled copy:
+
+- sbx v0.37.1 bundles a notarized `mkfs.erofs` at
+  `/opt/homebrew/Caskroom/sbx/<version>/libexec/mkfs.erofs`
+  (`spctl` → *accepted*; Developer ID: **Docker Inc (9BNSXJN65R)**).
+- If Homebrew `erofs-utils` is also installed, `/opt/homebrew/bin/mkfs.erofs`
+  (a symlink into `Cellar/erofs-utils/…`) is earlier on `$PATH`. That binary is
+  **ad-hoc-signed / not notarized** (`spctl` → *rejected*, `Signature=adhoc`,
+  no TeamIdentifier).
+- sbx resolves `mkfs.erofs` from `$PATH`, picks up the unnotarized Homebrew
+  binary instead of its own, and macOS Gatekeeper rejects it.
+- There is **no `com.apple.quarantine` xattr** on the rejected binary — the block
+  is the code-signing / AMFI (`syspolicyd`) assessment, which is why removing the
+  xattr does nothing.
+
+The `erofs-utils` Homebrew formula itself is fine (kernel.org source,
+SHA256-pinned bottles). The problem is purely that sbx's PATH lookup picks the
+unnotarized system copy over its own notarized bundled one.
+
+### Fix
+
+Make sbx use its own notarized binary — remove the shadowing Homebrew copy from
+PATH:
+
+```bash
+brew uninstall erofs-utils    # if nothing else needs it; sbx then uses its bundled, notarized mkfs.erofs
+```
+
+If you cannot remove it, approve the Homebrew binary via **System Settings →
+Privacy & Security → "Allow Anyway"**, then re-run the command and click **"Open"**
+on the pop-up. Do **not** rely on `xattr -d com.apple.quarantine` — it does not
+satisfy the code-signing gate on an unnotarized binary.
+
+### Prevention / Status
+
+- The durable fix is upstream in `sbx`: invoke the bundled
+  `libexec/mkfs.erofs` by absolute path rather than resolving `mkfs.erofs` from
+  `$PATH`. The bundled binary is already notarized, so no notarization change is
+  needed. Tracked at
+  [docker/sbx-releases#392](https://github.com/docker/sbx-releases/issues/392).
+- Until sbx pins the path, `brew uninstall erofs-utils` (or the "Allow Anyway"
+  fallback) unblocks affected machines.
+
+---
+
+## 31. msb Balanced-Egress Host List Drifts from the sbx `balanced` Policy
+
+### Symptoms
+
+On the **msb** backend a host that works on sbx (which uses the `balanced`
+policy) is refused from inside the sandbox — a `curl`/package-manager fetch fails
+to connect, or an install that succeeds on sbx times out on msb. Conversely, the
+msb host list may reference hosts sbx `balanced` has since removed.
+
+### Root Cause
+
+The msb backend mirrors the sbx `balanced` egress set from a **vendored,
+point-in-time snapshot** at `acq.backends/msb-balanced-hosts.txt` (see ADR-0018).
+sbx generates its `balanced` policy in the daemon; that list is **not** stored in
+this repo, so when sbx updates `balanced`, the vendored mirror goes stale until a
+human re-syncs it. (This is a deliberate tradeoff — the alternative, shelling out
+to `sbx policy inspect` at msb-create time, requires sbx installed on an msb-only
+host and couples the backends.)
+
+### Fix / Re-sync
+
+Re-sync the vendored file from a machine that has sbx with the `balanced` policy:
+
+```bash
+# 1. Inspect the active sbx policy and copy the network `allow` host:port rows.
+sbx policy inspect local-policy
+
+# 2. Diff them against the vendored mirror (network rows only; NOT the
+#    filesystem:read/write rows).
+$EDITOR acq.backends/msb-balanced-hosts.txt
+```
+
+Copy each `allow … network` `host:port` row verbatim into the matching group in
+the file (do **not** pre-translate wildcards or ports — the msb adapter's
+`_acq_msb_balanced_rules_into` does that). Commit the diff. The offline test
+suite (`scripts/test-acq-bats`) re-parses the real file and fails if any line is
+malformed, so run it after editing.
+
+As a stopgap for a single missing host, either add it to a site-specific list and
+point `ACQ_MSB_BALANCED_HOSTS_FILE` at it, or (for a one-off) create with an extra
+`--net-rule allow@<host>:tcp:443`.
+
+### Prevention / Status
+
+- Re-verify on the **quarterly review cadence** (per `AGENTS.md` periodic
+  re-verification): re-run `sbx policy inspect local-policy` and diff the network
+  rows against `acq.backends/msb-balanced-hosts.txt`.
+- A future option (ADR-0018 "Alternatives considered") is to move the list into a
+  shared neutral kit consumed by both backends, removing the manual re-sync.
+
+---
+
+## 32. msb `create`/`run` Fails: `the dns target supports tcp, udp, or any, not dns`
+
+> **Status: RESOLVED for supported versions.** microsandbox **0.6.9** shipped the
+> upstream release-build parser fix for the `allow@dns` macro, and acq now
+> requires **msb >= 0.6.9** (`MIN_MSB_VERSION` in `acq.backends/msb.sh`). The msb
+> adapter emits the native `allow@dns` macro for the gateway-DNS grant again; the
+> expanded `allow@host:udp:53` + `allow@host:tcp:53` workaround has been removed.
+> Because the floor fails closed on anything older than 0.6.9, a supported acq
+> install can no longer hit this failure. The reproduction and root-cause history
+> below is retained for context.
+
+### Symptoms (historical, msb <= 0.6.8)
+
+On the **msb** backend, `acq run`/`acq create` (or a raw `msb create`/`msb run`)
+aborts during "Creating sandbox …" with:
+
+```
+error: the `dns` target supports `tcp`, `udp`, or `any`, not `dns`
+acq(msb): error: 'msb create' failed for '<sandbox>'.
+```
+
+Reproduces with the minimal case on a released msb (confirmed on msb 0.6.8):
+
+```bash
+msb run --net-default deny --net-rule "allow@dns" alpine -- true
+```
+
+### Root Cause (historical, msb 0.6.7–0.6.8)
+
+An **upstream msb bug** in the `--net-rule` parser, not an acq misconfiguration.
+msb's semantic `allow@dns` macro was parsed by advancing past the `dns` target
+token inside a `debug_assert_eq!(parts.next(), Some("dns"))`. `debug_assert!` is
+compiled **out** of a release binary, so in the shipped `msb` the iterator was
+never advanced past `dns`; the same `dns` token was then read as the **protocol**
+field, which only accepts `tcp`/`udp`/`any` — hence the error. A bare
+`allow@dns` therefore hard-failed on release builds **from 0.6.7 through 0.6.8**
+(fixed in 0.6.9; see Fix below), even though the macro was documented as valid.
+
+The balanced-egress baseline (ADR-0018) needs a gateway-DNS grant under
+`--net-default deny`, and originally emitted `allow@dns`, tripping this bug on
+pre-0.6.9 release builds.
+
+### Fix
+
+microsandbox **0.6.9** fixed the parser: the target-iterator advance was moved
+OUT of the `debug_assert_eq!`, so it now runs on release binaries too and a bare
+`allow@dns` parses correctly. acq raised `MIN_MSB_VERSION` to **0.6.9** and
+collapsed the former expanded workaround back to the native macro:
+
+```
+--net-rule allow@dns
+```
+
+This is emitted in `_acq_msb_balanced_rules_into` (and the strict-tier path) in
+`acq.backends/msb.sh`. The earlier workaround emitted the expanded equivalent
+(`--net-rule allow@host:udp:53 --net-rule allow@host:tcp:53`) so that pre-0.6.9
+release builds could still resolve DNS under a deny-default; that is no longer
+needed now that the floor guarantees a fixed parser. If you script raw `msb`
+calls against a 0.6.9+ binary, `allow@dns` is safe to use directly.
+
+### Prevention / Status
+
+- **Resolved.** The version floor (`MIN_MSB_VERSION=0.6.9`) fails closed on any
+  older binary before a create is attempted, so acq cannot reach this failure on
+  a supported install. If a future regression is suspected, re-run the minimal
+  `msb run … --net-rule "allow@dns"` case above on the quarterly review cadence to
+  confirm the macro still parses.
+
+---
+
+## 32.1. An Existing msb Sandbox Opens a Shell or `/home/agent` After Upgrading acq
+
+### Symptoms
+
+After upgrading acq, a name-only `acq run <sandbox>` against an existing msb
+sandbox opens a plain shell instead of its configured agent, or starts in
+`/home/agent` rather than the mounted workspace. The first resume may also
+re-run idempotent kit install and agent-user setup steps.
+
+### Root Cause
+
+ADR-0035 moves session configuration and run-once gates from guest-writable
+`/var/lib/acq` markers to the host-authoritative config store. Sandboxes created
+before that migration have no host-config keys. acq must not import their old
+guest markers because a passwordless-sudo agent can forge those values.
+
+### Fix
+
+Current acq releases recover the agent and workspace from their existing trusted
+host provenance record when the new host-config keys are absent. The regular
+`acq run`, `acq start`, and `acq restart` heal also reapplies the effective kit
+set, rebuilding kit environment entries and safely re-running missing
+idempotency gates once. SSH-agent forwarding is re-established during the same
+heal when configured.
+
+If the provenance record is missing or the replay fails, recreate the sandbox
+from its workspace:
+
+```bash
+acq rm <sandbox>
+acq run <agent> <workspace>
+```
+
+### Edge cases for a sandbox created before the migration
+
+acq reads none of the old guest markers (`/var/lib/acq/*`, `~/.acq-extra-kits`),
+so there is no data migration. Each missing host-config key degrades as follows
+(derived from `acq.backends/msb.sh` and `acq.backends/sbx.sh`; the offline tests
+named below pin the behavior, and none of it was re-verified against a live
+sandbox):
+
+| Backend | Missing host state | Observed behavior | Recovery |
+| --- | --- | --- | --- |
+| msb | `ssh-auth-sock` | No fallback. `SSH_AUTH_SOCK` is not set in sessions until a heal writes the key. `acq run`, `acq start`, and `acq restart` heal it only when a host ssh-agent forward is requested (`SSH_AUTH_SOCK` names an existing socket) **and** the sandbox has the create-time ssh-agent `--vsock` route. Without a host forward the heal is a silent no-op; with a forward but no route acq warns and leaves it unset. `acq exec` and `acq shell` run no heal, so they stay without it until a heal has run. | Run `acq run <sandbox>` with `SSH_AUTH_SOCK` set. With no route, recreate (see KFM §35). |
+| msb | `install-<cksum>` | Each install-phase kit command runs once more on the first heal, then the host gate is written. A command that fails is not recorded and is retried on every heal. The gate records only that the guest reported a zero exit, so it is a run-once cache, not proof the step worked: `ACQ_FORCE_KIT_REAPPLY=1` (set by `acq kit update` and the stale-bundle refresh) bypasses it and re-runs install commands. acq does not check that third-party install commands are idempotent. | None needed for kits written to be idempotent. To force a re-run on a sandbox whose bundle is stale, `acq kit update <sandbox>`; otherwise `ACQ_FORCE_KIT_REAPPLY=1 acq run <sandbox>`, or `acq rm` and recreate. |
+| msb | `agent-user-ready` | No longer used. The agent-user and passwordless-sudo setup is idempotent and runs on every provision and heal instead of being skipped on a recorded gate, because a gate could only record a guest-reported exit. An existing `agent` user is reused. Sandboxes carrying an old `agent-user-ready` key are unaffected (it is ignored). | None needed. |
+| msb | `kit-env` | `acq exec`, `acq shell`, and attach replay no kit `environment[]` until a full heal rebuilds the key from the current kits. | Run `acq run <sandbox>` once. |
+| sbx | `generic-opencode` launch mode, agent recorded as `opencode` | Attach fails closed with `cannot determine OpenCode launch mode` and runs no `sbx run`. acq cannot tell a pre-ADR-0030 template sandbox from a generic one whose host state was lost, and it does not trust a guest value. Other agents are not affected. | `acq rm <sandbox>` then `acq run opencode <workspace>`. |
+| sbx | `builtin-kits` | A sandbox created before the record has none. On sbx 0.38 or later the first re-attach tries to re-apply the three heal-consulted built-ins (Zscaler CA, USAi provider, playbook); `sbx kit add` refuses startup-bearing kits, so acq prints the recreate notice on every attach until the sandbox is recreated. | Recreate to get the record (and the current bundle). |
+| sbx | `extra-kits` (replaces the guest `~/.acq-extra-kits`) | The old marker is ignored. With `ACQ_EXTRA_KITS` set, the first heal tries `sbx kit add` for each extra kit. On sbx 0.38 or later a startup-bearing kit is refused and acq prints the recreate notice. `--kit` refs are create-time only on sbx and are not re-driven. | Recreate if the notice appears. |
+
+Orphaned guest files under `/var/lib/acq/` stay in the guest. acq never reads
+them, so they are harmless.
+
+Offline coverage: `test/bats/82-msb-legacy-sandbox.bats` (msb `ssh-auth-sock`,
+`install-<cksum>`, and `agent-user-ready` rows), `test/bats/72-msb-agent-user.bats` (provenance fallback),
+`test/bats/115-ssh-agent-forward.bats` (heal re-drives the forward), and
+`test/bats/140-opencode-migration-gate.bats` (sbx launch-mode refusal), and
+`test/bats/90-sbx-startup-kit.bats` (sbx `builtin-kits` record, refusal, and
+recreate notice).
+
+### Prevention / Status
+
+- Fixed without trusting legacy guest state. A one-time idempotent replay after
+  upgrade is expected for a sandbox that predates the host-config migration.
+- Keep work in the mounted workspace committed or backed up before recreating a
+  sandbox; recreation discards guest-local state.
+
+---
+
+## 33. `--kit` Services Dead After a Resume/Reboot on msb — Ports Mapped, Nothing Listening
+
+### Symptoms
+
+On the **msb** backend, after a host reboot (or any `acq stop`/`acq start`,
+`acq restart`, or `acq run <existing-sandbox>` that resumes a stopped sandbox),
+a sandbox created with an extra CLI kit — e.g.
+`acq run opencode --kit …/acq-kits/openchamber …` — comes back with the kit's
+published ports still mapped, but **nothing answering behind them**:
+
+```
+$ acq ports opencode-agentic-coding
+sandbox 3000 -> host 127.0.0.1:3000 (create-time -p)
+sandbox 4096 -> host 127.0.0.1:4096 (create-time -p)
+
+$ opencode attach http://127.0.0.1:4096
+Error: Unable to connect. Is the computer able to access the url?
+```
+
+An `acq exec <sandbox> -- ps -ef` shows **no `opencode serve`, no `openchamber`,
+and — the tell — no `supervisor:` respawn loops** at all. This is distinct from a
+startup *race* (§ the wrapper's "shared server not answering yet on :4096"),
+where the supervisor processes ARE present and merely still warming up: here the
+supervisors were never (re-)launched, so the ports forward into a guest with the
+kit's services entirely absent.
+
+### Root Cause
+
+A kit's `startup`-phase commands (which, for the openchamber kit, launch the
+supervised shared `opencode serve` on :4096 and the OpenChamber UI on :3000; for
+the paseo kit, the daemon supervisor on :6767) are re-run on a resume **only** by
+acq's heal (`acq_backend_ensure_kits_applied`) — `msb start` alone does not replay
+them (ADR-0017). Two compounding gaps kept those services dead on resume:
+
+1. **The heal skipped CLI `--kit` kits.** It re-applied only the built-in kits and
+   any `ACQ_EXTRA_KITS`; it did not fold in kits supplied on the command line via
+   `--kit` (`ACQ_CLI_KITS`). Fixed by appending `ACQ_CLI_KITS` to the heal's kit
+   list — but that only helps when the array is populated.
+
+2. **The `--kit`/extra refs were never persisted.** `ACQ_CLI_KITS` is populated by
+   `extract_kit_flags` in the `run`/`create` dispatch arm only, and
+   `ACQ_EXTRA_KITS` is a bare environment variable. A later `acq start` /
+   `acq restart` (or a name-only `acq run <sandbox>`) does not re-parse `--kit` and
+   may run in a shell that never exported `ACQ_EXTRA_KITS`, so the heal ran with an
+   **empty** CLI/extra set and re-ran only the built-ins' startup. The provision
+   path *does* fold `--kit` in, so the create-time `-p` port mappings are part of
+   the persisted sandbox config and are restored by msb on start — but the heal
+   skipped the kit whose `startup` phase brings the services up. Result: ports
+   restored, services not — exactly the "mapped but dead" state above.
+
+### Fix
+
+Both gaps are closed:
+
+- `acq_backend_ensure_kits_applied` (msb) appends `ACQ_CLI_KITS` to the heal's kit
+  list, matching how `acq_backend_provision` assembles the kit set.
+- acq now **persists** the CLI (`--kit`) and `ACQ_EXTRA_KITS` refs host-side at
+  provision (a small `*.kits` record beside the bundle-provenance record, keyed by
+  backend + sandbox name) and **reloads** them in the `acq start` / `acq restart`
+  verbs and on a name-only `acq run <sandbox>` re-attach, *before* the heal. So a
+  `msb stop` + `acq start` cycle now re-runs a `--kit` kit's startup automatically
+  — **you no longer have to re-pass `--kit`.** The record's presence is
+  authoritative: a sandbox created with no CLI/extra kits reloads nothing, and a
+  legacy sandbox with no record behaves exactly as before (reload is a no-op).
+
+To recover a **legacy** sandbox (created before this fix, so it has no persisted
+record) without recreating it, resume it once with the SAME `--kit` ref you
+created it with, which both re-runs the kit's startup and writes the record for
+next time:
+
+```bash
+acq run opencode --kit …/acq-kits/openchamber <path>   # heals + re-runs kit startup
+# or, if you don't need to attach:
+acq restart <sandbox>       # on a sandbox created by a fixed acq, this now
+                            # restores CLI-kit startup on its own
+```
+
+If a resumed sandbox is already up but its services are dead, the quickest manual
+kick is to re-run the kit's startup script directly:
+
+```bash
+acq exec <sandbox> -- sh /home/agent/openchamber-start.sh &
+# (paseo kit: sh /home/agent/paseo-start.sh)
+```
+
+### Prevention / Status
+
+- Fixed in `acq.backends/msb.sh` (heal folds CLI kits), `acq.backends/common.sh`
+  (`acq_cli_kits_write`/`acq_cli_kits_load` persistence), `acq.backends/sbx.sh`
+  (parity write), and the `acq` `start`/`restart`/`run` verbs (reload before
+  heal). Covered by the `clikit-heal` and `cli-kits:*` unit tests in
+  `test/bats/` (persist-then-reload round-trip; a reloaded `--kit` ref is
+  re-applied during a resume heal).
+- Note the operational fact behind the original report: a live in-VM session does
+  **not** survive a host reboot — the microVM is ephemeral; only the sandbox
+  definition, its port config, and your mounted repos persist. Always commit work
+  to the mounted repos before shutting down, and expect to start a fresh agent
+  session (not reattach the old one) after a reboot.
+
+---
+
+## 34. `docker run` or `docker compose` Missing Inside a Sandbox
+
+### Symptoms
+
+- `docker run`, `docker compose`, or `podman` is not found inside a sandbox.
+- On msb, a new sandbox no longer gets podman automatically.
+
+### Root Cause
+
+`oci-engine` is an opt-in catalog kit. acq no longer installs podman from the msb
+adapter by default, and sbx/msb now use the same mechanism for in-sandbox OCI
+support.
+
+### Fix
+
+Enable the kit for future sandboxes:
+
+```bash
+acq configure
+# select: oci-engine
+```
+
+For a single sandbox, pass the pinned kit ref with `--kit` or include it in
+`ACQ_EXTRA_KITS`:
+
+```bash
+acq run opencode . --kit 'git+https://github.com/GSA-TTS/agentic-coding-patterns.git#ref=941a286f912b99475429c3c00db49a99af5b241e&dir=integrations/isolation/acq-kits/oci-engine'
+```
+
+Existing sandboxes that were created before this change keep whatever podman
+state they already have, but new sandboxes require the opt-in kit unless the base
+image already includes a working engine.
+
+### Prevention / Status
+
+- Breaking change in the `oci-engine` catalog migration. Covered by the
+  `acq configure` catalog tests, the configured-kit fresh-shell start
+  round-trip, the msb no-default-OCI regression test, and the dedicated live
+  `scripts/verify-backends --only msb --oci-only` path.
+- ADR-0020 is superseded for the adapter-owned mechanism; ADR-0030 and ADR-0031
+  describe the kit/catalog path.
+
+---
+
+## 35. Git signing fails on msb: socat missing or msb < 0.6.9
+
+### Symptoms
+
+On the **msb** backend, committing inside the guest fails to sign:
+
+```
+[git-ssh-sign] no SSH agent - cannot sign commits
+```
+
+or `acq` printed a warning at create/attach about `socat` not being found in the
+guest image, or a *"host ssh-agent forwarding needs msb >= 0.6.9"* warning and
+then skipped the forward.
+
+### Root Cause
+
+`acq` forwards the host ssh-agent into an msb guest with
+`--vsock $SSH_AUTH_SOCK:3552/stream` and then runs an **in-guest `socat` bridge**
+that re-exposes the vsock route as the unix socket
+`/home/agent/.acq/ssh-agent.sock` (exported as `SSH_AUTH_SOCK`). Two things must
+hold for that to work:
+
+1. **msb >= 0.6.9** — `--vsock` first appears in msb 0.6.9. On an older msb, acq
+   warns and **skips** the forward (fail-soft), so the guest has no agent.
+2. **`socat` present in the guest image** — the bridge is `socat`. It is **not**
+   auto-installed (guest egress is locked, so a package mirror is unreachable);
+   acq warns if it is missing and the bridge cannot start.
+
+The forward is also **opt-in via the host `SSH_AUTH_SOCK`**: if no agent is
+running on the host (or no key is loaded), there is nothing to forward.
+
+### Fix
+
+- **Use a supported msb**: acq's default install pin is 0.7.7; existing
+  0.6.9-0.6.18 and 0.7.3+ installs remain accepted. msb 0.7.0-0.7.2 are
+  refused — see §43.
+- **Ensure `socat` is in `ACQ_MSB_IMAGE`** — the default
+  `docker/sandbox-templates:shell-docker` ships it; a custom override must too.
+- **Ensure the host has an agent with a key loaded** before running `acq`:
+
+  ```bash
+  eval "$(ssh-agent -s)"   # if none is running
+  ssh-add ~/.ssh/id_ed25519 # load your signing key
+  echo "$SSH_AUTH_SOCK"     # must be set — this is the opt-in signal
+  ```
+
+Then re-run `acq run …`; the forward is applied automatically. See
+[ADR-0021](adr/0021-msb-host-ssh-agent-forwarding-via-vsock.md) for the full
+mechanism and the trust-boundary discussion.
+
+### Variant: `SSH_AUTH_SOCK` unset on re-attach to a running sandbox
+
+A distinct signature of the same feature: signing works right after the initial
+`acq run` but **fails on a later re-attach** to the *same, still-running*
+sandbox, and it starts working again as soon as you
+`export SSH_AUTH_SOCK=/home/agent/.acq/ssh-agent.sock` by hand. Here the vsock
+route and the `socat` bridge are fine — what is missing is the
+**`SSH_AUTH_SOCK` env var in the agent's process**. acq injects that var
+(`-e SSH_AUTH_SOCK=…`) only when the persisted ssh-agent sock value is present
+(recorded host-side in acq's per-sandbox config store, ADR-0035; originally a
+guest `/var/lib/acq/ssh-auth-sock` marker), and before the fix nothing
+re-established the bridge or wrote that value when re-attaching to an
+already-running sandbox (the heal's start-if-stopped block is a no-op on a
+running sandbox, and only that path — or provision — wrote it).
+
+Fixed in `acq.backends/msb.sh`: `acq_backend_ensure_kits_applied` now calls
+`_acq_msb_ensure_ssh_agent_forward` at the top of the heal, which re-drives the
+forward (restart the bridge + write the marker) on every re-attach when both a
+host forward is requested (`SSH_AUTH_SOCK` set) **and** the sandbox carries the
+create-time `--vsock` route. The route is create-time only, so a sandbox created
+*without* a host agent still needs a recreate to gain forwarding — but one
+created *with* the route now re-injects `SSH_AUTH_SOCK` on every re-attach without
+a manual export. See [ADR-0021](adr/0021-msb-host-ssh-agent-forwarding-via-vsock.md)
+("Re-attach to a running sandbox").
+
+### Variant: forwarded agent unreachable after a host reboot (stale `--vsock` route)
+
+Another distinct signature, and the one that a manual
+`export SSH_AUTH_SOCK=…` does **not** fix: signing worked before, then after the
+**host machine was rebooted** (especially an unclean reboot that did not stop the
+sandbox first) a resume + re-attach leaves the guest unable to reach the agent —
+`ssh-add -l` inside the guest returns `error fetching identities: communication
+with agent failed`, and committing fails to sign — even though `SSH_AUTH_SOCK` is
+set on both the host and in the guest, the host agent holds the key, and the
+in-guest `socat` bridge is running. Probing the bridge by hand shows the tell:
+
+```
+$ socat -T2 - VSOCK-CONNECT:2:3552 </dev/null
+E connect(…, cid:2 port:3552, …): Connection reset by peer
+```
+
+`Connection reset by peer` on the vsock connect means **the host side of the
+route has no live listener**. The `--vsock HOST_PATH:3552` route is emitted
+**only at create time** and pins `HOST_PATH` to the host's `SSH_AUTH_SOCK` path
+captured then; it is persisted in the sandbox config and **never re-derived** on
+`msb start` or re-attach. A host reboot restarts the host ssh-agent under a *new*
+socket path, so the persisted route now points at a dead host endpoint. This is
+distinct from the previous variant: there the guest env var was missing; here the
+env var and bridge are present but the route's host end is dead.
+
+`acq` **heals this on start** for sandboxes created since the managed-link
+amendment of ADR-0021: the `--vsock` route names a per-sandbox symlink under
+`~/.local/state/acq/msb/ssh-agent/` rather than the raw agent path, and every
+`acq start` / `acq restart` / `acq run` re-points that link at the current host
+`SSH_AUTH_SOCK` before starting the bridge (msb dials the path per connection and
+follows the symlink, so no recreate is needed). If the agent moved while the
+sandbox kept running, re-run `acq run <sandbox>` (or `acq restart <sandbox>`) to
+re-point it.
+
+A sandbox created **before** that amendment still carries the raw path in its
+persisted route, which acq cannot change. For it, acq **detects and reports**
+rather than leaving a silent dead bridge: after (re)starting the bridge,
+`_acq_msb_start_ssh_agent_bridge` runs a liveness probe (`ssh-add -l` over the
+guest sock) and, on failure, prints a warning naming the host-reboot cause and the
+remedy. Because the bridge's listener socket is present (only its vsock backend
+is dead), `ssh-add` exits **1** with `communication with agent failed` here — the
+same exit code as a healthy but empty agent, so the probe classifies on the
+message (a "no identities" reply is treated as healthy and stays quiet). The fix
+is a **one-time recreate**; the recreated sandbox routes through the managed link
+and self-heals from then on:
+
+```bash
+acq rm <sandbox>
+# then re-run your original create/run WITH the host agent available:
+eval "$(ssh-agent -s)"; ssh-add ~/.ssh/id_ed25519   # if needed
+acq run <agent> <workspace…>
+```
+
+If the warning fires for a sandbox that already routes through the managed link
+(the message names the link path), the link was just re-pointed, so look at the
+host agent itself (`ssh-add -l` on the host) or the in-guest `socat` bridge
+rather than recreating.
+
+See [ADR-0021](adr/0021-msb-host-ssh-agent-forwarding-via-vsock.md)
+("Amendment (2026-10-06): reboot-proof route via a managed host symlink") for the
+full mechanism.
+
+---
+
+## 36. Re-attach Heal Loop Warns Every Time on sbx 0.38 — `sbx kit add` Refuses Startup-Bearing Kits
+
+### Symptoms
+
+On the **sbx** backend (sbx >= 0.38), every re-attach to an existing sandbox
+(`acq run <name>`) reports the sandbox is "missing the playbook kit", re-attempts
+every extra kit, and each `sbx kit add` warn-fails — on **every** attach, even
+for a sandbox that was provisioned correctly. Running the printed recover command
+by hand shows the real cause:
+
+```
+$ sbx kit add <sandbox> <translated-playbook-kit-dir>
+ERROR: kit "agentic-coding-playbook" declares setup.startup, which the kit-add
+recreate flow does not yet apply; recreate the sandbox from scratch via
+`sbx rm` + `sbx create --kit` to use this kit
+```
+
+### Root Cause
+
+Three issues compounded:
+
+1. **sbx 0.38 refuses startup-bearing kits mid-life.** `sbx kit add` on 0.38 only
+   applies mixin kits declaring exclusively `environment.variables`,
+   `setup.install`, and `permissions.network.allow`
+   ([Docker kits docs](https://docs.docker.com/ai/sandboxes/customize/kits/)). Every
+   built-in acq kit declares startup commands (translated into `setup.startup`), so
+   **all** mid-life built-in kit adds are refused. acq swallowed sbx's stderr
+   (`sbx kit add … >/dev/null 2>&1`) and printed a generic warning plus a
+   "Recover with: sbx kit add …" hint that could never succeed.
+2. **A stale playbook feature-probe.** The heal probed the playbook with
+   `test -e "$HOME/.agentic-coding-playbook/.git"`. Since patterns v1.8.0 moved
+   playbook delivery from a git clone to a REST tarball (the #203 fix), the tree
+   has **no `.git`**, so the probe reported the playbook absent on every re-attach,
+   forever — re-triggering the (now-refused) add each time.
+3. **The `~/.acq-extra-kits` marker was never written at create.** The re-attach
+   heal decided whether an extra kit was already applied by reading
+   `~/.acq-extra-kits`, but only the heal path wrote it. A sandbox created **with**
+   `ACQ_EXTRA_KITS` (or `--kit`) never got the marker, so every re-attach
+   re-attempted every extra kit (and, under (1), warn-failed).
+
+### Fix
+
+`acq` (this repo):
+
+- Captures `sbx kit add` stderr and **detects the startup refusal**, printing a
+  single actionable "recreate to extend/refresh" message
+  (`acq rm <name> && acq run …`) instead of per-kit warnings with recover
+  commands that cannot work. Other (genuine) failures now surface sbx's own
+  diagnostic rather than being hidden. `acq kit update` fails with the same
+  guidance. acq does **not** auto-recreate (a recreate discards the sandbox's
+  session/context — it stays a deliberate, user-consented action).
+- Decides which built-in kits to re-apply from the host `builtin-kits` record
+  (written at **create** and after a successful heal), not from guest state. The
+  guest footprint probe (including the playbook check
+  `test -e "$HOME/.agentic-coding-playbook/AGENTS.md"`, which matches both the
+  historical git-clone and the current tarball delivery) remains only as a
+  debug-only diagnostic under `ACQ_DEBUG`.
+- Writes the host `extra-kits` key at **create** for every extra/CLI kit, so
+  re-attach correctly sees them as already applied. It replaces the old guest
+  `~/.acq-extra-kits` marker, which acq no longer reads.
+
+To pick up a refreshed built-in bundle on sbx 0.38 you must recreate the sandbox
+(this discards its session/context):
+
+```bash
+acq rm <sandbox>
+acq run opencode /path/to/your/project
+```
+
+**msb is unaffected** — it re-applies kits idempotently via `msb exec` and has no
+`sbx kit add`. The upstream "not yet" in the sbx error suggests startup support in
+the kit-add flow may return; if it does, in-place healing can be re-enabled. See
+the update note in
+[ADR-0009](adr/0009-require-sbx-0.35.0-in-place-kit-healing.md).
+
+### Verifying the fix (live)
+
+On a real sbx host (this cannot run inside a sandbox — no nested sandboxes), one
+command reproduces the exact scenario and asserts all three fixes:
+
+```bash
+./scripts/verify-issue-320
+```
+
+It provisions a throwaway sandbox with a startup-bearing extra kit, re-attaches,
+and checks that: the extra-kit marker was written at create; the re-attach heal
+is a quiet no-op (no "missing the playbook kit", no extra-kit re-attempt, no
+bogus "Recover with" hint); a forced mid-life re-add surfaces exactly one
+recreate notice; and `acq kit update` fails fast (or short-circuits when already
+current). The offline regression guard is in `test/bats/` (the sbx
+heal-loop cases).
+
+---
+
+## 37. msb Create-Time Published Port Returns Empty Response for a Loopback-Only Guest Service
+
+### Symptoms
+
+On the **msb** backend, `acq ports <sandbox>` shows a create-time published port,
+and the service answers from inside the sandbox:
+
+```bash
+$ acq ports paseo-test
+sandbox 6767 -> host 127.0.0.1:6767 (create-time -p)
+
+$ acq exec paseo-test -- curl http://127.0.0.1:6767/
+<!doctype html>
+...
+```
+
+But the same port fails from the host:
+
+```bash
+$ curl http://127.0.0.1:6767/
+curl: (52) Empty reply from server
+```
+
+Chrome shows `(failed) net::ERR_EMPTY_RESPONSE`. This is distinct from the older
+ingress-deny failure (`ERR_CONNECTION_RESET`) in
+[ADR-0019](adr/0019-msb-balanced-egress-is-egress-only.md): here the TCP connect
+to the host listener succeeds, but the msb publisher cannot complete the
+guest-side connection.
+
+### Root Cause
+
+The service is listening only on **guest loopback** (`127.0.0.1:GUEST`). For
+example, `/proc/net/tcp` shows `0100007F:1A6F`, which is `127.0.0.1:6767`.
+
+msb create-time publishing (`-p HOST:GUEST`, which acq emits from neutral
+`publishedPorts`) binds a listener on the **host** loopback by default, but the
+publisher connects to the sandbox's **guest network IP** for `GUEST`; it does not
+dial guest `127.0.0.1`. A loopback-only service can therefore be healthy from
+inside the sandbox while unreachable through create-time `-p` from the host.
+
+### Fix
+
+Bind the guest service to `0.0.0.0:GUEST` (or the guest interface address) when
+you want it reachable through create-time `publishedPorts` / msb `-p`:
+
+```bash
+# Example shape; exact flag/env depends on the service
+service --host 0.0.0.0 --port 6767
+```
+
+If the service must stay loopback-only, use acq's msb post-hoc publish path:
+
+```bash
+acq --backend msb ports <sandbox> --publish 16767:6767
+curl http://127.0.0.1:16767/
+```
+
+That path uses `msb ssh serve` plus OpenSSH `-L`, so the connection originates
+from inside the sandbox and can reach guest `127.0.0.1:6767`.
+
+### Prevention / Status
+
+- Documented in [BACKEND_GUIDE.md](BACKEND_GUIDE.md) under msb port limitations.
+- When adding a kit that declares `publishedPorts`, make its supervised service
+  listen on `0.0.0.0` unless it intentionally requires loopback-only access and
+  documents the post-hoc `acq ports --publish` path.
+- A quick discriminator is: if `acq exec <sandbox> -- curl http://127.0.0.1:GUEST`
+  works but host curl returns `Empty reply from server`, inspect the guest
+  listener bind address before chasing ingress policy or browser issues.
+
+---
+
+## 38. Commit signing fails in the sandbox: `user.signingKey needs to be set` / `No signature`
+
+### Symptoms
+
+Inside the sandbox, `git commit -S` (or any commit while `commit.gpgsign=true`)
+fails or silently produces an unsigned commit:
+
+```text
+error: user.signingKey needs to be set for ssh signing
+```
+
+or the commit is created but `git cat-file commit HEAD | grep '^gpgsig'` finds
+nothing, and `git log --show-signature` reports `No signature`. `ssh-add -l`
+reports `Could not open a connection to your authentication agent.`
+
+### Root Cause
+
+The sandbox reaches the host SSH signing key over a **forwarded ssh-agent**, but
+`SSH_AUTH_SOCK` is not exported into every shell/session by default. With no
+agent reachable, git's SSH signer has no key and either errors or (depending on
+config) writes an unsigned commit.
+
+This is environmental, not a git misconfiguration: `user.signingkey`,
+`gpg.format ssh`, and `commit.gpgsign true` can all be correct and signing still
+fails purely because the agent socket isn't wired into the current shell.
+
+### Fix
+
+Export the forwarded agent socket for the commands that need to sign, then
+commit/rebase as usual:
+
+```bash
+export SSH_AUTH_SOCK=/home/agent/.acq/ssh-agent.sock
+ssh-add -l   # should now list the host signing key(s)
+
+git commit -S ...        # or: git rebase <base>   (replayed commits are signed)
+```
+
+Verify the signature is embedded (this check needs no `allowed_signers` file):
+
+```bash
+git cat-file commit HEAD | grep -q '^gpgsig' && echo SIGNED || echo UNSIGNED
+```
+
+Notes:
+
+- `git log --show-signature` may still print
+  `gpg.ssh.allowedSignersFile needs to be configured and exist` and show
+  `No signature` even when the commit **is** signed — that is a local
+  *verification* gap (no allowed-signers file), not a signing failure. GitHub
+  verifies against its own registered-key store on push and will show
+  **Verified**. Prefer the `git cat-file … | grep '^gpgsig'` check to confirm
+  signing.
+- `git rebase` re-signs each replayed commit automatically when the agent is
+  reachable, so a rebase with `SSH_AUTH_SOCK` set does not need a separate
+  `--amend -S` pass.
+
+## 39. Spurious `M` (modified) diffs on scripts across the host/sandbox mount
+
+### Symptoms
+
+`git status` shows tracked files (commonly `acq`, `scripts/test-acq`,
+`scripts/verify-backends`) as modified with no content change, and
+`git diff` shows only mode lines:
+
+```text
+old mode 100755
+new mode 100644
+```
+
+The noise breaks scripted branch work: a `git commit --amend` picks up the mode
+churn, leaving the working tree "dirty," so a following `git switch <branch>`
+aborts with *"Your local changes to the following files would be overwritten by
+checkout"* — and a loop that assumed the switch succeeded then operates on the
+**wrong** branch.
+
+### Root Cause
+
+The repository is worked on across a host↔sandbox boundary (the sandbox worktree
+lives under a mounted volume). The host (macOS) and the sandbox (Linux) disagree
+on the executable bit, so git sees the `+x` bit flip back and forth as
+`100755 ↔ 100644` filemode churn. It is not a real edit.
+
+### Fix
+
+Tell git to ignore the executable bit in **each** working tree (the setting is
+per-working-tree, so setting it on the host does not cover the sandbox worktree
+and vice versa):
+
+```bash
+git config core.fileMode false        # run in every clone/worktree of this repo
+```
+
+To make it the default for all future clones on a machine that routinely spans
+this mount:
+
+```bash
+git config --global core.fileMode false
+```
+
+Workflow guard: when scripting branch operations, do **not** loop `git switch`
+across a possibly-dirty tree. Run one branch per command, and guard switches
+(`git switch "$b" || break`) so a failed checkout cannot silently leave you
+amending the wrong branch.
+
+---
+
+## 40. Windows preview: `bash.exe` resolves to the WSL shim, WHP is not a feature flag, and the execution policy blocks scripts
+
+### Symptoms
+
+- On a Windows 11 host, `acq.cmd` / `acq.ps1` delegates into a WSL distro instead of Git Bash:
+  `/bin/bash: /c/Users/.../acq: No such file or directory`.
+- `install.ps1` aborts for a non-elevated user with
+  `Get-WindowsOptionalFeature : The requested operation requires elevation.`
+  instead of WHP guidance.
+- `msb doctor` reports the host ready and sandboxes boot, yet
+  `Get-WindowsOptionalFeature -FeatureName HypervisorPlatform` reports `Disabled`.
+- On a default Windows 11 client, `.\install.ps1` and the installed `acq`
+  command fail with
+  `... cannot be loaded because running scripts is disabled on this system`
+  (`PSSecurityException`), while `irm ... | iex` works.
+
+### Root Cause
+
+- Git for Windows installs `Git\bin` but does **not** put it on `PATH` by default,
+  so `Get-Command bash.exe` resolves to `C:\Windows\System32\bash.exe` — the WSL
+  interop shim, not Git Bash.
+- The WHP optional-feature *flag* is not the thing that makes WHP work. When the
+  Windows hypervisor is already running (WSL2 / VirtualMachine Platform, VBS, or a
+  virtualized guest), the user-mode WHP API (`WinHvPlatform.dll`, e.g.
+  `WHvCreatePartition`) is callable regardless of the flag, which is also not
+  readable without an elevated shell.
+- Windows 11 **client** defaults its PowerShell execution policy to `Restricted`,
+  which refuses to run script *files*. `powershell -File` is not exempt, so
+  `acq.cmd` (which runs `acq.ps1`) and a direct `.\install.ps1` are blocked; the
+  `irm ... | iex` path is unaffected because piped text is not a script file.
+
+### Fix
+
+- `acq.ps1` and `install.ps1` prefer known Git-for-Windows locations first and
+  reject the WSL shim (`System32\bash.exe`, `SysWOW64\bash.exe`) when falling back
+  to a PATH lookup.
+- `install.ps1` probes WHP with `WHvCreatePartition` (the same call `msb` relies
+  on) instead of gating on the feature flag; when the state stays undetermined it
+  warns and defers to `msb doctor`, which `acq` surfaces before provisioning.
+- Treat `msb doctor` as the authoritative readiness signal on Windows.
+- The execution-policy requirement is documented (README "First-Run Snags",
+  `docs/howto/acq.md`); allow local scripts with
+  `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` or use the `irm | iex`
+  one-liner. On a managed device the policy is set by Group Policy. `acq.cmd` and
+  `install.ps1` deliberately do **not** pass `-ExecutionPolicy Bypass`.
+
+### Related Windows/MSYS notes
+
+- Under Git Bash, the guest is a Linux microVM, so acq now computes two path
+  forms (ADR-0029): `canonicalize_path` is the POSIX **guest** form and `host_path`
+  the native **host** form (`cygpath -m` → `C:/...`). `msb` is invoked through a
+  wrapper that sets `MSYS2_ARG_CONV_EXCL='*'`, because MSYS otherwise rewrites
+  POSIX-looking argv when launching the native `msb.exe` and corrupts
+  colon-delimited mounts (`--volume /c/a:/c/a` → `C:\a;C:\a`) and guest-only
+  values (`-w /home/agent` → `C:/Program Files/Git/home/agent`). The exclusion is
+  scoped to `msb`; `git`/`ssh` keep the rewrite they rely on. An explicit
+  `ACQ_MSB_WORKSPACE` override is canonicalized to the guest form too, so a
+  drive-form value cannot leak into `-w`.
+- Three `msb` call sites inline `MSYS2_ARG_CONV_EXCL='*'` instead of using the
+  wrapper: the two `exec msb exec …` lines (`exec` needs a binary, not a shell
+  function) and the backgrounded `msb ssh serve …` in `_acq_msb_serve_start`.
+  Wrapping the latter in the function would make `$!` a subshell rather than
+  `msb`, so teardown/`acq rm` would kill the wrapper and orphan the listener
+  with its loopback port still bound. See ADR-0029.
+- The offline Bats suite is POSIX-oriented: on a Windows/MSYS host, `install.sh`
+  tests (macOS/Linux installer), `chmod 0600` assertions (MSYS cannot represent
+  them on NTFS — the Windows secret store no longer depends on them, since it
+  encrypts at rest with DPAPI; see ADR-0028), and symlink-based tests cannot pass
+  without native symlinks. None are regressions from the Windows preview path;
+  validate that path with the checklist in `docs/howto/acq.md`.
+
+---
+
+## 41. Recovering agent work reads the guest-writable scratch clone (residual risk)
+
+### Symptoms
+
+None. This is a documented residual risk of `--clone` on the msb backend, not a
+reported failure or a demonstrated vulnerability.
+
+### Root Cause
+
+Under `--clone` the agent works in a host-side scratch clone that the guest
+mounts read-write, so guest code can write anything into the scratch's
+`.git/config`. acq itself never runs git inside that scratch once the sandbox
+exists: the clone and its config copy both finish before `msb create`, and the
+rm-time warning reads ref **files** and runs `cat-file` against the real
+checkout, never the scratch.
+
+The recovery command acq advertises does read it. `git fetch sandbox-<name>`
+spawns `git upload-pack` inside the scratch and reads that config. Verified with
+plain git: a scratch-local `uploadpack.hideRefs` changes what the host's
+`ls-remote` advertises. Two config-driven command hooks were probed on git
+2.50.1 and did **not** execute from a local-path remote:
+`core.alternateRefsCommand` (with `objects/info/alternates`) and
+`uploadpack.packObjectsHook`, which git restricts to protected scope.
+`safe.directory` offers no protection here, because the scratch is owned by the
+invoking user.
+
+Git's own documentation notes that "the surface area for attack against
+upload-pack is large, so this does carry some risk," which is why this is
+written down rather than left implicit.
+
+### Fix
+
+No code change. Treat the fetch-back remote as what it is: a read of a directory
+an untrusted agent could write to.
+
+- Fetch back only from sandboxes whose work you intend to keep.
+- `acq rm <name>` deletes the scratch and the remote after warning about
+  unfetched commits, so a scratch you do not plan to recover should not linger.
+- Keep git current on the host; the hooks above are inert on 2.50.1, and that is
+  a property of the git version, not of acq.
+
+---
+
+## 42. A Required Check Backed by a `paths:`-Filtered Workflow Deadlocks Unrelated PRs
+
+### Symptoms
+
+- A PR's merge box shows `mergeStateStatus: BLOCKED` even though every check
+  that actually ran is green.
+- The blocking context (e.g. `acq offline suite under bash 3.2`) sits as
+  `Expected`/pending forever — never `success`, never `failure`, just absent.
+- Reproduces on PRs that don't touch the paths the workflow's trigger filters
+  on (e.g. a dependabot GitHub-Actions-version bump touching only
+  `.github/workflows/release.yml`).
+
+### Root Cause
+
+`.github/workflows/bash32-compat.yml` had a top-level `paths:` filter on its
+`pull_request` trigger, so the workflow — and therefore its job — simply never
+ran for a non-matching diff. That is not the same as the job running and
+reporting `skipped`: GitHub creates **no check-run at all** in that case.
+Branch protection's required-status-checks list has no path awareness of its
+own; it just waits for a named context to report. A context that is
+structurally never created satisfies nothing, so the PR sits blocked
+indefinitely — even for changes entirely unrelated to what the workflow tests.
+This is a documented GitHub failure mode ("Handling skipped but required
+checks" in GitHub's required-status-checks troubleshooting docs), not specific
+to this repo, but it hit real CI here: agentic-coding-quickstart#449 (a routine
+dependabot bump) needed an admin-bypass merge to get past it.
+
+### Fix
+
+Removed the workflow-level `paths:` filter so the workflow always triggers,
+and split the single job into a chain (the job set has since grown; see section 52 and
+ADR-0039 for the current shape):
+1. `changes` — a cheap job that computes relevance via `git diff --name-only`
+   against the PR base (same technique `markdown-quality.yml`'s link-check job
+   already uses; no new marketplace action). Fails closed: any error in
+   computing the diff is a job **failure**, never a silent "not relevant."
+2. The real, expensive work — originally one job, `test-acq-bash32`, that built bash
+   3.2.57 from source and ran the offline suite. It is conditional on `needs.changes`
+   reporting relevant, and is now `prepare-bash32` (builds the interpreter once)
+   plus a matrix of `test-acq-bash32` shard legs.
+3. `gate` — an always-running job (`if: always()`) that is what branch
+   protection actually requires, posted under the **same** required-check name
+   the old single job used (`acq offline suite under bash 3.2`) — so this fix
+   needed **no** out-of-band branch-protection/ruleset update. It fails unless
+   `needs.changes.result == 'success'` **and** the downstream jobs have the outcome
+   the relevance output predicts, so a failure in the cheap relevance-detection
+   step can't be laundered into a passing gate via a downstream skip.
+
+Verified locally (not just read from docs) before merging: reproduced both
+branches of the `changes` job's `git diff` logic against real commits (one
+touching only a workflow file → empty diff → `relevant=false`; one touching
+`acq.backends/msb.sh` → non-empty diff → `relevant=true`), and exercised the
+gate's shell logic directly against every `(changes result, test result)`
+combination, confirming it passes only on `(success, success)` and
+`(success, skipped)` and fails on every other combination including the
+failure-laundering case `(failure, skipped)` (the gate has since been extended to the
+three-job form; the same exhaustive check was repeated for it, see section 52).
+
+### Prevention
+
+Any workflow whose job backs a required status check must either have no
+`paths:`/`branches:`/similar trigger-level filter, or must follow this
+gate-job pattern. A conditional trigger and "required" are structurally
+incompatible in GitHub Actions; check new required workflows for this before
+adding them to branch protection.
+
+The `changes` job's path list is the other half of this contract: a file the
+real suite reads but the list omits skips the 3.2 run while the gate stays
+green. Add every new input (script, requirements file, key, submodule pin) to
+the `git diff` pathspecs. `test/bats/158-bash32-relevance-paths.bats` fails when
+a known entry is missing and when a new tracked file is neither listed nor
+declared a non-input.
+
+---
+
+When something fails, work through this list:
+
+1. [ ] Is the secret actually in the container? (`echo $VAR_NAME`)
+2. [ ] Is the endpoint URL exactly correct? (no typos, correct path)
+3. [ ] Is the auth header format correct? (`Bearer` prefix)
+4. [ ] Can the container reach the network? (`curl` test)
+5. [ ] Is the config file actually being read? (add debug logging)
+6. [ ] Did SBX CLI syntax change? (`sbx --help`)
+7. [ ] Is this a known model/entitlement issue? (test with different model)
+
+---
+
+## 43. acq Refuses msb 0.7.0-0.7.2, or msb Refuses Your Sandbox State
+
+### Symptoms
+
+Any of four, depending on how far the host got.
+
+**1. `acq` refuses the msb version** — `acq run`, `acq create`, `acq ls`, or any
+other msb-backed command exits before touching a sandbox:
+
+```text
+error: acq refuses msb 0.7.2 because msb 0.7.0-0.7.2
+       migrate existing 0.6.x sandbox state one-way, into a form the 0.6.x
+       line cannot read.
+```
+
+**2. msb refuses the catalog** — a 0.6.x `msb` after a 0.7.x has run, including
+on read-only commands like `msb list`:
+
+```text
+database schema is newer than this msb binary; applied migration
+"m20260910_000001_snapshot_groups" is not in this binary's migration prefix
+```
+
+**3. Catalog-opening msb commands refuse** — after a `msb self downgrade`
+attempted with too old a binary:
+
+```text
+error: self_downgrade_recovery_required: resume the active downgrade recorded at
+       ~/.microsandbox/db/self-downgrade/<id>/journal.json
+```
+
+**4. Duplicate binaries** — during install:
+
+```text
+Multiple msb binaries were found; PATH order determines which one acq uses.
+```
+
+### Root Cause
+
+`msb` keeps its sandbox catalog in a versioned database under `$MSB_HOME`.
+Opening it with a newer `msb` **migrates it in place**, and the 0.6 → 0.7
+transition crossed a boundary the older line cannot read back. Nothing unusual is
+needed to land here — installing `msb` the documented way is enough, because
+`msb self update`, `brew upgrade`, and
+`curl -fsSL https://install.microsandbox.dev | sh` all resolve to the **newest**
+release.
+
+msb 0.7.0 through 0.7.2 had a further defect: they could reject persisted sandbox
+configurations they had themselves written. Upstream fixed that in **0.7.3** and
+now documents 0.7.0-0.7.2 as having "compatibility gaps addressed in v0.7.3"
+([Migrating from v0.6 to v0.7](https://docs.microsandbox.dev/migrations/v0.7)).
+
+Two `msb` binaries on one host make this worse — say a Homebrew one and another
+in `~/.local/bin`. Whichever appears first on `PATH` creates or migrates the
+state for that run, so the same host can migrate state in one terminal and refuse
+it in another.
+
+Symptom 3 has its own cause worth stating, because the action that produces it is
+the reflexive one. `msb self downgrade` builds its rollback plan from the
+**running** binary's migration metadata, so only a binary whose metadata covers
+the applied set can revert it. Attempting it from the older binary does not merely
+fail: it records an operation journal, and `msb` then refuses catalog-opening
+commands from every version until that operation completes. When the recorded
+transition cannot complete, the demand is unsatisfiable. Verified against real
+0.6.18 / 0.7.2 / 0.7.3 binaries: catalog-opening retries with the journal's own
+target, with a different target, and from each of the three all fail identically,
+and `self downgrade` exposes no abort flag. Non-catalog probes such as
+`msb --version` can still work, but they cannot clear the journal or read sandbox
+state.
+
+### Fix
+
+**If a 0.7.0-0.7.2 msb has already touched your sandbox state, move FORWARD.**
+This is upstream's recommendation and `acq`'s default offer, and it rewrites
+nothing — the migration sets are additive, so 0.7.3 or newer reads the already-migrated
+catalog as-is, with no rollback, no data-affecting step, and none of the refusals
+a downgrade can hit:
+
+```bash
+msb self update          # targets the newest release; acq re-checks the result
+msb --version            # confirm; acq accepts 0.7.3 or newer
+```
+
+**To roll back to 0.6.18 instead,** run the downgrade **with the msb that did
+the migration, before replacing it** — only that binary carries the rollback
+steps:
+
+```bash
+msb self downgrade 0.6.18   # run this with the 0.7.x binary, NOT an older one
+```
+
+If you already replaced or uninstalled that binary, get it back side-by-side
+without disturbing your current `msb` (these formulae are keg-only, so nothing is
+symlinked and nothing shadows your `PATH`):
+
+```bash
+brew install GSA-TTS/tap/microsandbox-acq@0.7.3
+"$(brew --prefix microsandbox-acq@0.7.3)/bin/msb" self downgrade 0.6.18
+```
+
+**If every catalog-opening msb command reports `self_downgrade_recovery_required`,**
+the only exit is removing that one operation directory. `install.sh` detects this
+and offers to do it; by hand:
+
+```bash
+rm -rf ~/.microsandbox/db/self-downgrade/<id>
+```
+
+That removes the record of an **unfinished operation** — not your catalog
+database, not its migration history, not your retained downgrade backups, and not
+any sandbox, snapshot, or image. (Upstream separately warns against deleting the
+catalog or editing migration history to bypass a refusal. That is a different
+action, and neither `acq` nor this step does it; see
+[ADR-0032](adr/0032-msb-version-policy-and-migration-recovery.md).)
+
+**To install a supported msb,** use a channel that can express a version.
+Neither upstream channel can:
+
+```bash
+brew install GSA-TTS/tap/microsandbox-acq   # version-pinned formula
+./scripts/verify-msb-pin --install          # verified pinned release bundle
+
+command -v msb && msb --version             # confirm which binary acq will use
+```
+
+Do **not** use `curl -fsSL https://install.microsandbox.dev | sh` to get a
+specific version. It takes no version argument and reads `releases/latest`, and
+every release publishes a **byte-identical** copy of that script as a release
+asset — so `.../releases/download/v0.7.7/install.sh` looks like a pin and
+installs whatever is newest.
+
+`acq` accepts `msb 0.6.9` through `0.6.18`, refuses `0.7.0` through `0.7.2`, and
+accepts `0.7.3` or newer. Fresh installs use pinned `0.7.7`. Remove stale copies
+or adjust `PATH` so the intended `msb` appears first.
+
+### Prevention / Status
+
+- `acq_backend_check_version` fails closed on the blocked range before any
+  command that opens the catalog — including state-touching verbs like `acq ls`,
+  which previously reached `msb` unguarded and surfaced the raw upstream error.
+- `install.sh` installs the pinned `0.7.7` from a checksum-verified release
+  bundle, prompts before replacing a too-old, unparseable, or blocked active
+  version, offers the forward path first when the catalog was already migrated,
+  refuses to drive a rollback with a binary that would wedge the install, and
+  fails closed when another blocked `msb` earlier on `PATH` would still shadow
+  the install.
+- `install.ps1` applies the same policy on Windows, which previously had none.
+  The Windows-specific logic has been smoke-tested on a real Windows host, but
+  remains lower-confidence than the POSIX path.
+- `scripts/verify-msb-pin` verifies the 0.7.7 install pin plus recovery behavior
+  against real 0.6.18 / 0.7.2 / 0.7.3 binaries in a throwaway `MSB_HOME`. It
+  boots no VM, so it needs no virtualization and runs inside a sandbox.
+
+---
+
+## 44. `verify-backends` Stalls Right After "provision complete" (No `DONE` Trace Line)
+
+**Status:** Fixed — `scripts/verify-backends` captures to a file instead of a pipe.
+
+### Symptoms
+
+A live `./scripts/verify-backends --only msb -x` run streams normal progress,
+reaches the end of provisioning, and then never returns:
+
+```text
+acq[debug]: msb provision: all kits applied; provision complete (shell-ws-xxxxxx)
+acq[debug]: msb: ssh-agent bridge started at /home/agent/.acq/ssh-agent.sock ...
+acq[debug]: provenance: recorded msb/shell-ws-xxxxxx applied_ref=...
+acq[debug]: cli-kits: recorded msb/shell-ws-xxxxxx (kit= )
+```
+
+There is no `[trace ...] DONE create: rc=0` line, no further check output, and no
+error. The sandbox itself is healthy — `msb list` shows it running, and
+`acq exec <name> -- true` succeeds from another terminal.
+
+### Root Cause
+
+The verifier captured each step with command substitution:
+
+```sh
+LAST_OUT=$("$ACQ" "$@" 2>&1 | tee /dev/stderr)
+```
+
+Command substitution reads the capture pipe until **EOF**, which arrives only
+when *every* writer closes it — not when `acq` exits. Two things in `acq` hold a
+descriptor on that pipe past exit:
+
+- `acq.backends/secret-store.sh` dups the process's stderr to fd 9 (the warning
+  channel used so migration warnings survive `2>/dev/null` read paths). fd 9 is
+  inherited by children.
+- the msb adapter launches **daemonized** guest-side helpers, notably the
+  ssh-agent `socat` bridge started at the end of provisioning.
+
+So `acq` finished successfully, while the verifier blocked on a pipe that a
+long-lived descendant kept open. The stall therefore appeared at the *last*
+thing provisioning logs, making a completed create look like a hung one.
+
+Because the hang is in the harness, not the backend, it masqueraded as a backend
+failure and cost several live runs. Writing to a **file** removes the EOF
+dependency entirely: the wait ends when `acq` exits.
+
+### Fix
+
+`run_acq` redirects `acq` to a temp file in the hermetic `VERIFY_STATE` dir and
+reads the file after `acq` returns. Verbose mode gets its live view from a
+`tail -f` on that file rather than from `tee` in the capture pipeline. `acq` stays
+in the **foreground**, so pipelines that feed it a secret on stdin
+(`printf key | run_acq ... secret set -g usai`) are unchanged.
+
+### Prevention
+
+`test/bats/145-verify-capture.bats` extracts the real `run_acq` out of
+`scripts/verify-backends` and drives it against a stand-in that daemonizes a
+child and exits 0 — the exact shape that deadlocks a pipe capture. Each case runs
+under `timeout`, so reintroducing a pipe-EOF dependency fails as a test timeout
+instead of hanging a human's live verification. The guard was confirmed to fail
+against the old `$( ... | tee /dev/stderr )` implementation before being kept
+against the new one.
+
+### Also Fixed in the Same Pass
+
+- **`markdownlint` never linted `.github/**/*.md`.** markdownlint's globber skips
+  dot-directories unless `--dot` is passed, so `.github/pull_request_template.md`
+  was silently excluded from CI, `npm run lint:md`, and the pre-commit hook. All
+  three now pass `--dot`.
+- **The "did it lint anything?" assertion counted a different set than the
+  linter.** It hand-translated `.markdownlintignore` into `git ls-files :!`
+  pathspecs, but those matchers differ: a bare `test/vendor` pathspec excludes
+  only that exact path, not the tree under it, so the count ran high. The
+  assertion now evaluates the ignore file with git's own gitignore engine
+  (`git ls-files -c -i --exclude-from=.markdownlintignore`), which agrees with
+  markdownlint's semantics.
+
+### Second Instance of the Same Bug Class
+
+The grammar-acceptance preflight (`verify_sbx_grammar_acceptance`) had its own
+`out=$(bats ... | tee /dev/stderr)` capture — the identical idiom, in a second
+place a `run_acq`-only fix would not have reached. Both now go through one shared
+`_run_captured` helper, and a test asserts the idiom appears nowhere in the
+script, so a third instance cannot be added quietly.
+
+### The Lost-Executable-Bit Class (and the systemic fix)
+
+**Status:** Fixed systemically — `scripts/fix-exec-bits`, a pre-commit hook, and
+self-healing in `scripts/verify-backends`.
+
+Three separate symptoms in this one investigation were the same root cause:
+
+```text
+zsh: permission denied: ./scripts/verify-backends
+```
+
+```text
+./scripts/verify-backends: line 259: .../acq: Permission denied     # rc=126
+```
+
+```text
+  FAIL  sbx: real sbx rejected acq's translated kit grammar
+        | env: .../libexec/bats-core/bats: Permission denied
+```
+
+That last one is the dangerous presentation: a **file-permission artifact
+reported as kit-grammar incompatibility**.
+
+#### Why it keeps happening
+
+A clone on a container/host shared mount (virtiofs, Docker Desktop file sharing,
+WSL drvfs) cannot round-trip POSIX permissions, so the clone sets
+`core.fileMode = false` to suppress a storm of spurious mode churn. That is
+correct, and it opens a blind spot:
+
+1. git applies the index mode on **checkout**, so a fresh clone is right;
+2. nearly every editor, formatter, and coding agent saves by writing a temp file
+   and renaming it — a **new inode** with the ambient umask (0644), so the exec
+   bit is dropped;
+3. with `core.fileMode = false` git is **blind** to it. Measured: a 100755 →
+   0644 drift with byte-identical content yields an empty `git status` *and* an
+   empty `git diff --summary`. With `core.fileMode = true` the same drift reports
+   `mode change 100755 => 100644`.
+
+So the regression is invisible to every normal check and only surfaces as a
+confusing runtime failure, often far from the real cause.
+
+#### Why `bash <script>` is not the fix
+
+An earlier attempt invoked the vendored bats as `bash bin/bats` on the theory
+that a bash script does not need its exec bit. It does not survive: `bin/bats`
+ends in `exec env ... "$BATS_ROOT/libexec/bats-core/bats"`, which in turn execs
+`bats-exec-suite` and a formatter. Repairing bits one at a time showed the chain
+needs **at least** `bin/bats`, `libexec/bats-core/bats`, `bats-exec-suite`, and
+the formatters — the submodule records 32 executables. Working around the exec
+bit only moves the error deeper.
+
+#### The fix
+
+`scripts/fix-exec-bits` treats the **git index as the single source of truth**: a
+file recorded `100755` must be executable on disk. A shebang is explicitly *not*
+the criterion — `acq.backends/*.sh` are *sourced* and `test/bats/*.bats` are read
+*by bats*, so both are correctly `100644` and must stay non-executable. It walks
+initialized submodules too, and reports (never silently clears) an unexpected
+exec bit on a file the index says is `100644`.
+
+Three places use it:
+
+- `scripts/fix-exec-bits` / `npm run fix:exec-bits` — manual repair;
+- a **pre-commit hook** runs `--check`, which turns an invisible drift into a
+  visible failure at commit time;
+- `scripts/verify-backends` **self-heals at startup**, so a live verification run
+  is never spent diagnosing a permission artifact.
+
+The sbx grammar preflight now also distinguishes "bats absent" (remedy:
+`git submodule update --init`) from "bats present but not executable" (remedy:
+`scripts/fix-exec-bits`), and `scripts/test-acq-bats` does the same — instead of
+the old misleading "vendored bats not found". Both still fail closed, because
+this guard must never report "accepted" when it did not measure (ADR-0025).
+
+### Related Symptom (same run, different cause)
+
+Two other things in the same code path can also look like a hang:
+
+- **`gh auth token` blocking on a host credential helper.** The optional GitHub
+  seed ran before the first traced step, so a keychain prompt froze the run with
+  no trace output at all. `_gh_token` now reads only an exported `GH_TOKEN` /
+  `GITHUB_TOKEN` unless `ACQ_VERIFY_USE_GH_AUTH=1` opts back into the keyring
+  fallback.
+- **Missing executable bit.** A fresh worktree checkout whose mode bits were lost
+  yields `Permission denied` and `rc=126` on every `acq` step; `chmod +x acq
+  scripts/verify-backends` restores it.
+
+---
+
+## 45. "has no ssh-agent --vsock route" Warning on a Sandbox That Has the Route
+
+**Status:** Fixed — the route probe no longer pipes into `grep -q`, and a failed
+`msb inspect` is reported as "could not verify", not as a missing route.
+
+### Symptoms
+
+`acq run`, `acq start`, or `acq restart` on an existing msb sandbox sometimes
+prints:
+
+```text
+acq(msb): warning: host SSH_AUTH_SOCK is set, but existing sandbox '<name>' has no ssh-agent --vsock route. ...
+```
+
+even though `msb inspect <name> --format json` shows the `vsock` route and
+`acq exec <name> -- ssh-add -l` lists the host's keys. On msb 0.7.8 it fired on
+roughly 1 in 3 `acq run`s and on nearly every `start`/`restart`. After a start or
+restart, kit daemons launched in that run (such as the paseo daemon) come up
+without `SSH_AUTH_SOCK`, so commits signed from their sessions fail with
+`no SSH agent - cannot sign commits`.
+
+### Root Cause
+
+`acq` runs under `set -euo pipefail`. `_acq_msb_has_ssh_agent_vsock_route` checked
+the flattened inspect JSON with `printf '%s\n' "$_flat" | grep -Eq …`. `grep -q`
+exits on its first match; when the document is larger than the pipe buffer
+(a 0.7.8 inspect is about 175 KB), `printf` is still writing, dies of SIGPIPE
+(exit 141), and `pipefail` turns the successful match into a failure. The result
+depends on timing, hence the intermittent rate. Separately, a failed or empty
+`msb inspect` returned the same "no" as a missing route.
+
+### Fix
+
+- Every `grep -q` over captured output in `acq.backends/msb.sh` and
+  `acq.backends/sbx.sh` reads a here-string (`grep -q … <<<"$var"`) instead of a
+  pipe, and CLI listings (`msb list -q`, `sbx ls -q`) are captured before
+  matching rather than piped into `grep -q`.
+- The route probe returns 2 when `msb inspect` fails or prints nothing. The
+  caller retries once, and if inspect still fails it warns that it could not
+  verify the route (with inspect's stderr) instead of advising a recreate.
+
+### Prevention
+
+`test/bats/115-ssh-agent-forward.bats` runs the probe under `pipefail` against a
+large inspect document with the route near the start (this test failed before
+the fix), and covers a transient and a persistent inspect failure via the stub's
+`STUB_MSB_INSPECT_FAIL_TIMES` knob. In new code, do not pipe into `grep -q`
+(or `head`) under `pipefail` when the writer may still be producing output.
+
+## 46. `acq kit-source rm` Refuses to Finish (Backend Allowlist Still Permits the Owner)
+
+### Symptoms
+
+```text
+acq: error: could not write kit.allowedSources, so sbx kit.allowedSources still permits 'github.com/acme/'.
+     Revocation is NOT complete: the source stays registered ...
+acq: kit source 'github.com/acme/kits' was NOT removed (still registered).
+```
+
+### Root Cause
+
+sbx allowlists kit sources by **owner prefix** (`host/owner/`), while `acq` trusts
+**repositories**. Removing a source must therefore also drop the owner prefix from
+sbx, but only if no other trusted repository (and no `ACQ_EXTRA_KIT_SOURCES`
+entry) still needs it. When `acq` cannot read, write, or verify that backend
+setting (`jq` or `sbx` missing, a non-array value, or `sbx settings set` failing),
+it refuses to report the source as removed rather than leave a silently stale
+grant.
+
+### Fix
+
+Install the missing tool, or run the `sbx settings set kit.allowedSources '<json>'`
+command the error prints, then re-run `acq kit-source rm <repo>` (it is
+idempotent). `acq kit-source ls` shows the source until the removal completes.
+
+### Prevention
+
+Regression tests in `test/bats/149-kit-source.bats` cover shared-prefix removal
+and the read/write/`jq` failure paths.
+
+---
+
+## 47. msb Session Shell Is Read From the Guest Passwd Entry (Accepted Residual Risk)
+
+**Status:** Accepted / observed. No code change: a host-recorded shell was
+evaluated and rejected.
+
+### Observation
+
+`_acq_msb_agent_passwd_shell` reads the `agent` account's login shell from the
+guest (`getent passwd agent` / `/etc/passwd` via `msb exec`). The value is
+charset-guarded to a word-safe absolute path (anything else becomes `/bin/sh`),
+exported as `SHELL`, and the session then runs that shell as the unprivileged
+`agent` user inside the guest. A passwordless-sudo guest can therefore choose
+which shell binary its own next interactive session starts.
+
+### Why this is accepted
+
+- **No privilege or boundary change.** The shell runs as `agent`, the same user
+  and filesystem the guest already controls. The agent can equally edit
+  `~/.profile`, `~/.bashrc`, or any binary on its `PATH`; choosing the login shell
+  grants nothing new. No host path, host credential, or acq decision (agent,
+  workspace, SSH socket, kit environment, run-once gates) is derived from it.
+- **A host record would be wrong, not safer.** The passwd shell is legitimately
+  guest state: `chsh`, image defaults, and `_acq_msb_ensure_agent_shell` (which
+  prefers bash when the image has it) all change it, and a host copy would go
+  stale or override a deliberate in-guest choice.
+- **The charset guard and `/bin/sh` fallback already bound it** to a plain
+  absolute path in argv, never shell syntax.
+- **The session environment is already visible to the agent user.** The forwarded
+  SSH socket path and kit environment are in the session shell's environment, and
+  that is the same exposure the `agent` user already has; choosing the shell adds
+  none.
+
+### Revisit if
+
+A future acq feature runs the shell as root or with host-derived secrets in its
+environment, or uses the shell path as an input to a host-side decision.
+
+---
+
+## 48. SBX Startup Barrier Is a Guest File Check (Accepted Residual Risk)
+
+**Status:** Accepted / observed for the barrier itself. No host-authoritative
+startup signal exists; the barrier no longer decides the kit records.
+
+### Observation
+
+After `sbx create`, acq waits for `/tmp/acq/startup-complete` inside the sandbox
+to contain a per-create token (`_acq_sbx_wait_for_startup_barrier`). The token
+is generated on the host (not a secret: PID, epoch and shell random values) and
+delivered in a generated barrier kit whose startup command writes it, so it is
+present in the guest's own startup registration. The host side of the comparison
+is authoritative, but the signal itself is a guest file. A guest that can read
+the token (the normal case, not a hypothetical) or that can alter how the startup
+command is replayed (unverified on sbx) could make acq believe startup finished.
+
+### What the barrier does and does not guarantee
+
+- **It guarantees only** that acq does not attach, or keep the sandbox, until a
+  guest file contains this create's token. That is an ordering aid for honest
+  guests; it is not evidence that any kit's startup commands succeeded.
+- **It does not decide the kit records.** The `extra-kits` and `builtin-kits`
+  records are written from what the host observed: the `sbx create` it ran
+  succeeded with those kit flags. They are seeded before the barrier is
+  consulted, so a guest that satisfies the barrier early (or never runs its
+  startup commands) changes neither. Provenance and the launch-mode record are
+  also host-derived but are written after the barrier succeeds; the barrier
+  decides only whether acq goes on to write them or removes the sandbox and its
+  host state.
+- **What a record therefore means:** "these kits were passed to a create that
+  succeeded", not "these kits' startup commands ran and finished". A heal that
+  trusts the record will not re-apply those kits on its own initiative; the
+  recovery for a damaged guest is `acq rm` and recreate (and on sbx 0.38 a
+  re-apply of a startup-bearing kit is refused anyway, see section 36).
+
+### Why this is accepted
+
+- **Nothing in the guest is a trust anchor.** The sandbox is the boundary, and a
+  guest can already damage its own setup by editing its filesystem after create.
+  The barrier adds no new way to do that.
+- **No acq trust decision reads the barrier.** The values acq acts on across
+  restarts (`extra-kits`, `builtin-kits`, `generic-opencode`, provenance) are
+  host-written from host-observed status and independent of this file.
+- **A host-authoritative signal needs sbx support not verified here.** The only
+  candidates are a backend-reported startup status or a host-visible channel out
+  of the guest. Neither was found in the sbx documentation or CLI help consulted
+  for this repository (not exhaustively checked), and adding one by guessing would
+  trade a low-impact residual risk for an unverifiable mechanism. The related
+  trusted-startup question for SBX is analyzed in the SBX trusted-startup parity
+  ADR (`docs/adr/0037-sbx-trusted-startup-parity.md`).
+
+### Revisit if
+
+sbx exposes a startup-complete status through `sbx inspect` or an equivalent
+host-side API, or a read-only host channel into the sandbox.
+
+---
+
+## 49. msb: Readonly Kit Files Are Refused When msb's Own Record Does Not Show a Read-Only Mount
+
+**Status:** Fail closed by design. Applies to a kit with `files[]` entries marked
+`readonly: true` on an msb sandbox created with the read-only host-config mount.
+
+### Symptoms
+
+```text
+acq(msb): error: cannot place read-only kit file '<path>' for '<sandbox>': <reason>.
+acq(msb):   acq will not run trusted code from a mount msb does not report as read-only. ...
+acq(msb):   No guest-copy fallback is taken because the sandbox was created with a read-only host config; recreate the sandbox.
+```
+
+`<reason>` names the cause, one of: msb is below the minimum version (or its version
+is a prerelease or unreadable); `msb inspect` failed, returned unparsable output, an
+unexpected shape, or a null `active_config` that stayed null; `python3` is missing;
+msb lists no mount, or more than one, at `/var/lib/acq/host`; the mount is not a Bind
+mount, is not recorded read-only, or is backed by a directory other than this
+sandbox's acq host config directory; a writable mount overlaps it; or this platform
+(Windows) was not reviewed. The guest probe can add two more: the mount "looks
+WRITABLE" or "is not a confirmed read-only mount". The kit does not fully apply; for
+built-in kits at provision this is a warning, and a heal reports it on each
+re-attach. No shipped built-in kit marks a file `readonly: true`, so default
+sandboxes are not affected.
+
+### Root Cause
+
+acq runs `readonly: true` kit code from a host directory mounted into the guest
+`:ro`. In msb that flag is enforced on the host by the filesystem server that exports
+the directory, not by the guest kernel (ADR-0035), so a guest root can relabel its own
+mount without gaining write access. acq therefore does not trust anything the guest
+says about the mount. It trusts what **msb itself recorded** for this sandbox, read by
+the host with `msb inspect --format json`, together with a version floor. If that
+record does not show the one read-only Bind of acq's host config directory at the
+guest path, acq refuses rather than staging, running, or copying that code.
+
+### Fix
+
+Match the reason to the step:
+
+1. **Version:** update msb (acq installs the pinned release; the floor is
+   `MSB_RO_MOUNT_MIN_VERSION`).
+2. **`inspect` failed, null `active_config`, or unparsable output:** make sure the
+   sandbox is running (`acq start <sandbox>`), that `msb inspect <sandbox> --format
+   json` works on the host, and that `python3` is installed; then re-run.
+3. **Mount missing, duplicated, not read-only, wrong directory, or overlapped by a
+   writable mount:** the sandbox was not created the way acq creates it (for example
+   an extra `--volume` over `/var/lib/acq`). Recreate it with `acq rm` and `acq run`.
+4. **Guest probe says writable or unconfirmed:** the sandbox may be damaged or not
+   running; restart it and retry, and recreate it if it persists.
+
+### Prevention / Status
+
+The gate confirms what msb was asked to enforce; it does not independently prove
+enforcement, so an upstream regression would not be caught by it. The optional,
+non-gating `scripts/qualify-msb-ro-mount` canary corroborates enforcement on a given
+msb release (output goes to a gitignored `tmp/qualify-msb-ro-mount-<stamp>/` under the
+repo, ending with a pasteable `RESULT ...` line); run it when adopting a new msb.
+Windows is not covered. One canary run on msb 0.7.7 (macOS arm64, default image,
+fresh create) is recorded in ADR-0035.
+
+---
+
+## 50. SBX: Readonly Kit Files Are Guest-Resident Copies (Accepted Residual Risk)
+
+**Status:** Accepted (ADR-0037, Option D). Applies to a kit with
+`files[]` entries marked `readonly: true` (the opt-in `oci-engine` kit, first
+shipped in Patterns v1.18.0 and present at the current v1.19.0 pin, is the only
+one) on an sbx sandbox.
+
+### Symptoms
+
+```text
+acq(sbx): WARNING: kit '<kit>' marks startup files readonly: <guest paths>
+acq(sbx):   On sbx these are guest-resident copies with NO integrity guarantee
+```
+
+The kit still applies. The warning is printed once per kit on create or kit-add.
+
+### Root Cause
+
+msb stages `readonly: true` files from a read-only host mount. sbx has no validated
+equivalent, so the translated kit copies them into the guest, where a
+passwordless-sudo agent can rewrite them before a root startup command runs them.
+
+### Fix / Mitigation
+
+Use the msb backend (`ACQ_BACKEND=msb`) when the tamper-resistance of those files
+matters, or do not enable the kit on sbx. The sbx read-only mount (ADR-0037,
+Option B) is not scheduled; ADR-0037 states the live checks and the kit-side change
+that would have to hold before it is reopened.
+
+---
+
+## 51. A Second Parallel Sandbox From the Same Kit Is Unreachable on Its Published Port (msb)
+
+### Symptoms
+
+- Two sandboxes created from the same kit both start cleanly, with no error.
+- `acq ports` reports the **same** host port for both, e.g.
+  `sandbox 6767 -> host 127.0.0.1:6767` in each.
+- `http://127.0.0.1:6767` serves the **first** sandbox's service. The second
+  sandbox's UI/API is simply unreachable, and nothing said so.
+- Also: a developer already running their own service on that port owns it, and
+  the sandbox's mapping silently loses.
+
+### Root Cause
+
+acq's neutral `publishedPorts` parser defaulted an omitted `host:` to the
+**guest** port, so every sandbox built from one kit requested the same host port.
+msb accepts the duplicate mapping without complaint — first writer wins, the rest
+are inert.
+
+### Fix
+
+Fixed in acq: an entry that omits `host:` now gets a **free** loopback host port
+chosen per sandbox, and an explicitly requested host port that is already in use
+**fails the create** instead of producing a dead mapping. Upgrade acq and
+recreate the sandboxes (`acq rm NAME` then `acq run …`) — the mapping is baked
+into the create arguments, so an existing sandbox keeps its old one.
+
+To pin a predictable host port per sandbox instead of taking the free one:
+
+```bash
+acq run opencode --publish 6868:6767 ~/projects/app-one
+acq run opencode --publish 6869:6767 ~/projects/app-two
+```
+
+`--publish` is msb-only and create-time only. See
+[ADR-0034](adr/0034-host-port-selection-and-publish-override.md).
+
+### Prevention
+
+Never hardcode a published host port in a script — read it back from
+`acq ports NAME`, or request it explicitly with `--publish` and let a contended
+port fail loudly. Note that `acq ports` prints the mapping msb was **asked**
+for, which is not proof that the sandbox owns that host port.
+
+---
+
+## 52. A Bash 3.2 Shard Leg or the Interpreter Hand-Off Fails (`acq offline suite under bash 3.2`)
+
+**Status:** Fail closed by design. Applies to the CI workflow
+`.github/workflows/bash32-compat.yml` (design: ADR-0039).
+
+### Symptoms
+
+- The required check `acq offline suite under bash 3.2` is red, and the run has a
+  `Prepare bash 3.2.57 interpreter` job and matrix legs named
+  `acq offline suite under bash 3.2 (build N/M)`.
+- One of:
+  - a single leg fails with test failures: the failing `not ok` line is in that
+    leg's log, and its job summary has a `bats timing (shard: NofM)` table;
+  - every leg fails at *Download the prepared interpreter* or *Install and confirm
+    bash 3.2.57*: `Artifact not found`, `sha256sum: ... did NOT match`, or
+    `interpreter reports X, need 3.2.57`;
+  - the gate reports `relevant diff but prepare=failure, offline suite=skipped`: the
+    prepare job failed, so the legs never started.
+
+### Root Cause
+
+The suite is split into shards (`scripts/bats-shard`, `ACQ_BATS_SHARD=I/N`), and the
+interpreter is built once by `prepare-bash32` and handed to the legs as a run
+artifact whose sha256 is a job output. Every link fails closed: a missing or
+altered tarball, or an interpreter that does not report exactly `3.2.57`, stops the
+leg rather than running on some other bash. The matrix job's result is `success`
+only if every leg succeeded, and the gate also requires the prepare job to have
+succeeded whenever the diff is relevant. The artifact is kept two days, so a leg
+re-run after that fails with `Artifact not found`.
+
+### Fix
+
+1. **Test failures in one leg:** reproduce with the same shard locally,
+   `ACQ_BATS_SHARD=<I>/<N> scripts/test-acq-bats`, or run the failing file under a
+   local 3.2.57 with `scripts/test-acq-bash32 test/bats/<file>.bats`
+   (see `docs/howto/bash32-testing.md`).
+2. **Artifact missing (expired or deleted):** use "Re-run all jobs", which rebuilds the
+   interpreter; "Re-run failed jobs" cannot recreate it.
+3. **sha256 mismatch or wrong version:** treat as an integrity problem, not a flake.
+   Do not bypass the check; re-run all jobs, and if it recurs, investigate the prepare
+   job's build log and the cache entry `bash32-Linux-3.2.57`.
+4. **Prepare job failed during the source build:** the log names the GNU mirror
+   fetch, the OpenPGP signature check, or the compile. A transient mirror failure is
+   retried across five mirrors; a signature or fingerprint failure must be
+   escalated, never worked around.
+5. **One shard consistently much slower than the others:** the shards are balanced by
+   `@test` count, not measured time. Compare the legs' timing artifacts
+   (`bats-timing-<I>of<N>-<attempt>`) and adjust the weighting in `scripts/bats-shard`
+   or add a leg (change `matrix.shard` only; the shard count is derived from it).
+
+### Prevention / Status
+
+The gate's logic was checked against every combination of the three job results and
+the relevance output, and passes only for an all-success relevant run or an
+all-skipped irrelevant one. Adding a test file needs no CI change: shards are
+re-derived from `test/bats` on every run. The OCI-fetched interpreter used by
+`scripts/test-acq-bash32 --install-oci` is deliberately not used in CI (ADR-0039):
+it is a musl build and is content-pinned rather than signer-authenticated.
+
+---
+
+## Contributing
+
+When you discover a new failure mode:
+
+1. Document the symptoms clearly
+2. Identify the root cause
+3. Provide a minimal fix
+4. Add it to this document
+5. Consider if it indicates a gap in AGENTS.md rules
+
+---
+
+## Default OpenCode Generic Base Requires Recreation
+
+**Symptom:** An existing OpenCode sandbox still starts through an older
+OpenCode-specific template or does not receive the pinned kit behavior.
+
+**Cause:** The ADR-0030 generic base and kit composition are selected only when
+the sandbox is created. Existing sandboxes intentionally keep the image and kit
+set they were created with.
+
+**Resolution:** Recreate the sandbox from the project path:
+
+```bash
+./acq rm opencode-your-project
+./acq run opencode /path/to/your/project
+```
+
+The new default uses the pinned generic `devenv-shell` image and validates the
+pinned OpenCode kit before provisioning. If that validation fails, correct the
+pinned kit availability or metadata rather than falling back to an unpinned npm
+installation.
