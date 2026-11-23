@@ -1,9 +1,9 @@
 # haasonsaas/ocode
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit b1877260448f @ be083d75cb1a2abf
+Latest snapshot: commit b1877260448f @ 9a26e1e0d54bbadd
 
 ## Summary (orientation draft, not independently verified)
 

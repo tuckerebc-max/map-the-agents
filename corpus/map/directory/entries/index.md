@@ -105,31 +105,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [AI-Coding-Style-Guides (`ai-coding-style-guides`)](ai-coding-style-guides-fc28222e55.md) -- backing+pages
 - [ai-data-extractor (`ai-data-extractor`)](ai-data-extractor-1add929798.md) -- backing+pages
 - [Ai-Dev-Agent-Test (`ai-dev-agent-test`)](ai-dev-agent-test-ef2cd46f8e.md) -- backing+pages
-- [ai-dev-kit (`ai-dev-kit`)](ai-dev-kit-f8c0563bda.md) -- backing-only
-- [ai-dev-tasks (`ai-dev-tasks`)](ai-dev-tasks-7da827f242.md) -- backing-only
-- [ai-devkit (`ai-devkit`)](ai-devkit-583949c88b.md) -- published+backing
-- [ai-doc-gen (`ai-doc-gen`)](ai-doc-gen-fb47375f9b.md) -- backing-only
-- [AI-Engineer (`ai-engineer`)](ai-engineer-cb524c197c.md) -- backing-only
-- [ai-engineer-toolkit (`ai-engineer-toolkit`)](ai-engineer-toolkit-c889031425.md) -- backing-only
-- [Ai-Engineering-Roadmap (`ai-engineering-roadmap`)](ai-engineering-roadmap-e81f258322.md) -- backing-only
-- [ai-engineering-toolkit (`ai-engineering-toolkit`)](ai-engineering-toolkit-461875aa28.md) -- backing-only
-- [AI expert for codebases (`ai-expert-for-codebases`)](ai-expert-for-codebases-d6bbcfc3f3.md) -- backing-only
-- [ai-for-software-engineers (`ai-for-software-engineers`)](ai-for-software-engineers-892fab3d83.md) -- backing-only
-- [AI Free Chat & Agent (`ai-free-chat-agent`)](ai-free-chat-agent-d723018f40.md) -- published+backing
-- [ai_game_base_analysis_cli_mcp_tool (`ai-game-base-analysis-cli-mcp-tool`)](ai-game-base-analysis-cli-mcp-tool-03ac203404.md) -- backing-only
-- [Ai_Gdpr (`ai-gdpr`)](ai-gdpr-a449cf2e7f.md) -- backing-only
-- [ai-orchestrator (`ai-orchestrator`)](ai-orchestrator-c5d6c0fa03.md) -- published+backing
-- [Ai-Powered-Chatbot-Generator (`ai-powered-chatbot-generator`)](ai-powered-chatbot-generator-5c88dc0390.md) -- backing-only
-- [AI-Powered-Vulnerability-Impact-Analyzer (`ai-powered-vulnerability-impact-analyzer`)](ai-powered-vulnerability-impact-analyzer-2c34c096dc.md) -- backing-only
-- [Ai-Testing-Agent (`ai-testing-agent`)](ai-testing-agent-4f567cd7b8.md) -- published+backing
-- [ai-vibe-coding-notes-form-threads (`ai-vibe-coding-notes-form-threads`)](ai-vibe-coding-notes-form-threads-53e49ae7a5.md) -- backing-only
-- [ai-website-builder (`ai-website-builder`)](ai-website-builder-ec53264f9e.md) -- backing-only
-- [ai-website-cloner-template (`ai-website-cloner-template`)](ai-website-cloner-template-b6d192a515.md) -- backing-only
-- [ai4j (`ai4j`)](ai4j-0ddcf890aa.md) -- published+backing
-- [Aider (`aider`)](aider-ebde709e30.md) -- published+backing
-- [aider-desk (`aider-desk`)](aider-desk-d88f8139c0.md) -- published+backing
-- [aidermacs (`aidermacs`)](aidermacs-d66b68d181.md) -- backing-only
-- [Aikido Autofix (`aikido-autofix`)](aikido-autofix-6cae53a7bd.md) -- published+backing
+- [ai-dev-kit (`ai-dev-kit`)](ai-dev-kit-f8c0563bda.md) -- backing+pages
+- [ai-dev-tasks (`ai-dev-tasks`)](ai-dev-tasks-7da827f242.md) -- backing+pages
+- [ai-devkit (`ai-devkit`)](ai-devkit-583949c88b.md) -- published+backing+pages
+- [ai-doc-gen (`ai-doc-gen`)](ai-doc-gen-fb47375f9b.md) -- backing+pages
+- [AI-Engineer (`ai-engineer`)](ai-engineer-cb524c197c.md) -- backing+pages
+- [ai-engineer-toolkit (`ai-engineer-toolkit`)](ai-engineer-toolkit-c889031425.md) -- backing+pages
+- [Ai-Engineering-Roadmap (`ai-engineering-roadmap`)](ai-engineering-roadmap-e81f258322.md) -- backing+pages
+- [ai-engineering-toolkit (`ai-engineering-toolkit`)](ai-engineering-toolkit-461875aa28.md) -- backing+pages
+- [AI expert for codebases (`ai-expert-for-codebases`)](ai-expert-for-codebases-d6bbcfc3f3.md) -- backing+pages
+- [ai-for-software-engineers (`ai-for-software-engineers`)](ai-for-software-engineers-892fab3d83.md) -- backing+pages
+- [AI Free Chat & Agent (`ai-free-chat-agent`)](ai-free-chat-agent-d723018f40.md) -- published+backing+pages
+- [ai_game_base_analysis_cli_mcp_tool (`ai-game-base-analysis-cli-mcp-tool`)](ai-game-base-analysis-cli-mcp-tool-03ac203404.md) -- backing+pages
+- [Ai_Gdpr (`ai-gdpr`)](ai-gdpr-a449cf2e7f.md) -- backing+pages
+- [ai-orchestrator (`ai-orchestrator`)](ai-orchestrator-c5d6c0fa03.md) -- published+backing+pages
+- [Ai-Powered-Chatbot-Generator (`ai-powered-chatbot-generator`)](ai-powered-chatbot-generator-5c88dc0390.md) -- backing+pages
+- [AI-Powered-Vulnerability-Impact-Analyzer (`ai-powered-vulnerability-impact-analyzer`)](ai-powered-vulnerability-impact-analyzer-2c34c096dc.md) -- backing+pages
+- [Ai-Testing-Agent (`ai-testing-agent`)](ai-testing-agent-4f567cd7b8.md) -- published+backing+pages
+- [ai-vibe-coding-notes-form-threads (`ai-vibe-coding-notes-form-threads`)](ai-vibe-coding-notes-form-threads-53e49ae7a5.md) -- backing+pages
+- [ai-website-builder (`ai-website-builder`)](ai-website-builder-ec53264f9e.md) -- backing+pages
+- [ai-website-cloner-template (`ai-website-cloner-template`)](ai-website-cloner-template-b6d192a515.md) -- backing+pages
+- [ai4j (`ai4j`)](ai4j-0ddcf890aa.md) -- published+backing+pages
+- [Aider (`aider`)](aider-ebde709e30.md) -- published+backing+pages
+- [aider-desk (`aider-desk`)](aider-desk-d88f8139c0.md) -- published+backing+pages
+- [aidermacs (`aidermacs`)](aidermacs-d66b68d181.md) -- backing+pages
+- [Aikido Autofix (`aikido-autofix`)](aikido-autofix-6cae53a7bd.md) -- published+backing+pages
 - [Aimultiagents (`aimultiagents`)](aimultiagents-ecfb4c23f0.md) -- backing-only
 - [Aip-Identity (`aip-identity`)](aip-identity-dc11985fa2.md) -- backing-only
 - [aipexbase (`aipexbase`)](aipexbase-ac9bfedfa2.md) -- backing-only

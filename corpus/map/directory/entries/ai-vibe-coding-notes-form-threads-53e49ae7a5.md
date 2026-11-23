@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing-only.
+Directory membership: backing+pages.
 
 - Category: other
 - Provider/maker: nadinelipeiyu-jpg
@@ -22,6 +22,8 @@ Repository map entry: [nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads](../.
 
 ## Description
 
-(backing feed `description`, not a verified repo-code finding)
-The document gathers practical Claude Code and vibe-coding tips posted on Threads, organized into eight sections: skill design, token and session saving, CLAUDE.md configuration, UI work, tool integra
-Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Community-sourced tips directly from Threads with attribution to each contributor, organized into 8 practical categories (Skills design, token saving, CLAUDE.md config, Vibe Coding/UI, tool integration, Obsidian/knowledge management, workflow cases, learning resources), each tip includes a relatable analogy and real-world application
+
+(captured site page body (agents/ai-vibe-coding-notes-form-threads.md), not a verified repo-code finding)
+The document gathers practical Claude Code and vibe-coding tips posted on Threads, organized into eight sections: skill design, token and session saving, CLAUDE.md configuration, UI work, tool integrations, Obsidian-based knowledge management, workflow case studies, and learning resources. Each tip links back to the contributing author's original post. It is a README-only repository — no code, license file, or install — compiled from posts collected between April 5 and April 13, 2026. The audience is Chinese-reading Claude Code users mining workflow advice, and although the author invites submissions, only two commits exist.
+Sources: [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json); [site page @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/agents/ai-vibe-coding-notes-form-threads.md)

@@ -2,11 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [coverage: partial]
-- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
-- [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
-- [bytedance/deer-flow](../repos/bytedance/deer-flow.md) [coverage: partial]
-- [c0sogi/llmchat](../repos/c0sogi/llmchat.md) [coverage: partial]
 - [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
 - [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
 - [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
@@ -129,6 +124,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) [coverage: partial]
 - [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) [coverage: partial]
 - [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) [coverage: partial]
+- [h5i-dev/h5i](../repos/h5i-dev/h5i.md) [coverage: partial]
+- [haasonsaas/ocode](../repos/haasonsaas/ocode.md) [coverage: partial]
+- [haervwe/open-webui-tools](../repos/haervwe/open-webui-tools.md) [coverage: complete]
+- [haleclipse/codex-jetbrains](../repos/haleclipse/codex-jetbrains.md) [coverage: partial]
+- [halfwhey/claudraband](../repos/halfwhey/claudraband.md) [coverage: partial]
 
 ## refresh-failed (72)
 

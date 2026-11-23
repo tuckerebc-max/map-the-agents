@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (787)
+## current (782)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -182,11 +182,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) [coverage: complete]
 - [grik-ai/ricochet](../repos/grik-ai/ricochet.md) [coverage: complete]
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
-- [h5i-dev/h5i](../repos/h5i-dev/h5i.md) [coverage: partial]
-- [haasonsaas/ocode](../repos/haasonsaas/ocode.md) [coverage: partial]
-- [haervwe/open-webui-tools](../repos/haervwe/open-webui-tools.md) [coverage: complete]
-- [haleclipse/codex-jetbrains](../repos/haleclipse/codex-jetbrains.md) [coverage: partial]
-- [halfwhey/claudraband](../repos/halfwhey/claudraband.md) [coverage: partial]
 - [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) [coverage: partial]
 - [haochenglu/contextvc](../repos/haochenglu/contextvc.md) [coverage: complete]
 - [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) [coverage: partial]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ohad6k/viberaven](../repos/ohad6k/viberaven.md) [coverage: partial]
 - [oi-overide/oi](../repos/oi-overide/oi.md) [coverage: complete]
 - [oinone/oinone-pamirs](../repos/oinone/oinone-pamirs.md) [coverage: complete]
+- [olasunkanmi-se/codebuddy](../repos/olasunkanmi-se/codebuddy.md) [coverage: partial]
+- [oldjs/web-code-agent](../repos/oldjs/web-code-agent.md) [coverage: complete]
+- [oleksandrchekhovskyi/hax](../repos/oleksandrchekhovskyi/hax.md) [coverage: partial]
+- [omarabid/cli-llm-coding](../repos/omarabid/cli-llm-coding.md) [coverage: complete]
+- [omnara-ai/omnara](../repos/omnara-ai/omnara.md) [coverage: partial]

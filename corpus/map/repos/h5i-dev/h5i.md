@@ -1,9 +1,9 @@
 # h5i-dev/h5i
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit ec1a18cd4f2d @ 0b836cce6be3abbe
+Latest snapshot: commit 515c7b93d8ab @ a722c184db408377
 
 ## Summary (orientation draft, not independently verified)
 

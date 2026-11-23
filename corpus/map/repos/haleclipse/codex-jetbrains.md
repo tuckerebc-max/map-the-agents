@@ -1,9 +1,9 @@
 # haleclipse/codex-jetbrains
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit e2db6655d78d @ 50cc8f371d9c5902
+Latest snapshot: commit e2db6655d78d @ 661652508a794075
 
 ## Summary (orientation draft, not independently verified)
 

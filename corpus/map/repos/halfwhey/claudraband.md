@@ -1,9 +1,9 @@
 # halfwhey/claudraband
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit d2b6a7d1836f @ 4c0e8208ff0b9c40
+Latest snapshot: commit d2b6a7d1836f @ 5c5e72a19bb74388
 
 ## Summary (orientation draft, not independently verified)
 

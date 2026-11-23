@@ -1,0 +1,67 @@
+# h5i
+
+> h5i ("high-five") is an Axum-based Rust web framework for building web applications and formally verifying core logic with Lean 4. It includes optional GPU acceleration and development infrastructure for red-teaming, CI/CD testing, sandboxed workflows, and a local dashboard.
+>
+> h5i-app keeps application decisions in composable Rust kernels that can be translated into Lean 4. The h5i CLI provides project tooling, browser automation, HTTP inspection, reconnaissance, security regression testing, sandboxing, and a dashboard. Its security tools also work with existing apps that do not use h5i-app.
+
+## Start here
+
+- [h5i GitHub](https://github.com/h5i-dev/h5i): Source, installation, and examples.
+- [h5i-app framework](https://github.com/h5i-dev/h5i/blob/main/crates/h5i-app/README.md): Build Rust web apps with verifiable kernel logic.
+- [Features](https://h5i.dev/features/): Overview of the framework and development tools.
+- [Guides](https://h5i.dev/guides/): Five task workflows, from Rust app development to sandboxed agent work.
+- [Manual](https://h5i.dev/manual/): Commands, configuration, policies, and limitations.
+- [Showcase](https://h5i.dev/showcase/): Apps, benchmarks, and community tools built with h5i.
+
+## 1. Verifiable Web Framework
+
+Use h5i-app when building Rust web applications with business rules, authorization, or data isolation properties that you want to state and prove.
+
+- **Rust and Axum:** Keep application decisions in composable Rust kernels and connect them to HTTP handlers.
+- **Formal verification:** Translate supported kernel logic into Lean 4 with Charon and Aeneas, then prove stated properties.
+- **Optional GPU acceleration:** Run supported Rust decision kernels on GPUs for suitable batch workloads.
+
+### Project Tooling
+
+- `cargo add h5i-app` adds the framework to a Rust project; `h5i app new counter` scaffolds a new project.
+- `h5i app extract` translates kernel logic to Lean 4; `h5i app prove` checks the proofs.
+- `h5i app lint` checks route authentication structure; `h5i app mutate` tests whether proofs detect intentional kernel bugs.
+- See the [h5i app manual](https://h5i.dev/manual/#h5i-app), [verification trust model](https://github.com/h5i-dev/h5i/blob/main/docs/design/design-app-trust.md), and [GPU backend report](https://github.com/h5i-dev/h5i/blob/main/docs/design/design-app-executors.md).
+- Follow the [build and verify guide](https://h5i.dev/guides/build-and-verify-a-web-app/) for the complete workflow.
+
+## 2. Development Infrastructure
+
+Use these tools to investigate and test running applications or to run agent work in a restricted environment. The security tools work with any web framework.
+
+### Agent-Native Red-Teaming
+
+- [`h5i browser`](https://h5i.dev/manual/#h5i-browser): Navigate a running app and inspect authenticated workflows.
+- [`h5i recon`](https://h5i.dev/manual/#h5i-recon): Discover endpoints and map the exposed attack surface.
+- [`h5i websec`](https://h5i.dev/manual/#h5i-websec): Inspect, modify, replay, and compare captured HTTP traffic.
+- Start with [Red-Team a Web App](https://h5i.dev/guides/red-team-a-web-app/) or continue to [advanced testing](https://h5i.dev/guides/advanced-web-security-testing/). Use these tools only against systems you own or are explicitly authorized to test.
+
+### CI/CD & Regression Testing
+
+- [`h5i test`](https://h5i.dev/manual/#h5i-test): Save confirmed security findings as versioned tests, replay them in CI/CD, and check API coverage against an OpenAPI description.
+- Follow the [security regression guide](https://h5i.dev/guides/security-regression-testing/) to write a test and run it against staging.
+
+### Sandbox
+
+- [`h5i box`](https://h5i.dev/manual/#containment-optional): Run an agent and its tools in a disposable environment with configured filesystem and network restrictions. Start with the [sandboxed workflows guide](https://h5i.dev/guides/sandboxed-agent-workflows/).
+
+### Dashboard
+
+- [`h5i ui`](https://h5i.dev/manual/#the-console): Inspect browser sessions, HTTP traffic, and agent activity in the local console.
+
+## Installation
+
+- Framework: `cargo add h5i-app`.
+- CLI with security plugins: `curl -fsSL https://h5i.dev/install.sh | sh -s -- --websec --recon --test`.
+- Coding agent skill: `h5i skill install` or `npx skills add h5i-dev/h5i`. See the [skill manual](https://h5i.dev/manual/#h5i-skill).
+
+## Important limitations
+
+- Lean 4 proofs establish stated properties of extracted kernel logic under explicit assumptions. They do not prove external database behavior, deployment infrastructure, or GPU execution correctness.
+- CPU/GPU differential tests check backend behavior separately; they are not Lean proofs of GPU equivalence.
+- Recon results and HTTP response differences are evidence to investigate, not automatic vulnerability findings.
+- Security testing requires authorization and a restricted scope. Sandbox guarantees depend on the selected isolation tier; see the [policy manual](https://h5i.dev/manual/#policy).

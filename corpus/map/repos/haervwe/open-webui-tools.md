@@ -1,9 +1,9 @@
 # haervwe/open-webui-tools
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a94660737737 @ 9c74da54a029af00
+Latest snapshot: commit c1fac21ad8d0 @ 8e35139e3c52da81
 
 ## Summary (orientation draft, not independently verified)
 
