@@ -64,10 +64,10 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [haleclipse/codex-jetbrains](../repos/haleclipse/codex-jetbrains.md) -- status=distilled, freshness=stale
 - [halfwhey/claudraband](../repos/halfwhey/claudraband.md) -- status=distilled, freshness=stale
 - [hams-ollo/project-s.o.c.r.a.t.e.s.](../repos/hams-ollo/project-s.o.c.r.a.t.e.s..md) -- status=blocked, freshness=refresh-failed
-- [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) -- status=distilled, freshness=current
+- [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) -- status=distilled, freshness=stale
 - [haochenglu/contextvc](../repos/haochenglu/contextvc.md) -- status=distilled, freshness=current
-- [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) -- status=distilled, freshness=current
-- [hardik180704/neocode](../repos/hardik180704/neocode.md) -- status=distilled, freshness=current
+- [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) -- status=distilled, freshness=stale
+- [hardik180704/neocode](../repos/hardik180704/neocode.md) -- status=distilled, freshness=stale
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) -- status=distilled, freshness=current
 - [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) -- status=distilled, freshness=current
 - [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) -- status=distilled, freshness=current

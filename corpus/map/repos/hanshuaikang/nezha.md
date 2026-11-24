@@ -1,9 +1,9 @@
 # hanshuaikang/nezha
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 8b1068a87cf2 @ c72eaaf9de1ac3a9
+Latest snapshot: commit 49a1c642e05b @ 2904aaf212705416
 
 ## Summary (orientation draft, not independently verified)
 

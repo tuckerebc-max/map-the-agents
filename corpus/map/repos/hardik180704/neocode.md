@@ -1,9 +1,9 @@
 # hardik180704/neocode
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 0c016cadc012 @ 0d07d5515adf4028
+Latest snapshot: commit 0c016cadc012 @ 520b509883d73da3
 
 ## Summary (orientation draft, not independently verified)
 

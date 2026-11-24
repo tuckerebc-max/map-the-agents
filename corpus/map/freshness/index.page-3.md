@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
-- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
-- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
 - [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
 - [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
 - [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
@@ -129,6 +126,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [haervwe/open-webui-tools](../repos/haervwe/open-webui-tools.md) [coverage: complete]
 - [haleclipse/codex-jetbrains](../repos/haleclipse/codex-jetbrains.md) [coverage: partial]
 - [halfwhey/claudraband](../repos/halfwhey/claudraband.md) [coverage: partial]
+- [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) [coverage: partial]
+- [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) [coverage: partial]
+- [hardik180704/neocode](../repos/hardik180704/neocode.md) [coverage: partial]
 
 ## refresh-failed (72)
 

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (782)
+## current (779)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -182,10 +182,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [graphql/graphql-playground](../repos/graphql/graphql-playground.md) [coverage: complete]
 - [grik-ai/ricochet](../repos/grik-ai/ricochet.md) [coverage: complete]
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
-- [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) [coverage: partial]
 - [haochenglu/contextvc](../repos/haochenglu/contextvc.md) [coverage: complete]
-- [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) [coverage: partial]
-- [hardik180704/neocode](../repos/hardik180704/neocode.md) [coverage: partial]
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) [coverage: complete]
 - [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) [coverage: partial]
 - [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [oleksandrchekhovskyi/hax](../repos/oleksandrchekhovskyi/hax.md) [coverage: partial]
 - [omarabid/cli-llm-coding](../repos/omarabid/cli-llm-coding.md) [coverage: complete]
 - [omnara-ai/omnara](../repos/omnara-ai/omnara.md) [coverage: partial]
+- [omnigent-ai/omnigent](../repos/omnigent-ai/omnigent.md) [coverage: partial]
+- [ondateta/teta](../repos/ondateta/teta.md) [coverage: complete]
+- [onecli/onecli](../repos/onecli/onecli.md) [coverage: partial]

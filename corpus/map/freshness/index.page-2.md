@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [omnigent-ai/omnigent](../repos/omnigent-ai/omnigent.md) [coverage: partial]
-- [ondateta/teta](../repos/ondateta/teta.md) [coverage: complete]
-- [onecli/onecli](../repos/onecli/onecli.md) [coverage: partial]
 - [onllm-dev/onui](../repos/onllm-dev/onui.md) [coverage: partial]
 - [oooscoos/benzi](../repos/oooscoos/benzi.md) [coverage: complete]
 - [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) [coverage: partial]
@@ -379,7 +376,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (199)
+## stale (202)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -453,3 +450,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
 - [bytedance/deer-flow](../repos/bytedance/deer-flow.md) [coverage: partial]
 - [c0sogi/llmchat](../repos/c0sogi/llmchat.md) [coverage: partial]
+- [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
+- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
+- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
