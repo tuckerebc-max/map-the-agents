@@ -2,6 +2,7 @@
 
 Page 4 of 4. [First page](index.md) | [Previous](index.page-3.md)
 
+- [yusifeng/formax](../repos/yusifeng/formax.md) -- status=distilled, freshness=current
 - [yuuichieguchi/calyx](../repos/yuuichieguchi/calyx.md) -- status=distilled, freshness=current
 - [yzyydev/claude_code_sub_agents](../repos/yzyydev/claude_code_sub_agents.md) -- status=distilled, freshness=current
 - [zachblume/autospec](../repos/zachblume/autospec.md) -- status=distilled, freshness=current

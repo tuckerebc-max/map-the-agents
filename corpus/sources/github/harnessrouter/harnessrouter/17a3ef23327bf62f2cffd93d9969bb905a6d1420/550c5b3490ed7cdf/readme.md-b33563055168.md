@@ -1,0 +1,422 @@
+<h1 align="center">
+  <a href="https://harnessrouter.ai/open-source#gh-light-mode-only">
+    <img alt="HarnessRouter" src=".github/images/logo-light.png" width="280">
+  </a>
+  <a href="https://harnessrouter.ai/open-source#gh-dark-mode-only">
+    <img alt="HarnessRouter" src=".github/images/logo-dark.png" width="280">
+  </a>
+<br>
+The unified interface for agent harnesses.
+</h1>
+
+<p align="center">
+<a href="https://github.com/HarnessRouter/harnessrouter#top" title="Back to the top to star this repository"><img src="https://raw.githubusercontent.com/HarnessRouter/harnessrouter/readme-badges/docs/images/github-stars.svg" alt="GitHub Stars, exact count" title="Back to the top, then click GitHub’s Star button. Official GitHub data, periodically refreshed; the last successful count is retained if refresh fails."></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-285AFF?logo=apache&amp;logoColor=white&amp;style=flat&amp;labelColor=444c56" alt="License: Apache 2.0"></a>
+  <a href="https://hub.docker.com/r/harnessrouter/harnessrouter"><img src="https://img.shields.io/docker/pulls/harnessrouter/harnessrouter?style=flat&amp;logo=docker&amp;logoColor=white&amp;label=Docker+pulls&amp;labelColor=444c56&amp;color=285aff" alt="Docker pulls"></a>
+  <a href="protocol/conformance"><img src="https://img.shields.io/badge/UHP-Full-16824B?style=flat&amp;labelColor=444c56" alt="UHP conformance: Full"></a>
+  <a href="#the-unified-harness-protocol"><img src="https://img.shields.io/badge/OpenAI%20Responses-Compatible-2247D5?style=flat&amp;labelColor=444c56" alt="OpenAI Responses: Compatible"></a>
+</p>
+
+**Build agent products without handling harness engineering.** HarnessRouter is the infrastructure layer that turns existing harnesses like Codex and Claude Code into plug-and-play agent backends, letting your product run tasks, retrieve results, and switch harnesses through one API.
+
+<a href="https://github.com/HarnessRouter/harnessrouter#top" title="Back to the top to star this repository">
+  <picture>
+    <source media="(max-width: 600px)" srcset="docs/images/github-readme-star-cta-mobile.svg">
+    <img src="docs/images/github-readme-star-cta-desktop.svg" width="100%" alt="Help grow the HarnessRouter community. Star this repo →">
+  </picture>
+</a>
+
+<a id="what-it-is"></a>
+
+<a id="one-integration"></a>
+
+<img src="docs/images/2026-09-13-harnessrouter-integration-comparison-cropped-v5.gif" width="100%" alt="Animated diagram comparing separate harness integrations with one HarnessRouter API. Without HarnessRouter, four harnesses require 36 integration responsibilities, increasing to 45 with a fifth. With HarnessRouter, the product keeps one integration as harnesses are added.">
+
+HarnessRouter implements the [Unified Harness Protocol (UHP)](#the-unified-harness-protocol) and provides an OpenAI Responses-compatible API, handling persistent sessions, streaming progress, files, artifacts, cancellation, and structured failures.
+
+<a id="one-interface-the-freedom-to-choose"></a>
+
+## Switch harnesses. Optimize cost and latency.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/images/benchmark-summary-mobile.svg">
+  <img src="docs/images/benchmark-summary.svg" width="100%" alt="Cost: 99.8% lower, from 223 to 0.47 credits. End-to-end latency: 3.2 times faster, from 4m 36s to 1m 25s. Eight harness and model configurations on the same task. Each metric compares its best and worst results. The lowest-cost and fastest configurations vary by task.">
+</picture>
+
+Eight harness × model configurations on the same task. Each metric compares its best and worst results. The lowest-cost and fastest configurations vary by task. [Methodology](https://harnessrouter.ai/benchmarks)
+
+**31 harness bases today:** Codex, Claude Code, Hermes, Pi, DeepSeek Harness, OpenCode, Kilo Code, Qwen Code, Gemini CLI, Cline, Oh My Pi, goose, Kimi Code CLI, MiniMax Code, Aider, OpenHands, CheetahClaws, Grok Build, Agent Zero, System One, Qoder Cloud Agent, MiMo Code, jcode, OpenSquilla, nanobot, ZeroClaw, Mistral Vibe, Docker Agent, fast-agent, Deep Agents Code and Roder. The [support matrix](docs/support-matrix.md) shows which run on which provider.
+
+> [!TIP]
+> **Get started:** [Run locally](#quickstart) · [Integrate into your product](#use-the-api-directly) · [Starter kits](#starter-kits) · [Use managed Cloud](https://harnessrouter.ai)
+
+<a id="install"></a>
+
+<br>
+
+## Quickstart
+
+Self-host Community Edition with your own provider keys, on infrastructure you control.
+
+Start with one Docker command, wait for the first launch, then connect a model provider and run your first task.
+
+<a id="what-you-need"></a>
+
+**You need:** Docker · About **4 GB** of disk · A **provider API key**
+
+No HarnessRouter account required. No bundled model or trial key.
+
+### 1. Start HarnessRouter
+
+```bash
+docker run -d --name harnessrouter \
+  -p 127.0.0.1:3000:3000 \
+  -v harnessrouter:/data \
+  harnessrouter/harnessrouter
+```
+
+Docker pulls the image if needed. The named volume preserves your database, files, installed harness CLIs, and workspaces between restarts.
+
+<details>
+<summary>Existing installation or custom setup</summary>
+
+**Already installed?** `docker pull harnessrouter/harnessrouter` downloads the latest image but does not upgrade a running container. Follow the [upgrade and backup guide](docs/self-hosting-guide.md#restarts-upgrades-and-backups).
+
+**Port 3000 busy?** Use `-p 127.0.0.1:3100:3000` and open port 3100 instead. Keep the loopback binding while using the initial credentials.
+
+**Do not add `--user`.** The entrypoint and Runner need root to manage per-session users. The Console and Gateway run unprivileged; agent processes run as their session’s user.
+
+For version pinning, Compose, and scripted setup, see the [setup guide](docs/self-hosting-guide.md#install).
+
+</details>
+
+### 2. Wait for the first launch
+
+```bash
+docker logs -f harnessrouter
+```
+
+The first launch installs the enabled harness CLIs. Continue when the logs show:
+
+```text
+[harnessrouter] ready on :3000
+```
+
+Press **Ctrl+C** to stop following logs. The container keeps running.
+
+<details>
+<summary>Console not ready or a harness missing?</summary>
+
+If the browser refuses the connection, retry after a few seconds while the Console finishes starting. For a missing harness, check `backends available:` and any `requested but not installed` warning in the logs.
+
+</details>
+
+### 3. Open the console
+
+Open [http://localhost:3000](http://localhost:3000), or your chosen host port, and sign in as `harnessrouter`. Your instance made its own password at first start; read it with:
+
+```bash
+docker exec harnessrouter cat /data/selfhost-initial-password
+```
+
+If you set `HR_AUTH_PASSWORD` when you started the container, sign in with that instead.
+
+> [!WARNING]
+> **Set your own password in Profile.** Keep the instance local until you do. Saving briefly restarts the Console and signs out other browsers.
+
+<details>
+<summary>See the sign-in screen</summary>
+
+![HarnessRouter Community Edition sign-in screen](docs/images/01-login.png)
+
+</details>
+
+Using an existing volume or custom credentials? [Check credential precedence and setup](docs/self-hosting-guide.md#install).
+
+These credentials sign you into the Console. You do not need a HarnessRouter API key to run tasks here.
+
+### 4. Connect a model provider
+
+Open the account menu at the bottom of the rail and choose **Bring your own key**. Find your provider, press **Add key**, and paste its API key. Its supported models become available in the Console.
+
+This provider key authorizes model requests. It is separate from the HarnessRouter API key used for product integration below.
+
+<details>
+<summary>See the provider setup screen</summary>
+
+![Adding an OpenAI key under Bring your own key](docs/images/console-add-key.png)
+
+</details>
+
+<a id="5-run-your-first-task"></a>
+
+### 5. Set up your first agent
+
+Open **Start**, say what your agent should do for your users, and press **Continue**. In **Set up an agent harness**, leave the agent harness and model on **Auto** or choose them, then save. HarnessRouter builds the setup on one of your own models: it writes the agent's instructions, picks the harness, model, skills, plugins and tools the job needs, and leaves an example request in the box. Send it to run the first task.
+
+![A setup HarnessRouter built from one sentence, with its example request waiting in the box](docs/images/console-setup-built.png)
+
+**Try an example first.** Under **Start in HarnessRouter**, pick one of the three example jobs. Its request plays back a recorded run, so you see a finished task without spending tokens. Write under it to carry on with your own model.
+
+![The product image example: a recorded run and the image it made](docs/images/console-example-run.png)
+
+<a id="configure-a-custom-harness"></a>
+
+### Change a setup (optional)
+
+Open the setup in **Studio** and choose **Settings** to change its model, instructions, skills, plugins, tools, environment and limits. Add plugins, skills, MCP servers and environments for the whole workspace under **Add-ons**. The agent harness is fixed once a setup is saved: make a new setup to use another.
+
+<details>
+<summary>See New setup</summary>
+
+![Set up an agent harness: one sentence, with the agent harness and model on Auto](docs/images/console-new-setup.png)
+
+</details>
+
+<a id="using-the-api"></a>
+
+<a id="use-the-api-directly"></a>
+
+<a id="integrate-into-your-product-with-one-api"></a>
+
+<a id="integrate-into-your-product-backend-with-one-api"></a>
+
+<br>
+
+## Integrate your harness into your product backend with one API
+
+Run product tasks with built-in or custom harnesses as pluggable agent backends. Call your self-hosted instance’s OpenAI Responses-compatible API and select the harness with `metadata.harness_id`. No Cloud deployment is required.
+
+Once your harness runs successfully in the Console:
+
+1. Open **API Keys** in the Console rail of the same CE instance ([default local address](http://localhost:3000/keys)), name the key, and press **Create**.
+2. Store the secret shown once as `HARNESSROUTER_API_KEY` in your product backend. Never expose it in browser code. This CE-issued key is separate from your Console password and provider key.
+3. Call the API with the Harness ID shown in the Console and a model served by your connected provider.
+
+```bash
+export HARNESSROUTER_BASE_URL=http://localhost:3000/api/harness
+
+curl --fail-with-body -sS "$HARNESSROUTER_BASE_URL/v1/responses" \
+  -H "Authorization: Bearer ${HARNESSROUTER_API_KEY:?}" \
+  -H 'content-type: application/json' \
+  -d '{
+    "input":"Reply with exactly: it works.",
+    "metadata":{"harness_id":"codex"},
+    "model":"gpt-5.4-mini",
+    "stream":false
+  }'
+```
+
+The task and its transcript appear in the same workspace in the Console. Set `"stream": true` to receive server-sent events.
+
+**Join a caller's trace to the task.**
+
+Send the W3C Trace Context headers `traceparent` and `tracestate` on the request, and the task's model calls carry a child of that trace: the same trace id, a new span id and the sampled flag, so the provider's log and yours are one trace. A value that is not valid W3C syntax is dropped, never refused: a broken tracing header does not fail a task. `baggage` is never read and never leaves the instance.
+
+**Retry a task without running it twice.**
+
+Send the same request with the same `Idempotency-Key` when retrying a task. For example, send this request twice using the URL and API key above (key generation needs Python 3):
+
+```bash
+IDEMPOTENCY_KEY=$(python3 -c 'import uuid; print(uuid.uuid4())')
+
+for attempt in 1 2; do
+  curl --fail-with-body -sS "$HARNESSROUTER_BASE_URL/v1/responses" \
+    -H "Authorization: Bearer ${HARNESSROUTER_API_KEY:?}" \
+    -H 'content-type: application/json' \
+    -H "Idempotency-Key: $IDEMPOTENCY_KEY" \
+    -d '{
+      "input":"Reply with exactly: it works.",
+      "metadata":{"harness_id":"codex"},
+      "model":"gpt-5.4-mini",
+      "stream":false
+    }'
+  printf '\n'
+done
+```
+
+Both responses have the same `id`, and the session contains one turn: the retry returns the first request's result without starting another execution. If the first request is still running, the retry waits for it. Use a new key for each new logical request. Reusing a key with a different request body returns `409`; changing only `stream` still counts as the same request. See [Tasks §6: Idempotency](protocol/versions/2026-10-19/tasks.md#6-idempotency).
+
+Never put a long exact value such as a token, an id or a hash in the prompt: the agent retypes what it reads, and a model drops and swaps characters in strings like that. Attach it as a file (`POST /v1/files`, then an `input_file` block; the file lands in the agent's working directory under its filename before every turn that carries it) or hand it to the agent through the harness's environment. A harness takes an `env` map whose values resolve on every turn: `$headers.X-Name` takes that header from the request (declare it in `additional_headers`), `vault:name` takes a stored secret, anything else is used as written. The agent's shell and tools start with those variables set, so a task can say "the token is in $DEPLOY_TOKEN", and a value that came through a reference is redacted from everything that leaves the sandbox, the response, the stream, the trace and the stored record, even when the agent prints it. A `vault:` reference reads only a secret your own workspace stored through `PUT /v1/mcp-secrets/{ref}`. The redaction protects the record, not the agent: a value the agent can read it can also send elsewhere if a prompt or a page tells it to, so hand it a token scoped to the user and the task, short-lived and least privilege.
+
+The whole API is described at `$HARNESSROUTER_BASE_URL/v1/openapi.json`, generated from the routes, with a browsable copy at `/v1/docs`.
+
+The default URL works when your backend and CE run on the same computer. From another machine or container, use a reachable URL for the CE instance. [Read the complete self-hosted API and networking guide →](docs/self-hosting-guide.md#using-the-api)
+
+<a id="one-interface-for-the-agent-lifecycle"></a>
+
+<table>
+        <thead><tr><th scope="col">Your application can…</th><th scope="col">How</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Start tasks</th><td>Send instructions and check execution status</td></tr>
+          <tr><th scope="row">Continue sessions</th><td>Send follow-up instructions with <code>previous_response_id</code></td></tr>
+          <tr><th scope="row">Stream progress</th><td>Receive live updates as the agent works</td></tr>
+          <tr><th scope="row">Work with files</th><td>Attach input files and retrieve generated outputs</td></tr>
+          <tr><th scope="row">Cancel tasks</th><td>Stop work that is no longer needed</td></tr>
+          <tr><th scope="row">Inspect execution</th><td>Review structured errors and execution traces</td></tr>
+        </tbody>
+      </table>
+
+<a id="starter-kits"></a>
+
+<br>
+
+## Agent harnesses as pluggable backends for your product
+
+Power agentic features in your product with agent harnesses, including knowledge-work tasks such as creating content and analyzing data. Explore these ready-to-use kits to see harnesses in action as pluggable backends.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/images/kit-slides.png" width="100%" alt="HarnessRouter Slides Starter Kit">
+      <h3>Slides</h3>
+      <p>An agent harness turns your brief into slide content and layouts for an editable deck.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/images/kit-sheets.png" width="100%" alt="HarnessRouter Sheets Starter Kit">
+      <h3>Sheets</h3>
+      <p>An agent harness uses each row’s data to execute a task and writes the result back into the sheet.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/images/kit-dashboard.png" width="100%" alt="HarnessRouter Dashboards Starter Kit">
+      <h3>Dashboards</h3>
+      <p>An agent harness reads your database schema and writes SQL queries to power dashboard charts.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/images/kit-video.png" width="100%" alt="HarnessRouter Videos Starter Kit">
+      <h3>Videos</h3>
+      <p>An agent harness turns your brief into a shot plan and calls video tools to generate clips for the timeline.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/images/kit-harness-bot.png" width="100%" alt="HarnessRouter Harness Bot Starter Kit">
+      <h3>Harness Bot</h3>
+      <p>A recruiter harness interviews you and installs each teammate as a harness of its own; teammates work together in groups, hand each other files and @mentions, and leave what they make in a shared library.</p>
+    </td>
+    <td width="50%" valign="top"></td>
+  </tr>
+</table>
+
+[**Explore the Starter Kits →**](https://github.com/HarnessRouter/starter-kit)
+
+<details>
+<summary>Setup notes &amp; licensing</summary>
+
+**Start:** Open **Shop** in the Console, pick a kit, and select a harness and model supported by your connected providers.
+
+**Dashboards:** use a reachable database and a read-only database account, and review the sample-row setting before connecting. Stored connections are encrypted at rest; set `HR_SECRET_KEY` to keep the key apart from the data volume.
+
+**Licensing:** Starter Kits use [different terms](https://github.com/HarnessRouter/starter-kit#licensing) from Community Edition.
+
+[Setup guide →](docs/self-hosting-guide.md#starter-kits)
+
+</details>
+
+<br>
+
+## Deployment choices
+
+<a id="why-self-host-community-edition"></a>
+
+<a id="why-self-host"></a>
+
+### Self-host for control
+
+- **Your infrastructure.** One Docker deployment for the Console, Gateway, and Runner.
+- **Your credentials and state.** Provider keys, sessions, files, and workspaces stay under your control. Model requests still go to your configured provider.
+- **Real workspaces.** Native filesystem, shell, and Git workflows, with separate session workspaces.
+- **No Console product analytics.** Community Edition disables the Console analytics pipeline.
+
+<a id="local-to-cloud"></a>
+
+<a id="cloud-heading"></a>
+
+### Choose your path to Cloud
+
+Choose **HarnessRouter Cloud** for managed deployment, maintenance, and scaling, with tasks running in serverless, isolated sandboxes through the same API contract.
+
+| Local → Cloud | Start directly in Cloud |
+|---|---|
+| Bring a custom harness you’ve configured locally.<br>[Follow the upload guide →](docs/self-hosting-guide.md#moving-to-the-hosted-service) | Create and run harnesses without a local deployment.<br>[Open HarnessRouter Cloud →](https://harnessrouter.ai) |
+
+**For local uploads:** save your custom harness in **Settings**, select **Upload to Cloud**, then connect a destination using its Cloud workspace API key. The saved destination key is encrypted at rest like every stored credential (set `HR_SECRET_KEY` to keep the key apart from the data volume).
+
+Uploads copy harness configuration, not provider keys, sessions, or generated files. Uploading again replaces that destination’s hosted copy.
+
+<a id="architecture"></a>
+
+### Inside Community Edition
+
+```text
+┌─ HarnessRouter container ─────────────────────────────────┐
+│  Console :3000   ← only published port                    │
+│       │ same-origin proxy                                 │
+│       ▼                                                   │
+│  Gateway :8080   Responses API + harness lifecycle        │
+│       │ loopback                                          │
+│       ▼                                                   │
+│  Runner  :8081   runs harnesses in session workspaces     │
+│                                                           │
+│  /data volume   database · files · secrets · workspaces   │
+└───────────────────────────────────────────────────────────┘
+```
+
+The Gateway and Runner listen on loopback inside the container. Sessions use separate workspaces and operating-system users, not separate containers. The Console is the entry point for both UI and API.
+
+See [configuration](docs/self-hosting-guide.md#configuration), [upgrades and backups](docs/self-hosting-guide.md#restarts-upgrades-and-backups), and [public deployment with TLS](docs/self-hosting-guide.md#putting-it-on-a-public-url).
+
+<a id="unified-harness-protocol"></a>
+
+<br>
+
+## The Unified Harness Protocol
+
+[Unified Harness Protocol (UHP)](https://unifiedharnessprotocol.org) is the public, versioned contract implemented by Community Edition and HarnessRouter Cloud. Its task surface is deliberately compatible with the **OpenAI Responses API**, so existing Responses SDKs, streaming parsers, and UI components can work with a UHP server. UHP defines harness execution semantics for harness selection, persistent sessions, files, cancellation, and harness-managed tools and skills.
+
+This repository contains the Apache 2.0 reference implementation, machine-readable schemas, and the conformance suite.
+
+<table>
+        <thead><tr><th>Resource</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><a href="protocol/versions/2026-09-12">Specification</a></td><td>Normative protocol behavior</td></tr>
+          <tr><td><a href="protocol/README.md#relationship-to-the-openai-responses-api">OpenAI Responses compatibility</a></td><td>Compatibility with existing OpenAI Responses API clients</td></tr>
+          <tr><td><a href="protocol/schema">OpenAPI and JSON Schema</a></td><td>Machine-readable contracts</td></tr>
+          <tr><td><a href="protocol/conformance">Conformance suite</a></td><td>Testable compatibility requirements</td></tr>
+          <tr><td><a href="protocol/GOVERNANCE.md">Governance</a></td><td>How the standard evolves</td></tr>
+        </tbody>
+      </table>
+
+<br>
+
+## Resources
+
+| Goal | Resources |
+|---|---|
+| **Build** | [Cloud & integration docs](https://harnessrouter.ai/docs) · [API guide](#use-the-api-directly) · [Starter kits](https://github.com/HarnessRouter/starter-kit) |
+| **Deploy** | [Setup & operations](docs/self-hosting-guide.md) · [Local → Cloud](#local-to-cloud) · [HarnessRouter Cloud](https://harnessrouter.ai) |
+| **Protocol** | [Unified Harness Protocol (UHP)](https://unifiedharnessprotocol.org) |
+| **Community** | [Join the community (Discord)](https://discord.gg/nPcbwqVPb2) · [Contribute](CONTRIBUTING.md) · [LinkedIn](https://linkedin.com/company/harnessrouter/) · [X](https://x.com/HARNESSROUTER) · [Security](SECURITY.md) |
+
+<br>
+
+## Star History
+
+<p align="center">
+  <a href="https://www.star-history.com/#HarnessRouter/harnessrouter&amp;Date" title="Explore the full star history">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=harnessrouter/harnessrouter&amp;type=date&amp;theme=dark&amp;legend=top-left">
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=harnessrouter/harnessrouter&amp;type=date&amp;legend=top-left">
+      <img alt="HarnessRouter GitHub star history. Open the full interactive chart." src="https://api.star-history.com/chart?repos=harnessrouter/harnessrouter&amp;type=date&amp;legend=top-left" width="640" height="427">
+    </picture>
+  </a>
+</p>
+<br>
+
+## License
+
+HarnessRouter Community Edition is licensed under [Apache 2.0](LICENSE). Agent harness CLIs are installed on first launch and remain subject to their respective upstream licenses. See [NOTICE](NOTICE) for third-party notices and the [Starter Kits repository](https://github.com/HarnessRouter/starter-kit#licensing) for its separate licensing terms.
+
+<p><a href="https://harnessrouter.ai">HarnessRouter</a> is the world's first unified interface for agent harnesses.</p>

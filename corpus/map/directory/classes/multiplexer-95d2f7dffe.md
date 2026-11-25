@@ -42,6 +42,7 @@
 - [antigravity-for-vs-code](../entries/antigravity-for-vs-code-52c7fc567c.md)
 - [aperant](../entries/aperant-641b94577a.md)
 - [arbor](../entries/arbor-b86c24fb62.md)
+- [archon](../entries/archon-8f61a067f9.md)
 - [athena-by-luckeysystems](../entries/athena-by-luckeysystems-2c821f691d.md)
 - [ax-agent-executor](../entries/ax-agent-executor-feeeb7f3f6.md)
 - [beehive](../entries/beehive-90de6401a4.md)

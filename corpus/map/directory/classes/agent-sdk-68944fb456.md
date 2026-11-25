@@ -9,6 +9,7 @@
 - [agents](../entries/agents-8c70b25cbb.md)
 - [agents-by-hugging-face](../entries/agents-by-hugging-face-b4473c9622.md)
 - [agentscope](../entries/agentscope-2651b51fbf.md)
+- [atmosphere](../entries/atmosphere-bfd5a8ed73.md)
 - [autogen](../entries/autogen-378d204807.md)
 - [bazed](../entries/bazed-55d6d197d5.md)
 - [crewai](../entries/crewai-57090017a8.md)

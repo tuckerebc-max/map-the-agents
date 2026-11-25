@@ -1,9 +1,9 @@
 # harnessworks/harness-starter-kit
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 62437bec264b @ 08418ac572a3a2e1
+Latest snapshot: commit 62437bec264b @ 6814400ed7fb72cf
 
 ## Summary (orientation draft, not independently verified)
 

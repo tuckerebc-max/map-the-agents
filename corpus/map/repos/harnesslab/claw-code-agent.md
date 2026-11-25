@@ -1,9 +1,9 @@
 # harnesslab/claw-code-agent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 167571da895b @ 76b0b0a684f15cec
+Latest snapshot: commit 167571da895b @ 2f06377a9732d4de
 
 ## Summary (orientation draft, not independently verified)
 

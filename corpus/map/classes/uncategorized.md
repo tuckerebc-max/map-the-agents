@@ -264,6 +264,7 @@
 - [memorax-ai/memorax-code](../repos/memorax-ai/memorax-code.md)
 - [meta-ai/codellama](../repos/meta-ai/codellama.md)
 - [meta-ai/muse-code](../repos/meta-ai/muse-code.md)
+- [mezmo/aura](../repos/mezmo/aura.md)
 - [microsoft/agensh](../repos/microsoft/agensh.md)
 - [microsoft/taskweaver](../repos/microsoft/taskweaver.md)
 - [microsoft/typechat](../repos/microsoft/typechat.md)

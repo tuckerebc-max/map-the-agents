@@ -155,31 +155,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Antigravity CLI (`antigravity-cli`)](antigravity-cli-744c585fa1.md) -- published+backing+pages
 - [Antigravity for VS Code (`antigravity-for-vs-code`)](antigravity-for-vs-code-52c7fc567c.md) -- published+backing+pages
 - [antigravity-jules-orchestration (`antigravity-jules-orchestration`)](antigravity-jules-orchestration-391946c4c0.md) -- backing+pages
-- [antigravity-nix (`antigravity-nix`)](antigravity-nix-578ba171c3.md) -- backing-only
-- [Aperant (`aperant`)](aperant-641b94577a.md) -- published+backing
-- [App Developer Copilot (`app-developer-copilot`)](app-developer-copilot-ca8c089b2f.md) -- published+backing
-- [Appacella (`appacella`)](appacella-70898980cb.md) -- published+backing
-- [AppAgent (`appagent`)](appagent-a89cb5a680.md) -- backing-only
-- [AppClipCodeGenerator (`appclipcodegenerator`)](appclipcodegenerator-2426ed2661.md) -- backing-only
-- [Ara AI (`ara-ai`)](ara-ai-8d68d0f3f9.md) -- published+backing
-- [arbor (`arbor`)](arbor-b86c24fb62.md) -- published+backing
-- [arc-kit (`arc-kit`)](arc-kit-521c9deae9.md) -- backing-only
-- [Arcgentic (`arcgentic`)](arcgentic-19cb692c1d.md) -- backing-only
-- [Archon (`archon`)](archon-8f61a067f9.md) -- published+backing
-- [Are-Copilots-Local-Yet (`are-copilots-local-yet`)](are-copilots-local-yet-d6fbe46b1a.md) -- backing-only
-- [AskCodi (`askcodi`)](askcodi-1ff7dc8439.md) -- published+backing
-- [Async (`async`)](async-2d4a6334d2.md) -- published+backing
-- [athas (`athas`)](athas-bd3d85d2d2.md) -- published+backing
-- [Athena by LuckeySystems (`athena-by-luckeysystems`)](athena-by-luckeysystems-2c821f691d.md) -- published+backing
-- [Atlarix (`atlarix`)](atlarix-55c137e022.md) -- published+backing
-- [atmosphere (`atmosphere`)](atmosphere-bfd5a8ed73.md) -- published+backing
-- [atomcode (`atomcode`)](atomcode-91d68a6b91.md) -- published+backing
-- [atomic (`atomic`)](atomic-fd43322a4d.md) -- published+backing
-- [Auggie (`auggie`)](auggie-9849945b38.md) -- published+backing
-- [Augment Code (`augment-code`)](augment-code-f980a0970a.md) -- published+backing
-- [AURA (`aura`)](aura-6d7c0eb420.md) -- published-only
-- [auto-co (`auto-co`)](auto-co-b2b040b7d0.md) -- backing-only
-- [auto-company (`auto-company`)](auto-company-fb0fffd78a.md) -- backing-only
+- [antigravity-nix (`antigravity-nix`)](antigravity-nix-578ba171c3.md) -- backing+pages
+- [Aperant (`aperant`)](aperant-641b94577a.md) -- published+backing+pages
+- [App Developer Copilot (`app-developer-copilot`)](app-developer-copilot-ca8c089b2f.md) -- published+backing+pages
+- [Appacella (`appacella`)](appacella-70898980cb.md) -- published+backing+pages
+- [AppAgent (`appagent`)](appagent-a89cb5a680.md) -- backing+pages
+- [AppClipCodeGenerator (`appclipcodegenerator`)](appclipcodegenerator-2426ed2661.md) -- backing+pages
+- [Ara AI (`ara-ai`)](ara-ai-8d68d0f3f9.md) -- published+backing+pages
+- [arbor (`arbor`)](arbor-b86c24fb62.md) -- published+backing+pages
+- [arc-kit (`arc-kit`)](arc-kit-521c9deae9.md) -- backing+pages
+- [Arcgentic (`arcgentic`)](arcgentic-19cb692c1d.md) -- backing+pages
+- [Archon (`archon`)](archon-8f61a067f9.md) -- published+backing+pages
+- [Are-Copilots-Local-Yet (`are-copilots-local-yet`)](are-copilots-local-yet-d6fbe46b1a.md) -- backing+pages
+- [AskCodi (`askcodi`)](askcodi-1ff7dc8439.md) -- published+backing+pages
+- [Async (`async`)](async-2d4a6334d2.md) -- published+backing+pages
+- [athas (`athas`)](athas-bd3d85d2d2.md) -- published+backing+pages
+- [Athena by LuckeySystems (`athena-by-luckeysystems`)](athena-by-luckeysystems-2c821f691d.md) -- published+backing+pages
+- [Atlarix (`atlarix`)](atlarix-55c137e022.md) -- published+backing+pages
+- [atmosphere (`atmosphere`)](atmosphere-bfd5a8ed73.md) -- published+backing+pages
+- [atomcode (`atomcode`)](atomcode-91d68a6b91.md) -- published+backing+pages
+- [atomic (`atomic`)](atomic-fd43322a4d.md) -- published+backing+pages
+- [Auggie (`auggie`)](auggie-9849945b38.md) -- published+backing+pages
+- [Augment Code (`augment-code`)](augment-code-f980a0970a.md) -- published+backing+pages
+- [AURA (`aura`)](aura-6d7c0eb420.md) -- published+pages
+- [auto-co (`auto-co`)](auto-co-b2b040b7d0.md) -- backing+pages
+- [auto-company (`auto-company`)](auto-company-fb0fffd78a.md) -- backing+pages
 - [auto-dev (`auto-dev`)](auto-dev-c9c38ccd0a.md) -- published+backing
 - [AutoBE (`autobe`)](autobe-505f016f56.md) -- published+backing
 - [AutoDev (`autodev`)](autodev-27459982c1.md) -- published+backing

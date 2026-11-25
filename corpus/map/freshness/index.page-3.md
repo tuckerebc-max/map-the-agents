@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
-- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
 - [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
 - [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
 - [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
@@ -129,6 +127,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) [coverage: partial]
 - [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) [coverage: partial]
 - [hardik180704/neocode](../repos/hardik180704/neocode.md) [coverage: partial]
+- [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) [coverage: partial]
+- [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) [coverage: partial]
+- [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) [coverage: partial]
 
 ## refresh-failed (72)
 

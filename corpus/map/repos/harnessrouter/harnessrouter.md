@@ -1,9 +1,9 @@
 # harnessrouter/harnessrouter
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 5637717816b5 @ c748d5b31d944b02
+Latest snapshot: commit 17a3ef23327b @ 550c5b3490ed7cdf
 
 ## Summary (orientation draft, not independently verified)
 

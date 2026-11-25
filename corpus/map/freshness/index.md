@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (779)
+## current (776)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -184,9 +184,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
 - [haochenglu/contextvc](../repos/haochenglu/contextvc.md) [coverage: complete]
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) [coverage: complete]
-- [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) [coverage: partial]
-- [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) [coverage: partial]
-- [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) [coverage: partial]
 - [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) [coverage: partial]
 - [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) [coverage: complete]
 - [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [omnigent-ai/omnigent](../repos/omnigent-ai/omnigent.md) [coverage: partial]
 - [ondateta/teta](../repos/ondateta/teta.md) [coverage: complete]
 - [onecli/onecli](../repos/onecli/onecli.md) [coverage: partial]
+- [onllm-dev/onui](../repos/onllm-dev/onui.md) [coverage: partial]
+- [oooscoos/benzi](../repos/oooscoos/benzi.md) [coverage: complete]
+- [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) [coverage: partial]

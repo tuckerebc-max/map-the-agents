@@ -69,9 +69,9 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) -- status=distilled, freshness=stale
 - [hardik180704/neocode](../repos/hardik180704/neocode.md) -- status=distilled, freshness=stale
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) -- status=distilled, freshness=current
-- [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) -- status=distilled, freshness=current
-- [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) -- status=distilled, freshness=current
-- [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) -- status=distilled, freshness=current
+- [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) -- status=distilled, freshness=stale
+- [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) -- status=distilled, freshness=stale
+- [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) -- status=distilled, freshness=stale
 - [haseeb-heaven/code-interpreter](../repos/haseeb-heaven/code-interpreter.md) -- status=blocked, freshness=refresh-failed
 - [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) -- status=distilled, freshness=current
 - [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) -- status=distilled, freshness=current
@@ -265,6 +265,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [meta-ai/codellama](../repos/meta-ai/codellama.md) -- status=blocked, freshness=refresh-failed
 - [meta-ai/muse-code](../repos/meta-ai/muse-code.md) -- status=blocked, freshness=refresh-failed
 - [meysamhadeli/codai](../repos/meysamhadeli/codai.md) -- status=distilled, freshness=current
+- [mezmo/aura](../repos/mezmo/aura.md) -- status=discovered, freshness=pending
 - [micro-agent/micro-agent](../repos/micro-agent/micro-agent.md) -- status=blocked, freshness=refresh-failed
 - [microsoft/agensh](../repos/microsoft/agensh.md) -- status=discovered, freshness=pending
 - [microsoft/amplifier](../repos/microsoft/amplifier.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [openai/codex-security](../repos/openai/codex-security.md) -- status=distilled, freshness=current
 - [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) -- status=distilled, freshness=current
 - [openautocoder/agentless](../repos/openautocoder/agentless.md) -- status=distilled, freshness=current
-- [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) -- status=distilled, freshness=current

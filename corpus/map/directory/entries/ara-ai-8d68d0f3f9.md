@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: Ara
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Ara (ara.so) positions itself as 'the cloud coding agent for software engineers', built on the premise that agents with full computer access — not editor-embedded assistants — unlock real autonomous d
-Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)
+Highlight (site page `what_makes_it_special`): Self-driving AI IDE for proactive, autonomous product development. Marketed as 'Your own coding agent, anywhere.' Website is minimal with only a hero section and login link; detailed information not publicly available.
+
+(captured site page body (agents/ara-ai.md), not a verified repo-code finding)
+Ara (ara.so) positions itself as 'the cloud coding agent for software engineers', built on the premise that agents with full computer access — not editor-embedded assistants — unlock real autonomous development. Beyond that positioning the public surface is minimal: a hero section, an early-beta login, and no documentation of how its agents run, what they can access, or what they cost. The product is cloud-hosted (no self-hosting path), closed-source, and gated behind beta signup, so claims about its autonomy cannot be evaluated from outside. Engineers evaluating it today can only request beta access; everything else is undocumented.
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json); [site page @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/agents/ara-ai.md)

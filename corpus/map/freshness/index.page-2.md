@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [onllm-dev/onui](../repos/onllm-dev/onui.md) [coverage: partial]
-- [oooscoos/benzi](../repos/oooscoos/benzi.md) [coverage: complete]
-- [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) [coverage: partial]
 - [openai/codex](../repos/openai/codex.md) [coverage: partial]
 - [openai/codex-security](../repos/openai/codex-security.md) [coverage: partial]
 - [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) [coverage: complete]
@@ -355,13 +352,14 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (18)
+## pending (19)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
+- [mezmo/aura](../repos/mezmo/aura.md)
 - [microsoft/agensh](../repos/microsoft/agensh.md)
 - [moonbitlang/moonbit-docs](../repos/moonbitlang/moonbit-docs.md)
 - [nvidia/nemo-agent-toolkit](../repos/nvidia/nemo-agent-toolkit.md)
@@ -376,7 +374,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (202)
+## stale (205)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -453,3 +451,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
 - [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
 - [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
+- [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
+- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
