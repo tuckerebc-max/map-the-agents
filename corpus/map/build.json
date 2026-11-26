@@ -1,7 +1,7 @@
 {
   "aliases_digest": "45e794f274843c5f03caf97be1960e30b6020bae012b4f1e02ea7024db0d96f2",
-  "catalog_digest": "dbbfd424c88d2a5deae8080f6b520dd5adeec6ba752605c17bb7f904311dee14",
-  "directory_digest": "6dc11337f6dfa4a45c223cda56607b80ea840ef3aed07b3c2974ad0e02ab4779",
+  "catalog_digest": "e0872d873ffc892277aa2e582b8ceeb20f5d993d48c74917b00f4612b631da34",
+  "directory_digest": "ab5c0a098005c1da49b726f311a39a47a30599ff37a97f7ab665d9f1eb5dbf20",
   "file_repos": {
     "map/repos/0xpayne/gpt-migrate.detail.md": "0xpayne/gpt-migrate",
     "map/repos/0xpayne/gpt-migrate.md": "0xpayne/gpt-migrate",
@@ -783,6 +783,8 @@
     "map/repos/google-deepmind/code_contests.md": "google-deepmind/code_contests",
     "map/repos/google-gemini/gemini-cli.detail.md": "google-gemini/gemini-cli",
     "map/repos/google-gemini/gemini-cli.md": "google-gemini/gemini-cli",
+    "map/repos/google/ax.detail.md": "google/ax",
+    "map/repos/google/ax.md": "google/ax",
     "map/repos/googlecloudplatform/race-condition.detail.md": "googlecloudplatform/race-condition",
     "map/repos/googlecloudplatform/race-condition.md": "googlecloudplatform/race-condition",
     "map/repos/googlecloudplatform/workflows-samples.detail.md": "googlecloudplatform/workflows-samples",
@@ -1067,6 +1069,8 @@
     "map/repos/laizhou/opencode_ui.md": "laizhou/opencode_ui",
     "map/repos/lajosdeme/mole.detail.md": "lajosdeme/mole",
     "map/repos/lajosdeme/mole.md": "lajosdeme/mole",
+    "map/repos/lambda-symbolics/autolith.detail.md": "lambda-symbolics/autolith",
+    "map/repos/lambda-symbolics/autolith.md": "lambda-symbolics/autolith",
     "map/repos/landing-ai/ade-cli.detail.md": "landing-ai/ade-cli",
     "map/repos/landing-ai/ade-cli.md": "landing-ai/ade-cli",
     "map/repos/langchain-ai/deepagents.detail.md": "langchain-ai/deepagents",
@@ -6044,6 +6048,8 @@
     "map/repos/google-deepmind/code_contests.md",
     "map/repos/google-gemini/gemini-cli.detail.md",
     "map/repos/google-gemini/gemini-cli.md",
+    "map/repos/google/ax.detail.md",
+    "map/repos/google/ax.md",
     "map/repos/googlecloudplatform/race-condition.detail.md",
     "map/repos/googlecloudplatform/race-condition.md",
     "map/repos/googlecloudplatform/workflows-samples.detail.md",
@@ -6328,6 +6334,8 @@
     "map/repos/laizhou/opencode_ui.md",
     "map/repos/lajosdeme/mole.detail.md",
     "map/repos/lajosdeme/mole.md",
+    "map/repos/lambda-symbolics/autolith.detail.md",
+    "map/repos/lambda-symbolics/autolith.md",
     "map/repos/landing-ai/ade-cli.detail.md",
     "map/repos/landing-ai/ade-cli.md",
     "map/repos/langchain-ai/deepagents.detail.md",
@@ -28760,6 +28768,23 @@
       "status": "distilled",
       "url": "https://github.com/google-gemini/gemini-cli"
     },
+    "google/ax": {
+      "classes": [],
+      "freshness": "pending",
+      "indexed_commit": null,
+      "latest_commit": null,
+      "origins": [
+        "directory-resolve"
+      ],
+      "owner": "google",
+      "projects": [
+        "directory-intake"
+      ],
+      "repo": "ax",
+      "sources": [],
+      "status": "discovered",
+      "url": "https://github.com/google/ax"
+    },
     "googlecloudplatform/race-condition": {
       "claims": 15,
       "classes": [],
@@ -30349,19 +30374,19 @@
         "agent"
       ],
       "dossier": "wiki/dossiers/haseeb-heaven/open-agent/575401684ec13df646fa831f1c824388b5b30574/37fd1230e5bca33c.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "575401684ec13df646fa831f1c824388b5b30574",
       "indexed_operation_id": "op_85422e7caab040e4b58bfd0de5ac14ec",
       "indexed_snapshot_id": "37fd1230e5bca33c",
-      "latest_commit": "575401684ec13df646fa831f1c824388b5b30574",
+      "latest_commit": "670aeaec02633026771e53e89f215580ae1f1cae",
       "latest_snapshot": {
-        "commit": "575401684ec13df646fa831f1c824388b5b30574",
-        "dir": "sources/github/haseeb-heaven/open-agent/575401684ec13df646fa831f1c824388b5b30574/37fd1230e5bca33c",
-        "package": "sources/github/haseeb-heaven/open-agent/575401684ec13df646fa831f1c824388b5b30574/37fd1230e5bca33c/manifest.json",
-        "snapshot": "sources/github/haseeb-heaven/open-agent/575401684ec13df646fa831f1c824388b5b30574/37fd1230e5bca33c/snapshot.json",
-        "snapshot_id": "37fd1230e5bca33c"
+        "commit": "670aeaec02633026771e53e89f215580ae1f1cae",
+        "dir": "sources/github/haseeb-heaven/open-agent/670aeaec02633026771e53e89f215580ae1f1cae/c56d8aa7028c9a17",
+        "package": "sources/github/haseeb-heaven/open-agent/670aeaec02633026771e53e89f215580ae1f1cae/c56d8aa7028c9a17/manifest.json",
+        "snapshot": "sources/github/haseeb-heaven/open-agent/670aeaec02633026771e53e89f215580ae1f1cae/c56d8aa7028c9a17/snapshot.json",
+        "snapshot_id": "c56d8aa7028c9a17"
       },
-      "latest_snapshot_id": "37fd1230e5bca33c",
+      "latest_snapshot_id": "c56d8aa7028c9a17",
       "origins": [
         "github-rename-resolution",
         "alltheagents.org-backing",
@@ -30394,6 +30419,14 @@
           "package": "sources/github/haseeb-heaven/open-agent/575401684ec13df646fa831f1c824388b5b30574/37fd1230e5bca33c/manifest.json",
           "snapshot": "sources/github/haseeb-heaven/open-agent/575401684ec13df646fa831f1c824388b5b30574/37fd1230e5bca33c/snapshot.json",
           "snapshot_id": "37fd1230e5bca33c"
+        },
+        {
+          "commit": "670aeaec02633026771e53e89f215580ae1f1cae",
+          "dir": "sources/github/haseeb-heaven/open-agent/670aeaec02633026771e53e89f215580ae1f1cae/c56d8aa7028c9a17",
+          "kind": "snapshot",
+          "package": "sources/github/haseeb-heaven/open-agent/670aeaec02633026771e53e89f215580ae1f1cae/c56d8aa7028c9a17/manifest.json",
+          "snapshot": "sources/github/haseeb-heaven/open-agent/670aeaec02633026771e53e89f215580ae1f1cae/c56d8aa7028c9a17/snapshot.json",
+          "snapshot_id": "c56d8aa7028c9a17"
         }
       ],
       "status": "distilled",
@@ -30405,19 +30438,19 @@
         "agent"
       ],
       "dossier": "wiki/dossiers/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
       "indexed_operation_id": "op_a090432cf1024b07bd72145317ef1772",
       "indexed_snapshot_id": "f27607039cb943e9",
-      "latest_commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "latest_commit": "c3419c16d1aede1af7c3ab97d9717d307fdef75c",
       "latest_snapshot": {
-        "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
-        "dir": "sources/github/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9",
-        "package": "sources/github/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9/manifest.json",
-        "snapshot": "sources/github/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9/snapshot.json",
-        "snapshot_id": "f27607039cb943e9"
+        "commit": "c3419c16d1aede1af7c3ab97d9717d307fdef75c",
+        "dir": "sources/github/havingautism/codemini-cli/c3419c16d1aede1af7c3ab97d9717d307fdef75c/41e74c8a3a8f4cae",
+        "package": "sources/github/havingautism/codemini-cli/c3419c16d1aede1af7c3ab97d9717d307fdef75c/41e74c8a3a8f4cae/manifest.json",
+        "snapshot": "sources/github/havingautism/codemini-cli/c3419c16d1aede1af7c3ab97d9717d307fdef75c/41e74c8a3a8f4cae/snapshot.json",
+        "snapshot_id": "41e74c8a3a8f4cae"
       },
-      "latest_snapshot_id": "f27607039cb943e9",
+      "latest_snapshot_id": "41e74c8a3a8f4cae",
       "origins": [
         "alltheagents.org-backing"
       ],
@@ -30453,6 +30486,14 @@
           "package": "sources/github/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9/manifest.json",
           "snapshot": "sources/github/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9/snapshot.json",
           "snapshot_id": "f27607039cb943e9"
+        },
+        {
+          "commit": "c3419c16d1aede1af7c3ab97d9717d307fdef75c",
+          "dir": "sources/github/havingautism/codemini-cli/c3419c16d1aede1af7c3ab97d9717d307fdef75c/41e74c8a3a8f4cae",
+          "kind": "snapshot",
+          "package": "sources/github/havingautism/codemini-cli/c3419c16d1aede1af7c3ab97d9717d307fdef75c/41e74c8a3a8f4cae/manifest.json",
+          "snapshot": "sources/github/havingautism/codemini-cli/c3419c16d1aede1af7c3ab97d9717d307fdef75c/41e74c8a3a8f4cae/snapshot.json",
+          "snapshot_id": "41e74c8a3a8f4cae"
         }
       ],
       "status": "distilled",
@@ -30464,25 +30505,26 @@
         "agent"
       ],
       "dossier": "wiki/dossiers/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
       "indexed_operation_id": "op_870a8017155c4b83a732a3f4253d6312",
       "indexed_snapshot_id": "3c89ac2ec67501ad",
-      "latest_commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+      "latest_commit": "19cd2c9282b87af2bcc5a5362ffeb11f44096124",
       "latest_snapshot": {
-        "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
-        "dir": "sources/github/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad",
-        "package": "sources/github/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad/manifest.json",
-        "snapshot": "sources/github/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad/snapshot.json",
-        "snapshot_id": "3c89ac2ec67501ad"
+        "commit": "19cd2c9282b87af2bcc5a5362ffeb11f44096124",
+        "dir": "sources/github/he-yufeng/corecoder/19cd2c9282b87af2bcc5a5362ffeb11f44096124/99af4d5ae97710f1",
+        "package": "sources/github/he-yufeng/corecoder/19cd2c9282b87af2bcc5a5362ffeb11f44096124/99af4d5ae97710f1/manifest.json",
+        "snapshot": "sources/github/he-yufeng/corecoder/19cd2c9282b87af2bcc5a5362ffeb11f44096124/99af4d5ae97710f1/snapshot.json",
+        "snapshot_id": "99af4d5ae97710f1"
       },
-      "latest_snapshot_id": "3c89ac2ec67501ad",
+      "latest_snapshot_id": "99af4d5ae97710f1",
       "origins": [
         "alltheagents.org-backing"
       ],
       "owner": "he-yufeng",
       "projects": [],
       "repo": "corecoder",
+      "repository_id": 1198829864,
       "sources": [
         {
           "catalog": "alltheagents.org-backing",
@@ -30503,6 +30545,14 @@
           "package": "sources/github/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad/manifest.json",
           "snapshot": "sources/github/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad/snapshot.json",
           "snapshot_id": "3c89ac2ec67501ad"
+        },
+        {
+          "commit": "19cd2c9282b87af2bcc5a5362ffeb11f44096124",
+          "dir": "sources/github/he-yufeng/corecoder/19cd2c9282b87af2bcc5a5362ffeb11f44096124/99af4d5ae97710f1",
+          "kind": "snapshot",
+          "package": "sources/github/he-yufeng/corecoder/19cd2c9282b87af2bcc5a5362ffeb11f44096124/99af4d5ae97710f1/manifest.json",
+          "snapshot": "sources/github/he-yufeng/corecoder/19cd2c9282b87af2bcc5a5362ffeb11f44096124/99af4d5ae97710f1/snapshot.json",
+          "snapshot_id": "99af4d5ae97710f1"
         }
       ],
       "status": "distilled",
@@ -30514,25 +30564,26 @@
         "multiplexer"
       ],
       "dossier": "wiki/dossiers/herdrdev/herdr/aa961df943b874730b23f78baf94af7332f7acfa/9d624c3d74eb8c6b.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "aa961df943b874730b23f78baf94af7332f7acfa",
       "indexed_operation_id": "op_914d8f12899d4f51bb29f12af9e8cb6a",
       "indexed_snapshot_id": "9d624c3d74eb8c6b",
-      "latest_commit": "aa961df943b874730b23f78baf94af7332f7acfa",
+      "latest_commit": "e8d7d9705a7a2c89cef4dd42079379f05685af87",
       "latest_snapshot": {
-        "commit": "aa961df943b874730b23f78baf94af7332f7acfa",
-        "dir": "sources/github/herdrdev/herdr/aa961df943b874730b23f78baf94af7332f7acfa/9d624c3d74eb8c6b",
-        "package": "sources/github/herdrdev/herdr/aa961df943b874730b23f78baf94af7332f7acfa/9d624c3d74eb8c6b/manifest.json",
-        "snapshot": "sources/github/herdrdev/herdr/aa961df943b874730b23f78baf94af7332f7acfa/9d624c3d74eb8c6b/snapshot.json",
-        "snapshot_id": "9d624c3d74eb8c6b"
+        "commit": "e8d7d9705a7a2c89cef4dd42079379f05685af87",
+        "dir": "sources/github/herdrdev/herdr/e8d7d9705a7a2c89cef4dd42079379f05685af87/3feb2e47db7a8bfd",
+        "package": "sources/github/herdrdev/herdr/e8d7d9705a7a2c89cef4dd42079379f05685af87/3feb2e47db7a8bfd/manifest.json",
+        "snapshot": "sources/github/herdrdev/herdr/e8d7d9705a7a2c89cef4dd42079379f05685af87/3feb2e47db7a8bfd/snapshot.json",
+        "snapshot_id": "3feb2e47db7a8bfd"
       },
-      "latest_snapshot_id": "9d624c3d74eb8c6b",
+      "latest_snapshot_id": "3feb2e47db7a8bfd",
       "origins": [
         "alltheagents.org-backing"
       ],
       "owner": "herdrdev",
       "projects": [],
       "repo": "herdr",
+      "repository_id": 1193909050,
       "sources": [
         {
           "catalog": "alltheagents.org-backing",
@@ -30553,6 +30604,14 @@
           "package": "sources/github/herdrdev/herdr/aa961df943b874730b23f78baf94af7332f7acfa/9d624c3d74eb8c6b/manifest.json",
           "snapshot": "sources/github/herdrdev/herdr/aa961df943b874730b23f78baf94af7332f7acfa/9d624c3d74eb8c6b/snapshot.json",
           "snapshot_id": "9d624c3d74eb8c6b"
+        },
+        {
+          "commit": "e8d7d9705a7a2c89cef4dd42079379f05685af87",
+          "dir": "sources/github/herdrdev/herdr/e8d7d9705a7a2c89cef4dd42079379f05685af87/3feb2e47db7a8bfd",
+          "kind": "snapshot",
+          "package": "sources/github/herdrdev/herdr/e8d7d9705a7a2c89cef4dd42079379f05685af87/3feb2e47db7a8bfd/manifest.json",
+          "snapshot": "sources/github/herdrdev/herdr/e8d7d9705a7a2c89cef4dd42079379f05685af87/3feb2e47db7a8bfd/snapshot.json",
+          "snapshot_id": "3feb2e47db7a8bfd"
         }
       ],
       "status": "distilled",
@@ -30564,25 +30623,26 @@
         "multiplexer"
       ],
       "dossier": "wiki/dossiers/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1.json",
-      "freshness": "current",
+      "freshness": "stale",
       "indexed_commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
       "indexed_operation_id": "op_c2f7300587ae444b8ff3b0c1c38b5b5f",
       "indexed_snapshot_id": "6d015e25229802c1",
       "latest_commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
       "latest_snapshot": {
         "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
-        "dir": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1",
-        "package": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1/manifest.json",
-        "snapshot": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1/snapshot.json",
-        "snapshot_id": "6d015e25229802c1"
+        "dir": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/25799b878a7c31fb",
+        "package": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/25799b878a7c31fb/manifest.json",
+        "snapshot": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/25799b878a7c31fb/snapshot.json",
+        "snapshot_id": "25799b878a7c31fb"
       },
-      "latest_snapshot_id": "6d015e25229802c1",
+      "latest_snapshot_id": "25799b878a7c31fb",
       "origins": [
         "alltheagents.org-backing"
       ],
       "owner": "herry2059",
       "projects": [],
       "repo": "project-os-for-codex",
+      "repository_id": 1295734264,
       "sources": [
         {
           "catalog": "alltheagents.org-backing",
@@ -30603,6 +30663,14 @@
           "package": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1/manifest.json",
           "snapshot": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1/snapshot.json",
           "snapshot_id": "6d015e25229802c1"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "dir": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/25799b878a7c31fb",
+          "kind": "snapshot",
+          "package": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/25799b878a7c31fb/manifest.json",
+          "snapshot": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/25799b878a7c31fb/snapshot.json",
+          "snapshot_id": "25799b878a7c31fb"
         }
       ],
       "status": "distilled",
@@ -36171,6 +36239,23 @@
       ],
       "status": "distilled",
       "url": "https://github.com/lajosdeme/mole"
+    },
+    "lambda-symbolics/autolith": {
+      "classes": [],
+      "freshness": "pending",
+      "indexed_commit": null,
+      "latest_commit": null,
+      "origins": [
+        "directory-resolve"
+      ],
+      "owner": "lambda-symbolics",
+      "projects": [
+        "directory-intake"
+      ],
+      "repo": "autolith",
+      "sources": [],
+      "status": "discovered",
+      "url": "https://github.com/lambda-symbolics/autolith"
     },
     "landing-ai/ade-cli": {
       "claims": 15,

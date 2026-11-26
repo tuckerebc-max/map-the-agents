@@ -1,9 +1,9 @@
 # herry2059/project-os-for-codex
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3cb909ab9f61 @ 6d015e25229802c1
+Latest snapshot: commit 3cb909ab9f61 @ 25799b878a7c31fb
 
 ## Summary (orientation draft, not independently verified)
 

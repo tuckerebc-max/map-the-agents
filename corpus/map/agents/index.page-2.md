@@ -45,6 +45,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [golutra/golutra](../repos/golutra/golutra.md) -- status=distilled, freshness=stale
 - [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) -- status=distilled, freshness=current
 - [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) -- status=distilled, freshness=stale
+- [google/ax](../repos/google/ax.md) -- status=discovered, freshness=pending
 - [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) -- status=distilled, freshness=stale
 - [googlecloudplatform/workflows-samples](../repos/googlecloudplatform/workflows-samples.md) -- status=distilled, freshness=current
 - [gptme/gptme](../repos/gptme/gptme.md) -- status=distilled, freshness=stale
@@ -73,11 +74,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) -- status=distilled, freshness=stale
 - [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) -- status=distilled, freshness=stale
 - [haseeb-heaven/code-interpreter](../repos/haseeb-heaven/code-interpreter.md) -- status=blocked, freshness=refresh-failed
-- [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) -- status=distilled, freshness=current
-- [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) -- status=distilled, freshness=current
-- [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) -- status=distilled, freshness=current
-- [herdrdev/herdr](../repos/herdrdev/herdr.md) -- status=distilled, freshness=current
-- [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) -- status=distilled, freshness=current
+- [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) -- status=distilled, freshness=stale
+- [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) -- status=distilled, freshness=stale
+- [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) -- status=distilled, freshness=stale
+- [herdrdev/herdr](../repos/herdrdev/herdr.md) -- status=distilled, freshness=stale
+- [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) -- status=distilled, freshness=stale
 - [hesamjafarian/aimultiagents](../repos/hesamjafarian/aimultiagents.md) -- status=distilled, freshness=current
 - [hexmammamia74/cursor-ai-pro-download-2026](../repos/hexmammamia74/cursor-ai-pro-download-2026.md) -- status=blocked, freshness=refresh-failed
 - [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) -- status=distilled, freshness=current
@@ -187,6 +188,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [labring/sealos](../repos/labring/sealos.md) -- status=distilled, freshness=current
 - [laizhou/opencode_ui](../repos/laizhou/opencode_ui.md) -- status=distilled, freshness=current
 - [lajosdeme/mole](../repos/lajosdeme/mole.md) -- status=distilled, freshness=current
+- [lambda-symbolics/autolith](../repos/lambda-symbolics/autolith.md) -- status=discovered, freshness=pending
 - [landing-ai/ade-cli](../repos/landing-ai/ade-cli.md) -- status=distilled, freshness=current
 - [langchain-ai/deepagents](../repos/langchain-ai/deepagents.md) -- status=distilled, freshness=current
 - [langchain-ai/langchainjs](../repos/langchain-ai/langchainjs.md) -- status=distilled, freshness=current
@@ -350,5 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) -- status=distilled, freshness=current
 - [openai/codex](../repos/openai/codex.md) -- status=distilled, freshness=current
 - [openai/codex-security](../repos/openai/codex-security.md) -- status=distilled, freshness=current
-- [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) -- status=distilled, freshness=current
-- [openautocoder/agentless](../repos/openautocoder/agentless.md) -- status=distilled, freshness=current

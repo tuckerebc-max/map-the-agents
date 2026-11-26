@@ -1,10 +1,10 @@
 # haseeb-heaven/open-agent
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: github-rename-resolution, alltheagents.org-backing, github-verified-rename - Projects: navy-yard, Observatory
 Formerly: haseeb-heaven/code-interpreter (github id 701162675).
-Latest snapshot: commit 575401684ec1 @ 37fd1230e5bca33c
+Latest snapshot: commit 670aeaec0263 @ c56d8aa7028c9a17
 
 ## Summary (orientation draft, not independently verified)
 

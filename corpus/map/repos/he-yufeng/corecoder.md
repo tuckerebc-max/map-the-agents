@@ -1,9 +1,9 @@
 # he-yufeng/corecoder
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 069948d180cb @ 3c89ac2ec67501ad
+Latest snapshot: commit 19cd2c9282b8 @ 99af4d5ae97710f1
 
 ## Summary (orientation draft, not independently verified)
 

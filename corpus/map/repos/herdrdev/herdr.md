@@ -1,9 +1,9 @@
 # herdrdev/herdr
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit aa961df943b8 @ 9d624c3d74eb8c6b
+Latest snapshot: commit e8d7d9705a7a @ 3feb2e47db7a8bfd
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,10 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
-- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
-- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
-- [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
 - [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
 - [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
 - [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
@@ -130,6 +126,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) [coverage: partial]
 - [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) [coverage: partial]
 - [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) [coverage: partial]
+- [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) [coverage: partial]
+- [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) [coverage: complete]
+- [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) [coverage: complete]
+- [herdrdev/herdr](../repos/herdrdev/herdr.md) [coverage: partial]
+- [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) [coverage: partial]
 
 ## refresh-failed (72)
 

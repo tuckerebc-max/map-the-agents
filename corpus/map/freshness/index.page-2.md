@@ -2,11 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [openai/codex](../repos/openai/codex.md) [coverage: partial]
-- [openai/codex-security](../repos/openai/codex-security.md) [coverage: partial]
-- [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) [coverage: complete]
-- [openautocoder/agentless](../repos/openautocoder/agentless.md) [coverage: complete]
-- [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) [coverage: complete]
 - [openbmb/chatdev](../repos/openbmb/chatdev.md) [coverage: partial]
 - [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) [coverage: partial]
 - [openbmb/repoagent](../repos/openbmb/repoagent.md) [coverage: partial]
@@ -352,12 +347,14 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (19)
+## pending (21)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
+- [google/ax](../repos/google/ax.md)
+- [lambda-symbolics/autolith](../repos/lambda-symbolics/autolith.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [mezmo/aura](../repos/mezmo/aura.md)
 - [microsoft/agensh](../repos/microsoft/agensh.md)
@@ -374,7 +371,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (205)
+## stale (210)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -453,3 +450,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
 - [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
 - [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
+- [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
+- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
+- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
+- [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]

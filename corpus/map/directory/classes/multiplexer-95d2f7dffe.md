@@ -45,6 +45,7 @@
 - [archon](../entries/archon-8f61a067f9.md)
 - [athena-by-luckeysystems](../entries/athena-by-luckeysystems-2c821f691d.md)
 - [ax-agent-executor](../entries/ax-agent-executor-feeeb7f3f6.md)
+- [baro](../entries/baro-269b0f5338.md)
 - [beehive](../entries/beehive-90de6401a4.md)
 - [bernstein](../entries/bernstein-2bf5a223d6.md)
 - [betool-ai-code-assistant](../entries/betool-ai-code-assistant-69b488a0e7.md)

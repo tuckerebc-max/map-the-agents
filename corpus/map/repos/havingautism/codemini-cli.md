@@ -1,9 +1,9 @@
 # havingautism/codemini-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 3e3a6665c9d2 @ f27607039cb943e9
+Latest snapshot: commit c3419c16d1ae @ 41e74c8a3a8f4cae
 
 ## Summary (orientation draft, not independently verified)
 

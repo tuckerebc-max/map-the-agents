@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (776)
+## current (771)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -184,11 +184,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
 - [haochenglu/contextvc](../repos/haochenglu/contextvc.md) [coverage: complete]
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) [coverage: complete]
-- [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) [coverage: partial]
-- [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) [coverage: complete]
-- [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) [coverage: complete]
-- [herdrdev/herdr](../repos/herdrdev/herdr.md) [coverage: partial]
-- [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) [coverage: partial]
 - [hesamjafarian/aimultiagents](../repos/hesamjafarian/aimultiagents.md) [coverage: complete]
 - [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) [coverage: complete]
 - [hivemoot/colony](../repos/hivemoot/colony.md) [coverage: partial]
@@ -437,3 +432,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [onllm-dev/onui](../repos/onllm-dev/onui.md) [coverage: partial]
 - [oooscoos/benzi](../repos/oooscoos/benzi.md) [coverage: complete]
 - [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) [coverage: partial]
+- [openai/codex](../repos/openai/codex.md) [coverage: partial]
+- [openai/codex-security](../repos/openai/codex-security.md) [coverage: partial]
+- [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) [coverage: complete]
+- [openautocoder/agentless](../repos/openautocoder/agentless.md) [coverage: complete]
+- [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) [coverage: complete]
