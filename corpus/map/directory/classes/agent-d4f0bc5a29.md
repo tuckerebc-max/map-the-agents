@@ -81,7 +81,6 @@
 - [blade-code](../entries/blade-code-bc3864d275.md)
 - [blinky](../entries/blinky-90ada512bb.md)
 - [blitzy](../entries/blitzy-15c785fe4b.md)
-- [blueprints](../entries/blueprints-28ab7f1620.md)
 - [bmad-method](../entries/bmad-method-40a1d375df.md)
 - [boltnew](../entries/boltnew-a43d82626c.md)
 - [bough](../entries/bough-36ad0f15e3.md)

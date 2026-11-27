@@ -1,9 +1,9 @@
 # hivemoot/colony
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit c67886dda674 @ af900d7096484e5d
+Latest snapshot: commit c67886dda674 @ 1cec2be9d78f699e
 
 ## Summary (orientation draft, not independently verified)
 

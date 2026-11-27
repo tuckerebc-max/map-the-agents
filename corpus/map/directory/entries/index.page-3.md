@@ -2,6 +2,7 @@
 
 Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [Handshake (`handshake`)](handshake-dfff30d188.md) -- published-only
 - [hapi (`hapi`)](hapi-0a98f7946d.md) -- published+backing
 - [harness-engineering-from-cc-to-ai-coding (`harness-engineering-from-cc-to-ai-coding`)](harness-engineering-from-cc-to-ai-coding-5982fd9cf5.md) -- backing-only
 - [Harness Starter Kit (`harness-starter-kit`)](harness-starter-kit-4c9cb1307d.md) -- backing-only
@@ -329,4 +330,3 @@ Page 3 of 5. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [opencode-android (`opencode-android`)](opencode-android-a9e449ec55.md) -- backing-only
 - [opencode-orchestrator (`opencode-orchestrator`)](opencode-orchestrator-3718d01eb0.md) -- backing-only
 - [opencode-plusplus (`opencode-plusplus`)](opencode-plusplus-b135259cb5.md) -- backing-only
-- [opencode-swarm (`opencode-swarm`)](opencode-swarm-7fffa3faac.md) -- backing-only

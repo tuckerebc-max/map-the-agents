@@ -2,6 +2,7 @@
 
 Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index.page-5.md)
 
+- [opencode-swarm (`opencode-swarm`)](opencode-swarm-7fffa3faac.md) -- backing-only
 - [OpenCode_UI (`opencode-ui`)](opencode-ui-469931bd4e.md) -- backing-only
 - [opencode.nvim (`opencodenvim`)](opencodenvim-a96493ba54.md) -- backing-only
 - [OpenCodeReview (`opencodereview`)](opencodereview-8dfea9b508.md) -- published+backing
@@ -334,4 +335,3 @@ Page 4 of 5. [First page](index.md) | [Previous](index.page-3.md) | [Next](index
 - [UnodeAi (`unodeai`)](unodeai-072815024a.md) -- published+backing
 - [Unpeel (`unpeel`)](unpeel-c24f44ff8e.md) -- published+backing
 - [Untether (`untether`)](untether-b5eb0a3784.md) -- published+backing
-- [Useful-Generativeai-Tools-Repo (`useful-generativeai-tools-repo`)](useful-generativeai-tools-repo-021a6de732.md) -- backing-only

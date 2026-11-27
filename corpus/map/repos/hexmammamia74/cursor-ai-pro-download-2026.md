@@ -3,7 +3,7 @@
 Status: blocked - Freshness: refresh-failed
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Last collection error: CollectError: no inspectable text files fit this selection; request explicit source paths or increase the budget
+Last collection error: FetchFailed: http-404: https://api.github.com/repos/hexmammamia74/cursor-ai-pro-download-2026
 
 ## Evidence
 

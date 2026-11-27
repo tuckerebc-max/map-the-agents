@@ -36,6 +36,7 @@
 - [baidu-comate](../entries/baidu-comate-5c00ac3c1b.md)
 - [bb](../entries/bb-3b64db95cb.md)
 - [bernstein](../entries/bernstein-2bf5a223d6.md)
+- [binary-re](../entries/binary-re-0ea75eaa69.md)
 - [bitfun](../entries/bitfun-c081de822c.md)
 - [bmad-method](../entries/bmad-method-40a1d375df.md)
 - [calex-javaai](../entries/calex-javaai-ae41365bce.md)

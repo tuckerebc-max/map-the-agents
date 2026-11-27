@@ -58,6 +58,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [gszhangwei/open-spdd](../repos/gszhangwei/open-spdd.md) -- status=distilled, freshness=stale
 - [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) -- status=distilled, freshness=stale
 - [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) -- status=distilled, freshness=stale
+- [gvergnaud/bise](../repos/gvergnaud/bise.md) -- status=discovered, freshness=pending
 - [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) -- status=distilled, freshness=stale
 - [h5i-dev/h5i](../repos/h5i-dev/h5i.md) -- status=distilled, freshness=stale
 - [haasonsaas/ocode](../repos/haasonsaas/ocode.md) -- status=distilled, freshness=stale
@@ -82,8 +83,8 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [hesamjafarian/aimultiagents](../repos/hesamjafarian/aimultiagents.md) -- status=distilled, freshness=current
 - [hexmammamia74/cursor-ai-pro-download-2026](../repos/hexmammamia74/cursor-ai-pro-download-2026.md) -- status=blocked, freshness=refresh-failed
 - [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) -- status=distilled, freshness=current
-- [hivemoot/colony](../repos/hivemoot/colony.md) -- status=distilled, freshness=current
-- [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) -- status=distilled, freshness=current
+- [hivemoot/colony](../repos/hivemoot/colony.md) -- status=distilled, freshness=stale
+- [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) -- status=distilled, freshness=stale
 - [hkuds/deepcode](../repos/hkuds/deepcode.md) -- status=distilled, freshness=current
 - [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) -- status=distilled, freshness=current
 - [hofstadter-io/hof](../repos/hofstadter-io/hof.md) -- status=distilled, freshness=current
@@ -145,6 +146,7 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [jogendrasingh1879/agentic-ai-](../repos/jogendrasingh1879/agentic-ai-.md) -- status=distilled, freshness=current
 - [johannesjo/parallel-code](../repos/johannesjo/parallel-code.md) -- status=distilled, freshness=current
 - [joinwell52-ai/joinwell52](../repos/joinwell52-ai/joinwell52.md) -- status=distilled, freshness=current
+- [jolexxa/bestie](../repos/jolexxa/bestie.md) -- status=discovered, freshness=pending
 - [jondot/picocode](../repos/jondot/picocode.md) -- status=distilled, freshness=current
 - [jonkrohn/nlp-with-llms](../repos/jonkrohn/nlp-with-llms.md) -- status=distilled, freshness=current
 - [jonrad/lsp-mcp](../repos/jonrad/lsp-mcp.md) -- status=distilled, freshness=current
@@ -350,5 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [oooscoos/benzi](../repos/oooscoos/benzi.md) -- status=distilled, freshness=current
 - [open-ide/debugai](../repos/open-ide/debugai.md) -- status=blocked, freshness=refresh-failed
 - [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) -- status=distilled, freshness=current
-- [openai/codex](../repos/openai/codex.md) -- status=distilled, freshness=current
-- [openai/codex-security](../repos/openai/codex-security.md) -- status=distilled, freshness=current

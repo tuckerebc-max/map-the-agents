@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (771)
+## current (769)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -186,8 +186,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) [coverage: complete]
 - [hesamjafarian/aimultiagents](../repos/hesamjafarian/aimultiagents.md) [coverage: complete]
 - [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) [coverage: complete]
-- [hivemoot/colony](../repos/hivemoot/colony.md) [coverage: partial]
-- [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) [coverage: partial]
 - [hkuds/deepcode](../repos/hkuds/deepcode.md) [coverage: partial]
 - [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) [coverage: partial]
 - [hofstadter-io/hof](../repos/hofstadter-io/hof.md) [coverage: complete]
@@ -437,3 +435,5 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) [coverage: complete]
 - [openautocoder/agentless](../repos/openautocoder/agentless.md) [coverage: complete]
 - [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) [coverage: complete]
+- [openbmb/chatdev](../repos/openbmb/chatdev.md) [coverage: partial]
+- [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) [coverage: partial]

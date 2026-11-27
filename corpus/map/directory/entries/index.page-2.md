@@ -2,6 +2,7 @@
 
 Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
+- [codeassist (`codeassist`)](codeassist-0a73f164de.md) -- backing-only
 - [codebadger (`codebadger`)](codebadger-7d610dee00.md) -- backing-only
 - [codebase-argus (`codebase-argus`)](codebase-argus-58e8de5b97.md) -- published+backing
 - [codebase-index-cli (`codebase-index-cli`)](codebase-index-cli-9b13e566be.md) -- backing-only
@@ -333,4 +334,3 @@ Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [HALO (`halo`)](halo-a4e63bcacf.md) -- backing-only
 - [Halv (`halv`)](halv-f544d39eee.md) -- published-only
 - [handoff (`handoff`)](handoff-249215fed8.md) -- published+backing
-- [Handshake (`handshake`)](handshake-dfff30d188.md) -- published-only

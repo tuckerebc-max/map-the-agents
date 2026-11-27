@@ -2,7 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
 - [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
 - [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
 - [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
@@ -131,6 +130,8 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) [coverage: complete]
 - [herdrdev/herdr](../repos/herdrdev/herdr.md) [coverage: partial]
 - [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) [coverage: partial]
+- [hivemoot/colony](../repos/hivemoot/colony.md) [coverage: partial]
+- [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) [coverage: partial]
 
 ## refresh-failed (72)
 
@@ -169,7 +170,7 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [gitlawb/zero](../repos/gitlawb/zero.md) -- FetchFailed [coverage: partial]
 - [hams-ollo/project-s.o.c.r.a.t.e.s.](../repos/hams-ollo/project-s.o.c.r.a.t.e.s..md) -- FetchFailed
 - [haseeb-heaven/code-interpreter](../repos/haseeb-heaven/code-interpreter.md) -- FetchFailed
-- [hexmammamia74/cursor-ai-pro-download-2026](../repos/hexmammamia74/cursor-ai-pro-download-2026.md) -- CollectError
+- [hexmammamia74/cursor-ai-pro-download-2026](../repos/hexmammamia74/cursor-ai-pro-download-2026.md) -- FetchFailed
 - [joaomdmoura/crewai](../repos/joaomdmoura/crewai.md) -- FetchFailed
 - [laris-co/multi-agent-workflow-kit](../repos/laris-co/multi-agent-workflow-kit.md) -- FetchFailed
 - [launsion-boop/echocoding](../repos/launsion-boop/echocoding.md) -- FetchFailed

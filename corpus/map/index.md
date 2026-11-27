@@ -1,11 +1,11 @@
 # Map the Agents -- Observatory index
 
-Coverage: 990 of 1074 known/total (distilled with kernel-applied, currently valid evidence).
+Coverage: 990 of 1076 known/total (distilled with kernel-applied, currently valid evidence).
 Known-dossier source depth (distinct from freshness -- a current commit is not complete source coverage): complete=454, partial=536, unknown=0 (legacy dossiers with no packet coverage recorded).
 
-Status counts: discovered=17, snapshotted=4, distilled=990, blocked=63
+Status counts: discovered=19, snapshotted=4, distilled=990, blocked=63
 
-Freshness counts: current=771, pending=21, stale=210, refresh-failed=72
+Freshness counts: current=769, pending=23, stale=212, refresh-failed=72
 
 Identity: 34 repo(s) carry a verified GitHub rename lineage (see their repo pages).
 
@@ -18,11 +18,11 @@ Full index: [classes/index.md](classes/index.md) (4 class(es)).
 - [agent](classes/agent.md) (449 repo(s))
 - [agent-sdk](classes/agent-sdk.md) (26 repo(s))
 - [multiplexer](classes/multiplexer.md) (182 repo(s))
-- [uncategorized](classes/uncategorized.md) (417 repo(s))
+- [uncategorized](classes/uncategorized.md) (419 repo(s))
 
 ## Agents
 
-Full index: [agents/index.md](agents/index.md) (1074 repo(s)).
+Full index: [agents/index.md](agents/index.md) (1076 repo(s)).
 
 - [0xpayne/gpt-migrate](repos/0xpayne/gpt-migrate.md) -- status=blocked, freshness=refresh-failed
 - [101dotxyz/gpteam](repos/101dotxyz/gpteam.md) -- status=distilled, freshness=current
@@ -44,7 +44,7 @@ Full index: [agents/index.md](agents/index.md) (1074 repo(s)).
 - [2389-research/packnplay](repos/2389-research/packnplay.md) -- status=distilled, freshness=current
 - [2389-research/sift](repos/2389-research/sift.md) -- status=distilled, freshness=current
 - [2389-research/simmer](repos/2389-research/simmer.md) -- status=distilled, freshness=current
-- ... 1054 more; see agents/index.md
+- ... 1056 more; see agents/index.md
 
 ## Components
 
@@ -135,9 +135,9 @@ Full index: [freshness/index.md](freshness/index.md).
 - [almanaccode/codealmanac](repos/almanaccode/codealmanac.md): stale (stale)
 - [almogdepaz/wolfpack](repos/almogdepaz/wolfpack.md): stale (stale)
 - [alpbahadur/49agents](repos/alpbahadur/49agents.md): refresh-failed (FetchFailed)
-- ... 262 more; see freshness/index.md
+- ... 264 more; see freshness/index.md
 
 ## Directory
 
 Full index: [directory/index.md](directory/index.md).
-Catalog-evidence entries (no-repo included): 1422 (published=893, backing=1347, pages=200).
+Catalog-evidence entries (no-repo included): 1423 (published=893, backing=1347, pages=225).

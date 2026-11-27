@@ -2,6 +2,7 @@
 
 Page 5 of 5. [First page](index.md) | [Previous](index.page-4.md)
 
+- [Useful-Generativeai-Tools-Repo (`useful-generativeai-tools-repo`)](useful-generativeai-tools-repo-021a6de732.md) -- backing-only
 - [v0 (Vercel) (`v0-vercel`)](v0-vercel-5f00d1d03f.md) -- published+backing
 - [valuecell (`valuecell`)](valuecell-5d2ddded3a.md) -- backing-only
 - [Vanna.AI (`vannaai`)](vannaai-119cd00843.md) -- backing-only

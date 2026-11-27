@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing.
+Directory membership: published+backing+pages.
 
 - Category: agent
 - Provider/maker: BLACKBOXAI
@@ -22,6 +22,8 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-(published index `description`, not a verified repo-code finding)
-Blackbox AI operates an enterprise inference platform and, increasingly, an agent-dispatch service on top of it. Its Agents API accepts a task over HTTP, runs it in an isolated cloud sandbox with full
-Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json)
+Highlight (site page `what_makes_it_special`): AI coding assistant with real-time code completion, documentation, and debugging suggestions
+
+(captured site page body (agents/blackbox-ai.md), not a verified repo-code finding)
+Blackbox AI operates an enterprise inference platform and, increasingly, an agent-dispatch service on top of it. Its Agents API accepts a task over HTTP, runs it in an isolated cloud sandbox with full terminal, filesystem, and Git access, streams logs back to the caller, and opens pull requests with scoped branches and test evidence on GitHub, GitLab, or Bitbucket. A distinguishing capability is multi-agent orchestration: the same task can be dispatched in parallel to Blackbox, Claude Code, Codex, and Gemini agents, with a 'Chairman LLM' evaluating the implementations and a human able to override the selection. The company also ships an 'agentic terminal' CLI and a VS Code extension ('Blackbox Agent - Coding Copilot') that edits files and runs commands with per-step permission. Enterprise inference is the revenue engine — zero data retention at the gateway and single-tenant GPU deployments — with the coding agent layered on the same infrastructure for teams that want both from one vendor.
+Sources: [published index (sha256:dbc3ded38a45)](https://alltheagents.org/agents.json); [backing feed @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/_data/agents.json); [site page @ 59c63290fc63](https://github.com/prime-radiant-inc/alltheagents.org/blob/59c63290fc6391f18c769634a4982f7f5e63fe99/agents/blackbox-ai.md)

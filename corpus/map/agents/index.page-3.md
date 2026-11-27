@@ -2,6 +2,8 @@
 
 Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [openai/codex](../repos/openai/codex.md) -- status=distilled, freshness=current
+- [openai/codex-security](../repos/openai/codex-security.md) -- status=distilled, freshness=current
 - [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) -- status=distilled, freshness=current
 - [openautocoder/agentless](../repos/openautocoder/agentless.md) -- status=distilled, freshness=current
 - [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) -- status=distilled, freshness=current
@@ -350,5 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [yerbapage/swe-debate](../repos/yerbapage/swe-debate.md) -- status=distilled, freshness=current
 - [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) -- status=distilled, freshness=current
 - [youssefvdel/qwengate](../repos/youssefvdel/qwengate.md) -- status=distilled, freshness=current
-- [youwangd/sagecli](../repos/youwangd/sagecli.md) -- status=distilled, freshness=current
-- [yoyolab/yoyo](../repos/yoyolab/yoyo.md) -- status=blocked, freshness=refresh-failed

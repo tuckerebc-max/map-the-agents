@@ -205,30 +205,31 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [baro (`baro`)](baro-269b0f5338.md) -- published+backing+pages
 - [Base 44 (`base-44`)](base-44-a62741c71c.md) -- published+backing+pages
 - [Bazed (`bazed`)](bazed-55d6d197d5.md) -- published+backing+pages
-- [bb (`bb`)](bb-3b64db95cb.md) -- published+backing
-- [bbarit-agent-oss (`bbarit-agent-oss`)](bbarit-agent-oss-2ae584d5d2.md) -- published+backing
-- [beehive (`beehive`)](beehive-90de6401a4.md) -- published+backing
-- [Benzi (`benzi`)](benzi-b3b70aa9d9.md) -- published+backing
-- [Bernstein (`bernstein`)](bernstein-2bf5a223d6.md) -- published+backing
-- [Bestie (`bestie`)](bestie-ee0ce9ede6.md) -- published-only
-- [betool - AI Code Assistant (`betool-ai-code-assistant`)](betool-ai-code-assistant-69b488a0e7.md) -- published+backing
-- [Better Agent (`better-agent`)](better-agent-c1b96ad096.md) -- published+backing
-- [.better-coding-agents (`better-coding-agents`)](better-coding-agents-f3a7853494.md) -- backing-only
-- [BHIL-AI-First-Development-Toolkit (`bhil-ai-first-development-toolkit`)](bhil-ai-first-development-toolkit-c36869d11a.md) -- backing-only
-- [BIM_LLM_code_agent (`bim-llm-code-agent`)](bim-llm-code-agent-6d77be26f5.md) -- published+backing
-- [Binharic (`binharic`)](binharic-43389462d4.md) -- published+backing
-- [biscuit (`biscuit`)](biscuit-660f2dd5a2.md) -- published+backing
-- [bise (`bise`)](bise-9828c5393c.md) -- published-only
-- [Bismuth (`bismuth`)](bismuth-ed23167d44.md) -- published+backing
-- [BitFun (`bitfun`)](bitfun-c081de822c.md) -- published+backing
-- [Bito (`bito`)](bito-200ae7adee.md) -- backing-only
-- [Bits AI (`bits-ai`)](bits-ai-591724f461.md) -- published+backing
-- [BLACKBOX AI (`blackbox-ai`)](blackbox-ai-430d5ae7c2.md) -- published+backing
-- [BLACKBOX.AI (`blackboxai`)](blackboxai-132cb114c8.md) -- backing-only
-- [blade-code (`blade-code`)](blade-code-bc3864d275.md) -- published+backing
-- [Blinky (`blinky`)](blinky-90ada512bb.md) -- published+backing
-- [Blitzy (`blitzy`)](blitzy-15c785fe4b.md) -- published+backing
-- [Blueprints (`blueprints`)](blueprints-28ab7f1620.md) -- backing-only
+- [bb (`bb`)](bb-3b64db95cb.md) -- published+backing+pages
+- [bbarit-agent-oss (`bbarit-agent-oss`)](bbarit-agent-oss-2ae584d5d2.md) -- published+backing+pages
+- [beehive (`beehive`)](beehive-90de6401a4.md) -- published+backing+pages
+- [Benzi (`benzi`)](benzi-b3b70aa9d9.md) -- published+backing+pages
+- [Bernstein (`bernstein`)](bernstein-2bf5a223d6.md) -- published+backing+pages
+- [Bestie (`bestie`)](bestie-ee0ce9ede6.md) -- published+pages
+- [betool - AI Code Assistant (`betool-ai-code-assistant`)](betool-ai-code-assistant-69b488a0e7.md) -- published+backing+pages
+- [Better Agent (`better-agent`)](better-agent-c1b96ad096.md) -- published+backing+pages
+- [.better-coding-agents (`better-coding-agents`)](better-coding-agents-f3a7853494.md) -- backing+pages
+- [BHIL-AI-First-Development-Toolkit (`bhil-ai-first-development-toolkit`)](bhil-ai-first-development-toolkit-c36869d11a.md) -- backing+pages
+- [BIM_LLM_code_agent (`bim-llm-code-agent`)](bim-llm-code-agent-6d77be26f5.md) -- published+backing+pages
+- [Binary RE (`binary-re`)](binary-re-0ea75eaa69.md) -- pages-only
+- [Binharic (`binharic`)](binharic-43389462d4.md) -- published+backing+pages
+- [biscuit (`biscuit`)](biscuit-660f2dd5a2.md) -- published+backing+pages
+- [bise (`bise`)](bise-9828c5393c.md) -- published+pages
+- [Bismuth (`bismuth`)](bismuth-ed23167d44.md) -- published+backing+pages
+- [BitFun (`bitfun`)](bitfun-c081de822c.md) -- published+backing+pages
+- [Bito (`bito`)](bito-200ae7adee.md) -- backing+pages
+- [Bits AI (`bits-ai`)](bits-ai-591724f461.md) -- published+backing+pages
+- [BLACKBOX AI (`blackbox-ai`)](blackbox-ai-430d5ae7c2.md) -- published+backing+pages
+- [BLACKBOX.AI (`blackboxai`)](blackboxai-132cb114c8.md) -- backing+pages
+- [blade-code (`blade-code`)](blade-code-bc3864d275.md) -- published+backing+pages
+- [Blinky (`blinky`)](blinky-90ada512bb.md) -- published+backing+pages
+- [Blitzy (`blitzy`)](blitzy-15c785fe4b.md) -- published+backing+pages
+- [Blueprints (`blueprints`)](blueprints-28ab7f1620.md) -- backing+pages
 - [BMAD-METHOD (`bmad-method`)](bmad-method-40a1d375df.md) -- backing-only
 - [Bolt.new (`boltnew`)](boltnew-a43d82626c.md) -- published+backing
 - [bough (`bough`)](bough-36ad0f15e3.md) -- published-only
@@ -332,4 +333,3 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [codealmanac (`codealmanac`)](codealmanac-d33cea4b20.md) -- backing-only
 - [CodeAlta (`codealta`)](codealta-3092151208.md) -- published+backing
 - [codeany (`codeany`)](codeany-dc633210b8.md) -- published+backing
-- [codeassist (`codeassist`)](codeassist-0a73f164de.md) -- backing-only

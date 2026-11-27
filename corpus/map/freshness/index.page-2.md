@@ -2,8 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [openbmb/chatdev](../repos/openbmb/chatdev.md) [coverage: partial]
-- [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) [coverage: partial]
 - [openbmb/repoagent](../repos/openbmb/repoagent.md) [coverage: partial]
 - [openchamber/openchamber](../repos/openchamber/openchamber.md) [coverage: partial]
 - [opendev-to/opendev](../repos/opendev-to/opendev.md) [coverage: partial]
@@ -347,13 +345,15 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (21)
+## pending (23)
 
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
 - [gi-dellav/multistack](../repos/gi-dellav/multistack.md)
 - [google/ax](../repos/google/ax.md)
+- [gvergnaud/bise](../repos/gvergnaud/bise.md)
+- [jolexxa/bestie](../repos/jolexxa/bestie.md)
 - [lambda-symbolics/autolith](../repos/lambda-symbolics/autolith.md)
 - [matsumo0922/agent-gui-plugin](../repos/matsumo0922/agent-gui-plugin.md)
 - [mezmo/aura](../repos/mezmo/aura.md)
@@ -371,7 +371,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (210)
+## stale (212)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -454,3 +454,4 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
 - [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
 - [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
+- [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]

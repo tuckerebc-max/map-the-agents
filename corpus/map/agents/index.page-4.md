@@ -2,6 +2,8 @@
 
 Page 4 of 4. [First page](index.md) | [Previous](index.page-3.md)
 
+- [youwangd/sagecli](../repos/youwangd/sagecli.md) -- status=distilled, freshness=current
+- [yoyolab/yoyo](../repos/yoyolab/yoyo.md) -- status=blocked, freshness=refresh-failed
 - [yuki-20/cornmcp](../repos/yuki-20/cornmcp.md) -- status=distilled, freshness=current
 - [yushui2022/easy-coding-agents](../repos/yushui2022/easy-coding-agents.md) -- status=distilled, freshness=current
 - [yusifeng/formax](../repos/yusifeng/formax.md) -- status=distilled, freshness=current

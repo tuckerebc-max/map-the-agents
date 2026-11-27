@@ -1,9 +1,9 @@
 # hivemoot/hivemoot
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a49baa71cf00 @ 82b6081e282209c0
+Latest snapshot: commit a49baa71cf00 @ d6578144a26be07d
 
 ## Summary (orientation draft, not independently verified)
 
