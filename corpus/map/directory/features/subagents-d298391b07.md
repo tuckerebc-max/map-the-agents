@@ -34,6 +34,7 @@
 - [bernstein](../entries/bernstein-2bf5a223d6.md)
 - [bitfun](../entries/bitfun-c081de822c.md)
 - [bmad-method](../entries/bmad-method-40a1d375df.md)
+- [breakaway-agent](../entries/breakaway-agent-ea58f4190f.md)
 - [calex-javaai](../entries/calex-javaai-ae41365bce.md)
 - [cascadeflow](../entries/cascadeflow-3a559be66e.md)
 - [caveman-code](../entries/caveman-code-0530562837.md)

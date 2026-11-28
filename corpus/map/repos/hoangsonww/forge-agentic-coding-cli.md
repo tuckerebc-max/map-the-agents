@@ -1,9 +1,9 @@
 # hoangsonww/forge-agentic-coding-cli
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 50e173d93806 @ 67f90918cac0237a
+Latest snapshot: commit d83438c7a467 @ 29b56ffccafa1446
 
 ## Summary (orientation draft, not independently verified)
 

@@ -2,6 +2,7 @@
 
 Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
+- [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) -- status=distilled, freshness=current
 - [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) -- status=distilled, freshness=stale
 - [fullive-ai/anima](../repos/fullive-ai/anima.md) -- status=distilled, freshness=stale
 - [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) -- status=distilled, freshness=current
@@ -85,11 +86,11 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) -- status=distilled, freshness=current
 - [hivemoot/colony](../repos/hivemoot/colony.md) -- status=distilled, freshness=stale
 - [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) -- status=distilled, freshness=stale
-- [hkuds/deepcode](../repos/hkuds/deepcode.md) -- status=distilled, freshness=current
-- [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) -- status=distilled, freshness=current
+- [hkuds/deepcode](../repos/hkuds/deepcode.md) -- status=distilled, freshness=stale
+- [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) -- status=distilled, freshness=stale
 - [hofstadter-io/hof](../repos/hofstadter-io/hof.md) -- status=distilled, freshness=current
 - [holasoymalva/deepseek-cli](../repos/holasoymalva/deepseek-cli.md) -- status=distilled, freshness=current
-- [honeydew-ai/honeydew-ai-coding-agents-plugins](../repos/honeydew-ai/honeydew-ai-coding-agents-plugins.md) -- status=distilled, freshness=current
+- [honeydew-ai/honeydew-ai-coding-agents-plugins](../repos/honeydew-ai/honeydew-ai-coding-agents-plugins.md) -- status=distilled, freshness=stale
 - [hotovo/aider-desk](../repos/hotovo/aider-desk.md) -- status=distilled, freshness=current
 - [huangd1999/agentcoder](../repos/huangd1999/agentcoder.md) -- status=distilled, freshness=current
 - [huggingface/tau](../repos/huggingface/tau.md) -- status=distilled, freshness=current
@@ -351,4 +352,3 @@ Page 2 of 4. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [onllm-dev/onui](../repos/onllm-dev/onui.md) -- status=distilled, freshness=current
 - [oooscoos/benzi](../repos/oooscoos/benzi.md) -- status=distilled, freshness=current
 - [open-ide/debugai](../repos/open-ide/debugai.md) -- status=blocked, freshness=refresh-failed
-- [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) -- status=distilled, freshness=current

@@ -4,7 +4,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 
 # Agents -- full index
 
-1076 repositories.
+1078 repositories.
 
 [Back to map index](../index.md)
 
@@ -100,6 +100,7 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) -- status=distilled, freshness=stale
 - [andrefetch/postal](../repos/andrefetch/postal.md) -- status=distilled, freshness=stale
 - [andrewyng/context-hub](../repos/andrewyng/context-hub.md) -- status=distilled, freshness=stale
+- [andreylukin/bough](../repos/andreylukin/bough.md) -- status=discovered, freshness=pending
 - [andymik90/aperant](../repos/andymik90/aperant.md) -- status=distilled, freshness=stale
 - [andyrewlee/amux](../repos/andyrewlee/amux.md) -- status=distilled, freshness=stale
 - [angleschina/angles-cli](../repos/angleschina/angles-cli.md) -- status=distilled, freshness=stale
@@ -354,4 +355,3 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [foundationagents/recode](../repos/foundationagents/recode.md) -- status=distilled, freshness=current
 - [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) -- status=distilled, freshness=stale
 - [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) -- status=distilled, freshness=refresh-failed
-- [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) -- status=distilled, freshness=current

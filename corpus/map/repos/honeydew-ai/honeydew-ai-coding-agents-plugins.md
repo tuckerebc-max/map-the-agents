@@ -1,9 +1,9 @@
 # honeydew-ai/honeydew-ai-coding-agents-plugins
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 36797d906d0a @ 075790f34c5eb551
+Latest snapshot: commit c83830f4c158 @ df53395c2fc85ef1
 
 ## Summary (orientation draft, not independently verified)
 

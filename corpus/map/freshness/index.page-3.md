@@ -2,8 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
-- [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
 - [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
 - [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) [coverage: partial]
 - [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) [coverage: partial]
@@ -132,6 +130,9 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 - [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) [coverage: partial]
 - [hivemoot/colony](../repos/hivemoot/colony.md) [coverage: partial]
 - [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) [coverage: partial]
+- [hkuds/deepcode](../repos/hkuds/deepcode.md) [coverage: partial]
+- [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) [coverage: partial]
+- [honeydew-ai/honeydew-ai-coding-agents-plugins](../repos/honeydew-ai/honeydew-ai-coding-agents-plugins.md) [coverage: complete]
 
 ## refresh-failed (72)
 

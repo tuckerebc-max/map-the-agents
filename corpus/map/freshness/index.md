@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (769)
+## current (766)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -186,11 +186,8 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) [coverage: complete]
 - [hesamjafarian/aimultiagents](../repos/hesamjafarian/aimultiagents.md) [coverage: complete]
 - [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) [coverage: complete]
-- [hkuds/deepcode](../repos/hkuds/deepcode.md) [coverage: partial]
-- [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) [coverage: partial]
 - [hofstadter-io/hof](../repos/hofstadter-io/hof.md) [coverage: complete]
 - [holasoymalva/deepseek-cli](../repos/holasoymalva/deepseek-cli.md) [coverage: complete]
-- [honeydew-ai/honeydew-ai-coding-agents-plugins](../repos/honeydew-ai/honeydew-ai-coding-agents-plugins.md) [coverage: complete]
 - [hotovo/aider-desk](../repos/hotovo/aider-desk.md) [coverage: partial]
 - [huangd1999/agentcoder](../repos/huangd1999/agentcoder.md) [coverage: complete]
 - [huggingface/tau](../repos/huggingface/tau.md) [coverage: complete]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [openautocoder/live-swe-agent](../repos/openautocoder/live-swe-agent.md) [coverage: complete]
 - [openbmb/chatdev](../repos/openbmb/chatdev.md) [coverage: partial]
 - [openbmb/pilotdeck](../repos/openbmb/pilotdeck.md) [coverage: partial]
+- [openbmb/repoagent](../repos/openbmb/repoagent.md) [coverage: partial]
+- [openchamber/openchamber](../repos/openchamber/openchamber.md) [coverage: partial]
+- [opendev-to/opendev](../repos/opendev-to/opendev.md) [coverage: partial]

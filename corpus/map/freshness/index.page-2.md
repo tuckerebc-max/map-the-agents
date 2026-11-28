@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [openbmb/repoagent](../repos/openbmb/repoagent.md) [coverage: partial]
-- [openchamber/openchamber](../repos/openchamber/openchamber.md) [coverage: partial]
-- [opendev-to/opendev](../repos/opendev-to/opendev.md) [coverage: partial]
 - [openhands/openhands](../repos/openhands/openhands.md) [coverage: partial]
 - [openhands/tom-swe](../repos/openhands/tom-swe.md) [coverage: complete]
 - [openinterpreter/openinterpreter](../repos/openinterpreter/openinterpreter.md) [coverage: partial]
@@ -345,8 +342,9 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [zoo-code-org/zoo-code](../repos/zoo-code-org/zoo-code.md) [coverage: partial]
 - [zykjshadow/async](../repos/zykjshadow/async.md) [coverage: partial]
 
-## pending (23)
+## pending (25)
 
+- [andreylukin/bough](../repos/andreylukin/bough.md)
 - [clawdotnet/sharpclawcode](../repos/clawdotnet/sharpclawcode.md)
 - [datasette/datasette-agent](../repos/datasette/datasette-agent.md)
 - [duggasco/yoyo-evolve-clean](../repos/duggasco/yoyo-evolve-clean.md)
@@ -364,6 +362,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [prime-radiant-inc/sprout](../repos/prime-radiant-inc/sprout.md)
 - [saranyan/agent-relay](../repos/saranyan/agent-relay.md)
 - [scgopi/graphcode](../repos/scgopi/graphcode.md)
+- [scronkfinkle/byob](../repos/scronkfinkle/byob.md)
 - [shisa-ai/jouzu](../repos/shisa-ai/jouzu.md)
 - [staks-sor/ai-free](../repos/staks-sor/ai-free.md)
 - [tejas-soni/omnipilot](../repos/tejas-soni/omnipilot.md)
@@ -371,7 +370,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [wuke123222/omnicode-agent](../repos/wuke123222/omnicode-agent.md)
 - [xerv-org/swades-agent](../repos/xerv-org/swades-agent.md)
 
-## stale (212)
+## stale (215)
 
 - [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
@@ -455,3 +454,5 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
 - [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
 - [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
+- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
+- [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]

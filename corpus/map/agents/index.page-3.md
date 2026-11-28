@@ -2,6 +2,7 @@
 
 Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index.page-4.md)
 
+- [open-multi-agent/open-multi-agent](../repos/open-multi-agent/open-multi-agent.md) -- status=distilled, freshness=current
 - [openai/codex](../repos/openai/codex.md) -- status=distilled, freshness=current
 - [openai/codex-security](../repos/openai/codex-security.md) -- status=distilled, freshness=current
 - [openai/multi-agent-emergence-environments](../repos/openai/multi-agent-emergence-environments.md) -- status=distilled, freshness=current
@@ -132,6 +133,7 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [scaleapi/swe-interact](../repos/scaleapi/swe-interact.md) -- status=distilled, freshness=current
 - [scarmonit/antigravity-jules-orchestration](../repos/scarmonit/antigravity-jules-orchestration.md) -- status=distilled, freshness=current
 - [scgopi/graphcode](../repos/scgopi/graphcode.md) -- status=discovered, freshness=pending
+- [scronkfinkle/byob](../repos/scronkfinkle/byob.md) -- status=discovered, freshness=pending
 - [seahyinghang8/blinky](../repos/seahyinghang8/blinky.md) -- status=distilled, freshness=current
 - [sean35mm/weaver](../repos/sean35mm/weaver.md) -- status=distilled, freshness=current
 - [seandavi/agentic-coding-intro](../repos/seandavi/agentic-coding-intro.md) -- status=distilled, freshness=current
@@ -350,5 +352,3 @@ Page 3 of 4. [First page](index.md) | [Previous](index.page-2.md) | [Next](index
 - [yeagerai/yeagerai-agent](../repos/yeagerai/yeagerai-agent.md) -- status=blocked, freshness=refresh-failed
 - [yeoman/yeoman](../repos/yeoman/yeoman.md) -- status=distilled, freshness=current
 - [yerbapage/swe-debate](../repos/yerbapage/swe-debate.md) -- status=distilled, freshness=current
-- [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) -- status=distilled, freshness=current
-- [youssefvdel/qwengate](../repos/youssefvdel/qwengate.md) -- status=distilled, freshness=current

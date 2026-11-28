@@ -1,9 +1,9 @@
 # hkuds/deepcode
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 4bb4fd9cb9e8 @ 13ff9f4a8d3f5a21
+Latest snapshot: commit bfe34b668831 @ 497ef82409040ee7
 
 ## Summary (orientation draft, not independently verified)
 
